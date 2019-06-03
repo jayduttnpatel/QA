@@ -1,0 +1,162 @@
+150
+00:20:05,250 --> 00:20:16,400
+make some assumption about the error. So,
+the assumptions that we make, so let us just
+
+151
+00:20:16,400 --> 00:20:25,820
+for simplicity take the simple linear regression
+Y equal to beta 0 plus beta 1 x plus epsilon.
+
+152
+00:20:26,509 --> 00:20:32,139
+And the assumption that we make about the
+error is so we are getting different data
+
+153
+00:20:32,139 --> 00:20:47,070
+points, let us say d 1, d 2, d n; and corresponding
+so d 1, we have y 1 equal to beta 0 plus beta
+
+154
+00:20:47,070 --> 00:20:59,450
+1 x 1 plus epsilon 1. d 2 comprises of y 2
+x 2, where y 2 equal to beta 0 plus beta 1
+
+155
+00:20:59,450 --> 00:21:09,529
+x 2 plus epsilon 2. So, with respect to every
+example, there is a value of the error, epsilon
+
+156
+00:21:09,529 --> 00:21:15,980
+1, epsilon 2, epsilon 3 etcetera.
+The assumption we make is that expected value
+
+157
+00:21:15,980 --> 00:21:25,130
+of epsilon i equal to 0 that is the error
+that is added is has mean of 0. So, we want
+
+158
+00:21:25,130 --> 00:21:33,919
+to find the equation so that whatever is the
+residual error that will have a mean of 0.
+
+159
+00:21:33,919 --> 00:21:43,640
+And let us say the standard deviation of these
+errors is taken to be sigma epsilon; the sigma
+
+160
+00:21:43,640 --> 00:21:49,590
+epsilon is unknown. So, the error is come
+from a distribution, whose mean is 0, and
+
+161
+00:21:49,590 --> 00:21:55,190
+it has some standard deviation, and this standard
+deviation is unknown to us.
+
+162
+00:21:55,190 --> 00:22:05,549
+Further, we will make the assumptions that
+the errors are independent that is epsilon
+
+163
+00:22:05,549 --> 00:22:13,870
+1, epsilon 2, epsilon n, they are independent
+each other. And we can also assume that these
+
+164
+00:22:13,870 --> 00:22:27,610
+errors are normally distributed 
+they are normally distributed with mean 0,
+
+165
+00:22:27,610 --> 00:22:35,909
+and standard deviations sigma e, so this sort
+of noise is called Gaussian noise or white
+
+166
+00:22:35,909 --> 00:22:36,589
+noise.
+
+167
+00:22:39,240 --> 00:22:48,210
+Now, as we said that now given the training
+points, the blue are the training points in
+
+168
+00:22:48,210 --> 00:22:54,850
+this picture, we are come up with a line,
+and for that line, we can find out what is
+
+169
+00:22:54,850 --> 00:23:02,039
+the sum of squared errors with respect to
+the blue training points. Out of all possible
+
+170
+00:23:02,039 --> 00:23:08,669
+lines, so the different lines are parameterized
+by the values of beta 0 and beta 1. For each
+
+171
+00:23:08,669 --> 00:23:15,679
+pair of values beta 0, beta 1, we will have
+one line; we want to find that line for which
+
+172
+00:23:15,679 --> 00:23:23,860
+the sum of squared errors is minimum. So,
+the least square that is called the least
+
+173
+00:23:23,860 --> 00:23:29,759
+squares regression line. The least squares
+regression line gives the unique line such
+
+174
+00:23:29,759 --> 00:23:37,629
+that the sum of the squared vertical distances
+between the data points and the line is the
+
+175
+00:23:37,629 --> 00:23:39,109
+smallest possible.
+
+176
+00:23:39,920 --> 00:23:47,640
+So, we will find out how to choose this line
+and that is the algorithm that we will develop.
+
+177
+00:24:04,140 --> 00:24:21,919
+So, we want a line, so we have given the training
+points x i, y i. So, d i equal to x i, y i
+
+178
+00:24:21,919 --> 00:24:27,889
+and we have training points like this. And
+we want to come up with a line so that y i
+
+179
+00:24:27,889 --> 00:24:40,289
+minus beta 0 plus beta 1 x i. So, this is
+so y i is the actual value, so for a particular
+
+180
+00:24:40,289 --> 00:24:46,600
+x i, y i should be the actual value.
+And for a particular value of beta 0 and beta
+
+181
+00:24:46,600 --> 00:24:53,210
+1 that we have estimated, this is the predicted
+value. So, we want so for this particular
+
+182
+00:24:53,210 --> 00:25:01,980
+example, the squared error is this. And over
+all the examples, the sum of squared errors

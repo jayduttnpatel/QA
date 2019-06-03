@@ -1,0 +1,257 @@
+166
+00:15:05,540 --> 00:15:06,140
+alright.
+
+167
+00:15:07,190 --> 00:15:11,130
+Next, we enter Decision Tree Regression.
+
+168
+00:15:12,270 --> 00:15:17,290
+Decision trees are piecewise linear models,
+all right.
+
+169
+00:15:17,779 --> 00:15:22,480
+The linear regression and logistic regression,
+they were like single line fitting models,
+
+170
+00:15:22,480 --> 00:15:28,740
+at least the variant that I showed you the
+particular model that I demonstrated in this
+
+171
+00:15:28,740 --> 00:15:29,420
+tutorial.
+
+172
+00:15:29,980 --> 00:15:37,020
+But a decision tree tries to learn a set of
+if else conditions, if then else conditions.
+
+173
+00:15:37,820 --> 00:15:43,910
+Like, if the input be in a particular range
+of the features space or in a particular place
+
+174
+00:15:43,910 --> 00:15:48,540
+of features space then it is going to fit
+one particular line to the data.
+
+175
+00:15:48,540 --> 00:15:53,350
+So, it is a piecewise linear model, right.
+
+176
+00:15:53,350 --> 00:15:58,699
+And we use the same dataset, same synthetic
+dataset that we used in the linear regression
+
+177
+00:15:58,699 --> 00:15:59,379
+example.
+
+178
+00:16:00,920 --> 00:16:02,080
+And finally, we Fit the model.
+
+179
+00:16:02,269 --> 00:16:07,500
+So, we invoke the decision tree regressor
+class, we create an object of that class and
+
+180
+00:16:07,500 --> 00:16:18,730
+we fit the model by minimizing again the amount
+of deviation which we have from the true values.
+
+181
+00:16:18,730 --> 00:16:25,560
+Now, what we are going to do in this particular
+section of the tutorial is understand how
+
+182
+00:16:25,560 --> 00:16:33,010
+we can engineer the maximum depth parameter
+of a decision tree to control the amount of
+
+183
+00:16:33,010 --> 00:16:36,730
+bias and variance that is the end the model.
+
+184
+00:16:36,730 --> 00:16:44,291
+So, we see that the left most example that
+you see that has a maximum depth of 1, so
+
+185
+00:16:44,291 --> 00:16:50,930
+it is just single if else condition.
+
+186
+00:16:50,930 --> 00:16:57,620
+So, if the data be lesser than 1 then, it
+is using one particular line and if it is
+
+187
+00:16:57,620 --> 00:17:02,470
+greater than 1 then it is using another line
+and a very simple model that is possible
+
+188
+00:17:03,470 --> 00:17:04,430
+So, maximum depth equal to 1.
+
+189
+00:17:04,610 --> 00:17:10,299
+We can see that in both the training error
+and the generalization error which is given
+
+190
+00:17:10,299 --> 00:17:14,759
+by the training and the
+validation and the test errors are high.
+
+191
+00:17:16,679 --> 00:17:23,329
+And while, if you go to maximum depth equal
+to 3 then we can see that we have a piecewise
+
+192
+00:17:23,329 --> 00:17:30,169
+linear model which fits really closely to
+the data, but may be it fits just well which
+
+193
+00:17:30,169 --> 00:17:33,590
+we will come to the next slide and we will
+discuss about this.
+
+194
+00:17:33,590 --> 00:17:35,379
+So, which one fits the best.
+
+195
+00:17:35,379 --> 00:17:41,149
+Whereas, if we increase the maximum depth
+to 10, then you can see that this tries to
+
+196
+00:17:41,149 --> 00:17:49,059
+like fit the data really, really closely and
+this is not at all sustainable or at all generalizable
+
+197
+00:17:49,059 --> 00:17:54,730
+because if you can see that it is trying to
+like hug on to every single point of the example
+
+198
+00:17:54,730 --> 00:18:02,629
+set, of the trying set and most of these points
+are noisy because we explicitly super imposed
+
+199
+00:18:02,629 --> 00:18:04,269
+some Gaussian noise on the data.
+
+200
+00:18:04,639 --> 00:18:06,639
+So, this is not at all encouragable.
+
+201
+00:18:06,840 --> 00:18:13,300
+So, that is why, that is why we should, like
+this particular module has very high variance
+
+202
+00:18:13,309 --> 00:18:22,679
+and we should be able to identify this over
+fitting happening and choose a maximum depth
+
+203
+00:18:22,679 --> 00:18:24,499
+which is lesser than this value.
+
+204
+00:18:25,879 --> 00:18:33,269
+The next slide, this curve shows the variation
+of training validation and test errors with
+
+205
+00:18:33,269 --> 00:18:34,629
+maximum depth, all right.
+
+206
+00:18:34,759 --> 00:18:40,710
+So, as you can see that for maximum depth
+equal to 3 up to maximum depth equal to 3
+
+207
+00:18:40,710 --> 00:18:47,360
+rather training, validation and test errors,
+all of them keep decreasing or at least they
+
+208
+00:18:47,360 --> 00:18:48,360
+are non-increasing.
+
+209
+00:18:48,360 --> 00:18:58,229
+Whereas, as soon as we increase the maximum
+depth parameter beyond 3 this model starts
+
+210
+00:18:58,229 --> 00:19:03,590
+over fitting and that is clear because the
+training error decreases, whereas the validation
+
+211
+00:19:03,590 --> 00:19:08,500
+and test error keep tend to increase, all
+right.
+
+212
+00:19:08,500 --> 00:19:13,760
+So, this is what is done in the practical
+machine learning.
+
+213
+00:19:13,760 --> 00:19:21,419
+So, we would rather choose like when for making
+the model which is going to be deployed we
+
+214
+00:19:21,419 --> 00:19:27,679
+are going to choose maximum depth of 2 or
+3.
+
+215
+00:19:27,679 --> 00:19:35,090
+Rather, 2 is a far safer option because we
+do not really want the model to fit (Refer
+
+216
+00:19:35,090 --> 00:19:42,529
+Time: 19:39) on the data because we want to
+keep it loose so that like it, kind of fits
+
+217
+00:19:42,529 --> 00:19:45,009
+well on the data all right.
+
+218
+00:19:45,009 --> 00:19:52,679
+So, it kind of fits well on the training data
+as well as it generalizes well in the real
+
+219
+00:19:52,679 --> 00:19:53,679
+world.
+
+220
+00:19:53,679 --> 00:20:02,870
+So, our preferred choice of max depth would
+be either 2 or 3 in this case.

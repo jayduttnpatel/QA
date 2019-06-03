@@ -1,0 +1,188 @@
+81
+00:10:00,720 --> 00:10:06,180
+try to fit a function from height of the person
+to age of a person, so that given a height,
+
+82
+00:10:06,180 --> 00:10:13,060
+you can predict the age of the person. Or
+you can give the area of the house, you can
+
+83
+00:10:13,060 --> 00:10:19,750
+predict the price of the house, or given the
+value of sensors, you want to predict the
+
+84
+00:10:19,750 --> 00:10:25,920
+distance of the sensor from the wall. So you
+are given these blue points, and you are trying
+
+85
+00:10:25,920 --> 00:10:33,810
+to fit as straight-line function.
+Now, in this function, a linear function has
+
+86
+00:10:33,810 --> 00:10:46,060
+certain parameters. As you know that a line
+can be characterized by the slope; and if
+
+87
+00:10:46,060 --> 00:10:54,910
+we extend this line plus intercept with the
+x-axis. So, we can specify a line by these
+
+88
+00:10:54,910 --> 00:11:02,620
+two parameters - the slope and the intercept
+with the x or the y-axis. So, if we take the
+
+89
+00:11:02,620 --> 00:11:13,150
+equation of the line as y equal to beta 0
+plus beta 1 x, we can interpret beta 0 as
+
+90
+00:11:13,150 --> 00:11:23,110
+the point where it meets the y-axis and beta
+1 as the slope of the line. So, we want to
+
+91
+00:11:23,110 --> 00:11:29,330
+give the points, we want to find this line
+and finding a line means finding the parameters
+
+92
+00:11:29,330 --> 00:11:37,850
+of the line, and let us say the parameters
+of the line at beta 0 plus beta 1. However,
+
+93
+00:11:37,850 --> 00:11:47,540
+they may not exist complete fit to a straight-line.
+Suppose, the points are generated, so we can
+
+94
+00:11:47,540 --> 00:11:53,700
+assume that there is some noise in the data,
+because we may not be able to fit the data
+
+95
+00:11:53,700 --> 00:12:02,990
+with a straight-line. So, we can assume that
+there is an error, so y equal to beta 0 plus
+
+96
+00:12:02,990 --> 00:12:11,580
+beta 1 x plus epsilon; this is the function
+from which the points are generated. So, we
+
+97
+00:12:11,580 --> 00:12:19,010
+can think of there is an underline straight-line
+and the points are generated after accounting
+
+98
+00:12:19,010 --> 00:12:22,930
+for some error.
+For example, if you are trying to predict
+
+99
+00:12:22,930 --> 00:12:29,600
+distance from sensor observation, there may
+be some error associated with the sensing
+
+100
+00:12:29,600 --> 00:12:36,320
+device. And this error you can assume that
+this error has mean of zero, and some standard
+
+101
+00:12:36,320 --> 00:12:45,080
+deviation. So, we assume that this is the
+underline function from which the data is
+
+102
+00:12:45,080 --> 00:12:52,620
+generated; and given the data points, you
+are trying to find out beta 0 and beta 1 through
+
+103
+00:12:52,620 --> 00:12:55,840
+which you can specify the equation of the
+line.
+
+104
+00:12:57,460 --> 00:13:15,050
+So beta 0 is the y intercept of the population
+line. The population line, this is the actual
+
+105
+00:13:15,050 --> 00:13:21,820
+line, actual equation through the data is
+generated. So, beta 0 is the y intercept of
+
+106
+00:13:21,820 --> 00:13:28,860
+this actual line, and we can say beta 1 is
+the slope of the line, or we can call that
+
+107
+00:13:28,860 --> 00:13:40,510
+beta 1 is the population slope and epsilon
+is a random error.
+
+108
+00:13:40,510 --> 00:13:56,760
+Now, let us look at an example of, so this
+is the linear regression model, where we have
+
+109
+00:13:56,760 --> 00:14:02,470
+this relation between the variables, which
+is the linear function Y equal to beta 0 plus
+
+110
+00:14:02,470 --> 00:14:03,990
+beta 1 x plus epsilon.
+
+111
+00:14:04,220 --> 00:14:10,300
+And in the next slide, we look at an example
+of the training set. So, in this training
+
+112
+00:14:10,300 --> 00:14:19,360
+set, we are looking at the price of a house
+and the size of a house. So, we are given
+
+113
+00:14:19,360 --> 00:14:26,080
+in this particular case, we are given 15 examples;
+for each example, we have a house number,
+
+114
+00:14:26,080 --> 00:14:31,500
+we have the area of the house, and we have
+the selling price of the house. And our objective
+
+115
+00:14:31,500 --> 00:14:38,370
+would be given the area of the house to predict
+its selling price. So, what we could do is
+
+116
+00:14:38,370 --> 00:14:48,020
+that we could plot this so x is the area of
+the house and y is the selling price; we can
+
+117
+00:14:48,020 --> 00:14:53,280
+plot these functions and we can try to find
+the feet to this function.
+
+118
+00:14:53,440 --> 00:15:01,480
+So, these 15 points have been plotted on this
+graph here, which the x-axis is the size of

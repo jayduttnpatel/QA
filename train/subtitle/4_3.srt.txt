@@ -1,0 +1,223 @@
+80
+00:10:00,790 --> 00:10:09,610
+So, precision is defined to be TP divided
+by TP plus FP.
+
+81
+00:10:09,610 --> 00:10:18,540
+So, TP plus FP is what this row is what the
+learning algorithm defines to be positive,
+
+82
+00:10:18,540 --> 00:10:21,580
+out of it TP are the ones which are actually
+positive.
+
+83
+00:10:21,820 --> 00:10:32,700
+So, this defines precision and we have another
+measure called recall which measures how many
+
+84
+00:10:32,700 --> 00:10:36,960
+of the positive examples the learning algorithm
+retrieves as positive.
+
+85
+00:10:37,530 --> 00:10:51,600
+So, recall is taken to be TP by P and P is
+TP plus FN and this is also called true positive
+
+86
+00:10:51,600 --> 00:10:52,600
+for 8.
+
+87
+00:10:52,600 --> 00:10:55,530
+Similarly, you can have a false positive for
+8.
+
+88
+00:10:55,530 --> 00:11:00,490
+These are some ways in which we can evaluate
+learning algorithms.
+
+89
+00:11:00,490 --> 00:11:09,160
+Now, the next thing we will briefly discuss
+is on what data we evaluate the learning algorithm.
+
+90
+00:11:09,160 --> 00:11:20,150
+So, we are evaluating the learning algorithm
+on a sample data and the measure of error,
+
+91
+00:11:20,150 --> 00:11:26,420
+suppose we are trying to measure error the
+error that we get on the sample is called
+
+92
+00:11:26,420 --> 00:11:43,810
+sample error, and the actual error is called
+the true error.
+
+93
+00:11:43,810 --> 00:11:52,740
+So, let us look at a classification problem.
+
+94
+00:11:52,740 --> 00:12:01,570
+The sample error of a hypotheses f with respect
+to a target function c, and data sample S
+
+95
+00:12:01,570 --> 00:12:05,670
+is the average number of misclassifications.
+
+96
+00:12:05,670 --> 00:12:14,790
+So, delta f (x), c (x) sigma of delta f (x),
+c (x) is the number of examples, where f (x)
+
+97
+00:12:14,790 --> 00:12:16,660
+and c (x) do not agree.
+
+98
+00:12:16,660 --> 00:12:22,580
+This is the number of misclassifications divided
+by n, this is the sample error.
+
+99
+00:12:22,580 --> 00:12:30,610
+Now, the true error is defined over the distribution
+of instances, right there is a population
+
+100
+00:12:30,610 --> 00:12:38,880
+of instances from which we assume that the
+samples are drawn and the true error is with
+
+101
+00:12:38,880 --> 00:12:40,660
+respect to this distribution.
+
+102
+00:12:40,660 --> 00:12:49,571
+So, the true error of a function f is the
+probability that on this distribution f (x)
+
+103
+00:12:49,571 --> 00:12:52,560
+and c (x) will not agree, this is the true
+error.
+
+104
+00:12:52,560 --> 00:12:58,040
+So, we have the sample error which we measure
+with respect to a sample and there is a true
+
+105
+00:12:58,040 --> 00:13:00,050
+error.
+
+106
+00:13:00,050 --> 00:13:07,220
+Now, what we really want is the true error
+and when we take the sample error there is
+
+107
+00:13:07,220 --> 00:13:08,370
+some error.
+
+108
+00:13:08,370 --> 00:13:15,440
+Now, when you hypothesize a particular function
+the error that you get comes from different
+
+109
+00:13:15,440 --> 00:13:16,440
+sources.
+
+110
+00:13:16,440 --> 00:13:23,440
+The error can come from the limitation in
+the representation function or the limitation
+
+111
+00:13:23,440 --> 00:13:30,350
+in the hypotheses space and we have discussed
+that this is due to bias in representation.
+
+112
+00:13:30,350 --> 00:13:38,400
+The error may come because given the hypotheses
+space the search algorithm is not exhaustively
+
+113
+00:13:38,400 --> 00:13:43,390
+searching the hypotheses space, but making
+certain simplification that is called search
+
+114
+00:13:43,390 --> 00:13:44,390
+bias.
+
+115
+00:13:44,390 --> 00:13:50,170
+The error may be due to the limited size of
+the sample that you use for testing then it
+
+116
+00:13:50,170 --> 00:13:57,520
+is called variance error and error could be
+because the features that you are using the
+
+117
+00:13:57,520 --> 00:14:03,540
+vocabulary that you are using is not sufficient
+to capture everything about the task
+
+118
+00:14:04,330 --> 00:14:06,670
+then this is called a this is called noise.
+
+119
+00:14:07,320 --> 00:14:13,100
+So, there are different sources of error in
+a learning algorithm you take a sample and
+
+120
+00:14:13,110 --> 00:14:19,730
+you find the sample error and the sample error
+may be different from the true error.
+
+121
+00:14:19,730 --> 00:14:26,330
+So, we have to understand what type of errors
+can there be.
+
+122
+00:14:26,330 --> 00:14:33,190
+Now, when you make this estimate from the
+sample as we saw that there could be error
+
+123
+00:14:33,190 --> 00:14:41,910
+due to bias in the estimate and the sample
+error may be a poor estimator of the test
+
+124
+00:14:41,910 --> 00:14:48,990
+error, and if you choose the sample to be
+the training data then you are making a very
+
+125
+00:14:48,990 --> 00:14:58,070
+bad decision about the true error because
+the hypotheses you have learned from the training
+
+126
+00:14:58,070 --> 00:14:59,070
+examples only.

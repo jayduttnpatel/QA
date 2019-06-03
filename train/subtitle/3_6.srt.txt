@@ -1,0 +1,228 @@
+214
+00:25:19,380 --> 00:25:24,940
+Now, so let us define formally what is inductive
+bias.
+
+215
+00:25:25,410 --> 00:25:32,510
+So, when we choose a hypothesis space, we
+need to make some assumptions.
+
+216
+00:25:33,350 --> 00:25:39,290
+And there as I said there are two types of
+assumptions that you can make.
+
+217
+00:25:39,920 --> 00:25:45,920
+You can put restrictions on the type of functions
+that is you can say instead of considering
+
+218
+00:25:45,920 --> 00:25:53,160
+all Boolean formulas, we are going to consider
+only conjunctive Boolean formulas.
+
+219
+00:25:53,160 --> 00:26:01,900
+You can say that for regression problem, you
+can say that we are looking at linear functions,
+
+220
+00:26:01,900 --> 00:26:08,420
+or you can say that we can look at fourth
+degree polynomials or nth degree polynomials
+
+221
+00:26:08,420 --> 00:26:12,910
+or we can say we look as any polynomial.
+
+222
+00:26:12,910 --> 00:26:19,120
+So, specifying the form of the function is
+called restriction bias.
+
+223
+00:26:19,120 --> 00:26:24,820
+The second type of bias that you can use is
+preference bias, where given a particular
+
+224
+00:26:24,820 --> 00:26:32,560
+language that you have chosen you say that
+I am considering all possible polynomials,
+
+225
+00:26:32,560 --> 00:26:35,950
+but I will prefer polynomials of lower degree.
+
+226
+00:26:35,950 --> 00:26:42,370
+So, you can say that I am considering all
+possible Boolean functions, but I want a Boolean
+
+227
+00:26:42,370 --> 00:26:46,760
+function which can be described in small size.
+
+228
+00:26:46,760 --> 00:26:52,560
+So, you can put different types of bias on
+your learning algorithm.
+
+229
+00:26:52,560 --> 00:27:00,830
+So, inductive learning means to come up with
+the general function from training examples.
+
+230
+00:27:00,830 --> 00:27:04,230
+Given some training examples, you want to
+generalize.
+
+231
+00:27:04,230 --> 00:27:11,580
+So, you construct a hypothesis h, you are
+given some training examples which comes from
+
+232
+00:27:11,580 --> 00:27:15,820
+a concept c, and you want to find out a hypothesis
+h.
+
+233
+00:27:15,820 --> 00:27:20,320
+You can come up with the hypothesis that is
+consistence with all the training examples
+
+234
+00:27:20,320 --> 00:27:28,730
+given, then such hypothesis are called consistence
+hypothesis; it is sometimes not possible to
+
+235
+00:27:28,730 --> 00:27:33,790
+come up with the consistence hypothesis and
+sometimes we will not come up with the consistence
+
+236
+00:27:33,790 --> 00:27:34,790
+hypothesis.
+
+237
+00:27:34,790 --> 00:27:40,220
+But even when you are coming up with the consistence
+hypothesis, given a hypothesis space and given
+
+238
+00:27:40,220 --> 00:27:46,320
+a training data multiple possible consistence
+hypothesis can be there, and you have to select
+
+239
+00:27:46,320 --> 00:27:53,080
+which one of them you want to output based
+on your preference bias.
+
+240
+00:27:53,080 --> 00:27:58,960
+The hypothesis that you want to output is
+most often, you are guided by you want to
+
+241
+00:27:58,960 --> 00:28:07,010
+come up with the hypothesis that generalizes
+well over the unseen examples, you form your
+
+242
+00:28:07,010 --> 00:28:09,710
+hypothesis based on the training data.
+
+243
+00:28:09,710 --> 00:28:16,850
+But you want come up with the hypothesis that
+does not just do well on the training data,
+
+244
+00:28:16,850 --> 00:28:22,570
+but is likely to do well on unseen data.
+
+245
+00:28:22,570 --> 00:28:27,250
+Now inductive learning is an ill post problem.
+
+246
+00:28:27,250 --> 00:28:37,430
+If you do not look at all, suppose, your hypothesis
+space is all Boolean formulas, and if you
+
+247
+00:28:37,430 --> 00:28:42,800
+do not look at all the 2 to the power N possible
+examples if you look at a subset of those
+
+248
+00:28:42,800 --> 00:28:50,410
+examples multiple possible hypothesis is possible,
+and they have they will behave differently
+
+249
+00:28:50,410 --> 00:28:51,810
+with the rest of the examples.
+
+250
+00:28:51,970 --> 00:29:01,520
+So, you cannot come up with the correct hypothesis
+by logical being by you know which is which
+
+251
+00:29:01,520 --> 00:29:05,410
+is guaranteed to be true without seeing all
+the training examples.
+
+252
+00:29:05,410 --> 00:29:11,690
+So, inductive learning is a ill post problem,
+you are looking for generalization guided
+
+253
+00:29:11,690 --> 00:29:13,670
+by some bias or some criteria.
+
+254
+00:29:17,480 --> 00:29:24,400
+So, why you are being able to generalize,
+it is based on a assumption we call this assumption
+
+255
+00:29:24,400 --> 00:29:26,500
+the inductive learning hypothesis.
+
+256
+00:29:27,510 --> 00:29:35,870
+The hypothesis states that a hypothesis h
+is found to approximate the target function
+
+257
+00:29:35,870 --> 00:29:40,010
+c well over a sufficiently large set of training
+examples.
+
+258
+00:29:40,460 --> 00:29:48,800
+So, if you come up with a hypothesis which
+has a low training error over a sufficiently
+
+259
+00:29:48,800 --> 00:29:54,720
+large training set you expect that hypothesis
+to do well on unseen examples.
+
+260
+00:29:54,720 --> 00:29:59,220
+So, this is the inductive learning hypothesis.
+
+261
+00:29:59,220 --> 00:30:05,990
+And learning can be looked upon as searching
+through the hypothesis space.

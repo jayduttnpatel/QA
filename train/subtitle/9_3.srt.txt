@@ -1,0 +1,196 @@
+81
+00:10:07,881 --> 00:10:10,290
+the resulting entropy.
+
+82
+00:10:10,290 --> 00:10:16,899
+So, there is S is the examples here, S 1 and
+s 2 is the set of examples here and we find
+
+83
+00:10:16,899 --> 00:10:24,040
+the gain of S with A, and we find the attribute
+with the highest gain.
+
+84
+00:10:24,040 --> 00:10:29,459
+The attribute with a highest gain should have
+a positive gain if there is a negative gain
+
+85
+00:10:29,459 --> 00:10:36,310
+there is no reason to use the attribute, but
+if the even if there is a positive gain if
+
+86
+00:10:36,310 --> 00:10:42,709
+the gain is not significant, if the gain is
+not statistically significant we will stop
+
+87
+00:10:42,709 --> 00:10:43,730
+at the node.
+
+88
+00:10:43,730 --> 00:11:13,949
+So, you stop early that is stop growing, stop
+splitting when gain is not statistically significant
+
+89
+00:11:13,949 --> 00:11:18,569
+that is you do not grow the full tree.
+
+90
+00:11:18,569 --> 00:11:28,720
+A second type of method of pruning decision
+trees is based on post-pruning.
+
+91
+00:11:28,720 --> 00:11:35,709
+In post-pruning what you do is you continue
+growing the tree till the tree is quite large,
+
+92
+00:11:35,709 --> 00:11:42,829
+but after growing a big tree you pruned different
+sub trees of the tree.
+
+93
+00:11:42,829 --> 00:11:49,540
+So, grow the full tree and remove the nodes.
+
+94
+00:11:49,540 --> 00:12:01,129
+Now, how to remove the nodes?
+
+95
+00:12:01,129 --> 00:12:09,720
+There are several heuristic which have been
+used to decide which sub trees to remove.
+
+96
+00:12:09,720 --> 00:12:20,399
+So, you may decide to say that, suppose you
+have grown a decision trees which is quite
+
+97
+00:12:20,399 --> 00:12:22,059
+big.
+
+98
+00:12:22,059 --> 00:12:29,010
+Suppose, this is some decision tree that you
+have grown and you want to decide whether
+
+99
+00:12:29,010 --> 00:12:35,339
+you want to prune the sub tree that is you
+want to make this as a leaf node now what
+
+100
+00:12:35,339 --> 00:12:39,079
+you can do is that you can use cross validation.
+
+101
+00:12:39,079 --> 00:12:51,899
+So, what you can do is you can use a validation
+set and you check the error of the original
+
+102
+00:12:51,899 --> 00:12:56,569
+tree and suppose this is the sub tree st 1.
+
+103
+00:12:56,569 --> 00:13:12,139
+So, you find out the error you find out the
+error of T and error of T minus st 1, right
+
+104
+00:13:12,139 --> 00:13:20,209
+So, you find out the error after removing
+the sub tree, if this error is smaller than
+
+105
+00:13:20,209 --> 00:13:22,050
+this is a candidate for removal.
+
+106
+00:13:22,050 --> 00:13:28,350
+Now, when you have a decision tree any internal
+node is a candidate.
+
+107
+00:13:28,350 --> 00:13:33,199
+For removal you can remove this node, this
+node, this node, this node, this node, this
+
+108
+00:13:33,199 --> 00:13:36,389
+node these are different or even this node.
+
+109
+00:13:36,389 --> 00:13:44,279
+So, these are the different candidates sub
+trees for removal and among them you want
+
+110
+00:13:44,279 --> 00:13:51,490
+to find out those sub trees whose removal
+improves the test error.
+
+111
+00:13:51,490 --> 00:13:58,989
+Among those, if there are no tree whose removal
+improves the test error you do not move further
+
+112
+00:13:58,989 --> 00:14:04,999
+among those tree which are eligible for among
+those sub trees which are eligible for removal
+
+113
+00:14:04,999 --> 00:14:09,559
+you choose that sub tree whose removal lowers
+the error the most.
+
+114
+00:14:09,740 --> 00:14:12,260
+So, that is by using cross validation.
+
+115
+00:14:12,589 --> 00:14:22,670
+Apart from cross validation, there is another
+method based on a principle called MDL or
+
+116
+00:14:22,670 --> 00:14:24,430
+Minimum Description Length.
+
+117
+00:14:24,560 --> 00:14:26,760
+We will not talk about this principle in detail.
+
+118
+00:14:27,400 --> 00:14:35,260
+The basic idea is you want to look at, you
+think of having a function or having a decision
+
+119
+00:14:35,269 --> 00:14:43,720
+tree or having a classified as reducing the
+size of information you know.
+
+120
+00:14:43,720 --> 00:14:49,499
+Suppose, you have a training set and you have
+a function which classifies the training set
+
+121
+00:14:49,499 --> 00:14:56,269
+perfectly using the training set you can recreate
+using this function you can recreate the training
+
+122
+00:14:56,269 --> 00:15:01,669
+set given x you can find y, this is the role
+of this function.

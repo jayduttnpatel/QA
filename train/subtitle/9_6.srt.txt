@@ -1,0 +1,139 @@
+227
+00:25:03,870 --> 00:25:09,230
+at Bayesian approach overfitting, but one
+approach will just want to spend of two minutes
+
+228
+00:25:09,230 --> 00:25:11,010
+on is Regularization.
+
+229
+00:25:12,050 --> 00:25:17,880
+Regularization is a method of dealing with
+overfitting in algorithms like linear regression.
+
+230
+00:25:17,880 --> 00:25:26,750
+Now, in a linear regression model, we typically
+overfitting are characterized by large weights
+
+231
+00:25:26,750 --> 00:25:27,730
+of the coefficients.
+
+232
+00:25:28,910 --> 00:25:34,570
+The coefficient beta 0, beta 1, beta 2 etcetera
+that we use on linear regression, if overfitting
+
+233
+00:25:34,570 --> 00:25:37,730
+is occurs normally this values becomes too
+large.
+
+234
+00:25:38,460 --> 00:25:45,180
+So, to deal with overfitting, if you look
+at this slide here these shows the values
+
+235
+00:25:45,180 --> 00:25:56,690
+of the different coefficients at different
+instances and as you see for this is for 0th
+
+236
+00:25:56,690 --> 00:26:01,300
+degree polynomial, this is 1 degree polynomial,
+3 degree polynomial, 9th degree polynomial.
+
+237
+00:26:01,300 --> 00:26:07,830
+When we fit the data with 9th degree polynomial,
+we have seen that the weight is very coefficients
+
+238
+00:26:07,830 --> 00:26:11,650
+are very large and this is an indicator of
+overfitting.
+
+239
+00:26:11,650 --> 00:26:18,180
+So, in order to prevent overfitting, one of
+the methods that we can do with polynomial
+
+240
+00:26:18,180 --> 00:26:24,441
+regression or even a linear regression is
+use regularization and one way of regularization
+
+241
+00:26:24,441 --> 00:26:26,400
+is to penalize large weights.
+
+242
+00:26:26,400 --> 00:26:33,450
+So, earlier we have seen that the error function
+which we try to optimise is the sum of squared
+
+243
+00:26:33,450 --> 00:26:39,310
+errors that is value of y minus y at whole
+square sum over all the examples.
+
+244
+00:26:39,310 --> 00:26:45,510
+So, tn is the target value and this is the
+value of the predicted value.
+
+245
+00:26:45,510 --> 00:26:51,200
+Now, if you want to deal with overfitting
+in addition to this in the error function
+
+246
+00:26:51,200 --> 00:27:00,420
+you can add another term based on the size
+of the coefficient right.
+
+247
+00:27:00,420 --> 00:27:07,610
+So, there a different types of regularization
+L1 regularization, L2 regularization etcetera.
+
+248
+00:27:07,610 --> 00:27:17,400
+For linear regression, there are two very
+popular types of regularization method, L2
+
+249
+00:27:17,400 --> 00:27:26,380
+regularization or which regression it adds
+a factor lambda by 2 w square, where w square
+
+250
+00:27:26,380 --> 00:27:36,580
+is the L2 node of the coefficients and in
+L1 regularization or lasso, we use the L1 node
+
+251
+00:27:37,300 --> 00:27:44,210
+So, this is added to the penalty function
+and this is function that you try to optimise.
+
+252
+00:27:44,210 --> 00:27:50,940
+So, you prefer the weights, so that the weights
+are small and the error is small if we do
+
+253
+00:27:50,940 --> 00:27:56,100
+that it can help in preventing overfitting
+in linear regression.
+
+254
+00:27:56,610 --> 00:27:58,840
+With this we come to an end to this class.
+
+255
+00:27:58,840 --> 00:27:59,640
+Thank you.

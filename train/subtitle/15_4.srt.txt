@@ -1,0 +1,188 @@
+109
+00:15:02,610 --> 00:15:10,490
+over items r u i minus r u bar whole square
+times r v i minus r v bar whole square. So,
+
+110
+00:15:10,490 --> 00:15:17,761
+this is for normalization and this is one
+similarity measure. This type or similarity
+
+111
+00:15:17,761 --> 00:15:26,350
+measure is used to score the similarity between
+two user u and v. After the similarity of
+
+112
+00:15:26,350 --> 00:15:34,220
+u with all the users has been computed we
+find the k-nearest neighbors that is k most
+
+113
+00:15:34,220 --> 00:15:37,280
+similar users according to this formula.
+
+114
+00:15:39,060 --> 00:15:44,860
+And the second phase is the recommendation
+phase. So, in the neighborhood formation phase,
+
+115
+00:15:44,860 --> 00:15:54,620
+we find the similar users and in the recommendation
+phase we use the rating of those similar users
+
+116
+00:15:54,620 --> 00:15:59,500
+on the test item to recommend the item to
+the user.
+
+117
+00:16:00,100 --> 00:16:06,920
+So, for this, in the recommendation phase
+we use the following formula to compute the
+
+118
+00:16:06,920 --> 00:16:17,639
+rating prediction of items i for target user
+u. So, p u i is the predicted rating of user
+
+119
+00:16:17,639 --> 00:16:25,680
+u for item i, it is equal to r u bar r u bar
+again is the average rating of that user we
+
+120
+00:16:25,680 --> 00:16:34,089
+want to predict whether it will be below average
+or above average or how much it will exceed
+
+121
+00:16:34,089 --> 00:16:41,709
+or the different from the average and this
+computed as sigma u included in v, v is the
+
+122
+00:16:41,709 --> 00:16:45,569
+set of neighbor, capital v is the set of nearest
+neighbors.
+
+123
+00:16:45,910 --> 00:16:56,670
+So, for all neighbors similarity u v, similarity
+u v is as we computed in the previous phase
+
+124
+00:16:56,670 --> 00:17:04,170
+times r v i minus r v bar. So, for a user
+v, which is similar to user u, we look at
+
+125
+00:17:04,170 --> 00:17:13,049
+the difference of the rating of v for i minus
+the average rating of the user. So, if the
+
+126
+00:17:13,049 --> 00:17:21,220
+rating of item i for user v is greater than
+the average rating of that user this is positive,
+
+127
+00:17:21,220 --> 00:17:30,020
+otherwise this is negative and the weight
+this particular neighbor is given away to
+
+128
+00:17:30,020 --> 00:17:34,300
+based on how similar he is or she is to the
+user u.
+
+129
+00:17:34,970 --> 00:17:42,770
+Suppose, we have a user U, who is our target
+user and i is our target item. So, we find
+
+130
+00:17:42,770 --> 00:17:51,412
+the neighbors, let us say V1, V2, V3 and they
+are the most similar users and with each of
+
+131
+00:17:51,412 --> 00:17:56,049
+them we have a value, suppose with V1, we
+have a value 0.6. Suppose, with V2, we have
+
+132
+00:17:56,049 --> 00:18:07,499
+a value 0.3 and V3, we have a value 0.25 then
+we look at the prediction of the user. V1,
+
+133
+00:18:07,499 --> 00:18:15,400
+for item i and we weight that by 0.6 by this
+similarity of V1 with u.
+
+134
+00:18:15,400 --> 00:18:23,210
+We look at the rating of V2 for item i weighted
+by point 3, look at the rating of V3 for item,
+
+135
+00:18:23,210 --> 00:18:30,760
+weight by 0.25 and to overcome the bias factor
+because different users have different standards
+
+136
+00:18:30,760 --> 00:18:37,899
+of rating everything. We are doing in terms
+of the average as we in this slide. So, please
+
+137
+00:18:37,899 --> 00:18:45,010
+look at the slide again. So, we have p u i
+equal to r u bar average rating of user u
+
+138
+00:18:45,010 --> 00:18:54,591
+times for all neighbors sim u v for all neighbors
+v sim u v times r v i minus r v bar and in
+
+139
+00:18:54,591 --> 00:19:03,629
+the denominator we have for all the others
+neighbors the summation of the similarities.
+
+140
+00:19:03,629 --> 00:19:09,009
+So, based on this we do our recommendation.
+Now, the similarity computed can be positive
+
+141
+00:19:09,009 --> 00:19:15,669
+and negative. We take the look at the absolute
+value of the similarity in order to do this.
+
+142
+00:19:15,669 --> 00:19:25,179
+So, this is collaborative filtering based
+recommendation system. So, CF stands for collaborative
+
+143
+00:19:25,179 --> 00:19:32,539
+filtering, this is collaborative filtering
+based recommendation system using k-nearest
+
+144
+00:19:32,539 --> 00:19:51,549
+neighbor or user based 
+neighbor the problem of user based formulation
+
+145
+00:19:51,549 --> 00:19:58,879
+of collaborative filtering is the lack of
+scalability, if you have many users in a popular
+
+146
+00:19:58,879 --> 00:20:06,419
+sites like Amazon or Netflix, they can have
+many users millions of users.

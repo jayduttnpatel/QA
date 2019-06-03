@@ -1,0 +1,153 @@
+119
+00:15:01,480 --> 00:15:08,320
+the house in terms of 100 square feet. So,
+this is the 1500 square feet, this is 2000
+
+120
+00:15:08,320 --> 00:15:15,510
+square feet, 2500 square feet, and this is
+the price of the house in lakhs. So, given
+
+121
+00:15:15,510 --> 00:15:22,980
+these points, we want to find the equation
+of a line, and as we saw the equation of a
+
+122
+00:15:22,980 --> 00:15:29,700
+line means finding the values of beta 0 and
+beta 1. This is for simple linear regression.
+
+123
+00:15:29,700 --> 00:15:37,610
+For multiple linear regression, we have n
+variables, n independent variables, or let
+
+124
+00:15:37,610 --> 00:15:43,510
+us say p independent variables. And we can
+say that the equation of the line is beta
+
+125
+00:15:43,510 --> 00:15:57,570
+0 plus beta 1 x plus beta 2 x square plus
+beta p x to the power p plus epsilon, so this
+
+126
+00:15:57,570 --> 00:16:05,430
+is when we have p predictor variables or p
+independent variables. So, we have p predictor
+
+127
+00:16:05,430 --> 00:16:24,500
+variables. So, we have to come up with the
+model for finding out these values of beta
+
+128
+00:16:24,500 --> 00:16:32,580
+0, beta 1, beta 2, beta p etcetera.
+So, our model assumes that so what we are
+
+129
+00:16:32,580 --> 00:16:44,750
+assuming is that the expected value of Y given
+X follows this equation. So, this equation
+
+130
+00:16:44,750 --> 00:16:52,100
+is the equation of the population line that
+is the equation from which the examples are
+
+131
+00:16:52,100 --> 00:17:06,030
+actually drawn. So, expected value of Y given
+X is given by the population line, or because
+
+132
+00:17:06,030 --> 00:17:11,870
+epsilon is a random error, and we assume that
+the mean of epsilon is 0, we can say that
+
+133
+00:17:11,870 --> 00:17:22,260
+expected value of Y given X is beta 0 plus
+beta 1 x. In case of linear, simple when we
+
+134
+00:17:22,260 --> 00:17:31,340
+have one variable; and it will be beta 0 plus
+beta 1 x plus beta 2 x square plus beta p
+
+135
+00:17:31,340 --> 00:17:41,580
+x to the power p, when we have multiple variables.
+Now, given the data points, we are trying
+
+136
+00:17:41,580 --> 00:17:48,480
+to find out the equation of the line that
+is an estimated value of each of this parameters.
+
+137
+00:17:48,480 --> 00:18:02,140
+So, we are trying to come up with beta 0 hat
+beta 1 hat beta 2 hat beta p hat, so that
+
+138
+00:18:02,140 --> 00:18:19,049
+the equation that we get is like this. So,
+this is the equation that we are trying to
+
+139
+00:18:19,049 --> 00:18:27,210
+come up with as an estimated for the actual
+function actual target function, this is the
+
+140
+00:18:27,210 --> 00:18:32,809
+actual target function. This is the function
+that you are trying to come up with. And we
+
+141
+00:18:32,809 --> 00:18:38,960
+will try to optimize certain things to come
+up with this functions; this optimization
+
+142
+00:18:38,960 --> 00:18:43,180
+will be with respect to the training examples
+that we have.
+
+143
+00:18:43,740 --> 00:18:56,919
+So for example, we can try to find out those
+values of beta 0, beta 1, beta p, so that
+
+144
+00:18:56,919 --> 00:19:06,950
+the sum of squared error is minimized. So,
+if we want to minimize the sum of squared
+
+145
+00:19:06,950 --> 00:19:13,879
+errors, and based on that we come up with
+values of beta 0 hat, beta 1 hat, beta 2 hat,
+
+146
+00:19:13,879 --> 00:19:22,179
+beta p hat this particular equation is called
+the least square line. So, we will see that
+
+147
+00:19:22,180 --> 00:19:27,140
+given training points how we can come up with
+the least square line.
+
+148
+00:19:36,700 --> 00:19:38,340
+So, let me just rub the board
+
+149
+00:19:57,580 --> 00:20:05,250
+Now the data that we have may not form a perfect
+line. So, what we will do is that we will

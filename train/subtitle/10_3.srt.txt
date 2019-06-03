@@ -1,0 +1,266 @@
+109
+00:10:05,410 --> 00:10:09,420
+The entire procedure is broken up into steps
+and each step is within each cell and you
+
+110
+00:10:09,420 --> 00:10:18,390
+execute a cell and it will execute the particular
+action that is required, all right.
+
+111
+00:10:18,390 --> 00:10:22,830
+So, that is going to be really convenient
+for you people to practice and understand
+
+112
+00:10:22,830 --> 00:10:24,330
+how a thing is done.
+
+113
+00:10:24,690 --> 00:10:26,710
+Next, we come to Logistic Regression.
+
+114
+00:10:27,540 --> 00:10:32,200
+Logistic Regression is all about classification
+using a linear decision boundary.
+
+115
+00:10:32,459 --> 00:10:39,080
+Now, you can look up on the web and find out
+how exactly this classification via linear
+
+116
+00:10:39,080 --> 00:10:41,670
+decision boundary happens using logistic regression.
+
+117
+00:10:41,670 --> 00:10:48,680
+Rather, I can just say in a few words that
+logistic regression model would try to, it
+
+118
+00:10:48,680 --> 00:10:54,560
+is inherently a binary classifier, so it is
+a two class classifier and it can be trained
+
+119
+00:10:54,560 --> 00:10:57,240
+to output a probability for the two classes.
+
+120
+00:10:57,680 --> 00:11:02,370
+Given a particular input example, it can out
+put the probability of it belonging to either
+
+121
+00:11:02,370 --> 00:11:07,340
+class 0 or class 1 say, so like either true
+or false.
+
+122
+00:11:07,340 --> 00:11:14,370
+Now you can like threshold the output into
+at like say 0.5 when the output which you
+
+123
+00:11:14,370 --> 00:11:19,790
+are logistic regression unit would give is
+a between 0 and, so if you threshold that
+
+124
+00:11:19,790 --> 00:11:24,270
+value at 0.5 will get classification output
+all right.
+
+125
+00:11:24,510 --> 00:11:26,550
+So, this is how logistic regression works.
+
+126
+00:11:26,790 --> 00:11:29,270
+So, then you can also look up on the web.
+
+127
+00:11:29,370 --> 00:11:34,610
+So, logistic regression performs a classification
+via a linear decision boundary.
+
+128
+00:11:35,209 --> 00:11:42,460
+And we are going to use a very popular dataset
+it is called the Iris dataset, as in this
+
+129
+00:11:42,460 --> 00:11:43,800
+particular example.
+
+130
+00:11:43,800 --> 00:11:49,019
+So, this dataset is actually a dataset of
+Iris flowers.
+
+131
+00:11:49,019 --> 00:11:59,339
+So, these plants come in 3 different species,
+3 different kinds of flowers.
+
+132
+00:11:59,339 --> 00:12:07,620
+So, the task is to classify these flowers
+on the basis of just 4 of their features viz,
+
+133
+00:12:07,620 --> 00:12:13,209
+the sepal length, sepal width, petal length
+and petal width.
+
+134
+00:12:13,209 --> 00:12:20,370
+Based on these 4 features you have to classify
+the flowers into one of the three different
+
+135
+00:12:20,370 --> 00:12:21,710
+species.
+
+136
+00:12:21,710 --> 00:12:26,060
+So, this is the task all right.
+
+137
+00:12:26,060 --> 00:12:34,079
+But to keep it simple and easy to visualize
+and appreciate I have decided to reduce the
+
+138
+00:12:34,079 --> 00:12:35,810
+complexity of the dataset update.
+
+139
+00:12:35,810 --> 00:12:37,029
+So, what we are going to do?
+
+140
+00:12:37,029 --> 00:12:42,430
+We are just going to take up two features
+of the data viz, the sepal length and sepal
+
+141
+00:12:42,430 --> 00:12:49,740
+width only and just consider two classes out
+of 3 possible classes of flower we are going
+
+142
+00:12:49,740 --> 00:12:53,930
+to take two classes of the flowers, so the
+simplification is this.
+
+143
+00:12:53,930 --> 00:13:02,470
+So, we use only two input features, the first
+two and the first two classes, all right.
+
+144
+00:13:02,470 --> 00:13:08,519
+So, we do this same exercise as before we
+split the data into training, validation and
+
+145
+00:13:08,519 --> 00:13:14,440
+test sets as it is necessary, and then we
+fit the logistic regression model.
+
+146
+00:13:14,440 --> 00:13:24,829
+So, we invoke the logistic regression class
+and create an object and then we do a model
+
+147
+00:13:24,829 --> 00:13:25,829
+dot fit.
+
+148
+00:13:25,829 --> 00:13:30,720
+So, this does the minimum error approximation.
+
+149
+00:13:30,720 --> 00:13:35,510
+This particular algorithm will minimize the
+classification error and you can find the
+
+150
+00:13:35,510 --> 00:13:42,450
+full documentation on official website of
+Scikit learn.
+
+151
+00:13:45,300 --> 00:13:51,890
+Once this model is trained you can find that
+this model creates a linear decision boundary,
+
+152
+00:13:51,890 --> 00:13:53,270
+as I said before.
+
+153
+00:13:53,529 --> 00:14:00,600
+So, two different classes are easily linearly
+separable in this case and that is why it
+
+154
+00:14:00,600 --> 00:14:07,040
+is possible to draw such a beautiful decision
+boundary which correctly divides the entire
+
+155
+00:14:07,040 --> 00:14:10,820
+features space into two fragments right.
+
+156
+00:14:10,820 --> 00:14:17,760
+So, as you can see that the blue region belongs
+to class 0 according to the model, and the
+
+157
+00:14:17,760 --> 00:14:19,400
+orange one belong to class 1.
+
+158
+00:14:21,150 --> 00:14:30,450
+Finally, we evaluate the model and we find
+that we have 0 percent misclassification error,
+
+159
+00:14:30,450 --> 00:14:32,210
+both on validation and test sets.
+
+160
+00:14:32,330 --> 00:14:37,600
+So, it completely generalizes according to
+as far as we know according to the data that
+
+161
+00:14:37,600 --> 00:14:38,700
+has been provided to us.
+
+162
+00:14:38,880 --> 00:14:47,600
+So, it is just because of the case that we
+were fortunate to have the two classes that
+
+163
+00:14:47,600 --> 00:14:53,470
+we picked to be linearly separable in the
+particular features space that we choose and
+
+164
+00:14:53,470 --> 00:14:59,380
+that is not the case in most of the real world
+situations, but just to keep things simple
+
+165
+00:14:59,380 --> 00:15:05,540
+and just to give you people an idea of how
+logistic regression works, I choose this example,

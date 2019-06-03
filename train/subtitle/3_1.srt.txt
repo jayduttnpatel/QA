@@ -1,0 +1,158 @@
+1
+00:00:19,420 --> 00:00:25,120
+Good morning, today we will have the first
+module of machine learning part C.
+
+2
+00:00:25,820 --> 00:00:33,000
+I will talk about hypothesis space and inductive
+bias will give you brief introduction to this,
+
+3
+00:00:33,360 --> 00:00:37,650
+so that when we talk about a different machine
+learning algorithms, we can refer to this
+
+4
+00:00:37,650 --> 00:00:38,470
+discussion.
+
+5
+00:00:38,650 --> 00:01:04,150
+So, as we have seen that in inductive learning
+or prediction, we have given a examples of data
+
+6
+00:01:08,310 --> 00:01:18,710
+And the example are of the form as we have
+seen x, y, where x for a particular instance
+
+7
+00:01:18,710 --> 00:01:26,619
+x comprises of the values of the different
+features of that instance; and y is the output attribute
+
+8
+00:01:27,580 --> 00:01:33,620
+And we can also think of that as being given
+x and f(x).
+
+9
+00:01:34,400 --> 00:01:44,479
+So, if you assume that the output of an instance
+is a function of the input vector input feature
+
+10
+00:01:44,479 --> 00:01:51,659
+vector; and this is the function that we are
+trying to learn, we are given x, f(x) pairs
+
+11
+00:01:51,899 --> 00:01:52,659
+as examples.
+
+12
+00:01:53,540 --> 00:01:56,160
+And we want to learn x.
+
+13
+00:01:56,979 --> 00:02:07,080
+For a classification problem, in the earlier
+class, we talked about two types of supervised
+
+14
+00:02:07,080 --> 00:02:14,030
+learning problems - classification and regression
+depending on whether the output attributes
+
+15
+00:02:14,030 --> 00:02:18,690
+type is discrete valued or continuous valued.
+
+16
+00:02:19,380 --> 00:02:36,360
+In classification problem, this function f(x)
+is discrete; in regression, the function f
+
+17
+00:02:36,360 --> 00:02:43,959
+(x) is continuous.
+
+18
+00:02:43,959 --> 00:02:50,080
+And we can also apart from classification
+and regression, in some cases we may want
+
+19
+00:02:50,080 --> 00:02:54,040
+to find out the probability of a particular
+value of y.
+
+20
+00:02:54,040 --> 00:03:17,860
+So, for those problems, where we look at probability
+estimation, our f(x) is the probability of
+
+21
+00:03:17,860 --> 00:03:22,760
+x; so this is the type of inductive learning
+problems that we are looking at.
+
+22
+00:03:22,760 --> 00:03:24,970
+Why do we call this inductive learning?
+
+23
+00:03:24,970 --> 00:03:32,040
+We are given some data and we are trying to
+do induction to try to identify a function,
+
+24
+00:03:32,040 --> 00:03:34,060
+which can explain the data.
+
+25
+00:03:34,060 --> 00:03:42,409
+So, induction as oppose to deduction, unless
+we can see all the instances all the possible
+
+26
+00:03:42,409 --> 00:03:50,380
+data points or we make some restrictive assumption
+about the language in which the hypothesis
+
+27
+00:03:50,380 --> 00:03:56,750
+is expressed or some bias, this problem is
+not well defined so that is why it is called
+
+28
+00:03:56,750 --> 00:04:01,430
+an inductive problem.
+
+29
+00:04:01,430 --> 00:04:08,900
+Then in the last class, we talked about features.
+
+30
+00:04:08,900 --> 00:04:16,540
+So when we say we have to learn a function,
+it is a function of the features; so instances
+
+31
+00:04:16,540 --> 00:04:23,340
+are described in terms of features.
+
+32
+00:04:23,340 --> 00:04:46,430
+So, features are properties that describe
+each instance; and each instance can be described
+
+33
+00:04:46,430 --> 00:04:49,270
+in a quantitative manner using features.
+
+34
+00:04:49,840 --> 00:05:00,060
+And often we have multiple features so we
+have what we call a feature vector, for example,

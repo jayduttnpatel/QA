@@ -1,0 +1,215 @@
+127
+00:14:59,070 --> 00:15:11,840
+So, what you need to do is you split the examples.
+
+128
+00:15:11,840 --> 00:15:21,710
+You use some examples for training and you
+use a disjoint set of examples for testing,
+
+129
+00:15:21,710 --> 00:15:27,470
+and ideally both the training set and the
+test set are drawn from the distribution.
+
+130
+00:15:27,470 --> 00:15:34,400
+So, the training set or the training examples
+are use to train the learner and the test
+
+131
+00:15:34,400 --> 00:15:37,240
+set is used to test the learner.
+
+132
+00:15:53,440 --> 00:15:56,200
+So, this is about bias.
+
+133
+00:15:56,210 --> 00:16:01,560
+There could be also be variance in the estimate
+as we said if the test set is small there
+
+134
+00:16:01,560 --> 00:16:02,560
+will be variance.
+
+135
+00:16:02,560 --> 00:16:09,570
+If you take a small test set coincidentally
+the accuracy may be very high or very low
+
+136
+00:16:09,570 --> 00:16:10,860
+on that set.
+
+137
+00:16:10,860 --> 00:16:16,180
+So, if you take a larger test set the variance
+will be smaller.
+
+138
+00:16:16,180 --> 00:16:24,650
+Now, we will look at a way of doing the evaluation
+with limited training data.
+
+139
+00:16:24,650 --> 00:16:29,160
+So, suppose if you are given some labeled
+data, right.
+
+140
+00:16:29,160 --> 00:16:37,700
+Now, if you use up all the data for training
+you will not be able to really get a good
+
+141
+00:16:37,700 --> 00:16:40,880
+estimate of the error because you require
+an independent set.
+
+142
+00:16:40,880 --> 00:16:47,800
+So, what you should ideally do is given the
+examples you will divide the example into
+
+143
+00:16:47,800 --> 00:16:55,320
+training set and test set, but when you do
+this division the size of the training set
+
+144
+00:16:55,320 --> 00:17:01,370
+will decrease and we will see that if the
+size of the training set is too small it will
+
+145
+00:17:01,370 --> 00:17:04,860
+give rise to over fitting type of error.
+
+146
+00:17:04,860 --> 00:17:12,760
+So, you want to use as much of the training
+example as possible for training and also
+
+147
+00:17:12,760 --> 00:17:17,890
+we do not want to test on a small test set
+if we test on a small test set variance will
+
+148
+00:17:17,890 --> 00:17:18,390
+be high.
+
+149
+00:17:18,890 --> 00:17:26,189
+So, you want to use all the examples for testing
+for that we evolve a scheme for cross validation.
+
+150
+00:17:26,189 --> 00:17:39,590
+So, if you 
+look at this slide given the original set
+
+151
+00:17:39,590 --> 00:17:47,130
+of examples, we can first split the data into
+training set and testing set.
+
+152
+00:17:47,320 --> 00:17:51,040
+So, that the testing set is completely disjoint
+for training.
+
+153
+00:17:51,280 --> 00:17:58,640
+During training when you are tuning the model
+parameters you can use some part of the training
+
+154
+00:17:58,640 --> 00:17:59,710
+set for validation.
+
+155
+00:17:59,710 --> 00:18:05,640
+So, for the training you use training and
+validation and after you have finished tuning,
+
+156
+00:18:05,640 --> 00:18:13,130
+the whole thing whole the hypotheses that
+you output is checked on the testing set.
+
+157
+00:18:13,130 --> 00:18:16,510
+This is the standard validation procedure.
+
+158
+00:18:16,510 --> 00:18:24,370
+So, validation set is used during tuning during
+training to tune the model parameters.
+
+159
+00:18:24,370 --> 00:18:30,690
+After the entire training is over then you
+check your answer check the accuracy of your
+
+160
+00:18:30,690 --> 00:18:32,890
+hypotheses on the test set.
+
+161
+00:18:32,890 --> 00:18:41,540
+So, when you do validation if you are splitting
+your data into these parts validation fails
+
+162
+00:18:41,540 --> 00:18:43,440
+to use all the available data.
+
+163
+00:18:44,020 --> 00:18:48,100
+So, we will come up with a scheme called cross
+validation.
+
+164
+00:18:49,610 --> 00:18:54,730
+Let us look at what is K-fold cross validation.
+
+165
+00:19:02,190 --> 00:19:08,080
+In K-fold cross validation, what we do is
+that we take the entire training data that
+
+166
+00:19:08,080 --> 00:19:11,880
+is available to us and we split it into K
+classes.
+
+167
+00:19:12,910 --> 00:19:22,270
+So, suppose K equal to 6, we will split the
+data into K subsets right then we will perform
+
+168
+00:19:22,270 --> 00:19:22,930
+K experiments.
+
+169
+00:19:23,270 --> 00:19:25,030
+So, K rounds of learning.
+
+170
+00:19:25,750 --> 00:19:39,490
+In round i we will use; suppose this is S
+1, S 2, S 3, S 4, S 5, S 6.
+
+171
+00:19:39,720 --> 00:19:56,940
+In round i, we will use S i for testing and
+S minus S i for training, together this is
+
+172
+00:19:56,940 --> 00:20:08,890
+S. So, at every round, 1 by K of the data
+is set apart for testing and the remaining

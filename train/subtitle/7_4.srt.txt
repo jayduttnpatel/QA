@@ -1,0 +1,264 @@
+142
+00:15:02,600 --> 00:15:09,110
+So, some of this examples in D will have A
+5 equal to yes, some will have A 5 equal to
+
+143
+00:15:09,110 --> 00:15:10,110
+no.
+
+144
+00:15:10,110 --> 00:15:19,420
+So, D 1 is the subset of D for which A 5 equal
+to yes; D 2 is a subset for A 5 equal to no.
+
+145
+00:15:19,420 --> 00:15:23,510
+So, this number of training examples will
+come here.
+
+146
+00:15:23,510 --> 00:15:35,770
+Now, here again we can decide, that if all
+the examples in D 1 have the same output y,
+
+147
+00:15:35,770 --> 00:15:44,720
+then we need not expand the node D 1 corresponding
+to D 1 further, but if they have different
+
+148
+00:15:44,720 --> 00:15:51,740
+values, then we can split this node further
+and we have to choose another attribute on
+
+149
+00:15:51,740 --> 00:15:53,920
+which to split the node.
+
+150
+00:15:53,920 --> 00:15:58,870
+Suppose you choose A 2 and suppose A 2 is
+also bullion, it has two values.
+
+151
+00:15:58,870 --> 00:16:07,390
+Now, part of D 1 will come here, D 11 and
+part of D 1 will come here, D 12.
+
+152
+00:16:07,390 --> 00:16:14,820
+And then, you look at all the examples here
+and suppose all the examples in D 11 are positive,
+
+153
+00:16:14,820 --> 00:16:18,630
+then you say positive and you stop.
+
+154
+00:16:18,630 --> 00:16:24,800
+And suppose D 12 has a mixture of positive
+or negative examples, you again choose an
+
+155
+00:16:24,800 --> 00:16:29,279
+attribute to split on and then you proceed
+further.
+
+156
+00:16:29,279 --> 00:16:34,640
+So, this is how we recursively build a decision
+tree.
+
+157
+00:16:34,640 --> 00:16:37,800
+We do the same things at all the nodes.
+
+158
+00:16:37,800 --> 00:16:45,800
+So, at every step we have to make a decision
+whether to stop growing the tree at that node
+
+159
+00:16:45,800 --> 00:16:48,150
+or whether to continue.
+
+160
+00:16:48,150 --> 00:16:54,670
+If you want to continue growing the tree we
+have to decide which attribute to split on.
+
+161
+00:16:54,670 --> 00:16:58,140
+So, these are the decisions that we have to
+make.
+
+162
+00:16:58,140 --> 00:17:06,740
+For example, on this examples, suppose we
+take length as the attribute and let us say,
+
+163
+00:17:06,740 --> 00:17:14,140
+the examples that are there in the node, 9
+of them has the action skip and 9 of them
+
+164
+00:17:14,140 --> 00:17:15,250
+has action read.
+
+165
+00:17:15,250 --> 00:17:19,279
+So, we split on length and length has two
+values, long and short.
+
+166
+00:17:19,279 --> 00:17:25,730
+For length equal to long, there are 7 examples,
+all of them have skip.
+
+167
+00:17:25,730 --> 00:17:28,870
+So, we can stop growing the tree here.
+
+168
+00:17:28,870 --> 00:17:35,340
+For length equal to short, there are 11 examples,
+two of them are skip 9 of them are read.
+
+169
+00:17:35,340 --> 00:17:41,620
+So, we have to decide whether to continue
+the tree here and then which attribute to
+
+170
+00:17:41,620 --> 00:17:43,170
+use here.
+
+171
+00:17:43,170 --> 00:17:49,970
+On the other hand, on the same examples, if
+you use the attribute thread to split, then
+
+172
+00:17:49,970 --> 00:17:52,680
+thread has two values, new and old.
+
+173
+00:17:52,680 --> 00:18:00,340
+For thread equal to new, there are 10 examples,
+three of them skip and 7 of them read.
+
+174
+00:18:00,340 --> 00:18:05,780
+And thread equal to old, there are 6 of them
+are skip and 2 of them are read.
+
+175
+00:18:05,780 --> 00:18:12,080
+So, what we have to decide is, at this particular
+case, you know, we have four attributes: author,
+
+176
+00:18:12,080 --> 00:18:19,820
+thread, length, where, out of this 4 attributes
+which attribute should we use at the root.
+
+177
+00:18:19,820 --> 00:18:23,490
+For example, length and thread are the two
+of the attributes.
+
+178
+00:18:23,490 --> 00:18:27,160
+So, do you think we should use length or should
+we use thread?
+
+179
+00:18:27,160 --> 00:18:31,860
+You see, if we use the attribute length, for
+one value of length we can immediately get
+
+180
+00:18:31,860 --> 00:18:32,660
+to a leaf.
+
+181
+00:18:32,860 --> 00:18:37,060
+Remember, we wanted to find a decision trees,
+which are smaller.
+
+182
+00:18:37,500 --> 00:18:42,750
+So, the quicker or faster we reach the leaf,
+a smaller tree that we get.
+
+183
+00:18:42,750 --> 00:18:49,140
+So, based on that, you know, the attribute
+length appears to be more promising.
+
+184
+00:18:49,140 --> 00:18:53,350
+So, these are some examples of decision tree.
+
+185
+00:18:53,350 --> 00:18:59,000
+This is a decision tree where the ones that
+we have seen earlier where each leaf is giving
+
+186
+00:18:59,000 --> 00:19:01,700
+the class we can also have, you know.
+
+187
+00:19:01,960 --> 00:19:03,820
+So, here we start with length.
+
+188
+00:19:04,080 --> 00:19:10,179
+Length is a long, we say skip; if length is
+short, we further try to grow the tree.
+
+189
+00:19:10,179 --> 00:19:15,610
+Or, this is another decision tree for the
+same examples where length is long, we have
+
+190
+00:19:15,610 --> 00:19:22,120
+a leaf which says skip; if length is short
+we do not have a leaf because here we can
+
+191
+00:19:22,120 --> 00:19:25,840
+either skip or read, but read is more probable.
+
+192
+00:19:25,840 --> 00:19:32,400
+So, we can stop here saying, that this leaf
+is a read with probability 0.82.
+
+193
+00:19:32,400 --> 00:19:39,590
+So, you can grow the tree so that every leaf
+has a specific value or you can stop at a
+
+194
+00:19:39,590 --> 00:19:49,470
+point where at a leaf there are more than
+one possible values, but one of them is dominant.
+
+195
+00:19:49,470 --> 00:19:55,240
+So, let us take one example.
+
+196
+00:19:55,240 --> 00:19:59,700
+This example is taken by, from the book on
+machine learning by Tom Mitchell.
+
+197
+00:19:59,700 --> 00:20:06,299
+So, where he looks at a decision tree to decide
+whether it is a good day to play tennis.

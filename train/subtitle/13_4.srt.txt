@@ -1,0 +1,123 @@
+95
+00:15:00,791 --> 00:15:05,420
+when you try to introduce the new feature
+you do not take that feature, if that feature
+
+96
+00:15:05,420 --> 00:15:11,009
+is highly correlated with another feature
+which already contents the information about
+
+97
+00:15:11,009 --> 00:15:22,129
+that feature. You select only uncorrelated
+features. So, you have to select uncorrelated features
+
+98
+00:15:23,420 --> 00:15:30,760
+And you also have to eliminate irrelevant
+features.
+
+99
+00:15:31,880 --> 00:15:39,140
+So, there is some heuristic algorithm that
+we can use. There are two frameworks for the
+
+100
+00:15:39,149 --> 00:15:44,710
+simple heuristic algorithm for feature subset
+selection; there is forward selection algorithm,
+
+101
+00:15:44,710 --> 00:15:53,720
+and backward selection algorithm. In forward
+selection algorithm you start with empty feature
+
+102
+00:15:53,720 --> 00:16:01,290
+set and we add feature one at a time. So,
+you start from an empty set of features. Let
+
+103
+00:16:01,290 --> 00:16:05,170
+us first write about the forward selection
+algorithm.
+
+104
+00:16:30,930 --> 00:16:41,779
+You start with empty feature set and then
+you add features one by one. So you try each
+
+105
+00:16:41,779 --> 00:17:03,860
+of the remaining features, and for each of
+them you estimate the accuracy. You estimate
+
+106
+00:17:03,860 --> 00:17:24,990
+the classification or regression error for
+adding each specific feature. And you select
+
+107
+00:17:24,990 --> 00:17:46,250
+the feature that gives maximum improvement.
+To find which feature gives maximum improvement
+
+108
+00:17:46,250 --> 00:17:52,730
+you can use the validation set and not the
+training set as we have discussed earlier.
+
+109
+00:17:52,730 --> 00:17:57,310
+You can stop when there is no significant
+improvement.
+
+110
+00:18:09,680 --> 00:18:15,880
+So, it is gradient algorithms we start with
+empty features set add features one by one.
+
+111
+00:18:15,890 --> 00:18:22,460
+When you add a feature you try to evaluate
+the result of adding all the features and
+
+112
+00:18:22,460 --> 00:18:27,490
+select that feature whose addition makes the
+maximum improvement and you continue this
+
+113
+00:18:27,490 --> 00:18:35,070
+process until adding a feature does not give
+rise to significant improvement. Similarly,
+
+114
+00:18:35,070 --> 00:18:37,410
+you can also have Backward Search.
+
+115
+00:18:45,120 --> 00:18:54,029
+In backward search what should you start with?
+In backward search you start with the full
+
+116
+00:18:54,029 --> 00:19:17,929
+feature set. Then you try removing features
+from the features that you have. You find
+
+117
+00:19:17,929 --> 00:19:30,190
+that feature whose removal gives rise to maximum
+improvement in performance. You try removing
+
+118
+00:19:30,190 --> 00:19:49,409
+drop the feature. You drop the feature with
+the smallest improvement or with smallest
+
+119
+00:19:49,409 --> 00:20:03,650
+impact on error. So, this is a similar algorithm
+for backward search to find a features subset.

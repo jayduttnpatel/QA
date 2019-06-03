@@ -1,0 +1,189 @@
+77
+00:10:08,600 --> 00:10:15,640
+let us say 64 training examples here and if
+you choose attribute A 1 to split on, A 1
+
+78
+00:10:15,640 --> 00:10:25,120
+is a binary attribute having true and false
+then if for A 1 equal to true we get 26 examples
+
+79
+00:10:25,120 --> 00:10:32,760
+on this side and 38 example for A 1 equal
+to false. Out of this 26 examples 21 is positive
+
+80
+00:10:32,760 --> 00:10:40,320
+5 is negative. For A 1 equal to false 8 or
+positive 30 are negative. However, if you
+
+81
+00:10:40,320 --> 00:10:47,180
+split on A 2 for A 2 equal to true we have
+18 positive, 33 negative. For A 2 equal to
+
+82
+00:10:47,180 --> 00:10:53,770
+false we have 11 positive and 2 negative.
+Now based on this information we want to decide
+
+83
+00:10:53,770 --> 00:11:02,180
+whether A 1 or A 2 is a better candidate first
+splity. To given answer to this there are
+
+84
+00:11:02,180 --> 00:11:09,300
+multiple methods that one could use and we
+will introduce one very popular method which
+
+85
+00:11:09,300 --> 00:11:18,470
+is based on entropy and information gain.
+So, entropy as you know is a measure of disorder
+
+86
+00:11:18,470 --> 00:11:27,000
+in a system. If it a particular node all the
+examples have positive or all the examples
+
+87
+00:11:27,000 --> 00:11:34,060
+are negative that is all examples belong to
+the same class then it is homogeneous set
+
+88
+00:11:34,060 --> 00:11:45,170
+of examples and entropy is 0, entropy is low.
+However, if we have 2 class and all the examples
+
+89
+00:11:45,170 --> 00:11:52,760
+half belong to one class, half belong to another
+class then entropy is highest.
+
+90
+00:11:52,760 --> 00:11:59,210
+Now leaf node is one ideally where all the
+examples belong to the same class that is
+
+91
+00:11:59,210 --> 00:12:09,401
+entropy is low. So we would prefer that we
+quickly get nodes which have low entry. So
+
+92
+00:12:09,401 --> 00:12:15,410
+based on this we have a heuristic to decide
+which attribute to split on.
+
+93
+00:12:15,410 --> 00:12:23,310
+Now, when we want to select an attribute we
+want to choose the most useful attribute.
+
+94
+00:12:23,310 --> 00:12:31,460
+And one of the criteria we use to decide what
+is the most important attribute is the criteria
+
+95
+00:12:31,460 --> 00:12:45,020
+of information gain. Now what is the information?
+So if at a particular place we have some training
+
+96
+00:12:45,020 --> 00:12:52,760
+examples where half of positive half is negative
+and if we are given a random example and ask
+
+97
+00:12:52,760 --> 00:13:00,320
+to predict its class, we have to make a random
+guest we have no information. If the examples
+
+98
+00:13:00,320 --> 00:13:09,120
+are equally divided among the classes there
+is no information there, but if all the examples
+
+99
+00:13:09,120 --> 00:13:16,750
+belong to class and we identify the set up
+examples with that class information is very
+
+100
+00:13:16,750 --> 00:13:21,870
+high.
+So, we want to have definition of information
+
+101
+00:13:21,870 --> 00:13:29,960
+and we want to prefer situation where information
+is high. Now when we decide which attribute
+
+102
+00:13:29,960 --> 00:13:39,930
+to split on we may use the principle of information
+gain. And this principle, if you can look
+
+103
+00:13:39,930 --> 00:13:47,930
+at this slide this principle for information
+gain measures how well a given attribute separate
+
+104
+00:13:47,930 --> 00:13:51,890
+the training examples according to their target
+classification.
+
+105
+00:13:52,900 --> 00:14:00,470
+So if all the examples have same target classification
+information is high and information gain is
+
+106
+00:14:00,470 --> 00:14:10,440
+high. Suppose, 90 percent belong to one class
+then also information is quiet high, but if
+
+107
+00:14:10,440 --> 00:14:16,070
+50 percent belongs to one class 50 percent
+to then information is low. The measure of
+
+108
+00:14:16,070 --> 00:14:22,000
+information gain which we will define is used
+to select among the candidate attributes at
+
+109
+00:14:22,000 --> 00:14:29,080
+each step while growing the decision tree.
+And the gain is a measure of how much we can
+
+110
+00:14:29,080 --> 00:14:34,850
+reduce uncertainty. If the examples belong
+to the same class there is no uncertainty,
+
+111
+00:14:34,850 --> 00:14:40,760
+if the examples us spread among the classes
+almost uniformly there is high uncertainty.
+
+112
+00:14:40,760 --> 00:14:48,050
+Now, based on this we will define entropy.
+First we will define entropy and in terms
+
+113
+00:14:48,050 --> 00:14:58,380
+of entropy we can define information gain.
+Entropy is a measure of purity, pure
+
+114
+00:14:58,380 --> 00:15:04,960
+of examples will have entropy
+0, it can also with thought about as a measure

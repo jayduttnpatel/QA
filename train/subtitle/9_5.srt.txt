@@ -1,0 +1,259 @@
+172
+00:20:00,870 --> 00:20:11,340
+Now, if you look at this slide it shows and
+the effect of post pruning on a particular
+
+173
+00:20:11,340 --> 00:20:13,980
+training set this solid line on the top.
+
+174
+00:20:14,610 --> 00:20:18,910
+This is the training error on the training
+data as you grow the tree.
+
+175
+00:20:19,170 --> 00:20:22,170
+So, tree is grown to 0, 1 to 10; 100.
+
+176
+00:20:22,380 --> 00:20:29,330
+Up to 100 node tree is grown and as you see
+the training accuracy is going on increasing,
+
+177
+00:20:29,330 --> 00:20:37,170
+whereas the test data on the validation set
+the accuracy is reducing after the initially
+
+178
+00:20:37,170 --> 00:20:43,270
+it is increasing after sometime it is reducing
+that is overfitting as occurred.
+
+179
+00:20:43,270 --> 00:20:49,670
+Now, after we have grown the full tree we
+had using that reduced error pruning algorithm
+
+180
+00:20:49,670 --> 00:20:55,390
+to post-prune and as we are post-pruning the
+number of nodes in the tree is decreasing
+
+181
+00:20:55,390 --> 00:21:02,160
+and we see that accuracy is increasing up
+to this point, when we have about 18 nodes.
+
+182
+00:21:02,160 --> 00:21:09,210
+The accuracy has increased after that further
+pruning does not give you better accuracy.
+
+183
+00:21:09,210 --> 00:21:11,390
+So, we stop here.
+
+184
+00:21:11,390 --> 00:21:17,490
+This is the effect of post-pruning on the
+accuracy of decision.
+
+185
+00:21:17,490 --> 00:21:28,281
+Now, we have discussed earlier that learning
+involves generalization or induction and it
+
+186
+00:21:28,281 --> 00:21:32,340
+is an ill-posed problem because you do not
+have sufficient data.
+
+187
+00:21:32,340 --> 00:21:41,750
+So, we need some bias to restrict the hypothesis
+space or put some preferences, so that you
+
+188
+00:21:41,750 --> 00:21:43,910
+want to prevent overfitting.
+
+189
+00:21:46,680 --> 00:21:49,800
+And there are three trade-offs which are involved.
+
+190
+00:21:51,580 --> 00:22:00,650
+These trade-off include these three factors
+the complexity of the hypothesis, a more complex
+
+191
+00:22:00,650 --> 00:22:09,740
+hypothesis done is more flexible it can accommodate
+more powerful functions, but more complex
+
+192
+00:22:09,740 --> 00:22:16,770
+hypothesis are may lead to overfitting.
+
+193
+00:22:16,770 --> 00:22:23,190
+The second get training size if training size
+is too small then using that training set
+
+194
+00:22:23,190 --> 00:22:26,800
+you cannot come up with the good function
+they may be overfitting.
+
+195
+00:22:26,800 --> 00:22:33,760
+The third is generalization error that is
+the true error the error on a on the population
+
+196
+00:22:33,760 --> 00:22:34,740
+or unseen instance.
+
+197
+00:22:35,240 --> 00:22:41,850
+So, we want to look at the trade-off involving
+these three factors the complexity of the
+
+198
+00:22:41,850 --> 00:22:46,940
+hypothesis, the size of the training set and
+the generalization error.
+
+199
+00:22:46,940 --> 00:22:55,910
+We find out that as N increase as training
+size increases the error decreases.
+
+200
+00:22:55,910 --> 00:23:03,600
+As complexity of hypothesis increases first,
+the error decreases then the error increase
+
+201
+00:23:03,600 --> 00:23:07,040
+as we saw in the decision tree as we are growing
+the decision tree.
+
+202
+00:23:07,040 --> 00:23:14,130
+Initially error is decreasing then it is increasing
+and as complexity of hypothesis increases
+
+203
+00:23:14,130 --> 00:23:19,580
+the training error decreases for some time
+and after sometime it may become 0 it become
+
+204
+00:23:19,580 --> 00:23:25,060
+statistic, but the test error or the true
+error first decreases and then increases and
+
+205
+00:23:25,060 --> 00:23:32,820
+this is when error starts increasing, this
+is the region where we say overfitting is
+
+206
+00:23:32,820 --> 00:23:35,460
+occurred, this is where overfitting as occurred.
+
+207
+00:23:36,580 --> 00:23:42,820
+So, overfitting is happening when a model
+captures the idiosyncrasies of the data rather
+
+208
+00:23:42,820 --> 00:23:45,340
+than the generalities in the data.
+
+209
+00:23:46,170 --> 00:23:50,740
+If you have too many parameters, if you have
+too many nodes in the decision tree, if you
+
+210
+00:23:50,740 --> 00:23:55,620
+have too many parameters overfitting can happen,
+for examples, we discussed about regression
+
+211
+00:23:55,620 --> 00:23:57,070
+in an earlier class.
+
+212
+00:23:57,070 --> 00:24:02,120
+If you have linear regression you have few
+parameter beta 0 and beta 1, beta 2, but if
+
+213
+00:24:02,120 --> 00:24:08,880
+you have second degree polynomial, fifth degree
+polynomial, tenth degree polynomial, you have
+
+214
+00:24:08,880 --> 00:24:15,660
+many more parameters and overfitting is more
+likely to happen because an Nth order polynomial
+
+215
+00:24:15,660 --> 00:24:18,000
+can intersect any N plus 1 data points.
+
+216
+00:24:18,000 --> 00:24:24,220
+If you have two few data points you should
+use a function which has fewer parameters
+
+217
+00:24:24,220 --> 00:24:27,500
+because otherwise overfitting can occur.
+
+218
+00:24:27,500 --> 00:24:33,230
+We have seen how overfitting can be dealt
+within decision tree in regression also overfitting
+
+219
+00:24:33,230 --> 00:24:34,400
+can occur.
+
+220
+00:24:34,400 --> 00:24:41,810
+And in regression or linear regression, overfitting
+can occur and if you want to deal with overfitting
+
+221
+00:24:41,810 --> 00:24:44,300
+there as some standard ways of dealing with
+overfitting.
+
+222
+00:24:44,300 --> 00:24:49,890
+First of all in any of any learning algorithm
+if you can get more data that is one way of
+
+223
+00:24:49,890 --> 00:24:50,830
+dealing with overfitting.
+
+224
+00:24:51,280 --> 00:24:58,250
+Now, second is the idea of cross validation
+using the validation set to decide you know
+
+225
+00:24:58,250 --> 00:24:59,270
+what is happening?
+
+226
+00:24:59,270 --> 00:25:03,870
+So, this is a very general approach to deal
+with overfitting and then we will later look

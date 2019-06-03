@@ -1,0 +1,178 @@
+41
+00:04:59,670 --> 00:05:09,100
+the class of the attribute that we have. Or
+we must stop if the examples that we have
+
+42
+00:05:09,100 --> 00:05:17,220
+got here too few, suppose D 5 is the set of
+examples we have and D 5 is a let us say 2,
+
+43
+00:05:17,220 --> 00:05:23,390
+we have two few examples then also we should
+stop. These are the three of the possible
+
+44
+00:05:23,390 --> 00:05:30,360
+stopping criteria.
+Next we will look at the decision about which
+
+45
+00:05:30,360 --> 00:05:48,560
+node to split on, rather which attribute to
+split on
+
+46
+00:05:48,560 --> 00:06:00,830
+that is the test that we will apply at a particular
+node. For example, here we have the choice
+
+47
+00:06:00,830 --> 00:06:07,880
+of using attributes A 2 or A 3, here we have
+the choice of using attributes A 1 A 2 or
+
+48
+00:06:07,880 --> 00:06:16,690
+A 3, which attribute should we choose. So,
+earlier we have talked about a bias criteria
+
+49
+00:06:16,690 --> 00:06:25,430
+which says that we want to choose a very simple
+function we prefer simpler functions or we
+
+50
+00:06:25,430 --> 00:06:31,610
+can say in the context of decision trees we
+prefer smaller decision trees. We could think
+
+51
+00:06:31,610 --> 00:06:39,030
+of a heuristic method of choosing the attribute
+so that based on this choice of the attribute
+
+52
+00:06:39,030 --> 00:06:48,500
+the decision tree is expected to be smaller.
+Another thing that we could do is that we
+
+53
+00:06:48,500 --> 00:06:54,931
+could think of, if you haves an examples here
+let us say D 2 and suppose it is A 2 class
+
+54
+00:06:54,931 --> 00:07:02,400
+problem D 2 may have mixture of positive and
+negative examples. If D 2 has only one type
+
+55
+00:07:02,400 --> 00:07:09,690
+of example we can stop at that node, if D
+2 has a mixture of positive and negative examples
+
+56
+00:07:09,690 --> 00:07:16,630
+we can looked at you know if you say that
+if you did stop a D 2 we will out put the
+
+57
+00:07:16,630 --> 00:07:24,970
+majority class. Suppose D 2 has 60 positive
+examples and 40 negative examples so if we
+
+58
+00:07:24,970 --> 00:07:31,280
+had stooped D 2 we could have said D 2 is
+positive and then we would have made an error
+
+59
+00:07:31,280 --> 00:07:37,870
+and that error is 40 percent.
+So, we can stop so that the split gives the
+
+60
+00:07:37,870 --> 00:07:52,810
+smallest error. And there are slightly more
+sophisticated methods based on which we can
+
+61
+00:07:52,810 --> 00:07:59,510
+do this which we will discuss presently. And
+if you have multi valid features, so this
+
+62
+00:07:59,510 --> 00:08:04,430
+is one of the things that we can do and we
+will see more on this.
+
+63
+00:08:04,430 --> 00:08:12,360
+Now in this example our attributes has two
+values, if the attributes have multiple values
+
+64
+00:08:12,360 --> 00:08:17,810
+then there are two choices; one is that we
+could take that attribute and suppose that
+
+65
+00:08:17,810 --> 00:08:24,500
+attribute has 4 values we could have 4 children.
+But you know sometimes the attribute can be
+
+66
+00:08:24,500 --> 00:08:32,630
+real valued and the number of children can
+be extremely large. If you have few children
+
+67
+00:08:32,630 --> 00:08:39,330
+then we could have multiple valued attributes
+or we could split those values into half so
+
+68
+00:08:39,330 --> 00:08:40,330
+that we have two children.
+
+69
+00:08:41,479 --> 00:08:50,260
+Suppose, a particular attribute has the value
+low, medium, high, so we could have 3 children
+
+70
+00:08:50,260 --> 00:08:55,180
+corresponding to these 3 values low, medium,
+high or we could have 2 children and then
+
+71
+00:08:55,180 --> 00:09:02,470
+we could say this is low and medium and this
+is high. If you use attribute A 1 as low and
+
+72
+00:09:02,470 --> 00:09:11,051
+medium comes here, in a feature below this
+node we could also again split and A 1 let
+
+73
+00:09:11,051 --> 00:09:17,500
+us say A 1 is low A 1 is medium.
+So, for valued attribute when we use less
+
+74
+00:09:17,500 --> 00:09:26,330
+number of splits we can use the attribute
+again to split that node. Now let us look
+
+75
+00:09:26,330 --> 00:09:46,880
+at how we choose an attribute some more principle
+criteria about which attribute to split on.
+
+76
+00:09:46,880 --> 00:10:08,600
+Now, let us look at this slide to look at
+two examples. We have some training examples,

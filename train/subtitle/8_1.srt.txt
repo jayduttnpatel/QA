@@ -1,0 +1,196 @@
+1
+00:00:17,949 --> 00:00:24,329
+Good Morning. Welcome to the next lecture
+of this class, in the module of Decision Trees.
+
+2
+00:00:24,929 --> 00:00:31,320
+In the last class we introduced decision tree,
+today we will look at some Learning Algorithm
+
+3
+00:00:31,320 --> 00:00:38,240
+to Learn Decision Tress. So let us recapitulate
+the basic outline of the greedy decision tree
+
+4
+00:00:38,240 --> 00:00:40,900
+algorithm that we discussed in the last class.
+
+5
+00:00:41,370 --> 00:00:49,070
+As we said that we start with number of training
+examples. Let us sat d is the set of training
+
+6
+00:00:49,070 --> 00:00:56,030
+examples. Now we want to decide a test for
+the route node of the decision tree.
+
+7
+00:00:56,360 --> 00:01:08,340
+So, we come up with we want to find out, suppose
+A is the set of attributes and then there
+
+8
+00:01:08,340 --> 00:01:15,850
+are P attributes. We want to check, we want
+to find one of the attributes based on which
+
+9
+00:01:15,850 --> 00:01:23,200
+we will make decision of the route node. So
+let A be the attribute that we have selected.
+
+10
+00:01:23,200 --> 00:01:28,821
+Now based on that attribute I will look at
+the different values of the attribute, suppose
+
+11
+00:01:28,821 --> 00:01:35,609
+A test two values and then corresponding to
+that we will have two children of A and the
+
+12
+00:01:35,609 --> 00:01:44,659
+set up training examples D which is associated
+initially with route A that will be split
+
+13
+00:01:44,659 --> 00:01:53,979
+into D 1 and D 2. Suppose, this particular
+branch corresponds to A equal to true, this
+
+14
+00:01:53,979 --> 00:02:00,810
+corresponds to A equal to false, so D 1 will
+contain those examples from which A 1 equal
+
+15
+00:02:00,810 --> 00:02:08,330
+to true, D 2 will contain those examples for
+which A equal to false.
+
+16
+00:02:09,080 --> 00:02:19,000
+Now at this test when we look at D 1 we have
+to either decide that we will stop growing
+
+17
+00:02:19,000 --> 00:02:24,430
+the decision tree at this point or we have
+to select an attribute and we recursively
+
+18
+00:02:24,430 --> 00:02:33,319
+go on. And the basic outline of the algorithm
+is given in the slide. Now as we discussed
+
+19
+00:02:33,319 --> 00:02:39,540
+in the last class there are two decisions
+we have to take. Now out of these two open
+
+20
+00:02:39,540 --> 00:02:46,870
+nodes we have to decide which one we should
+start with, and then we have to decide. If
+
+21
+00:02:46,870 --> 00:02:53,040
+we decide to start with a particular node
+we have to decide at that node whether we
+
+22
+00:02:53,040 --> 00:02:58,989
+should stop or whether we should grow the
+tree. If we grow the tree we have to decide
+
+23
+00:02:58,989 --> 00:03:04,329
+which attribute to split out. These are the
+choices that one has to make when on goes
+
+24
+00:03:04,329 --> 00:03:05,209
+for a decision tree.
+
+25
+00:03:05,890 --> 00:03:11,959
+Now, let us see how we take those decisions.
+First of all let us look at the decision about
+
+26
+00:03:11,959 --> 00:03:13,259
+when to stop.
+
+27
+00:03:16,950 --> 00:03:26,609
+There are several cases where you may have
+to stop, first of all if you considered that
+
+28
+00:03:26,609 --> 00:03:33,451
+there are three features or three attributes
+and at a particular point suppose you have
+
+29
+00:03:33,451 --> 00:03:40,260
+chosen A 1 the feature A 1 and based on that
+you have A 1 equal to first you have got this
+
+30
+00:03:40,260 --> 00:03:47,070
+split, and then suppose you have chosen A
+3 and based on A 3 equal to true you have
+
+31
+00:03:47,070 --> 00:03:52,829
+got this split, and here suppose you have
+chosen A 2 and based on A 2 equal to true
+
+32
+00:03:52,829 --> 00:03:58,819
+or false you have got this split.
+Suppose, here we have D 2 then here we have
+
+33
+00:03:58,819 --> 00:04:08,159
+D 3 and here we have D 4. Now, if it is the
+case that all the 3 attributes have been used
+
+34
+00:04:08,159 --> 00:04:17,910
+up; this particular example contain A 1 equal
+to falls D 2 equal to true A 2 equal to true.
+
+35
+00:04:17,910 --> 00:04:23,889
+All this things are given here, so we have
+no more attributes to split on because we
+
+36
+00:04:23,889 --> 00:04:29,460
+have exhausted the attributes. If you have
+exhausted the attributes we have to stop here,
+
+37
+00:04:29,460 --> 00:04:34,750
+we have though option.
+The second reason where we may stop if we
+
+38
+00:04:34,750 --> 00:04:42,170
+find at this place that all the examples in
+D 1 have the value plus or have the value
+
+39
+00:04:42,170 --> 00:04:50,880
+minus if all examples of D 1 have the same
+value for the target attribute we can immediately
+
+40
+00:04:50,880 --> 00:04:59,670
+stop their and label this node as a leaf node.
+Suppose all of them plus we will label with

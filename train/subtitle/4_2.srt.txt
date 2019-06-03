@@ -1,0 +1,190 @@
+40
+00:05:02,820 --> 00:05:04,840
+the average of that.
+
+41
+00:05:06,590 --> 00:05:09,290
+Then you can have sum of squares error.
+
+42
+00:05:18,979 --> 00:05:33,840
+In sum of squares error, you look at h (x)
+minus y whole square and then you take summation
+
+43
+00:05:33,840 --> 00:05:35,600
+and average of it.
+
+44
+00:05:36,100 --> 00:05:39,840
+So, this is sum of squares error.
+
+45
+00:05:40,840 --> 00:05:49,750
+So, absolute error and sum of squares errors
+are especially useful for regression problems.
+
+46
+00:05:49,750 --> 00:06:10,990
+For classification problem, you can look at
+the number of misclassifications, which can
+
+47
+00:06:10,990 --> 00:06:20,930
+be defined to be 1 by n sigma i equal to 1
+to n delta h (x), y.
+
+48
+00:06:21,220 --> 00:06:31,340
+So, delta is a function which returns 1, if
+h (x) and y are different and 0, if they are
+
+49
+00:06:31,340 --> 00:06:32,060
+same right.
+
+50
+00:06:32,340 --> 00:06:39,680
+So, this is the number of misclassifications
+divided by the number of examples on which
+
+51
+00:06:39,680 --> 00:06:40,840
+you have tested.
+
+52
+00:06:41,150 --> 00:06:45,570
+These are some differ measures of h.
+
+53
+00:06:46,099 --> 00:06:59,650
+Sometimes, especially in classification problem
+it is helpful to define a confusion matrix.
+
+54
+00:06:59,650 --> 00:07:09,349
+In a confusion matrix, you can denote; suppose
+you have a two class classification problem
+
+55
+00:07:09,349 --> 00:07:20,389
+and you have a set of examples on which you
+are testing and on this side you have the
+
+56
+00:07:20,389 --> 00:07:24,829
+true class and on this side you have the hypothesized
+class.
+
+57
+00:07:25,599 --> 00:07:34,629
+So, the true class can be positive or negative
+and hypothesized class can be positive or
+
+58
+00:07:34,629 --> 00:07:45,920
+negative and those training examples for which
+the true class is positive and you also hypothesize
+
+59
+00:07:45,920 --> 00:07:48,990
+positive they can be called TP.
+
+60
+00:07:48,990 --> 00:07:52,449
+The numbers of such examples are put in this
+box.
+
+61
+00:07:52,449 --> 00:08:01,440
+Similarly, TN stands for true negative, those
+examples where the true negative classes are
+
+62
+00:08:01,440 --> 00:08:06,340
+also output as negative by your learning algorithm
+will come here.
+
+63
+00:08:06,340 --> 00:08:12,870
+So, these are the zones where your learning
+algorithm predicts correctly, but your learning
+
+64
+00:08:12,870 --> 00:08:19,620
+algorithm can also make mistakes and there
+are two types of mistakes; false positive
+
+65
+00:08:19,620 --> 00:08:26,650
+means the examples are actually negative your
+learning algorithm is wrongly classifying
+
+66
+00:08:26,650 --> 00:08:33,909
+them as positive, and false negative means
+the learning algorithm erroneously marks as
+
+67
+00:08:33,909 --> 00:08:37,700
+negative, those examples which should have
+been positive.
+
+68
+00:08:37,700 --> 00:08:44,350
+So, this is a confusion matrix and you can
+have a confusion matrix if you have more than
+
+69
+00:08:44,350 --> 00:08:49,760
+two classes also, for example, if you have
+three classes as an output to a classification
+
+70
+00:08:49,760 --> 00:08:56,200
+problem you will have 3 by 3 confusion matrix
+and the diagonals diagonal entries are the
+
+71
+00:08:56,200 --> 00:09:03,950
+ones, where the learning algorithm is giving
+the correct result and the non-diagonal entries
+
+72
+00:09:03,950 --> 00:09:07,350
+are where the learning algorithm is giving
+the wrong result.
+
+73
+00:09:07,660 --> 00:09:15,100
+Now, given this entries in the confusion matrix
+accuracy can be defined to be.
+
+74
+00:09:15,100 --> 00:09:21,100
+So, TP and TN are the correct results.
+
+75
+00:09:21,100 --> 00:09:28,940
+So, accuracy is TP plus TN divide by all the
+examples.
+
+76
+00:09:30,640 --> 00:09:36,700
+So, let us say that sum of this column is
+P; sum of this column is N.
+
+77
+00:09:36,830 --> 00:09:46,020
+So, we can say it is a TP plus TN by P plus
+N. Along with accuracy, we are sometimes interested
+
+78
+00:09:46,020 --> 00:09:55,350
+in other measures, for example, precision
+is defined to be out of the examples that
+
+79
+00:09:55,350 --> 00:10:00,790
+the learning algorithm marks as positive,
+how many are correctly positive?

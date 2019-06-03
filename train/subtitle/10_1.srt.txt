@@ -1,0 +1,255 @@
+1
+00:00:18,140 --> 00:00:21,820
+Hello everyone, welcome to the first tutorial
+class of this course.
+
+2
+00:00:22,080 --> 00:00:26,520
+I am Anirban Santara I am a PhD student in
+the Department of Computer Science and Engineering
+
+3
+00:00:26,520 --> 00:00:29,420
+of IIT, Kharagpur and a TA for this course.
+
+4
+00:00:29,759 --> 00:00:37,230
+So, these tutorial classes I am going to take
+you through step by step hands on problem
+
+5
+00:00:37,230 --> 00:00:39,350
+solving in the area of Machine Learning.
+
+6
+00:00:39,559 --> 00:00:43,829
+In the first tutorial class, we are going
+to concentrate on Linear regression, Logistic
+
+7
+00:00:43,829 --> 00:00:50,170
+regression and Decision trees, and we will
+use decision trees for regression and classification
+
+8
+00:00:50,170 --> 00:00:56,359
+and these are going to be the first steps
+that will give you picture or give you idea
+
+9
+00:00:56,359 --> 00:01:02,589
+of how problem solving really occurs in real
+life machine learning applications.
+
+10
+00:01:02,589 --> 00:01:11,280
+The platform which we are going to use is
+python based tool box called Scikits learn.
+
+11
+00:01:11,280 --> 00:01:16,870
+This particular tool box is very popular in
+the industry as well as in the academia and
+
+12
+00:01:16,870 --> 00:01:22,900
+has implementations of huge number of machine
+learning algorithms, and we are going to use
+
+13
+00:01:22,900 --> 00:01:26,540
+this particular library in most parts of our
+course.
+
+14
+00:01:26,950 --> 00:01:33,970
+So, in this particular tutorial we are going
+to use two things from the linear model part
+
+15
+00:01:33,970 --> 00:01:36,470
+of the Scikit learn tool box.
+
+16
+00:01:37,000 --> 00:01:40,800
+The first thing will be linear regression,
+second will be logistic regression.
+
+17
+00:01:41,090 --> 00:01:46,321
+And then, from the tree module of this particular
+tool box we are going to use decision tree
+
+18
+00:01:46,321 --> 00:01:48,461
+regressor and decision tree classifier.
+
+19
+00:01:48,830 --> 00:01:52,150
+Let us come to Linear regression first.
+
+20
+00:01:52,660 --> 00:01:58,880
+Linear regression is all about approximating
+linear function on your data.
+
+21
+00:01:59,230 --> 00:02:06,680
+So, given a data you are going to fit model
+and this model is limited by the family of
+
+22
+00:02:06,680 --> 00:02:12,780
+linear functions of the input features.
+
+23
+00:02:12,780 --> 00:02:18,810
+The first thing which we will do in this tutorial
+is which create a synthetic dataset.
+
+24
+00:02:18,810 --> 00:02:20,910
+So, why do we use this synthetic dataset?
+
+25
+00:02:21,140 --> 00:02:22,020
+Just to keep things simple.
+
+26
+00:02:22,260 --> 00:02:27,940
+So, our synthetic dataset has been made using
+the function which you can see on the slide.
+
+27
+00:02:28,310 --> 00:02:30,150
+So, it is a very easy function.
+
+28
+00:02:30,570 --> 00:02:36,370
+And the third part of the function is actually
+Gaussian noise which gives some randomness
+
+29
+00:02:36,370 --> 00:02:42,060
+to the data and a feel of what real life data
+sets actually look like.
+
+30
+00:02:42,060 --> 00:02:48,870
+The first step in any machine learning problem
+solving is to visualize the dataset and this
+
+31
+00:02:48,870 --> 00:02:55,480
+actually gives nice picture of how complex
+the problem actually is and like how to exactly
+
+32
+00:02:55,480 --> 00:02:56,800
+go about solving the problem.
+
+33
+00:02:57,080 --> 00:02:58,780
+So, visualization is important.
+
+34
+00:03:00,520 --> 00:03:07,980
+The second step in any machine learning application
+is to split the dataset which is available
+
+35
+00:03:07,980 --> 00:03:14,250
+to us into 3 fragments - the Training data
+set, the Validation set and the Test set.
+
+36
+00:03:14,250 --> 00:03:21,330
+So, the protocol is to train the model on
+the training set and after every episode of
+
+37
+00:03:21,330 --> 00:03:27,240
+training in order to evaluate how good the
+algorithm would actually generalize in the
+
+38
+00:03:27,240 --> 00:03:35,120
+real world we are going to evaluate the model
+on the validation set, and after every episode
+
+39
+00:03:35,120 --> 00:03:40,040
+of learning we go about doing one phase of
+evaluation on the validation set and we come
+
+40
+00:03:40,040 --> 00:03:42,780
+back and tune the hyper parameters of the
+system.
+
+41
+00:03:43,300 --> 00:03:49,260
+Like, we can change the kind of features we
+are using, we may like to change certain model
+
+42
+00:03:49,260 --> 00:03:55,360
+architectures and say number of nodes in odd
+number of trees in an ensemble.
+
+43
+00:03:55,360 --> 00:04:00,220
+So, all number of nodes in a neural network
+and these things are the hyper parameters
+
+44
+00:04:00,220 --> 00:04:05,290
+which are not optimized directly by the learning
+algorithm, but those hyper parameters have
+
+45
+00:04:05,290 --> 00:04:11,760
+to be observed based on the models performance
+on the validation data or how good it actually
+
+46
+00:04:11,760 --> 00:04:13,280
+generalizes to real world.
+
+47
+00:04:13,400 --> 00:04:15,480
+So, that is why we need the validation set.
+
+48
+00:04:15,760 --> 00:04:21,640
+And finally, after all the training has been
+done, all the tuning of the architecture has
+
+49
+00:04:21,640 --> 00:04:29,150
+been done, we take the test set and we find
+the performance of the model on the test.
+
+50
+00:04:29,150 --> 00:04:35,270
+And this particular performance which we get,
+it is actually supposed to be reported as
+
+51
+00:04:35,270 --> 00:04:42,180
+a measure of actual generalization of the
+model because this particular test set was
+
+52
+00:04:42,180 --> 00:04:48,180
+not show to the model at any phase of its
+training - neither during its parameter learning
+
+53
+00:04:48,180 --> 00:04:50,100
+nor during its hyper parameter tuning.
+
+54
+00:04:50,260 --> 00:05:00,220
+So, this actually gives a feel of what set
+of unseen examples or unseen cases may look like

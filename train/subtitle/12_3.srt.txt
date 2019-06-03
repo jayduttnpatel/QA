@@ -1,0 +1,202 @@
+60
+00:10:05,010 --> 00:10:13,050
+out the average and predict it as the estimate
+of y t. This is the basic k nearest neighbor
+
+61
+00:10:13,050 --> 00:10:22,050
+algorithm which is very simple. Now, let us
+just look at the one nearest neighbor.
+
+62
+00:10:22,050 --> 00:10:30,029
+For one nearest neighbor, let us see if we
+look at this slide. Here these points are
+
+63
+00:10:30,029 --> 00:10:38,160
+the different instances. In the instance phase
+right now depending on where your test point
+
+64
+00:10:38,160 --> 00:10:47,270
+will be if you test point will be here, the
+closest point to this is this point, right.
+
+65
+00:10:47,270 --> 00:10:58,490
+So, in this phase we have different points.
+The classification in this phase for one nearest
+
+66
+00:10:58,490 --> 00:11:08,480
+neighbor is coming from the may be most nearby
+point. Therefore, you can think of we can
+
+67
+00:11:08,480 --> 00:11:14,209
+divide space into regions.
+So, this blue region, this violet region,
+
+68
+00:11:14,209 --> 00:11:21,990
+purple or whatever purple region corresponds
+to those places in phase for which this is
+
+69
+00:11:21,990 --> 00:11:29,829
+the nearest neighbor. This region is the region
+which is the nearest neighbor. So, we have
+
+70
+00:11:29,829 --> 00:11:38,180
+divided that the phase into different regions
+and this particular type division or this
+
+71
+00:11:38,180 --> 00:11:43,060
+structure data structure called a Voronoi
+diagram. In this Voronoi diagram which can
+
+72
+00:11:43,060 --> 00:11:51,089
+be constructed by you know you take any two
+neighboring points and to find a perpendicular
+
+73
+00:11:51,089 --> 00:11:55,960
+by sector of the line jointing the two points
+that will give you separations or phase.
+
+74
+00:11:55,960 --> 00:12:03,180
+So, like this you can draw the Voronoi diagram
+and in this Voronoi diagram, in this region,
+
+75
+00:12:03,180 --> 00:12:07,920
+this is the nearest point. For this region,
+all points in this region, this is the neighboring
+
+76
+00:12:07,920 --> 00:12:17,060
+point. So, this captures the decision boundary
+of one nearest neighbor and as we have seen
+
+77
+00:12:17,060 --> 00:12:23,430
+if you look at this slide, this is basic k
+nearest neighbor classification which we have
+
+78
+00:12:23,430 --> 00:12:30,110
+already discussed in the training time.
+Training method is to save the training examples
+
+79
+00:12:30,110 --> 00:12:39,450
+at prediction. You find the k training examples
+that are closest to the test example x. For
+
+80
+00:12:39,450 --> 00:12:49,360
+classification you predict the most frequent
+class among those k y i values for regression,
+
+81
+00:12:49,360 --> 00:12:55,519
+you predict the average among the y is. So,
+this is a very simple algorithm.
+
+82
+00:12:55,519 --> 00:13:02,490
+So, what we will discuss as certain points
+related to this algorithm and how to improve
+
+83
+00:13:02,490 --> 00:13:09,480
+the algorithm. Some of the issue that will
+discuss is when we use k nearest neighbor
+
+84
+00:13:09,480 --> 00:13:18,170
+where k is greater than 1, there is possibility
+of giving different ways to this k neighbors.
+
+85
+00:13:18,170 --> 00:13:25,709
+So, we can weight different examples may be
+because of distance second issue is how to
+
+86
+00:13:25,709 --> 00:13:32,080
+measure closeness. What type distance function
+one can use today, we will discuss that. We
+
+87
+00:13:32,080 --> 00:13:37,790
+can use Euclidean distance function as one
+of the metric, but other distance functions
+
+88
+00:13:37,790 --> 00:13:41,160
+are possible.
+The third issue which is important which we
+
+89
+00:13:41,160 --> 00:13:50,160
+will discuss later is how to find the closest
+points quickly at run time as we have seen
+
+90
+00:13:50,160 --> 00:13:56,670
+such lazy algorithms during training time.
+We do not learn a model at prediction time.
+
+91
+00:13:56,670 --> 00:14:02,470
+We get a point and find the nearest instances.
+If we do not use a good data structure or
+
+92
+00:14:02,470 --> 00:14:09,209
+a good method to store the examples, we have
+to go through all the training examples, find
+
+93
+00:14:09,209 --> 00:14:15,040
+the distance and find the smallest of them
+and if the training set is large, this may
+
+94
+00:14:15,040 --> 00:14:22,190
+take considerable time. One issue of concern
+is to set up data structures, so that this
+
+95
+00:14:22,190 --> 00:14:27,020
+can be done efficiently which we will not
+discuss today, but we will get some ideas
+
+96
+00:14:27,020 --> 00:14:28,140
+in later classes.
+
+97
+00:14:31,220 --> 00:14:39,060
+So, first we look at a standard distance function
+called the Euclidean distance function. In
+
+98
+00:14:39,070 --> 00:14:40,810
+Euclidean distance function, what we do?
+
+99
+00:14:41,320 --> 00:14:58,699
+Suppose each instance x has n attributes x
+i 1, x i 2, x i n and suppose we have n attributes
+
+100
+00:14:58,699 --> 00:15:12,829
+and between two instances x i and x j, x j
+1, x j 2, x j n. So, given these two instances,

@@ -1,0 +1,189 @@
+262
+00:30:05,990 --> 00:30:11,900
+Based on the training examples and the bias
+that you have imposed, there are different
+
+263
+00:30:11,900 --> 00:30:17,650
+types of bias for example, one classical bias
+is a bias called Occam’s Razor.
+
+264
+00:30:17,650 --> 00:30:22,390
+Occam’s razor states that you will prefer
+the simplest hypothesis.
+
+265
+00:30:22,390 --> 00:30:29,390
+So, this is a principle or this is a philosophical
+principle that if something can be described
+
+266
+00:30:29,390 --> 00:30:37,940
+in a short language that hypothesis is to
+be preferred over a more complex hypothesis.
+
+267
+00:30:37,940 --> 00:30:44,660
+And there are other types of inductive bias
+like minimum description length, like maximum
+
+268
+00:30:44,660 --> 00:30:51,860
+margin etcetera which will be only which can
+be explained, when we talk about the specific
+
+269
+00:30:51,860 --> 00:30:54,350
+algorithms where such biases is used.
+
+270
+00:30:54,350 --> 00:30:59,740
+So, in machine learning, you have to come
+up with a good hypothesis space, you have
+
+271
+00:30:59,740 --> 00:31:04,220
+to find an algorithm that works well with
+the hypothesis space, you have to come up
+
+272
+00:31:04,220 --> 00:31:10,050
+with the hypothesis algorithm that works well
+with the hypothesis space, and outputs on
+
+273
+00:31:10,050 --> 00:31:15,950
+hypothesis that is expected to do well over
+future data points.
+
+274
+00:31:15,950 --> 00:31:23,020
+And you have to understand what is the confidence
+that you have on the hypothesis and these
+
+275
+00:31:23,020 --> 00:31:24,820
+are the things that we will discuss.
+
+276
+00:31:25,610 --> 00:31:31,310
+So, machine learning coming up with a function
+is all about doing generalization.
+
+277
+00:31:32,550 --> 00:31:35,970
+And when you are doing generalization, you
+can make some errors.
+
+278
+00:31:36,800 --> 00:31:40,840
+And the errors are of two types, bias errors
+and variance errors.
+
+279
+00:31:40,980 --> 00:31:46,760
+So, bias as we saw is a restriction on the
+hypothesis space or the preference in choosing
+
+280
+00:31:46,760 --> 00:31:47,680
+hypothesis.
+
+281
+00:31:48,180 --> 00:31:51,700
+By deciding a particular hypothesis, you impose
+a bias.
+
+282
+00:31:52,100 --> 00:31:59,880
+So, this is error due to incorrect assumptions
+or restrictions on the hypothesis space, the
+
+283
+00:31:59,880 --> 00:32:02,840
+error introduced by that is called bias error.
+
+284
+00:32:02,840 --> 00:32:10,690
+Variance error is introduced when you have
+a small test set, so variance error means
+
+285
+00:32:10,690 --> 00:32:15,330
+the model that you estimate from different
+training sets will differ from each other.
+
+286
+00:32:15,330 --> 00:32:21,280
+If you come up with the model from some 50
+training set, 50 data points, and you take
+
+287
+00:32:21,280 --> 00:32:25,150
+another 50 data points on the distribution
+you can come up with the very different model,
+
+288
+00:32:25,150 --> 00:32:30,410
+then we say that there is a variance among
+the results.
+
+289
+00:32:31,850 --> 00:32:38,510
+And this point, we will discuss later when
+we talk about different learning algorithms.
+
+290
+00:32:38,510 --> 00:32:43,460
+This is a very important concept, but we will
+talk about it when we talk about the algorithms,
+
+291
+00:32:43,460 --> 00:32:46,520
+this is overfitting and underfitting.
+
+292
+00:32:46,520 --> 00:32:52,070
+You may come up with the hypothesis that does
+well over the training examples, but does
+
+293
+00:32:52,070 --> 00:32:57,350
+very poorly over the test examples, and then
+we say overfitting has occurred.
+
+294
+00:32:57,350 --> 00:33:01,630
+Overfitting comes from using very complex
+functions so you are using too few training
+
+295
+00:33:01,630 --> 00:33:02,290
+data.
+
+296
+00:33:03,200 --> 00:33:08,780
+And the reverse of overfitting is underfitting,
+if you have a very simple function then it
+
+297
+00:33:08,780 --> 00:33:11,770
+cannot capture all the nuances of the data.
+
+298
+00:33:11,770 --> 00:33:18,140
+So, we will talk about details of overfitting
+and underfitting when we talk about specific
+
+299
+00:33:18,140 --> 00:33:18,960
+algorithms.
+
+300
+00:33:19,140 --> 00:33:21,060
+With this, we come to the end of this module.
+
+301
+00:33:21,060 --> 00:33:21,670
+Thank you.

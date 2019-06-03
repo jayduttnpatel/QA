@@ -1,0 +1,176 @@
+1
+00:00:18,380 --> 00:00:21,520
+Hello friends, welcome to the first tutorial
+session of this course.
+
+2
+00:00:21,890 --> 00:00:26,220
+I am Anirban Santara, I am doing my PhD in
+Machine Learning, and I am a teaching assistant
+
+3
+00:00:26,220 --> 00:00:26,920
+of this course.
+
+4
+00:00:27,510 --> 00:00:34,640
+And in these tutorial sessions, which we will
+hold one every week, we will discuss the topics
+
+5
+00:00:34,640 --> 00:00:39,650
+that have been covered in the particular week,
+and do a quick summary of all the topics that
+
+6
+00:00:39,650 --> 00:00:40,890
+have been covered in this week.
+
+7
+00:00:41,330 --> 00:00:45,720
+And then, we will learn how to solve questions
+and these questions will be the ones that
+
+8
+00:00:45,720 --> 00:00:50,390
+you would expect in the assignments and in
+the final exams, all right.
+
+9
+00:00:50,390 --> 00:00:56,089
+So, in this first tutorial class, we will
+be taking the following topics.
+
+10
+00:00:56,089 --> 00:00:59,309
+So, let us go ahead.
+
+11
+00:00:59,730 --> 00:01:11,229
+So, the topics that we will be discussing
+today will are supervised and versus unsupervised
+
+12
+00:01:17,180 --> 00:01:18,000
+learning.
+
+13
+00:01:21,850 --> 00:01:40,360
+Then different kinds of features - categorical
+versus continuous features; different kinds
+
+14
+00:01:40,360 --> 00:01:49,540
+of supervise learning problems - regression
+versus classification.
+
+15
+00:01:52,110 --> 00:02:02,840
+Then we will go ahead to bias variance trade
+off -bias versus variance and we will study
+
+16
+00:02:02,840 --> 00:02:07,409
+how bias and variance they vary with different
+parameters of the learning algorithm.
+
+17
+00:02:07,409 --> 00:02:15,430
+And then we will study how to control, and
+how to you know detect and analyze generalization
+
+18
+00:02:15,430 --> 00:02:27,930
+performance - generalization performance of
+a learning algorithm of a learning algorithm.
+
+19
+00:02:27,930 --> 00:02:38,220
+So, let us first take up the first topic of
+today’s tutorial class that is supervised
+
+20
+00:02:38,220 --> 00:02:39,920
+versus unsupervised learning.
+
+21
+00:02:41,950 --> 00:02:58,310
+Supervised versus Unsupervised learning; so
+this supervised and unsupervised learning
+
+22
+00:02:58,310 --> 00:03:05,930
+are two major broad categories of the machine
+learning algorithms, the only difference,
+
+23
+00:03:05,930 --> 00:03:11,290
+so whenever you have been given a question,
+and asked whether a particular learning algorithm
+
+24
+00:03:11,290 --> 00:03:12,330
+has been described.
+
+25
+00:03:12,870 --> 00:03:21,650
+So, you have been so there is a big paragraph
+describing a particular scenario, and you
+
+26
+00:03:21,650 --> 00:03:27,550
+have to identify what kind of learning algorithm
+is going on in this particular scenario all
+
+27
+00:03:27,550 --> 00:03:28,170
+right.
+
+28
+00:03:28,550 --> 00:03:33,040
+So, the first thing, whether it is supervised
+or unsupervised, so the first thing that you
+
+29
+00:03:33,040 --> 00:03:39,200
+are going to look for is the kind of training
+examples that have been presented to you.
+
+30
+00:03:39,200 --> 00:03:58,640
+So, supervised learning always comes when
+wait, so let me first, supervised learning.
+
+31
+00:04:00,440 --> 00:04:10,220
+So, in supervised learning, the training examples
+will always come as pairs.
+
+32
+00:04:10,990 --> 00:04:18,470
+So, the pair so these pairs will be the first
+term will always be the input, and then you
+
+33
+00:04:18,470 --> 00:04:19,930
+will have the target value.
+
+34
+00:04:20,500 --> 00:04:35,600
+So, this is the true value and this is the
+description of the present case.
+
+35
+00:04:36,540 --> 00:04:50,060
+So, it could be like an image and the true
+value may be whether it is happy or sad; so
+
+36
+00:04:50,060 --> 00:04:54,520
+it is already given that this particular image
+describes a happy face.
+
+37
+00:04:54,900 --> 00:05:01,880
+And so the input examples will always come
+as pairs of input and target values.

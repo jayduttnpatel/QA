@@ -1,0 +1,108 @@
+173
+00:20:08,890 --> 00:20:10,430
+examples are used for the training.
+
+174
+00:20:10,960 --> 00:20:19,590
+So, we will have K experiments and after this
+K experiments are over the test score that
+
+175
+00:20:19,590 --> 00:20:23,309
+we will output is average of the error of
+this K rounds.
+
+176
+00:20:23,309 --> 00:20:31,280
+So, we are using the different parts of the
+data for testing in the different rounds.
+
+177
+00:20:31,280 --> 00:20:34,540
+So, this is called K-fold cross validation.
+
+178
+00:20:34,540 --> 00:20:40,260
+This is illustrated by this picture here;
+this is round 1, round 2, round 3, round 10.
+
+179
+00:20:40,260 --> 00:20:47,280
+There are 10 splits of the data in this picture
+and in round 1; suppose the accuracy is 93
+
+180
+00:20:47,280 --> 00:20:54,840
+percent, round 2; 90 percent, round 3, 91
+percent and so on till round 10; 95 percent
+
+181
+00:20:54,840 --> 00:20:59,220
+and the final accuracy is the average of the
+accuracies in all the rounds.
+
+182
+00:20:59,220 --> 00:21:05,770
+This is called K-fold cross validation which
+makes use of limited data, so that the training
+
+183
+00:21:05,770 --> 00:21:10,020
+and testing can be done at all points.
+
+184
+00:21:10,020 --> 00:21:15,420
+Now, in machine learning as we will see now
+and subsequently there is always a trade-off,
+
+185
+00:21:15,420 --> 00:21:23,870
+there is a trade-off between complex hypotheses,
+complex representations and simpler hypotheses.
+
+186
+00:21:23,870 --> 00:21:29,250
+Complex hypotheses can fit the training data
+well, they are more flexible, but they have
+
+187
+00:21:29,250 --> 00:21:34,980
+a tendency to over fit the training data and
+may work poorly on the test data especially
+
+188
+00:21:34,980 --> 00:21:37,400
+if the size of the training data is small.
+
+189
+00:21:37,980 --> 00:21:44,870
+On the other hand simpler hypotheses may generalize
+better, but they may not be able to represent
+
+190
+00:21:44,870 --> 00:21:51,710
+complex functions, if your training data is
+large then the generalization error will decrease
+
+191
+00:21:51,710 --> 00:21:53,650
+and you can go for complex hypotheses.
+
+192
+00:21:53,910 --> 00:22:01,370
+With this, we come to the end of the introduction
+module and with this brief introduction and
+
+193
+00:22:01,370 --> 00:22:04,410
+the different issues that we have touched
+upon.
+
+194
+00:22:04,410 --> 00:22:09,160
+In the next module, we will start with the
+description of some of the learning outputs.
+
+195
+00:22:09,160 --> 00:22:10,350
+Thank you very much.

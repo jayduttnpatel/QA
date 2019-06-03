@@ -1,0 +1,192 @@
+1
+00:00:18,840 --> 00:00:25,240
+Good morning, welcome to the course on Introduction
+to Machine Learning. Today, we will start
+
+2
+00:00:25,240 --> 00:00:30,270
+the second module of the course, which is
+introduction to the Linear Regression and
+
+3
+00:00:30,270 --> 00:00:35,730
+Decision trees. These are some of the simplest
+machine learning algorithms; and with this,
+
+4
+00:00:35,730 --> 00:00:41,540
+we will start looking at the machine learning
+algorithms. In first part of this module,
+
+5
+00:00:41,540 --> 00:00:44,460
+we will talk about linear regression.
+
+6
+00:00:44,810 --> 00:00:55,510
+We have already explained what is regression,
+so regression is a supervise learning problem,
+
+7
+00:00:55,510 --> 00:01:06,060
+where your given examples of instances whose
+X and Y value are given, and you have to learn
+
+8
+00:01:06,060 --> 00:01:13,780
+a function, so that given an unknown X, you
+have to predict Y. So, you want a function
+
+9
+00:01:13,780 --> 00:01:25,819
+which predicts given X predicts Y; and for
+regression, Y is continuous. So, this
+
+10
+00:01:25,819 --> 00:01:32,310
+is the regression problem. And there are many
+modules that can be used for regression that
+
+11
+00:01:32,310 --> 00:01:40,350
+is many types of functions can be used. The
+simplest type of function is a linear function.
+
+12
+00:01:40,350 --> 00:01:45,290
+Now, X can comprise of a single future or
+multiple futures.
+
+13
+00:01:46,039 --> 00:01:55,210
+For simplicity, we will first talk about simple
+regression where X is a single feature. We
+
+14
+00:01:55,210 --> 00:02:04,479
+will also discuss multiple regressions, where
+X comprises a number of features. So, if x
+
+15
+00:02:04,479 --> 00:02:13,930
+is a single feature we can think of the training
+examples can be plotted as suppose this is
+
+16
+00:02:13,930 --> 00:02:21,130
+the value of X, and this is the value of Y,
+and let us assume that both X and Y are continuous
+
+17
+00:02:21,130 --> 00:02:26,550
+valued. So, each training example is a point
+in this space, for this value of X this is
+
+18
+00:02:26,550 --> 00:02:32,269
+the value of Y; for this value of X, this
+is the value of Y, so like that you may have
+
+19
+00:02:32,269 --> 00:02:42,030
+different points in the feature space.
+And what you are required to do is find a
+
+20
+00:02:42,030 --> 00:02:48,739
+function, so that given an arbitrary unknown
+X you can predict Y. Now the function can
+
+21
+00:02:48,739 --> 00:02:57,099
+have different forms, for example, the function
+could be like this, or the function could
+
+22
+00:02:57,099 --> 00:03:08,690
+be like this, or the function could be like
+this. So, there are different types of functions
+
+23
+00:03:08,690 --> 00:03:14,609
+which are possible. In linear regression,
+we assume that the function is linear like
+
+24
+00:03:14,609 --> 00:03:22,739
+this blue line here; and out of the different
+linear functions possible, we want to find
+
+25
+00:03:22,739 --> 00:03:31,219
+one that optimizes certain criteria. So, if
+we look, but apart from linear regression,
+
+26
+00:03:31,220 --> 00:03:34,100
+we could have other forms of regression.
+
+27
+00:03:34,379 --> 00:03:42,860
+For example, if you look at the slide here,
+in this particular picture, in the first diagram,
+
+28
+00:03:42,860 --> 00:03:50,739
+the blue circles denote the different instances
+in the training data. And suppose the green
+
+29
+00:03:50,739 --> 00:03:58,859
+line is the actual function, the actual function
+from which the points were generated. So,
+
+30
+00:03:58,859 --> 00:04:05,069
+in regression, you are given this blue points
+not the green line, and you are asked to come
+
+31
+00:04:05,069 --> 00:04:12,750
+up with the function f. Now let us say that
+if you look at the diagram below, suppose
+
+32
+00:04:12,750 --> 00:04:18,690
+these blue points are the lines, and you want
+to come up with a function, suppose the red
+
+33
+00:04:18,690 --> 00:04:21,630
+line is the function that you have come up
+with.
+
+34
+00:04:22,710 --> 00:04:29,611
+Now we want to find out how could is the line
+with respect to the training examples. So
+
+35
+00:04:29,611 --> 00:04:35,979
+one of the ways we can measure how good is
+the line is to define the error of the line.
+
+36
+00:04:35,979 --> 00:04:41,370
+Now if you look at the blue points, so here
+there are three blue points, we can define
+
+37
+00:04:41,370 --> 00:04:47,490
+the error; one way of defining the error is
+we find the distance of the point from this
+
+38
+00:04:47,490 --> 00:04:56,330
+red line, and we can take the squared distance
+from each point to the line, and take the
+
+39
+00:04:56,330 --> 00:05:01,930
+sum of squared errors.
+The sum of squared errors is one measure of

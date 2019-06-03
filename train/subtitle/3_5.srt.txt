@@ -1,0 +1,194 @@
+172
+00:20:01,800 --> 00:20:09,550
+If you say that you want a function, which
+is simpler then you are putting a preference
+
+173
+00:20:09,550 --> 00:20:10,910
+bias.
+
+174
+00:20:10,910 --> 00:20:16,140
+So, we will talk about this later.
+
+175
+00:20:16,140 --> 00:20:27,800
+So, given these definitions in a learning
+problem, the input is a training set let us
+
+176
+00:20:27,800 --> 00:20:36,000
+say S, S is a subset of the instance space,
+X is the instance space, which comprises of
+
+177
+00:20:36,000 --> 00:20:42,530
+all possible instances and the training examples
+that you are given is a subset of this.
+
+178
+00:20:42,530 --> 00:20:51,560
+And output, you are required to output, a
+hypothesis small h belonging to the hypothesis
+
+179
+00:20:51,560 --> 00:20:56,230
+space capital H, so this is for a classification
+problem.
+
+180
+00:20:56,230 --> 00:21:13,290
+So, let me rub the board before we proceed.
+
+181
+00:21:13,290 --> 00:21:29,550
+Now, let us look at hypothesis space.
+
+182
+00:21:29,550 --> 00:21:34,710
+Now suppose we look at functions just to take
+an example.
+
+183
+00:21:34,710 --> 00:21:37,790
+We take features which are Boolean.
+
+184
+00:21:37,790 --> 00:21:47,390
+Suppose, x 1, x 2, x 3, x 4 are four features,
+and they are Boolean features the value of
+
+185
+00:21:47,390 --> 00:21:49,850
+the features are true or false.
+
+186
+00:21:49,850 --> 00:22:01,270
+Now, if there are four Boolean features, and
+how many possible instances can you have,
+
+187
+00:22:01,270 --> 00:22:07,390
+in a particular instance x 1 can be true or
+false 0 or 1, x 2 can be 0 or 1, x 3 can be
+
+188
+00:22:07,390 --> 00:22:09,780
+0 or 1, x 4 can be 0 or 1.
+
+189
+00:22:09,780 --> 00:22:16,520
+So, there is 1 to the power 4 or 16 possible
+instances.
+
+190
+00:22:16,520 --> 00:22:27,100
+So, number of possible instances is 2 to the
+power 4 or 16.
+
+191
+00:22:27,100 --> 00:22:38,250
+Now how many possible function are there,
+how many Boolean functions are possible.
+
+192
+00:22:38,250 --> 00:22:51,420
+So, what is a function, a function will classify
+some of the points as positive others as negative
+
+193
+00:22:51,420 --> 00:22:59,910
+out of the 16 points, so that means the number
+of functions is the number of possible subsets
+
+194
+00:22:59,910 --> 00:23:02,250
+of this 16 instances.
+
+195
+00:23:02,250 --> 00:23:09,750
+So, how many possible subsets are there, there
+are 2 to the power 16 subsets or 2 to the
+
+196
+00:23:09,750 --> 00:23:12,610
+power 2 to the power 4 subsets.
+
+197
+00:23:12,610 --> 00:23:19,250
+Instead of 4 Boolean variables as feature,
+if you had N Boolean features, then the number
+
+198
+00:23:19,250 --> 00:23:26,890
+of possible instances will be 2 to the power
+N. And number of possible function will be
+
+199
+00:23:26,890 --> 00:23:30,090
+2 to the power 2 to the power N.
+
+200
+00:23:30,600 --> 00:23:34,040
+So, this is the size of the hypothesis space.
+
+201
+00:23:34,590 --> 00:23:42,780
+As you can see the hypothesis space is very
+large, and it is not possible to look at every
+
+202
+00:23:42,780 --> 00:23:48,500
+hypothesis individually in order to select
+the best hypothesis that you want.
+
+203
+00:23:48,500 --> 00:23:56,470
+So, what do you do you put some restrictions
+on the hypothesis space, you can put some
+
+204
+00:23:56,470 --> 00:23:57,170
+restrictions.
+
+205
+00:23:57,470 --> 00:24:01,210
+So, you select a hypothesis language.
+
+206
+00:24:04,360 --> 00:24:13,760
+So, this hypothesis language may be an unrestricted
+language, for example, all possible Boolean
+
+207
+00:24:13,760 --> 00:24:17,730
+functions or may be a restricted language.
+
+208
+00:24:17,730 --> 00:24:23,680
+We have seen already some examples of hypothesis
+languages as decision tree, linear functions,
+
+209
+00:24:23,680 --> 00:24:29,821
+neural networks etcetera or there could be
+polynomial function, linear function, or there
+
+210
+00:24:29,821 --> 00:24:37,510
+could be conjunction Boolean formulas, CNF
+Boolean formulas, unrestricted Boolean formulas
+
+211
+00:24:37,510 --> 00:24:39,750
+so you choose a hypothesis language.
+
+212
+00:24:40,560 --> 00:24:50,190
+The hypothesis language if you restrict the
+hypothesis language, the hypothesis language
+
+213
+00:24:50,190 --> 00:25:05,730
+reflects bias, so this reflects a bias or
+inductive bias of the learner.

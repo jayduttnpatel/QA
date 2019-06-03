@@ -1,0 +1,253 @@
+120
+00:20:03,650 --> 00:20:13,120
+Now, feature selection methods can we Univariate
+methods which look at one feature at a time
+
+121
+00:20:13,120 --> 00:20:20,909
+or can be Multivariate feature. In univariate
+method features methods. So why we do is that
+
+122
+00:20:20,909 --> 00:20:27,880
+we look at each feature independently of the
+other features. For this we can look for some
+
+123
+00:20:27,880 --> 00:20:36,330
+different methods for example; Pearson correlation
+coefficient, F-score, Chi-square, Signal to
+
+124
+00:20:36,330 --> 00:20:43,550
+noise ratio, mutual information, etcetera.
+And based on the method that we select we
+
+125
+00:20:43,550 --> 00:20:49,730
+will write the features by importance and
+the user will select a cut off and we will
+
+126
+00:20:49,730 --> 00:20:56,770
+take the top M features above the cut off
+or top features, top few features or features
+
+127
+00:20:56,770 --> 00:20:58,830
+which have ranked above the cut off.
+
+128
+00:20:59,019 --> 00:21:06,370
+I will just talk about one or two of these
+methods. But this univariate methods, basically
+
+129
+00:21:06,370 --> 00:21:13,070
+what they do is that the measures some type
+of correlation between two random variables.
+
+130
+00:21:13,070 --> 00:21:21,570
+In this case, we are measuring the correlation
+between a particular feature and the target
+
+131
+00:21:21,570 --> 00:21:25,510
+variable, and they keep those features which
+have higher correlation.
+
+132
+00:21:25,510 --> 00:21:33,480
+And a Pearson correlation coefficient measures
+the correlation. Correlation is given by the
+
+133
+00:21:33,480 --> 00:21:42,350
+following formula; r equal to sigma over all
+the training examples x i minus x bar y i
+
+134
+00:21:42,350 --> 00:21:48,840
+minus y bar. X bar is the average value of
+the random variable x i which is a feature,
+
+135
+00:21:48,840 --> 00:21:54,520
+y bar is the average of the random variable
+y divided by this.
+
+136
+00:21:55,049 --> 00:22:01,850
+So, the correlation value is between plus
+1 and minus 1. Plus 1 means perfect positive
+
+137
+00:22:01,850 --> 00:22:08,211
+correlation minus 1 means perfect negative
+correlation, both plus and minus 1 or close
+
+138
+00:22:08,211 --> 00:22:13,860
+to plus 1 and minus 1 means highly correlated,
+closer to 0 means no correlation. So, you
+
+139
+00:22:13,860 --> 00:22:21,020
+want to select features which have high positive
+or high negative correlation.
+
+140
+00:22:21,020 --> 00:22:30,840
+This slide illustrates some points x and y,
+and for these points correlation is minus
+
+141
+00:22:30,840 --> 00:22:36,970
+1, for this points correlation is between
+0 and minus 1, for these points correlation
+
+142
+00:22:36,970 --> 00:22:43,120
+is between 0 and plus 1, these points correlation
+is plus 1 and for these points correlation is 0
+
+143
+00:22:45,110 --> 00:22:50,980
+So, that is Pearson correlation coefficient.
+I will just briefly mention another method
+
+144
+00:22:50,980 --> 00:22:57,460
+called Signal to noise ratio which measures
+the difference in means divided by the difference
+
+145
+00:22:57,460 --> 00:23:03,799
+in standard deviation between the two classes.
+And the formula is given by mu x minus mu
+
+146
+00:23:03,799 --> 00:23:09,601
+y divided by sigma x minus sigma y, and large
+values indicate a strong correlation. For
+
+147
+00:23:09,601 --> 00:23:19,750
+every feature you can find the value of SNR
+on with y and then sort them according to
+
+148
+00:23:19,750 --> 00:23:26,750
+this value and select the largest values or
+those values which are above a cut off.
+
+149
+00:23:26,750 --> 00:23:33,190
+In contrast to the univariate selection methods
+we also have multivariate selection methods.
+
+150
+00:23:33,190 --> 00:23:40,710
+In multivariate selection methods they consider
+all the features. For example, we have talked
+
+151
+00:23:40,710 --> 00:23:47,830
+about linear regression. Linear regression
+will find a set of weights. In our class we
+
+152
+00:23:47,830 --> 00:23:54,140
+refer to those weights as beta 0, beta 1,
+beta 2, beta n which are the coefficients
+
+153
+00:23:54,140 --> 00:24:03,019
+of the n attributes and the value of the bias;
+for classification of a point is given by
+
+154
+00:24:03,019 --> 00:24:08,440
+this equation of the line and the coefficient
+metric is given by w transports.
+
+155
+00:24:08,440 --> 00:24:15,741
+Now, you look at the values of this metric.
+If w is small the corresponding feature, if
+
+156
+00:24:15,741 --> 00:24:25,380
+we have w i x i and w i is small x i has less
+contribution to y, but if w i is large x i
+
+157
+00:24:25,380 --> 00:24:33,000
+has large contribution to y, if x i w i is
+small it has small contribution. For example,
+
+158
+00:24:33,000 --> 00:24:41,600
+if w values are 10, 0.01 minus 9 the once
+whose x the features whose coefficients are
+
+159
+00:24:41,600 --> 00:24:48,620
+10 and minus 9 they have high contribution
+to the output. But the one with coefficient
+
+160
+00:24:48,620 --> 00:24:56,000
+0.01 has no contribution to the output. So
+we can drop this feature.
+
+161
+00:24:56,000 --> 00:25:04,039
+This is multivariate feature selection. And
+the w can be obtained by any of linear classifiers.
+
+162
+00:25:04,039 --> 00:25:10,790
+For example, we have seen a method in our
+class, a variant of this multivariate features
+
+163
+00:25:10,790 --> 00:25:17,750
+selection approach is called Recursive feature
+elimination. In recursive feature elimination
+
+164
+00:25:17,750 --> 00:25:24,240
+you compute the w on all the features and
+you remove the feature with the smallest value
+
+165
+00:25:24,240 --> 00:25:30,960
+of w. Then you re-compute w on the reduce
+data. So initially, you have N features you
+
+166
+00:25:30,960 --> 00:25:37,210
+remove the feature with the smallest w you
+are left with N minus 1 features. On this
+
+167
+00:25:37,210 --> 00:25:44,169
+N minus 1 feature you re-compute w by invoking
+your algorithm again and recursively you keep
+
+168
+00:25:44,169 --> 00:25:50,609
+doing this until the stopping criteria is
+met. This is about multivariate feature selection.
+
+169
+00:25:50,700 --> 00:25:56,770
+With this we come to the end of today’s
+lecture. In the next volume, next part
+
+170
+00:25:56,770 --> 00:25:59,340
+we will talk about feature extraction.
+Thank you very much.

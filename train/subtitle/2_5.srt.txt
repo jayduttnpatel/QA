@@ -1,0 +1,213 @@
+156
+00:20:03,820 --> 00:20:11,640
+So the performance metric in classification
+learning can be, what is the probability of
+
+157
+00:20:11,640 --> 00:20:20,000
+wrong prediction, what is the probability
+or it can be the performance metric accuracy
+
+158
+00:20:20,000 --> 00:20:27,159
+or the probability of wrong prediction of
+the error on examples from the distribution
+
+159
+00:20:27,159 --> 00:20:35,710
+from which the instances are drawn. In classification
+learning the task comprises as we said a set
+
+160
+00:20:35,710 --> 00:20:43,410
+of input instances d 1, d 2 d n and the output
+is a set of predictions y 1, y 2 y n.
+
+161
+00:20:43,410 --> 00:20:49,620
+The performance metric is what is the probability
+of wrong prediction and the experience is
+
+162
+00:20:49,620 --> 00:20:56,680
+a set of labeled examples where y are the
+true labels for x for those training examples
+
+163
+00:20:56,680 --> 00:21:06,150
+we have the ground truth data. And these examples
+come from some fixed distribution. During
+
+164
+00:21:06,150 --> 00:21:11,309
+the training this examples are drawn from
+a distribution and what is expected when we
+
+165
+00:21:11,309 --> 00:21:15,649
+get text instances, those examples also come
+from the same distribution.
+
+166
+00:21:16,910 --> 00:21:22,950
+Now, how do you get data for the learning
+problem? For example, in medical diagnosis
+
+167
+00:21:22,950 --> 00:21:30,950
+problem which we have seen, in order to get
+data when you have a patient you find out
+
+168
+00:21:30,950 --> 00:21:36,010
+the different parameters of the patient and
+we have to wait for the next several years
+
+169
+00:21:36,010 --> 00:21:40,970
+to find out did the patient get heart disease
+or not. So, we have to wait to look further
+
+170
+00:21:40,970 --> 00:21:46,000
+heart disease.
+Finding company name in text, how do you get
+
+171
+00:21:46,000 --> 00:21:52,159
+the data? You get some text and you get the
+manually annotated for company names this
+
+172
+00:21:52,159 --> 00:22:01,399
+forms the training set. For image recognition
+the data is a set of images for which some
+
+173
+00:22:01,399 --> 00:22:07,319
+human or some people have labeled those images.
+So, this is how you get data.
+
+174
+00:22:10,020 --> 00:22:16,120
+As we said that when we want to look at the
+representation of the function there are two
+
+175
+00:22:16,120 --> 00:22:21,409
+things; one is the features, the other is
+the function class. And we will talk about
+
+176
+00:22:21,409 --> 00:22:28,310
+this in greater detail later. The function
+class can be a linear function in terms of
+
+177
+00:22:28,310 --> 00:22:35,669
+the attributes; the function can be a decision
+tree which we will talk about in week 2. It
+
+178
+00:22:35,669 --> 00:22:38,389
+can be a linear function; it can be a decision
+tree.
+
+179
+00:22:38,660 --> 00:22:45,710
+Or, it can be other functions like multivariate
+linear function as shown in the picture or
+
+180
+00:22:45,710 --> 00:22:51,340
+single layer perceptron which is a unit of
+a neural network which we will talk about
+
+181
+00:22:51,340 --> 00:22:52,730
+later in this class.
+
+182
+00:22:52,730 --> 00:22:57,810
+Or it can be multilayer neural network which
+we will also cover later.
+
+183
+00:22:59,850 --> 00:23:10,130
+And given the type of function, the hypothesis
+space is the set of candidate outputs that
+
+184
+00:23:10,130 --> 00:23:15,200
+you can get, candidate functions that you
+get. So supervised learning you can think
+
+185
+00:23:15,200 --> 00:23:23,040
+of, there is a set of functions which comprise
+the hypothesis space and you want to find
+
+186
+00:23:23,040 --> 00:23:29,659
+out that function from the hypothesis space
+which is most probable given you a training
+
+187
+00:23:29,659 --> 00:23:36,190
+example. Again we will talk about this in
+detail later.
+
+188
+00:23:36,190 --> 00:23:43,950
+So, if you just look at the basic terminology
+we have some features which are distinct traits
+
+189
+00:23:43,950 --> 00:23:51,289
+or attributes that are used to describe each
+instance. And the set of features they comprise
+
+190
+00:23:51,289 --> 00:23:57,740
+the feature vector. The instance space is
+a set of possible objects that you can describe
+
+191
+00:23:57,740 --> 00:24:06,580
+by the feature, and each example has the value
+of the input and the value of the output.
+
+192
+00:24:06,580 --> 00:24:18,409
+Suppose you are try to find out is this the
+object at image of a phase. So, the concept
+
+193
+00:24:18,409 --> 00:24:24,610
+is a subset of objects and the instance space,
+among all possible images some images a subset
+
+194
+00:24:24,610 --> 00:24:31,330
+of the images and images of phase. The target
+function is a function that you are trying
+
+195
+00:24:31,330 --> 00:24:39,559
+to learn it will map each instance to its
+label. That is it a phase or is it not a phase.
+
+196
+00:24:39,559 --> 00:24:44,459
+We have already talked about what is example
+and what is training data.
+
+197
+00:24:44,940 --> 00:24:50,450
+So with this we end today’s module and we
+will star with the next module in the next
+
+198
+00:24:50,450 --> 00:24:51,490
+class.
+Thank you very much.

@@ -1,0 +1,205 @@
+182
+00:25:05,940 --> 00:25:12,269
+outlook equal to sunny. For outlook equal
+to sunny again you have to find out which
+
+183
+00:25:12,269 --> 00:25:18,799
+node to split on. Since, outlook has already
+being used up we have a choice of three different
+
+184
+00:25:18,799 --> 00:25:24,710
+attributes; humidity, temperature, and wind.
+And this slide shows the computation of the
+
+185
+00:25:24,710 --> 00:25:32,100
+gain of these three attributes.
+We see the gain of humidity is 0.97, for temperature
+
+186
+00:25:32,100 --> 00:25:39,720
+0.57, and for wind 0.01. We will use humidity
+as the test in this node. For outlook equal
+
+187
+00:25:39,720 --> 00:25:45,240
+to over cast we see all the examples here
+a positive, so we will make it a leaf node.
+
+188
+00:25:45,669 --> 00:25:51,019
+And outlook equal to rainy there are 3 positive
+and 2 negative examples. Again, we have to
+
+189
+00:25:51,019 --> 00:25:54,339
+do the computation to decide which attribute
+to split on.
+
+190
+00:25:54,659 --> 00:25:59,059
+So if you grow the full decision tree this
+is what we will get and you can work it out.
+
+191
+00:25:59,919 --> 00:26:08,940
+Now, other than the information gain there
+are other measures of deciding the attribute
+
+192
+00:26:08,940 --> 00:26:15,559
+for decision tree. One popular measure is
+Gini index. And Gini index is another measure
+
+193
+00:26:15,559 --> 00:26:20,999
+of node impurity we will not going to the
+details, but just to tell you the gini index
+
+194
+00:26:20,999 --> 00:26:27,840
+of a node is computed as 1 minus sigma of
+probability of c whole square. Where the c
+
+195
+00:26:27,840 --> 00:26:34,389
+is the different classes and P c is the probability
+of the class or which can be estimated by
+
+196
+00:26:34,389 --> 00:26:37,029
+the fraction of examples belonging to the
+class.
+
+197
+00:26:37,029 --> 00:26:44,059
+Once you have found the gini index of a node,
+you can do the gini index of a split for an
+
+198
+00:26:44,059 --> 00:26:51,970
+attribute. So gini A is sigma again the fraction
+of training sigma over the values of the attribute
+
+199
+00:26:51,970 --> 00:26:57,470
+the fraction belonging to that value gini
+of that node; so based on that, you can compute
+
+200
+00:26:57,470 --> 00:26:59,050
+the gini index and gini indexes.
+
+201
+00:26:59,419 --> 00:27:06,549
+Another measure heuristic which can be used
+for decision tree; now what we have discusses
+
+202
+00:27:06,549 --> 00:27:16,019
+is decision tree which has 2 or 3 or 4 values,
+that is nominal valued attributes. What if
+
+203
+00:27:16,019 --> 00:27:24,999
+the training example contains an attribute
+which is really valued? So, if it is a real
+
+204
+00:27:24,999 --> 00:27:33,559
+valued attribute what you can do is that you
+can split the attribute values in to two half’s.
+
+205
+00:27:33,559 --> 00:27:39,019
+For example, height you can say height less
+than 5, height greater than 5, you can divided
+
+206
+00:27:39,019 --> 00:27:45,349
+into two half’s. Or you can divide it into
+few discrete ranges and then you can grow
+
+207
+00:27:45,349 --> 00:27:46,429
+that decision tree.
+
+208
+00:27:47,509 --> 00:27:55,529
+Now, suppose you want to divide the attribute
+into two ranges for a continuous attribute.
+
+209
+00:27:55,529 --> 00:28:00,389
+You have to decide what is the value on which
+you will split, suppose there is the different
+
+210
+00:28:00,389 --> 00:28:07,679
+heights are there and you want decide whether
+you want to split at 4 or 5 or 5.5 or 5.3
+
+211
+00:28:07,679 --> 00:28:16,629
+6.2 you have to decide where to split. Now
+for this also what you can do is that we can
+
+212
+00:28:16,629 --> 00:28:24,070
+identify possible values for splitting and
+for each value that we split the range one
+
+213
+00:28:24,070 --> 00:28:28,359
+we can find out where the information gain
+is maximum.
+
+214
+00:28:28,359 --> 00:28:32,779
+Of course, this is a computationally intensive
+and it would require sometime, but one can
+
+215
+00:28:32,779 --> 00:28:39,600
+do it intelligently. So for continuous attribute
+one can do binaries split and in order to
+
+216
+00:28:39,600 --> 00:28:45,200
+binary split if you want to do it optimally
+you find all possible split and find out where
+
+217
+00:28:45,200 --> 00:28:47,480
+the information gain is highest.
+
+218
+00:28:48,009 --> 00:28:53,440
+Now, we have covered the basic algorithm for
+decision trees. There are certain other things
+
+219
+00:28:53,440 --> 00:28:59,019
+that you need to worry about when working
+with decision tress, whether decision trees
+
+220
+00:28:59,019 --> 00:29:05,039
+or other running algorithms also under fitting
+and over fitting, missing values, costs of
+
+221
+00:29:05,039 --> 00:29:09,019
+classification, etcetera which we will cover
+in the later class.
+
+222
+00:29:12,419 --> 00:29:20,579
+With this, we stop our lecture for this particular
+module and then will continue again in the next class
+
+223
+00:29:20,740 --> 00:29:21,240
+Thank you.

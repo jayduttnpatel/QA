@@ -1,0 +1,182 @@
+145
+00:20:09,730 --> 00:20:19,580
+of examples that have value or which the attribute
+has the value v. So, this is S v by S entropy
+
+146
+00:20:19,580 --> 00:20:30,549
+of S v.
+So what does it mean? Suppose, you have the
+
+147
+00:20:30,549 --> 00:20:37,070
+number of training examples at this node of
+the decision tree and you split on attribute
+
+148
+00:20:37,070 --> 00:20:48,119
+A and A has two values true or false, and
+you have S 1 here S 2 here, Suppose, fraction
+
+149
+00:20:48,119 --> 00:21:00,230
+of S 1 equal to size of S 1 equal to one third
+of S and size of S 2 is two third of S. Then
+
+150
+00:21:00,230 --> 00:21:09,880
+S 1 has an entropy S 2 has an entropy and
+the resultant entropy is one third in to the
+
+151
+00:21:09,880 --> 00:21:17,429
+entropy of S 1 plus two third into entropy
+of S 2. And information gain is the original
+
+152
+00:21:17,429 --> 00:21:21,869
+entropy of S minus the resulting entropy.
+
+153
+00:21:26,220 --> 00:21:32,720
+In this particular case that we had seen that
+if we split on attribute A 1 and if you split
+
+154
+00:21:32,720 --> 00:21:40,249
+on attribute A 2, which one we should prefer,
+if we use this measure of information gain.
+
+155
+00:21:40,249 --> 00:21:48,850
+So entropy of S, S is the original sample.
+In this case S has 29 positive and 35 negative
+
+156
+00:21:48,850 --> 00:21:55,869
+examples and if you do the computation entropy
+is 0.99. Now we have to find out what is the
+
+157
+00:21:55,869 --> 00:22:02,139
+information gain if you use A 1 and information
+gain if you use A 2.
+
+158
+00:22:02,139 --> 00:22:12,879
+And this is worked out here. In the case of
+A 1 the entropy of S 1 is 0.71, entropy of
+
+159
+00:22:12,879 --> 00:22:22,749
+S 2 is 0.74, and gain S A 1 can be computed
+as using the formula and not working it out
+
+160
+00:22:22,749 --> 00:22:31,370
+but you can follow the slide information gain
+is 0.27. Whereas, if you use the attribute
+
+161
+00:22:31,370 --> 00:22:39,230
+A 2 first splitting, the entropy of S 1 is
+0.94, entropy of S 2 is 0.62 and the gain
+
+162
+00:22:39,230 --> 00:22:49,149
+is 0.12. So where is the gain highest? The
+gain is highest for A 1 compared A 2. According
+
+163
+00:22:49,149 --> 00:22:57,820
+to this measure we will use A 1 for splitting
+rather than A 2.
+
+164
+00:22:57,820 --> 00:23:08,279
+So, A 1 get selected because it has higher
+information gain, that is the reduction in
+
+165
+00:23:08,279 --> 00:23:15,639
+entropy is more for A 1. You want to reduce
+the entropy because you want smaller decision
+
+166
+00:23:15,639 --> 00:23:20,610
+trees. Let us look at an example.
+The slide shows as set of training examples
+
+167
+00:23:20,610 --> 00:23:28,330
+or yesterday in the last class we had introduced
+a decision tree to decide whether the proponent
+
+168
+00:23:28,330 --> 00:23:35,999
+once to play tennis given the different parameters
+of the day; outlook, temperature, humidity,
+
+169
+00:23:35,999 --> 00:23:41,710
+wind, etcetera, and this is the data set.
+In this data set if you want to decide at
+
+170
+00:23:41,710 --> 00:23:47,590
+the route node which attribute we want to
+split on, let us humidity and wind at two
+
+171
+00:23:47,590 --> 00:23:57,259
+possibilities. The gain for humidity is 0.151,
+gain for wind is 0.048. So we will prefer
+
+172
+00:23:57,260 --> 00:24:00,440
+to split on humidity rather than a wind.
+
+173
+00:24:01,409 --> 00:24:10,450
+Similarly, we look at the third attribute
+call outlook. For outlook the gain is 0.247,
+
+174
+00:24:10,450 --> 00:24:16,500
+it is worked out in the slide you can now
+look at it. So, outlook is preferred to either
+
+175
+00:24:16,500 --> 00:24:23,679
+humidity or wind. Among this three outlook
+seems to be the boast promising.
+
+176
+00:24:23,679 --> 00:24:28,520
+If you do it for the all four attributes also
+do it for temperature. Temperature has a gain
+
+177
+00:24:28,520 --> 00:24:37,470
+of 0.029. This slide show for that training
+example the gain for various attributes and
+
+178
+00:24:37,470 --> 00:24:45,350
+we see the gain for outlook is the highest.
+And so if you using this measure of information
+
+179
+00:24:45,350 --> 00:24:51,590
+gain we will use outlook as the route test
+for the decision tree.
+
+180
+00:24:51,780 --> 00:24:57,940
+So, this ID3 algorithm given by :
+ it will select outlook has the route
+
+181
+00:24:57,950 --> 00:25:05,940
+on this 15 training example. Then outlook
+has three different values, and then you take

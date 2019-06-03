@@ -1,0 +1,169 @@
+75
+00:10:01,650 --> 00:10:08,839
+feature which is orthogonal to the first feature
+that is, they do not share any information
+
+76
+00:10:08,839 --> 00:10:13,099
+they are uncorrelated for that we choose an
+orthogonal direction.
+
+77
+00:10:13,870 --> 00:10:20,880
+Among the possible vectors in the orthogonal
+direction this is the direction for which
+
+78
+00:10:20,880 --> 00:10:28,079
+the variance is Maximum. So, the first principal
+component is the one which maximizes the variance.
+
+79
+00:10:28,079 --> 00:10:34,930
+The second is orthogonal to the first and
+with that constraint, the variance is Maximum.
+
+80
+00:10:35,380 --> 00:10:42,940
+The third will be orthogonal to both the first
+and second, and the variance will be Maximum
+
+81
+00:10:42,950 --> 00:10:48,840
+of course, if the original feature space is
+two dimensional the new feature space cannot
+
+82
+00:10:48,840 --> 00:10:56,480
+be more than two dimensional, we are constraint
+by that. But you can take even the two dimensional
+
+83
+00:10:56,480 --> 00:11:03,329
+space to a two dimensional space by making
+the additional property, having the additional
+
+84
+00:11:03,329 --> 00:11:08,329
+property that then the two new feature dimensions
+are orthogonal.
+
+85
+00:11:08,329 --> 00:11:26,240
+So, there are two main principals for choosing
+the feature directions. So, we want to choose
+
+86
+00:11:26,240 --> 00:11:38,870
+the directions such that the total variation
+of the data is maximum that is we maximize total variance
+
+87
+00:11:44,800 --> 00:12:00,959
+Secondly, we want to choose directions that
+are orthogonal, so that we minimize correlation.
+
+88
+00:12:00,959 --> 00:12:14,650
+So, for this we choose m orthogonal direction,
+actually m can be less than equal to n if
+
+89
+00:12:14,650 --> 00:12:22,890
+you wish, for feature reduction m is strictly
+less than n. So, we choose m orthogonal directions
+
+90
+00:12:22,890 --> 00:12:44,670
+which maximize total variance. So, how do
+we do this we have an n dimensional feature
+
+91
+00:12:44,670 --> 00:12:50,910
+space and we have n by n symmetric covariance
+matrix.
+
+92
+00:12:51,500 --> 00:13:03,230
+So, we have this training data in n dimensional
+feature space. So, we can have this covariance
+
+93
+00:13:03,230 --> 00:13:12,911
+matrix of the; these are ever changing data
+points, this is the covariance matrix. From
+
+94
+00:13:12,911 --> 00:13:20,600
+this covariance matrix we select the m top
+principal component, which are also called
+
+95
+00:13:20,600 --> 00:13:39,440
+Eigen vectors. So, we select m largest Eigen
+vector of this covariance matrix. These Eigen
+
+96
+00:13:39,440 --> 00:13:45,439
+vectors, the Eigen vectors are the one for
+which the Eigen values are maximum. The first
+
+97
+00:13:45,439 --> 00:13:51,120
+Eigen vector will be the direction to the
+largest variance, second with the second largest
+
+98
+00:13:51,120 --> 00:13:55,260
+variance and so on.
+Now, let us look at the slides.
+
+99
+00:13:56,410 --> 00:14:02,760
+This is an application of principal component
+analysis for image compression. Initially
+
+100
+00:14:02,760 --> 00:14:10,250
+we have a large number of features and what
+we have done is that, if we represent these
+
+101
+00:14:10,250 --> 00:14:19,010
+pictures choosing only one principal component,
+the first principal component after reconstruction
+
+102
+00:14:19,010 --> 00:14:25,480
+this is the picture that we get. If we use
+2-dimensions, 4-dimensions, 8-dimensions,
+
+103
+00:14:25,480 --> 00:14:31,439
+16-dimension, 32, 64 and 100, this shows the
+reconstruction that we get, whereas this is
+
+104
+00:14:31,439 --> 00:14:36,760
+the original image.
+So, as I said that a two ways of interpreting
+
+105
+00:14:36,760 --> 00:14:42,309
+principal components. If you take the top
+principal components they are selected such
+
+106
+00:14:42,309 --> 00:14:49,439
+that they are orthogonal, and their variance
+is maximum, and also they can be interpreted
+
+107
+00:14:49,439 --> 00:14:58,250
+as that selection of vectors which are orthogonal
+for which the reconstruction error is minimum
+
+108
+00:14:58,250 --> 00:15:04,390
+and this can be seen from the image compression
+how well it works.

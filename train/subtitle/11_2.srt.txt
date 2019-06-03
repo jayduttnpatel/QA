@@ -1,0 +1,158 @@
+30
+00:05:01,840 --> 00:05:08,560
+out; all right. So, what we will do is we
+will rewrite the error.
+
+31
+00:05:08,860 --> 00:05:22,580
+So, the error is equal to 1 through N – y
+i minus m x i minus c whole square. So, this
+
+32
+00:05:22,590 --> 00:05:31,229
+is going to be the error function that we
+will try and minimize. So, objective is to
+
+33
+00:05:31,229 --> 00:05:47,960
+minimize this; of course, with respect to
+m and c, because these two are the parameters
+
+34
+00:05:47,960 --> 00:05:55,539
+of your learning algorithm of the straight
+line, which you are trying to tune and adjust
+
+35
+00:05:55,539 --> 00:06:04,990
+to the data. So, how do we go about solving
+it? We find the derivative of j with respect
+
+36
+00:06:04,990 --> 00:06:07,350
+to m and c and set them to 0.
+
+37
+00:06:07,949 --> 00:06:17,770
+So, first we do del J del m equal to 0; all
+right. So, this is going to be - del J del
+
+38
+00:06:17,770 --> 00:06:34,550
+m is going to yield you to i equal to 1 through
+n; then, y i minus m x i minus c times minus
+
+39
+00:06:34,550 --> 00:06:41,259
+x i; right? So, you first find the derivative
+of this entire quantity. So, you first take
+
+40
+00:06:41,259 --> 00:06:45,919
+the derivative inside the summation sign;
+then, you take the derivative of this quantity
+
+41
+00:06:45,919 --> 00:06:52,250
+with respect to the quantity inside the square
+and you get this to times the quantity inside
+
+42
+00:06:52,250 --> 00:06:57,710
+and then you will take the derivative of the
+quantity inside this thing in terms of m – by
+
+43
+00:06:57,710 --> 00:06:59,970
+chain rule. And, what comes out is minus x
+i.
+
+44
+00:07:00,139 --> 00:07:06,259
+And, you are trying to set this thing equal
+to 0; which amounts to summation i equal to
+
+45
+00:07:06,259 --> 00:07:11,370
+1 through n. So, we can send this minus n
+and 2 to the other side. So, we can divide
+
+46
+00:07:11,370 --> 00:07:19,699
+both sides by minus 2. And, we end up with
+this thing. So, it is just y i minus m x i
+
+47
+00:07:19,699 --> 00:07:35,000
+minus c times x i equal to 0. So, this is
+going to be our first equation. So, I will
+
+48
+00:07:35,000 --> 00:07:45,259
+keep this. So, let me try and make both of
+these things visible; oops; all right, let
+
+49
+00:07:45,259 --> 00:07:59,280
+us keep it this way for continuity. So, now
+you can see; all right. So, you have the error
+
+50
+00:07:59,280 --> 00:08:07,060
+function, which is j; you have the first equation.
+And, the second thing is we are going to find
+
+51
+00:08:07,060 --> 00:08:17,580
+out the derivative of; let me write here;
+del J – del – this is the second thing,
+
+52
+00:08:17,580 --> 00:08:26,729
+c equal to 0. So, what is this going to yield
+us? So, again we go back to this. So, first,
+
+53
+00:08:26,729 --> 00:08:36,760
+we have this summation – i equal 1 through
+n; then, we have y i minus m x i minus c.
+
+54
+00:08:36,760 --> 00:08:42,630
+We can actually get rid of this, because we
+have this. So, this is what we are trying
+
+55
+00:08:42,630 --> 00:08:54,460
+to take the derivative of. So, del J del c
+is equal to again twice – 2 comes before
+
+56
+00:08:54,460 --> 00:09:00,190
+twice of this time minus 1; right? Because
+the derivative of this quantity with respect
+
+57
+00:09:00,190 --> 00:09:06,170
+to c is going to be minus 1, which is coming
+here, so this quantity will be set to 0 in
+
+58
+00:09:06,170 --> 00:09:19,400
+order to minimize; and this again boils down
+to yes this boils down to this quantity, summation
+
+59
+00:09:19,400 --> 00:09:29,850
+i equal to 1 through n y i minus m x i minus
+c equal to 0, because we can send this minus
+
+60
+00:09:29,850 --> 00:09:41,940
+2 to the other side and we are left with this
+quantity. So, this is the second equation.
+
+61
+00:09:41,940 --> 00:09:59,450
+Now, what you can do is; yes you have these
+two equations and you can plug in the values

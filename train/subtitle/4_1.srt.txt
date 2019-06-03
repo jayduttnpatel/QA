@@ -1,0 +1,184 @@
+1
+00:00:17,900 --> 00:00:18,780
+Good morning.
+
+2
+00:00:19,400 --> 00:00:23,520
+Now, we will start Part d of Module 1.
+
+3
+00:00:24,160 --> 00:00:29,260
+In this module, we will talk about how to
+evaluate learning algorithms.
+
+4
+00:00:29,720 --> 00:00:35,980
+We will do a preliminary lecture on evaluation
+and how to use cross validation for the evaluation.
+
+5
+00:00:36,410 --> 00:00:39,550
+This will be the topic of the current lecture.
+
+6
+00:00:39,780 --> 00:00:45,520
+So, when you have a learning algorithm you
+have to and just find out.
+
+7
+00:00:45,800 --> 00:00:53,760
+As we saw in the last module that given a
+hypotheses space H, given a training data
+
+8
+00:00:53,760 --> 00:01:03,580
+S your learning algorithm comes up with h
+belonging to capital H. Now, it is important
+
+9
+00:01:03,580 --> 00:01:07,760
+to understand how good h is right.
+
+10
+00:01:08,120 --> 00:01:13,640
+So, you want to do evaluate the performance
+of learning algorithm and you can come up
+
+11
+00:01:13,650 --> 00:01:15,930
+with experimental evaluation.
+
+12
+00:01:26,160 --> 00:01:28,960
+So, you must have a metric by which you evaluate.
+
+13
+00:01:29,420 --> 00:01:35,851
+So, different matrix can be used, for example,
+you can have some sort of error metric, you
+
+14
+00:01:35,851 --> 00:01:43,530
+can find out what is the error made if you
+assume h as the function.
+
+15
+00:01:43,530 --> 00:01:54,380
+You can look at accuracy, you can look at
+precision recall and some of these things
+
+16
+00:01:54,380 --> 00:02:03,980
+we will define now and in order to evaluate
+the error you can evaluate you can find out
+
+17
+00:02:03,980 --> 00:02:09,080
+the error, accuracy, precision, recall etcetera
+on a sample.
+
+18
+00:02:15,080 --> 00:02:27,480
+So, you can evaluate the error or other parameters
+on the training set, but since you are using
+
+19
+00:02:27,480 --> 00:02:33,620
+the training set to come up with the hypotheses
+the error or accuracy that you get on the
+
+20
+00:02:33,620 --> 00:02:41,299
+training set is not, may not be a reflection
+of the true error, because of that you use
+
+21
+00:02:41,299 --> 00:02:52,709
+a test set which is disjoint from the training
+set and we will talk about cross validation,
+
+22
+00:02:54,160 --> 00:03:01,340
+which can be used while training the algorithm
+in order to tune the algorithm.
+
+23
+00:03:01,919 --> 00:03:11,459
+How you can split the training set into train
+and test and still use the data that you have
+
+24
+00:03:11,460 --> 00:03:17,800
+to your maximum advantage that can be discussed
+when we discuss cross validation.
+
+25
+00:03:20,240 --> 00:03:23,020
+Now, how to evaluate a prediction?
+
+26
+00:03:23,450 --> 00:03:30,599
+Suppose you have come up with h and you get
+an example x and you want to make a prediction
+
+27
+00:03:30,599 --> 00:03:31,119
+on x.
+
+28
+00:03:32,620 --> 00:03:42,829
+So, you want to make a prediction on x, h
+(x) and let us say h (x) equal to y or we
+
+29
+00:03:42,829 --> 00:03:53,379
+can say y hat equal to h (x) and suppose associated
+with x the correct value of y is given.
+
+30
+00:03:53,379 --> 00:04:00,150
+So, y hat is what you have predicted and y
+is the actual value of y.
+
+31
+00:04:00,150 --> 00:04:07,420
+Now, if y hat and y are same then there is
+no error and if they are different there is
+
+32
+00:04:07,420 --> 00:04:07,920
+an error.
+
+33
+00:04:08,420 --> 00:04:15,980
+So, if y hat differs from y there is an error
+and we have to discuss how this error is measured.
+
+34
+00:04:15,980 --> 00:04:18,580
+There are different ways in which error is
+measured.
+
+35
+00:04:18,730 --> 00:04:38,570
+We will talk about some of them absolute error
+is measured by h (x) minus y.
+
+36
+00:04:38,940 --> 00:04:41,020
+So, h (x) is your y hat.
+
+37
+00:04:41,580 --> 00:04:47,160
+So, h (x) minus y is the absolute error on
+a single training example.
+
+38
+00:04:47,919 --> 00:04:56,479
+If you have n training examples this is the
+absolute error on a single training example.
+
+39
+00:04:56,479 --> 00:05:02,820
+If you have multiple training examples, let
+us say n training example then you can take

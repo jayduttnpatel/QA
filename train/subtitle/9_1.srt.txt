@@ -1,0 +1,160 @@
+1
+00:00:17,910 --> 00:00:22,710
+Good morning, welcome to the forth part of
+Module 2.
+
+2
+00:00:22,840 --> 00:00:26,040
+Today, we will discuss about Overfitting.
+
+3
+00:00:26,110 --> 00:00:31,830
+So, we mentioned overfitting when we talked
+about a decision tree in passing.
+
+4
+00:00:32,300 --> 00:00:36,360
+So, first we will define what is overfitting.
+
+5
+00:00:38,050 --> 00:00:44,790
+If you learn decision tree and you continue
+splitting nodes, the tree will becomes larger
+
+6
+00:00:44,790 --> 00:00:45,730
+and larger.
+
+7
+00:00:45,910 --> 00:00:53,620
+When the tree becomes larger, if you use the
+tree for classifying the training examples
+
+8
+00:00:53,620 --> 00:01:02,129
+the error on the training examples will reduce,
+but it may happen that after sometime as you
+
+9
+00:01:02,129 --> 00:01:06,829
+grow the tree, the true error will increase.
+
+10
+00:01:07,250 --> 00:01:09,170
+So, this is called overfitting.
+
+11
+00:01:09,500 --> 00:01:11,260
+Let us formally define overfitting.
+
+12
+00:01:11,700 --> 00:01:46,120
+We say that a hypothesis ‘h’ is said to
+overfit the training data if there is another
+
+13
+00:01:46,120 --> 00:02:16,670
+hypothesis 
+h prime, such that h prime has more error
+
+14
+00:02:19,580 --> 00:02:45,600
+than h on training data, but h prime has less
+error than h on test data.
+
+15
+00:02:49,980 --> 00:02:57,220
+For example, in the context of decision trees
+if it happens that we have a smaller decision
+
+16
+00:02:57,230 --> 00:03:05,490
+tree and it has a higher error on training
+data, and lower error on test data compared
+
+17
+00:03:05,490 --> 00:03:12,150
+to a larger decision tree which has smaller
+error on training data, but higher error on
+
+18
+00:03:12,150 --> 00:03:15,270
+test data, we say overfitting has occurred.
+
+19
+00:03:16,390 --> 00:03:25,930
+So, let us look at this slide, that suppose
+as we are growing a decision tree and as we
+
+20
+00:03:25,930 --> 00:03:31,250
+are splitting the nodes, we are splitting
+the nodes when that is positive information
+
+21
+00:03:31,250 --> 00:03:35,250
+gain that is there is a result and production
+in entropy.
+
+22
+00:03:35,250 --> 00:03:40,690
+Typically what we expect as we keep growing
+the tree, the accuracy of the tree will grow
+
+23
+00:03:40,690 --> 00:03:47,110
+on increasing on the training set that is
+the error will go on decreasing on the training set
+
+24
+00:03:47,680 --> 00:03:57,830
+However, if you test the tree at different
+points in the algorithm on a held out test
+
+25
+00:03:57,830 --> 00:04:06,470
+set, disjoint test set what we typically observe
+is that as you grow the tree, initially accuracy
+
+26
+00:04:06,470 --> 00:04:14,030
+on the test set increases after sometime the
+accuracy on the test set starts to fall.
+
+27
+00:04:14,170 --> 00:04:16,630
+Now, why and this happen?
+
+28
+00:04:19,549 --> 00:04:27,600
+You see that we want to have good generalization
+of forms, but the training data may contain
+
+29
+00:04:27,600 --> 00:04:34,889
+noise and as we make the decision tree more
+and more complex it may try to fit noise and
+
+30
+00:04:34,889 --> 00:04:42,660
+therefore, the resulting decision tree will
+not work well on the true population.
+
+31
+00:04:42,660 --> 00:04:48,650
+A second reason could be you have two few
+training examples and you are trying to accommodate
+
+32
+00:04:48,650 --> 00:04:57,150
+the errors in the training examples and you
+do badly on the test set, this is why overfitting
+
+33
+00:04:57,150 --> 00:04:59,390
+can occur in decision tress.
+
+34
+00:04:59,870 --> 00:05:07,870
+Now, to illustrate overfitting there was an
+experiment which was run where some positive

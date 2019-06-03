@@ -1,0 +1,249 @@
+35
+00:05:00,060 --> 00:05:07,010
+for a particular instance we may be or a particular
+task we may be describing all the instances
+
+36
+00:05:07,010 --> 00:05:15,000
+in terms of ten features, so the feature vector
+will be a one-dimensional vector of size 10.
+
+37
+00:05:15,000 --> 00:05:19,500
+Now, based on this we can define a features
+space.
+
+38
+00:05:20,080 --> 00:05:30,030
+Suppose, for simplicity, let us assume that
+there are two features; and we can say that
+
+39
+00:05:30,030 --> 00:05:32,450
+the features are x 1 and x 2.
+
+40
+00:05:32,880 --> 00:05:40,600
+In general, we can have n number of features
+we have two features the features define a
+
+41
+00:05:40,600 --> 00:05:47,670
+two-dimensional space if we have n features
+the define an n dimensional space if you take
+
+42
+00:05:47,670 --> 00:05:56,300
+a particular instance let us say d 1 is an
+instance and for d 1 x 1 equal to 2, x 2 equal
+
+43
+00:05:56,300 --> 00:05:56,800
+to 5.
+
+44
+00:05:59,040 --> 00:06:05,580
+So, let us say x 1 is 2 here and x 2 is 5
+here.
+
+45
+00:06:05,670 --> 00:06:15,090
+So, this is d 1 so d 1 can be thought of as
+a point in this feature space point in the
+
+46
+00:06:15,090 --> 00:06:21,050
+two dimensional feature space or you can think
+of it as a vector in this space so each instance
+
+47
+00:06:21,050 --> 00:06:23,370
+is a point in the feature space.
+
+48
+00:06:24,370 --> 00:06:28,230
+Now, let us look at a classification problem.
+
+49
+00:06:28,630 --> 00:06:35,660
+And let us say that it is a two class classification
+problem so we have given a number of instances
+
+50
+00:06:35,660 --> 00:06:41,450
+for examples some of which belong to class
+1, the others belong to class 2, so there
+
+51
+00:06:41,450 --> 00:06:43,370
+are two class classification problems.
+
+52
+00:06:43,840 --> 00:06:49,800
+We have two types of instances those belonging
+to class 1 and those belonging to class 2.
+
+53
+00:06:49,800 --> 00:06:55,440
+You are given a training set which comprises
+a subset of the instances, some of them are
+
+54
+00:06:55,440 --> 00:07:01,130
+marked class 1, some of them are marked class
+2, and we can say that class 1 is positive
+
+55
+00:07:01,130 --> 00:07:02,470
+and class 2 as negative.
+
+56
+00:07:02,700 --> 00:07:13,920
+So, we find that we can map different points
+in this feature space, let us say these are
+
+57
+00:07:13,920 --> 00:07:15,420
+the positive points.
+
+58
+00:07:20,580 --> 00:07:27,090
+And we have some other points in this feature
+space which are negative points.
+
+59
+00:07:27,090 --> 00:07:35,830
+Now, what we want to do is we want to learn
+a function, so that based on the function,
+
+60
+00:07:35,830 --> 00:07:41,410
+we want the function to predict whether a
+new instance, which is given to you.
+
+61
+00:07:41,410 --> 00:07:46,190
+Suppose, this is a new instance, which is
+given to you, we want to know whether this
+
+62
+00:07:46,190 --> 00:07:47,750
+should be positive or negative.
+
+63
+00:07:48,180 --> 00:07:55,460
+In order to do this, we have to learn a function
+or the function could be a particular curve
+
+64
+00:07:55,460 --> 00:08:00,270
+or a line, which separates the positive from
+the negative instances.
+
+65
+00:08:00,360 --> 00:08:04,880
+For example, the function that we learn could
+be this function.
+
+66
+00:08:05,820 --> 00:08:11,680
+And we can say that any point which lies to
+this side of the function is positive any
+
+67
+00:08:11,680 --> 00:08:15,390
+point which lies to this side of the function
+is negative.
+
+68
+00:08:15,390 --> 00:08:19,460
+And since this yellow point lies to the left
+of the function it is negative, so this is
+
+69
+00:08:19,460 --> 00:08:21,520
+what inductive learning is about.
+
+70
+00:08:23,480 --> 00:08:29,320
+So, let us look at the slide in this slide,
+which I have taken from a slide by Jesse Davis
+
+71
+00:08:29,330 --> 00:08:31,030
+of University of Washington.
+
+72
+00:08:31,360 --> 00:08:37,880
+We can see a feature space is described in
+terms of the positive and negative examples.
+
+73
+00:08:37,880 --> 00:08:44,300
+The green pluses are the positive points;
+the red minuses are the negative points.
+
+74
+00:08:44,300 --> 00:08:53,199
+Now this is a particular instance, for which
+x 1 is 0.5, x 2 is 2.8 and the label of this
+
+75
+00:08:53,199 --> 00:08:54,939
+instance is positive.
+
+76
+00:08:57,269 --> 00:09:00,989
+Now these question mark points are the test
+points.
+
+77
+00:09:01,500 --> 00:09:07,310
+And we are asked to find out what should be
+the class of those points may be positive
+
+78
+00:09:07,310 --> 00:09:09,490
+or negative in the prediction problem.
+
+79
+00:09:09,720 --> 00:09:16,360
+So, in order to answer the prediction problem
+we have to come up with the function, for
+
+80
+00:09:16,370 --> 00:09:22,329
+example, let us say we come up with this pink
+function pink line, and we say lines points
+
+81
+00:09:22,329 --> 00:09:27,700
+that lie to the right of the pink line is
+negative the points which lie to the left
+
+82
+00:09:27,700 --> 00:09:29,460
+of the pink line is positive.
+
+83
+00:09:31,620 --> 00:09:38,760
+In this case, this point and this point will
+be marked positive; and this point and this
+
+84
+00:09:38,760 --> 00:09:40,220
+point will be marked negative.
+
+85
+00:09:41,470 --> 00:09:47,820
+So, this pink line is the function that we
+have come up with and so this is the hypothesis
+
+86
+00:09:47,820 --> 00:09:51,080
+or function that we used to do our prediction.
+
+87
+00:09:52,310 --> 00:10:00,949
+Now, we could have instead of this particular
+line, we could have hypothesized other functions.

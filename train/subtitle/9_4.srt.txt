@@ -1,0 +1,230 @@
+123
+00:15:02,029 --> 00:15:07,790
+Now, if this function was perfect you could
+just skip that function you could remove the
+
+124
+00:15:07,790 --> 00:15:15,019
+labels on the training set and you could recreate
+that, but if your function is not a perfect
+
+125
+00:15:15,019 --> 00:15:21,860
+classifier of these examples what you should
+do is keep this function and keep the labels
+
+126
+00:15:21,860 --> 00:15:24,990
+of the misclassified examples.
+
+127
+00:15:24,990 --> 00:15:30,889
+You could think of that given a function that
+total information that you have to keep is
+
+128
+00:15:30,889 --> 00:15:34,679
+the function plus the misclassified examples.
+
+129
+00:15:34,679 --> 00:15:43,600
+Now, you could compare two different trees,
+one tree which is smaller and classifies less
+
+130
+00:15:43,600 --> 00:15:49,060
+examples and the second tree which is larger
+and classifies more examples.
+
+131
+00:15:49,060 --> 00:15:56,540
+You could compare them based on the description
+length, what is the total in length total
+
+132
+00:15:56,540 --> 00:16:01,519
+number of bits requires to keep the function
+and the misclassified examples and you want
+
+133
+00:16:01,519 --> 00:16:04,449
+to choose the tree for which this is smallest.
+
+134
+00:16:04,449 --> 00:16:07,339
+That is another principle, but we will not
+talk about it.
+
+135
+00:16:07,339 --> 00:16:15,160
+Let us look at this slide on pre-pruning as
+we said pre-pruning means early stopping you
+
+136
+00:16:15,160 --> 00:16:18,189
+evaluate the splits before installing them.
+
+137
+00:16:18,189 --> 00:16:24,519
+So, do not install splits that do not look
+worthwhile, when no worthwhile splits are
+
+138
+00:16:24,519 --> 00:16:26,389
+there to install done.
+
+139
+00:16:26,389 --> 00:16:33,029
+So, typical stopping conditions to node are
+in a normal decision tree without pruning,
+
+140
+00:16:33,029 --> 00:16:36,119
+you stop if all instances belong to same class.
+
+141
+00:16:36,119 --> 00:16:41,709
+You stop if all instances belong to the have
+the same value and if you want to use pre-pruning
+
+142
+00:16:41,709 --> 00:16:44,499
+you introduce some more restrictive conditions.
+
+143
+00:16:44,499 --> 00:16:53,569
+For examples, if you stop if number of instances
+of that node is too small, you stop if the
+
+144
+00:16:53,569 --> 00:16:57,720
+class distributions are independent of the
+available feature using some statistic.
+
+145
+00:16:57,720 --> 00:16:59,809
+We will not talk about it in detail.
+
+146
+00:16:59,809 --> 00:17:06,500
+Thirdly you stop expanding the node if the
+improvement in the information measure is
+
+147
+00:17:06,500 --> 00:17:11,230
+not statistically significant.
+
+148
+00:17:11,230 --> 00:17:17,240
+For post-pruning one of the algorithms, purposed
+pruning is called reduced-error pruning and
+
+149
+00:17:17,240 --> 00:17:23,880
+we will describe that algorithm.
+
+150
+00:17:23,880 --> 00:17:38,120
+In reduced-error pruning if you look at the
+slide is a post-pruning cross validation approach.
+
+151
+00:17:38,120 --> 00:17:48,600
+So, given the training set available to us,
+we will split the training set into a training
+
+152
+00:17:48,600 --> 00:17:58,010
+and validation set or we call this grow set.
+
+153
+00:17:58,010 --> 00:18:05,150
+This part of the training set is used to grow
+the tree and this part is used to validate
+
+154
+00:18:05,150 --> 00:18:06,170
+the tree.
+
+155
+00:18:06,170 --> 00:18:15,270
+Now, using the grow data we will built a complete
+which ideally as zero error on the training
+
+156
+00:18:15,270 --> 00:18:20,780
+data if possible otherwise also grow the tree
+as much as possible.
+
+157
+00:18:20,780 --> 00:18:26,280
+After that you start pruning the tree and
+as we said you look at different candidate
+
+158
+00:18:26,280 --> 00:18:34,450
+trees sub trees where pruning and how long
+will you continue pruning, until you reach
+
+159
+00:18:34,450 --> 00:18:42,910
+a situation where removing any sub tree will
+give you increased error on the validation
+
+160
+00:18:42,910 --> 00:18:43,910
+set.
+
+161
+00:18:43,910 --> 00:18:51,630
+So, until accuracy on validation set decrease
+you will do this for each non leaf node in
+
+162
+00:18:51,630 --> 00:18:52,630
+the tree.
+
+163
+00:18:52,630 --> 00:18:57,800
+As we explained any non-leaf node or interior
+node is candidate for pruning.
+
+164
+00:18:57,800 --> 00:19:04,790
+For any non-leaf node in the tree you temporarily
+prune the tree below that node, and replace
+
+165
+00:19:04,790 --> 00:19:14,200
+that node by the majority vote test the accuracy
+of the hypothesis on the validation set and.
+
+166
+00:19:14,200 --> 00:19:23,610
+So, you find out if the resulting error is
+smaller than the original tree and now you
+
+167
+00:19:23,610 --> 00:19:30,500
+do it for every attribute you prune that sub
+tree for which this error is lowest.
+
+168
+00:19:30,500 --> 00:19:37,300
+So, you permanently prune the node with the
+greatest increase in accuracy on the validation
+
+169
+00:19:37,300 --> 00:19:47,950
+test and you continue doing this until accuracy
+on the validation set does not increase.
+
+170
+00:19:47,950 --> 00:19:53,500
+This is post-pruning method, there are a few
+points of this method because you are dividing
+
+171
+00:19:53,500 --> 00:20:00,240
+the data into growth set and validate set
+you have less number of data on which to grow that

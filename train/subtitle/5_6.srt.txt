@@ -1,0 +1,186 @@
+213
+00:25:00,870 --> 00:25:15,390
+And you have to predict like species of the
+animal or the kind of animal, you can assume.
+
+214
+00:25:15,390 --> 00:25:20,220
+So, what kind of animal it is whether it is
+a dog, or a cat, or a horse.
+
+215
+00:25:20,220 --> 00:25:27,860
+So, this is a classification problem, because
+the output variable you know that it is discrete
+
+216
+00:25:27,860 --> 00:25:31,480
+it is like five different values only.
+
+217
+00:25:31,480 --> 00:25:51,270
+And may be something given image of a Tumor,
+predict cancerous or not cancerous is malignant
+
+218
+00:25:53,590 --> 00:25:58,830
+So, you can see that the output variable is
+appearing in two different like two distinct
+
+219
+00:25:58,830 --> 00:25:59,830
+classes.
+
+220
+00:25:59,830 --> 00:26:02,650
+So, it is a classification problem.
+
+221
+00:26:03,070 --> 00:26:16,909
+Whereas the examples of regression problem
+could be predicted, they given certain features
+
+222
+00:26:16,909 --> 00:26:24,710
+of a car, predict the price of the car.
+
+223
+00:26:24,710 --> 00:26:31,380
+Now the price of the car could be any continuous
+number, so this is a continuous valued variable
+
+224
+00:26:31,380 --> 00:26:35,940
+that is you are going to predict and it is
+a regression problem.
+
+225
+00:26:35,940 --> 00:26:52,059
+Or similarly like the age or weight height
+person of a person it is predict.
+
+226
+00:26:52,059 --> 00:27:01,990
+So, these all are continuous variables and
+prediction of this continuous variable from
+
+227
+00:27:01,990 --> 00:27:06,559
+certain attributes of the person is a regression
+problem.
+
+228
+00:27:06,559 --> 00:27:18,170
+So, let us move on to the next topic, which
+is bias variance versus variance.
+
+229
+00:27:18,170 --> 00:27:23,880
+Well, what is the bias of a learning algorithm?
+
+230
+00:27:23,880 --> 00:27:45,039
+The bias of a learning algorithm is a set
+of erroneous assumptions in the learning algorithm;
+
+231
+00:27:45,039 --> 00:27:50,640
+and so this particular thing bias, it is due
+to the learning algorithm.
+
+232
+00:27:50,640 --> 00:27:54,490
+So, it is not due to the training examples
+that have been given to you, so there are
+
+233
+00:27:54,490 --> 00:28:00,780
+certain assumptions within the learning algorithm
+which keeps your model limited and its capacity
+
+234
+00:28:00,780 --> 00:28:03,840
+to learn, so that is what is bias.
+
+235
+00:28:03,840 --> 00:28:08,049
+And due to bias, you can miss out important
+relations between inputs and outputs.
+
+236
+00:28:08,049 --> 00:28:12,679
+So, you would scan c, you can observe that
+yeah there is a valid very valid input-output
+
+237
+00:28:12,679 --> 00:28:16,710
+relationship, but your learning algorithm
+cannot capture it just because it is not (Refer
+
+238
+00:28:16,710 --> 00:28:22,610
+Time: 28:18) enough of it is not capable enough
+to learn that particular thing that particular
+
+239
+00:28:22,610 --> 00:28:27,170
+relationship between your input and output,
+so that is a bias of your learning algorithm.
+
+240
+00:28:27,170 --> 00:28:39,679
+Whereas of variance of a learning algorithm,
+it is due to sensitivity of your algorithm
+
+241
+00:28:39,679 --> 00:28:55,470
+towards noise rather learn I would say model.
+
+242
+00:28:55,470 --> 00:29:09,340
+So, the model you are learning towards noise
+rather than important output or important
+
+243
+00:29:09,340 --> 00:29:22,660
+features of the relationship between input
+and output.
+
+244
+00:29:22,660 --> 00:29:29,730
+So, variance happens when you are learning
+algorithm, it tries to concentrate on unwanted
+
+245
+00:29:29,730 --> 00:29:36,351
+like trivial or noisy variations in the data
+rather than important aspects of the data
+
+246
+00:29:36,351 --> 00:29:37,650
+that needs to be captured.
+
+247
+00:29:37,650 --> 00:29:43,590
+And it happens when you have too many features
+or you have too many you know too many parameters
+
+248
+00:29:43,590 --> 00:29:48,120
+in your learning algorithm in your model and
+or you do not have much training data.
+
+249
+00:29:48,120 --> 00:29:53,610
+So it does not understand, does not cannot
+like really realize what kind of variations
+
+250
+00:29:53,610 --> 00:29:58,450
+are predominant in the data between important
+or what kind of relationships between inputs
+
+251
+00:29:58,450 --> 00:30:02,630
+and outputs are actually you know important,
+and what actually matters.

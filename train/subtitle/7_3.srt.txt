@@ -1,0 +1,224 @@
+94
+00:10:03,150 --> 00:10:14,320
+Now, what we have to do is, given some training
+examples we have to generate a decision tree.
+
+95
+00:10:14,320 --> 00:10:23,950
+Now, given a training, given some training
+examples it is possible, that there can be
+
+96
+00:10:23,950 --> 00:10:27,690
+many decision trees, which fit the training
+examples.
+
+97
+00:10:28,810 --> 00:10:36,300
+Then, our question is, which decision tree
+should we choose among the many possible decision
+
+98
+00:10:36,300 --> 00:10:37,300
+trees.
+
+99
+00:10:37,300 --> 00:10:41,540
+You know, in our last class we saw, that in
+linear regression we want to find the equation
+
+100
+00:10:41,540 --> 00:10:47,450
+of a line and we chose that line for which
+the sum of squared errors is minimum.
+
+101
+00:10:47,450 --> 00:10:53,580
+Now, given some examples, if the examples
+are noisy it could be, that there is no decision
+
+102
+00:10:53,580 --> 00:10:55,320
+trees, which exactly fit the data.
+
+103
+00:10:55,320 --> 00:11:01,190
+Then, you have to choose which one would we
+choose that have no error or it could be that
+
+104
+00:11:01,190 --> 00:11:05,790
+there are many decision trees that fit the
+data, then you have to find out which one
+
+105
+00:11:05,790 --> 00:11:07,180
+we should choose.
+
+106
+00:11:07,180 --> 00:11:12,279
+So, in the week 1, we talked about bias.
+
+107
+00:11:12,279 --> 00:11:20,990
+We said, by using bias we restrict the hypotheses
+space or we put preferences on the hypotheses
+
+108
+00:11:20,990 --> 00:11:26,910
+space; once we have chosen decision tree as
+the hypotheses space we can put some preference.
+
+109
+00:11:26,910 --> 00:11:34,270
+So, commonly the preference that is put for
+decision tree is to have tree with smaller
+
+110
+00:11:34,270 --> 00:11:35,700
+trees.
+
+111
+00:11:35,700 --> 00:11:44,279
+So, you say, prefer smaller trees.
+
+112
+00:11:44,279 --> 00:11:48,600
+So, this is the bias that you can select.
+
+113
+00:11:48,600 --> 00:11:50,470
+And then, what do we mean by smaller trees?
+
+114
+00:11:50,470 --> 00:11:58,550
+You can define smaller trees as trees with
+smaller number of nodes or trees with smaller
+
+115
+00:11:58,550 --> 00:11:59,550
+depth.
+
+116
+00:11:59,550 --> 00:12:07,350
+So, low depth trees or small number of nodes.
+
+117
+00:12:07,350 --> 00:12:16,720
+So, we want to come up with a decision tree
+and then we have to now come up with an algorithm.
+
+118
+00:12:16,720 --> 00:12:23,230
+This algorithm will search the space of decision
+trees and come up with a small tree.
+
+119
+00:12:23,230 --> 00:12:29,320
+Ideally, given the set of training examples,
+if there is no noise we want to come up with
+
+120
+00:12:29,320 --> 00:12:36,620
+a decision tree, smallest decision tree that
+fits the data, but finding the smallest decision
+
+121
+00:12:36,620 --> 00:12:41,640
+tree that fits the data is a computationally
+hard problem.
+
+122
+00:12:41,640 --> 00:12:51,100
+Therefore, we look for some greedy algorithms,
+we search for a good tree and we have to decide
+
+123
+00:12:51,100 --> 00:13:01,029
+how we can come up with a good tree for learning
+the decision tree.
+
+124
+00:13:01,029 --> 00:13:06,839
+Now, this is some example data on which we
+can use a decision tree and so, these are
+
+125
+00:13:06,839 --> 00:13:09,940
+some training examples.
+
+126
+00:13:09,940 --> 00:13:15,480
+These are certain attributes: author, thread,
+length, where.
+
+127
+00:13:15,480 --> 00:13:25,640
+So, you want to know whether a user reads
+a thread or skips a thread and given the attributes
+
+128
+00:13:25,640 --> 00:13:31,080
+who is the author of the post, whether the
+thread is new or old, what is the length of
+
+129
+00:13:31,080 --> 00:13:36,990
+the post and where the user currently is,
+you want to decide the action of the user,
+
+130
+00:13:36,990 --> 00:13:39,330
+skips or reads, right.
+
+131
+00:13:39,330 --> 00:13:46,339
+So, given this attributes you want to learn
+a decision tree so that when you get some
+
+132
+00:13:46,339 --> 00:13:58,020
+new examples you can find out, in the case
+of e7 whether the reader will read or skip.
+
+133
+00:13:58,020 --> 00:14:01,820
+Now, so let us see how we can learn decision
+trees.
+
+134
+00:14:02,130 --> 00:14:04,610
+So, we are given training examples.
+
+135
+00:14:04,990 --> 00:14:09,650
+For example, we are given this sort of training
+example.
+
+136
+00:14:20,900 --> 00:14:24,660
+Suppose D is the set of training examples.
+
+137
+00:14:24,660 --> 00:14:31,040
+So, we have all the training examples in the
+beginning and we have to choose a test here.
+
+138
+00:14:31,460 --> 00:14:41,000
+Now, when we chose a test, suppose the test
+has two outcomes, yes and no.
+
+139
+00:14:42,080 --> 00:14:50,750
+So, some of the training examples will satisfy
+this outcome, some will satisfy this outcome.
+
+140
+00:14:50,750 --> 00:14:55,620
+Suppose, the test is on an attribute A 5.
+
+141
+00:14:55,620 --> 00:15:02,600
+So, A 5 is one of the features and let us
+say, this feature has value yes or no.

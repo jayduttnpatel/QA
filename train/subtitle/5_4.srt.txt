@@ -1,0 +1,198 @@
+124
+00:15:01,640 --> 00:15:10,460
+other two different classes of learning that
+class of learning, so which class of learning
+
+125
+00:15:10,460 --> 00:15:17,899
+is going here, and class of learning, which
+class of learning is going here, so which
+
+126
+00:15:17,899 --> 00:15:21,319
+part is supervised which part is unsupervised.
+
+127
+00:15:22,300 --> 00:15:27,740
+So, just pause the video and for a second
+and try to identify.
+
+128
+00:15:28,580 --> 00:15:39,320
+So, I hope that you are done and the answer
+is the first step is an unsupervised learning
+
+129
+00:15:39,320 --> 00:15:39,820
+problem.
+
+130
+00:15:40,320 --> 00:15:51,110
+So, let me write in green, so this is unsupervised,
+because we do not use the class labels here
+
+131
+00:15:51,110 --> 00:15:55,570
+right, we are just looking at the images so
+and deciding.
+
+132
+00:15:55,570 --> 00:16:01,500
+So, over here as we had decided and as we
+had discussed before that in unsupervised
+
+133
+00:16:01,500 --> 00:16:07,450
+learning, we do not have target values; so
+we are not using the class labels over here.
+
+134
+00:16:07,450 --> 00:16:16,410
+We are just looking at the images and trying
+to find groups or clusters of images which
+
+135
+00:16:16,410 --> 00:16:17,490
+look similar to each other.
+
+136
+00:16:19,620 --> 00:16:32,750
+The second step is supervised hope you can
+see it, because each classifier will take
+
+137
+00:16:32,750 --> 00:16:42,529
+the images of its own cluster and map them
+to the target class value of that particular
+
+138
+00:16:42,529 --> 00:16:45,429
+cluster of that particular image within that
+cluster.
+
+139
+00:16:45,839 --> 00:16:54,660
+So, say an image of a car comes over here,
+so it is going to image of a car and that
+
+140
+00:16:54,660 --> 00:17:01,579
+gets mapped to a passenger car so this classifier
+learns this mapping.
+
+141
+00:17:02,000 --> 00:17:06,880
+So, this is the supervised learning problem
+I hope this makes the things clear, so you
+
+142
+00:17:06,890 --> 00:17:10,160
+are going to face this kind of problems in
+the exam and the in the assignment.
+
+143
+00:17:10,160 --> 00:17:18,120
+So, let us go and move on to the next topic,
+which is kind of features.
+
+144
+00:17:18,120 --> 00:17:32,040
+So, we have categorical versus continuous
+features.
+
+145
+00:17:33,179 --> 00:17:39,379
+So, let us discuss what these two different
+kinds of features are.
+
+146
+00:17:40,130 --> 00:17:53,799
+So, categorical features 
+are features that have so these features they
+
+147
+00:17:53,799 --> 00:18:06,720
+appear in a finite number of categories or
+classes.
+
+148
+00:18:06,720 --> 00:18:21,169
+So, for example, gender of a person, then
+age group of a person like teenagers or children
+
+149
+00:18:21,169 --> 00:18:29,929
+that is those who are below say 13, they are
+children; 13 to 19 - we are teenagers; and
+
+150
+00:18:29,929 --> 00:18:36,650
+then ahead then we have like young people
+till 35; and then another age group may be
+
+151
+00:18:36,650 --> 00:18:45,790
+35 to for 60, so we are like working adults;
+and then above 60, we are senior citizens
+
+152
+00:18:45,790 --> 00:18:46,370
+and all.
+
+153
+00:18:46,790 --> 00:18:51,530
+So, these different age groups so this kind
+of features they are all gender age group.
+
+154
+00:18:51,530 --> 00:18:59,360
+So, these are categorical features alright
+so these appear in a finite number of categories
+
+155
+00:18:59,360 --> 00:19:00,360
+so this is important.
+
+156
+00:19:00,360 --> 00:19:06,621
+So, you can you can like have a finite or
+fixed n different values which so that the
+
+157
+00:19:06,621 --> 00:19:07,781
+feature can take.
+
+158
+00:19:09,179 --> 00:19:25,320
+Whereas so even presence or absence of something,
+for example, maybe you are a doctor, and you
+
+159
+00:19:25,320 --> 00:19:30,540
+are looking at x-ray scans, and trying to
+predict whether there is a fracture or not.
+
+160
+00:19:30,540 --> 00:19:37,530
+So, maybe there is some kind of feature like
+you know sudden change of intensity, so in
+
+161
+00:19:37,530 --> 00:19:44,090
+the middle of a bone, so you suddenly see
+that at a particular place there is a black
+
+162
+00:19:44,090 --> 00:19:50,630
+crack noticeable in the white region of the
+bone in an x-ray.
+
+163
+00:19:50,630 --> 00:19:55,760
+And that thing so the presence of that would
+indicate that there is a fracture, so the
+
+164
+00:19:55,760 --> 00:19:59,580
+bone is broken from main between in the in
+the middle.

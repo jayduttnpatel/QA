@@ -1,0 +1,169 @@
+62
+00:09:59,450 --> 00:10:09,030
+of x i's and y i's; all right. So, say you
+have been given this set, right? You have
+
+63
+00:10:09,030 --> 00:10:18,390
+been given this set of values x i and y i
+– 1 through n. So, you are going to put
+
+64
+00:10:18,390 --> 00:10:26,820
+these values in these two equations. So, this
+x 1; once you will have one expression – one
+
+65
+00:10:26,820 --> 00:10:32,200
+of these terms for i equal to 1, so you put
+the values of x 1 and y 1 over here. And,
+
+66
+00:10:32,200 --> 00:10:37,650
+over here as well; and, use to make it some
+over all those values. So, you get now one
+
+67
+00:10:37,650 --> 00:10:41,190
+equation.
+The second equation comes from here. If we
+
+68
+00:10:41,190 --> 00:10:45,710
+put the same values, x – the values of x
+i’s and y i's in this equation; and, you
+
+69
+00:10:45,710 --> 00:10:50,420
+get another. And then, you simultaneously
+solve these two equations and you get the
+
+70
+00:10:50,420 --> 00:10:55,870
+result; all right. So, it is going to be pretty
+easy, pretty straightforward. And, I hope
+
+71
+00:10:55,870 --> 00:11:02,700
+that there will be no problem in solving this
+kind of questions. So, this is how you find
+
+72
+00:11:02,700 --> 00:11:09,180
+the equation of a best fit line given a set
+of data points.
+
+73
+00:11:10,250 --> 00:11:17,350
+Now, the next and another kind of question
+that you can face from this section is like
+
+74
+00:11:17,350 --> 00:11:22,650
+asking about the expression of squared error
+should be; and, it is very easy; the one we
+
+75
+00:11:22,650 --> 00:11:30,400
+wrote over here. And, this is the expression
+of the squared error. So, you have to choose
+
+76
+00:11:30,400 --> 00:11:35,620
+from one of the examples maybe. And, if say
+some other kind of in
+
+77
+00:11:35,620 --> 00:11:43,490
+the exam if difficult question comes; and,
+you have been asked, it has been specified
+
+78
+00:11:43,490 --> 00:11:47,280
+that, the error is something different from
+squared error like cross
+
+79
+00:11:47,280 --> 00:11:53,530
+You may look up the web what it really is.
+So, in that case, the expression of j will
+
+80
+00:11:53,530 --> 00:12:01,750
+change. And, such kinds of error functions
+are applicable for different kind of like
+
+81
+00:12:01,750 --> 00:12:06,110
+different kinds of applications. They are
+tuned to certain applications. And so, if
+
+82
+00:12:06,110 --> 00:12:10,830
+a different kind of error function is given,
+then you have to evaluate it this way and
+
+83
+00:12:10,830 --> 00:12:14,130
+then you have to take the derivative with
+respect to the different parameters of your
+
+84
+00:12:14,130 --> 00:12:18,750
+model and then find out the values by solving
+simultaneous equations.
+
+85
+00:12:21,200 --> 00:12:33,280
+The next topic that we are going to take up
+today is decision tree. So, decision tree
+
+86
+00:12:33,280 --> 00:12:42,830
+is nothing but a set of nested if else conditions,
+which take one huge dataset, say we have this
+
+87
+00:12:42,830 --> 00:12:52,650
+bucket full of data points. And these data
+points are from in different dimensions; right?
+
+88
+00:12:53,120 --> 00:13:02,600
+So, our data points – these are points belonging
+to say R raised to the power N. From an n
+
+89
+00:13:02,600 --> 00:13:15,190
+dimensional phase, so you have space. So,
+you have n is the dimensionality of the feature
+
+90
+00:13:15,190 --> 00:13:22,310
+space.
+Or, in other words, you can say that you have
+
+91
+00:13:22,310 --> 00:13:33,951
+n features of the input data. So, how do you
+learn the decision tree? At every step, you
+
+92
+00:13:33,951 --> 00:13:52,720
+are going to choose number 1 a feature; and
+second, a point of split on that a feature
+
+93
+00:13:52,720 --> 00:14:09,800
+f i, I would say; on that feature axis f i;
+all right such that homogeneity; geneity – n
+
+94
+00:14:09,800 --> 00:14:45,620
+e i t y, whatever. Such that the subsets of
+data points going into the child nodes are
+
+95
+00:14:45,620 --> 00:14:59,620
+more homogenous. So, there should be a method
+of calculating the homogeneity of a set in

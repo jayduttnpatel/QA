@@ -1,0 +1,203 @@
+88
+00:10:00,949 --> 00:10:06,500
+So, all these are possible functions, which
+we could have found.
+
+89
+00:10:06,500 --> 00:10:12,620
+And the set of all such legal functions that
+we could have come up with they define the
+
+90
+00:10:12,620 --> 00:10:13,700
+hypothesis space.
+
+91
+00:10:14,269 --> 00:10:20,079
+In a particular learning problem, you first
+defined the hypothesis space that is the class
+
+92
+00:10:20,079 --> 00:10:25,510
+of function that you are going to consider
+then given the data points, you try to come
+
+93
+00:10:25,510 --> 00:10:33,370
+up with the best hypothesis given the data
+that you have.
+
+94
+00:10:33,370 --> 00:10:40,749
+We have briefly talked about in the last module
+about how a function is represented so as
+
+95
+00:10:40,749 --> 00:10:48,389
+we have discussed a function is represented
+in terms of features.
+
+96
+00:10:58,460 --> 00:11:05,279
+There are two things that we need in order
+to describe a function, we have to decide
+
+97
+00:11:05,279 --> 00:11:11,740
+the features of the vocabulary, and we have
+to decide the function class or the type of
+
+98
+00:11:11,740 --> 00:11:18,040
+function or the language of the function that
+we will have to we will be using.
+
+99
+00:11:18,040 --> 00:11:27,800
+So, based on the features and the language,
+we can define our hypothesis space.
+
+100
+00:11:27,800 --> 00:11:33,860
+Various types of representations have been
+considered for making predictions.
+
+101
+00:11:33,860 --> 00:11:40,829
+For example, we just saw that we could have
+a linear function to act as a discriminator
+
+102
+00:11:40,829 --> 00:11:49,279
+between two classes, we will in a subsequent
+class, we will look at a representation by
+
+103
+00:11:49,279 --> 00:11:53,050
+using a structure, which we called a decision
+tree.
+
+104
+00:11:53,050 --> 00:12:03,220
+Where at a decision tree is a tree, where
+at every node, we take a decision based on
+
+105
+00:12:03,220 --> 00:12:06,980
+the value of an attribute.
+
+106
+00:12:06,980 --> 00:12:16,310
+And based on that, we go to different branches,
+so at every node, we make a decision based
+
+107
+00:12:16,310 --> 00:12:23,870
+on the value of an attribute and every leaf
+node is labeled by the value of y.
+
+108
+00:12:24,040 --> 00:12:31,460
+So, decision tree is a type of representation;
+linear function is one type of representation.
+
+109
+00:12:32,120 --> 00:12:38,269
+You could also have multivariate linear function
+linear function you can have neural networks.
+
+110
+00:12:38,269 --> 00:12:44,220
+These are some examples of representation
+and we have some examples in the slide here.
+
+111
+00:12:44,220 --> 00:12:53,079
+A decision tree, a linear function, a multivariate
+linear function, a single layer perceptron
+
+112
+00:12:53,079 --> 00:12:58,499
+- the basic unit of a neural network, a multi
+layer neural network; these are some of the
+
+113
+00:12:58,499 --> 00:13:03,880
+representations that we will talk about later
+in this class.
+
+114
+00:13:03,880 --> 00:13:13,379
+So, once you have chosen the features and
+the language or the class of functions, what
+
+115
+00:13:13,379 --> 00:13:16,219
+you have is a hypothesis space.
+
+116
+00:13:25,600 --> 00:13:31,180
+So, hypothesis space is the space of all legal
+hypothesis, is a set of all legal hypothesis
+
+117
+00:13:31,189 --> 00:13:39,279
+that you can describe using the features that
+you have chosen, and the language that you
+
+118
+00:13:39,279 --> 00:13:39,799
+have chosen.
+
+119
+00:13:40,879 --> 00:13:46,180
+And this is the set from which the learning
+algorithm will pick a hypothesis.
+
+120
+00:13:46,180 --> 00:13:54,999
+So, hypothesis space we may represent a hypothesis
+space by H and the learning algorithm outputs
+
+121
+00:13:54,999 --> 00:14:07,249
+a hypothesis h belonging to H, this is the
+output of a learning algorithm.
+
+122
+00:14:07,249 --> 00:14:16,490
+So, capital H denotes all legal hypothesis,
+all possible outputs by the learning algorithm.
+
+123
+00:14:16,490 --> 00:14:22,019
+Given the training set given the particular
+data points, the learning algorithm will come
+
+124
+00:14:22,019 --> 00:14:28,689
+up with one of the hypothesis in the hypothesis
+space which hypothesis it comes up with will
+
+125
+00:14:28,689 --> 00:14:36,319
+depend on the data, and it also will depend
+on what type of restrictions or biases that
+
+126
+00:14:36,319 --> 00:14:40,610
+we have imposed, which we will describe later.
+
+127
+00:14:40,610 --> 00:14:48,569
+So, supervised learning, we can think of is
+a device which explore the hypothesis space
+
+128
+00:14:48,569 --> 00:14:55,910
+or which searches the hypothesis space in
+order to find out one of the hypothesis which
+
+129
+00:14:55,910 --> 00:14:57,770
+satisfies certain criteria.

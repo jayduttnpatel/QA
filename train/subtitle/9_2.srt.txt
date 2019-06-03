@@ -1,0 +1,221 @@
+35
+00:05:07,870 --> 00:05:18,680
+and negative examples where taken, and they
+were generated such that all points with radius
+
+36
+00:05:18,680 --> 00:05:28,270
+from 0 to 0.5 where positive where blue plus
+and those having radius from the origin between
+
+37
+00:05:28,270 --> 00:05:34,790
+0.5 and 1 then red circles and beyond 1 also
+it was blue triangle.
+
+38
+00:05:35,280 --> 00:05:43,820
+So, this sort of examples where used to construct
+a decision tree and in this decision tree
+
+39
+00:05:43,820 --> 00:05:50,500
+what we observed is that the error on the
+training set, the last curve we were plotting
+
+40
+00:05:50,500 --> 00:05:51,240
+accuracy.
+
+41
+00:05:51,500 --> 00:05:56,280
+So, accuracy was going on increasing as we
+increase the size of the tree.
+
+42
+00:05:56,590 --> 00:05:58,050
+Here, we are plotting error.
+
+43
+00:05:58,640 --> 00:06:06,169
+So, error on the training set will go on reducing
+as we construct the decision tree, but if
+
+44
+00:06:06,169 --> 00:06:12,449
+we check the error on the test set, initially
+the error on the test set decreases after
+
+45
+00:06:12,449 --> 00:06:20,900
+that it increases and where it starts to increase
+in this region we say overfitting has occurred.
+
+46
+00:06:20,900 --> 00:06:25,800
+In this region, where the tree is not big
+enough we say there is underfitting.
+
+47
+00:06:25,800 --> 00:06:32,270
+In this region on the left that is underfitting,
+in the middle there is a good fit and on the
+
+48
+00:06:32,270 --> 00:06:35,730
+right of this dashed line we say overfitting
+as occurred.
+
+49
+00:06:35,870 --> 00:06:42,010
+So, underfitting occurs when the model is
+too simple and overfitting occurs when the
+
+50
+00:06:42,010 --> 00:06:50,479
+model is too complex and here is another slide
+to illustrate overfitting.
+
+51
+00:06:50,479 --> 00:06:57,949
+Now, when you have overfitting what will happen
+is that, suppose we can take another examples.
+
+52
+00:06:57,949 --> 00:07:05,490
+Suppose, these are plus is positive point
+and these red circles are negative point and
+
+53
+00:07:05,490 --> 00:07:07,970
+suppose there is a noise point here.
+
+54
+00:07:09,060 --> 00:07:14,720
+If we have this noise point, which is a spurious
+point, and if you really want to have the
+
+55
+00:07:14,720 --> 00:07:20,740
+decision tree to have no error than the decision
+tree will try to include the noise point and
+
+56
+00:07:20,740 --> 00:07:28,180
+if it includes the noise point, it will induce
+error in true set and overfitting can also
+
+57
+00:07:28,180 --> 00:07:31,280
+be due to not enough examples.
+
+58
+00:07:32,380 --> 00:07:38,720
+For example, if you look at the slide the
+bottom portion we do not have too few examples
+
+59
+00:07:38,729 --> 00:07:47,240
+and because we do not have too few examples,
+this green line is the ideal.
+
+60
+00:07:47,240 --> 00:07:55,930
+So, this are crosses, blue crosses are the
+one class and the red solid circles is the
+
+61
+00:07:55,930 --> 00:07:56,630
+other class.
+
+62
+00:07:57,949 --> 00:08:04,490
+And the red hollow circles are your test points
+because you do not have too few, too enough
+
+63
+00:08:04,490 --> 00:08:07,310
+examples these points may be misclassified.
+
+64
+00:08:07,910 --> 00:08:15,940
+If in a region, in the feature space you do
+not have sufficient examples then you cannot
+
+65
+00:08:15,940 --> 00:08:21,240
+form a proper hypothesis about that region
+and this may lead to overfitting.
+
+66
+00:08:22,230 --> 00:08:30,100
+So, if you are working with decision trees,
+overfitting results in a more complex decision
+
+67
+00:08:30,100 --> 00:08:36,909
+tree that is necessary and training error
+is not a good predictor for test error.
+
+68
+00:08:36,909 --> 00:08:41,680
+So, what you have to do; training error is
+not a good predictor for true error.
+
+69
+00:08:41,680 --> 00:08:48,199
+And therefore, you should use a separator
+unseen sample call the test sample in order
+
+70
+00:08:48,199 --> 00:08:52,319
+to get a better estimate of the true error.
+
+71
+00:08:56,850 --> 00:09:02,910
+We have to now see now that we know that overfitting
+has occurred we have to look at what can be
+
+72
+00:09:02,910 --> 00:09:05,749
+done to avoid overfitting.
+
+73
+00:09:05,749 --> 00:09:09,699
+Now, let us look in the context of decision
+trees.
+
+74
+00:09:09,699 --> 00:09:15,569
+There are two types of methods that are used
+to prevent overfitting.
+
+75
+00:09:15,569 --> 00:09:23,839
+So, first of all you could prune the decision
+tree while growing, you can stop early.
+
+76
+00:09:23,839 --> 00:09:34,679
+So, you have pre-pruning type of methods and
+you have post-pruning type of methods.
+
+77
+00:09:34,679 --> 00:09:45,649
+So, pre-pruning is a methods pruning decision
+trees to deal with overfitting and what pre-pruning
+
+78
+00:09:45,649 --> 00:09:54,929
+involves is stopping early and when do you
+stop?
+
+79
+00:09:54,929 --> 00:09:59,100
+You stop when that data split is not statistically
+significant.
+
+80
+00:09:59,100 --> 00:10:07,881
+What you saw with the entropy measure is that
+we split a node on an attribute and we compute

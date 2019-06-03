@@ -1,0 +1,251 @@
+198
+00:20:06,299 --> 00:20:10,950
+The attributes used in the decision tree are
+outlook.
+
+199
+00:20:10,950 --> 00:20:18,220
+Outlook can be sunny, overcast or rainy; humidity,
+which has values high and normal; wind has
+
+200
+00:20:18,220 --> 00:20:22,520
+values strong and weak; and temperature has
+hot, mild and cool.
+
+201
+00:20:23,000 --> 00:20:29,290
+And the target concept or why is whether it
+is good day to play tennis, yes or no and
+
+202
+00:20:29,290 --> 00:20:33,070
+this is a sample decision tree to play tennis.
+
+203
+00:20:33,070 --> 00:20:39,210
+If outlook is overcast, it is a good day;
+if it is sunny, if humidity is high, it is
+
+204
+00:20:39,210 --> 00:20:44,210
+not a good day; if humidity is normal, it
+is a good day and so on.
+
+205
+00:20:44,210 --> 00:20:52,470
+Now, in this decision tree we have internal
+nodes at decision nodes, which test on attributes
+
+206
+00:20:52,470 --> 00:20:58,850
+and branch corresponds to an attribute value
+node and there are leafs, which assign a classification.
+
+207
+00:20:58,850 --> 00:21:05,580
+Now, given this decision tree and give a new
+example for which outlook is sunny, temperature
+
+208
+00:21:05,580 --> 00:21:12,230
+is hot, humidity is high, wind is weak, you
+want to know whether it is a good day to play
+
+209
+00:21:12,230 --> 00:21:12,870
+tennis.
+
+210
+00:21:13,230 --> 00:21:17,150
+So, you first check the root, it says outlook.
+
+211
+00:21:17,760 --> 00:21:21,120
+Because outlook is sunny, you go the left
+branch.
+
+212
+00:21:22,380 --> 00:21:24,380
+Then, you check for humidity.
+
+213
+00:21:25,040 --> 00:21:31,600
+If humidity is high, you take the left branch
+and then it says no, it is not a good day
+
+214
+00:21:31,600 --> 00:21:32,669
+to play tennis.
+
+215
+00:21:32,669 --> 00:21:34,110
+So, your output no.
+
+216
+00:21:34,110 --> 00:21:37,160
+This is how you use a decision tree.
+
+217
+00:21:37,160 --> 00:21:45,900
+So, a decision tree can be expressed as a
+bullion function, which is a disjunction of
+
+218
+00:21:45,900 --> 00:21:46,460
+conjunctions.
+
+219
+00:21:46,940 --> 00:21:53,280
+So, decision tree is a very flexible function,
+which can represent disjunction of conjunction
+
+220
+00:21:53,280 --> 00:21:56,100
+and thus it can represent all bullion function.
+
+221
+00:21:56,100 --> 00:22:02,250
+If a decision tree is of sufficiently large
+size, it can express all bullion functions.
+
+222
+00:22:02,250 --> 00:22:07,770
+Now, as we said, that the learning problem
+is, given a decision tree we have to find
+
+223
+00:22:07,770 --> 00:22:11,471
+a good tree and there are two choices that
+you have to make.
+
+224
+00:22:11,471 --> 00:22:16,360
+You have to decide at a particular point,
+whether you should stop or whether you should
+
+225
+00:22:16,360 --> 00:22:17,360
+continue.
+
+226
+00:22:17,360 --> 00:22:21,700
+If you want to continue we have to choose
+a test, that is, you have to choose an attribute
+
+227
+00:22:21,700 --> 00:22:24,540
+or a feature to continue with.
+
+228
+00:22:24,540 --> 00:22:31,320
+Now, we will just give the framework of a
+basic decision tree algorithm.
+
+229
+00:22:31,320 --> 00:22:37,630
+This algorithm is called top down induction
+of decision trees and this is the basic ID3
+
+230
+00:22:37,630 --> 00:22:41,100
+algorithm, which was proposed by Quinlan.
+
+231
+00:22:41,100 --> 00:22:44,200
+So, these are the steps of the algorithm.
+
+232
+00:22:44,200 --> 00:22:53,220
+At the current node you choose the best decision
+attribute, then assign A as the decision attribute
+
+233
+00:22:53,220 --> 00:22:54,620
+for the node.
+
+234
+00:22:54,620 --> 00:23:03,179
+For each value of A, that is, the outcome
+you create a new descendant and then the training
+
+235
+00:23:03,179 --> 00:23:07,720
+examples will get split into the different
+branches.
+
+236
+00:23:07,720 --> 00:23:15,370
+So, you sort or split the training example
+to the leaves of the current node according
+
+237
+00:23:15,370 --> 00:23:17,840
+to the attribute value of the branch.
+
+238
+00:23:17,840 --> 00:23:24,550
+So, at a particular node if you find, that
+all the training examples have the same class,
+
+239
+00:23:24,550 --> 00:23:30,080
+then you can stop otherwise you can again
+continue this process.
+
+240
+00:23:30,080 --> 00:23:33,490
+So, as we see, there are two choices that
+we have to take.
+
+241
+00:23:33,490 --> 00:23:39,920
+We have to decide at a particular step if
+we have to continue which attribute to use
+
+242
+00:23:39,920 --> 00:23:44,520
+for the test and we have to decide when to
+stop.
+
+243
+00:23:44,520 --> 00:23:50,310
+We have also to decide when we have a partial
+decision tree, should we continue at this
+
+244
+00:23:50,310 --> 00:23:52,230
+node or this node.
+
+245
+00:23:52,230 --> 00:23:56,970
+So, we have to decide which node to continue
+with.
+
+246
+00:23:56,970 --> 00:24:01,419
+Once we choose a node we have to choose the
+best attribute of that node and we have to
+
+247
+00:24:01,419 --> 00:24:03,239
+decide when we want to stop.
+
+248
+00:24:03,890 --> 00:24:08,890
+These are the decisions that we have to take
+in a decision tree and in the next class.
+
+249
+00:24:09,270 --> 00:24:14,210
+So, these are the two decisions that we have
+to take and in the next class we will look
+
+250
+00:24:14,210 --> 00:24:19,500
+at some specific heuristics to may take a
+decision on these.
+
+251
+00:24:19,500 --> 00:24:20,409
+Thank you.

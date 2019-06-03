@@ -1,0 +1,202 @@
+40
+00:05:01,970 --> 00:05:09,060
+error and this is one of the popular measures
+of error, and we could try to find that function
+
+41
+00:05:09,060 --> 00:05:16,490
+for which this sum of squared errors is minimized.
+Assuming that after we have assumed that this
+
+42
+00:05:16,490 --> 00:05:21,840
+function comes from a particular class, you
+can assume that the function is linear or
+
+43
+00:05:21,840 --> 00:05:24,380
+the function is quadratic etcetera.
+
+44
+00:05:25,980 --> 00:05:34,520
+Now, let us look at this slide again. We are
+given these blue points, which were generated
+
+45
+00:05:34,520 --> 00:05:42,220
+from the green curve, but the green curve
+is unknown to us. Given the blue points, we
+
+46
+00:05:42,220 --> 00:05:49,761
+can learn this red line in figure 1, which
+is a linear function; or this linear function
+
+47
+00:05:49,761 --> 00:05:56,780
+in figure 2, so these are two different linear
+functions. Sorry, this is a linear function,
+
+48
+00:05:56,780 --> 00:06:02,169
+this is the general linear function, and this
+is the linear function which is parallel to
+
+49
+00:06:02,169 --> 00:06:07,689
+the x-axis, so that is it is of the form y
+equal to constant.
+
+50
+00:06:08,310 --> 00:06:15,860
+In the first diagram, this function corresponds
+to y equal to constant. The second diagram,
+
+51
+00:06:15,860 --> 00:06:25,880
+the function corresponds to the equation y
+equal to w x plus constant. In the third diagram,
+
+52
+00:06:25,880 --> 00:06:36,240
+we have a cubic function, which is of the
+form y equal to a x cube plus b x square plus
+
+53
+00:06:36,240 --> 00:06:43,650
+c x plus d. And in the fourth diagram, it
+is a ninth degree polynomial. So, this a zero
+
+54
+00:06:43,650 --> 00:06:48,890
+degree polynomial, one degree polynomial,
+three degree polynomial, ninth degree polynomial.
+
+55
+00:06:49,420 --> 00:06:56,940
+So, if you see here the feet are not very
+good with the data, in the first figure.
+
+56
+00:06:56,950 --> 00:07:03,080
+In the second figure, the feet is slightly better
+with respect to, if you look at the sum of
+
+57
+00:07:03,080 --> 00:07:09,050
+squared errors this is highest in the first
+figure, lower in the second figure, lower
+
+58
+00:07:09,050 --> 00:07:16,650
+in the third figure, 0 in the 4th figure.
+In the 4th figure, where we feet 9th degree
+
+59
+00:07:16,650 --> 00:07:25,690
+polynomial we are able to have the function
+pass through all the training examples. So,
+
+60
+00:07:25,690 --> 00:07:32,060
+the sum of squared errors on the training
+example is 0, but remember what we talked
+
+61
+00:07:32,060 --> 00:07:39,490
+in the last class, what we are interested
+in is finding the, what is interested in is
+
+62
+00:07:39,490 --> 00:07:47,800
+minimizing the error on future examples minimizing
+the error on all examples according to the
+
+63
+00:07:47,800 --> 00:07:51,879
+distribution.
+Now, you can see in this fourth diagram, even
+
+64
+00:07:51,879 --> 00:07:59,190
+though we have fitted the points, fitted the
+line the red line to all the points, this
+
+65
+00:07:59,190 --> 00:08:06,449
+function does not really correspond to the
+green line. So, for other points, the error
+
+66
+00:08:06,449 --> 00:08:16,639
+may be higher. If you look at the third diagram,
+this function seems to have fit the points
+
+67
+00:08:16,639 --> 00:08:24,840
+much better, and we can expect that within
+this range, the fit to the green line will
+
+68
+00:08:24,840 --> 00:08:35,760
+be smaller. So, we have to keep this in mind,
+when we try to come up with a function.
+
+69
+00:08:35,760 --> 00:08:43,760
+Now regression models, as we said in regression
+models, we can talk about as single variable.
+
+70
+00:08:43,760 --> 00:08:50,510
+So, x can be a single variable, then we call
+it simple regression; or x can be multiple
+
+71
+00:08:50,510 --> 00:08:58,210
+variables, then we call it multiple regression.
+Now for each of this, the function that we
+
+72
+00:08:58,210 --> 00:09:04,670
+defined may be a linear function or a non-linear
+function. Today, we will talk about linear
+
+73
+00:09:04,670 --> 00:09:12,950
+regression where we use a linear function
+in order to a fit the training examples that
+
+74
+00:09:12,950 --> 00:09:13,790
+we have got.
+
+75
+00:09:13,950 --> 00:09:21,950
+So in linear examples regression we have given
+an input x and we have to compute y.
+
+76
+00:09:22,460 --> 00:09:33,760
+And we have training examples which are given
+to us. So, we have to find a straight-line
+
+77
+00:09:33,760 --> 00:09:41,780
+function, so that given an unknown value of
+x, suppose given this value of x, we have
+
+78
+00:09:41,780 --> 00:09:48,560
+to find out what is the possible y. So, given
+this value of x, if you learn the yellow line,
+
+79
+00:09:48,560 --> 00:09:55,670
+we will find out this point and from this
+we can find out what is the value of y as
+
+80
+00:09:55,670 --> 00:10:00,720
+given by this function.
+For example, in linear regression, we can

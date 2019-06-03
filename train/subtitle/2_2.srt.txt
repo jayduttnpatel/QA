@@ -1,0 +1,185 @@
+35
+00:05:01,120 --> 00:05:07,389
+belong to two different classes so one class
+is circle the other class is triangle; in
+
+36
+00:05:07,389 --> 00:05:14,439
+semi-supervised learning, apart from having
+data from the two classes you also have unlabeled
+
+37
+00:05:14,439 --> 00:05:21,580
+data which is indicated by the small circles.
+For example, for supervised learning based
+
+38
+00:05:21,580 --> 00:05:28,379
+on the data. Supervised data you will come
+up with some function and if you also have
+
+39
+00:05:28,379 --> 00:05:33,639
+unlabeled data in addition to the labeled
+data you might try to come up with the better
+
+40
+00:05:33,639 --> 00:05:34,359
+function.
+
+41
+00:05:34,639 --> 00:05:43,020
+And we will very briefly talk about reinforcement
+learning; in fact we will not cover reinforcement
+
+42
+00:05:43,020 --> 00:05:48,090
+learning in this introductory course on machine
+learning. But in reinforcement learning we
+
+43
+00:05:48,090 --> 00:05:56,060
+have an agent which acts in the environment.
+The agent can take action and this action
+
+44
+00:05:56,060 --> 00:06:05,979
+can impact the environment. In a particular
+stage, the agent takes an action and the environment
+
+45
+00:06:05,979 --> 00:06:12,659
+goes to a new state and gives some reward
+to the agent, that reward may be a positive
+
+46
+00:06:12,659 --> 00:06:18,969
+reward can be a negative reward or penalty
+or can be nothing at that particular time
+
+47
+00:06:18,969 --> 00:06:25,540
+step. But the agent is continually acting
+in this world.
+
+48
+00:06:25,540 --> 00:06:32,469
+And the reinforcement learner what it will
+do is, it will learn a policy. That is, given
+
+49
+00:06:32,469 --> 00:06:40,069
+a state what action to take so that not only
+the short term reward is optimized, but the
+
+50
+00:06:40,069 --> 00:06:47,610
+overall utility of the agent over its entire
+time horizon is optimized. This is what reinforcement
+
+51
+00:06:47,610 --> 00:06:58,600
+learning is about we will not talk about details
+of reinforcement learning in today’s class.
+
+52
+00:06:58,600 --> 00:07:04,569
+Most of this course we will talk about supervised learning and we will spendsome time on unsupervised
+
+53
+00:07:04,569 --> 00:07:05,089
+learning
+
+54
+00:07:05,500 --> 00:07:10,500
+So let us look at more details about
+what supervised learning is about.
+
+55
+00:07:23,080 --> 00:07:28,320
+In supervised learning you have a set of input features.
+
+56
+00:07:29,250 --> 00:07:38,779
+So what you have is you have some features
+x 1, x 2, x n, these are the features with
+
+57
+00:07:38,779 --> 00:07:48,330
+respect of which you describe the instances.
+And you have a target fixture y, and you have
+
+58
+00:07:48,330 --> 00:07:58,180
+several instances each instance comprises
+of values. Suppose, this is the instance 1
+
+59
+00:07:58,180 --> 00:08:09,619
+it comprises of values of this feature x so
+you may have a 1, a 2, a n, and you have instance
+
+60
+00:08:09,619 --> 00:08:19,699
+2 which is b 1, b 2, b n. Instance 3 which
+is c 1, c 2, c n. And the corresponding you
+
+61
+00:08:19,699 --> 00:08:31,240
+have the y values; y 1, y 2, y 3, etcetera.
+So, your instances are described in terms
+
+62
+00:08:31,240 --> 00:08:37,839
+of features. There are input features and
+there is the output attribute. And you have
+
+63
+00:08:37,839 --> 00:08:43,330
+a set of training examples this comprises
+the training examples, and in each training
+
+64
+00:08:43,330 --> 00:08:48,940
+example the values for the input features
+and the target feature are given for each
+
+65
+00:08:48,940 --> 00:08:55,630
+example. Each of these rows is one example
+and for each example we have the value for
+
+66
+00:08:55,630 --> 00:09:01,630
+instance 3 the value for x 1 is c 1, the value
+for x 2 is c 2, the value for x n is c n and
+
+67
+00:09:01,630 --> 00:09:14,680
+the value for y is y 3. This is used for training.
+During the testing time you are only given,
+
+68
+00:09:14,680 --> 00:09:21,420
+so use like this you have many training examples
+for test you are given a test instance. In
+
+69
+00:09:21,420 --> 00:09:31,720
+test instance you are only given the values
+of the attributes; z 1, z 2, z n and you have
+
+70
+00:09:31,720 --> 00:09:44,370
+to output the corresponding y.
+Now the y or the target feature can be a discrete
+
+71
+00:09:44,370 --> 00:09:51,930
+valued feature or a continuous valued feature.
+If y is a discrete valued feature we call
+
+72
+00:09:51,930 --> 00:10:01,850
+such problem classification problem. So y
+can be discrete valued or continuous valued.

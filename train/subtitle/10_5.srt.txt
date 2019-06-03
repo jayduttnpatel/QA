@@ -1,0 +1,275 @@
+221
+00:20:02,870 --> 00:20:09,610
+Next, let us look at the application of Decision
+trees in classification.
+
+222
+00:20:09,610 --> 00:20:14,460
+So, decision trees learn piecewise linear
+decision boundaries.
+
+223
+00:20:14,460 --> 00:20:19,481
+A single logistic regression classifier would
+learn a single line as a decision boundary
+
+224
+00:20:19,481 --> 00:20:23,369
+whereas, decision trees can like learn piecewise
+linear model.
+
+225
+00:20:23,369 --> 00:20:25,029
+So, what do we mean by that?
+
+226
+00:20:25,029 --> 00:20:31,570
+We mean by that the feature space is going
+to be divided into small volumes and within
+
+227
+00:20:31,570 --> 00:20:37,669
+each single volume the decision tree is going
+learn one particular hyper plane, which is
+
+228
+00:20:37,669 --> 00:20:42,630
+the generalization of a line and that is general
+linear function.
+
+229
+00:20:42,630 --> 00:20:49,619
+So, this particular kind of behavior happens
+when decision trees used in classification
+
+230
+00:20:49,619 --> 00:20:51,379
+and that is what we are going to do next.
+
+231
+00:20:51,749 --> 00:20:55,109
+So, we are going use the entire of Iris dataset
+here.
+
+232
+00:20:55,309 --> 00:20:59,449
+So, Iris dataset has 4 input features and
+3 output classes.
+
+233
+00:21:00,389 --> 00:21:06,299
+And, do the same kind of training validation
+and test splitting.
+
+234
+00:21:06,299 --> 00:21:17,739
+And next, we create an object of the decision
+tree classifier class and we fit the model,
+
+235
+00:21:17,739 --> 00:21:18,539
+all right.
+
+236
+00:21:19,659 --> 00:21:28,559
+We fit the model I am sorry, yes, and this
+also minimizes that classification error.
+
+237
+00:21:28,870 --> 00:21:35,399
+So, this is one piece of code and the source
+of this code is also given in the IPython
+
+238
+00:21:35,399 --> 00:21:41,419
+notebook which will be also presented on the
+course website, you can find it out there.
+
+239
+00:21:41,419 --> 00:21:45,649
+So, this is the nice way of visualizing the
+decision tree at what particular decision
+
+240
+00:21:45,649 --> 00:21:52,830
+node, what kind of decision is getting learned
+and as you can see that finally, the model
+
+241
+00:21:52,830 --> 00:22:01,200
+learns to you know the each of these leaves
+has a Gini index of 0.
+
+242
+00:22:01,200 --> 00:22:14,779
+The Gini index, a Gini coefficient is a measure
+of how homogenous a cluster is.
+
+243
+00:22:14,779 --> 00:22:22,869
+So, gini index or gini coefficient of 0.0
+means that the cluster of inputs or the set
+
+244
+00:22:22,869 --> 00:22:28,840
+of inputs that are coming to that particular
+leaf node are all belonging to one single
+
+245
+00:22:28,840 --> 00:22:29,420
+class.
+
+246
+00:22:29,840 --> 00:22:31,600
+So, they are completely homogenous.
+
+247
+00:22:31,800 --> 00:22:38,239
+So, when you like push in one example an unknown
+example through the decision tree and it lands
+
+248
+00:22:38,239 --> 00:22:44,279
+up in one particular leaf you are 100 percent
+sure that what particular class it is going
+
+249
+00:22:44,279 --> 00:22:47,479
+to be because each leaf corresponds to one
+class.
+
+250
+00:22:47,479 --> 00:22:54,190
+This is like one kind of decision tree making
+procedure, making philosophy there can be
+
+251
+00:22:54,190 --> 00:22:55,599
+other variance as well.
+
+252
+00:22:55,599 --> 00:23:03,749
+So, we will discuss it in the next classes
+or we will supply links to you web links which
+
+253
+00:23:03,749 --> 00:23:11,649
+give better description of how complicated
+decision trees and decision forests are learnt
+
+254
+00:23:11,649 --> 00:23:16,389
+to classify the data well.
+
+255
+00:23:16,389 --> 00:23:19,519
+Next is evaluation of the model.
+
+256
+00:23:19,519 --> 00:23:25,799
+And we do it in the same way as we had done
+in the last three examples and we get a validation
+
+257
+00:23:25,799 --> 00:23:34,369
+set error of 12 percent because see, the previous
+one which we did it was a simplified version
+
+258
+00:23:34,369 --> 00:23:40,110
+of the iris dataset and the beauty of the
+iris dataset is that the first and the second
+
+259
+00:23:40,110 --> 00:23:43,720
+classes they are linearly separable, but they
+are not linearly separable with the third
+
+260
+00:23:43,720 --> 00:23:44,260
+class.
+
+261
+00:23:44,720 --> 00:23:49,710
+So, as soon as the third class comes it is
+difficult to fit a linear decision boundary
+
+262
+00:23:49,710 --> 00:23:55,419
+and that is why get some non zero validation
+and validation error.
+
+263
+00:23:55,419 --> 00:24:03,879
+In this case, the test error is luckily 0
+just because the third class at come in and
+
+264
+00:24:03,879 --> 00:24:10,340
+sets where not any more linearly separable
+and there is a nice way of visualizing decision
+
+265
+00:24:10,340 --> 00:24:13,620
+boundaries learnt at  single
+of these nodes.
+
+266
+00:24:13,720 --> 00:24:20,480
+So, every single node or rather decision node
+learns a particular decision rule.
+
+267
+00:24:20,779 --> 00:24:30,230
+So, it learns to choose certain features and
+splits on those features on that particular
+
+268
+00:24:30,230 --> 00:24:41,559
+chosen feature access which increases the
+homogeneity in the clusters going into the
+
+269
+00:24:41,559 --> 00:24:51,330
+children nodes of that particular decision
+node and so, we have 12 percent validation
+
+270
+00:24:51,330 --> 00:24:53,519
+error in this example.
+
+271
+00:24:53,519 --> 00:25:01,879
+So, you can try out these models using other
+input data and we can discuss the performances
+
+272
+00:25:01,879 --> 00:25:04,879
+on the course forum.
+
+273
+00:25:05,019 --> 00:25:07,099
+Thank you so much.
+
+274
+00:25:07,779 --> 00:25:10,819
+Thank you so much for attending my first ever
+video recording.
+
+275
+00:25:11,130 --> 00:25:16,509
+Thank you so much, see you guys in the next
+video and we will be discussing principle
+
+276
+00:25:16,509 --> 00:25:23,580
+component analysis and features selection
+which also form very crucial aspects of practical
+
+277
+00:25:23,580 --> 00:25:24,340
+machine learning.
+
+278
+00:25:24,580 --> 00:25:25,990
+Bye bye, see you next time.

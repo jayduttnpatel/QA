@@ -1,0 +1,197 @@
+130
+00:15:00,560 --> 00:15:04,680
+Now first some more terminology before we
+proceed.
+
+131
+00:15:09,509 --> 00:15:20,701
+We have already talked about an example as
+x, y the value of the input and the value
+
+132
+00:15:20,701 --> 00:15:22,741
+of the output x, y pair.
+
+133
+00:15:25,160 --> 00:15:40,079
+Training data is a set of examples 
+is a collection of a examples, which have
+
+134
+00:15:40,079 --> 00:15:45,139
+been observed by the learning algorithm or
+which is input to the learning algorithm.
+
+135
+00:15:45,139 --> 00:15:56,420
+We have instance space or feature space, which
+describes all possible instances, so if we
+
+136
+00:15:56,420 --> 00:16:06,649
+have two features x 1 and x 2; let us say
+x 1 takes value between 0 and 100, x 2 takes
+
+137
+00:16:06,649 --> 00:16:17,660
+value between 0 and 50; and all points in
+this plane can describe an instance, so this
+
+138
+00:16:17,660 --> 00:16:18,900
+is the instance space.
+
+139
+00:16:19,279 --> 00:16:32,699
+So, instance space is the set of all possible
+objects that can be described by the features.
+
+140
+00:16:32,699 --> 00:16:36,679
+And we are trying to learn a concept c.
+
+141
+00:16:36,819 --> 00:16:43,050
+Let us think of a classification problem where
+we have a particular class that we are trying
+
+142
+00:16:43,050 --> 00:16:43,610
+to learn.
+
+143
+00:16:44,050 --> 00:16:49,139
+So, let us think of a two class classification
+problem, we can define one of the classes
+
+144
+00:16:49,139 --> 00:16:54,389
+is positive, the other is negative, we can
+think of the positive examples as the concept
+
+145
+00:16:54,389 --> 00:16:56,089
+which we are trying to learn.
+
+146
+00:16:57,570 --> 00:17:03,949
+So, out of all possible objects that we can
+describe in the instance space, subsets of
+
+147
+00:17:03,949 --> 00:17:08,329
+those objects are positive that is they belong
+to the concept.
+
+148
+00:17:09,000 --> 00:17:20,880
+So, the concept c can be a subset of the instance
+space X, so which define the positive points.
+
+149
+00:17:21,709 --> 00:17:26,009
+C is unknown to us and this is what we are
+trying to find out.
+
+150
+00:17:26,170 --> 00:17:38,220
+In order to find out c, we are trying to find
+a function f, so f is what we are trying to
+
+151
+00:17:38,220 --> 00:17:38,860
+learn.
+
+152
+00:17:39,220 --> 00:17:39,900
+What is f?
+
+153
+00:17:40,220 --> 00:17:46,400
+f is a function which maps every input X to
+an output Y.
+
+154
+00:17:47,440 --> 00:17:53,960
+Now what is the difference between c and f,
+f is used to be a function used to describe
+
+155
+00:17:53,960 --> 00:18:00,680
+the concept they may be same, they may be
+different, because f is defined by the language
+
+156
+00:18:00,680 --> 00:18:02,800
+and the features that you have chosen.
+
+157
+00:18:02,800 --> 00:18:05,970
+So, this is a certain difference between f
+and c.
+
+158
+00:18:05,970 --> 00:18:17,710
+Now, what you are trying to do in learning
+is given a hypothesis space h.
+
+159
+00:18:17,710 --> 00:18:27,270
+You are trying to come up with the hypothesis
+small h belonging to the hypothesis H that
+
+160
+00:18:27,270 --> 00:18:29,320
+approximates f.
+
+161
+00:18:29,320 --> 00:18:46,270
+You want to find h that approximates f based
+on the training data that you have been given.
+
+162
+00:18:46,270 --> 00:18:54,190
+Now the set of hypothesis that can be produced
+can be restricted further by specifying a
+
+163
+00:18:54,190 --> 00:18:55,540
+language bias.
+
+164
+00:18:55,540 --> 00:19:09,870
+So, hypothesis space defines all possible
+set of hypothesis, you can restrict hypothesis
+
+165
+00:19:09,870 --> 00:19:16,890
+by defining some bias.
+
+166
+00:19:16,890 --> 00:19:26,230
+So, you can specify some constraints on the
+language or some preferences.
+
+167
+00:19:26,230 --> 00:19:37,190
+So, bias is of two types, bias can be in terms
+of constraints or the bias can be in terms
+
+168
+00:19:37,190 --> 00:19:38,930
+of preferences.
+
+169
+00:19:38,930 --> 00:19:46,150
+We will define them more precisely soon, but
+what we mean by constraints is suppose your
+
+170
+00:19:46,150 --> 00:19:54,440
+features are Boolean variables, now if you
+say that you want to consider only Boolean
+
+171
+00:19:54,440 --> 00:20:01,800
+functions, which are conjunctions of monomials,
+so that is providing a bias or the language.

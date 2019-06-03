@@ -1,0 +1,222 @@
+165
+00:19:59,580 --> 00:20:06,940
+Whereas, the absence of that would mean that
+yeah would not like directly indicate that
+
+166
+00:20:06,940 --> 00:20:12,070
+the bone has a fracture, maybe there is some
+other features that would further like you
+
+167
+00:20:12,070 --> 00:20:13,570
+can carry on the diagnosis using them.
+
+168
+00:20:13,570 --> 00:20:17,510
+So, this kind of feature like presence or
+absence of something, this is also a categorical
+
+169
+00:20:17,510 --> 00:20:22,360
+feature because it can take just two values
+right presence or absence yes or no so these
+
+170
+00:20:22,360 --> 00:20:23,750
+are all categorical feature.
+
+171
+00:20:23,750 --> 00:20:42,630
+Whereas, continuous features are those, which
+can take an infinite number of values theoretically
+
+172
+00:20:42,630 --> 00:20:49,610
+infinite number of values.
+
+173
+00:20:50,640 --> 00:21:00,690
+For example, age of a person or something
+all right height; theoretically, they can
+
+174
+00:21:00,690 --> 00:21:10,450
+take an infinite number of values, weight
+of a person, then price of something, so these
+
+175
+00:21:10,450 --> 00:21:11,330
+are continuous features.
+
+176
+00:21:12,230 --> 00:21:18,590
+So, it is very easy to understand that which
+one is a categorical feature, it has to take
+
+177
+00:21:18,590 --> 00:21:22,860
+some an infinite number of values and what
+a continuous features which can take infinite
+
+178
+00:21:22,860 --> 00:21:23,860
+number of values.
+
+179
+00:21:23,860 --> 00:21:30,180
+So, now let us look into types of learning
+algorithms so that is continued (Refer Time:
+
+180
+00:21:30,180 --> 00:21:31,180
+21:30).
+
+181
+00:21:31,180 --> 00:21:33,640
+So, types of supervised learning algorithm.
+
+182
+00:21:33,640 --> 00:21:39,549
+So, in this you can face this kind of questions
+in the exam that these kind of like few of
+
+183
+00:21:39,549 --> 00:21:44,160
+these examples will be given like gender may
+be or age group, presence or absence of something,
+
+184
+00:21:44,160 --> 00:21:45,460
+or height, age, weight.
+
+185
+00:21:46,080 --> 00:21:49,070
+So, these things will be given to you, and
+you will be asked to identify whether it is
+
+186
+00:21:49,070 --> 00:21:51,669
+a categorical feature or a continuous feature.
+
+187
+00:21:51,669 --> 00:21:56,830
+So, you should be able to first like what
+you question yourself, you just question yourself
+
+188
+00:21:56,830 --> 00:22:01,330
+whether this particular attribute it comes
+in a finite number of values or finite number
+
+189
+00:22:01,330 --> 00:22:05,530
+of categories or is it a continuous value
+random variable.
+
+190
+00:22:05,770 --> 00:22:09,809
+So, whether it is a continuous value random
+variable or it is a categorical value it has
+
+191
+00:22:09,809 --> 00:22:14,190
+a fixed number of values so that so you go
+ahead and like check the correct answer whatever
+
+192
+00:22:14,190 --> 00:22:15,190
+you think is correct.
+
+193
+00:22:15,190 --> 00:22:20,100
+So, if it is a finite value variable then
+it is a categorical feature and if it is it
+
+194
+00:22:20,100 --> 00:22:23,250
+can take infinite value theoretically then
+it is a continuous feature.
+
+195
+00:22:23,250 --> 00:22:31,900
+So, next let us move to the types of supervised
+learning, and yes, supervised learning mind
+
+196
+00:22:35,380 --> 00:22:40,640
+it, regression and classification.
+
+197
+00:22:44,840 --> 00:22:46,900
+So, what is regression?
+
+198
+00:22:49,720 --> 00:22:56,510
+In regression, so it is dependent upon the
+definitions they are dependent upon the type
+
+199
+00:22:56,510 --> 00:22:59,440
+of the output variable.
+
+200
+00:22:59,440 --> 00:23:13,390
+So, these are dependent upon the type of output
+variable.
+
+201
+00:23:13,390 --> 00:23:15,410
+And this output variable is what matters.
+
+202
+00:23:15,410 --> 00:23:21,429
+So, whenever you are given a problem that
+whether certain learning problem is certain
+
+203
+00:23:21,429 --> 00:23:25,780
+kind of supervised learning problem is supervise
+regression or classification then you have
+
+204
+00:23:25,780 --> 00:23:28,960
+to just check what is the nature of the output
+variable whether it is discrete or continuous.
+
+205
+00:23:28,960 --> 00:23:39,540
+So, in regression problem, the output variable
+or target variable may be is categorical or
+
+206
+00:23:44,740 --> 00:23:51,640
+or discrete, whereas oops, sorry in classification.
+
+207
+00:23:53,460 --> 00:24:03,840
+I am sorry; so in classification, the output
+or target value variable is categorical or
+
+208
+00:24:03,840 --> 00:24:04,840
+discrete.
+
+209
+00:24:04,840 --> 00:24:19,000
+Whereas, in regression, the output or target
+variable is continuous.
+
+210
+00:24:25,320 --> 00:24:27,640
+So, let us take some examples.
+
+211
+00:24:28,570 --> 00:24:51,710
+So, classification problems can be like, say
+you have been given images
+
+212
+00:24:51,710 --> 00:25:00,870
+of animals, and like and they could be either
+of like images of like I would say 5 animals.

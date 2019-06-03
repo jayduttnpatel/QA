@@ -1,0 +1,257 @@
+55
+00:05:00,930 --> 00:05:06,230
+So, that is why we need to this kind of a
+split of the data that is available to us
+
+56
+00:05:06,230 --> 00:05:08,610
+into training, validation and test sets.
+
+57
+00:05:08,850 --> 00:05:18,270
+And, it is general practice to have 70 percent
+of the data aside as training set, and the
+
+58
+00:05:18,270 --> 00:05:21,590
+rest 30 percent is divided into validation
+and test sets.
+
+59
+00:05:21,630 --> 00:05:23,290
+So, that is what we do here.
+
+60
+00:05:25,530 --> 00:05:31,290
+The next step is to Fit a linear model on
+to the training set.
+
+61
+00:05:31,949 --> 00:05:43,639
+And over here we first invoke the linear regression,
+the class and we create an object of this
+
+62
+00:05:43,639 --> 00:05:52,740
+particular class and this particular class
+has all necessary functions that are required
+
+63
+00:05:52,740 --> 00:06:00,060
+for working with linear regression models;
+that is it.
+
+64
+00:06:00,410 --> 00:06:07,900
+And we first like create copies of our training
+set - the x train and y train are the training
+
+65
+00:06:07,900 --> 00:06:14,700
+features, the inputs and the labels; and we
+reshape them into the particular convention
+
+66
+00:06:14,700 --> 00:06:21,880
+which is necessary for the linear regression
+object and we create copies of these data
+
+67
+00:06:21,880 --> 00:06:30,220
+sets because it tends to over write the examples
+if we do not do it, so that is why.
+
+68
+00:06:30,220 --> 00:06:35,630
+So, first we do this and first the data is
+ready, so that is what we have in the second
+
+69
+00:06:35,630 --> 00:06:36,370
+line.
+
+70
+00:06:36,630 --> 00:06:42,190
+So, x train for line fitting and y train for
+line fitting, they are the input features
+
+71
+00:06:42,190 --> 00:06:47,470
+and targets that is they outputs of course,
+respectively.
+
+72
+00:06:47,470 --> 00:06:55,669
+And next we go for the training part and in
+this particular episode what do we do, this
+
+73
+00:06:55,669 --> 00:07:00,049
+is particular step we fit which we invoke
+model dot fit this function.
+
+74
+00:07:00,520 --> 00:07:08,720
+So, this particular function does a least
+squared error minimization on the training set
+
+75
+00:07:09,720 --> 00:07:15,800
+So, whatever it does do for every single training
+example it calculates the prediction for the
+
+76
+00:07:15,800 --> 00:07:23,120
+model and then it finds out what is the amount
+of deviation of this predicted value from
+
+77
+00:07:23,120 --> 00:07:26,060
+the decided value which is also given to the
+model.
+
+78
+00:07:26,430 --> 00:07:36,669
+And now this deviation or the error is first
+squared, so that it becomes insensitive to
+
+79
+00:07:36,669 --> 00:07:41,309
+the sign and then it is summed over the entire
+training set.
+
+80
+00:07:41,650 --> 00:07:46,759
+And this particular error is the squared error
+that we are talking about, and this error
+
+81
+00:07:46,759 --> 00:07:49,219
+is minimized through gradient descent learning.
+
+82
+00:07:50,020 --> 00:07:54,420
+Finally, we get a model which minimizes the
+squared error.
+
+83
+00:07:55,610 --> 00:08:04,690
+So, here we see that the model has learnt
+to a fit line to the data and this line minimizes
+
+84
+00:08:04,690 --> 00:08:10,490
+a squared error on the training set, and you
+can see that it passes nicely through the
+
+85
+00:08:10,490 --> 00:08:11,770
+distribution of samples.
+
+86
+00:08:12,590 --> 00:08:17,070
+And the fourth step is Evaluation of the model.
+
+87
+00:08:17,229 --> 00:08:24,039
+So, in this particular step what do we do
+we find out how good the trained model generalizes.
+
+88
+00:08:24,039 --> 00:08:29,740
+So, because it all matters to us, what all
+matters to us, is how good the model would
+
+89
+00:08:29,740 --> 00:08:31,620
+perform on some unknown task.
+
+90
+00:08:32,269 --> 00:08:41,909
+It does not matter to us how good the model
+would perform on some seen examples or the
+
+91
+00:08:41,909 --> 00:08:45,940
+examples from the training as which we already
+know, we already know the shared outputs,
+
+92
+00:08:45,940 --> 00:08:50,260
+the correct outputs for all of those examples
+they do not matter to us anymore, what matter
+
+93
+00:08:50,260 --> 00:08:57,220
+to us is how good the model would perform
+when it is sent out to the world, to the unknown
+
+94
+00:08:57,220 --> 00:08:58,580
+world and asked to perform.
+
+95
+00:08:58,800 --> 00:09:03,880
+So, that is what is meant by the generalization
+performance, and this generalization performance
+
+96
+00:09:04,110 --> 00:09:05,370
+is to be measured next.
+
+97
+00:09:05,730 --> 00:09:06,570
+So, what do we do?
+
+98
+00:09:06,730 --> 00:09:11,570
+We find out the mean squared errors for the
+validation set and the test set.
+
+99
+00:09:12,510 --> 00:09:16,110
+And those numbers can be calculated in using
+the code that is given.
+
+100
+00:09:19,690 --> 00:09:21,770
+That was the end of the linear regression
+part.
+
+101
+00:09:22,330 --> 00:09:29,870
+And all the code and instructions and explanations
+will be provided to you through an IPython
+
+102
+00:09:29,870 --> 00:09:35,130
+notebook, which will be provided to you via
+the portal for this particular course, on
+
+103
+00:09:35,130 --> 00:09:35,630
+NPTEL.
+
+104
+00:09:36,300 --> 00:09:43,080
+Currently they are also on GitHub and I think
+that they will preserve these IPython notebooks
+
+105
+00:09:43,080 --> 00:09:49,050
+on our GitHub page as well and those links
+will be provided in the course website, all right
+
+106
+00:09:50,050 --> 00:09:58,700
+So, you would be able to directly use that
+particular notebook and you execute the cells
+
+107
+00:09:58,700 --> 00:09:59,200
+one by one.
+
+108
+00:09:59,460 --> 00:10:04,920
+So, each cell describes one particular step
+in the learning procedure, in the entire procedure.

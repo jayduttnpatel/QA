@@ -1,0 +1,129 @@
+362
+00:40:03,890 --> 00:40:07,740
+just to make sure that the next that next
+time the validation error is small.
+
+363
+00:40:07,740 --> 00:40:14,390
+So, in some way this, the machine has seen
+the validation data, but it must be evaluated
+
+364
+00:40:14,390 --> 00:40:19,710
+to get a taste of the true error that the
+machine would incur when it is deployed in
+
+365
+00:40:19,710 --> 00:40:26,309
+the real world, we must show it some data,
+we must evaluate it on this show on some data
+
+366
+00:40:26,309 --> 00:40:29,619
+which it has never seen before and that is
+where this test data comes in.
+
+367
+00:40:29,619 --> 00:40:39,890
+So, this comes in and do so I will write here
+do final evaluation, so after the system is
+
+368
+00:40:39,890 --> 00:40:43,329
+completely trained and it is ready to be deployed.
+
+369
+00:40:43,329 --> 00:40:47,499
+We bring in the test data and we check the
+performance of the machine on the test data
+
+370
+00:40:47,499 --> 00:40:53,119
+we check the test error and we report it that,
+yes, this is an estimate of the true error
+
+371
+00:40:53,119 --> 00:40:57,430
+that the system is going to incur when it
+is deployed.
+
+372
+00:40:57,430 --> 00:41:00,940
+So the kind of questions that you are going
+to face from this section is like you would
+
+373
+00:41:00,940 --> 00:41:08,390
+be asked to like say whether the training
+set is a measure of the true error or the
+
+374
+00:41:08,390 --> 00:41:14,699
+training error is a measure of the true error,
+or whether the test error or the validation
+
+375
+00:41:14,699 --> 00:41:15,779
+error are measures of the true error.
+
+376
+00:41:16,049 --> 00:41:20,430
+So, the training error is not at all the measure
+of the true error because it is the error
+
+377
+00:41:20,430 --> 00:41:26,180
+that has been you knows incurred by the system
+on a set of training examples, which it has
+
+378
+00:41:26,180 --> 00:41:30,520
+already seen during its training, and it was
+improving on that particular set.
+
+379
+00:41:30,520 --> 00:41:36,160
+Whereas the test data is completely unseen,
+so it is the measure of the true error when
+
+380
+00:41:36,160 --> 00:41:39,060
+it will be deployed in the real world.
+
+381
+00:41:40,020 --> 00:41:45,910
+And the validation set it gives an estimate
+of the generalization performance while the
+
+382
+00:41:45,910 --> 00:41:48,449
+system is be trained.
+
+383
+00:41:48,449 --> 00:41:54,029
+So, best of luck, all right, go ahead and
+solve this week’s assignment, and the deadline
+
+384
+00:41:54,029 --> 00:41:59,149
+is 27th of July, 11 P.M - Indian Standard
+Time all right.
+
+385
+00:41:59,579 --> 00:42:04,930
+So just go ahead and you will find familiar
+questions in this assignment, and solving
+
+386
+00:42:04,930 --> 00:42:09,269
+this assignment will give you a good understanding
+of the topics that have been covered in this
+
+387
+00:42:09,269 --> 00:42:09,989
+course.
+
+388
+00:42:10,269 --> 00:42:13,169
+So, best of luck, bye, bye, see you next time,
+peace.

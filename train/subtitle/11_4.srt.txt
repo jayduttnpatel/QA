@@ -1,0 +1,178 @@
+96
+00:14:59,620 --> 00:15:05,520
+this context.
+So, at every step, you have to first estimate
+
+97
+00:15:05,520 --> 00:15:16,740
+for which feature we have the; I would say
+the most possible as homogenous as possible;
+
+98
+00:15:18,260 --> 00:15:23,140
+all right. So, you have to choose that particular
+feature and that particular split on that
+
+99
+00:15:23,140 --> 00:15:29,310
+feature axis such that the homogeneity of
+the subsets being produced as a result of
+
+100
+00:15:29,310 --> 00:15:36,320
+that is maximized. So, there should be a method
+of quantifying the homogeneity of a set and
+
+101
+00:15:36,320 --> 00:15:44,870
+or homogeneity or purity of a set. And, one
+of those metrics is entropy. So, let us look
+
+102
+00:15:44,870 --> 00:15:48,440
+at the expression of entropy.
+
+103
+00:15:48,440 --> 00:15:59,330
+Entropy of a set as you have studied earlier,
+let us say we have
+
+104
+00:15:59,330 --> 00:16:21,980
+points from n different classes in a set.
+And, say the probabilities, if we calculate
+
+105
+00:16:21,980 --> 00:16:25,550
+the probability by the frequency definition
+of probability, then this amounts to; this
+
+106
+00:16:25,550 --> 00:16:44,700
+is the same as saying that, let the fraction
+or fractions of points of the different classes
+
+107
+00:16:44,700 --> 00:16:54,940
+are say f 1, f 2 this way until f N. So, let
+us say that, these are the different fractions
+
+108
+00:16:54,940 --> 00:17:05,530
+of points; all right. Such that f 1 plus f
+2 dot dot dot till f N is 1.
+
+109
+00:17:05,530 --> 00:17:12,789
+So, this is also the probability of a particular
+class in that set. So, we have a huge mixture
+
+110
+00:17:12,789 --> 00:17:19,980
+of points of n different classes; and, this
+is the class distribution. These are the fractions
+
+111
+00:17:19,980 --> 00:17:29,389
+of the points from different classes. So,
+how do you calculate the entropy? So, entropy
+
+112
+00:17:29,389 --> 00:17:47,080
+of this set is given by E equal to summation
+i equal to 1 through capital N; of course,
+
+113
+00:17:47,080 --> 00:17:56,210
+a negative sign f i log f i.
+Now, the base of the logarithm decides the
+
+114
+00:17:56,210 --> 00:18:01,929
+unit of the entropy. And, popularly, we have
+a log base 2 in the definition of entropy.
+
+115
+00:18:01,929 --> 00:18:12,720
+And then, the entropy is quantified end units
+of bits. So, given a set of say N different
+
+116
+00:18:12,720 --> 00:18:18,581
+classes, all right? Say we have this for example;
+we have a set, which looks like this. See
+
+117
+00:18:18,581 --> 00:18:29,799
+there are five points of class crosses and
+say three points of class circles. So, f cross
+
+118
+00:18:29,799 --> 00:18:39,759
+is going to be how much? So, it is going to
+be 5 by 8; right? And, f naught or f f – you
+
+119
+00:18:39,759 --> 00:18:43,879
+know circles, is going to be 3 divided by
+8.
+
+120
+00:18:45,210 --> 00:18:55,210
+And, entropy is equal to summation or just
+I will write it is going to be 3 by 8 log
+
+121
+00:18:55,210 --> 00:19:03,759
+of 3 by 8 minus 5 by 8 log of 5 by 8. So,
+whatever is the answer? So, first you have
+
+122
+00:19:03,759 --> 00:19:09,100
+to estimate the probabilities or the fractions.
+And, if you are estimating from frequency
+
+123
+00:19:09,100 --> 00:19:13,389
+definition, then it is equal to the fraction
+of points. And then, you are going to calculate
+
+124
+00:19:13,389 --> 00:19:16,950
+the entropy. So, you can find this kind of
+questions in the exam in which you will be
+
+125
+00:19:16,950 --> 00:19:22,289
+given a set of points and you have to calculate
+the entropy of that set; pretty easy right?
+
+126
+00:19:22,289 --> 00:19:29,640
+So, this term as you can say as you can see
+that, this term is going to be minimum and
+
+127
+00:19:29,640 --> 00:19:36,710
+it can be proved when the set is a uniform
+one; so you have the same number of members
+
+128
+00:19:36,710 --> 00:19:42,230
+from every single class; and in that case,
+the entropy is maximized; and, because there
+
+129
+00:19:42,230 --> 00:19:49,800
+like complete randomness – uniform distribution.
+And, entropy is going to be zero when there
+
+130
+00:19:49,800 --> 00:19:56,700
+is a just point from one single class. So,
+the fraction of that particular class will
+
+131
+00:19:56,700 --> 00:20:02,159
+become 1. So, it is 1 log 1. So, log 1 is
+.0. So, you are going to have zero entropy.

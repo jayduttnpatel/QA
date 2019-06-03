@@ -1,0 +1,227 @@
+183
+00:25:01,980 --> 00:25:09,039
+is this; so this for all d included in the
+training set, this is the sum of the square
+
+184
+00:25:09,039 --> 00:25:17,759
+errors and we want to minimize these sum of
+squared error given the data points x i, y
+
+185
+00:25:17,759 --> 00:25:24,929
+i. So this is the residue that we have when
+we make this assumption of the values of beta
+
+186
+00:25:24,929 --> 00:25:30,840
+0 and beta 1. And we want to find beta 0 and
+beta 1, so that the sum of the squares error
+
+187
+00:25:30,840 --> 00:25:39,509
+is minimum.
+Now we have to find out how to learn the parameters.
+
+188
+00:25:39,509 --> 00:25:48,240
+So, how to learn the parameters here the parameters
+are beta 0 and beta 1. And we want to find
+
+189
+00:25:48,240 --> 00:25:55,470
+out the estimated value of these parameters.
+Now this problem can be solved in different
+
+190
+00:25:55,470 --> 00:26:01,889
+ways, we can find the close forms solution
+given the training examples, we can find a
+
+191
+00:26:01,889 --> 00:26:08,950
+close form solution of to get the values of
+beta 0, beta 1 in order to satisfy this criteria
+
+192
+00:26:08,950 --> 00:26:18,100
+or we can come up with the iterative algorithm.
+So, we will look at both in this class.
+
+193
+00:26:18,100 --> 00:26:26,450
+So, if we look at this two-dimensional problem,
+where x is a single variable. We have Y equal
+
+194
+00:26:26,450 --> 00:26:33,950
+to beta 0 plus beta 1 X, and we want to find
+the values of beta 0 and beta 1 which minimizes
+
+195
+00:26:33,950 --> 00:26:41,460
+the objective function. Then what we can do
+is that we can try to in order to minimize
+
+196
+00:26:41,460 --> 00:26:47,059
+this function, we can use a standard procedure
+of taking partial derivative of the objective
+
+197
+00:26:47,059 --> 00:26:51,139
+function that the one that we have written
+on board here.
+
+198
+00:26:51,380 --> 00:26:56,580
+If you take the partial derivative of the
+function with respect to the coefficients
+
+199
+00:26:56,580 --> 00:27:04,119
+beta 0 and beta 1 and set this to 0, by solving
+we will get the values beta 0 and beta 1 as
+
+200
+00:27:04,119 --> 00:27:10,960
+given in this slide. So, beta 0 is sigma y
+minus beta 1 sigma x divided by n; and beta
+
+201
+00:27:10,960 --> 00:27:17,419
+1 is n sigma x y minus sigma x sigma y etcetera.
+So, this derivation I am not doing in the
+
+202
+00:27:17,419 --> 00:27:23,600
+class, but this is what you can do, and this
+is the close form solution that you can get.
+
+203
+00:27:23,600 --> 00:27:29,519
+Now, let us come to the multiple linear regressions.
+In multiple linear regression, you have Y
+
+204
+00:27:29,519 --> 00:27:35,149
+equal to beta 0 plus beta 1 x 1 plus beta
+n x n, or you can write h x equal to sigma
+
+205
+00:27:35,149 --> 00:27:41,110
+beta i x i. You can here also find the close
+form solution; on the close form solution,
+
+206
+00:27:41,110 --> 00:27:46,360
+we will involve metric operations in metric
+invention etcetera, which are involved in
+
+207
+00:27:46,360 --> 00:27:53,809
+this. And alternative to this is to use some
+iterative algorithm, which will iteratively
+
+208
+00:27:53,809 --> 00:27:56,549
+update the weight by looking at the training
+examples.
+
+209
+00:27:56,799 --> 00:28:03,160
+So, there are several iterative methods one
+popular well-known method is the using the
+
+210
+00:28:03,160 --> 00:28:10,570
+delta rule which is also called the LMS method
+this is the same method, LMS, which stands
+
+211
+00:28:10,570 --> 00:28:24,350
+for least minimum slope. So, this LMS method
+can be used. This LMS method or the delta
+
+212
+00:28:24,350 --> 00:28:31,059
+method will update the beta 0, beta 1, etcetera
+weight values to minimize the sum of squared
+
+213
+00:28:31,059 --> 00:28:31,659
+errors.
+
+214
+00:28:32,059 --> 00:28:37,289
+So, let us look at how it is done, so we assume
+that this is the form of the function, and
+
+215
+00:28:37,289 --> 00:28:42,860
+we want to learn the parameters theta. Here,
+the parameters are beta 0, beta 1, beta 2 etc
+
+216
+00:28:42,860 --> 00:28:46,929
+so we want to make so we want to
+learn a function h x.
+
+217
+00:28:46,929 --> 00:28:52,830
+So, we want to learn about y i, so we want
+to learn h x which is beta 0 plus sigma beta
+
+218
+00:28:52,830 --> 00:28:59,730
+i x i. And we had defined a cost function
+j theta based on minimizing the sum of square
+
+219
+00:28:59,730 --> 00:29:07,730
+errors. So, j theta is sigma h x minus y whole
+square over all the training examples. So,
+
+220
+00:29:07,730 --> 00:29:11,960
+this is the cost function that we had written.
+So, this is the cost function which we want
+
+221
+00:29:11,960 --> 00:29:18,280
+to minimize and this function is a parameter
+of beta 0 and beta 1, and we want to find
+
+222
+00:29:18,280 --> 00:29:20,780
+beta 0 and beta 1 to minimize this function.
+
+223
+00:29:20,990 --> 00:29:28,980
+Now, in the LMS algorithm, what we do is that
+we start with the initial value of theta that
+
+224
+00:29:28,980 --> 00:29:34,580
+is initial value of beta 0, beta 1, then we
+take a training example or all training examples
+
+225
+00:29:34,580 --> 00:29:43,929
+and update the values of beta 0, beta 1, so
+as to reduce the sum of squared errors. So,
+
+226
+00:29:43,929 --> 00:29:50,269
+we can find out so what we can do is that
+this function is actually a convex function;
+
+227
+00:29:50,269 --> 00:29:57,289
+and this convex function, this is a quadratic
+function and a quadratic function has single
+
+228
+00:29:57,289 --> 00:30:00,389
+optima.
+So, in this case, this quadratic function

@@ -1,0 +1,237 @@
+229
+00:30:00,389 --> 00:30:08,159
+will have single minima. What we do is that
+we start at any point in this function space,
+
+230
+00:30:08,159 --> 00:30:15,789
+and then we update the values of beta 0, beta
+1, so as to reduce this values. And if we
+
+231
+00:30:15,789 --> 00:30:23,450
+keep on reducing this, we will ultimately
+reach the minima of the function, so that
+
+232
+00:30:23,450 --> 00:30:27,179
+the method that we follow is called the gradient
+descent method.
+
+233
+00:30:27,179 --> 00:30:33,350
+Suppose, this is a function, we start with
+some place here and then what we do is that
+
+234
+00:30:33,350 --> 00:30:39,950
+we find a gradient at this point, we find
+the gradient of the curve at this point, and
+
+235
+00:30:39,950 --> 00:30:45,870
+then we take a small step in the negative
+direction of the gradient, so this is called
+
+236
+00:30:45,870 --> 00:30:53,280
+gradient descent. And we continue doing this,
+with small step, if we take small steps ultimately
+
+237
+00:30:53,280 --> 00:31:00,679
+you will go the minima of this function.
+Now so given this function, we can take a
+
+238
+00:31:00,679 --> 00:31:08,950
+partial derivative of this function, and work
+out that del del beta j, J theta is the gradient
+
+239
+00:31:08,950 --> 00:31:14,779
+of the function. And we want to take a small
+step in the negative direction of the gradient,
+
+240
+00:31:14,779 --> 00:31:21,299
+and alpha here is the step size. Alpha is
+small and alpha determines if alpha is larger,
+
+241
+00:31:21,299 --> 00:31:27,220
+we take larger steps; if alpha is small we
+take smaller steps. So, this is the initial
+
+242
+00:31:27,220 --> 00:31:36,200
+value of beta and we make a small change to
+beta in the negative direction of the partial
+
+243
+00:31:36,200 --> 00:31:42,960
+derivative of the j theta with respect to
+beta. And since J is a convex quadratic function,
+
+244
+00:31:42,960 --> 00:31:49,700
+it has single global minima, and so gradient
+descent will eventually converges to the global
+
+245
+00:31:49,700 --> 00:31:50,700
+minima.
+
+246
+00:31:50,700 --> 00:31:56,669
+So, this is the LMS update rule, if you have
+a single training example, you can work out
+
+247
+00:31:58,300 --> 00:31:59,680
+del del theta J theta.
+
+248
+00:32:04,780 --> 00:32:06,940
+So, you can work out 
+as
+
+249
+00:32:25,899 --> 00:32:33,710
+and we can just look at the slide here, and
+so del del theta. So, actually one thing I
+
+250
+00:32:33,710 --> 00:32:39,190
+forget to tell you that in this function,
+we have put a half here; you know it is easy
+
+251
+00:32:39,190 --> 00:32:46,100
+to see that whatever minimizes the rest of
+the function is also minimizes the half of
+
+252
+00:32:46,100 --> 00:32:50,509
+this function, and we are just taken half
+for the variance it is not very important.
+
+253
+00:32:50,509 --> 00:32:58,409
+So, because we have taken half here then we
+do at take a derivative, we can work out it,
+
+254
+00:32:58,409 --> 00:33:07,240
+it is if we take a make a change of variable
+h x minus y, then we can take so this is a
+
+255
+00:33:07,240 --> 00:33:14,211
+z square, so this the derivative of its 2
+into z, so we have 2 into half into z h x
+
+256
+00:33:14,211 --> 00:33:21,730
+minus y times the partial derivative of h
+x minus y. And by simplifying what we get
+
+257
+00:33:21,730 --> 00:33:28,710
+is h x minus y into x j. So, for a single
+training example, we get the update rule as
+
+258
+00:33:28,710 --> 00:33:37,700
+beta j equal to earlier value of beta j plus
+alpha times the y minus h x i times the value
+
+259
+00:33:37,700 --> 00:33:41,700
+of x j.
+So, this is the delta rule; and this delta
+
+260
+00:33:41,700 --> 00:33:47,780
+rule, you can easily interpret is that if
+y and h x are same you do not change beta,
+
+261
+00:33:47,780 --> 00:33:53,869
+but if there are different suppose y is greater
+than h x then what we have to do you have
+
+262
+00:33:53,869 --> 00:34:00,629
+to increase beta, so that h x comes closer
+to y. If y is smaller than h x, you have to
+
+263
+00:34:00,629 --> 00:34:06,619
+decrease beta and that is what the LMS update
+rule or the delta rule is doing.
+
+264
+00:34:06,619 --> 00:34:12,970
+So, you can do this for a single training
+example, or you can update for all the training
+
+265
+00:34:12,970 --> 00:34:21,180
+examples at a time. So, you find out summation
+of this, and then you take an update, you
+
+266
+00:34:21,180 --> 00:34:26,700
+take all the training examples and update
+all of them together, this is called batch
+
+267
+00:34:26,700 --> 00:34:32,820
+gradient descent. Or you can update based
+on a single example which is called incremental
+
+268
+00:34:32,820 --> 00:34:44,520
+gradient descent. So, batch gradient descent,
+takes the right steps in the right direction,
+
+269
+00:34:44,520 --> 00:34:50,100
+but it is very slow because you make one step
+after processing all the inputs.
+
+270
+00:34:50,100 --> 00:34:57,370
+So, what is usually done is that we use stochastic
+gradient descent where we take examples one
+
+271
+00:34:57,370 --> 00:35:04,020
+at a time, and make changes based on that
+training examples, if we do that the entire
+
+272
+00:35:04,020 --> 00:35:10,130
+process fast and it has also been shown that
+stochastic gradient descent has very nice
+
+273
+00:35:10,130 --> 00:35:15,410
+properties, so that it is does converge. And
+between batch gradient descent and stochastic
+
+274
+00:35:15,410 --> 00:35:20,170
+gradient descent, we can also have mini batch
+gradient descent, where we take a few examples
+
+275
+00:35:20,170 --> 00:35:24,090
+at a time, based on that; we decide the update
+of the parameters.
+
+276
+00:35:25,210 --> 00:35:28,220
+With this, we come to the end of this lecture.
+Thank you.

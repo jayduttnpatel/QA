@@ -1,0 +1,209 @@
+159
+00:20:03,720 --> 00:20:14,940
+See, the learner takes the experience and
+from that it can also take the background
+
+160
+00:20:14,940 --> 00:20:25,270
+knowledge and from this the learner builds
+models and this models can be used by the
+
+161
+00:20:25,270 --> 00:20:31,190
+reasoner, which given a task finds the solution
+to the task.
+
+162
+00:20:31,190 --> 00:20:38,169
+So, the learner takes experience and background
+knowledge and learns a model and the reasoner
+
+163
+00:20:38,169 --> 00:20:45,630
+works with the model and given a new problem
+or task, it can come up with the solution
+
+164
+00:20:45,630 --> 00:20:50,330
+to the task and the performance measure corresponding
+to this.
+
+165
+00:20:50,330 --> 00:20:55,730
+Now, we will like to look at some examples
+of machine learning system.
+
+166
+00:20:55,730 --> 00:21:00,679
+So, machine learning, there are many domains
+and applications of machine learning.
+
+167
+00:21:00,679 --> 00:21:07,370
+For example, in medicine you can use machine
+learning to diagnose a disease where the input
+
+168
+00:21:07,370 --> 00:21:14,510
+at the symptoms, lab measurements, test results,
+DNA tests, etcetera.
+
+169
+00:21:14,510 --> 00:21:20,309
+Output could be one of a set of possible diseases
+or none of them.
+
+170
+00:21:20,309 --> 00:21:29,350
+For doing this, one can determine historical
+medical records and learn which future patients
+
+171
+00:21:29,350 --> 00:21:33,350
+will respond best to which treatments.
+
+172
+00:21:33,350 --> 00:21:40,019
+Another domain is computer vision where given
+an image; you want to find out what objects
+
+173
+00:21:40,019 --> 00:21:45,059
+appear in an image and where the objects appear
+in an image.
+
+174
+00:21:45,360 --> 00:21:54,010
+A third domain, robot control; one can use
+machine learning to design autonomous mobile
+
+175
+00:21:54,010 --> 00:21:59,050
+robots that learn to navigate from their own
+experience.
+
+176
+00:22:00,510 --> 00:22:09,230
+Then, in the domain of natural language processing,
+one can detect where entities are mentioned
+
+177
+00:22:09,230 --> 00:22:17,000
+in natural language and detect what facts
+are expressed in natural language.
+
+178
+00:22:17,000 --> 00:22:24,020
+One can look at a product or movie review
+and find out if it is positive, negative or
+
+179
+00:22:24,020 --> 00:22:27,430
+neutral, that is, the sentiment on the review.
+
+180
+00:22:27,430 --> 00:22:33,870
+Other applications in NLP include speech recognition,
+machine translation etcetera.
+
+181
+00:22:34,440 --> 00:22:43,080
+In the financial domain, one can try to predict
+if a stock will rise or fall; one can predict
+
+182
+00:22:43,080 --> 00:22:46,360
+if a user will click on an advertisement or
+not.
+
+183
+00:22:47,210 --> 00:22:51,830
+There are many applications in business intelligence.
+
+184
+00:22:52,500 --> 00:22:59,600
+You want to robustly forecast product sales
+quantities taking seasonality and trend into
+
+185
+00:22:59,600 --> 00:23:01,530
+account.
+
+186
+00:23:01,530 --> 00:23:09,110
+Identify cross selling promotional opportunities,
+identify price sensitivity of a consumer product,
+
+187
+00:23:09,110 --> 00:23:14,309
+and optimize product location at a super market
+shelf and so on.
+
+188
+00:23:14,309 --> 00:23:22,299
+Then, there are other applications such as
+fraud detection, credit card fraud detection.
+
+189
+00:23:22,299 --> 00:23:29,850
+Understand consumer sentiment, forecast women’s
+conviction rates based on external macroeconomic
+
+190
+00:23:29,850 --> 00:23:31,010
+factors, etcetera.
+
+191
+00:23:31,570 --> 00:23:36,750
+So, these are some of the many, many applications
+of machine learning.
+
+192
+00:23:36,750 --> 00:23:43,799
+Machine learning is a part of many products
+and systems that we routinely use.
+
+193
+00:23:43,799 --> 00:23:52,360
+If you look at the box that we drew for machine
+learning systems and discuss how we can go
+
+194
+00:23:52,360 --> 00:23:58,020
+about creating a learner, these are the following
+steps.
+
+195
+00:23:58,020 --> 00:24:08,220
+First of all, we choose the training experience
+or the training data.
+
+196
+00:24:08,220 --> 00:24:24,210
+Then, we choose the target function or how
+we want to represent the model.
+
+197
+00:24:24,210 --> 00:24:37,640
+So, this is what we want to learn, the target
+function that is to be learned.
+
+198
+00:24:37,640 --> 00:24:43,610
+For example, if you are trying to write a
+machine learning system to play the game of
+
+199
+00:24:43,610 --> 00:24:52,169
+checkers, the target function would be, given
+a board position, what move to take.
+
+200
+00:24:52,169 --> 00:24:57,279
+And then, we want to have the class of function
+that we will use, the task is given a board
+
+201
+00:24:57,279 --> 00:25:03,950
+position what move to take and we will design
+the function as a function of the input and

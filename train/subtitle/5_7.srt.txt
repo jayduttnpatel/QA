@@ -1,0 +1,254 @@
+252
+00:30:02,630 --> 00:30:05,870
+So, it does not have enough examples and cannot
+realize.
+
+253
+00:30:05,870 --> 00:30:23,059
+So, let us try to predict how bias and variance
+varies with if you very different aspects
+
+254
+00:30:23,059 --> 00:30:24,340
+of our learning algorithm.
+
+255
+00:30:24,340 --> 00:30:30,810
+And we will study the variation of bias and
+variance with three things.
+
+256
+00:30:30,810 --> 00:30:50,760
+So, number of features, number of parameters
+of your model and number of training examples.
+
+257
+00:30:50,760 --> 00:31:00,809
+So, when you increase the number of features
+of your learning algorithm, then the bias
+
+258
+00:31:00,809 --> 00:31:09,799
+decreases, because your learning algorithm
+it looks at more and more features of the
+
+259
+00:31:09,799 --> 00:31:16,899
+data, and becomes more and more sophisticated,
+so the bias decreases, whereas the variance
+
+260
+00:31:16,899 --> 00:31:18,010
+increases.
+
+261
+00:31:18,010 --> 00:31:23,049
+Because the more the number of input features
+it looks at the more you know is the amount
+
+262
+00:31:23,049 --> 00:31:28,790
+of noise that it is gets exposed to alright
+so more it becomes acceptable to or yeah more
+
+263
+00:31:28,790 --> 00:31:33,010
+it becomes acceptable to modeling the noise
+or other important features.
+
+264
+00:31:33,010 --> 00:31:42,620
+So, with a number of parameters of the learning
+algorithm, so again bias decreases; why, because
+
+265
+00:31:42,620 --> 00:31:46,250
+it becomes more and more capable, so the number
+of parameters as you increase the number of
+
+266
+00:31:46,250 --> 00:31:49,159
+parameters of your learning algorithm, it
+gets the model becomes more and more sophisticated.
+
+267
+00:31:49,159 --> 00:31:53,929
+And you know it can it is capacity learning
+capacity increases.
+
+268
+00:31:53,929 --> 00:32:01,770
+Whereas the variance again increases, because
+it can use the parameters the more parameters
+
+269
+00:32:01,770 --> 00:32:04,580
+it got to model noise more efficiently.
+
+270
+00:32:04,580 --> 00:32:16,020
+Whereas with the number of training examples,
+bias remains constant remains the same, because
+
+271
+00:32:16,020 --> 00:32:21,340
+bias is not a property that is directly related
+to the number of training examples that has
+
+272
+00:32:21,340 --> 00:32:26,530
+been presented to the learning algorithm rather
+it is a limitation of the model of the learning
+
+273
+00:32:26,530 --> 00:32:27,030
+algorithm.
+
+274
+00:32:27,669 --> 00:32:31,820
+So your learning algorithm, your model is
+not capable enough to learn important features
+
+275
+00:32:31,820 --> 00:32:37,940
+in the data and that is why bias comes in
+and it is not a problem which comes directly
+
+276
+00:32:37,940 --> 00:32:38,720
+from the training data.
+
+277
+00:32:38,950 --> 00:32:43,309
+So, if we increase the number of training
+examples, and your model remains equally incapable
+
+278
+00:32:43,309 --> 00:32:49,950
+as before, so the bias process and you cannot
+do anything; whereas the variance goes down,
+
+279
+00:32:49,950 --> 00:32:51,730
+it decreases.
+
+280
+00:32:51,730 --> 00:32:59,700
+This is because you have variance is coming
+because like your model is sophisticated,
+
+281
+00:32:59,700 --> 00:33:04,110
+it has the capacity to learn, so which was
+like grabbing on the noise and trying to model
+
+282
+00:33:04,110 --> 00:33:04,810
+the noise.
+
+283
+00:33:05,110 --> 00:33:11,039
+But whereas you show it more and more data
+valid data points then it learn to really
+
+284
+00:33:11,039 --> 00:33:16,960
+understand what kind of properties occur in
+general within the data.
+
+285
+00:33:16,960 --> 00:33:22,529
+So, what kind of important which particular
+relationships between input and output, they
+
+286
+00:33:22,529 --> 00:33:28,340
+are predominant within the examples, and hence
+are important to model.
+
+287
+00:33:28,340 --> 00:33:35,460
+So, you will be asked how bias and variance
+of a particular learning algorithm will vary
+
+288
+00:33:35,460 --> 00:33:42,950
+as these different kinds of parameters of
+a learning algorithm are changed, you know
+
+289
+00:33:42,950 --> 00:33:44,190
+modify it.
+
+290
+00:33:44,190 --> 00:33:52,049
+And the last thing that we would going to
+we are going to discuss today is generalization
+
+291
+00:33:52,049 --> 00:33:55,730
+of performance.
+
+292
+00:33:55,730 --> 00:34:01,600
+So, what do you mean by generalization of
+the performance of the learning algorithm.
+
+293
+00:34:01,600 --> 00:34:06,480
+The generalization means that how good the
+learning algorithm would perform when it is
+
+294
+00:34:06,480 --> 00:34:08,399
+presented examples, which it has not seen
+before.
+
+295
+00:34:08,399 --> 00:34:12,710
+So, you have a machine learning algorithm
+and you have got a say a million training
+
+296
+00:34:12,710 --> 00:34:16,889
+examples, and you trained it on the million
+training examples; however, you have no idea
+
+297
+00:34:16,889 --> 00:34:21,819
+of what kind of training examples what kind
+of examples it is going to see when it is
+
+298
+00:34:21,819 --> 00:34:23,159
+deployed in the real world.
+
+299
+00:34:23,159 --> 00:34:30,270
+So, at any time say, you have a machine learning
+algorithm which is looking at a scans of x-rays
+
+300
+00:34:30,270 --> 00:34:34,210
+and trying to or may be let us make it more
+interesting, may be scans of you know may
+
+301
+00:34:34,210 --> 00:34:39,459
+be microscopy images of cells, and trying
+to predict whether there is a cancer or not,
+
+302
+00:34:39,459 --> 00:34:45,629
+and biopsy results and trying to predict whether
+the result is cancerous or not.
+
+303
+00:34:45,629 --> 00:34:52,149
+So you have trained the machine learning algorithm
+with a huge number of training examples, but
+
+304
+00:34:52,149 --> 00:34:59,099
+still you do not know in a clinical setting
+rare type of cancer or rare kind of like set

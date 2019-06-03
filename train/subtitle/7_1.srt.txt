@@ -1,0 +1,196 @@
+1
+00:00:19,760 --> 00:00:20,830
+Good morning.
+
+2
+00:00:20,830 --> 00:00:28,720
+So, today we will start the second part of
+the module introduction to linear regression
+
+3
+00:00:28,720 --> 00:00:30,000
+and decision tress.
+
+4
+00:00:30,600 --> 00:00:35,600
+In today’s lecture we will give a brief
+introduction to decision trees.
+
+5
+00:00:36,590 --> 00:00:44,770
+In the last class we saw, we talked about
+linear regression, which learns the linear function
+
+6
+00:00:45,900 --> 00:00:51,390
+The learning algorithm, that we will start
+today, the representation is a decision tree,
+
+7
+00:00:51,390 --> 00:00:53,530
+which is a non-linear function.
+
+8
+00:00:53,839 --> 00:00:57,519
+So, first let us define what is a decision
+tree?
+
+9
+00:00:58,489 --> 00:01:08,029
+I hope all of you know what is a computer
+science tree.
+
+10
+00:01:08,680 --> 00:01:14,220
+A tree has nodes and branches.
+
+11
+00:01:14,740 --> 00:01:25,860
+A rooted tree, you have a root node and you
+have children and then you have leafs, which
+
+12
+00:01:25,870 --> 00:01:27,250
+do not have any children.
+
+13
+00:01:27,710 --> 00:01:32,390
+Now, a decision tree is a tree, is also a
+classifier.
+
+14
+00:01:32,820 --> 00:01:43,060
+A decision tree is a classifier in the form
+of a tree and the tree has two types of nodes,
+
+15
+00:01:49,390 --> 00:01:56,180
+decision nodes, so is a classifier.
+
+16
+00:01:56,180 --> 00:02:05,460
+It is a tree structured classifier, which
+is tree structured and it has two types of
+
+17
+00:02:05,460 --> 00:02:10,849
+nodes, decision nodes and leaf nodes.
+
+18
+00:02:10,849 --> 00:02:26,030
+So, in decision nodes they specify a choice
+or a test based on this you can decide which
+
+19
+00:02:26,030 --> 00:02:27,520
+direction you can go.
+
+20
+00:02:27,520 --> 00:02:35,700
+So, in a decision tree we test something and
+that test may have more than one result and
+
+21
+00:02:35,700 --> 00:02:41,390
+the based on the value of this test, you either
+follow this branch or this branch.
+
+22
+00:02:41,390 --> 00:02:50,549
+So, this test is usually done on the value
+of a feature or attribute of the instance.
+
+23
+00:02:50,549 --> 00:02:54,689
+So, test is on some attribute and there is
+a branch for each outcome.
+
+24
+00:02:54,689 --> 00:03:01,200
+So, there may be two outcomes or in some cases,
+you can have more than two outcome.
+
+25
+00:03:01,200 --> 00:03:02,680
+And then, there are leaf nodes.
+
+26
+00:03:03,760 --> 00:03:14,840
+So, leaf node indicate the classification
+of an example or the value of the example.
+
+27
+00:03:16,579 --> 00:03:21,099
+Decision trees can be used both for classification
+and regression.
+
+28
+00:03:21,590 --> 00:03:29,379
+However, it is more popularly used for classification
+though they can be used for regression also.
+
+29
+00:03:29,379 --> 00:03:37,659
+So, given an example, you start with the root
+of the tree and based on the value, based
+
+30
+00:03:37,659 --> 00:03:43,889
+on the value of the test you go to the corresponding
+branch and you continue doing this until you
+
+31
+00:03:43,889 --> 00:03:49,450
+come to a leaf node, and at the leaf node
+you have the value of the example.
+
+32
+00:03:49,450 --> 00:03:54,209
+It can be the predicted value of the example
+for classification, regression or it can be
+
+33
+00:03:54,209 --> 00:03:55,209
+a probability.
+
+34
+00:03:55,209 --> 00:03:59,509
+So, let us make it clearer by drawing an example
+decision tree.
+
+35
+00:04:05,920 --> 00:04:12,120
+So, let us say, we want to draw a decision
+tree about whether to approve a loan.
+
+36
+00:04:14,340 --> 00:04:25,570
+So, let us say, the first test that we will
+make is check if the applicant is employed.
+
+37
+00:04:25,570 --> 00:04:37,630
+So, this is a decision node and we test whether
+the applicant is employed and there are two
+
+38
+00:04:37,630 --> 00:04:39,710
+outcomes, no or yes.
+
+39
+00:04:40,660 --> 00:04:50,920
+If the applicant is not employed, then we
+have another test, we check the credit score
+
+40
+00:04:50,920 --> 00:04:51,780
+of the applicant.
+
+41
+00:04:51,920 --> 00:04:55,600
+Does he have a high credit score?
+
+42
+00:04:56,770 --> 00:05:12,720
+Now, if the credit score is high, then you
+approve the loan and if the credit score is

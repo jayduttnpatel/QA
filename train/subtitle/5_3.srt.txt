@@ -1,0 +1,185 @@
+85
+00:10:01,390 --> 00:10:05,460
+like everything, so it is very difficult to
+really train one single classifier that would
+
+86
+00:10:05,460 --> 00:10:12,320
+be specialized that would be able to identify
+these objects coming from this kind of a wide
+
+87
+00:10:12,320 --> 00:10:15,520
+range of categories this is a very hard learning
+problem.
+
+88
+00:10:15,520 --> 00:10:18,390
+So, I just decided to do a trick.
+
+89
+00:10:18,390 --> 00:10:27,930
+Just go a bit different way different from
+a bit more make the problem a bit more interesting.
+
+90
+00:10:27,930 --> 00:10:55,600
+So, what I decided is I decided to first go
+for clustering the images into groups of similar
+
+91
+00:10:55,600 --> 00:10:58,510
+looking objects.
+
+92
+00:10:58,510 --> 00:11:08,120
+So, what I first decided is to identify clusters
+within the image data that has been provided
+
+93
+00:11:08,120 --> 00:11:09,120
+to me.
+
+94
+00:11:09,120 --> 00:11:17,831
+So, maybe if I try to I if I ask my algorithm
+to identify clusters within the data, data
+
+95
+00:11:17,831 --> 00:11:20,980
+that has given to me within the images just
+the image part.
+
+96
+00:11:20,980 --> 00:11:28,530
+So, maybe it will be clustering all the vehicles
+together, so all trucks, cars, buses, trains,
+
+97
+00:11:28,530 --> 00:11:35,800
+airplanes they all come together under one
+cluster; may be all human faces come together
+
+98
+00:11:35,800 --> 00:11:39,700
+in a cluster, may be all plants go together
+in a cluster, may be all animals again move
+
+99
+00:11:39,700 --> 00:11:40,839
+to another cluster.
+
+100
+00:11:40,839 --> 00:11:48,000
+And then once this clustering has been done,
+then I decide to train one classifier per
+
+101
+00:11:48,000 --> 00:11:52,510
+cluster, so that particular classifier is
+going to be specialized for that particular
+
+102
+00:11:52,510 --> 00:11:55,370
+cluster.
+
+103
+00:11:55,370 --> 00:12:12,209
+So, then I would train one classifier per
+cluster.
+
+104
+00:12:12,209 --> 00:12:19,750
+So, I can describe the problem graphically
+this way.
+
+105
+00:12:19,750 --> 00:12:26,760
+So, I had this huge dataset of images, so
+these are all images.
+
+106
+00:12:26,760 --> 00:12:39,770
+And first I try to identify clusters within
+this data, maybe I have the example just showing
+
+107
+00:12:39,770 --> 00:12:51,730
+three of them, may be these clusters are like
+vehicles here and people and animals.
+
+108
+00:12:51,730 --> 00:13:15,810
+So, these kind of clusters first; and then
+we would make one classifier per cluster
+
+109
+00:13:15,810 --> 00:13:17,839
+say N.
+
+110
+00:13:17,839 --> 00:13:21,360
+We have n clusters and we have N classifiers.
+
+111
+00:13:21,360 --> 00:13:29,130
+So, each of these classifiers will then try
+to predict, whether which particular class
+
+112
+00:13:29,130 --> 00:13:33,440
+that particular image is in, for example,
+this one classifier would be able to tell
+
+113
+00:13:33,440 --> 00:13:44,860
+me whether the output whether the presented
+image is a bus, or a truck, or a train or
+
+114
+00:13:44,860 --> 00:13:51,500
+may be a passenger car or so this way.
+
+115
+00:13:51,500 --> 00:14:06,890
+And second would be like male face, female
+face and maybe this is cat, dog, maybe horse.
+
+116
+00:14:06,890 --> 00:14:17,649
+So, now, tell me which part so there are like
+this learning algorithm has two steps.
+
+117
+00:14:17,649 --> 00:14:26,160
+So, this is my step one, where I am just looking
+at the images, and I am trying to group them
+
+118
+00:14:26,160 --> 00:14:34,050
+into a similar looking classes, similar looking
+I am sorry similar looking groups or clusters.
+
+119
+00:14:34,050 --> 00:14:42,980
+And in the second step, I am trying to I am
+bring in the class labels that had been had
+
+120
+00:14:42,980 --> 00:14:45,050
+been presented to me.
+
+121
+00:14:45,050 --> 00:14:52,420
+So, for each particular cluster, I am going
+to make one classifier, and train it to match
+
+122
+00:14:52,420 --> 00:14:55,820
+the image to the label that has been given
+to me.
+
+123
+00:14:56,020 --> 00:15:01,640
+So, now, think for a minute, and you pause
+the video here, and try to identify that what
