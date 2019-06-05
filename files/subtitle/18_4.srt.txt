@@ -1,0 +1,149 @@
+91
+00:15:06,669 --> 00:15:14,649
+for in different instances, and it is a Gaussian
+with zero mean and variance sigma square and
+
+92
+00:15:14,649 --> 00:15:22,179
+therefore, we can say that data is generated
+as normal distribution f x i sigma square.
+
+93
+00:15:22,179 --> 00:15:38,740
+So, what we have is that this is our x and
+this is our d, suppose this is the true function.
+
+94
+00:15:38,740 --> 00:15:51,549
+So, this is f x and the data that we get are
+let us say generated like this. So, these
+
+95
+00:15:51,549 --> 00:16:02,109
+are the data points that we have. Now, we
+have to find a function which estimates f.
+
+96
+00:16:02,109 --> 00:16:09,920
+Now, how do we find this function? Let us
+say we use the maximum likelihood hypothesis.
+
+97
+00:16:09,920 --> 00:16:20,259
+So, what is h m l? H m l is the maximum likelihood
+hypothesis which is given by that hypothesis
+
+98
+00:16:20,259 --> 00:16:35,959
+for which probability D given h is maximum.
+Now, what is this? This is this arg max h
+
+99
+00:16:35,959 --> 00:16:46,850
+and probability D given h is given by product.
+Over all the training examples 1 by route
+
+100
+00:16:46,850 --> 00:17:08,089
+over 2 pi sigma square e to the power minus
+half D minus h x i whole square by sigma because
+
+101
+00:17:08,089 --> 00:17:13,130
+they follow the Gaussian distribution. Now,
+this can be written as let me rub out this
+
+102
+00:17:13,130 --> 00:17:16,550
+portion of the board, so that we can write
+this formula here.
+
+103
+00:17:18,209 --> 00:17:31,639
+So, this turns out to be Arg max h. So, that
+function which maximizes this product is the
+
+104
+00:17:31,639 --> 00:17:40,400
+same as which maximizes the sum of the logs.
+So, we convert it to the log do mine which
+
+105
+00:17:40,400 --> 00:17:48,580
+is summation i equal to 1 to m, where m is
+the number of training examples half l n.
+
+106
+00:17:48,580 --> 00:17:56,620
+So, we have taken logarithm of this part.
+So, it is half l n. So, minus half minus half
+
+107
+00:17:56,620 --> 00:18:14,630
+l n 2 pi sigma square minus half D i minus
+h x i by sigma whole square by taking logarithm,
+
+108
+00:18:14,630 --> 00:18:25,490
+we can get this, so by simplifying what we
+get? It is that function for which sigma i
+
+109
+00:18:25,490 --> 00:18:33,630
+equal to 1 to m D i minus h x i whole square
+is minimized.
+
+110
+00:18:35,940 --> 00:18:44,620
+Why? It is because this part is constant.
+When I am taking the hypothesis for which
+
+111
+00:18:44,630 --> 00:18:52,370
+this expression is maximized, this part does
+not play a role because this is constant.
+
+112
+00:18:52,370 --> 00:19:00,380
+So, this part plays a role which arg max hypothesis
+minus of half by D i minus h x i by sigma
+
+113
+00:19:00,380 --> 00:19:06,490
+whole square. So, half we can ignore because
+whatever maximizes minus half of that also
+
+114
+00:19:06,490 --> 00:19:13,519
+maximizes only this part. So, if you want
+to maximize negative of this, it is the same
+
+115
+00:19:13,519 --> 00:19:21,159
+of minimizing the positive part of this. So,
+it is that hypothesis, the maximum likelihood
+
+116
+00:19:21,159 --> 00:19:29,570
+hypothesis for this linear regression problem
+is that hypothesis for which D i minus h x
+
+117
+00:19:29,570 --> 00:19:35,010
+i whole square is maximized and this is exactly
+the least square criteria.
+
+118
+00:19:36,160 --> 00:19:40,710
+So, based on this, we will get a function
+and that function could be something like
+
+119
+00:19:40,710 --> 00:19:47,070
+this, but this is that function for which
+the sum of square errors is maximized. So,
+
+120
+00:19:47,070 --> 00:19:55,960
+this is the Bayesian explanation to why we
+would choose a sum of square error to minimize

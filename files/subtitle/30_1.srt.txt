@@ -1,0 +1,170 @@
+1
+00:00:19,070 --> 00:00:25,670
+Good morning, welcome to today's class. This
+week we will talk about neural networks.
+
+2
+00:00:27,260 --> 00:00:36,320
+So,neural networks is one of the most active
+topic of research in machine learning nowadays
+
+3
+00:00:36,320 --> 00:00:43,660
+because of the capability of the neural networks
+to represent and learn highly complex and
+
+4
+00:00:43,660 --> 00:00:53,350
+non-linear functions. We will see that neural
+network was inspired by the human brain; human
+
+5
+00:00:53,350 --> 00:01:01,039
+beings are very intelligent and can do certain
+tasks extremely well and this inspired people
+
+6
+00:01:01,039 --> 00:01:04,539
+to try to understand how human brain works.
+
+7
+00:01:05,270 --> 00:01:14,119
+Human brain contains a number of neurons,
+of the order of tens of billions. So, tens
+
+8
+00:01:14,119 --> 00:01:22,970
+of billions of neurons are there in the human
+brain which is highly interconnected and these
+
+9
+00:01:22,970 --> 00:01:29,680
+individual neurons are simple computing units,
+but together they can perform very complex
+
+10
+00:01:29,680 --> 00:01:36,360
+tasks. There are certain characteristics of
+neurons which have been incorporated while
+
+11
+00:01:36,360 --> 00:01:44,810
+trying to form the architecture of neural
+networks. So, these characteristics are massive
+
+12
+00:01:44,810 --> 00:01:59,680
+parallelism. There are many units which are
+individually simple, but they work together
+
+13
+00:01:59,680 --> 00:02:12,870
+in parallel to share, to achieve complex tasks.
+Number 2 is these units are highly interconnected
+
+14
+00:02:12,870 --> 00:02:21,680
+with each other and through this interconnection,
+they can solve a task together and third is
+
+15
+00:02:21,680 --> 00:02:25,700
+they can model distributed associative memory
+
+16
+00:02:36,199 --> 00:02:39,219
+through weights in the sign update connections.
+
+17
+00:02:40,760 --> 00:02:49,799
+Now, if we look at the slide it shows the
+schematic diagram of a neuron. This is the
+
+18
+00:02:49,799 --> 00:02:58,720
+neuron cell body which has the nucleus and
+these are the dendrons through which input
+
+19
+00:02:58,720 --> 00:03:06,310
+is expected and this is the tail or the axon
+through which the output is given. So, this
+
+20
+00:03:06,310 --> 00:03:17,669
+structure of the neuron is simulated by a
+neural network unit which has inputs and then
+
+21
+00:03:17,669 --> 00:03:24,730
+some simple computation are the node and output,
+and the computation of the node first computes
+
+22
+00:03:24,730 --> 00:03:33,260
+the weighted sum of the inputs and then applies
+a function it could be a squashing function
+
+23
+00:03:33,260 --> 00:03:39,170
+like the sigmoid function or some other function.
+So, this is the node, this is the input and
+
+24
+00:03:39,170 --> 00:03:40,070
+this is the output.
+
+25
+00:03:44,190 --> 00:03:50,560
+If you look at this particular diagram you
+can see that this is a neuron and through
+
+26
+00:03:50,560 --> 00:03:58,780
+the axon that is the output. This output feeds
+into the input of another neuron through this
+
+27
+00:03:58,780 --> 00:04:06,060
+synaptic connections. So, this is the synapse,
+this is the axon and these are the dendrites.
+
+28
+00:04:06,060 --> 00:04:15,160
+So, through the dendrites the input is accepted
+and through the axon the output is transmitted
+
+29
+00:04:15,160 --> 00:04:21,350
+through the electric impulses through the
+synaptic layer to the other neurons, and this
+
+30
+00:04:21,350 --> 00:04:29,300
+is what inspired the neural network architecture.
+Now, the exact neural network architecture
+
+31
+00:04:29,300 --> 00:04:33,150
+is inspired by the human brain when people
+have come up with architectures. They may
+
+32
+00:04:33,150 --> 00:04:40,030
+not be exactly similar always to how the human
+brain works, but this is the inspiration.
+
+33
+00:04:40,030 --> 00:04:48,210
+In today's talk, we will talk about single
+layer neural networks. We have already talked
+
+34
+00:04:48,210 --> 00:04:54,390
+about single layer units while talking about
+linear regression, while talking about logistic
+
+35
+00:04:54,390 --> 00:05:02,640
+regression; nevertheless we will just go through
+it again. The basic in unit in a neural network

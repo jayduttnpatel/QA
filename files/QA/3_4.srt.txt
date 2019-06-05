@@ -1,0 +1,20 @@
+Q. Collection of examples is known as
+A. training data
+B. testing data
+C. holdout data
+D. valdation data
+(A)
+
+Q. Concept is represent as
+A. P
+B. C
+C. R
+D. J
+(C)
+
+Q. Concept is the subset of
+A. hypothesis space
+B. instace space
+C. input space
+D. output space
+(B)

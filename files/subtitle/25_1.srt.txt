@@ -1,0 +1,176 @@
+1
+00:00:18,619 --> 00:00:25,470
+Good morning. We will now talk about Part
+C of this lecture, where we will look at The
+
+2
+00:00:25,470 --> 00:00:28,110
+Dual Formulation of support vector machine.
+
+3
+00:00:28,789 --> 00:00:36,120
+In the last class, we looked at the formulation
+of the optimization problem corresponding
+
+4
+00:00:36,120 --> 00:00:43,030
+to support vector machine where we have to
+minimize half w square, this is the convex
+
+5
+00:00:43,030 --> 00:00:51,300
+quadratic optimization function subject to
+this linear constrains y i w T x i plus b
+
+6
+00:00:51,300 --> 00:00:54,900
+greater than equal to 1 for all examples.
+
+7
+00:00:56,060 --> 00:01:05,039
+So, before we look at how to get the dual
+of this particular formulation, let us very
+
+8
+00:01:05,039 --> 00:01:12,970
+briefly talk about Lagrangian Duality. Suppose,
+we take a general primal general problem and
+
+9
+00:01:12,970 --> 00:01:21,810
+its primal formulation is given by, this is
+an optimization problem where you want to
+
+10
+00:01:21,810 --> 00:01:30,640
+minimize f w, w are the parameters. You want
+to find values of w, so that is to minimize
+
+11
+00:01:30,640 --> 00:01:37,940
+f w and you have a set of linear constraints.
+There are two type of linear constraints,
+
+12
+00:01:37,940 --> 00:01:45,759
+equality constraints - we have l equality
+constraints h i w equal to 0 and k inequality
+
+13
+00:01:45,759 --> 00:01:51,830
+constraints g i w less than equal to 0, all
+these constraints are linear. Corresponding
+
+14
+00:01:51,830 --> 00:02:02,300
+to this problem the generalized lagrangian
+is given by a function of w alpha beta, f
+
+15
+00:02:02,300 --> 00:02:14,170
+w plus summation over 1 to k for all the number
+of non-linear constraints i equal to 1 to
+
+16
+00:02:14,170 --> 00:02:23,550
+k alpha i g i w plus summation i equal to
+1 to l beta i h i w, where h i w are the equality
+
+17
+00:02:23,550 --> 00:02:32,049
+constraints, g i w are the inequality constraints.
+The alphas and betas are called Lagrange multipliers
+
+18
+00:02:32,049 --> 00:02:35,529
+and the value of alpha is greater than equal
+to 0.
+
+19
+00:02:35,920 --> 00:02:45,140
+So, this is the lagrangian of this optimization
+function. Now, what we want to do is that,
+
+20
+00:02:45,140 --> 00:02:57,370
+we want to; so this particular lagrangian
+if you take the values of a w alpha and beta
+
+21
+00:02:57,370 --> 00:03:05,409
+such that if the primal constraints are not
+satisfied then the value of this lagrangian
+
+22
+00:03:05,409 --> 00:03:12,319
+will be infinity. If the constraints are not
+satisfied the value of the lagrangian is infinity
+
+23
+00:03:12,319 --> 00:03:19,870
+and it will be equal to f w, if the constraints
+are satisfied right. So, we want to find out
+
+24
+00:03:19,870 --> 00:03:31,400
+the values of alpha beta for which l; so if
+you look at the maximum of the value of l
+
+25
+00:03:31,400 --> 00:03:38,290
+w alpha beta then if w satisfies the primal
+constraints, it will be equal to f w and it
+
+26
+00:03:38,290 --> 00:03:44,790
+will infinity otherwise.
+And we can rewrite the primal, as finding
+
+27
+00:03:44,790 --> 00:03:54,790
+the value of this expression max of l w alpha
+beta, we want to find out those. So, we first
+
+28
+00:03:54,790 --> 00:04:02,420
+do maximize keeping w fixed for a particular
+w, we can maximize over alpha beta and find
+
+29
+00:04:02,420 --> 00:04:10,680
+the expression max l w alpha beta and max
+l w alpha beta is either f w or infinity and
+
+30
+00:04:10,680 --> 00:04:18,000
+if we find the minimum of this, it will be
+giving us the solution of this. Because, otherwise
+
+31
+00:04:18,000 --> 00:04:26,010
+it has a value of infinity, so the primal
+can be rewritten as, you take the lagrangian
+
+32
+00:04:26,010 --> 00:04:32,730
+and you find out alpha beta for a fixed w
+you can take maximization over alpha beta
+
+33
+00:04:32,730 --> 00:04:39,699
+and then you can do minimum over w. So, minimum
+over w maximum over alpha beta, L w alpha
+
+34
+00:04:39,699 --> 00:04:43,739
+beta is a rewriting of the primal formulation.
+
+35
+00:04:44,250 --> 00:04:49,710
+So, this is the primal problem and it has
+a solution let us say the solution is p star.
+
+36
+00:04:49,850 --> 00:04:57,250
+P star is the solution of the primal problem
+- minimum over w maximum over alpha beta of

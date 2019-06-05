@@ -1,0 +1,20 @@
+Q. We try to find that function for which sum of squared error is
+A. Maximized
+B. Minimized
+C. Averaged
+D. None of the above
+(B)
+
+Q. If X is single variable then it is called
+A. Simple regression
+B. multiple regression
+C. classification
+D. embedding
+(A)
+
+Q. If X is multiple variable then it is called
+A. Simple regression
+B. multiple regression
+C. classification
+D. embedding
+(B)

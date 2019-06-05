@@ -1,0 +1,181 @@
+37
+00:04:57,250 --> 00:05:08,740
+the lagrangian and the dual problem is we
+are just putting the minimum here and maximum
+
+38
+00:05:08,740 --> 00:05:17,430
+here. So, we take first, we take max of our
+alpha beta minimum over w, L w alpha beta
+
+39
+00:05:17,430 --> 00:05:29,080
+this is the dual formulation and it has the
+solution d star. So, this is the primal problem
+
+40
+00:05:29,080 --> 00:05:35,729
+solution, this is the dual problem solution
+and we have two theorems. This theorem says
+
+41
+00:05:35,729 --> 00:05:48,540
+that first of all if you change the order
+of max min and min max, it is general expression
+
+42
+00:05:48,540 --> 00:05:54,961
+that - max over min of this expression, any
+expression is less than equal to min of max
+
+43
+00:05:54,961 --> 00:06:01,720
+of this expression, right.
+And d star is the max of min of this expression
+
+44
+00:06:01,720 --> 00:06:09,120
+and therefore, d star is less than equal to
+p star. So, d star is always less than equal
+
+45
+00:06:09,120 --> 00:06:17,659
+to p star. Now, if there exist a saddle point
+of this lagrangian where they are equal that
+
+46
+00:06:17,659 --> 00:06:24,160
+is called the saddle point and that is the
+optimum value of both. So, the optimum value
+
+47
+00:06:24,160 --> 00:06:29,500
+of the primal formulation and the optimum
+value of the dual formulation will be identical
+
+48
+00:06:29,500 --> 00:06:32,820
+when there is a saddle point.
+
+49
+00:06:35,330 --> 00:06:42,680
+And if the saddle point exists, then the saddle
+point satisfies the following condition called
+
+50
+00:06:42,680 --> 00:06:50,570
+KKT condition or Karush-Kuhn-Tucker condition.
+Now, the condition says that the partial derivative
+
+51
+00:06:50,570 --> 00:06:58,550
+of this lagrangian, with respect to w i and
+with respect to beta i will be equal to 0,
+
+52
+00:06:58,550 --> 00:07:06,759
+according to the KKT condition. And from these
+two, you will find out that what you get is
+
+53
+00:07:06,759 --> 00:07:16,539
+that alpha i g i w will be equal to 0, for
+i equal to 1 to m, g i w is less than equal
+
+54
+00:07:16,539 --> 00:07:22,520
+to 0 and alpha i greater than equal to 0.
+So, these are the conditions that you get
+
+55
+00:07:22,520 --> 00:07:29,110
+when the saddle point exists.
+And the theorem says if w star, alpha star,
+
+56
+00:07:29,110 --> 00:07:37,230
+and beta star, satisfy the KKT condition then
+it is also a solution to be primal and dual
+
+57
+00:07:37,230 --> 00:07:47,069
+problems. With this brief description, brief
+outline of lagrangian duality let us go back
+
+58
+00:07:47,069 --> 00:07:52,539
+to SVM and see how it can be applied there.
+The details of this theory are beyond the
+
+59
+00:07:52,539 --> 00:07:58,590
+scope of this class and you can read some
+material on convex optimization if you want
+
+60
+00:07:58,590 --> 00:08:00,130
+to learn more about this.
+
+61
+00:08:01,449 --> 00:08:14,930
+Now, if we look at our SVM formulation what
+we have is we have f w as half w square and
+
+62
+00:08:14,939 --> 00:08:22,441
+we have the g w as y i w x plus b greater
+than equal to 1. We do not have the h, we
+
+63
+00:08:22,441 --> 00:08:28,881
+do not have the equality constraints, we have
+only the objective function and the g i constraints.
+
+64
+00:08:29,460 --> 00:08:34,840
+So, we are only dealing with alpha i, not
+the beta i. So, we are dealing with f w plus
+
+65
+00:08:34,840 --> 00:08:51,590
+alpha i g i w.
+So, this KKT conditions also says that this
+
+66
+00:08:51,590 --> 00:09:04,260
+alpha i g i w equal to 0 and g i w is less
+than 0, it is because alpha i g i w is 0 only
+
+67
+00:09:04,260 --> 00:09:16,050
+when alpha is 0 then g i w can be non-zero,
+and otherwise, g i w is . And which says that
+
+68
+00:09:16,050 --> 00:09:24,970
+only the few of the alpha i's can be non-zero
+and the training data points whose alpha i's
+
+69
+00:09:24,970 --> 00:09:35,440
+are non-zero are called the support vectors.
+So, some of the alpha is are non-zero and
+
+70
+00:09:35,440 --> 00:09:41,260
+the training data corresponding to data support
+alpha is greater than equal to 0, if alpha
+
+71
+00:09:41,260 --> 00:09:44,200
+i greater than 0, g i w will be equal to 0.
+
+72
+00:09:44,540 --> 00:09:51,940
+Now, let us see the implication. So, this
+is the original optimization problem and when
+
+73
+00:09:51,940 --> 00:09:59,830
+we take, this is the SVM optimization problem
+we take the lagrangian which gives us minimization

@@ -1,0 +1,182 @@
+38
+00:05:02,500 --> 00:05:12,430
+so this is let us say 1 and this is 2, which
+one would you prefer? So, you notice that
+
+39
+00:05:12,430 --> 00:05:19,150
+in 2 there is a larger variation, this is
+a larger variance among the features. So,
+
+40
+00:05:19,150 --> 00:05:26,470
+we would by the principal that we are going
+by prefer this (Refer Time: 05:26) this axis
+
+41
+00:05:26,470 --> 00:05:28,550
+to the previous axis.
+
+42
+00:05:30,100 --> 00:05:37,450
+So, based on this what we do is that some
+of you may have study mathematics and are
+
+43
+00:05:37,450 --> 00:05:39,990
+familiar with principal components.
+
+44
+00:05:47,660 --> 00:06:01,169
+For feature extraction this principal components
+play a very important role. So, we can take
+
+45
+00:06:01,169 --> 00:06:09,330
+the principal components of the data points
+that we have and take the principal components
+
+46
+00:06:09,330 --> 00:06:13,860
+the first principal component, the second
+principal component, etcetera the top principal
+
+47
+00:06:13,860 --> 00:06:21,160
+components as the new axis and that will give
+us certain properties which satisfy our objectives
+
+48
+00:06:21,160 --> 00:06:25,640
+of getting uncorrelated features and features
+with large variance.
+
+49
+00:06:26,120 --> 00:06:35,330
+So, first let us see that if we want to give
+our instances in n dimensional space. If we
+
+50
+00:06:35,330 --> 00:06:42,950
+want to select one new feature, the first
+feature how we should select the first feature.
+
+51
+00:06:43,199 --> 00:06:57,069
+So, we are given a sample of p observations
+X 1, X 2, X p observations and for each observation
+
+52
+00:06:57,069 --> 00:07:06,800
+we have n dimensional vector representing
+the n features. Now, what we want to do is
+
+53
+00:07:06,800 --> 00:07:18,270
+that we want to find this mapping from x to
+Z, where Z is m dimension and let us say initially
+
+54
+00:07:18,270 --> 00:07:25,259
+we consider Z to be one dimension. So, we
+want to find out the feature, the one feature
+
+55
+00:07:25,259 --> 00:07:32,720
+which will be best for our 
+Now, one criteria that we can use you know
+
+56
+00:07:32,720 --> 00:07:38,520
+because we are choosing only one feature,
+the question of being correlated and uncorrelated
+
+57
+00:07:38,520 --> 00:07:46,630
+does not arise. So, we can go by this principal
+we can choose that feature which has the largest
+
+58
+00:07:46,630 --> 00:07:59,110
+variance. So, we choose the feature such that
+the variance of Z 1 is maximum that is, we
+
+59
+00:07:59,110 --> 00:08:06,690
+find that value of the weights for which the
+projection that we get correspondence to the
+
+60
+00:08:06,690 --> 00:08:15,280
+largest variance of Z 1. So, this is what
+we want to do and this is where the principal
+
+61
+00:08:15,280 --> 00:08:25,129
+components come handy, because mathematically
+the principal component is that vector which
+
+62
+00:08:25,129 --> 00:08:32,880
+exactly does this.
+There are two ways of considering the properties
+
+63
+00:08:32,880 --> 00:08:39,100
+of principal components, one is it is that
+projection for which the variance is maximum.
+
+64
+00:08:39,550 --> 00:08:49,390
+Secondly, principal component can be looked
+upon as if you map the original vectors to
+
+65
+00:08:49,390 --> 00:08:56,200
+this new low dimensional vector space given
+a fixed size of that dimension the principal
+
+66
+00:08:56,200 --> 00:09:05,199
+components is such that, if you want to recover
+the original instances from this reduced representation
+
+67
+00:09:05,199 --> 00:09:10,390
+the principal components are such that the
+construction error is minimum. So, for more
+
+68
+00:09:10,390 --> 00:09:18,450
+details you should refer to an algebra book.
+Let us look at this picture in the slide.
+
+69
+00:09:19,320 --> 00:09:25,900
+So, if you look at the slide we see that for
+these points in red, these are our instances.
+
+70
+00:09:26,209 --> 00:09:36,089
+The first principal component is given by
+this green line. This green line gives the
+
+71
+00:09:36,089 --> 00:09:43,630
+principal component to direction one whereas,
+this is the second principal component. So,
+
+72
+00:09:43,630 --> 00:09:50,140
+the first principal component is chosen based
+on largest variance. How do we choose the
+
+73
+00:09:50,140 --> 00:09:55,780
+second principal component? First of all when
+we choose the second feature we want to make
+
+74
+00:09:55,780 --> 00:10:01,650
+sure that this feature is uncorrelated with
+the first feature. So, we want to select the

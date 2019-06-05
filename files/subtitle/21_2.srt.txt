@@ -1,0 +1,212 @@
+44
+00:05:01,069 --> 00:05:07,049
+the run in the attributes and we will be concentrating
+only on the first 54 features.
+
+45
+00:05:08,599 --> 00:05:17,469
+The representation of an email is important,
+because that is what would make naive bayes
+
+46
+00:05:17,469 --> 00:05:23,569
+to be applied in a proper way. So, how do
+we represent an email message? We represent
+
+47
+00:05:23,569 --> 00:05:30,789
+it in a form which is called a Document Vector.
+It is a vector and each element of the vector
+
+48
+00:05:30,789 --> 00:05:37,080
+is an indicator of whether a particular word
+is present or absent. Say for example, the
+
+49
+00:05:37,080 --> 00:05:41,159
+first position represents money, the first
+element represents whether the word money
+
+50
+00:05:41,159 --> 00:05:51,439
+is present or not. And, the second one represents
+whether the word free is present or not. And
+
+51
+00:05:51,439 --> 00:05:56,419
+that is how we get a binary vector of size
+the number of features that we want to choose.
+
+52
+00:05:57,740 --> 00:06:03,279
+Now, let us go ahead and make our training
+and test splits as we do always before taking
+
+53
+00:06:03,279 --> 00:06:07,319
+of any machine learning study. And that the
+just to remind you that in this particular
+
+54
+00:06:07,319 --> 00:06:13,220
+session unlike the others the previous ones
+we will not be using a scikit learns in built
+
+55
+00:06:13,220 --> 00:06:19,479
+functions, we will be coding down the entire
+execution by ourselves so that we get a complete
+
+56
+00:06:19,479 --> 00:06:23,379
+understanding of how the system works. It
+is really simple and it will not take a much
+
+57
+00:06:23,379 --> 00:06:32,900
+labor. So, first we go ahead and we load our
+data and as you can see and then we set that
+
+58
+00:06:32,900 --> 00:06:36,080
+the number of features that we are interested
+about are just 48.
+
+59
+00:06:36,210 --> 00:06:44,360
+So, I am sorry we are going to consider the
+special characters also. We just use the word
+
+60
+00:06:44,360 --> 00:06:57,149
+frequencies in our exercise. So, the data
+is separated into the inputs and the labels
+
+61
+00:06:57,149 --> 00:07:05,199
+as you can see over here, and then we make
+our training and test splits. The train test
+
+62
+00:07:05,199 --> 00:07:11,159
+split function is coming from a sklearn dot
+cross validation. That is the only function
+
+63
+00:07:11,159 --> 00:07:15,199
+that we use from scikit learn and nothing
+else, the rest we code at code down our self's.
+
+64
+00:07:16,610 --> 00:07:21,920
+So, next we will look at how to estimate the
+class specific likelihood ratios. The likelihood
+
+65
+00:07:21,920 --> 00:07:32,810
+ratios are represent that how probable is
+one feature given the email belong to a particular
+
+66
+00:07:32,810 --> 00:07:40,460
+class. Say we have a spam email and we have
+a word w, so we want to find how likely the
+
+67
+00:07:40,460 --> 00:07:49,210
+word w is given that the email was spam email.
+So, how do we estimate it? We just estimate
+
+68
+00:07:49,210 --> 00:07:55,039
+it from the frequency definition of probability.
+We just count how many times the word w appeared
+
+69
+00:07:55,039 --> 00:08:05,369
+in spam emails and then divided it by the
+count of like all words submit over all words
+
+70
+00:08:05,369 --> 00:08:12,039
+in the vocabulary occurring in spam emails.
+So, this is how we calculate. We find how
+
+71
+00:08:12,039 --> 00:08:20,459
+many times this particular word appeared in
+the spam emails and divided by odd words like,
+
+72
+00:08:20,459 --> 00:08:28,979
+the entire size, the entire sum over all thesizes of all the spam image that we have in our data base
+
+73
+00:08:30,629 --> 00:08:37,339
+Then what we do? So, how do we really implement
+it in our case, like the way our data appears,
+
+74
+00:08:37,339 --> 00:08:44,070
+how do we do it? In our data set each email
+is represented as a vector and each position
+
+75
+00:08:44,070 --> 00:08:51,180
+of which shows the relative count of the word
+in the emails. Say, we are talking about a
+
+76
+00:08:51,180 --> 00:08:58,500
+particular word w I, so the vector will contain
+the number of times the word w i occurred
+
+77
+00:08:58,500 --> 00:09:02,620
+in the email divided by the total number of
+words in the total number and it multiplies
+
+78
+00:09:02,620 --> 00:09:07,800
+it by 100 to make a percentage. So whatever
+number it appears over here this shows that
+
+79
+00:09:07,800 --> 00:09:14,560
+if 100 words that represent in the email then
+how many of the words would be the word in
+
+80
+00:09:14,560 --> 00:09:22,640
+question that is w i. How do we get use this
+information to calculate this is.
+
+81
+00:09:22,870 --> 00:09:30,870
+So, as you can see that this is supposed to
+be summed over all the spam emails in the
+
+82
+00:09:30,870 --> 00:09:38,630
+data base right and we get email y's the ratios
+same thing in a percentage form in each vector
+
+83
+00:09:38,630 --> 00:09:44,910
+for each email. So what we do is, we look
+at all the spamming emails in our data base,
+
+84
+00:09:44,910 --> 00:09:52,810
+and then average these counts. And of course,
+we divide the number which we get after averaging
+
+85
+00:09:52,810 --> 00:09:58,390
+by 100 so that we get a fraction between 0
+and 1 of probability value, and what we have
+
+86
+00:09:58,390 --> 00:09:59,710
+other likelihood ratios.

@@ -1,0 +1,167 @@
+1
+00:00:18,990 --> 00:00:26,960
+Good Morning. We start with second part of
+the first module that is introduction module.
+
+2
+00:00:26,960 --> 00:00:31,780
+We will introduce the Different Types of Machine
+Learning.
+
+3
+00:00:36,000 --> 00:00:40,920
+So, there are few broad types of machine learning.
+
+4
+00:00:40,930 --> 00:00:42,570
+There is Supervised learning.
+
+5
+00:00:43,050 --> 00:00:58,100
+In supervised learning what we have is. We
+said that in learning we use data and data
+
+6
+00:00:58,100 --> 00:01:06,200
+we can say can comprise of input and the corresponding
+output. For every data instance we can have
+
+7
+00:01:06,200 --> 00:01:19,189
+the input x and the corresponding output y.
+And, from this the machine learning system
+
+8
+00:01:19,189 --> 00:01:29,240
+will build a model so that given a new observation
+x will try to find out what is the corresponding
+
+9
+00:01:29,240 --> 00:01:36,240
+y. This called supervised learning because
+for every instance we tell what is the output.
+
+10
+00:01:36,240 --> 00:01:44,679
+So, this is called labeled data.
+Then we have Unsupervised learning. In unsupervised
+
+11
+00:01:44,679 --> 00:01:56,249
+learning you are only given x, there is no
+label to the data. And given the different
+
+12
+00:01:56,249 --> 00:02:04,149
+data points you may like to for example plaster
+them or summarize them or find some patterns
+
+13
+00:02:04,149 --> 00:02:18,959
+in them. The third type of machine learning
+is Reinforcement learning. In reinforcement
+
+14
+00:02:18,959 --> 00:02:27,990
+learning you have an agent who is acting in
+a environment, and you want to figure out
+
+15
+00:02:27,990 --> 00:02:36,130
+what actions the agent must take at every
+step. The action that the agent takes is based
+
+16
+00:02:36,130 --> 00:02:40,610
+on the rewards or penalty is that the agent
+gets in different states.
+
+17
+00:02:41,580 --> 00:02:52,200
+Apart from these three, we have also Semi-supervised
+learning. In semi-supervised learning it is
+
+18
+00:02:52,200 --> 00:02:58,670
+a combination of supervised and unsupervised
+learning. That is you have some labeled training
+
+19
+00:02:58,670 --> 00:03:06,920
+data and you also have a larger amount of
+unlabeled training data, and you can try to
+
+20
+00:03:06,920 --> 00:03:12,740
+come up with some learning out of them that
+convert even when the training data is limited.
+
+21
+00:03:14,400 --> 00:03:21,420
+So, let us look at this picture which gives
+us a schematic diagram of supervised learning.
+
+22
+00:03:22,090 --> 00:03:31,570
+In supervised learning you have a number of
+training instances. This contains the training
+
+23
+00:03:31,570 --> 00:03:39,030
+instances, for the training instances each
+instance comprises of input and output. This
+
+24
+00:03:39,030 --> 00:03:43,870
+is the first training instance, the second
+training instance, the third training instance,
+
+25
+00:03:43,870 --> 00:03:49,580
+the nth training instance, given all these
+training instances the learning algorithm
+
+26
+00:03:49,580 --> 00:03:56,710
+will come up with a model.
+And this model can be used to classify or
+
+27
+00:03:56,710 --> 00:04:04,410
+to find the output or corresponding y value
+for a new observation x. So given a new input
+
+28
+00:04:04,410 --> 00:04:14,560
+x you can use the model to find out the output
+y. This is the schematic of supervised learning.
+
+29
+00:04:14,560 --> 00:04:22,229
+In unsupervised learning as we discussed,
+we only have x’s. We have different x’s;
+
+30
+00:04:22,229 --> 00:04:33,870
+x 1, x 2, x n this is the data. And the learning
+algorithm will produce clusters will group
+
+31
+00:04:33,870 --> 00:04:42,439
+this data. Based on the similarity of the
+data items to each other we can find out certain
+
+32
+00:04:42,439 --> 00:04:47,399
+groups among the data. So that is called Unsupervised
+learning.
+
+33
+00:04:48,470 --> 00:04:54,440
+And as I said we also have semi-supervised
+learning. In semi-supervised learning, we
+
+34
+00:04:54,440 --> 00:05:01,120
+have a combination of labeled data and unlabeled
+data. This is labeled data, the data which

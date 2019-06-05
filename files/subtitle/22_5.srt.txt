@@ -1,0 +1,134 @@
+110
+00:19:58,450 --> 00:20:17,600
+says that so this is the statement of Naive
+Bayes the input features are conditionally
+
+111
+00:20:17,600 --> 00:20:34,450
+independent given a target value, so this
+is important. So, if you say that I am sure
+
+112
+00:20:34,450 --> 00:20:41,749
+that the target is going to take a particular
+value say 0 given that the target has been
+
+113
+00:20:41,749 --> 00:20:47,279
+prefixed to a given value the con the all
+the input parameters the input variables or
+
+114
+00:20:47,279 --> 00:20:51,499
+the input features, it becomes conditionally
+independent. So, this is the Naive Bayes assumption.
+
+115
+00:20:51,840 --> 00:21:06,220
+So, how does it look like in the mathematics
+side, so this says that suppose the input
+
+116
+00:21:06,220 --> 00:21:28,159
+is described by a future vector X, which is
+a vector x 1, x 2 till x n, and where x i
+
+117
+00:21:28,159 --> 00:21:57,090
+is i equal to 1 through n are different input
+features. So, let the output or target variable
+
+118
+00:21:57,090 --> 00:22:05,789
+be Y.
+Then probability of X this vector given a
+
+119
+00:22:05,789 --> 00:22:14,860
+particular value of Y, it is going to be so
+all the variable, so what is this, so this
+
+120
+00:22:14,860 --> 00:22:21,059
+is basically a co-occurrence of all of these
+random variables, for A joint probability
+
+121
+00:22:21,059 --> 00:22:34,269
+distributions of all of these random variables.
+So, this can be approximated as a product
+
+122
+00:22:34,269 --> 00:22:41,139
+of the conditioner probability distributions
+of each of these features given the value
+
+123
+00:22:41,139 --> 00:22:49,570
+of Y. So, i equal to 1 through n p of x i
+given Y equal to y. So, you assumed that all
+
+124
+00:22:49,570 --> 00:22:53,820
+of these input features become conditionally
+independent when a particular value of the
+
+125
+00:22:53,820 --> 00:23:01,200
+target variable is given, so this is the Naive
+Bayes assumption. It is very helpful in certain
+
+126
+00:23:01,200 --> 00:23:10,700
+scenarios, but often is not right to assume
+Naive Bayes assumption.
+
+127
+00:23:13,750 --> 00:23:27,570
+Yes, so what kind of problems can come from
+this section, you will be given a certain
+
+128
+00:23:27,570 --> 00:23:35,960
+scenario. So, maybe you have already seen
+the hands on exercise python exercise, and
+
+129
+00:23:35,960 --> 00:23:43,090
+there we used Naive Bayes assumption to classify
+emails as spam or non spam. There we had assumed
+
+130
+00:23:43,090 --> 00:23:50,029
+at given Y equal to say now let us take up
+that problem again. So, what kind of assumption
+
+131
+00:23:50,029 --> 00:23:58,239
+was done there in that case so in our so if
+you have miss this video then go ahead and
+
+132
+00:23:58,239 --> 00:24:05,669
+look at assignment or like exercise, hands
+on exercise number 3 or week 4 hands on exercise
+
+133
+00:24:05,669 --> 00:24:11,220
+as will be easier for you to find out in the
+course website. So, we are going to take up
+
+134
+00:24:11,220 --> 00:24:14,360
+that example again and we consider it for
+a moment.
+
+135
+00:24:15,129 --> 00:24:38,440
+In our spam classification example, each email
+was described as a vector of X’s where sorry
+
+136
+00:24:38,440 --> 00:25:04,830
+where each x i was a word which is significant
+in deciding spam or non spam so given that

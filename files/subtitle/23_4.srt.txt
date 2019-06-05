@@ -1,0 +1,144 @@
+92
+00:15:03,160 --> 00:15:11,270
+likelihood of beta. So, this is how will update
+beta iteratively by using gradient asset and
+
+93
+00:15:11,270 --> 00:15:18,550
+we can do it 1 example at a time if you are
+using stochastic gradient asset.
+
+94
+00:15:18,550 --> 00:15:26,180
+Suppose we have a single training example
+x y. So, x y is a single training example
+
+95
+00:15:26,180 --> 00:15:33,880
+based on this training example and the current
+beta we want to find out what the next beta
+
+96
+00:15:33,880 --> 00:15:43,900
+will be for that we find the derivative of
+this likelihood and we try to based, we find
+
+97
+00:15:43,900 --> 00:15:49,470
+the derivative and we take a step towards
+the derivative. So, let us take the derivative
+
+98
+00:15:49,470 --> 00:16:01,300
+of this expression. So, if we take the partial
+derivative of l beta, which is the function
+
+99
+00:16:01,300 --> 00:16:25,840
+that we have given here and what we get is
+y times 1 by g beta t x
+
+100
+00:16:25,840 --> 00:16:53,790
+minus 1 minus y 1 by 1 minus g beta t x times
+del del of beta j g of beta t x. So, on simplification,
+
+101
+00:16:53,790 --> 00:17:07,279
+on manipulation of this, what we get is y
+1 by g beta t x
+
+102
+00:17:07,279 --> 00:17:28,670
+minus 1 minus y 1 by 1 minus g beta t x times,
+expanding this part, we get 1 minus g beta
+
+103
+00:17:28,670 --> 00:17:55,880
+t x del del beta j beta t x from which we
+get y times 1 minus g beta t x minus 1 minus
+
+104
+00:17:55,880 --> 00:18:07,220
+y g beta t x 
+times x j.
+
+105
+00:18:08,390 --> 00:18:17,230
+Now, we have use the fact that g dash x is
+equal to g (z) times 1 minus g (z) and we
+
+106
+00:18:17,230 --> 00:18:34,430
+get y minus h beta x x j. So, upon simplification
+we get this as the partial derivative of the
+
+107
+00:18:34,430 --> 00:18:45,480
+log likelihood of beta y minus h beta x x
+j. So, plugging in this formula here what
+
+108
+00:18:45,480 --> 00:18:59,620
+we get finally, is beta equal to original
+beta plus alpha times, we had partial derivative
+
+109
+00:18:59,620 --> 00:19:14,910
+with beta with respect to l beta which we
+get is this, alpha times y minus h beta x
+
+110
+00:19:14,910 --> 00:19:25,180
+times x j. So, this is the value of the jth
+component of beta. So, beta j equal to beta
+
+111
+00:19:25,180 --> 00:19:34,350
+j plus alpha times y minus h beta x times
+x j this is the change that we make for a
+
+112
+00:19:34,350 --> 00:19:43,461
+single training example x j a x y.
+So, given a training example x y, we do the
+
+113
+00:19:43,461 --> 00:19:51,101
+partial derivative of this and we find out
+this is our like log likelihood of beta, we
+
+114
+00:19:51,101 --> 00:19:58,360
+take the partial derivative of the log likelihood
+of beta and we have worked this out here after
+
+115
+00:19:58,360 --> 00:20:06,180
+some manipulation what we get that it is equal
+to y minus h (x) times x j and plugging it
+
+116
+00:20:06,180 --> 00:20:13,700
+in to this formula we get, how we can update
+beta j beta j is the jth component of beta
+
+117
+00:20:13,700 --> 00:20:20,210
+beta j equal to beta j plus alpha times y
+minus h beta x into x j. So, this is the formula
+
+118
+00:20:20,210 --> 00:20:28,530
+by which we can do stochastic gradient has
+not and we will find the right values of beta
+
+119
+00:20:28,530 --> 00:20:34,340
+which we can use for logistic regression.
+With this we come to the end of today’s
+
+120
+00:20:34,340 --> 00:20:36,110
+lecture.
+Thank you very much.

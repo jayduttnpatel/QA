@@ -1,0 +1,104 @@
+Q. What is the name of the Professor?
+A. Sudeshna Sarkar
+B. Harish Guruprashad
+C. Jaydutt Patel
+D. Arun Rajkuman
+(A)
+
+Q. When was first machine learning system was developed?
+A. 1950
+B. 1960
+C. 1970
+D. 1980
+(A)
+
+Q. In 1952 where was Arthur Samuel?
+A. Apple
+B. Google
+C. IBM
+D. Intel
+(C)
+
+Q. Who proposed perceptron?
+A. Arthur Samuel
+B. Sundar Pichai
+C. Narendra Modi
+D. Rosenblatt
+(D)
+
+Q.When did Rosenblatt proposed the perceptron?
+A. 1950
+B. 1952
+C. 1954
+D. 1957
+(D)
+
+Q. In 1986 who came up with decision tree learning?
+A. J.R. Quinlan
+B. Rosenblatt
+C. Obama
+D. Sundar Pichai
+(A)
+
+Q. What is the key ingredient of the today's neural network architectures?
+A. learning rate
+B. hypothesis
+C. Back propagation
+D. decision tree
+(C)
+
+Q. Support vector machine was proposed by whom?
+A. Vapnik and Cortes
+B. Quinlan and Rosnblatt
+C. Modi and Obama
+D. Freund and Schapire
+(A)
+
+Q. When the first self driving car made a road test?
+A. 1990
+B. 1994
+C. 1996
+D. 1998
+(B)
+
+Q. In 1997, Deep Blue beat the world champion Gary Kasparov in which game?
+A. Chess
+B. Cricket
+C. Basketball
+D. Swimming
+(A)
+
+Q. When did human vision surpassed ML system?
+A. 2010
+B. 2012
+C. 2019
+D. 2014
+(D)
+
+Q. Who gave definition of machine learning?
+A. Mitchell
+B. Rosvelt
+C. Mike
+D. David
+(A)
+
+Q. What is E?
+A. experience
+B. action
+C. task
+D. example
+(A)
+
+Q. What is T?
+A. experience
+B. action
+C. task
+D. example
+(C)
+
+Q. What is also called the data?
+A. experience
+B. task
+C. example
+D. action
+(A)

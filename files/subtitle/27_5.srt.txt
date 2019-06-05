@@ -1,0 +1,192 @@
+130
+00:20:02,840 --> 00:20:09,640
+We will not go into a lot of detail here,
+but we can say that kernel functions are some
+
+131
+00:20:09,640 --> 00:20:16,860
+similarity measures and this similarity as
+usually symmetric that is k x i x j is equal
+
+132
+00:20:16,860 --> 00:20:24,400
+to k x j x i, but all similarities are not
+kernel functions. Mercer’s conditions states
+
+133
+00:20:24,400 --> 00:20:32,570
+that if you can write the similarities between
+the points as a matrix and this matrix is
+
+134
+00:20:32,570 --> 00:20:40,140
+symmetric positive semi definite then a kernel
+function will exist or in general mercers
+
+135
+00:20:40,140 --> 00:20:51,190
+conditions states that any positive semi definite
+kernel k x y for which sigma over i j k of
+
+136
+00:20:51,190 --> 00:20:59,150
+x i x j times c i c j is greater than or equal
+to 0 for any real number c i c j, they can
+
+137
+00:20:59,150 --> 00:21:06,630
+be considered as kernel function because such
+functions can be expressed as a dot product
+
+138
+00:21:06,630 --> 00:21:11,850
+in high dimensional space.
+We will not going to details of this, but
+
+139
+00:21:11,850 --> 00:21:20,340
+this gives us a general characterisation of
+kernel functions and we can also compose more
+
+140
+00:21:20,340 --> 00:21:28,160
+than 1 kernel function to get new kernel function,
+but we will not make further discussion into this
+
+141
+00:21:29,160 --> 00:21:37,990
+But I will show you a certain cases where
+the decision surface is linear or non-linear
+
+142
+00:21:37,990 --> 00:21:44,290
+and the kernel functions which are appropriate
+in those cases. If we look at this picture
+
+143
+00:21:44,290 --> 00:21:52,580
+for this case linear kernel with noise will
+be quite appropriate whereas, in this case
+
+144
+00:21:52,580 --> 00:21:59,160
+the decision surface is actually do not have
+good linear decision surface. You have a quadratic
+
+145
+00:21:59,160 --> 00:22:04,900
+decision surface and the second order polynomial
+a quadratic kernel will be appropriate. In
+
+146
+00:22:04,900 --> 00:22:09,640
+this case you have a fourth order polynomial
+which gives a good decision surface. Here,
+
+147
+00:22:09,640 --> 00:22:20,130
+eighth order polynomial and these examples
+can be used with kernels of order 8 polynomial,
+
+148
+00:22:20,130 --> 00:22:22,630
+order 4 polynomial and so on.
+
+149
+00:22:23,300 --> 00:22:31,720
+This picture shows points this red and blue
+are the 2 classes and we are not separable
+
+150
+00:22:31,720 --> 00:22:39,410
+by linear kernel. However, you can use Gaussian
+kernels to separate them. Gaussian kernel
+
+151
+00:22:39,410 --> 00:22:49,810
+can be used to separate points where these
+points can lie within Gaussian of each other
+
+152
+00:22:49,810 --> 00:22:54,050
+now. So, here Gaussian kernels will be appropriate.
+
+153
+00:22:54,610 --> 00:23:04,780
+Now, let us see that once we have this kernel
+function, how we can solve the SVM. So, the
+
+154
+00:23:04,780 --> 00:23:12,390
+formulation is very similar. We have phi x
+i and phi x j, it amounts to maximising. In
+
+155
+00:23:12,390 --> 00:23:19,670
+the dual formulation, the solution will amount
+to maximising sigma alpha i minus half summation
+
+156
+00:23:19,670 --> 00:23:28,160
+over i j alpha i alpha j y i y j phi x i dot
+phi x j, which can be written as k of x i
+
+157
+00:23:28,160 --> 00:23:36,059
+x j and the conditions are same alpha i lies
+between 0 and c sigma alpha i y i equal to
+
+158
+00:23:36,059 --> 00:23:44,090
+0 and after you have solved for this alphas,
+you get a solution and when you get a test
+
+159
+00:23:44,090 --> 00:23:48,510
+point x.
+The classification of the test point can be
+
+160
+00:23:48,510 --> 00:23:57,830
+found by g x equal to sigma i ranges over
+the support vectors alpha i phi x i dot x
+
+161
+00:23:57,830 --> 00:24:06,440
+plus b which becomes k of x i x plus b. So,
+for all points k of x i x plus b can be used
+
+162
+00:24:06,440 --> 00:24:16,480
+to get the solution and if k is easy to compute
+then the solution computation cost of solution
+
+163
+00:24:16,480 --> 00:24:24,320
+in the training face as well as the testing
+face is not much different from the linear SVM
+
+164
+00:24:25,559 --> 00:24:31,360
+So, support vector machine in conclusion,
+we can say they perform; they have in found
+
+165
+00:24:31,360 --> 00:24:39,850
+to perform quite well in practice, but in
+certain cases if an appropriate kernel function
+
+166
+00:24:39,850 --> 00:24:48,490
+exists. However, the user has to choose the
+appropriate kernel function, if an appropriate
+
+167
+00:24:48,490 --> 00:24:54,700
+kernel function exists to map the original
+attribute space to a features space where
+
+168
+00:24:54,700 --> 00:25:00,160
+the points are linearly separable then the
+support vector machine works well, but the

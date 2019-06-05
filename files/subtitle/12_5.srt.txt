@@ -1,0 +1,154 @@
+127
+00:19:59,820 --> 00:20:07,960
+it. It will contribute more value or less
+value to the distance. So, if you are giving
+
+128
+00:20:07,960 --> 00:20:16,150
+equal weights, you are assuming that the scale
+of the attributes and the differences and
+
+129
+00:20:16,150 --> 00:20:26,810
+are similar. What do we mean by differences?
+If this x i m minus x j m, how different they
+
+130
+00:20:26,810 --> 00:20:33,790
+are for different pairs of training examples
+if that is similar, then only you can use
+
+131
+00:20:33,790 --> 00:20:49,680
+equal weights. In fact, you make the assumption
+that you scale attributes, so that they have
+
+132
+00:20:49,680 --> 00:20:57,520
+equal range one of the attribute values from
+0 to 1000.
+
+133
+00:20:58,060 --> 00:21:05,010
+Another has values from 0 to 1, and then their
+range is not the same. So, the ranges should
+
+134
+00:21:05,010 --> 00:21:19,580
+be similar and the variance should be similar
+under such condition only you can go for such
+
+135
+00:21:19,580 --> 00:21:28,530
+a simple Euclidean distance function. Also
+you are assuming that you are taking x i m
+
+136
+00:21:28,530 --> 00:21:33,490
+minus y i m whole square, assuming that classes
+are spherical.
+
+137
+00:21:33,800 --> 00:21:49,000
+So, the second assumption is that 
+classes are spherical in shape. Under these
+
+138
+00:21:49,000 --> 00:22:00,150
+assumptions, you can use basic Euclidean distance,
+but what the classes are not spherical. What
+
+139
+00:22:00,150 --> 00:22:08,380
+if one attribute is more important than another
+attribute, what if some attributes have more
+
+140
+00:22:08,380 --> 00:22:14,551
+noise than what you have in other attributes?
+Under those cases, this distance function
+
+141
+00:22:14,551 --> 00:22:20,510
+will have some problems and the way you can
+overcome these problems, there are several
+
+142
+00:22:20,510 --> 00:22:33,910
+things that one can do. One is you use larger
+k to moved out the difference and you use
+
+143
+00:22:33,910 --> 00:22:54,070
+weighted Euclidean, you use weighted distance
+function. Now, what we will do? Now, when
+
+144
+00:22:54,070 --> 00:23:03,190
+you say you use larger k, you have to have
+some idea how larger small k impacts. I think
+
+145
+00:23:03,190 --> 00:23:07,610
+before we try to look at that, let us look
+at some example.
+
+146
+00:23:09,230 --> 00:23:20,090
+So, this picture taken from the book by Hastie
+Tibshirani Friedman shows an example where
+
+147
+00:23:20,090 --> 00:23:28,080
+we have three classes; blue, red and green.
+They are denoted by the blue, red and green
+
+148
+00:23:28,080 --> 00:23:34,590
+circles. So, if you use one nearest neighbor,
+you have decision boundaries between blue
+
+149
+00:23:34,590 --> 00:23:42,080
+and green, green and red, red and blue etcetera.
+Based on that, these lines show you the decision
+
+150
+00:23:42,080 --> 00:23:51,600
+boundary between the classes. Secondly, not
+at all smooth.
+
+151
+00:23:58,220 --> 00:24:11,060
+So, what we can see is that if we have small
+value of k, so small value of k, it captures
+
+152
+00:24:11,060 --> 00:24:20,560
+find structures of the problem phase better.
+You can see that these lines capture very
+
+153
+00:24:20,560 --> 00:24:28,670
+fine structures of the problem phase. For
+example, here you see in this region, the
+
+154
+00:24:28,670 --> 00:24:35,550
+class is blue where as in this region, the
+class is red, right. So, in this small region
+
+155
+00:24:35,550 --> 00:24:40,520
+here, the classes blue where as these classes
+are red. So, the fine differences between
+
+156
+00:24:40,520 --> 00:24:47,851
+the classes are captured when k is small.
+So, when small k captures, find structure
+
+157
+00:24:47,851 --> 00:25:07,890
+of problems phase better if such fine structures
+exist

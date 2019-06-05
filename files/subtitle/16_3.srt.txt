@@ -1,0 +1,228 @@
+94
+00:10:05,300 --> 00:10:11,630
+set of components, a set of vectors you can
+say and if a face which can you know which
+
+95
+00:10:11,630 --> 00:10:16,800
+encode a lot of information about faces.
+So, a face can be represented as a linear
+
+96
+00:10:16,800 --> 00:10:22,990
+combination of these eigen-faces and say we
+have face of 64 cross 64 dimensions and that
+
+97
+00:10:22,990 --> 00:10:32,570
+makes 4096 random variable for each pixel
+of the face. Now, instead of 4096 random variables
+
+98
+00:10:32,570 --> 00:10:37,620
+which are highly correlated among themselves,
+we will go ahead and represent the faces in
+
+99
+00:10:37,620 --> 00:10:41,730
+terms of the principal component and we will
+be using just 150 of them. Thus we have done
+
+100
+00:10:41,730 --> 00:10:43,450
+a huge dimensional reduction.
+
+101
+00:10:44,330 --> 00:10:52,279
+And next, we will see how the principal component
+analysis algorithm works. So, given face 64,
+
+102
+00:10:52,279 --> 00:10:56,730
+first we go ahead and make a vector out of
+that. So, we just do a raster scan on the
+
+103
+00:10:56,730 --> 00:11:03,840
+image and we arrange the pixels along the
+rows into a vector of 4096 dimensions and
+
+104
+00:11:03,840 --> 00:11:10,380
+next we go ahead and find the mean vector
+and suppose and subtract from the original
+
+105
+00:11:10,380 --> 00:11:14,270
+image. So, the mean face has been calculated
+by the averaging all the faces in the data
+
+106
+00:11:14,270 --> 00:11:20,510
+in the training data set and that is also
+converted into vector and subtracted from
+
+107
+00:11:20,510 --> 00:11:23,070
+the image.
+And last we have the mean normalized image.
+
+108
+00:11:23,170 --> 00:11:30,590
+This is necessary because it helps in optimization
+algorithm of optimization of any gradient
+
+109
+00:11:30,590 --> 00:11:38,550
+descent based algorithm down the road and
+it is also necessary for the calculation of
+
+110
+00:11:38,550 --> 00:11:43,279
+the covariance matrix because the definition
+of covariance is actually, expected value
+
+111
+00:11:43,279 --> 00:11:50,600
+of x minus mu x times x minus mu x transpose
+which has been explained to in the theory
+
+112
+00:11:50,600 --> 00:11:55,080
+section. And thus we do this exercise for
+all the images of the training set and we
+
+113
+00:11:55,080 --> 00:12:02,870
+have the 4096 dimensional mean normalized
+images and thus we go ahead and create a matrix
+
+114
+00:12:02,870 --> 00:12:11,720
+called x and each column of the matrix is
+one image from the training set. So, this
+
+115
+00:12:11,720 --> 00:12:18,960
+x is a set of mean normalized training images,
+say we have capital n training images and
+
+116
+00:12:18,960 --> 00:12:23,480
+thus the size is of the matrix x we will be
+4096 cross n.
+
+117
+00:12:23,810 --> 00:12:30,800
+Next, we go ahead and calculate the covariance
+matrix of the data. So, we multiply x with
+
+118
+00:12:30,800 --> 00:12:36,810
+the transpose of x and we have r, the covariance
+matrix. The dimensionality of covariance matrix
+
+119
+00:12:36,810 --> 00:12:42,589
+is 4096 cross 4096. The principal component
+will be the eigen vectors of the covariance
+
+120
+00:12:42,589 --> 00:12:45,249
+matrix and we will see next how to calculate
+the eigen vectors.
+
+121
+00:12:45,520 --> 00:12:49,310
+So, we will calculate the eigen vectors by
+using a procedure which is called diagonalisation
+
+122
+00:12:49,310 --> 00:12:55,640
+in the context of symmetric metrics and in
+general in is called singular validly composition.
+
+123
+00:12:55,640 --> 00:13:03,279
+So, what does it do? It represents the matrix
+r as a product of 3 metrics, the first one
+
+124
+00:13:03,279 --> 00:13:10,279
+is called p and it consists of the eigen vectors
+along the columns. The last one is the same
+
+125
+00:13:10,279 --> 00:13:17,990
+matrix transposed and the central one is a
+diagonal matrix each element along the diagonal
+
+126
+00:13:17,990 --> 00:13:24,080
+i and eigen value and it corresponds to the
+eigen vector in the matrix p. So, the first
+
+127
+00:13:24,080 --> 00:13:30,870
+i column of p is an eigen vector the eigen
+value of which is the first element of d along
+
+128
+00:13:30,870 --> 00:13:43,040
+the diagonal all right. So, what we will do
+is we will just use the eigen vectors corresponding
+
+129
+00:13:43,040 --> 00:13:52,260
+to the highest magnitude eigen values.
+So, the k the magnitude of the eigen value
+
+130
+00:13:52,260 --> 00:14:01,650
+shows which is how much a one particular eigen
+vector contributional to the information;
+
+131
+00:14:01,650 --> 00:14:07,899
+how much information a particular eigen vector
+carries about the data all right. So, we chose
+
+132
+00:14:07,899 --> 00:14:12,940
+the k highgon highest eigen values and thier
+corresponding eigen vectors. So, that the.
+
+133
+00:14:12,940 --> 00:14:21,260
+So, that maximum information is preserved
+all right. So, we just chose the first k columns
+
+134
+00:14:21,260 --> 00:14:27,380
+because these k columns are corresponding
+to highest magnitude eigen vector eigen value.
+
+135
+00:14:27,380 --> 00:14:32,810
+So, we should first make sure that the eigen
+values are arranged in decreasing order of
+
+136
+00:14:32,810 --> 00:14:41,090
+the magnitudes and corresponding eigen vectors
+are present in the same you know same column
+
+137
+00:14:41,090 --> 00:14:51,300
+location as the value as the eigen value all
+right. So, we just chose the top k eigen values,
+
+138
+00:14:51,300 --> 00:14:58,501
+and eigen vectors and these this value of
+k is what we specify to the principal component
+
+139
+00:14:58,501 --> 00:15:03,649
+analysis algorithm and we specify that to
+be 150. So, know we will do this exercise

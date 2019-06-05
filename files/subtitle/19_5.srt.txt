@@ -1,0 +1,213 @@
+147
+00:20:00,340 --> 00:20:05,580
+effective in many number of cases.
+And, often it turns out that, even if the
+
+148
+00:20:05,580 --> 00:20:11,320
+assumption is not valid, Naive Bayes gives
+the correct classification, because Naive
+
+149
+00:20:11,320 --> 00:20:17,799
+Bayes we are not really using this assumption
+to find the exact probability, but to choose
+
+150
+00:20:17,799 --> 00:20:24,720
+between the different possible classes. And,
+in that way, Naive Bayes works quite well
+
+151
+00:20:24,720 --> 00:20:31,000
+in many cases. For example, in text classification,
+Naive Bayes is a very standard algorithm,
+
+152
+00:20:31,000 --> 00:20:36,200
+which is applied and does surprisingly well
+it is fast; and because even when the assumptions
+
+153
+00:20:36,200 --> 00:20:45,580
+are not right, it gives the right example.
+Now, we will look at the case, where the input
+
+154
+00:20:45,580 --> 00:20:51,320
+attributes are continuous value. We have so
+far seen that, the both the input attribute
+
+155
+00:20:51,320 --> 00:20:56,480
+and the output attribute are discrete value.
+What if the input attribute is continuous
+
+156
+00:20:56,480 --> 00:21:02,980
+value? If the input attributes are continuous
+valued, we can assume that, the conditional
+
+157
+00:21:02,980 --> 00:21:10,370
+probability of that attribute can be modeled
+by a Gaussian. And based on that, we can have
+
+158
+00:21:10,480 --> 00:21:12,920
+Gaussian Naive Bayes.
+
+159
+00:21:13,800 --> 00:21:18,720
+For this, I will request you to look at this
+slide. Suppose you have continuous valued
+
+160
+00:21:18,720 --> 00:21:25,989
+features, then you can model the conditional
+probability – probability X i equal to x
+
+161
+00:21:25,989 --> 00:21:32,240
+given Y equal to y k as a normal distribution
+or Gaussian distribution, which is given by
+
+162
+00:21:32,240 --> 00:21:37,809
+this standard formula 1 by root over 2 pi
+sigma square e to the power minus x minus
+
+163
+00:21:37,809 --> 00:21:45,070
+mu i k by whole square divided by 2 sigma
+square. Sometimes we may assume that, this
+
+164
+00:21:45,070 --> 00:21:51,659
+variance – the sigma square term here is
+independent of Y or independent of X i or
+
+165
+00:21:51,659 --> 00:21:56,650
+both. We can assume that this is same for
+all X i or Y or you can assume that they are
+
+166
+00:21:56,650 --> 00:22:04,240
+same for all Y i and so on. This makes the
+model have less number of parameters if you
+
+167
+00:22:04,240 --> 00:22:10,799
+wish. But, under this assumption we can have
+the Gaussian Naive Bayes algorithm.
+
+168
+00:22:10,799 --> 00:22:16,490
+In the Gaussian Naive Bayes algorithm, in
+the training phase, we look at the training
+
+169
+00:22:16,490 --> 00:22:24,899
+dataset. And from the training dataset, we
+estimate pi k as before; pi k is probability
+
+170
+00:22:24,899 --> 00:22:31,570
+Y equal to y k. The prior probability of the
+different classes this is estimated as before,
+
+171
+00:22:31,570 --> 00:22:40,269
+but for each attribute X i we estimate the
+mu i k and sigma i k.
+
+172
+00:22:40,269 --> 00:22:48,119
+For each X i for a particular y k, in order
+to find probability X i given Y, we estimate
+
+173
+00:22:48,119 --> 00:22:55,070
+mu and sigma from the data. And after we have
+done this estimate, in the testing phase,
+
+174
+00:22:55,070 --> 00:23:05,860
+we can classify the new instance X new as
+Y new is that y k for which this is the standard
+
+175
+00:23:05,860 --> 00:23:12,720
+formula for Naive Bayes. Here probability
+Y equal to y k was estimated as pi k. And,
+
+176
+00:23:12,720 --> 00:23:19,070
+for probability X i new given Y equal to y
+k, we use a normal distribution over X i new
+
+177
+00:23:19,070 --> 00:23:24,860
+mu sigma; where, mu sigma were the parameters
+found in the training phase. So, based on
+
+178
+00:23:24,860 --> 00:23:29,929
+that, we can apply the Gaussian Naive Bayes
+algorithm.
+
+179
+00:23:29,929 --> 00:23:46,879
+Now, in the Gaussian Naive Bayes, is used
+for continuous X and so this is used particularly
+
+180
+00:23:46,879 --> 00:23:54,809
+in case, where X is – X is continuous and
+Y is discrete. And, the maximum likelihood
+
+181
+00:23:54,809 --> 00:24:02,249
+estimate as we have said, the estimate of
+mu 1 sigma is given by – mu is given by
+
+182
+00:24:02,249 --> 00:24:08,429
+estimate of the mean of the sample. This is
+the standard way of doing maximum likelihood
+
+183
+00:24:08,429 --> 00:24:14,769
+estimate. And sigma is also obtained by the
+standard deviation of the sample as is given
+
+184
+00:24:14,769 --> 00:24:25,499
+by this slide. So, to conclude Naive Bayes,
+is a very simple algorithm, which makes the
+
+185
+00:24:25,499 --> 00:24:33,320
+Naive as the assumption that the different
+attributes X i and X j are independent given
+
+186
+00:24:33,320 --> 00:24:39,840
+the value of the class.
+This assumption is not always realistic, but
+
+187
+00:24:39,840 --> 00:24:47,700
+it simplifies our computations greatly; and
+in many cases, the resulting algorithm is
+
+188
+00:24:47,700 --> 00:24:54,879
+quite good even though it is so simple. Even
+though the independence assumption is not
+
+189
+00:24:54,879 --> 00:25:04,509
+always satisfied in practice, as attributes
+are often correlated, we are get quite good

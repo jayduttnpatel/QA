@@ -1,0 +1,163 @@
+128
+00:19:56,970 --> 00:20:10,730
+that is encoded in the belief network.
+Unfortunately in general, exact inference
+
+129
+00:20:10,730 --> 00:20:27,129
+is intractable for arbitrary base network.
+If have an arbitrary base network the exact
+
+130
+00:20:27,129 --> 00:20:33,480
+inference is intractable. For certain special
+types of base network which have some special
+
+131
+00:20:33,480 --> 00:20:40,889
+structure exact inferences tractable, but
+even when exact inferences intractable there
+
+132
+00:20:40,889 --> 00:20:53,929
+are certain methods by which you can do inference
+in a tractable type. So, there are approximate
+
+133
+00:20:53,929 --> 00:21:05,870
+techniques for inference, e g Monte Carlo
+methods, we will not talk about these methods
+
+134
+00:21:05,870 --> 00:21:10,370
+or in fact, any inference method specifically
+in this class.
+
+135
+00:21:13,769 --> 00:21:22,159
+These are also can be heard for certain type
+Bayesian network, but in practice many of
+
+136
+00:21:22,159 --> 00:21:41,200
+these methods are useful, but you can have
+efficient algorithm the leverage the structure
+
+137
+00:21:41,200 --> 00:21:54,289
+of graph. In the last class, we talked about
+naive bayes and we said that naive bayes represents
+
+138
+00:21:54,289 --> 00:21:59,100
+certain independence conditional independence
+assumptions. We can draw a naïve bayes the
+
+139
+00:21:59,100 --> 00:22:05,429
+probabilities in the variables involved in
+naive bayes in this graphical structure and
+
+140
+00:22:05,429 --> 00:22:11,169
+that particular structure inference efficient.
+There are other types of structures like poly
+
+141
+00:22:11,169 --> 00:22:16,440
+trees structures which are more general structure
+for which inferences efficient, but it is
+
+142
+00:22:16,440 --> 00:22:22,009
+not true for other structures, but there are
+different algorithms for dealing with poly
+
+143
+00:22:22,009 --> 00:22:31,379
+trees and certain variations of poly trees,
+but those details we will not talk about in this class
+
+144
+00:22:33,799 --> 00:22:42,230
+Let us look at, what are the situations, what
+are some standard situations where we can
+
+145
+00:22:42,230 --> 00:22:52,320
+apply Bayesian network? Bayesian networks
+can be applied in many scenarios, for example,
+
+146
+00:22:52,320 --> 00:23:01,730
+it can be applied for diagnosis. Suppose,
+you know the symptoms of a disease you want
+
+147
+00:23:01,730 --> 00:23:04,950
+to identify what is the possible cause.
+
+148
+00:23:06,139 --> 00:23:30,230
+For example, suppose a cancer causes tumor
+and then there are other causes for a tumor.
+
+149
+00:23:30,230 --> 00:23:43,049
+A cancer may also cause weight loss and so
+on. So, if you are given the symptoms you
+
+150
+00:23:43,049 --> 00:23:50,190
+can try to infer what is the possible cause,
+we saw an example of this type of inference
+
+151
+00:23:50,190 --> 00:23:57,269
+where we looked at using bayes theorem and.
+So, from the symptoms you can find out what
+
+152
+00:23:57,269 --> 00:24:03,250
+is probability of the specific causes. So,
+if you are late for work what is the probability
+
+153
+00:24:03,250 --> 00:24:11,230
+that there is traffic jam? So, given the symptom
+you want to find out what is the possible
+
+154
+00:24:11,230 --> 00:24:19,499
+cause. So, this is for diagnosis you want
+to diagnose what happened given that you can
+
+155
+00:24:19,499 --> 00:24:24,070
+see the symptom.
+Suppose, some machine is malfunctioning you
+
+156
+00:24:24,070 --> 00:24:30,889
+observe certain things you want to understand,
+what is the possible cause this is for diagnosis
+
+157
+00:24:30,889 --> 00:24:36,659
+a bayes network can also be used for prediction.
+If you have cancer, what is the probability
+
+158
+00:24:36,659 --> 00:24:43,779
+of weight loss? What is the probability that
+you have a tumor? So, it can be used for prediction
+
+159
+00:24:43,779 --> 00:24:47,259
+given the cause, find the probability of the
+symptoms?
+
+160
+00:24:48,440 --> 00:25:03,230
+Bayes network can be used for prediction,
+find the probability of class given the training

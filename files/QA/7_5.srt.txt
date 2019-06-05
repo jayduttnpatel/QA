@@ -1,0 +1,13 @@
+Q. Decision tree can be represented as which type of function?
+A. Character
+B. Real
+C. Numeric
+D. Boolean
+(D)
+
+Q. Who proposed ID3 algorithm?
+A. Charles
+B. Robert
+C. Quinlan
+D. Michels
+(C)

@@ -1,0 +1,20 @@
+Q. Contineous features means
+A. They appear in the finite number of categories or classes 
+B. They are named randomly
+C. Can take infinite number of values
+D. none of the above
+(C)
+
+Q. In which type of learning output variable is categorical or discrete?
+A. Regression
+B. Classification
+C. embedding
+D. none of the above
+(B)
+
+Q. In which type of learning output variable is contineous?
+A. Regression
+B. Classification
+C. embedding
+D. none of the above
+(A)

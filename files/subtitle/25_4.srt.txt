@@ -1,0 +1,77 @@
+111
+00:14:59,160 --> 00:15:09,110
+So, the discriminant function is given by
+this dot product of x i T and x right. So,
+
+112
+00:15:09,110 --> 00:15:16,430
+the computation reduces to mainly finding
+these dot products. So, you have the dot product
+
+113
+00:15:16,430 --> 00:15:23,569
+between the test point x and the support vector
+x i. Why is this, such an exciting thought?
+
+114
+00:15:23,569 --> 00:15:31,370
+Now, x i is a vector and this can be a high
+dimensional vector, if you take the dot product
+
+115
+00:15:31,370 --> 00:15:39,009
+of these two linear vectors what you get is
+a scalar. So, the dot product is a scalar value
+
+116
+00:15:39,300 --> 00:15:42,040
+And we will look at what are the implications
+
+117
+00:15:42,430 --> 00:15:49,459
+later, when we solve the optimization problem
+also, if we look at this formulation where
+
+118
+00:15:49,459 --> 00:15:58,389
+we solve the optimization problem. In here
+you see what we have is the dot product of
+
+119
+00:15:58,389 --> 00:16:04,129
+the training points, so alpha i alpha j y
+i y j is either plus 1 minus 1. So, these
+
+120
+00:16:04,129 --> 00:16:11,430
+are very simple to compute multiply and x
+i T x j the dot product of x i x j. So, when
+
+121
+00:16:11,430 --> 00:16:17,370
+we solve the optimization problems it involved
+computing the dot products between all the
+
+122
+00:16:17,370 --> 00:16:24,190
+pairs of training points and the optimal w
+is linear combination of a small number of
+
+123
+00:16:24,190 --> 00:16:30,550
+data points. So, these are some of the features
+about this SVM formulation.
+
+124
+00:16:30,550 --> 00:16:38,079
+We stop here today, in the next class we will
+look at certain properties of SVM and how
+
+125
+00:16:38,079 --> 00:16:44,269
+these properties can be used for those formulations
+of SVM. With this I end today's lecture.
+
+126
+00:16:44,269 --> 00:16:44,769
+Thank you.

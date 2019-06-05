@@ -1,0 +1,20 @@
+Q. Generally which decision tree is prefered
+A. smaller
+B. larger
+C. doesn't matter
+D. none of the above
+(A)
+
+Q. What is smaller tree
+A. trees with samller number of nodes
+B. trees with smaller accuracy
+C. trees with smaller number of leaves
+D. none of the above
+(A)
+
+Q. Finding the good decision tree is
+A. greedy algorith
+B. dynamic algorithm
+C. computationally hard algorithm
+D. none of the above
+(A)

@@ -1,0 +1,191 @@
+31
+00:05:01,590 --> 00:05:08,120
+can plot this black and red points here again
+and in this case we find that they can be
+
+32
+00:05:08,120 --> 00:05:14,300
+separated linearly in the transformed feature
+space x 1 square x 2 square.
+
+33
+00:05:15,540 --> 00:05:23,800
+A simpler example let us look at this point
+when there is a single feature x 1, we have
+
+34
+00:05:23,800 --> 00:05:31,210
+this red point and the black point and clearly
+they are not linearly separable. Now, we may
+
+35
+00:05:31,210 --> 00:05:38,719
+convert this to a point x 1 square and these
+points may become linearly separable, suppose
+
+36
+00:05:38,719 --> 00:05:44,449
+this is the origin. So, this is the origin
+and these are the points are those points
+
+37
+00:05:44,449 --> 00:05:50,500
+which are you know, let us say this is point
+3 and this is minus 3. Those within minus
+
+38
+00:05:50,500 --> 00:05:56,580
+3 and plus 3 are linearly separable. Now,
+when we transform this to this space then
+
+39
+00:05:56,580 --> 00:06:03,070
+these points are will lie between 0 and 9
+and these points beyond 9. So, they will become
+
+40
+00:06:03,070 --> 00:06:03,970
+linearly separable.
+
+41
+00:06:04,070 --> 00:06:12,621
+It is possible as we saw in this picture that
+in certain cases when you convert the feature
+
+42
+00:06:12,621 --> 00:06:19,330
+space to an appropriate high dimensional feature
+space, the points may become linearly separable.
+
+43
+00:06:19,330 --> 00:06:26,919
+Here is 1 more example, here we have this
+red and blue points after transformation we
+
+44
+00:06:26,919 --> 00:06:33,400
+have we transform it. So, originally we have
+2 features, now we have 3 features and with
+
+45
+00:06:33,400 --> 00:06:41,639
+these 3 features we are able to separate these
+points in the new feature space. So, this
+
+46
+00:06:41,639 --> 00:06:53,259
+brings us, this is one aspect that points
+which are not separable linearly in up in
+
+47
+00:06:53,259 --> 00:06:58,899
+the original feature space may become separable
+in the non-linear feature space.
+
+48
+00:06:59,150 --> 00:07:07,180
+The second thing that we will look at is there
+are certain cases, certain types of feature
+
+49
+00:07:07,180 --> 00:07:14,710
+transformations where after transformation
+the SVM can be solved efficiently. This brings
+
+50
+00:07:14,710 --> 00:07:22,110
+us to a notion of kernel functions or kernels.
+
+51
+00:07:23,400 --> 00:07:33,770
+Now, we have originally, suppose 2 points
+x a and x b and by using this transformation
+
+52
+00:07:33,770 --> 00:07:44,629
+phi they now become the new features become
+new inputs become phi x a and phi x b. Now,
+
+53
+00:07:44,629 --> 00:07:53,599
+as we saw in the solution of SVM, we need
+to find x a dot x b and when we use these
+
+54
+00:07:53,599 --> 00:07:57,999
+phi we will have to solve phi x a dot phi
+x b.
+
+55
+00:07:58,729 --> 00:08:10,899
+Now, there are certain phi's, there are certain
+phi's not for all functions. So, that corresponding
+
+56
+00:08:10,899 --> 00:08:23,250
+to them we have something like this that phi
+x a dot phi x b is a function of x a and x
+
+57
+00:08:23,250 --> 00:08:33,159
+b and this function of x a and x b in certain
+cases can be computed without expanding phi
+
+58
+00:08:33,159 --> 00:08:42,419
+x a and phi x b. So, this particular function
+k x a x b is a function of x a x b and the
+
+59
+00:08:42,419 --> 00:08:48,420
+value of this is same as the dot product of
+phi x a and pi x b, but this function may
+
+60
+00:08:48,420 --> 00:08:55,690
+be easy to compute and more specifically,
+we may be able to compute this function without
+
+61
+00:08:55,690 --> 00:09:02,100
+expanding this phi's individual phi's. So,
+such functions are called kernel function.
+
+62
+00:09:02,100 --> 00:09:07,710
+So, if you use kernel functions we can use
+the kernel to do the work. So, in the solution
+
+63
+00:09:07,710 --> 00:09:14,530
+of SVM where we have to find phi x a dot phi
+x b, normally we will for every example we
+
+64
+00:09:14,530 --> 00:09:21,240
+will expand phi x a expand phi x b take the
+dot product, but for kernel functions we can
+
+65
+00:09:21,240 --> 00:09:31,340
+simply use this function k x a x b. So, for
+certain phi's there is a simple operation
+
+66
+00:09:31,340 --> 00:09:38,240
+k by which we can find is dot product of phi
+in a simple times. So, this is called the
+
+67
+00:09:39,000 --> 00:09:40,000
+kernel trick.
+
+68
+00:09:40,360 --> 00:09:49,560
+And when we apply the kernel trick as we saw
+that when we use an SVM to classify a test
+
+69
+00:09:49,560 --> 00:09:59,830
+point x, we apply w dot phi x plus b which
+is equal to alpha i phi x i dot phi x plus

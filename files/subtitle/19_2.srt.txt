@@ -1,0 +1,199 @@
+31
+00:05:04,460 --> 00:05:11,210
+to y k times probability X 1, X 2, X n given
+Y equal to y k divided by – this is the
+
+32
+00:05:11,210 --> 00:05:15,210
+denominator, which is independent of Y equal
+to y k.
+
+33
+00:05:15,650 --> 00:05:21,569
+Assuming conditional independence, we get
+it as probability Y equal to y k times product
+
+34
+00:05:21,569 --> 00:05:29,169
+of probability X i given Y equal to y k. And,
+there is a denominator. And based on this,
+
+35
+00:05:29,169 --> 00:05:37,689
+we can get a classifier. The classifier says
+that, given a new example, the classification
+
+36
+00:05:37,689 --> 00:05:54,400
+Y new is that y k for which this quantity
+is maximized; that is, the product over all
+
+37
+00:05:54,400 --> 00:06:05,229
+the training, all the attributes, probability
+X i given Y of the training example of the
+
+38
+00:06:05,229 --> 00:06:27,830
+new instance probability X i new given Y,
+given Y equal to y k times probability of
+
+39
+00:06:27,830 --> 00:06:32,479
+the prior probability Y equal to y k. So,
+these times this is maximum. So, you want
+
+40
+00:06:32,479 --> 00:06:43,789
+to take that classification for which the
+prior probability of Y equal y k times this
+
+41
+00:06:43,789 --> 00:06:49,780
+product is maximum.
+Now, if we look at the individual probabilities
+
+42
+00:06:49,780 --> 00:06:57,140
+that we require to compute this, what do we
+notice is that, for each value of suppose
+
+43
+00:06:57,140 --> 00:07:03,690
+Y takes two values: plus and minus; we need
+to know for all such cases, we need to know
+
+44
+00:07:03,690 --> 00:07:10,830
+a probability of Y equal to true, probability
+of Y equal to false. And, for each feature
+
+45
+00:07:10,830 --> 00:07:19,090
+X i, we need to know probability of X i given
+Y equal to plus; probability of X i given
+
+46
+00:07:19,090 --> 00:07:23,099
+Y equal to minus. And, X i can have different
+values.
+
+47
+00:07:23,099 --> 00:07:30,289
+Suppose X i has 3 values, for each of the
+values of X i, we have to estimate probability
+
+48
+00:07:30,289 --> 00:07:37,270
+X i equal to value 1 given Y equal to plus;
+probability X i equal to value 2 given Y equal
+
+49
+00:07:37,270 --> 00:07:42,589
+to plus; probability X i equal to value 3
+given Y equal to plus. Similarly, probability
+
+50
+00:07:42,589 --> 00:07:49,029
+X i equal to value 1 given Y equal to minus
+and so on. So, what we have is that are the
+
+51
+00:07:49,029 --> 00:07:52,609
+number of probabilities that we required to
+calculate.
+
+52
+00:07:52,999 --> 00:07:59,360
+Let us assume that, X 1, X 2, X n and Y are
+binary attributes. For a Y, we require two
+
+53
+00:07:59,360 --> 00:08:06,569
+values; actually, one of them will suffice
+that; then we can get for if each X i has
+
+54
+00:08:06,569 --> 00:08:12,500
+two values; so, for each X i will require
+X i equal to true for each value of Y. If
+
+55
+00:08:12,500 --> 00:08:17,429
+we know X i equal to true, we can also get
+X i equal to false. So, we have X i equal
+
+56
+00:08:17,429 --> 00:08:21,449
+to true given Y equal to true; X i equal to
+true given Y equal to false. So, two values
+
+57
+00:08:21,449 --> 00:08:27,849
+for each X i. So, total 2 n plus two values
+– 2 n plus 1 value will suffice to represent
+
+58
+00:08:27,849 --> 00:08:35,029
+these probabilities, which is very much possible.
+And, this is a simple; this gives us a simple
+
+59
+00:08:35,029 --> 00:08:38,569
+algorithm for classification called Naive
+Bayes.
+
+60
+00:08:39,070 --> 00:08:45,880
+Now, let us see what is the resulting Naive
+Bayes algorithm? When you have discrete values
+
+61
+00:08:45,880 --> 00:08:54,380
+of X; for which you can look at the slide,
+which gives the outline of the Naive Bayes
+
+62
+00:08:54,380 --> 00:09:02,300
+algorithm. This is a very simple algorithm.
+So, when we train Naive Bayes, we take the
+
+63
+00:09:02,300 --> 00:09:12,020
+training set; and for each value y k; suppose
+there are n values of y k, we need to estimate
+
+64
+00:09:12,020 --> 00:09:19,410
+only n minus 1 parameters, because y k equal
+to 1, y k equal to 2 from y k equal to 3,
+
+65
+00:09:19,410 --> 00:09:22,190
+you know the probabilities of some of the
+probabilities is 1.
+
+66
+00:09:22,410 --> 00:09:28,970
+So, you need to estimate only n minus 1 of
+the values. Anyway for each value y k, we
+
+67
+00:09:28,970 --> 00:09:36,470
+will estimate pi k as the probability of Y
+equal to y k. This is the prior probability.
+
+68
+00:09:36,670 --> 00:09:44,530
+How do we estimate that? Suppose we are given
+100 training examples, and y k has three values:
+
+69
+00:09:44,530 --> 00:09:54,430
+v 1, v 2, v 3, y k equal to v 1 for 70 of
+the examples; v 2 for 20 of the examples;
+
+70
+00:09:54,430 --> 00:10:02,300
+v 3 for 10 of the examples; then, probability
+of Y equal to y k could be estimated to be

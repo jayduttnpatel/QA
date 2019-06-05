@@ -1,0 +1,20 @@
+Q. Wich is the third step of the machine learning application?
+A. Visualization of the dataset
+B. Split the data
+C. Fit a linear model
+D. none of the above
+(C)
+
+Q. How the squared error is minimized?
+A. Through gradient descent learning
+B. regularization
+C. normalization
+D. none of the above
+(A)
+
+Q. Wich is the fourth step of the machine learning application?
+A. Visualization of the dataset
+B. Evaluation by the mean square error
+C. Fit a linear model
+D. none of the above
+(B)

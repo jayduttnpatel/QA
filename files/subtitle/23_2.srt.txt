@@ -1,0 +1,154 @@
+34
+00:05:01,509 --> 00:05:11,699
+the sigmoid function and use it as for a classification
+function. Now, let us looks at certain properties
+
+35
+00:05:11,699 --> 00:05:17,799
+of this sigmoid function which makes it very
+attractive to use.
+
+36
+00:05:18,270 --> 00:05:38,129
+So, as we have seen g (z) tends to 1 as z
+is after sometime it becomes 1 as it asymptotically
+
+37
+00:05:38,129 --> 00:05:47,419
+stays at 1. So, as z tends to infinite g (z)
+tends to 1 and g (z) tends to 0 as z tends
+
+38
+00:05:47,419 --> 00:05:58,500
+to minus infinite then a very attractive feature
+of this function is if you take the derivative
+
+39
+00:05:58,500 --> 00:06:08,160
+of this function . So, the derivative of this
+function you can take as, you have 1 by 1
+
+40
+00:06:08,160 --> 00:06:20,210
+plus e to the power minus z let us take the
+derivative. So, g dash z equal to d d z of
+
+41
+00:06:20,210 --> 00:06:29,220
+1 by 1 plus e to the power minus z which is
+1 by 1 plus e to the power minus z whole square
+
+42
+00:06:29,220 --> 00:06:36,499
+into e to the power minus z.
+So, we do a change of variable this is 1 by
+
+43
+00:06:36,499 --> 00:06:45,120
+x which is 1 by x square and by taking the
+derivative of this part we get e to the power
+
+44
+00:06:45,120 --> 00:06:51,629
+minus z. So, g dash z is e to the power minus
+z times 1 by 1 plus e to the power minus z
+
+45
+00:06:51,629 --> 00:06:59,809
+whole square and we can simplify this to write
+it as we can do some manipulation and we can
+
+46
+00:06:59,809 --> 00:07:14,889
+write this as let me write it where you can
+see. So, this can be written as 1 by 1 plus
+
+47
+00:07:14,889 --> 00:07:24,659
+e to the power minus z times 1 minus 1 by
+1 plus e to the power minus z which is simply
+
+48
+00:07:24,659 --> 00:07:36,719
+equal to g (z) into 1 minus g (z). So, the
+derivative of g (z) can be written as g (z)
+
+49
+00:07:36,719 --> 00:07:43,059
+times 1 minus g (z). So, the derivative is
+extremely simple to compute and this is a
+
+50
+00:07:43,059 --> 00:07:49,389
+property which makes it attractive to use
+this logistic function or sigmoid function.
+
+51
+00:07:49,389 --> 00:07:57,619
+So, when you are using this logistic function
+based on this we can look at the conditional
+
+52
+00:07:57,619 --> 00:08:10,990
+distribution of generating the data. So, suppose
+you have the input x you want to find out
+
+53
+00:08:10,990 --> 00:08:21,070
+what is the probability of y given x, if y
+equal to 1.
+
+54
+00:08:22,250 --> 00:08:35,120
+So, we can write this as h (x). So, if y equal
+to 1 h (x) is the probability and if y equal
+
+55
+00:08:35,120 --> 00:08:43,270
+to 0 the probability is 1 minus h (x). So,
+we can write probability y distribution of
+
+56
+00:08:43,270 --> 00:08:55,523
+y given x as h (x) to the power y 1 minus
+h (x) to the power 1 minus y if y is 1, 1
+
+57
+00:08:55,523 --> 00:09:02,710
+minus y equal to 0 and this factor will not
+be there this factor will be 1. So, we have
+
+58
+00:09:02,710 --> 00:09:13,390
+h (x) if y equal to 1 and probability y given
+y given x probability y equal to 0 given x
+
+59
+00:09:13,390 --> 00:09:21,390
+is here y is 0 and 1 minus y is 1. So, we
+have 1 minus h (x). So, it can be given here
+
+60
+00:09:21,390 --> 00:09:29,950
+and h (x) has we have seen equal to 1 by 1
+plus e to the power minus beta transpose x.
+
+61
+00:09:30,820 --> 00:09:40,750
+Now, given this function we can now try to
+learn this function by using gradient assent
+
+62
+00:09:40,750 --> 00:09:47,830
+just like. So, we want to maximize this function
+and we can use the gradient a decent method,
+
+63
+00:09:47,830 --> 00:09:57,060
+asset method as we have used in linear regression.
+So, in logistic regression we need to learn
+
+64
+00:09:57,060 --> 00:10:03,460
+the conditional probability distribution probability
+y given x. So, this is what we need to learn.

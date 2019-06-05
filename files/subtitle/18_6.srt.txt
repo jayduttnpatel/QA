@@ -1,0 +1,157 @@
+150
+00:24:59,770 --> 00:25:08,179
+So, the Bayes optimal classification is given
+by that v j for which sigma h included in
+
+151
+00:25:08,179 --> 00:25:14,889
+capital H. Secondly, this is maximum and this
+is an example in that we can work out which
+
+152
+00:25:14,889 --> 00:25:21,460
+you have seen probability h1 given D is 0.4,
+h2 given D is 0.3, h3 given D 0.2. Therefore,
+
+153
+00:25:21,460 --> 00:25:27,620
+probability negative given h1 is zero negative,
+given h 2 is one probability negative, given
+
+154
+00:25:27,620 --> 00:25:33,830
+h 3 is 1 and probability plus given h 1 is
+zero and if you apply the bayes optimal classifier,
+
+155
+00:25:33,830 --> 00:25:39,370
+we see that probability of plus is 0.4, probability
+of minus is 0.6.
+
+156
+00:25:39,840 --> 00:25:48,549
+So, why is this called optimal? It is optimal
+in the sense that no other classifier using
+
+157
+00:25:48,549 --> 00:25:56,050
+the same hypothesis space and same prior knowledge
+can outperform this on the average. So, this
+
+158
+00:25:56,050 --> 00:26:02,549
+is called the bayes optimal classifier, but
+as you can see since typically the size of
+
+159
+00:26:02,549 --> 00:26:09,200
+the hypothesis space is huge, it is not possible
+to apply the bayes optimal classifier. So,
+
+160
+00:26:09,200 --> 00:26:16,029
+we have to use some approximation of the bayes
+optimal classifier and for that we can use
+
+161
+00:26:16,029 --> 00:26:17,169
+Gibbs sampling.
+
+162
+00:26:18,070 --> 00:26:35,909
+So, what we do in Gibbs sampling is that instead
+of applying all possible hypothesis on x v
+
+163
+00:26:35,909 --> 00:26:55,570
+sample from the hypothesis space, we choose
+a hypothesis randomly according to probability
+
+164
+00:26:55,570 --> 00:27:03,360
+h given D. So, for each hypothesis we have
+a probability associated with it. So, we have
+
+165
+00:27:03,360 --> 00:27:08,919
+a probability distribution over the hypothesis
+space based on our training data that is our
+
+166
+00:27:08,919 --> 00:27:16,270
+evidence we get a posterior probability distribution
+over the hypothesis space. In the bayes optimal
+
+167
+00:27:16,270 --> 00:27:21,159
+classifier, each of the hypothesis according
+to their probability will apply on the each
+
+168
+00:27:21,159 --> 00:27:28,610
+of the hypothesis will apply on the test instance.
+Secondly, their contributions according to
+
+169
+00:27:28,610 --> 00:27:35,179
+their posterior probabilities, but in Gibbs
+sampling, we will choose a randomly high hypothesis
+
+170
+00:27:35,179 --> 00:27:44,809
+according to P h by t and use it to classify
+the new instance.
+
+171
+00:27:44,809 --> 00:27:54,530
+So, we just choose one hypothesis from the
+distribution and use it to classify the newsiest.
+
+172
+00:27:54,530 --> 00:28:03,080
+Fortunately it is a surprising result that
+it has been found that the error for Gibbs
+
+173
+00:28:03,080 --> 00:28:11,740
+algorithm is quite bounded. So, if the expected
+value is taken over the target hypothesis
+
+174
+00:28:11,740 --> 00:28:18,490
+drawn at random according to the prior probability
+distribution, then the expected error of the
+
+175
+00:28:18,490 --> 00:28:26,980
+Gibbs classifier is less than equal to twice
+the error of the Bayes optimal classifier.
+
+176
+00:28:26,980 --> 00:28:33,460
+So, the Gibbs classifier which is very much
+practical in the sense that you can need only
+
+177
+00:28:33,460 --> 00:28:40,809
+to apply one hypothesis you know if once the
+posterior distribution has been computed,
+
+178
+00:28:40,809 --> 00:28:47,299
+Gibbs sampling can be used to choose one hypothesis
+which can be used to classify the instance
+
+179
+00:28:47,299 --> 00:28:54,280
+and it gives an error which is no more than
+twice the error of the Bayes optimal classifier.
+
+180
+00:28:54,280 --> 00:28:57,779
+With this we come to conclusion of today’s
+lecture.
+
+181
+00:28:57,779 --> 00:28:58,679
+Thank you.

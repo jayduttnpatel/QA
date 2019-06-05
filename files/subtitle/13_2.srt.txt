@@ -1,0 +1,138 @@
+31
+00:05:06,669 --> 00:05:10,209
+because we have seen that it leads to over
+fitting.
+
+32
+00:05:11,450 --> 00:05:29,660
+So, these things contribute to phenomena which
+we call the curse of dimensionality. When
+
+33
+00:05:29,660 --> 00:05:39,229
+you have too many features, too many dimensions
+this will lead to the gradation of the learning
+
+34
+00:05:39,229 --> 00:05:44,960
+algorithm more computational time and this
+phenomena is called the Curse of Dimensionality.
+
+35
+00:05:44,960 --> 00:05:51,260
+To overcome this curse of dimensionality we
+want to do feature reduction. There are 2
+
+36
+00:05:51,260 --> 00:05:57,880
+types of feature reduction; one is called
+Feature Selection, the other is called Feature
+
+37
+00:05:57,880 --> 00:05:58,520
+Extraction.
+
+38
+00:06:19,280 --> 00:06:27,240
+In feature selection what we do is that, given
+an initial set of features F equal to x 1,
+
+39
+00:06:27,249 --> 00:06:37,529
+x 2, x N we are given initially N number of
+features. We want to find the sub set F prime
+
+40
+00:06:37,529 --> 00:06:54,210
+which is a subset of F equal to let us say
+x prime 1, x prime 2, x prime N. We want to
+
+41
+00:06:54,210 --> 00:07:01,400
+find a subset of those features so that it
+optimizes certain criteria. So, what do we
+
+42
+00:07:01,400 --> 00:07:16,979
+want to optimize. So think about it. We will
+first talk about the next method of feature
+
+43
+00:07:16,979 --> 00:07:27,789
+reduction which is called Feature Extraction.
+We will talk about feature extraction in the
+
+44
+00:07:27,789 --> 00:07:37,220
+next class, but what feature extraction does
+is that it transforms or projects the original
+
+45
+00:07:37,220 --> 00:07:49,339
+set of features into a new subspace which
+has smaller number of dimension. It will to
+
+46
+00:07:49,339 --> 00:08:04,030
+a projection to M less than N dimensions.
+Whereas, in feature selection you select a
+
+47
+00:08:04,030 --> 00:08:12,319
+sub set of the features, will talk about feature
+extraction in the next class. In both these
+
+48
+00:08:12,319 --> 00:08:20,919
+cases what you are seek into optimize is,
+you want to either improve or maintain classification
+
+49
+00:08:20,919 --> 00:08:35,219
+accuracy, and 
+you want to simply classifier complexity.
+
+50
+00:08:39,630 --> 00:08:55,180
+Earlier we saw curve which showed that as
+you increase the number features the classification
+
+51
+00:08:55,180 --> 00:09:01,650
+accuracy initially increases and then reduces.
+It could also be the case that the classification
+
+52
+00:09:01,650 --> 00:09:09,100
+accuracy increases and then remains the same.
+So, you want to find a small number of features
+
+53
+00:09:09,100 --> 00:09:16,329
+which either improves classification accuracy
+or may instance the same accuracy and simplifies
+
+54
+00:09:16,329 --> 00:09:22,770
+the complexity of the classifier. These are
+the reasons why we do feature selection.
+
+55
+00:09:22,770 --> 00:09:30,009
+Now, we said that in feature selection we
+want to select a subset of the original feature
+
+56
+00:09:30,009 --> 00:09:39,820
+set. Now let us see how we can select that
+subset. So, you can see that if we have N
+
+57
+00:09:39,820 --> 00:09:53,940
+features the number of subsets possible is
+2 to the power [noise], and it is impossible
+
+58
+00:09:53,940 --> 00:10:00,970
+for us to enumerate each of these possible
+subsets and check how good it is. Because,

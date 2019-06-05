@@ -1,0 +1,132 @@
+70
+00:09:59,830 --> 00:10:04,730
+b where i corresponds to the support vectors
+for which alpha i is non-zero.
+
+71
+00:10:04,890 --> 00:10:11,770
+Now, if we are using the kernel trick this
+phi x i dot phi x, which we have to compute
+
+72
+00:10:11,770 --> 00:10:21,870
+can be computed as kernel function of x i
+and x. So, we have seen that in the formulation
+
+73
+00:10:21,870 --> 00:10:29,450
+of SVM and the solution of the dual problem
+the dot product we are using the feature vectors
+
+74
+00:10:29,450 --> 00:10:37,190
+both in training as well as test only as the
+dot product or scalar product and we have
+
+75
+00:10:37,190 --> 00:10:43,070
+also seen that a kernel function is function
+which corresponds to the dot product of 2
+
+76
+00:10:43,070 --> 00:10:49,140
+feature vectors in some expanded feature space.
+So, if you are using the kernel function what
+
+77
+00:10:49,140 --> 00:10:57,400
+we can do is that instead of phi x i dot phi
+x we can have k x i x and this will make the
+
+78
+00:10:57,400 --> 00:10:58,540
+computation simpler.
+
+79
+00:10:58,880 --> 00:11:07,820
+So, this k x i x may be in expensive to compute
+even phi x may be extremely high dimensional.
+
+80
+00:11:07,820 --> 00:11:14,580
+Let us now look at an example of a kernel
+function. So, let us assume a 2-dimensional
+
+81
+00:11:14,580 --> 00:11:23,821
+vector x which has 2 components x 1 and x
+2; x 1 and x 2 are the 2 attributes of this
+
+82
+00:11:23,821 --> 00:11:24,681
+vector x.
+
+83
+00:11:32,840 --> 00:11:57,220
+Now, let us say k of x i x j, let us take
+k x i x j equal to 1 plus x i dot x j whole
+
+84
+00:11:57,230 --> 00:12:08,720
+square. So, k of x i x j x i x j are 2 vectors
+corresponding to the attributes in the original
+
+85
+00:12:08,720 --> 00:12:15,380
+attribute space k x i x j is equal to now
+this is the kernel function which is 1 plus
+
+86
+00:12:15,380 --> 00:12:20,740
+x i dot x j whole square.
+Now, this function is easy to compute. In
+
+87
+00:12:20,740 --> 00:12:25,510
+order to compute this function you take the
+dot product of the original attribute space,
+
+88
+00:12:25,510 --> 00:12:33,320
+add 1 and take the square. Now, we will show
+that this k x i x j corresponds to a kernel
+
+89
+00:12:33,320 --> 00:12:47,070
+function. Now, we can expand k x i x j 2 1
+plus x i x j whole square. So, x i has 2 components
+
+90
+00:12:47,070 --> 00:13:00,310
+x i 1 x i 2. Similarly, x j has 2 component
+x j 1 x j 2. Now, we can expand this function
+
+91
+00:13:00,310 --> 00:13:28,010
+as 1 plus x i 1 square x j 1 square plus 2
+times x i 1 x j 1 x j 2 x i 2 x j 2 plus we
+
+92
+00:13:28,010 --> 00:13:53,030
+have x i 2 square x j 2 square plus 2 x i
+1 x j 1 plus 2 times x i 2 x j 2.
+
+93
+00:13:53,030 --> 00:14:07,730
+Now, this algebraic expression can be rewritten
+as the product of 1 plus x i 1 square or rather
+
+94
+00:14:07,730 --> 00:14:16,221
+it can be rewritten as the dot product of
+2 vectors which you can easily verify 1 x
+
+95
+00:14:16,221 --> 00:14:43,920
+i 1 square root 2 x i 1 x i 2 and x i 2 square
+and root 2 x i 1 root 2 x i 2 dot product,
+
+96
+00:14:43,920 --> 00:14:54,710
+with let me write in the line below 1 the
+next component is x j 1 square next component

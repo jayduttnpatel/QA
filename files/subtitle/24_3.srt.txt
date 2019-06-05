@@ -1,0 +1,158 @@
+72
+00:09:58,720 --> 00:10:09,329
+margin is measure by the distance of the point
+x i, y i from the decision boundary. So, if
+
+73
+00:10:09,329 --> 00:10:20,009
+the distance of x i, y i from the decision
+boundary, it is given by W b.
+
+74
+00:10:22,040 --> 00:10:31,920
+So, now let us see how to find this distance.
+Suppose, this is a straight line, whose equation
+
+75
+00:10:31,920 --> 00:10:45,699
+is given by W x plus b equal to 0. Now the
+vector which is normal to this line has the
+
+76
+00:10:45,699 --> 00:10:55,649
+normal to this line has, so this vector W
+1, W 2 is normal to this straight-line. So,
+
+77
+00:10:55,649 --> 00:11:04,100
+we can define the distance of x i, y i from
+W b as let us say gamma i and gamma i equal
+
+78
+00:11:04,100 --> 00:11:21,430
+to y i times W 2 x i plus b. So, gamma I will
+be given by y i into W t x i plus b which
+
+79
+00:11:21,430 --> 00:11:34,709
+is the normal distance from this point x i,
+y i to the decision surface, so this is given
+
+80
+00:11:34,709 --> 00:11:42,029
+by this.
+Now, this functional margin you know among
+
+81
+00:11:42,029 --> 00:11:50,269
+another if I take another point, let us say
+x j y j, it will have another function margin.
+
+82
+00:11:50,449 --> 00:11:57,100
+So, the functional margin of this is more
+than the functional margin of this. So, if
+
+83
+00:11:57,100 --> 00:12:03,279
+the point is here, further away from the decision
+surface, we have higher confidence in the
+
+84
+00:12:03,279 --> 00:12:10,389
+classification of this point. So, larger functional
+margin means more confidence in predicting
+
+85
+00:12:10,389 --> 00:12:16,369
+the class of that point.
+The problem of defining the margin as this
+
+86
+00:12:16,369 --> 00:12:25,679
+distance is as follows. This W 1 b can be
+arbitrarily scaled. Suppose, the equation
+
+87
+00:12:25,679 --> 00:12:40,540
+of this line is 2 x plus 3 y plus 1 equal
+to 0, so w is 2 3, D is 1. Now I can write
+
+88
+00:12:40,540 --> 00:12:51,499
+the same equation as 4 x plus 6 y plus 2 equal
+to 0; and for that matter as 20 x plus 30
+
+89
+00:12:51,499 --> 00:12:59,949
+y plus 10 equal to 0. So, if we scale this
+equation the equation of the line remain same,
+
+90
+00:12:59,949 --> 00:13:08,839
+but the functional margin becomes larger.
+So, the functional margin does not depend
+
+91
+00:13:08,839 --> 00:13:15,490
+on the actual line, it also depends on the
+coefficients that we are using. Therefore,
+
+92
+00:13:15,490 --> 00:13:22,161
+we need to use some normalization, so that
+we can look at normalized distance, we will
+
+93
+00:13:22,161 --> 00:13:27,350
+come to that presently. But before that, we
+have seen what is the functional margin of
+
+94
+00:13:27,350 --> 00:13:31,450
+a point at one point from the line.
+
+95
+00:13:31,820 --> 00:13:43,339
+But let us define the functional margin of
+set of points so we have a set of points x
+
+96
+00:13:43,339 --> 00:13:59,300
+1 y one x 2 y 2 x n y n. So, we have a set
+of points x 1 y 1 x 2 y 2 x m or rather let
+
+97
+00:13:59,300 --> 00:14:07,309
+us write x m, y m these are my training points.
+And with respect to them, the functional margin
+
+98
+00:14:07,309 --> 00:14:25,509
+is defined to be gamma equal to 
+minimum i equal to 1 to m gamma i. So, among
+
+99
+00:14:25,509 --> 00:14:32,980
+all the functional margins, I want to choose
+the smallest functional margin that is a smallest
+
+100
+00:14:32,980 --> 00:14:38,470
+functional margin of the different points
+is the find to be the functional margin of
+
+101
+00:14:38,470 --> 00:14:48,230
+the set of points.
+Now, let us come to as I said definition of
+
+102
+00:14:48,230 --> 00:14:54,679
+a functional margin suffers from these drawbacks.
+So, we want to use form which does not have
+
+103
+00:14:54,679 --> 00:15:10,790
+this drawback and we come to the concept of
+geometrical margin, which is invariant to

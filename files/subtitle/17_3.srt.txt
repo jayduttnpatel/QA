@@ -1,0 +1,198 @@
+81
+00:10:02,670 --> 00:10:07,450
+definition of an inner product space. So,
+in an inner product space, what we can do,
+
+82
+00:10:07,450 --> 00:10:13,390
+we can use cosine similarity this particular
+metric, to find out the similarity in orientation
+
+83
+00:10:13,390 --> 00:10:22,230
+of 2 vectors. So, in simple terms, say, you
+have 2 vectors a and b.
+
+84
+00:10:22,470 --> 00:10:29,480
+So, all we are trying to find out, is the
+cosine of this angle, between the two vectors
+
+85
+00:10:29,480 --> 00:10:35,470
+a and b; and as you all know that, a dot product
+with b, which is the inner product, in the
+
+86
+00:10:35,470 --> 00:10:45,010
+generic case, is equal to this mod of a, which
+is actually the absolute value of a, or the
+
+87
+00:10:45,010 --> 00:10:57,590
+magnitude, alright; then, or rather, I would
+write, the norm of a, norm of b, times cosine
+
+88
+00:10:57,590 --> 00:11:04,520
+of the angle between a and b. And this cosine
+theta that is that is the cosine similarity
+
+89
+00:11:04,520 --> 00:11:14,820
+index. So, it is equal to a, inner product
+with b, divided by norm of a, norm of b. So
+
+90
+00:11:14,820 --> 00:11:21,110
+this is the formula for calculating. And as
+you know that for theta equal to 0 degree,
+
+91
+00:11:21,110 --> 00:11:26,810
+cos theta is equal to 1.
+So, the cosine similarity is maximum, if the
+
+92
+00:11:26,810 --> 00:11:33,860
+2 vectors are pointing in the same direction;
+and if theta is equal to 90 degree that is,
+
+93
+00:11:33,860 --> 00:11:39,760
+the 2 vectors are perpendicular to each other,
+in that case, cos of theta will be equal to
+
+94
+00:11:39,760 --> 00:11:44,820
+0. So, if the 2 vectors are orthogonal to
+each other then, there is no cosine similarity;
+
+95
+00:11:44,820 --> 00:11:49,990
+there is no similarity of these 2 vectors.
+So this is how you can this is a metric that
+
+96
+00:11:49,990 --> 00:11:54,190
+can be used for feature selection. Another
+metric is called the Pearson correlation.
+
+97
+00:11:54,190 --> 00:12:00,160
+In other words, you could also call it; it
+is also sometimes called the correlation coefficient.
+
+98
+00:12:00,160 --> 00:12:08,900
+So this Pearson correlation, I will write
+it as PC, it is equal to, it is defined as
+
+99
+00:12:08,900 --> 00:12:21,310
+the covariance of. And Pearson correlation,
+you calculate, you define this quantity in
+
+100
+00:12:21,310 --> 00:12:26,030
+terms of, like, you calculate the Pearson
+correlation of 2 features. Say, you have n
+
+101
+00:12:26,030 --> 00:12:32,300
+features and you want to find which of the
+features is linearly dependant on each other.
+
+102
+00:12:32,300 --> 00:12:38,160
+So, if you have, say, 10 features and the
+10th feature can be calculated as a simple
+
+103
+00:12:38,160 --> 00:12:41,800
+linear combination of the first 9 features;
+then, the tenth feature is kind of useless.
+
+104
+00:12:41,800 --> 00:12:47,700
+So, it is good to get rid of the 10, of the
+tenth feature. And how to calculate, how to
+
+105
+00:12:47,700 --> 00:12:55,920
+estimate, how linearly correlated 2 features
+are? So, Pearson correlation is one of those
+
+106
+00:12:55,920 --> 00:13:03,930
+metrics. So, Pearson correlation of 2 variables
+x and y; so I will write it more clearly;
+
+107
+00:13:03,930 --> 00:13:15,240
+Pearson correlation of 2 features x and y
+is equal to covariance of. So, I should write
+
+108
+00:13:15,240 --> 00:13:23,660
+capital letters, because, these are random
+variables of, 2 random variables x and y,
+
+109
+00:13:23,660 --> 00:13:34,500
+is equal to the covariance of x and y; so,
+divided by the standard deviation of x, times
+
+110
+00:13:34,500 --> 00:13:39,960
+the standard deviation of y. So, how do you
+calculate the covariance of x and y?
+
+111
+00:13:40,280 --> 00:13:41,260
+So, covariance
+
+112
+00:13:52,420 --> 00:14:03,240
+of x and y, it is equal to the expected value
+that is, the mean value of x minus mu of x,
+
+113
+00:14:03,240 --> 00:14:17,060
+times y minus mu of y, where mu of x is equal
+to the expected value of x and mu of y is
+
+114
+00:14:17,060 --> 00:14:25,260
+equal to expected value of y. So, you just
+calculate them; then, you can subscribe them
+
+115
+00:14:25,260 --> 00:14:30,650
+to this. So this  is called
+mean normalization. So, you first mean normalize
+
+116
+00:14:30,650 --> 00:14:42,320
+the random variables 
+and then you take all the, like, joint instances
+
+117
+00:14:42,320 --> 00:14:47,090
+of those, of both of those random variables
+and then, multiply them together and then,
+
+118
+00:14:47,090 --> 00:14:50,360
+you take the expectation.
+This is the, the way you take the expectation
+
+119
+00:14:50,360 --> 00:14:55,590
+of 2, of a particular random variable. So,
+you first mean normalize the, the x, the y
+
+120
+00:14:55,590 --> 00:14:59,420
+and then, you multiply those 2 mean normalized
+variables together to make another random

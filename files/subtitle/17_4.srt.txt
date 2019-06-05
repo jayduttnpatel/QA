@@ -1,0 +1,199 @@
+121
+00:14:59,420 --> 00:15:03,500
+variable and you take the expectation value,
+expectation of that. So that calculates the
+
+122
+00:15:03,500 --> 00:15:11,260
+covariance of x and y. And standard deviation
+of x, as you all know, it is square root of
+
+123
+00:15:11,260 --> 00:15:28,820
+the variance of x. So this is equal to expected
+value of x, minus mu of x, squared. So this
+
+124
+00:15:28,820 --> 00:15:40,500
+is the variance and you take the square root
+of it. STD of y will be equal to square root
+
+125
+00:15:40,500 --> 00:15:49,700
+of variance of y, which is equal to expected
+value of y minus mu of y.
+
+126
+00:15:49,710 --> 00:15:56,960
+So, the higher the Pearson correlation coefficient
+between 2 random variables, the more correlated
+
+127
+00:15:56,960 --> 00:16:03,000
+these random variables are. And each feature
+is a random variable. So, each input feature
+
+128
+00:16:03,000 --> 00:16:10,000
+is a random variable and if you; So, for given
+a set of input features, so, what you are
+
+129
+00:16:10,000 --> 00:16:14,110
+going to do is, you are going to find pair-wise
+Pearson correlations between the random variables.
+
+130
+00:16:14,110 --> 00:16:18,590
+And if the ones you find are highly correlated,
+you can just choose one of them; you can drop
+
+131
+00:16:18,590 --> 00:16:23,260
+one of them. So, the higher the Pearson correlation,
+the higher is the amount of linear dependence.
+
+132
+00:16:23,260 --> 00:16:28,550
+So, retaining such highly correlated variables
+would be redundant. So, you drop one of them.
+
+133
+00:16:28,550 --> 00:16:33,180
+So this is a feature selection method. And
+in the exam, you are going to face questions
+
+134
+00:16:33,180 --> 00:16:38,540
+like this, in which you will be asked to calculate
+the Pearson correlation of random variables,
+
+135
+00:16:38,540 --> 00:16:46,062
+given 2 input features and you have to calculate,
+find out the Pearson correlation and make
+
+136
+00:16:46,062 --> 00:16:51,130
+a comment, whether they are highly linearly
+dependent, or not. So, if the value is close
+
+137
+00:16:51,130 --> 00:16:57,830
+to 1, then they are highly linearly dependent
+and so, it is good to, it is like, wise to
+
+138
+00:16:57,830 --> 00:17:07,040
+drop one of those random variables and just
+use one of those features. The next topic
+
+139
+00:17:07,040 --> 00:17:15,880
+that we are going to take up is a method of
+feature reduction.
+
+140
+00:17:17,990 --> 00:17:22,150
+Feature selection, definitely
+feature reduction, but this, they can
+
+141
+00:17:22,150 --> 00:17:29,879
+be another kind of feature reduction, which
+is like, after finding, you know, after like
+
+142
+00:17:29,879 --> 00:17:34,970
+squeezing the information within the given
+input features, which are stored within the
+
+143
+00:17:34,970 --> 00:17:38,090
+given input features, into a smaller number
+of input features.
+
+144
+00:17:38,369 --> 00:17:44,600
+So, you are transforming the input feature
+space into another vector space, in which
+
+145
+00:17:44,600 --> 00:17:51,730
+the same information is retained, but if you
+drop some dimensions, the amount of information
+
+146
+00:17:51,730 --> 00:17:56,179
+loss is minimized. So this is one of this
+is like this falls within the category of
+
+147
+00:17:56,179 --> 00:18:00,340
+feature reduction and principle components
+analysis is one of those feature reduction
+
+148
+00:18:00,340 --> 00:18:12,679
+techniques. So, principle components analysis
+and this is one of the most widely used feature
+
+149
+00:18:12,679 --> 00:18:15,459
+reduction techniques in the machine learning
+community.
+
+150
+00:18:15,690 --> 00:18:25,139
+So, what happens in principle of component
+analysis? So, you are presented with an input
+
+151
+00:18:25,139 --> 00:18:35,619
+matrix capital X, in which, each column represents
+an input feature vector, x 1, x 2, dot dot
+
+152
+00:18:35,619 --> 00:18:49,970
+dot, till x n, say. So, each x i is a training
+sample. So, you arrange them as columns of
+
+153
+00:18:49,970 --> 00:18:57,119
+a matrix capital X. Now, what you do in, while
+calculating the principle components analysis
+
+154
+00:18:57,119 --> 00:19:12,580
+is, while doing this procedure is, you go
+about finding the covariance matrix of X,
+
+155
+00:19:12,580 --> 00:19:23,200
+alright, which is equal to X into X transpose.
+So, as you have been taught in the class that,
+
+156
+00:19:23,200 --> 00:19:27,929
+X into X transpose will calculate the column,
+the covariance matrix and you can figure it
+
+157
+00:19:27,929 --> 00:19:33,740
+out why; just write out the expression of
+this matrix multiplication and you will figure
+
+158
+00:19:33,740 --> 00:19:38,200
+out.
+So, once this has been done, say, you have
+
+159
+00:19:38,200 --> 00:19:48,850
+this, the input dimensionality is, say, capital
+D and the total number of samples is capital
+
+160
+00:19:48,850 --> 00:20:02,080
+N, right. So, X into X transpose is going
+to be, a D cross D matrix, right. Now, what

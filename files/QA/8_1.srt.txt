@@ -1,0 +1,27 @@
+Q. Set of training example is expresed as
+A. A
+B. B
+C. C
+D. D
+(D)
+
+Q. Set of attributes is expresed as
+A. A
+B. B
+C. C
+D. D
+(A)
+
+Q. When to stop the decision tree greedy algorithm
+A. when enough no of iteration are done
+B. when we have exhausted the attributes
+C. when tree depth become more than permicible 
+D. none of the above
+(B)
+
+Q. When to stop the decision tree greedy algorithm
+A. when enough no of iteration are done
+B. when all the example have the same value for the target attribute
+C. when tree depth become more than permicible 
+D. none of the above
+(B)

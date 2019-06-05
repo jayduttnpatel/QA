@@ -4,7 +4,7 @@ import random
 
 def train(mapping):
 	Sub=[]
-	os.chdir("/temp/train/subtitle")
+	os.chdir("/temp/files/subtitle")
 	cnt=0
 	for file in glob.glob("*.txt"):
 		text=WordToNum.SubtitleText(file)

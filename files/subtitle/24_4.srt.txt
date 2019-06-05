@@ -1,0 +1,119 @@
+104
+00:15:10,790 --> 00:15:17,819
+the scaling of the equation. Now again let
+us consider the decision surface given by
+
+105
+00:15:17,819 --> 00:15:27,180
+W x plus b equal to 0. And let us look at
+a normal to this decision surface. So, the
+
+106
+00:15:27,180 --> 00:15:38,459
+normal to this decision surface is given by
+W - the vector w is normal to this decision
+
+107
+00:15:38,459 --> 00:15:43,100
+surface.
+And the unit vector normal to the decision
+
+108
+00:15:43,100 --> 00:15:49,709
+surface, so this is the vector w and the unit
+vector normal to the decision surface is given
+
+109
+00:15:49,709 --> 00:16:01,499
+by W divided by W norm. So, if the equation
+of the line is 2 x plus 3 y plus 1 equal to
+
+110
+00:16:01,499 --> 00:16:16,259
+0, so W equal to 2 3. And W by W hat is 2
+by root over 2 square 3 square that is root
+
+111
+00:16:16,259 --> 00:16:26,019
+over 13 3 by root over 13, so this is the
+unit vector, which is normal to the equation
+
+112
+00:16:26,019 --> 00:16:44,519
+normal to this decision surface.
+Now, let us look at this point p. So, suppose
+
+113
+00:16:44,519 --> 00:16:55,369
+p has a value a, b. And if you draw normal
+to the decision surface suppose it needs a
+
+114
+00:16:55,369 --> 00:17:04,929
+decision surface at q. And let us say that
+this has this is a 1, a 2; and q has the coordinates
+
+115
+00:17:04,929 --> 00:17:16,540
+b 1, b 2. Now if you want to find the distance
+of p from q, the distance is in the direction
+
+116
+00:17:16,540 --> 00:17:30,300
+of the normal vector. So, we can write p equal
+to q plus gamma times W by W hat, W by W hat
+
+117
+00:17:30,300 --> 00:17:39,540
+is the vector which is normal to this. So,
+the coordinates of Q plus if gamma is the
+
+118
+00:17:39,540 --> 00:17:46,500
+distance of p from this decision surface the
+coordinates of P is given by coordinate of
+
+119
+00:17:46,500 --> 00:18:08,710
+Q plus gamma times W by W hat that is we can
+write other way round a 1 a 2 equal to b 1
+
+120
+00:18:08,710 --> 00:18:20,230
+b 2 plus gamma times w by w hat. And given
+w we can write this equation and from that
+
+121
+00:18:20,230 --> 00:18:42,360
+we can find gamma. Let me just rub this; please
+keep this basic diagram in mind.
+
+122
+00:18:42,360 --> 00:19:08,150
+So, from this, we can find out that w transports
+a 1 a 2 minus gamma w by w hat plus b equal
+
+123
+00:19:08,150 --> 00:19:19,460
+to c, because this point b 1 b 2. b 1 b 2,
+if you just recall, let me just draw the diagram
+
+124
+00:19:19,460 --> 00:19:28,910
+again. So, this is the decision surface this
+is p - a 1, a 2; and this is q given b1, b
+
+125
+00:19:28,910 --> 00:19:40,571
+2. So, q given b 1 b 2 lies on the line W
+x plus b equal to 0, so this is b 1 b 2, so
+
+126
+00:19:40,571 --> 00:19:54,660
+it lies on this line, so W into this plus
+b equal to 0. So, from this, we get W equal
+
+127
+00:19:54,660 --> 00:20:10,990
+to we can solve for gamma and we can find
+gamma equal to W t a 1 a 2 plus b by W hat,

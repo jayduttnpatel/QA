@@ -1,0 +1,6 @@
+Q. Each instance is what in the feature sapce?
+A. Line
+B. Plane
+C. Point
+D. Circle
+(C)

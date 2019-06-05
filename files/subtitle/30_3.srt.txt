@@ -1,0 +1,173 @@
+68
+00:10:05,230 --> 00:10:11,410
+to the training examples. So, we have a training
+algorithm for perceptrons.
+
+69
+00:10:12,150 --> 00:10:20,070
+Let us first look at a very simple way of
+training a simple perceptron, which comprises
+
+70
+00:10:20,070 --> 00:10:29,290
+of this threshold function. So, we will look
+at the perceptron training rule in perceptron
+
+71
+00:10:29,290 --> 00:10:36,400
+training rule what we do is that initially,
+when we set up this network we have some initial
+
+72
+00:10:36,400 --> 00:10:43,070
+values of the weights W 0, W 1, W n have some
+initial values of the weights and at each
+
+73
+00:10:43,070 --> 00:10:50,170
+iteration we will update the weights. In the
+simplest training rule what we do is that
+
+74
+00:10:50,170 --> 00:10:58,860
+we feed example 1 at a time to this network
+and based on how the network performs on the
+
+75
+00:10:58,860 --> 00:11:06,480
+example we update the weights. Suppose, we
+feed X 1 to this network and we get an output
+
+76
+00:11:06,480 --> 00:11:11,570
+right the output let us say if we pass through
+thresholding function output is 1 or 0 here
+
+77
+00:11:11,570 --> 00:11:14,660
+also we have a classification problem with
+the output as 1 or 0.
+
+78
+00:11:14,660 --> 00:11:23,180
+So, if the output of the network is same as
+Y 1 then we do not need to change the weight,
+
+79
+00:11:23,180 --> 00:11:29,250
+but if the output is different that is suppose
+the output should have been 1, but I am getting
+
+80
+00:11:29,250 --> 00:11:36,260
+a 0 then the weights have to be updated. So,
+how we update the weight we update the weight
+
+81
+00:11:36,260 --> 00:11:44,029
+as this is the initial weight of W I, initial
+value of W i plus delta W i and how is delta
+
+82
+00:11:44,029 --> 00:11:57,400
+W i computed, we change W I, so that the output
+is more likely to be closer to the target
+
+83
+00:11:57,400 --> 00:12:07,800
+output and this is the training rule that
+is employed delta W i is eta times Y minus
+
+84
+00:12:07,800 --> 00:12:24,940
+Y hat X i. So, this X i, this is a vector.
+So, we feed a particular example let us say
+
+85
+00:12:24,940 --> 00:12:32,600
+X 1 vector which has this different components
+X 1, X 2, X n corresponding to the different
+
+86
+00:12:32,600 --> 00:12:43,440
+features and W i is corresponding to the feature
+X i. So, W i is corresponding to the feature
+
+87
+00:12:43,440 --> 00:12:54,820
+X i and we change W i. So, that in this way
+eta Y minus Y hat X i, Y is the target output
+
+88
+00:12:54,820 --> 00:13:03,330
+and Y hat is what you get through this network.
+If Y and Y hat are equal this term is 0. So,
+
+89
+00:13:03,330 --> 00:13:12,230
+there would be no update otherwise you change
+W i based on Y minus Y hat times X i, where
+
+90
+00:13:12,230 --> 00:13:21,570
+X i is the input to this network. So, this
+is how you change W i and if Y was 1, Y hat
+
+91
+00:13:21,570 --> 00:13:30,200
+is 0 and if X i was 1 you can see that we
+are increasing the weight and eta is a factor
+
+92
+00:13:30,200 --> 00:13:37,270
+which is called the learning rate, it controls
+how much you change based on 1 error. So,
+
+93
+00:13:37,270 --> 00:13:39,630
+based on the error you are changing the weights.
+
+94
+00:13:41,460 --> 00:13:50,200
+Now, this is a very simple the training rule
+and if you apply this particular algorithm
+
+95
+00:13:50,200 --> 00:14:07,510
+by taking the examples one by one. It can
+be shown that this perceptron learning converges
+
+96
+00:14:07,510 --> 00:14:21,560
+to a consistent model, if D, the training
+example is linearly separable. We have already
+
+97
+00:14:21,560 --> 00:14:27,950
+talked about what we mean by linearly separable;
+that means, there is a linear decision surface
+
+98
+00:14:27,950 --> 00:14:34,810
+that separates the positive and negative examples
+if such a linear separation surface exists
+
+99
+00:14:34,810 --> 00:14:40,860
+then by applying this perceptron training
+rule, the learning algorithm will converge
+
+100
+00:14:40,860 --> 00:14:48,860
+to hypothesis which will separate the positive
+and negative examples, but if the data is
+
+101
+00:14:48,860 --> 00:14:54,680
+not linearly separable then this perceptron
+learning algorithm will not converge, it will
+
+102
+00:14:54,680 --> 00:14:58,890
+not work.
+So, we have to look for alternate algorithms

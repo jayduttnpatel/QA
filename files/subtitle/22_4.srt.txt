@@ -1,0 +1,138 @@
+82
+00:15:02,320 --> 00:15:07,040
+ask to find out. So, given this condition
+given a particular value of X what is the
+
+83
+00:15:07,040 --> 00:15:14,710
+most probable value of Y. So, I am going to
+fold this in a half, and keep it like this,
+
+84
+00:15:14,710 --> 00:15:26,050
+let me fold it again.
+So, now, you have the problem. So, this is
+
+85
+00:15:26,050 --> 00:15:31,600
+the scenario, I hope you can see it, yes,
+now you should be able to see it. And this
+
+86
+00:15:31,600 --> 00:15:41,060
+is your statement and you have been asked
+that given this scenario and a value of X
+
+87
+00:15:41,060 --> 00:15:57,520
+given X equal to 0, which value of Y is the
+most probable. So, the MAP probability MAP
+
+88
+00:15:57,520 --> 00:16:17,910
+estimation would go like this, it returns,
+so by MAP inference rule the most probable
+
+89
+00:16:17,910 --> 00:16:34,220
+Y is given by 
+Y star equal to A argmax over Y taking values
+
+90
+00:16:34,220 --> 00:16:52,140
+in 0 and 1. Probability of Y given X or I
+should write probability of Y equal to Y given
+
+91
+00:16:52,140 --> 00:17:00,000
+X equal to 0.
+So, this you are going to choice the particular
+
+92
+00:17:00,000 --> 00:17:08,329
+value of Y which as the maximum aposteriori
+probability given the value of X. So, this
+
+93
+00:17:08,329 --> 00:17:13,750
+is the basic philosophy. And in this case,
+you will find as we calculate before that
+
+94
+00:17:13,750 --> 00:17:22,299
+you were going to find out so we calculated
+that probability of Y equal to 1 given X equal
+
+95
+00:17:22,299 --> 00:17:36,790
+to 0 is 0.9. So, it is going to be argmax
+rather yes, so it is going to be equal to
+
+96
+00:17:36,790 --> 00:17:56,940
+argmax, Y belonging to into 0 and 1 of probability
+of Y equal to 0 given X equal to 0, and
+
+97
+00:17:56,940 --> 00:18:04,090
+argmax over Y. So, I will write small y and
+probability Y equal to 1 given X equal to
+
+98
+00:18:04,090 --> 00:18:13,149
+0. So, this quantity was calculated to be
+0.9, it was calculated to be 0.9 before.
+
+99
+00:18:13,149 --> 00:18:21,659
+And similarly, we can calculate this is 0.1
+and so which value of Y gives more value more
+
+100
+00:18:21,659 --> 00:18:26,460
+the maximum probability maximum aposteriori
+probability Y equal to 0, so this is going
+
+101
+00:18:26,460 --> 00:18:33,889
+to be 0. So, the most probable value of Y
+given this particular value of X is 0. So,
+
+102
+00:18:33,889 --> 00:18:43,340
+this is how MAP inference goes. And this is
+theoretically the best possible inference.
+
+103
+00:18:43,340 --> 00:18:52,369
+So, given all the estimation given the likelihood,
+which comes from domain knowledge and the
+
+104
+00:18:52,369 --> 00:18:57,879
+priors, which also come from the domain knowledge
+and their problem definition, the best you
+
+105
+00:18:57,879 --> 00:19:04,409
+can predict is by this rule so you are going
+to find put that particular value of the output
+
+106
+00:19:04,409 --> 00:19:06,989
+which is the most probable given the input.
+
+107
+00:19:08,860 --> 00:19:25,809
+In this context, another important topic which,
+comes in is the Naive Bayes assumption. So,
+
+108
+00:19:25,809 --> 00:19:38,000
+what does the Naive Bayes assumption say the
+Naive Bayes assumption says that Naive Bayes
+
+109
+00:19:38,000 --> 00:19:58,450
+assumption; this is a conditional independence
+assumption. So, the Naive Bayes assumption

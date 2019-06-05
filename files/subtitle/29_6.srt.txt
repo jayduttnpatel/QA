@@ -1,0 +1,148 @@
+222
+00:24:54,420 --> 00:25:12,100
+So, I will open the Scikit Kearn documentation,
+Scikit Learn. So, this documentation gives
+
+223
+00:25:12,100 --> 00:25:50,620
+you a lot of resources. Something is wrong;
+yes there we go, yes. So, this particular
+
+224
+00:25:50,620 --> 00:25:58,770
+attribute of a model, the support vectors
+underscore will give you the support vector.
+
+225
+00:25:58,770 --> 00:26:07,190
+So, if we can go ahead and if you want to
+see what all points were used as support vectors,
+
+226
+00:26:07,190 --> 00:26:11,690
+we can bring this here. So, we see can that
+so many support vectors.
+
+227
+00:26:11,890 --> 00:26:18,950
+So, all of these points were used as support
+vectors and if we see if we check how many
+
+228
+00:26:18,950 --> 00:26:28,340
+support vectors were used here, we can just
+find the length of this array and there are
+
+229
+00:26:28,340 --> 00:26:40,250
+70 support vectors for the RDF kernel SVM.
+Whereas, if you just use the svc, if you check
+
+230
+00:26:40,250 --> 00:26:48,370
+for the svc, there are 67 support vectors
+and they can be like found this way, just
+
+231
+00:26:48,370 --> 00:26:52,960
+like remove the length, you will see all of
+those points that were used as support vectors.
+
+232
+00:26:52,960 --> 00:26:57,890
+So, these are all the points from, all of
+these points are from the training side and
+
+233
+00:26:57,890 --> 00:27:07,590
+these are the points, which define the decision
+boundary that the classifier is using and
+
+234
+00:27:07,590 --> 00:27:20,480
+the polynomial one. So, poly svc is using,
+length of poly svc support vectors, if we
+
+235
+00:27:20,480 --> 00:27:25,150
+can check there are 55 support vectors over
+here. So, these things and there are other
+
+236
+00:27:25,150 --> 00:27:32,050
+attributes as well and a lot of attributes
+and the documentation of Scikit Learn is really
+
+237
+00:27:32,050 --> 00:27:42,090
+good and all of these parameters.
+So, I will just open the, let me open, linear
+
+238
+00:27:42,090 --> 00:27:54,210
+svc, just svc, yes. So, these are the different
+parameters of the model and you can have different
+
+239
+00:27:54,210 --> 00:28:02,130
+combinations of them according to the need
+of the problem at hand like these things,
+
+240
+00:28:02,130 --> 00:28:06,590
+these are the different, we use the support
+vectors. All of these different parameters
+
+241
+00:28:06,590 --> 00:28:12,970
+of the support vector machine can be obtained
+by just invoking the corresponding attribute
+
+242
+00:28:12,970 --> 00:28:17,240
+value.
+So, that is all for today. Today, we studied
+
+243
+00:28:17,240 --> 00:28:23,130
+how to use the support vector machine module
+of Scikit Learn to have classifications and
+
+244
+00:28:23,130 --> 00:28:29,230
+regressions and there are a lot of, like support
+vector machines are extremely sophisticated
+
+245
+00:28:29,230 --> 00:28:37,660
+and extremely efficient machine learning models,
+and they have been the state of the art at
+
+246
+00:28:37,660 --> 00:28:44,580
+a lot of different applications for a long
+time. And I would like to recommend you to
+
+247
+00:28:44,580 --> 00:28:49,850
+go ahead and find other applications of support
+vector machines as well and try to understand,
+
+248
+00:28:49,850 --> 00:28:58,720
+learn, learn, understand and you know, implement
+this particular part of this course that is
+
+249
+00:28:58,720 --> 00:29:03,390
+the support vector machines and kernel machines
+and all of this theory very well. So, this
+
+250
+00:29:03,390 --> 00:29:06,090
+is one of the most important sections of this
+course.
+
+251
+00:29:07,140 --> 00:29:08,640
+See you next time, bye-bye.

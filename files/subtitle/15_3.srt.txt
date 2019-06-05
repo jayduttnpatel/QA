@@ -1,0 +1,194 @@
+70
+00:10:05,020 --> 00:10:11,450
+similar user to U 2 and U 3 has rated 4 for
+this movie that will help you to decide what
+
+71
+00:10:11,450 --> 00:10:15,260
+rating you too will give this movie, this
+is the essence of collaborative filtering.
+
+72
+00:10:15,260 --> 00:10:21,420
+Now, collaborative filtering there are two
+types of collaborative filtering methods,
+
+73
+00:10:21,420 --> 00:10:38,470
+one is based on user based nearest neighbor.
+As I told you that in collaborative filtering
+
+74
+00:10:38,470 --> 00:10:47,360
+nearest neighbor based methods are used to
+are used to decide, who the similar users
+
+75
+00:10:47,360 --> 00:10:54,000
+are. So, in user based nearest neighbor given
+a user find similar users. Use the ratings
+
+76
+00:10:54,000 --> 00:11:00,640
+of the test item for that those similar, users
+to predict the rating of the test item for
+
+77
+00:11:00,640 --> 00:11:12,640
+the new user there is also item based nearest
+neighbor
+
+78
+00:11:12,640 --> 00:11:17,000
+in item based methods the different items
+are compared.
+
+79
+00:11:17,860 --> 00:11:23,520
+Similarity between items are obtained by looking
+at who are the users, who have rated how,
+
+80
+00:11:23,520 --> 00:11:30,160
+how the users have rated for the item there
+are two items which most which users have
+
+81
+00:11:30,160 --> 00:11:35,320
+rated in a similar way then those items are
+considered to be similar, this is an alternative
+
+82
+00:11:35,320 --> 00:11:41,660
+to content based similarity of items. We can
+use this matrix, we can compare the column
+
+83
+00:11:41,660 --> 00:11:49,950
+vectors to find out the pair wise item similarity
+and we can use it for the recommendation in
+
+84
+00:11:49,950 --> 00:11:57,149
+this way for a user we look at those items
+the user has recommended user has liked and
+
+85
+00:11:57,149 --> 00:11:59,689
+find out items which are similar to these
+items.
+
+86
+00:12:00,029 --> 00:12:06,329
+So, for this based collaborative filtering
+which uses item nearest neighbors can be used.
+
+87
+00:12:07,430 --> 00:12:18,680
+For such algorithms we have there are phases
+to these algorithms, look at this slide first
+
+88
+00:12:18,680 --> 00:12:26,250
+of all we have to find the neighborhood let
+us look user based nearest neighbor in user
+
+89
+00:12:26,250 --> 00:12:33,380
+based nearest neighbor given a user. Secondly,
+item we first look at the user and we find
+
+90
+00:12:33,380 --> 00:12:40,700
+the similar users. So, this is the first phase
+of the algorithm which is called the neighborhood
+
+91
+00:12:40,700 --> 00:12:49,250
+formation phase. Suppose, the record of the
+target user is u, the target user u is represented
+
+92
+00:12:49,250 --> 00:12:58,200
+by a vector and this vector is the rating
+that user gave to the items for which he has
+
+93
+00:12:58,200 --> 00:13:03,820
+given the rating.
+The user is represented by this vector and
+
+94
+00:13:03,820 --> 00:13:12,450
+we find a similarity between the target user
+u and another potential neighbor v by using
+
+95
+00:13:12,450 --> 00:13:19,010
+some similarity measure a popular similarity
+measure is the Pearson’s correlation coefficient.
+
+96
+00:13:19,010 --> 00:13:24,890
+Pearson’s correlation coefficient can be
+used to find the similarity between the two
+
+97
+00:13:24,890 --> 00:13:36,800
+vectors u and v as in the numerator. We have
+summation over all items rating of u. For
+
+98
+00:13:36,800 --> 00:13:45,829
+item i minus r u bar is the average rating
+of the user for a item times r v i rating
+
+99
+00:13:45,829 --> 00:13:55,709
+of user v. For item i minus r v bar average
+rating of the user v, now why do we have r
+
+100
+00:13:55,709 --> 00:14:02,149
+u bar and r v bar here.
+Now, different users have different standard
+
+101
+00:14:02,149 --> 00:14:09,459
+for rating, there are some users who are reluctant
+to give 5, you know if a movie, if the user
+
+102
+00:14:09,459 --> 00:14:15,149
+likes a movie very much he can give a 3 or
+at most of 4 and not 5 and there are some
+
+103
+00:14:15,149 --> 00:14:21,690
+users who are very liberal with ratings. So,
+they may give a rating of five to any movie
+
+104
+00:14:21,690 --> 00:14:29,709
+that he likes. So, because users have different
+standard in rating movies, we want to somehow
+
+105
+00:14:29,709 --> 00:14:38,269
+normalize them by looking at whether the rating
+of the movie is above his how much it is more
+
+106
+00:14:38,269 --> 00:14:47,700
+than the his average rating. So, that is why
+in this formula we use sigma r u i minus r
+
+107
+00:14:47,700 --> 00:14:57,060
+u bar times r v i time minus r v bar r u i
+is the rating of user u for item i, we sum
+
+108
+00:14:57,060 --> 00:15:02,610
+it over all items.
+In the denominator, we have root over summation

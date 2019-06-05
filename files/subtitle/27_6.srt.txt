@@ -1,0 +1,123 @@
+169
+00:25:00,160 --> 00:25:07,010
+user has to define the appropriate kernel.
+They can be expensive in time and space for
+
+170
+00:25:07,010 --> 00:25:14,440
+big datasets.
+But because in the solution, you look at the
+
+171
+00:25:14,440 --> 00:25:21,770
+pairwise training examples, but the computation
+of maximum margin hyper plane depends on the
+
+172
+00:25:21,770 --> 00:25:28,970
+square of the number of training cases. Secondly,
+for the solution we need to store all the
+
+173
+00:25:28,970 --> 00:25:34,059
+support vectors. If the number of support
+vectors is large then also solution time will
+
+174
+00:25:34,059 --> 00:25:40,270
+increase the solution. Time depends on the
+number of support vectors and number of training
+
+175
+00:25:40,270 --> 00:25:46,870
+examples. The kernel trick can also be used
+to do principle component analysis in a higher
+
+176
+00:25:46,870 --> 00:25:52,710
+dimensional space. We have already talked
+about principle component analysis where we
+
+177
+00:25:52,710 --> 00:25:59,309
+take the features and reduce it, but we could
+to PCA in a higher dimensional space using
+
+178
+00:25:59,309 --> 00:26:02,729
+kernel functions, but we will not talk about
+this today.
+
+179
+00:26:03,030 --> 00:26:11,260
+We will just conclude by seeing the support
+vector, classify that we have seen is used
+
+180
+00:26:11,260 --> 00:26:18,270
+by merrily for classifying 2 classes, separating
+2 classes what if you have multi classes.
+
+181
+00:26:18,270 --> 00:26:25,600
+So, there is the support vector machine by
+itself only looks at 2 classes, but we can
+
+182
+00:26:25,600 --> 00:26:33,530
+use a combination of SVM's to deal with multiple
+classes. Suppose, we have n classes and you
+
+183
+00:26:33,530 --> 00:26:44,870
+can learn n support vector machine. Suppose,
+SVM 1 learns to classify class 1 versus the
+
+184
+00:26:44,870 --> 00:26:53,770
+REST, SVM 2 to separate class 2 versus REST,
+SVM n to separate class n versus REST. So,
+
+185
+00:26:53,770 --> 00:27:02,050
+we develop n different support vector classifiers.
+Now, to predict output for a new test point,
+
+186
+00:27:02,050 --> 00:27:10,960
+we will apply all the support vector machines
+SVM 1, SVM 2, SVM n and then we will find
+
+187
+00:27:10,960 --> 00:27:19,150
+out which 1 of the SVM's give the prediction
+with the highest confidence. So, highest confidence
+
+188
+00:27:19,150 --> 00:27:28,260
+is we find w i x i, w i x i plus b and that
+should be greater than times y i, that should
+
+189
+00:27:28,260 --> 00:27:33,960
+be greater than equal to 1 minus i, i the
+bigger the value is higher the confidence
+
+190
+00:27:33,960 --> 00:27:41,400
+because further it lies from the margin. So,
+we can choose out of this n outputs, the 1
+
+191
+00:27:41,400 --> 00:27:50,730
+for which the point is for this margin and
+we can take that positive classification corresponding
+
+192
+00:27:50,730 --> 00:27:56,230
+to that class with this we come to the end
+of kernel SVM.
+
+193
+00:27:56,230 --> 00:27:57,350
+Thank you.

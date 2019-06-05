@@ -1,0 +1,119 @@
+36
+00:05:03,190 --> 00:05:13,750
+phase, normally the model is learned. As I
+have said for such lay lazy algorithms, we
+
+37
+00:05:13,750 --> 00:05:20,050
+do not learn a model during training. So,
+in the training method phase, we just save
+
+38
+00:05:20,050 --> 00:05:32,970
+the training examples.
+We just save the examples which is possible
+
+39
+00:05:32,970 --> 00:05:41,330
+in a more advanced implementation to store
+the examples in some data structure, so that
+
+40
+00:05:41,330 --> 00:05:46,800
+searching through this examples become faster,
+but we will talk about that later. So, basically
+
+41
+00:05:46,800 --> 00:05:53,990
+we just store the instances and then a prediction
+time. So, this is training time. So, at prediction
+
+42
+00:05:53,990 --> 00:06:07,920
+time, what we do is, we get a test instance
+and find k training examples. So, we get the
+
+43
+00:06:07,920 --> 00:06:16,520
+test instance.
+For the test instance, we are given only the
+
+44
+00:06:16,520 --> 00:06:23,639
+x value. So, I given only x t and we have
+to predict the corresponding y t. So, what
+
+45
+00:06:23,639 --> 00:06:44,310
+we do is that we find the 
+training example x 1 y 1 that is closest to
+
+46
+00:06:44,310 --> 00:07:03,270
+x. So, among all the examples that we have
+stored in the training phase given x t, we
+
+47
+00:07:03,270 --> 00:07:20,740
+find that value of x i. So, that it is closest
+to x t and then, we predict y t as the output.
+
+48
+00:07:20,740 --> 00:07:32,910
+So, we predict, sorry not y t y 1 as the output
+y t, this is the basic one nearest neighbor
+
+49
+00:07:32,910 --> 00:07:39,830
+algorithm.
+Now, in a more generalized form of the algorithm
+
+50
+00:07:39,830 --> 00:07:45,680
+instead of finding the single nearest neighbor,
+instead of finding the single example which
+
+51
+00:07:45,680 --> 00:07:58,819
+is closest to the text example, what we do
+is that we find k training examples x 1, y
+
+52
+00:07:58,819 --> 00:08:19,300
+1, x 2, y 2, x 2, y 2, x k, y k which are
+closest to x t. So, k may be 3, 4, 5 etc.
+
+53
+00:08:19,300 --> 00:08:30,520
+We find k nearest examples, nearest training
+examples and predict as the output y t. What
+
+54
+00:08:30,520 --> 00:08:37,000
+should we predict; it depends on whether we
+are doing classification problem or a regression
+
+55
+00:08:37,000 --> 00:08:50,760
+problem. For a classification problem, we
+look at y 1, y 2, y k and we can predict that
+
+56
+00:08:50,760 --> 00:09:00,610
+class which is the majority class among y
+1, y 2, y k we can predict the most frequent
+
+57
+00:09:00,610 --> 00:09:26,010
+of the majority class.
+So, we predict the majority class from y 1,
+
+58
+00:09:26,010 --> 00:09:43,880
+y 2, y k, but what if it is a regression problem.
+We have got different numerical outputs y
+
+59
+00:09:43,880 --> 00:10:05,010
+1, y 2, y k and we will predict, average predict
+the average of among y 1, y 2, y k i find

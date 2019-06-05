@@ -1,0 +1,13 @@
+Q. A set of errorneous assumption in the leanring algorithm is known as the
+A. Regression
+B. Classification
+C. Bias
+D. variance
+(C)
+
+Q. Sensitivity of model towards noice rather than importhant feature of the relationship between input and output is known as
+A. Regression
+B. Classification
+C. Bias
+D. variance
+(D)

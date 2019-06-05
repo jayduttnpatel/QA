@@ -1,0 +1,20 @@
+Q. In postpruning what we do?
+A. stop early
+B. stop late
+C. grow the full tree and remove the nodes
+D. none of the above
+(C)
+
+Q. In post postpruning how we remove the nodes?
+A. iterative method
+B. cross validation
+C. randomly
+D. none of the above
+(B)
+
+Q. In post postpruning how we remove the nodes?
+A. iterative method
+B. randomly
+C. MDL
+D. none of the above
+(B)

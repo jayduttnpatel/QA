@@ -1,0 +1,20 @@
+Q. Regression is which type of learning problem?
+A. Supervised
+B. Unsupervised
+C. Semi-supervised
+D. Reinforcement
+(A)
+
+Q. For regression what is contineous
+A. X
+B. Y
+C. H
+D. S
+(B)
+
+Q. In regression for single feature training examples can be plotted as
+A. Line
+B. Circle
+C. Point
+D. Plane
+(C)

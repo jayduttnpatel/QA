@@ -1,0 +1,163 @@
+137
+00:25:04,830 --> 00:25:18,129
+and given this kind of input descriptions
+and the target value was Y which can takes
+
+138
+00:25:18,129 --> 00:25:28,710
+values either in spam or non spam. So, the
+Naive Bayes assumption says that would like
+
+139
+00:25:28,710 --> 00:25:44,070
+following the Naive Bayes assumption we wrote
+that by Naive Bayes we wrote that probability
+
+140
+00:25:44,070 --> 00:25:54,659
+of X given spam. So given that the mail is
+spam, the value of the output is known, so
+
+141
+00:25:54,659 --> 00:26:02,460
+this is going to be the product over all the
+different words of probability of that particular
+
+142
+00:26:02,460 --> 00:26:09,679
+word occurring in spam email.
+So, this is quite straightforward, and it
+
+143
+00:26:09,679 --> 00:26:21,080
+is helpful in many machinery scenarios. And
+particularly, when you do not want to have
+
+144
+00:26:21,080 --> 00:26:26,859
+too many parameters, because you do not have
+too much data, and if you are not going to
+
+145
+00:26:26,859 --> 00:26:33,809
+if you do not assume the Naive Bayes assumption,
+if you do not consider the Naive Bayes assumption
+
+146
+00:26:33,809 --> 00:26:38,840
+then they might be too many parameters in
+modelling or describing the joint distributions
+
+147
+00:26:38,840 --> 00:26:44,080
+or the features. So in those scenarios, the
+Naive Bayes assumption becomes quite handy.
+
+148
+00:26:44,740 --> 00:26:50,809
+In the exam you will be given certain values
+of the input and certain value of the output,
+
+149
+00:26:50,809 --> 00:26:57,940
+and you will ask to calculate joint distributions.
+So, you basically we ask to calculate this
+
+150
+00:26:57,940 --> 00:27:03,700
+using Naive Bayes assumption or maybe this
+particular this is just the likelihood part.
+
+151
+00:27:03,700 --> 00:27:07,390
+So, this particular likelihood part will as
+to estimate using the Naive Bayes assumption
+
+152
+00:27:07,390 --> 00:27:13,299
+and you maybe have to plug it into the Bayes
+rule you calculate the aposteriori distributions
+
+153
+00:27:13,299 --> 00:27:17,889
+and from there. Once you have the aposteriori
+distributions ready at your hand you can make
+
+154
+00:27:17,889 --> 00:27:23,570
+A MAP inference about the most probable value
+of Y for a given value of the input variable
+
+155
+00:27:23,570 --> 00:27:27,629
+X like we did in the spam classifier.
+
+156
+00:27:27,629 --> 00:27:34,639
+So, let us move on to the next topic which
+is Bayesian networks. A Bayesian network is
+
+157
+00:27:34,639 --> 00:27:51,899
+probabilistic graphical model, and it is a
+probabilistic graphical model, and it models
+
+158
+00:27:51,899 --> 00:28:18,639
+conditional probability distributions among
+the random variable. So, how the Bayesian
+
+159
+00:28:18,639 --> 00:28:34,399
+look like say you have four random variables,
+again four Boolean random variables makes
+
+160
+00:28:34,399 --> 00:28:46,239
+life simpler A, B, C and D. And a Bayes net
+would look something like this.
+
+161
+00:28:48,080 --> 00:29:03,190
+This is a Bayes net. And each of these head
+nodes the once that come before that come
+
+162
+00:29:03,190 --> 00:29:09,590
+in the beginning, they have these prior probability
+distributions, so you have the prior probability
+
+163
+00:29:09,590 --> 00:29:20,350
+distributions of A and B. And all the remaining
+nodes will have conditional distributions
+
+164
+00:29:20,350 --> 00:29:28,179
+of those values of their values given the
+values of the parents - the immediate parents.
+
+165
+00:29:28,179 --> 00:29:34,360
+So for C, you will have probability of C given
+A and B, and for D you are going to have probability
+
+166
+00:29:34,360 --> 00:29:40,359
+of D given C.
+Now, the Bayesian networks this theory says
+
+167
+00:29:40,359 --> 00:29:46,820
+that if the variables can be represented in
+the form of a Bayesian networks of in this
+
+168
+00:29:46,820 --> 00:29:55,350
+form then the joint probability distributions
+of the random variables can be written as
+
+169
+00:29:55,350 --> 00:30:07,649
+a product of the priors and the conditionals.
+So, this gives a very elegant way of modelling

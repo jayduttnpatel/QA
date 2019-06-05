@@ -1,0 +1,133 @@
+1
+00:00:17,820 --> 00:00:25,680
+Good morning. Welcome to today’s lecture.
+Today we will talk about Bayesian learning
+
+2
+00:00:25,689 --> 00:00:38,460
+which is Part B of module 4. In the last class,
+we gave a crash course on probability and
+
+3
+00:00:38,460 --> 00:00:46,440
+today we will see how probability is used
+for learning especially for classification,
+
+4
+00:00:46,440 --> 00:00:52,700
+probability how it is used for modeling concepts.
+
+5
+00:01:01,460 --> 00:01:14,760
+So, Bayesian probability is the notion of
+probability which talks about partial beliefs.
+
+6
+00:01:16,670 --> 00:01:37,000
+So, Bayesian probability talks about probability
+interpretation as partial beliefs and Bayesian
+
+7
+00:01:37,000 --> 00:01:59,390
+estimation, it calculates the validity of
+a preposition. The validity of the preposition
+
+8
+00:01:59,390 --> 00:02:07,820
+is calculated based on two things; number
+one the prior estimate. It is based on the
+
+9
+00:02:07,820 --> 00:02:20,530
+prior estimate of its probability and in fact,
+new evidence, and new relevant evidence. Based
+
+10
+00:02:20,530 --> 00:02:28,340
+on this, the posterior Bayesian estimation
+is done and the key to this is an important
+
+11
+00:02:28,340 --> 00:02:32,320
+theorem called Bayes theorem which we will
+introduce now.
+
+12
+00:02:42,599 --> 00:03:03,050
+So, Bayes theorem deals with how to find the
+probability of a hypothesis given the data
+
+13
+00:03:03,050 --> 00:03:09,270
+you have different possible competing hypothesis
+and you can find out the probability of the
+
+14
+00:03:09,270 --> 00:03:15,680
+individual hypothesis given the data, so that
+you can find out which is the most probable
+
+15
+00:03:15,680 --> 00:03:20,900
+or most likely hypothesis according to the
+Bayes theorem probability.
+
+16
+00:03:20,989 --> 00:03:30,480
+If hypothesis given data is given by probability
+D given h times prior probability of the hypothesis
+
+17
+00:03:30,480 --> 00:03:40,379
+h divided P D. This is very easy to derive
+you know that by the law of products, you
+
+18
+00:03:40,379 --> 00:03:52,269
+can see that probability h D equal to probability
+h times probability D given h and you can
+
+19
+00:03:52,269 --> 00:03:58,810
+also because it is commutative; this is also
+equal to probability D h which is equal to
+
+20
+00:03:58,810 --> 00:04:08,890
+probability D times probability h given D.
+So, if you consider these two equal, then
+
+21
+00:04:08,890 --> 00:04:16,530
+by manipulating them you can come up with
+Bayes role. So, Bayes role is the most important
+
+22
+00:04:16,530 --> 00:04:25,690
+formula form which we can look for at Bayes
+learning. So, P h is the prior probability
+
+23
+00:04:25,690 --> 00:04:30,990
+of the hypothesis h. So, this is 
+the prior probability.
+
+24
+00:04:34,680 --> 00:04:42,970
+Probability D given h is the probability of
+the data. If the hypothesis is true, what
+
+25
+00:04:42,970 --> 00:04:49,620
+is the likelihood of that data being generated?
+If h was true what is the probability of D
+
+26
+00:04:49,620 --> 00:04:57,610
+being generated and P D is the likelihood
+of the data. So, based on this, we have Bayes
+
+27
+00:04:57,610 --> 00:05:04,370
+theorem. Now, let us see an application of
+Bayes theorem for this we may look at the slide

@@ -1,0 +1,144 @@
+24
+00:05:05,569 --> 00:05:20,680
+in the urn.
+So, probability therefore, probability of
+
+25
+00:05:20,680 --> 00:05:30,069
+red of drawing a red ball is equal to 3 times
+red because there are 3 red balls, so 3 divided
+
+26
+00:05:30,069 --> 00:05:40,719
+by all together, it is 3 plus 47 plus 30 total
+number of balls 10 or 0.3. Probability of
+
+27
+00:05:40,719 --> 00:05:52,789
+blue equal to there is 4 blue balls, so 4
+divided by 10 is equal to 0.4. Probability
+
+28
+00:05:52,789 --> 00:06:01,009
+of yellow will be equal to 3, since there
+are 3 yellow balls divided by the total number
+
+29
+00:06:01,009 --> 00:06:08,430
+of balls which is 10, which is equal to 0.3.
+You add these three things up 0.3 plus 0.3
+
+30
+00:06:08,430 --> 00:06:15,569
+is 0.6 plus 0.4 is 1. So, this is how you
+calculate the probability using the frequency
+
+31
+00:06:15,569 --> 00:06:20,389
+definition. Let us go to the next topic and
+which is the Bayes rule.
+
+32
+00:06:22,229 --> 00:06:42,770
+The Bayes’ rule of probability says that
+suppose we have two random variables X and
+
+33
+00:06:42,770 --> 00:06:53,499
+Y, then probability of Y given X. Suppose,
+that you have been a given a particular value
+
+34
+00:06:53,499 --> 00:06:59,110
+of X and then ask what the most probable value
+of Y should be, or what is the probability
+
+35
+00:06:59,110 --> 00:07:05,110
+of different value of Y given a particular
+value of X. So, probability of Y given X will
+
+36
+00:07:05,110 --> 00:07:11,979
+be equal to probability of X given Y into
+probability of Y divided by probability of
+
+37
+00:07:11,979 --> 00:07:21,439
+X now each of this is the Bayes’ rule. So,
+this is called the rather the entire thing
+
+38
+00:07:21,439 --> 00:07:30,270
+it is called the Bayes’ rule of probability
+Now, each of this term in the Bayes rule has
+
+39
+00:07:30,270 --> 00:07:50,429
+a name. P of X given Y this quantity is called
+the likelihood of X given Y. The term P of
+
+40
+00:07:50,429 --> 00:08:02,529
+Y, it is called the prior. So, even you are
+asking what is the probability of a certain
+
+41
+00:08:02,529 --> 00:08:07,449
+value of Y, you would like to know what was
+the prior probability of Y that is without
+
+42
+00:08:07,449 --> 00:08:12,159
+any given information what how likely how
+probable that particular of value of Y is,
+
+43
+00:08:12,159 --> 00:08:22,050
+so that is the prior probability. And the
+denominator it is called P of X this is called
+
+44
+00:08:22,050 --> 00:08:32,729
+evidence. So, when you are giving A value
+of X you are also going to say that how common
+
+45
+00:08:32,729 --> 00:08:36,890
+that particular value of X is so that X i
+can evidence so this particular term is called
+
+46
+00:08:36,890 --> 00:08:44,500
+the evidence. So, this is the Bayes rule.
+Now let us go ahead and see what kind of problems
+
+47
+00:08:44,500 --> 00:08:52,250
+can come in the exam from this part. So, you
+will be given the value of different you will
+
+48
+00:08:52,250 --> 00:08:58,760
+given this these quantities and you will asked
+to would these things in formula, and ask
+
+49
+00:08:58,760 --> 00:09:10,200
+and do you know Bayes estimation maximum aposteriori
+estimation. So, let us talk about it next.
+
+50
+00:09:10,200 --> 00:09:20,840
+So, given that so this is a question that
+can come in the exam; given that P of so let
+
+51
+00:09:20,840 --> 00:09:25,460
+us go to a new page and see what kind can
+come in the exam.
+
+52
+00:09:27,770 --> 00:09:56,130
+Bayes rule continued. Suppose 
+you have been given two random variables X and Y

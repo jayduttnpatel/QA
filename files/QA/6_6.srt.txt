@@ -1,0 +1,13 @@
+Q. delta or LMS is the
+A. equation method
+B. learning methos
+C. iterative method
+D. none of the above
+(C)
+
+Q. quadratic function has how man optima?
+A. single
+B. two
+C. three
+D. four
+(A)

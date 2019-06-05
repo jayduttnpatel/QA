@@ -1,0 +1,158 @@
+36
+00:05:02,640 --> 00:05:04,360
+is called a Perceptron.
+
+37
+00:05:09,750 --> 00:05:31,170
+Now, in a perceptron as we have seen, it has
+n inputs and let us denotes them by X 1, X
+
+38
+00:05:31,170 --> 00:05:47,820
+2, X n and these are the inputs to a perceptron
+and in this perceptron unit there are 2 parts;
+
+39
+00:05:47,820 --> 00:05:55,240
+first a weighted summation of the input is
+computed. There is also another unit input
+
+40
+00:05:55,240 --> 00:06:07,950
+called the bias and so this input is computed
+and this input is passed through another transfer
+
+41
+00:06:07,950 --> 00:06:14,430
+function to the output and we can denote this
+transfer function by phi.
+
+42
+00:06:14,580 --> 00:06:28,690
+So, if you have a linear unit phi Z is just
+Z. So, just the input say summation is passed,
+
+43
+00:06:28,690 --> 00:06:35,120
+this is what was happening in linear regression
+or this transfer function can take different
+
+44
+00:06:35,120 --> 00:06:46,400
+forms, for example, sigma Z could be thresholding
+function. So, if we have a threshold and if
+
+45
+00:06:46,400 --> 00:06:51,670
+the summation is greater than the threshold,
+you output 1 or the summation is less than
+
+46
+00:06:51,670 --> 00:06:58,590
+the threshold, you output 0 or it could be
+some other non-linear function, for example,
+
+47
+00:06:59,050 --> 00:07:03,473
+we will talk about the sigmoid function, the
+tan hyperbolic function. We have already talked
+
+48
+00:07:03,473 --> 00:07:08,810
+about the sigmoid function when we talked
+about logistic regression. So, there are several
+
+49
+00:07:08,810 --> 00:07:14,880
+transfer functions which are possible, but
+first let us look at the simplest type of
+
+50
+00:07:14,880 --> 00:07:20,280
+perceptron which let us say the users are
+linear transfer.
+
+51
+00:07:21,860 --> 00:07:34,800
+So, at this point Y equal to sigma W i X i
+is computed. So, sigma W i X i, i equal to
+
+52
+00:07:34,800 --> 00:07:45,830
+1 to n plus this bias let us say, b this is
+computed. Another way of looking at it is
+
+53
+00:07:45,830 --> 00:07:56,130
+that instead of writing b for the bias we
+can associate W 0 here and keep a fixed input
+
+54
+00:07:56,130 --> 00:08:04,310
+X 0 defined to be 1, in that case we can write
+this as Y equal to summation i equal to 0
+
+55
+00:08:04,310 --> 00:08:13,310
+to n. So, this is what is computed at the
+output of this unit and then depending on
+
+56
+00:08:13,310 --> 00:08:21,860
+the value of phi if phi was identity this
+output will be transmitted, otherwise this
+
+57
+00:08:21,860 --> 00:08:31,800
+phi is apply to 1 and as I said a second type
+of phi. So, phi 1 Z equal to Z let us say
+
+58
+00:08:31,800 --> 00:08:40,909
+phi 2 Z is a thresholding function right.
+So, this thresholding function can be applied
+
+59
+00:08:40,909 --> 00:08:51,789
+and the output will be given as 0 or 1, this
+is a basic architecture of a single perceptron.
+
+60
+00:08:52,080 --> 00:09:02,930
+Now, in a perceptron, this links are associated
+with which W 1, W 2, W n. Now, if you consider
+
+61
+00:09:02,930 --> 00:09:09,140
+supervised learning, we have looked at different
+algorithms was different methods for supervised
+
+62
+00:09:09,140 --> 00:09:15,050
+learning. If you use supervised learning using
+this neural network what we have is a set
+
+63
+00:09:15,050 --> 00:09:30,490
+of training examples D and D comprises of
+X 1 Y 1, X 2 Y 2, X m Y m. So, these are the
+
+64
+00:09:30,490 --> 00:09:38,180
+training examples that I have right. Now,
+based on the training example we want to train
+
+65
+00:09:38,180 --> 00:09:44,810
+this network, what does training the network
+mean? Training the network means learning
+
+66
+00:09:44,810 --> 00:09:56,890
+these weights W 0, W 1, W 2, W n. So, we want
+to learn the values of the weights W 0, W
+
+67
+00:09:56,890 --> 00:10:05,230
+1, W 2, W n given the training examples, so
+that this particular network has a good fetch

@@ -1,0 +1,229 @@
+44
+00:05:02,540 --> 00:05:08,500
+been created here, right, by the train test
+split. So, it is going to take the test, that
+
+45
+00:05:08,500 --> 00:05:16,060
+inputs and it is going to predict their corresponding
+labels. And now we declare a variable, which
+
+46
+00:05:16,060 --> 00:05:22,190
+is called misclassification, which is going
+to calculate how many counts, how many misclassifications
+
+47
+00:05:22,190 --> 00:05:28,340
+has, have happened and next we go ahead and
+we do run this for loop. So, in this for loop
+
+48
+00:05:28,340 --> 00:05:34,230
+we are looping over the entire length of the
+test set and, and if the prediction, if the
+
+49
+00:05:34,230 --> 00:05:45,720
+ith prediction is not is equal to the actual
+prediction, then, oops, so there is a, there
+
+50
+00:05:45,720 --> 00:05:50,660
+is a bug. So, let me fix it.
+So, it is not misclassification, it is correct
+
+51
+00:05:50,660 --> 00:05:56,950
+classification, alright. So, number of correct
+classification, we initialize it as 0 and
+
+52
+00:05:56,950 --> 00:06:03,850
+every time if we find, when we find, that
+the prediction is equal to the actual value,
+
+53
+00:06:03,850 --> 00:06:14,620
+the target value. Then, we increase the number
+of correct classifications by 1 and then finally,
+
+54
+00:06:14,620 --> 00:06:24,670
+we calculate the accuracy as the number of
+correct classifications. So, this has already
+
+55
+00:06:24,670 --> 00:06:30,860
+calculated the total number of correct classifications
+and length of y test will give you the total
+
+56
+00:06:30,860 --> 00:06:42,180
+number of test cases. So, this fraction times
+100 will give us the accuracy as a percentage
+
+57
+00:06:42,180 --> 00:06:47,730
+and so, we have the accuracy as a percentage
+over here and we return the accuracy.
+
+58
+00:06:47,730 --> 00:06:54,150
+And next, we compile this function and then,
+we, we are going to explore three kinds of
+
+59
+00:06:54,150 --> 00:06:59,410
+kernels here, linear, polynomial and RBF kernels
+and RBF kernels are also happened to be called
+
+60
+00:06:59,410 --> 00:07:08,790
+as Gaussian kernel. So, we have a new declarer,
+new array or a list as you say in Python,
+
+61
+00:07:08,790 --> 00:07:17,389
+called accuracies and you say, that for like
+index and kernel, in enumerate kernel. So,
+
+62
+00:07:17,389 --> 00:07:24,700
+enumerate kernel is going to return an index,
+which will be like in z i, the 0 or 1 or 2
+
+63
+00:07:24,700 --> 00:07:32,170
+and the corresponding element from this tuple.
+So, for index and kernel and enumerate kernels
+
+64
+00:07:32,170 --> 00:07:39,850
+and so, like you are going to take each kernel
+one by one and then, you first declare the
+
+65
+00:07:39,850 --> 00:07:45,310
+model.
+So, svm.SVC, as we can see over here, svm.SVC.
+
+66
+00:07:45,310 --> 00:07:52,690
+So, svc stands for support vector classifier
+and svm.SVC is going to make an instance of
+
+67
+00:07:52,690 --> 00:07:58,470
+the classifier with the value of the kernel
+equal to the kernel that we have like we are
+
+68
+00:07:58,470 --> 00:08:03,220
+going to take in this particular in a particular
+iteration. So, first linear is going to come
+
+69
+00:08:03,220 --> 00:08:06,760
+and sit here, then polynomial, then RBF. So,
+we are going to take the kernels one by one
+
+70
+00:08:06,760 --> 00:08:10,740
+in this for loop and then fix it on the training
+data.
+
+71
+00:08:10,870 --> 00:08:15,800
+So, model.fit as you have seen earlier, so
+there is like Scikit Learn has this wonderful,
+
+72
+00:08:15,800 --> 00:08:20,500
+like really, really impressive API in which
+every single machinery model has the same
+
+73
+00:08:20,500 --> 00:08:25,510
+API. You always instantiate the model with
+certain parameters and hyper parameters, with
+
+74
+00:08:25,510 --> 00:08:30,800
+the hyper parameter values and then, you just
+do a model.fit and on the training data, and
+
+75
+00:08:30,800 --> 00:08:35,810
+model dot predict on the test data. And so,
+this is really impressive and this is really
+
+76
+00:08:35,810 --> 00:08:38,670
+nice.
+And the same thing, as you have seen before,
+
+77
+00:08:39,090 --> 00:08:47,110
+is going to like we applied as well here,
+so model.fit x train y train does the training
+
+78
+00:08:47,110 --> 00:08:53,999
+of the SVM and then finally, we calculate
+the accuracies. So, we invoke this function,
+
+79
+00:08:53,999 --> 00:09:00,110
+which we have declared before, we have defined
+before and we pass the trained model and ask
+
+80
+00:09:00,110 --> 00:09:06,899
+it to evaluate it on the test data and it
+returns the accuracy and you just accumulate
+
+81
+00:09:06,899 --> 00:09:13,649
+the accuracies in this accuracy vector, alright.
+So, you just append the acc, the current accuracy
+
+82
+00:09:13,649 --> 00:09:19,129
+and the accuracies list and then finally.
+So, this is, if you do not know this particular
+
+83
+00:09:19,129 --> 00:09:26,809
+syntax, so this syntax is that of the print
+command which is in Python 3 and I have used
+
+84
+00:09:26,809 --> 00:09:35,379
+this for a purpose over here and so, to activate
+this particular syntax of print command you
+
+85
+00:09:35,379 --> 00:09:42,709
+have to like import from this underscore underscore
+future underscore underscore. You have to
+
+86
+00:09:42,709 --> 00:09:47,050
+import this print function. So, if you do
+this and you have to do this before all other
+
+87
+00:09:47,050 --> 00:09:50,559
+previous imports.
+So, if you do this import, then the syntax
+
+88
+00:09:50,559 --> 00:09:55,760
+of print function changes and this particular
+print function is much more versatile and
+
+89
+00:09:55,760 --> 00:10:01,970
+much more elegant than the one that was used
+in used in Python 2. So, to use this particular

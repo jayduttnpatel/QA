@@ -1,0 +1,159 @@
+270
+00:35:04,490 --> 00:35:09,490
+So, for discrete random variables, you would
+like to calculate the probability of those
+
+271
+00:35:09,490 --> 00:35:13,660
+random variables by, through the frequency
+definition; that is, the number of times that
+
+272
+00:35:13,660 --> 00:35:17,970
+particular random variable happened to occur
+with a particular value, divided by the total
+
+273
+00:35:17,970 --> 00:35:21,510
+number of occurrences of that variable.
+For example, the number, total number of times,
+
+274
+00:35:21,510 --> 00:35:25,440
+total number of people. So, if you want to
+find out, what is the probability of a girl
+
+275
+00:35:25,440 --> 00:35:29,990
+attending this course, may and by the frequency
+definition, the probability will be equal
+
+276
+00:35:29,990 --> 00:35:33,560
+to, the total number of girls enrolled in
+this course, divided by the total number of
+
+277
+00:35:33,560 --> 00:35:37,910
+students. So this is the frequency definition.
+And when you are using frequency definition
+
+278
+00:35:37,910 --> 00:35:43,030
+for estimation of probability and you are
+using the K nearest neighbor philosophy along
+
+279
+00:35:43,030 --> 00:35:46,680
+with it that is, you are going to look at
+only certain neighborhoods of the, of the
+
+280
+00:35:46,680 --> 00:35:50,910
+point and try to estimate some probability
+value through the frequency definition, then
+
+281
+00:35:50,910 --> 00:35:57,280
+a bigger neighborhood value, bigger value
+of k, would give a better answer.
+
+282
+00:35:57,280 --> 00:36:06,780
+And then, however, a bigger value of K is
+possible to take, only when the total number
+
+283
+00:36:06,780 --> 00:36:11,370
+of training samples that you have at your
+hand is large enough, right. So, if you are
+
+284
+00:36:11,370 --> 00:36:17,300
+always looking for, say, K equal to 100 that
+is, 100 nearest neighbors and you happen to
+
+285
+00:36:17,300 --> 00:36:22,160
+have just 50 samples in your training set
+then, every single point will always see the
+
+286
+00:36:22,160 --> 00:36:27,250
+same population, right. So, always, those
+50 points will always be taking care of, taken
+
+287
+00:36:27,250 --> 00:36:33,320
+into consideration. So, 100, neighborhood
+size of 100, or the K value of 100 is not
+
+288
+00:36:33,320 --> 00:36:38,210
+possible to use, in this case.
+So, for using a large value of K and having
+
+289
+00:36:38,210 --> 00:36:45,390
+some good answers, you should have a large
+training set size; however, all of those,
+
+290
+00:36:45,390 --> 00:36:56,430
+all of these things that I said right now,
+are mere observations. So, there is no theoretical,
+
+291
+00:36:56,430 --> 00:36:59,621
+you know, these are not theoretically authoritative
+commentary. So, as K nearest neighbor algorithm
+
+292
+00:36:59,621 --> 00:37:06,110
+is a non parametric learning algorithm, you
+always, like, you are prone to the noise that
+
+293
+00:37:06,110 --> 00:37:12,330
+is present in the data and no matter how big
+a K you find, you use, you are always, it
+
+294
+00:37:12,330 --> 00:37:17,230
+is always possible that, your estimations
+of statistics will not be good enough. So,
+
+295
+00:37:17,230 --> 00:37:20,830
+there are chances of failure, because you
+are completely dependent on the data.
+
+296
+00:37:20,830 --> 00:37:30,050
+And yes that is pretty much, pretty much for
+today and we have discussed all the topics
+
+297
+00:37:30,050 --> 00:37:33,920
+that were, more or less all the topics that
+have been covered in this particular week
+
+298
+00:37:33,920 --> 00:37:39,450
+and we have seen how to solve problems in
+the exam. So, best of luck for your assignment;
+
+299
+00:37:39,450 --> 00:37:45,890
+it will come online this Sunday and the deadline
+will also be announced along with it; and
+
+300
+00:37:45,890 --> 00:37:51,680
+be sure that, the deadline will not be postponed.
+So, start solving the assignment as soon as
+
+301
+00:37:51,680 --> 00:37:57,080
+you complete the lectures. Good.
+See you next time. Bye-bye.

@@ -1,0 +1,222 @@
+155
+00:25:10,370 --> 00:25:17,320
+be at a distance of greater than equal to
+gamma from the margin. So, W x i plus b will
+
+156
+00:25:17,320 --> 00:25:34,790
+be greater than equal to gamma for plus points;
+and W x j plus b will be less than equal to
+
+157
+00:25:34,790 --> 00:25:47,710
+gamma for minus points, so and gamma by W
+is what we want to maximize.
+
+158
+00:25:48,780 --> 00:26:00,460
+Now, if we so we can say we can maximize so
+we want to scales, so that so that this gamma
+
+159
+00:26:00,460 --> 00:26:15,850
+is 1. We can scale so that this gamma is 1,
+and we can say maximize 1 by W, which is the
+
+160
+00:26:15,850 --> 00:26:31,100
+same as equivalent to minimize W, and W is
+w dot w or w transpose w, so this is the w
+
+161
+00:26:31,100 --> 00:26:38,370
+dot w dot product. So, we want to minimize
+W dot W, subject to this constrains. And now
+
+162
+00:26:38,370 --> 00:26:50,540
+these two constrains can be combined and written
+in the same form as y i times W x i plus b
+
+163
+00:26:50,540 --> 00:26:54,460
+greater than equal to gamma for all points.
+
+164
+00:27:00,520 --> 00:27:10,140
+And we will normalize the values of W, so
+that actually I was wrong we do not normalize
+
+165
+00:27:10,140 --> 00:27:18,760
+w to be 1, we keep w we normalize so that
+gamma equal to 1. So, the geometric margin
+
+166
+00:27:18,760 --> 00:27:27,920
+is gamma by W, we will change W, so that so
+we will scale W for normalization this is
+
+167
+00:27:27,920 --> 00:27:47,360
+what we will do, please pay careful attention.
+We will scale W, so that geometric margin
+
+168
+00:27:47,360 --> 00:27:59,180
+is 1 by W, so we scale it so that geometric
+margin is 1 by W. And we want to maximize
+
+169
+00:27:59,180 --> 00:28:08,560
+this margin subject to this constrains y i,
+W x i plus b greater than equal to gamma which
+
+170
+00:28:08,560 --> 00:28:18,760
+will become greater than equal to 1, for all
+training instances right and equivalently
+
+171
+00:28:18,760 --> 00:28:29,140
+we can say minimize W or minimize W dot W,
+so minimize W dot W.
+
+172
+00:28:31,110 --> 00:28:37,490
+So, if you look at the slide now so this is
+the formulation of our optimization problem
+
+173
+00:28:37,490 --> 00:28:47,660
+we want to minimize W dot W. Or we can say
+minimize W square that is W 1 square plus
+
+174
+00:28:47,660 --> 00:28:57,640
+W 2 square minimize W square, so that these
+constrains y i times W x i plus b is greater
+
+175
+00:28:57,640 --> 00:29:04,720
+than equal to 1. What is translates to is
+that suppose this is you are decision surface
+
+176
+00:29:04,720 --> 00:29:13,000
+which has the equation W x plus b equal to
+0. And the line parallel to it and this side
+
+177
+00:29:13,000 --> 00:29:20,060
+is w x plus b equal to minus 1, the line parallel
+to this, and this side is W x plus b equal
+
+178
+00:29:20,060 --> 00:29:26,600
+to 1. And the margin has been scaled, so that
+the geometric margin has width 1, and the
+
+179
+00:29:26,600 --> 00:29:34,850
+positive points on the margin have the satisfy
+the equation W x plus b equal to 1, the negative
+
+180
+00:29:34,850 --> 00:29:40,430
+points on the margin satisfy the equation
+W x plus b equal to minus 1.
+
+181
+00:29:40,430 --> 00:29:50,461
+So, how to solve this optimization problem
+this is a quadratic programming problem. We
+
+182
+00:29:50,461 --> 00:29:58,710
+have a quadratic objective function, and we
+have convex quadratic objectives. We have
+
+183
+00:29:58,710 --> 00:30:08,500
+convex quadratic objective function, and we
+have a set of m constrains m inequality constrains
+
+184
+00:30:08,500 --> 00:30:18,310
+which are linear. So, this optimization problem
+can be solved using a commercial quadratic
+
+185
+00:30:18,310 --> 00:30:28,930
+programming solver. So, by solving this, we
+get our classifier and that should be the
+
+186
+00:30:28,930 --> 00:30:36,770
+end of the story. However, there are few other
+things that we can do by this very powerful
+
+187
+00:30:36,770 --> 00:30:40,290
+formulation and this is what we will discuss
+now.
+
+188
+00:30:41,060 --> 00:30:50,860
+Now, we can straight away solve this problem
+using, so we are we are minimizing W dot W
+
+189
+00:30:50,860 --> 00:31:00,150
+or W square. And we are we can also say minimize
+half W square this half is a so that we have
+
+190
+00:31:00,150 --> 00:31:07,010
+a nice form, when we get the solution we could
+have solve this problem straight away, but
+
+191
+00:31:07,010 --> 00:31:15,850
+we are going to covert this problem into dual
+formulation. And we will see that the dual
+
+192
+00:31:15,850 --> 00:31:20,600
+formulation have certain properties.
+Now, if you want to solve this optimization
+
+193
+00:31:20,600 --> 00:31:27,810
+problem the method to solve this is by using
+Lagrange multiplier, you can use Lagrangian,
+
+194
+00:31:27,810 --> 00:31:35,880
+and you can get a formulation of this problem,
+which you can solve and you can get the Lagrange
+
+195
+00:31:35,880 --> 00:31:43,430
+duality to get the dual of this optimization
+problem. And what we gain by using this is
+
+196
+00:31:43,430 --> 00:31:50,410
+that we can you know this formulation has
+some nice properties which we will are we
+
+197
+00:31:50,410 --> 00:31:55,300
+able to see later.
+With this, we come to the end of this introductory
+
+198
+00:31:55,300 --> 00:32:00,620
+part of the support vector machine. In the
+next class, we will talk about the dual formulation.
+
+199
+00:32:00,620 --> 00:32:01,340
+Thank you.

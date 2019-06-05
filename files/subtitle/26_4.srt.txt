@@ -1,0 +1,147 @@
+102
+00:15:00,709 --> 00:15:07,019
+is the same.
+Now, given this dual formulation we can find
+
+103
+00:15:07,019 --> 00:15:15,540
+the solution to the classifier. So, this is
+called noisy linear SVM or most commonly this
+
+104
+00:15:15,540 --> 00:15:26,329
+is called soft SVM because we do not have
+a hard classifier or a hard decision surface
+
+105
+00:15:26,329 --> 00:15:29,849
+that clearly separates the positive and negative
+points.
+
+106
+00:15:30,590 --> 00:15:40,860
+And the solution of this soft margin classification
+will be similar to the solution that we got
+
+107
+00:15:40,860 --> 00:15:41,460
+earlier.
+
+108
+00:15:42,450 --> 00:15:49,590
+For example, those data point whose, which
+have non-zero corresponding. Secondly, multipliers
+
+109
+00:15:49,590 --> 00:15:55,680
+alpha i they will be the support vector and
+as you can see the support vectors will be
+
+110
+00:15:55,680 --> 00:16:02,639
+those points which lie at the margin as well
+as those points which lie in the incorrect
+
+111
+00:16:02,639 --> 00:16:09,320
+zone, and the solution to the dual problem
+is given by w equal to sigma i equal to 1
+
+112
+00:16:09,320 --> 00:16:19,209
+to m alpha i y i x i alpha i is non-zero only
+for those points which are support vectors
+
+113
+00:16:19,209 --> 00:16:26,330
+and once we find the values of alpha i we
+can find the value of b from any one of those
+
+114
+00:16:26,330 --> 00:16:32,990
+points. So, b equal to y k into 1 minus z
+k minus sigma alpha i y i x i x k.
+
+115
+00:16:33,360 --> 00:16:40,700
+So, for any of this k we can find b after
+we are found the alpha i’s. For classification,
+
+116
+00:16:40,709 --> 00:16:46,209
+now once we have found the solution of this
+equation we can use it for classification
+
+117
+00:16:46,209 --> 00:16:52,440
+for classification again, we use the similar
+formula f (x) equal to sigma i equal to 1
+
+118
+00:16:52,440 --> 00:17:02,600
+to m alpha i y i x i dot x j x plus b. So,
+x is the test point and i corresponds to you
+
+119
+00:17:02,600 --> 00:17:06,669
+know. Secondly, because to those point for
+which alpha i is non-zero, which are exactly
+
+120
+00:17:06,669 --> 00:17:11,809
+the support vectors.
+So, again we see that in order to find the
+
+121
+00:17:11,809 --> 00:17:18,230
+classification of a point, we actually do
+not need to compute w explicitly, but we can
+
+122
+00:17:18,230 --> 00:17:26,620
+just apply this formula and in this formula
+we need to find the dot product of the test
+
+123
+00:17:26,620 --> 00:17:33,460
+point with the x value of those points which
+are support vectors and multiply by the corresponding
+
+124
+00:17:33,460 --> 00:17:40,429
+alpha i y i values sum it up and add b to
+this right. So, the formulation is pretty
+
+125
+00:17:40,429 --> 00:17:49,980
+straight forward and quite simple and easy
+to apply. So, this is how we deal with soft
+
+126
+00:17:49,980 --> 00:17:58,391
+classification or soft SVM. However, if the
+decision surface, we are able to account for
+
+127
+00:17:58,391 --> 00:18:04,890
+noise and come up with classifiers which do
+not exactly separate the positive and negative
+
+128
+00:18:04,890 --> 00:18:08,830
+points.
+However, the classifier decision surface is
+
+129
+00:18:08,830 --> 00:18:15,350
+still linear and cannot handle those cases
+where the decision surface is actually non-linear,
+
+130
+00:18:15,460 --> 00:18:19,670
+how to handle that in some cases we will see
+in the next class.
+
+131
+00:18:19,670 --> 00:18:20,220
+Thank you.

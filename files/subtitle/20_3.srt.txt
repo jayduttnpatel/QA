@@ -1,0 +1,154 @@
+66
+00:09:58,100 --> 00:10:05,710
+are late for work. So, these 2 variables waking
+up late and accident are not independent if
+
+67
+00:10:05,710 --> 00:10:17,010
+you are given the value of this.
+So, similarly late for work and meeting postponed
+
+68
+00:10:17,010 --> 00:10:22,570
+are independent, but they are not independent
+if these values are known. So, this particular
+
+69
+00:10:22,570 --> 00:10:30,400
+graphical representation encodes certain conditional
+independence relationships. There are three
+
+70
+00:10:30,400 --> 00:10:34,690
+specific conditions of these operations I
+will not cover them in detail we will just
+
+71
+00:10:34,690 --> 00:10:46,070
+look at some examples in this class. Let us
+look at formally what a Bayesian method represents.
+
+72
+00:10:51,440 --> 00:11:00,920
+So, a Bayesian network is a graphical representation
+which represents efficiently.
+
+73
+00:11:01,930 --> 00:11:18,450
+So, this is an efficient representation of
+the joint probability distribution of the
+
+74
+00:11:18,450 --> 00:11:41,360
+variables. Any probability or conditional
+probability of interest can be computed if
+
+75
+00:11:41,360 --> 00:11:46,970
+you know the full joint probability distribution,
+but as we have discussed representing the
+
+76
+00:11:46,970 --> 00:11:53,420
+entire joint probability distribution is intractable.
+If we have bayes network representation we
+
+77
+00:11:53,420 --> 00:12:00,110
+can more compactly and efficiently represent
+the joint probability distribution, especially
+
+78
+00:12:00,110 --> 00:12:07,920
+if this graph does not have too many edges.
+If this graph has less number of edges that
+
+79
+00:12:07,920 --> 00:12:14,920
+means, these variables many of them are conditionally
+independent of others given some evidences
+
+80
+00:12:14,920 --> 00:12:18,540
+and we can represent the joint distribution
+more efficient.
+
+81
+00:12:18,720 --> 00:12:27,240
+So, a Bayesian network is a set of nodes.
+Let us say it is a set of nodes X equal to
+
+82
+00:12:27,240 --> 00:12:43,871
+X 1, X 2, X n these are the nodes or variable.
+Then arcs represent probabilistic dependence
+
+83
+00:12:43,871 --> 00:13:04,380
+or independence among variables. In fact,
+absence of arc denotes independence or conditional
+
+84
+00:13:04,380 --> 00:13:19,610
+independence the network structure is a directed
+acyclic graph or DAG and at every node we
+
+85
+00:13:19,610 --> 00:13:29,260
+keep the local probability table, at each
+node we keep local probability distributions
+
+86
+00:13:29,260 --> 00:13:42,210
+which is also called the conditional probability
+table. So, CPT or conditional probability
+
+87
+00:13:42,210 --> 00:13:51,810
+table is associated with each node.
+Now, let us try to look at you know what are
+
+88
+00:13:51,810 --> 00:13:59,310
+the values what are the probability distributions
+that we need to fully specify this bayes network.
+
+89
+00:13:59,310 --> 00:14:05,910
+For simplicity, let us assume all this nodes
+corresponds to variables which are Boolean.
+
+90
+00:14:06,100 --> 00:14:12,741
+So, we have 1, 2, 3, 4, 5, 6, 7, we have 7
+variables. So, they are all Boolean. There
+
+91
+00:14:12,741 --> 00:14:22,590
+are 2 to the power 7 possible combinations
+and for each one of them we can find the probability
+
+92
+00:14:22,590 --> 00:14:30,370
+of it. Now, if we follow this model at the
+conditional probability table we will see;
+
+93
+00:14:30,370 --> 00:14:37,100
+we have to keep probability distribution of
+a node given the value of its parent. Now,
+
+94
+00:14:37,100 --> 00:14:44,480
+if you look at this node this node does not
+have any parent. So, what we need to keep
+
+95
+00:14:44,480 --> 00:14:55,340
+here is you know just we need 1 value what
+is a probability of late wake up. So, we require 1 value
+
+96
+00:14:58,100 --> 00:15:03,660
+Rainy day also does not have any parent we
+need 1 probability value to be associated

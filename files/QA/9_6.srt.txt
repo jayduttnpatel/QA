@@ -1,0 +1,6 @@
+Q. Regularization is the method to deal with the problem of
+A. Noicy data
+B. Underfitting
+C. Overfitting
+D. None of the above
+(C)

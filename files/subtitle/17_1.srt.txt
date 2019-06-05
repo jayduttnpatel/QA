@@ -1,0 +1,213 @@
+1
+00:00:17,330 --> 00:00:21,350
+Hello friends. This is Anirban. Welcome to
+the third tutorial session of this course.
+
+2
+00:00:21,710 --> 00:00:25,720
+In this session, we are going to summarize
+the topics that have been taught during the
+
+3
+00:00:25,720 --> 00:00:30,710
+week and we will discuss what all questions
+can be expected from this session in the exam
+
+4
+00:00:30,710 --> 00:00:35,559
+and in the assignment; and we will also discuss
+how to solve them. The topics that we are
+
+5
+00:00:35,559 --> 00:00:42,860
+going to cover today are curse of dimensionality;
+so, what it is and why it is at all important
+
+6
+00:00:42,860 --> 00:00:46,750
+for consideration and how this leads to the
+concepts of features selection and feature
+
+7
+00:00:46,750 --> 00:00:47,610
+reduction.
+
+8
+00:00:48,100 --> 00:00:53,540
+And in the context of feature reduction, we
+will consider principle components analysis.
+
+9
+00:00:54,120 --> 00:01:02,830
+We will study the process of finding the principle
+components and how to use them in the final
+
+10
+00:01:02,830 --> 00:01:07,830
+machine learning tasks. And finally, we will
+take up k nearest neighbor classification
+
+11
+00:01:07,830 --> 00:01:13,150
+and I will also hint how k nearest neighbors
+can be used for regression problems. Without
+
+12
+00:01:13,150 --> 00:01:19,870
+further ado, let us take up the first topic
+of today, which is the curse of dimensionality.
+
+13
+00:01:20,120 --> 00:01:40,230
+Curse of dimensionality is a set of problems
+which arise from
+
+14
+00:01:40,230 --> 00:01:57,350
+increasing the number of input features. As
+the input, number of input features increases,
+
+15
+00:01:57,350 --> 00:02:01,710
+as we are using, as we introduce more and
+more sophisticated and more and more diverse
+
+16
+00:02:01,710 --> 00:02:06,890
+features to describe the input of, to our
+learning system, what happens is, the system
+
+17
+00:02:06,890 --> 00:02:13,720
+becomes highly prone to noise that is present
+within the universe; maybe when, maybe this
+
+18
+00:02:13,720 --> 00:02:25,390
+an example could be the use of, say you have
+a robot, which tries to predict the kind of
+
+19
+00:02:25,390 --> 00:02:30,310
+discussions that are happening in a particular
+email thread.
+
+20
+00:02:30,800 --> 00:02:36,560
+So, it reads the emails that have been sent
+within a thread and it tries to predict what
+
+21
+00:02:36,560 --> 00:02:41,470
+kind of, what is the topic of discussions
+happening in this thread. So, if we ask the
+
+22
+00:02:41,470 --> 00:02:50,680
+robot to look at, say, just the words within
+that email and then figure out on the basis
+
+23
+00:02:50,680 --> 00:02:56,450
+of the, of what kind of words are more frequently
+being used in the emails of that thread, trying
+
+24
+00:02:56,450 --> 00:03:02,430
+to predict what kind of topic is getting discussed
+in that particular thread, if you just ask
+
+25
+00:03:02,430 --> 00:03:11,590
+the robot to look at, say 10 such words, then
+each email will be described in terms of the
+
+26
+00:03:11,590 --> 00:03:17,800
+presence, or absence, of those 10 words. So
+this robot will be, will make some prediction.
+
+27
+00:03:17,800 --> 00:03:27,660
+Now, to make it more sophisticated, a bit
+more capable of identifying better topics,
+
+28
+00:03:27,660 --> 00:03:31,970
+maybe we can ask the robot to look at 100
+words, 100 chosen words.
+
+29
+00:03:31,970 --> 00:03:38,640
+In this case, what happens is the number of
+dimensions of the input data increases. So,
+
+30
+00:03:38,640 --> 00:03:43,500
+the input data over here, in this case is
+an email. And it is being described by a set
+
+31
+00:03:43,500 --> 00:03:48,640
+of words. So, number of words that are being
+used to describe the email is the dimensionality
+
+32
+00:03:48,640 --> 00:03:53,420
+of the feature vector of the email. So this
+is increasing. And as a result of this, what
+
+33
+00:03:53,420 --> 00:04:00,060
+happens is, you do not have all of these 100
+words in all the emails that are coming to
+
+34
+00:04:00,060 --> 00:04:07,390
+you, right. So, 10 words could, could be,
+could co-occur more in an email, than all
+
+35
+00:04:07,390 --> 00:04:12,750
+the 100 words that have been specified. So,
+what happens is, as you increase the number
+
+36
+00:04:12,750 --> 00:04:18,629
+of features to describe your data that number,
+amount of training data you have, falls, falls
+
+37
+00:04:18,629 --> 00:04:22,910
+short.
+So, say, you have n dimensions of your input
+
+38
+00:04:22,910 --> 00:04:30,940
+feature space. So, these, as the value of
+n increases, alright then, number of examples
+
+39
+00:04:30,940 --> 00:04:37,020
+that would be required to modular function
+in this n dimensional space increases exponentially;
+
+40
+00:04:37,020 --> 00:04:45,909
+and it goes like this that, to model statistics
+in a feature space efficiently, so, which
+
+41
+00:04:45,909 --> 00:04:51,979
+are sound, you need enough training examples,
+you need enough samples, from that particular
+
+42
+00:04:51,979 --> 00:04:56,860
+space, right. So, when you are trying to model
+some statistical phenomenon, you should have
+
+43
+00:04:56,860 --> 00:05:01,469
+an adequate number of examples in support
+of that; then only, you can have a proper,

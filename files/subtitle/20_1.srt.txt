@@ -1,0 +1,166 @@
+1
+00:00:18,960 --> 00:00:26,200
+Good morning. Today, we will start with the
+4th module of our lecture on Probability and
+
+2
+00:00:26,550 --> 00:00:33,360
+Bayesian learning. We have looked at the basics
+of probability and we have talked about Bayesian
+
+3
+00:00:33,360 --> 00:00:40,899
+approach to learning. We have talked about
+bayes map classification, bayes optimal classifier
+
+4
+00:00:40,899 --> 00:00:48,280
+and we have also looked at naive bayes. Now,
+as we have seen the bayes optimal classifier
+
+5
+00:00:48,280 --> 00:00:57,550
+is not practical to apply it, because onehas to apply all the classifiers towards particular problem
+
+6
+00:00:57,550 --> 00:01:03,160
+Also, if we look at the entire join distribution
+
+7
+00:01:03,160 --> 00:01:10,210
+of the probabilities involving all the variables
+the problem becomes intractable because the
+
+8
+00:01:10,210 --> 00:01:16,390
+number of join distributions is too large
+to learn or to represent. We have seen that
+
+9
+00:01:16,390 --> 00:01:23,960
+naïve bayes makes very restrictive assumptions,
+but it is very simple, very fast, easy to
+
+10
+00:01:23,960 --> 00:01:30,369
+use learning algorithm and we have also considered
+that it works well under certain situations,
+
+11
+00:01:30,369 --> 00:01:38,140
+but what we are going to study today is somewhere
+in the middle which is called the bayes network
+
+12
+00:01:38,140 --> 00:01:39,040
+approach.
+
+13
+00:01:47,780 --> 00:02:06,850
+Bayes or belief network is a type of graphical
+model. In fact, it is a type of directed graphical
+
+14
+00:02:06,850 --> 00:02:16,010
+model. There also other types of graphical
+model which represents certain independence
+
+15
+00:02:16,010 --> 00:02:23,459
+relations or conditional independence relationships
+between the different variables in the domain.
+
+16
+00:02:23,459 --> 00:02:31,269
+This helps us into make tractable inference
+in many cases where all the variables are
+
+17
+00:02:31,269 --> 00:02:36,709
+not completely connected or completely dependent
+with each other.
+
+18
+00:02:37,260 --> 00:02:43,850
+This is a vast topic and we will just introduce
+what is Bayesian network and we will talk
+
+19
+00:02:43,850 --> 00:02:50,109
+little bit about that, but for more details
+you have to study on your own or take a more
+
+20
+00:02:50,109 --> 00:02:58,900
+advanced course. Now, what the bayes network
+represents is that we have variables suppose
+
+21
+00:02:58,900 --> 00:03:08,040
+X 1, X 2, X n are the variables of interest
+in the domain; Y also can be included in as
+
+22
+00:03:08,040 --> 00:03:13,329
+one of the variable. We have the different
+variables in the domain and we want to look
+
+23
+00:03:13,329 --> 00:03:25,299
+at the types of dependences or other independences
+between them and, we can think these variables
+
+24
+00:03:25,299 --> 00:03:34,130
+are represented by nodes. So, we use a graphical
+notation to represent the relations especially
+
+25
+00:03:34,130 --> 00:03:40,500
+the independence relations between the variables.
+These variables are the nodes and we have
+
+26
+00:03:40,500 --> 00:03:46,370
+arcs.
+So, these arcs represent relations between
+
+27
+00:03:46,370 --> 00:03:54,410
+the variables. The lack of arcs denotes the
+lack of relation between the variables in
+
+28
+00:03:54,410 --> 00:04:04,730
+certain ways and we also have nodes, we have
+arcs and they represent conditional dependence,
+
+29
+00:04:04,730 --> 00:04:20,829
+conditional independence relationships though
+it is not essential we can represent in Bayesian
+
+30
+00:04:20,829 --> 00:04:32,340
+networks causality. So, causality can be represented.
+So, among the different variables in the domain
+
+31
+00:04:32,340 --> 00:04:39,080
+some of these variables may be causes of the
+other, some may be effects of the other. If
+
+32
+00:04:39,080 --> 00:04:46,150
+we represent this causality we get a compact
+Bayesian network structure. We can still have
+
+33
+00:04:46,150 --> 00:04:51,840
+Bayesian network without representing causality,
+but the representation of causality makes
+
+34
+00:04:51,840 --> 00:05:00,020
+this structure of the Bayesian network more
+efficient. So, what we will do is that we

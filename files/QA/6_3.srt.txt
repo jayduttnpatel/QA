@@ -1,0 +1,20 @@
+Q. what is beta 0
+A. x intercept
+B. y intercept
+C. population slope
+D. none of the above
+(B)
+
+Q. what is beta 1
+A. x intercept
+B. y intercept
+C. population slope
+D. none of the above
+(C)
+
+Q. what is epsilon
+A. x intercept
+B. y intercept
+C. population slope
+D. random error
+(D)

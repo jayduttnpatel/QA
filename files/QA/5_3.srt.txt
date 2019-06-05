@@ -1,0 +1,6 @@
+Q. When it is difficult to train single classifier for the image classification which of the following trick can be used first
+A. To first go for embedding
+B. To first go for preceptron model
+C. To first go for regression
+D. To first go for clustering the images into groups of similar looking objects
+(D)

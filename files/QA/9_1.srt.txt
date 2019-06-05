@@ -1,0 +1,20 @@
+Q. Error on the training example reduce and the true error increases is known as the
+A. Underfitting
+B. Overfitting
+C. Just right fitting
+D. None of the above
+(B)
+
+Q. A hypothesis h is said to overfit the training data if there is another hypothesis h'
+A. h has more error than h' on training data
+B. h' has more error than h on training data
+C. h' has more error than h on validation data
+D. h has more error than h' on validation data
+(B)
+
+Q. A hypothesis h is said to overfit the training data if there is another hypothesis h'
+A. h' has more error than h on validation data
+B. h has more error than h' on validation data
+C. h' has less error than h on testing data
+D. h has less error than h' on testing data
+(C)

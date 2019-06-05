@@ -1,0 +1,164 @@
+1
+00:00:18,539 --> 00:00:25,169
+Good morning, so we start the second part
+of the lecture of this week. Today, we will
+
+2
+00:00:25,169 --> 00:00:32,680
+give an introduction to support vector machine.
+We have studied several classifiers, and they
+
+3
+00:00:32,680 --> 00:00:39,550
+have different properties. Support vector
+machine is one of the most effective classifiers
+
+4
+00:00:39,550 --> 00:00:48,399
+among those, which has sort of linear. It
+has a very you know good mathematical intuition
+
+5
+00:00:48,399 --> 00:00:56,119
+behind the support vector machine and we are
+able to handle certain cases where there is
+
+6
+00:00:56,119 --> 00:01:03,790
+non-linearity by using non-linear basis functions
+or in particular we will see these are called
+
+7
+00:01:03,790 --> 00:01:09,470
+kernel functions.
+Now why support vector machine is so popular,
+
+8
+00:01:09,470 --> 00:01:16,970
+we will see that support vector machines have
+a clever way to prevent over fitting. And
+
+9
+00:01:16,970 --> 00:01:26,550
+we can work with relatively larger number
+of features without requiring too much computation.
+
+10
+00:01:28,080 --> 00:01:35,510
+So, in order to motivate support vector machine,
+let us look back at logistic regression, which
+
+11
+00:01:35,510 --> 00:01:45,820
+I talked about in the last class. In logistic
+regression, we have try to find out the probability
+
+12
+00:01:45,820 --> 00:01:59,700
+of y equal to 1 given the input x. And we
+have model this h x as the logistic function
+
+13
+00:01:59,700 --> 00:02:15,020
+sigma or g of beta T x. Now we predict one
+when this h x is greater than 0.5, so we predict
+
+14
+00:02:15,020 --> 00:02:33,700
+one when h x is greater than 0.5 and 0 when
+h x is less than 0.5. And the probability
+
+15
+00:02:33,700 --> 00:02:41,340
+value is higher probability of confidence
+in the output is higher when h x is much larger
+
+16
+00:02:41,340 --> 00:02:48,950
+than 0.5, because we are using this sigmoid
+function which is s shaped you know the function
+
+17
+00:02:48,950 --> 00:02:56,570
+has a shape like this, so at this point h
+x is 0.5.
+
+18
+00:02:56,830 --> 00:03:06,629
+But as we go towards the side h x has value
+closer to one our probability or confidence
+
+19
+00:03:06,629 --> 00:03:14,090
+in the output would be higher. So, the larger
+the value of h x or this smaller the value
+
+20
+00:03:14,090 --> 00:03:23,059
+of h x higher is our confidence in the output.
+So, we have more confident on the predictions
+
+21
+00:03:23,059 --> 00:03:31,769
+which have further from the decision surface.
+So, near the decision surface, so logistic
+
+22
+00:03:31,769 --> 00:03:40,010
+regression actually gives you linear classifier.
+Let us say just look at, suppose these are
+
+23
+00:03:40,010 --> 00:03:53,180
+your features x 1, x 2. And you how different
+point so suppose these are you are positive
+
+24
+00:03:53,180 --> 00:04:03,969
+points, these are you are positive points,
+and let us say these are you are negative
+
+25
+00:04:03,969 --> 00:04:15,319
+points. Now suppose this is you are decision
+surface now if this is you are decision surface,
+
+26
+00:04:15,319 --> 00:04:21,079
+then you have less confidence if these is
+a point here, you have less confidence in
+
+27
+00:04:21,079 --> 00:04:25,949
+you are output of a point, which is closer
+to the decision surface. You have a higher
+
+28
+00:04:25,949 --> 00:04:31,669
+confidence for those points, which you are
+further from the decision surface. If you
+
+29
+00:04:31,669 --> 00:04:36,269
+have a large number of features, you could
+use Bayesian learning.
+
+30
+00:04:36,600 --> 00:04:41,680
+In Bayesian learning, we will look at all
+possible classifiers, wait them by their aposteriori
+
+31
+00:04:41,690 --> 00:04:47,350
+probability and combined them to get the answer.
+And as we have discussed Bayesian learning
+
+32
+00:04:47,350 --> 00:04:54,400
+is computationally intractable. We want to
+a good alternative to Bayesian learning, which
+
+33
+00:04:54,400 --> 00:04:59,520
+is computationally attractive. So, this brings
+us to support vector machines.

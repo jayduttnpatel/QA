@@ -1,0 +1,234 @@
+48
+00:05:02,499 --> 00:05:07,199
+were developed, concept induction was worked
+on.
+
+49
+00:05:07,740 --> 00:05:16,889
+And then, J.R. Quinlan, in 1986 came up with
+decision tree learning, specifically the ID3
+
+50
+00:05:16,889 --> 00:05:17,469
+algorithm.
+
+51
+00:05:17,889 --> 00:05:25,099
+It was also released as software and it had
+simplistic rules contrary to the black box
+
+52
+00:05:25,099 --> 00:05:28,579
+of neural networks and it became quite popular.
+
+53
+00:05:29,499 --> 00:05:37,009
+After ID3 many alternatives or improvement
+ID3 were developed such as cart, regression,
+
+54
+00:05:37,009 --> 00:05:42,439
+trees and it is still one of the very popular
+topics in machine learning.
+
+55
+00:05:42,439 --> 00:05:49,270
+During this time symbolic natural language
+processing also became very popular.
+
+56
+00:05:49,270 --> 00:05:54,270
+In 1980s, advanced decision trees and rule
+learning were developed.
+
+57
+00:05:55,349 --> 00:05:57,909
+Learning, planning, problem solving was there.
+
+58
+00:05:58,069 --> 00:06:01,469
+At the same time, there was a resurgence of
+neural network.
+
+59
+00:06:02,399 --> 00:06:12,089
+The intrusion of multilayer perceptron was
+suggested by in 1981 and neural network specific
+
+60
+00:06:12,089 --> 00:06:14,389
+back propagation algorithm was developed.
+
+61
+00:06:15,639 --> 00:06:20,519
+Back propagation is the key ingredient of
+today’s neural network architectures.
+
+62
+00:06:21,100 --> 00:06:27,879
+With those ideas neural network research became
+popular again and there was acceleration in
+
+63
+00:06:27,879 --> 00:06:36,439
+1985, 86 when neural network researchers presented
+the idea of MLP, that is, multilayer perceptron
+
+64
+00:06:36,439 --> 00:06:38,179
+with practical BP training.
+
+65
+00:06:38,680 --> 00:06:45,380
+(Williams, Nielsen were some of the scientists
+who worked in this area.
+
+66
+00:06:45,679 --> 00:06:52,169
+During this time, theoretical framework of
+machine learning was also presented.
+
+67
+00:06:52,169 --> 00:06:57,590
+Valiant’s PAC learning theory, which stands
+for probably approximately correct learning,
+
+68
+00:06:57,590 --> 00:07:03,230
+it was developed and the focus shifted on
+experimental methodologies.
+
+69
+00:07:03,909 --> 00:07:09,169
+In the 90s, machine learning embraced statistics
+to a large extent.
+
+70
+00:07:09,899 --> 00:07:13,419
+It was during this time, that support vector
+machines were proposed.
+
+71
+00:07:13,779 --> 00:07:19,339
+It was a machine learning breakthrough and
+the support vector machines was proposed by
+
+72
+00:07:19,339 --> 00:07:23,990
+Vapnik and Cortes in 1995 and S.V.
+
+73
+00:07:23,990 --> 00:07:29,780
+Hem had very strong theoretical standing and
+empirical results.
+
+74
+00:07:29,780 --> 00:07:37,559
+Then, another strong machine learning model
+was proposed by Freund and Schapire in 1997,
+
+75
+00:07:37,559 --> 00:07:44,099
+which was part of what we called ensembles
+or boosting and they came up with an algorithm
+
+76
+00:07:44,099 --> 00:07:51,939
+called Adaboost by which they could create
+a strong classifier from an ensemble of weak classifiers
+
+77
+00:07:53,339 --> 00:08:00,360
+The kernalized version of SVM was proposed
+near 2000s, which was able to exploit the
+
+78
+00:08:00,360 --> 00:08:04,620
+knowledge of convex optimization, generalization
+and kernels.
+
+79
+00:08:05,099 --> 00:08:12,889
+Another ensemble model was explored by Bremen
+in 2001 that ensembles multiple decision trees
+
+80
+00:08:12,889 --> 00:08:17,329
+where each of them is curated by a random
+subset of instances.
+
+81
+00:08:18,089 --> 00:08:19,929
+This is called random forest.
+
+82
+00:08:20,099 --> 00:08:24,359
+During this time, Bayes net learning was also
+proposed.
+
+83
+00:08:26,050 --> 00:08:35,450
+Then, neural network took another damage by
+the work of showed that gradient loss after
+
+84
+00:08:35,450 --> 00:08:42,479
+the saturation of neural network unit happens
+when we apply back propagation so that after
+
+85
+00:08:42,479 --> 00:08:48,830
+a certain number of epochs neural networks
+are inclined to over fit.
+
+86
+00:08:48,830 --> 00:08:56,940
+But as we come closer today we see, that neural
+networks are again very much popular.
+
+87
+00:08:56,940 --> 00:09:04,310
+We have a new era in neural network called
+deep learning and this phrase refers to neural
+
+88
+00:09:04,310 --> 00:09:06,390
+network with many deep layers.
+
+89
+00:09:06,800 --> 00:09:13,529
+This rise of neural network began roughly
+in 2005 with the conjunction of many different
+
+90
+00:09:13,529 --> 00:09:21,120
+discoveries for people by Hinton, LeCun, Bengio,
+Andrew and other researchers.
+
+91
+00:09:21,120 --> 00:09:29,470
+At the same time, if you look at certain applications
+where machine learning has come to the public
+
+92
+00:09:29,470 --> 00:09:31,030
+forefront.
+
+93
+00:09:31,400 --> 00:09:40,959
+In 1994, the first self driving car made a
+road test; in 1997, Deep Blue beat the world
+
+94
+00:09:40,959 --> 00:09:48,620
+champion Gary Kasparov in the game of chess;
+in 2009 we have Google building self driving
+
+95
+00:09:48,620 --> 00:09:58,350
+cars; in 2011, Watson, again from IBM, won
+the popular game of Jeopardy; 2014, we see
+
+96
+00:09:58,400 --> 00:10:01,060
+human vision surpassed by ML systems.

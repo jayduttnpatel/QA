@@ -1,0 +1,187 @@
+184
+00:20:04,710 --> 00:20:16,600
+of a Gaussian. So, this is how it is and both
+of these, like polynomial kernel and the RBF
+
+185
+00:20:16,600 --> 00:20:22,700
+kernel, they give non-linear decision boundaries,
+whereas the linear kernel gives linear decision
+
+186
+00:20:22,700 --> 00:20:23,600
+boundaries.
+
+187
+00:20:23,700 --> 00:20:32,880
+So, we can like go ahead and find see how
+support vector regression works. So, support
+
+188
+00:20:32,880 --> 00:21:00,470
+vector regression works 
+this way. So, first we load the data. So,
+
+189
+00:21:00,470 --> 00:21:07,420
+datasets dot load boston is a function that
+loads the boston house price prediction datasets
+
+190
+00:21:07,420 --> 00:21:13,630
+of Scikit Learn into the environment and stores
+it within this variable boston. We take out
+
+191
+00:21:13,630 --> 00:21:20,400
+the inputs and the targets, make the training
+and test splits and then, we have a similar
+
+192
+00:21:20,400 --> 00:21:28,270
+evaluate on test data function. And over here,
+as this is a regression problem, as this is
+
+193
+00:21:28,270 --> 00:21:37,990
+a regression problem, we do not have classification
+error, misclassification as our objective.
+
+194
+00:21:37,990 --> 00:21:44,390
+So, what we are going to use is the mean squared
+error, the root mean squared error. So, we
+
+195
+00:21:44,390 --> 00:21:50,500
+calculate it this way. So, first we initialize
+the sum of squared error, this variable as
+
+196
+00:21:50,500 --> 00:21:57,180
+0 and then we calculate the square of the
+error. So, whatever number has been predicted
+
+197
+00:21:57,180 --> 00:22:02,180
+by the system, so model dot predict x test
+will give the predictions for the test data
+
+198
+00:22:02,180 --> 00:22:07,290
+and each prediction predicted value is subtracted
+from the true value and raised to the power
+
+199
+00:22:07,290 --> 00:22:10,880
+of 2.
+So, this gives the squared error. We keep
+
+200
+00:22:10,880 --> 00:22:16,490
+accumulating that within this variable and
+we get the sum of squared error and then finally,
+
+201
+00:22:16,490 --> 00:22:20,570
+we calculate the mean squared error by dividing
+the sum of squared error by total number of
+
+202
+00:22:20,570 --> 00:22:27,521
+points in the test set and then, oops, this
+should not be accuracy, let me remove this
+
+203
+00:22:27,521 --> 00:22:38,540
+comment. So, the root mean squared error is
+given by np dot squared root. So, you find
+
+204
+00:22:38,540 --> 00:22:44,610
+the square root of the error of the mean squared
+error and you have root mean squared error.
+
+205
+00:22:44,610 --> 00:22:52,270
+So, this gives an estimate of how close the
+or how far away the predicted values from
+
+206
+00:22:52,270 --> 00:22:59,700
+the regressor are from the true values and
+let us evaluate just two kernels over here.
+
+207
+00:22:59,700 --> 00:23:08,960
+So, first we compile this part, and go ahead
+to the next part. So, we will evaluate the
+
+208
+00:23:08,960 --> 00:23:18,770
+linear kernel SVM and the RBF kernel SVM in
+this section. Let me zoom down a little bit,
+
+209
+00:23:18,770 --> 00:23:26,550
+okay, it is better now.
+So, in the RMSE vector, this thing is going
+
+210
+00:23:26,550 --> 00:23:36,440
+to accumulate the root mean squared error
+values and first we will, we will, just like
+
+211
+00:23:36,440 --> 00:23:43,110
+we previously we did. So, we take the kernels
+one by one, we fit the support vector depressor
+
+212
+00:23:43,110 --> 00:23:51,770
+onto the, with the kernel on the training
+data and then, we calculate the root mean
+
+213
+00:23:51,770 --> 00:24:00,230
+squared error by calling this function and
+we append this value to the RMSE effect and
+
+214
+00:24:00,230 --> 00:24:06,510
+finally, print these values out. So, let us
+see how these work. So, we find that the RMSEs
+
+215
+00:24:06,510 --> 00:24:17,160
+are 0.3774 and 0.34. So, in this case as you
+can see, that the RBF kernels works better
+
+216
+00:24:17,160 --> 00:24:24,520
+and because it can fit more, it can, it can
+fit non-linear curve onto the data.
+
+217
+00:24:25,600 --> 00:24:31,730
+And there are some more things that you can
+do with these models. For example, it can
+
+218
+00:24:31,730 --> 00:24:37,010
+actually find out all the different. So, I
+will insert us one more cell below. So, I
+
+219
+00:24:37,010 --> 00:24:42,110
+will show you something more, something else.
+So, let us take one of these classifiers,
+
+220
+00:24:42,110 --> 00:24:50,010
+one of these models. So, we take the RBF SVC
+and we find out what all points were used
+
+221
+00:24:50,010 --> 00:24:52,330
+as support vectors by these classifiers.

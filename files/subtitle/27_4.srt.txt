@@ -1,0 +1,162 @@
+97
+00:14:54,710 --> 00:15:09,100
+is root over 2 x j 1 x j 2 then x j 2 square
+then next component is root over to x j 1
+
+98
+00:15:09,100 --> 00:15:20,430
+root over 2 x j two. So, each of this is 3,
+4, 5, 6 each of this is a 6-dimensional vector.
+
+99
+00:15:20,430 --> 00:15:26,740
+So, this expression can be written as a dot
+product of these 2 vectors and you can easily
+
+100
+00:15:26,740 --> 00:15:35,370
+verify by expanding this. So, k xi x j which
+is 1 plus x i dot x j whole square can be
+
+101
+00:15:35,370 --> 00:15:38,110
+written as a dot product of these 2 vectors.
+
+102
+00:15:38,830 --> 00:16:06,250
+So, we can write that k x 1 x 2 equal to 1
+plus x i dot x j whole square instead of 1,
+
+103
+00:16:06,250 --> 00:16:17,130
+2. Let me write x i x j k x i x j equal to
+1 plus x i x j whole square equal to dot product
+
+104
+00:16:17,130 --> 00:16:28,850
+of this and this can be written as phi of
+x i dot phi of x j right. So, if we transform
+
+105
+00:16:28,850 --> 00:16:40,740
+the x i to this new space where phi x i transforms
+to 1 x i 1 square root 2 x i 1 x i 2 x i 2
+
+106
+00:16:40,740 --> 00:16:48,171
+square root 2 x i 1 root 2 x i 2 instead of
+the original vector which is x i 1 x i 2 then
+
+107
+00:16:48,171 --> 00:16:56,430
+the dot product in this space is equal to
+k x i x j equal to 1 plus x i dot x i whole
+
+108
+00:16:56,430 --> 00:16:59,140
+square.
+So, corresponding to this transformation phi
+
+109
+00:16:59,140 --> 00:17:07,640
+the kernel function can be very easily computed
+like this without expanding this particular
+
+110
+00:17:07,640 --> 00:17:15,929
+feature. So, this is an example of a kernel
+function. There are many other commonly used
+
+111
+00:17:15,929 --> 00:17:21,589
+kernel functions, some of them we can see
+in this slide.
+
+112
+00:17:22,189 --> 00:17:31,990
+So, the linear SVM corresponds to linear kernel
+where phi x i equal to x i phi x j equal to
+
+113
+00:17:31,990 --> 00:17:39,090
+x j that is the identity mapping. So, k of
+x i x j equal to x i dot x j called linear
+
+114
+00:17:39,090 --> 00:17:49,130
+kernel for general polynomial kernel k x i
+x j is 1 plus x i dot x j to the power p.
+
+115
+00:17:49,130 --> 00:17:58,420
+We saw the example where of quadratic kernel
+where k x i x j is 1 plus x i x j whole square.
+
+116
+00:17:58,420 --> 00:18:05,520
+But this time we generalised to polynomial
+kernel, where we have 1 plus x i x j to the
+
+117
+00:18:05,520 --> 00:18:12,300
+power p; this is the polynomial kernel of
+power p. Then we have the Gaussian kernel
+
+118
+00:18:12,300 --> 00:18:22,390
+or the kernel corresponding to the radial
+basis function where we have k x i comma x
+
+119
+00:18:22,390 --> 00:18:40,930
+j equal to exponential of minus x i minus
+x j whole square by 2 times sigma square.
+
+120
+00:18:41,200 --> 00:18:44,380
+So, this is the Gaussian kernel.
+
+121
+00:18:45,530 --> 00:18:56,190
+Another popular kernel is the sigmoid kernel
+which is given by
+
+122
+00:18:56,190 --> 00:19:15,360
+k x i x j equal to 10 hyperbolic of parameter
+beta 0 x i dot x j plus beta 1. So, these
+
+123
+00:19:15,360 --> 00:19:24,010
+are some examples of kernel functions which
+are quite popular. There can be kernel functions;
+
+124
+00:19:24,010 --> 00:19:31,810
+measures some similarity between instances
+x i and x j and this kernel functions you
+
+125
+00:19:31,810 --> 00:19:37,410
+know we can have define many types of kernel
+functions depending on the domain and certain
+
+126
+00:19:37,410 --> 00:19:43,800
+notions of similarity.
+For example, you can use kernel function for
+
+127
+00:19:43,800 --> 00:19:52,100
+text classification based on the similarity
+of the words in the text and so on. In general
+
+128
+00:19:52,100 --> 00:19:58,620
+functions that qualify as kernel functions
+satisfy Mercer’s condition; those functions
+
+129
+00:19:58,620 --> 00:20:02,160
+that satisfy Mercer’s condition are called
+kernel functions.

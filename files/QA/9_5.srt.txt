@@ -1,0 +1,13 @@
+Q. In decision tree when model capture idiosyncrasies of the data rather than generalities of the data which of the following problem occures?
+A. Overfitting
+B. High Accuracy
+C. noisy data
+D. None of the above
+(A)
+
+Q. If we have too many parameter in the decision tree which of the problem can occure?
+A. Noicy data
+B. Underfitting
+C. Overfitting
+D. None of the above
+(C)

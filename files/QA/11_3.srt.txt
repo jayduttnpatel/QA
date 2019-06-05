@@ -1,0 +1,20 @@
+Q. Cross entropy is the type of
+A. data set division method 
+B. Learning method
+C. Error
+D. Bias
+(B)
+
+Q. Which of the following can also be termed as set of nested if else condition
+A. Dicision tree
+B. Regression
+C. Classification
+D. None of the above
+(A)
+
+Q. We split the dataset at the decision tree nodes such that data going to the child node is
+A. Less homogeneous
+B. Have less data
+C. More homogeneous
+D. None of the above
+(C)

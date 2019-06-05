@@ -1,0 +1,177 @@
+66
+00:09:58,230 --> 00:10:05,720
+Now, let us look at the slide. So, we have
+this is our decision surface whose equation
+
+67
+00:10:05,720 --> 00:10:15,310
+is given by w x plus b equal to 0 and upon
+normalization these are the two margin lines
+
+68
+00:10:15,310 --> 00:10:26,300
+w x plus b equal to plus 1 and w x plus b
+equal to minus 1 and here are the three points
+
+69
+00:10:26,300 --> 00:10:31,640
+which are wrongly classified and corresponding
+to each of them, we have the variables z 1,
+
+70
+00:10:31,640 --> 00:10:39,490
+z 2, z 3, the margin width is given by 2 by
+root over w dot w, which we want to maximise
+
+71
+00:10:39,490 --> 00:10:47,060
+and which corresponds to minimising w dot
+w adding the penalty due to this slack variables
+
+72
+00:10:47,060 --> 00:10:56,700
+we get the minimisation function to be w dot
+w plus c times sigma k equal to 1 to m z k.
+
+73
+00:10:56,820 --> 00:11:06,200
+So, this is what we want to minimise.
+Earlier the constraints that we had is y i
+
+74
+00:11:06,200 --> 00:11:12,810
+w dot x i plus b greater than equal to 1.
+Now, you see that this constraint will no
+
+75
+00:11:12,810 --> 00:11:20,100
+longer hold for those points which are in
+the wrong zones. So, we can rewrite this constraint
+
+76
+00:11:20,100 --> 00:11:36,010
+as y k y i w x i plus b greater than equal
+to 1 minus z k right for i equal to 1 to m
+
+77
+00:11:36,010 --> 00:11:44,940
+actually for the blue points, which are wrongly
+classified we can write w dot x i plus b greater
+
+78
+00:11:44,940 --> 00:11:52,420
+than equal to 1 minus z k and for the red
+points we can write w x i plus b less than
+
+79
+00:11:52,420 --> 00:12:00,480
+equal to minus 1 plus z k and we can write
+it together as y i into w x i plus b greater
+
+80
+00:12:00,480 --> 00:12:09,910
+than equal to 1 minus z k for i equal to 1
+to m. So, this is the formulation of the maximum
+
+81
+00:12:09,910 --> 00:12:16,060
+margin classifier, when we wish to handle
+noise. Now, in order to solve this equation
+
+82
+00:12:16,060 --> 00:12:19,820
+we can find the Lagrangian of this quantity.
+
+83
+00:12:20,250 --> 00:12:30,910
+So, the lagrangian with parameters w b z alpha
+beta and we get it as half w dot w plus c
+
+84
+00:12:30,910 --> 00:12:41,890
+sigma z i plus sigma i equal to 1 to m alpha
+i y i into x dot w plus b minus 1 plus z i
+
+85
+00:12:41,890 --> 00:12:48,510
+minus sigma i equal to one to m beta i z i.
+So, actually there is another set of constraints.
+
+86
+00:12:48,510 --> 00:12:56,250
+In this case, we have a set of m non-linear
+constraints and we also have m constraints
+
+87
+00:12:56,250 --> 00:13:08,890
+z i greater than equal to 0 for i equal to
+1 to m. So, we have two m constraints m constraints
+
+88
+00:13:08,890 --> 00:13:15,490
+of this type and m constraints of this type
+and therefore, in the slide we can see the
+
+89
+00:13:15,490 --> 00:13:25,240
+lagrangian of this quantity has half w dot
+w plus c sigma z i plus, please look at the
+
+90
+00:13:25,240 --> 00:13:34,480
+slide, sigma i equal to 1 to m alpha i times
+y i x dot w plus b minus 1 plus z i minus
+
+91
+00:13:34,480 --> 00:13:39,541
+i equal to 1 to m beta i z i alpha i s and
+beta i s are the lagrangian multipliers and
+
+92
+00:13:39,541 --> 00:13:43,281
+they are greater than equal to 0.
+
+93
+00:13:44,470 --> 00:13:51,870
+Now, given this lagrangian we can look at
+the dual formulation corresponding to this
+
+94
+00:13:51,870 --> 00:14:02,990
+formulation. So, in the linear SVM, we wanted
+to find alpha 1, alpha 2, alpha m such that
+
+95
+00:14:02,990 --> 00:14:13,839
+this quantity sigma alpha i minus half alpha
+i alpha j y i y j x i dot x j is a maximised
+
+96
+00:14:13,839 --> 00:14:19,459
+and such that the constraints where alpha
+i greater than equal to 0, for i equal to
+
+97
+00:14:19,459 --> 00:14:28,870
+1 to m and sigma i equal to 1 to m alpha i
+y i equal to 0. In the case of noisy SVM this
+
+98
+00:14:28,870 --> 00:14:36,390
+quantity remains the same, but the constraints
+change. So, earlier we had alpha i greater
+
+99
+00:14:36,390 --> 00:14:44,959
+than equal to 0, we have now alpha i is between
+0 and c for i equal to 1 to m, the second
+
+100
+00:14:44,959 --> 00:14:52,980
+constraint remains the same. So, the dual
+formulation of this noise accounted SVM this
+
+101
+00:14:52,980 --> 00:15:00,709
+constraint is changing alpha i is now lying
+between 0 and c the rest of the formulation

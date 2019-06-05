@@ -1,0 +1,13 @@
+Q. When to stop the decision tree greedy algorithm
+A. when enough no of iteration are done
+B. when accuracy is low
+C. when tree depth become more than permicible 
+D. when example are two few
+(D)
+
+Q. In decision tree if the attribute have 4 values how many children node will have?
+A. 2
+B. 3
+C. 4
+D. 5
+(C)

@@ -1,0 +1,173 @@
+71
+00:10:02,300 --> 00:10:09,650
+70 by 100; for value 2, 20 by 100; for value
+3, 10 by 100 or some other estimate measure
+
+72
+00:10:09,650 --> 00:10:11,030
+which we will again talk about.
+
+73
+00:10:11,980 --> 00:10:19,750
+Now, for each value x i j of each attribute
+X i for the j-th instance for each attribute
+
+74
+00:10:19,750 --> 00:10:30,650
+X i for each x i j, we will estimate theta
+i j k as the parameter that, probability that
+
+75
+00:10:30,650 --> 00:10:58,810
+X equal to x i j given Y equal to y k. So,
+if y k takes n different values; then, this
+
+76
+00:10:58,810 --> 00:11:10,700
+will require n minus 1 estimate. If each x
+takes k values, we require how many estimates?
+
+77
+00:11:10,700 --> 00:11:28,730
+We require 2 into n estimates, so 3 minus
+1 into n. So, small x i j is the different
+
+78
+00:11:28,730 --> 00:11:36,590
+values that attribute x i can take. So, these
+probabilities we need to estimate. Now, based
+
+79
+00:11:36,590 --> 00:11:41,920
+on this estimate, we can have the class.
+So, in the training phase, we learnt this
+
+80
+00:11:41,920 --> 00:11:49,080
+estimates from the training examples. And
+after we have learnt the estimate, you look
+
+81
+00:11:49,080 --> 00:12:00,320
+at the slide again; we can classify a new
+instance X new as its class Y new is that
+
+82
+00:12:00,320 --> 00:12:09,010
+y k for which this expression is maximized;
+probability Y equal to y k times product over
+
+83
+00:12:09,010 --> 00:12:17,150
+i; probability X i new given Y equal to y
+k as we have seen. In terms of simplified
+
+84
+00:12:17,150 --> 00:12:23,570
+values of the parameters that we have written,
+this is given by this. So this is the Naive
+
+85
+00:12:23,570 --> 00:12:31,730
+Bayes algorithm for the case, where all the
+attributes are discrete valued or nominal valued
+
+86
+00:12:32,970 --> 00:12:41,850
+Before we proceed, let us look at an example
+and one more thing that I forgot to tell you
+
+87
+00:12:41,850 --> 00:12:49,830
+is that, when we estimate these parameters
+– probability of X i given Y or probability
+
+88
+00:12:49,830 --> 00:13:00,880
+Y, we may sometimes come across a situation,
+where in the training example, the count for
+
+89
+00:13:00,880 --> 00:13:08,600
+computing the probability is 0. Then, we have
+a problem. You see in the classification,
+
+90
+00:13:08,600 --> 00:13:14,980
+we have a product that we are computing. We
+are taking the product of this probability
+
+91
+00:13:14,980 --> 00:13:21,760
+and the product of these probabilities.
+Now, if we have insufficient training instances,
+
+92
+00:13:21,760 --> 00:13:29,630
+there may be a case, where probability X i
+equal to X i j given Y equal to y k; you know
+
+93
+00:13:29,630 --> 00:13:36,040
+there is no training example for a particular
+y k for which X i is a particular value of
+
+94
+00:13:36,040 --> 00:13:44,030
+X i j. So, this value if we do Naive estimation
+of the probabilities by frequency counting,
+
+95
+00:13:44,030 --> 00:13:50,860
+this probability will become 0. And, if one
+probability term becomes 0, the entire product
+
+96
+00:13:50,860 --> 00:13:57,510
+becomes 0. In order to avoid that, we need
+to do something called smoothing in order
+
+97
+00:13:57,510 --> 00:14:06,430
+to avoid such situations. And so, what we
+do is that, when we do the estimating of the
+
+98
+00:14:06,430 --> 00:14:15,260
+different parameters; for example, when we
+try to estimate pi k; for pi k, we look at
+
+99
+00:14:15,260 --> 00:14:21,080
+the number of times y equal to y k divided
+by total number of data instances.
+
+100
+00:14:21,620 --> 00:14:27,510
+For theta i j k estimate, which is probability
+X i equal to small x i j given Y equal to
+
+101
+00:14:27,510 --> 00:14:33,810
+y k, we count the number of instances for
+which capital X i equal to small x i j and
+
+102
+00:14:33,810 --> 00:14:40,290
+Y equal to y k divided by number of instances
+for which Y equal to y k. This is the simple
+
+103
+00:14:40,290 --> 00:14:47,680
+formula for maximum likelihood estimation.
+And in this case there it is possible that,
+
+104
+00:14:47,680 --> 00:14:54,920
+especially in computing theta i j k, sometimes
+we will get the numerator as 0.In order to
+
+105
+00:14:54,920 --> 00:15:03,970
+avoid that, we introduce smoothing, where
+we initialize some small probability to each

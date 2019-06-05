@@ -1,0 +1,6 @@
+Q. Which LMS methos is used in the video
+A. decision tree
+B. gradient descent
+C. neural network
+D. none of the above
+(B)

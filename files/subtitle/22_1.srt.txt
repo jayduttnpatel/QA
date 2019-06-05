@@ -1,0 +1,113 @@
+1
+00:00:19,320 --> 00:00:23,120
+Hello friends, this is Anirban, welcome to
+the tutorial session of the fourth week of
+
+2
+00:00:23,130 --> 00:00:26,170
+this course. In this session, we are going
+to summarise everything that has been covered
+
+3
+00:00:26,170 --> 00:00:31,270
+in the course, and learn how to solve problems
+in the exam. So, let us see what all topic
+
+4
+00:00:31,270 --> 00:00:32,300
+we are going to cover today.
+
+5
+00:00:32,300 --> 00:00:52,370
+Today, we are going to first cover estimation
+of probabilities using the frequency definition
+
+6
+00:00:52,370 --> 00:01:07,960
+of probability. The second topic will be Bayes’
+rule. The third topic is maximum aposteriori
+
+7
+00:01:07,960 --> 00:01:26,100
+probability inference. Fourth will be Naive
+Baye’s assumption. The fifth topic will
+
+8
+00:01:26,100 --> 00:01:41,110
+be Bayesian network, the structure of Bayesian
+network what is it all about. Sixth will be
+
+9
+00:01:41,110 --> 00:01:51,450
+inference in Bayesian network and the concept
+of marginalization.
+
+10
+00:01:53,670 --> 00:02:04,280
+So, let us take up the first topic of today,
+which is estimation of probabilities using
+
+11
+00:02:04,280 --> 00:02:28,959
+the frequency definition. The frequency definition
+of probability says that the probability often
+
+12
+00:02:28,959 --> 00:02:35,010
+event is the fraction of times that particular
+event happen, for example, we have
+
+13
+00:02:35,010 --> 00:02:42,560
+coin, say we toss it 100 times
+and 45 times the heads come up, head side
+
+14
+00:02:42,560 --> 00:02:50,450
+comes up, and the remaining 55 times the tail
+shows up. So, the probability of head will
+
+15
+00:02:50,450 --> 00:03:00,870
+be 45 by 100 or 0.45, and the probability
+of tails will be 55 by 100 which is 0.55.
+
+16
+00:03:01,780 --> 00:03:07,500
+And so let us take up problem which you can
+face in the exam and try to solve it.
+
+17
+00:03:09,069 --> 00:03:48,340
+Suppose you have an urn with 10 balls of different
+colour. There are 3 red balls, 4 blue balls
+
+18
+00:03:48,340 --> 00:04:18,311
+and 3 yellow balls. Estimate the probability
+of drawing a red, blue and yellow ball. So
+
+19
+00:04:18,311 --> 00:04:22,780
+you have been given an urn which has balls
+of three different colours. And now you have
+
+20
+00:04:22,780 --> 00:04:27,970
+been asked to just close your eyes, and pick
+up an at random. So, what is the probability
+
+21
+00:04:27,970 --> 00:04:33,129
+that you would pick red balls, what is the
+probability of a blue ball, and what is the
+
+22
+00:04:33,129 --> 00:04:44,500
+probability of a yellow ball? So, from the
+frequency definition, probability of a given
+
+23
+00:04:44,500 --> 00:05:05,569
+colour will be number of balls of that colour
+in the urn divided by total number of balls

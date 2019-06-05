@@ -1,0 +1,153 @@
+35
+00:05:00,020 --> 00:05:03,000
+look at an example of Bayesian network.
+
+36
+00:05:08,680 --> 00:05:20,940
+So, let us say that 
+this is a node corresponding to the variable
+
+37
+00:05:20,940 --> 00:05:36,550
+‘late wakeup’, this is a node corresponding
+to ‘late for work’, this is node corresponding
+
+38
+00:05:36,550 --> 00:05:51,091
+to ‘accident on the highway’, this is
+a node corresponding to ‘rainy day’, this
+
+39
+00:05:51,091 --> 00:06:09,099
+is a node corresponding to ‘traffic jam’,
+this is a node corresponding to ‘meeting
+
+40
+00:06:09,099 --> 00:06:23,680
+postponed’ and this is a node corresponding
+to ‘late for meeting’. Suppose, these
+
+41
+00:06:23,680 --> 00:06:31,310
+are the variables which are of our interest
+and we want to see, what is the relation between
+
+42
+00:06:31,310 --> 00:06:38,889
+the variables?
+Let us say, waking up late influences whether
+
+43
+00:06:38,889 --> 00:06:46,589
+you are late for work. If there is accident
+it is more likely there is a traffic jam.
+
+44
+00:06:46,689 --> 00:06:53,770
+If it is a rainy day it is likely to be a
+traffic jam and maybe we can say if it is
+
+45
+00:06:53,770 --> 00:07:00,779
+a rainy day there is higher likelihood for
+an accident. If you are caught in a traffic
+
+46
+00:07:00,779 --> 00:07:08,180
+jam it affects whether you are late for work.
+If you are late for work affects whether you
+
+47
+00:07:08,180 --> 00:07:14,430
+are late for a meeting and if the meeting
+is postponed that also influences whether
+
+48
+00:07:14,430 --> 00:07:22,249
+you are late for the meeting. Now, these arcs
+that I have drawn denote causal relationships
+
+49
+00:07:22,249 --> 00:07:32,461
+between these variables and from this structure
+we get a graph or more specifically, this
+
+50
+00:07:32,461 --> 00:07:46,099
+is a directed acyclic graph, which represents
+the nodes and the relationships between them
+
+51
+00:07:46,099 --> 00:07:54,490
+and from this network we can read different
+conditional independence relationships.
+
+52
+00:07:54,490 --> 00:08:02,590
+For example, we can say that late for work
+is influenced by whether you have woken up
+
+53
+00:08:02,590 --> 00:08:11,379
+late, but if you are late work that directly
+influences whether you are late for meeting
+
+54
+00:08:11,379 --> 00:08:20,379
+and therefore, we can say that if you wake
+up late that effect whether you are late for
+
+55
+00:08:20,379 --> 00:08:30,039
+the meeting. However, if you know that whether
+the person is late for work or not; suppose
+
+56
+00:08:30,039 --> 00:08:40,930
+you are not late for work in spite of waking
+up late then whether you are woken up late
+
+57
+00:08:40,930 --> 00:08:46,500
+or not does not influence whether you late
+for the meeting, if you know whether you are
+
+58
+00:08:46,500 --> 00:08:57,690
+late for work or not. So, waking up late and
+being late for meetings are normally not independent,
+
+59
+00:08:57,690 --> 00:09:06,200
+but they are conditionally independent given
+that you know whether you are late for work.
+
+60
+00:09:06,200 --> 00:09:17,260
+Again, let us look at accident, whether an
+accident happened and whether you woke up
+
+61
+00:09:17,260 --> 00:09:24,100
+late right. So, if you think of whether accident
+happened, whether you woke up late. These
+
+62
+00:09:24,261 --> 00:09:35,180
+these2 variables are independent, if you have woken
+up late that is independent of whether an
+
+63
+00:09:35,180 --> 00:09:43,270
+accident happened, but if you know that you
+are late for work, then these 2 variables
+
+64
+00:09:43,270 --> 00:09:49,130
+do not remain independent if the value of
+the node, for example, you know that you late
+
+65
+00:09:49,130 --> 00:09:58,100
+for work then, suppose you did not wake up
+late then accident could be reason why you

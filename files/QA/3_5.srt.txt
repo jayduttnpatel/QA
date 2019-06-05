@@ -1,0 +1,13 @@
+Q. For 4 boolean feature how many possible instances are possible?
+A. 10
+B. 12
+C. 14
+D. 16
+(D)
+
+Q. On which space restriction is putted?
+A. Hypothesis space
+B. vector space
+C. input space
+D. output space
+(A)

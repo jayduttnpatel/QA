@@ -1,0 +1,13 @@
+Q. If the size of the training set is too small it give rise to what?
+A. underfitting
+B. overfitting
+C. just right learning
+D. non of the above
+(B)
+
+Q. validation set is used during which process to tune the model?
+A. training
+B. delivering
+C. testing
+D. none of the above
+(A)

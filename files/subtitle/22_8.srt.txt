@@ -1,0 +1,222 @@
+209
+00:35:03,140 --> 00:35:08,460
+down here so you simply multiply these values.
+So, this is going to be equal to 0.2 times
+
+210
+00:35:08,460 --> 00:35:18,430
+0.4 times 0.6 times 0.9. Yes, multiply this
+out this is going to be the value, this is
+
+211
+00:35:18,430 --> 00:35:28,331
+going to be the answer. Let us multiply and
+find the value. So, this kind of question
+
+212
+00:35:28,331 --> 00:35:29,111
+is going to come.
+
+213
+00:35:29,610 --> 00:35:35,190
+Now, suppose you do not know the value of
+C, so this is one question. The second question
+
+214
+00:35:35,190 --> 00:35:41,670
+that can come from this part is you have been
+asked just this part let me write in blue
+
+215
+00:35:41,670 --> 00:35:50,740
+again P of A equal to 0, B equal to 1 and
+D equal to 0 say, D equal to 1 I am sorry
+
+216
+00:35:50,740 --> 00:36:01,320
+let us keep D equal to 1. So this has been
+asked, what is this. So, this is basically
+
+217
+00:36:01,320 --> 00:36:10,720
+asking for probability of A, B and D, which
+is equal to summation over C taking values
+
+218
+00:36:10,720 --> 00:36:21,540
+in 0 and 1 of probability of A, B, C equal
+to C and D. So, you are marginalizing so this
+
+219
+00:36:21,540 --> 00:36:28,040
+particular thing is called marginalization
+of a probability distributions. So you are
+
+220
+00:36:28,040 --> 00:36:35,170
+marginalizing C out you summing it up over
+all the different values of C. And all you
+
+221
+00:36:35,170 --> 00:36:40,930
+end up with the interest of the variables
+this is D.
+
+222
+00:36:41,250 --> 00:36:48,210
+So, suppose you have been given this question.
+So, what you are going to do so this quantity
+
+223
+00:36:48,210 --> 00:36:55,750
+is going to be equal to P of A equal to 0,
+B equal to 1, D equal to 1, for C equal to
+
+224
+00:36:55,750 --> 00:37:03,230
+0. And then an another term A equal to 0,
+B equal to 1, C equal to 1, D equal to 1.
+
+225
+00:37:03,230 --> 00:37:09,502
+We are marginalizing C out, we are summing
+it up over summing the terms probability values
+
+226
+00:37:09,502 --> 00:37:12,322
+for this different value for the different
+values of C.
+
+227
+00:37:13,300 --> 00:37:21,060
+So, this quantity as we calculated before
+is 0 this quantity right so this plus this
+
+228
+00:37:21,060 --> 00:37:25,290
+quantity. So whatever this number is do not
+have a calculator right now. So, just calculate
+
+229
+00:37:25,290 --> 00:37:31,560
+this so this comes in sits here plus you calculate
+this quantity in the same way as before, so
+
+230
+00:37:31,560 --> 00:37:40,160
+you calculate so what is this going to be
+so this will result in Bayes net which looks
+
+231
+00:37:40,160 --> 00:37:49,970
+like this. Now the values are 0, 1, C equal
+to 1, and D is also equal to 1, so the priors
+
+232
+00:37:49,970 --> 00:37:54,810
+will be 0.2 and 0.4 will be where this conditional
+will change.
+
+233
+00:37:54,810 --> 00:37:58,640
+So, probability of C equal to 1 given A equal
+to 0 and B equal to 1, C equal to 1, given
+
+234
+00:37:58,640 --> 00:38:08,000
+A equal to 0, and B equal to 1 is 0.4, so
+the value here will be 0.4. And the probability
+
+235
+00:38:08,000 --> 00:38:18,670
+of D equal to 1 given C equal to 1 is 0.1.
+So, just go and put 0.1 here. So, this is
+
+236
+00:38:18,670 --> 00:38:26,320
+going to be equal to so let me right it down
+0.2 into 0.4 into 0.6 into 0.9 this quantity
+
+237
+00:38:26,320 --> 00:38:34,660
+plus this is going to be 0.2 into 0.4 into
+0.4 into 0.1, so add these to up the answer
+
+238
+00:38:34,660 --> 00:38:37,960
+is there, so you will be asked this kind of
+questions.
+
+239
+00:38:38,250 --> 00:38:44,260
+So, that the topics that we cover today are
+estimation of probability using the frequency
+
+240
+00:38:44,260 --> 00:38:51,530
+definition very, very basic and the most important
+bayes rule, MAP inference, Naive Bayes assumption,
+
+241
+00:38:51,530 --> 00:38:54,980
+Bayesian networks as structure of Bayesian
+networks what it does it models the condition
+
+242
+00:38:54,980 --> 00:38:59,570
+of probability distributions and also the
+conditional independence condition independence
+
+243
+00:38:59,570 --> 00:39:04,930
+assumptions rather. Then we also discussed
+how to do inference in A Bayes net so given
+
+244
+00:39:04,930 --> 00:39:09,320
+certain values of its of the random variables,
+how to calculate the joint probability distributions,
+
+245
+00:39:09,320 --> 00:39:15,970
+and also how to do the marginalization over
+different variables which have not been asked
+
+246
+00:39:15,970 --> 00:39:21,360
+in the question, and given an inference for
+the joint distributions of the subset of the
+
+247
+00:39:21,360 --> 00:39:26,900
+variables of the Bayes net.
+So, this is the content that was covered this
+
+248
+00:39:26,900 --> 00:39:31,420
+week. All the questions in the assignment
+4 are going to come from these topics, so
+
+249
+00:39:31,420 --> 00:39:37,330
+best of luck for solving the assignment. And
+the deadline will not be extended, so make
+
+250
+00:39:37,330 --> 00:39:43,630
+it very make sure make sure that you start
+for you know early enough, and you finish
+
+251
+00:39:43,630 --> 00:39:51,800
+before the deadline which will not be extended
+by any means, and practise this problem for
+
+252
+00:39:51,800 --> 00:39:54,140
+the exam, because you are going to get quite
+similar questions.
+
+253
+00:39:54,380 --> 00:39:55,890
+So, bye-bye, see you next time.

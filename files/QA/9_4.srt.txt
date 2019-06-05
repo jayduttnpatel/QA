@@ -1,0 +1,13 @@
+Q. In decision tree training set is also known as the
+A. shrink set
+B. grow set
+C. independant set
+D. dependant set
+(B)
+
+Q. If we divide the data in the grow set and the validation set what problem arises?
+A. validation become difficult
+B. hard to divide
+C. we have less number of data to grow the tree
+D. none of the above
+(C)

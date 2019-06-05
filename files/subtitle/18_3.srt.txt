@@ -1,0 +1,152 @@
+60
+00:10:05,629 --> 00:10:17,610
+in machine learning. So, based on the Bayes
+theorem, we can find out the most likely hypothesis
+
+61
+00:10:17,610 --> 00:10:21,970
+which is called the maximum posterior hypothesis.
+
+62
+00:10:25,720 --> 00:10:48,619
+So, the map hypothesis is given by that value
+of h for which probability h given data is
+
+63
+00:10:48,619 --> 00:11:04,110
+maximize. Now, by Bayes theorem, this is same
+as that hypothesis. We just expand this by
+
+64
+00:11:04,110 --> 00:11:14,089
+Bayes theorem. We get probability D given
+h times probability h divided by P D. So,
+
+65
+00:11:14,089 --> 00:11:20,449
+now, h capital H is the hypothesis space and
+small 8 out of all hypothesis in the hypothesis
+
+66
+00:11:20,449 --> 00:11:26,819
+space, you want to find that hypothesis for
+which this expression is maximized.
+
+67
+00:11:26,819 --> 00:11:33,089
+Now, P D is independent of the particular
+hypothesis. So, we can say this is the same
+
+68
+00:11:33,089 --> 00:11:43,630
+hypothesis for which this part is maximized.
+So, the posterior hypothesis, posterior probability
+
+69
+00:11:43,630 --> 00:11:50,660
+is given by probability D given h proportional
+to probability D given h times D h and the
+
+70
+00:11:50,660 --> 00:11:57,480
+maximum. Posteriori hypothesis is one for
+which probability D given h times P h is maximum.
+
+71
+00:11:57,480 --> 00:12:06,779
+This is the prior probability of the hypothesis
+and we choose hypothesis based on their posterior
+
+72
+00:12:06,779 --> 00:12:14,350
+probability.
+Now, in the event if for all hypotheses, the
+
+73
+00:12:14,350 --> 00:12:23,850
+probability is equal, then you choose that
+hypothesis for which probability D given h
+
+74
+00:12:23,850 --> 00:12:31,879
+is maximum. So, 8 m l is the maximum likelihood
+hypothesis. It is applicable in those cases
+
+75
+00:12:31,879 --> 00:12:38,519
+where the prior probability of all hypotheses
+is equal. That is initially before you have
+
+76
+00:12:38,519 --> 00:12:44,569
+any data. The entire hypothesis are equally
+probable, in that case you choose the hypothesis
+
+77
+00:12:44,569 --> 00:12:52,730
+for which the probability D given h is maximum;
+so the application of Bayesian theorem, in
+
+78
+00:12:52,730 --> 00:13:00,529
+order to find out maximum a posteriori hypothesis
+and the maximum likelihood hypothesis.
+
+79
+00:13:00,529 --> 00:13:11,480
+Now, we will see an example of how in a finding
+the least squared line, we can apply the Bayes
+
+80
+00:13:11,480 --> 00:13:30,439
+theorem to find out the most likely hypothesis.
+So, suppose you have to learn a real valued function
+
+81
+00:13:31,910 --> 00:13:44,139
+We have already talked about leaner regression
+which can be used to learn a real valued function
+
+82
+00:13:44,139 --> 00:13:52,429
+and suppose the data is generated in the following
+fashion. So, there is a target function f.
+
+83
+00:13:52,429 --> 00:14:05,199
+F is the target function and the individual
+data are generated. So, the data is given
+
+84
+00:14:05,199 --> 00:14:17,230
+as x i D i are the individual data points
+and D i is generated as f x i plus epsilon i
+
+85
+00:14:17,230 --> 00:14:20,530
+Epsilon i is the error and we assume that
+
+86
+00:14:20,679 --> 00:14:29,179
+this error follows a normal distribution with
+mean zero and a standard deviation sigma.
+
+87
+00:14:29,179 --> 00:14:41,089
+So, we can think that D i is coming from a
+normal distribution whose mean is f x i and
+
+88
+00:14:41,089 --> 00:14:48,959
+whose error is given by sigma square, where
+sigma square is the variance corresponding
+
+89
+00:14:48,959 --> 00:14:57,119
+to this error term. So, this is how the data
+is being generated and let us assume that
+
+90
+00:14:57,119 --> 00:15:06,669
+epsilon i is independently generated for the
+individual instances where epsilon i are independent

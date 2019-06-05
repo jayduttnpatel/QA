@@ -1,0 +1,20 @@
+Q. Accuracy is evaluated on
+A. Sample
+B. model
+C. task
+D. Environment
+(A)
+
+Q. Error is evaluated on which set?
+A. Training set
+B. Testing Set
+C. validation set
+D. Hold out set
+(B)
+
+Q. To split the data in the train and test set while training which method is used?
+A. cross-validation
+B. gradient descent
+C. regularzation
+D. learning rate
+(A)

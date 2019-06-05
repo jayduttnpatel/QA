@@ -1,0 +1,211 @@
+1
+00:00:18,580 --> 00:00:22,040
+Hello everyone. Welcome to the third to the
+hands on the session of the Introduction to
+
+2
+00:00:22,040 --> 00:00:27,300
+Machine Learning course. I am Anirban Santhara,
+and I am doing my PhD in Machine Learning.
+
+3
+00:00:27,400 --> 00:00:31,640
+In this session, we will learn how to use
+Naive Bayes classification algorithms for
+
+4
+00:00:31,640 --> 00:00:34,600
+classification of emails as spam or non spam.
+
+5
+00:00:34,930 --> 00:00:41,590
+First, let us look back at what naive bayes
+classification algorithm looks like and how
+
+6
+00:00:41,590 --> 00:00:51,199
+it works. Say we have an input vector N and
+it has n components and we have to predict
+
+7
+00:00:51,199 --> 00:01:00,979
+one of k classes and we denote these classes
+as C k. Now, how do we go? We try to find
+
+8
+00:01:00,979 --> 00:01:09,850
+which class has the highest posterior probability
+given the input feature vector X, and the
+
+9
+00:01:09,850 --> 00:01:15,630
+class that has the highest probability is
+output as the target class for the example X
+
+10
+00:01:16,310 --> 00:01:21,610
+Now, the problem at hand is to classify emails
+as spam or non spam.
+
+11
+00:01:22,710 --> 00:01:30,740
+And now let us see, how naive bayes classifier
+like how it really it would like works. So,
+
+12
+00:01:30,740 --> 00:01:39,960
+C is the target class for the given example
+X, and this is going to be output as the class
+
+13
+00:01:39,960 --> 00:01:45,810
+C k which is going to have the highest posterior
+probability given X, so that is given by the
+
+14
+00:01:45,810 --> 00:01:51,841
+Argmax function. It is going to check which
+value of k is giving the maximum P of C k
+
+15
+00:01:51,841 --> 00:01:59,170
+given X. Now by base rule this can be broken
+up as, so I have expanded x as x 1 through
+
+16
+00:01:59,170 --> 00:02:06,810
+x n the vector and this can be written as
+the likelihood of the vector x given the class
+
+17
+00:02:06,810 --> 00:02:14,080
+C k times the prior probability of the class
+C k divided by the evidence of the vector X
+
+18
+00:02:14,960 --> 00:02:18,400
+this are term from the base rule
+
+19
+00:02:19,030 --> 00:02:25,760
+and now the naive bayes classification algorithm.
+The naive bayes algorithm assumes that the
+
+20
+00:02:25,760 --> 00:02:33,840
+input feature dimensions are conditionally
+independent given the class C k. So that is
+
+21
+00:02:33,840 --> 00:02:42,250
+we could write this as the product over each
+x i given C k. This conditional independent
+
+22
+00:02:42,250 --> 00:02:49,490
+assumption is what naive bayes algorithm is
+all about; naive bayes rule is all about.
+
+23
+00:02:49,490 --> 00:02:54,620
+So this makes the classification algorithm
+the implementation of bit easier, the estimation
+
+24
+00:02:54,620 --> 00:02:55,120
+a bit easier.
+
+25
+00:02:55,620 --> 00:03:03,069
+Now, how is this relevant in the context of
+spam classification? The problem at hand is
+
+26
+00:03:03,069 --> 00:03:10,340
+to classify and email as spam or non spam
+given features of the email message. And you
+
+27
+00:03:10,340 --> 00:03:16,680
+have seen a second what kind of features can
+be used to qualify and email which would make
+
+28
+00:03:16,680 --> 00:03:23,180
+it distinctive for a class spam classifier.
+So, the probability of spam given features
+
+29
+00:03:23,180 --> 00:03:27,930
+of a message is what we have to estimate,
+and this is actually the posterior probability
+
+30
+00:03:27,930 --> 00:03:35,489
+of the class spam. Now this can be decomposed
+by base rule as the likelihood of the features
+
+31
+00:03:35,489 --> 00:03:45,090
+of the email message given then it was a spam
+message times the prior probability of spams
+
+32
+00:03:45,090 --> 00:03:51,069
+divided by the features of the message, all
+right probability of the features of the message,
+
+33
+00:03:51,069 --> 00:03:57,890
+and divide by naive bayes condition we can
+assume that the different features of the
+
+34
+00:03:57,890 --> 00:04:04,040
+message are conditionally independent given
+that the class is already known to be spam.
+
+35
+00:04:04,040 --> 00:04:08,220
+So this conditional is independence assumption
+is what naive bayes rule is all about.
+
+36
+00:04:08,520 --> 00:04:14,560
+On the data is that we will be using is an
+open sourced data set from the UC Irvine Machine
+
+37
+00:04:14,560 --> 00:04:19,060
+Learning Repository. It is available for free
+in the URL that you can see on this screen.
+
+38
+00:04:19,060 --> 00:04:27,590
+It has 4601 example cases, 39.4 percent of
+that a spam, the rest are non-spam. And the
+
+39
+00:04:27,590 --> 00:04:34,660
+each email is represented as relative frequencies
+and see how this is quantified. The related
+
+40
+00:04:34,660 --> 00:04:40,589
+frequencies of 48 key-words and these key
+words are like, “free”, “money”, these
+
+41
+00:04:40,589 --> 00:04:48,129
+are the key words that appear very often in
+spam emails, so that increases the likelihood
+
+42
+00:04:48,129 --> 00:04:54,529
+of the email to be as being a spam message.
+And also some characters like exclamation
+
+43
+00:04:54,529 --> 00:05:01,069
+dollar these, so 6 such characters and 3 run
+length attributes. So we would not be consider

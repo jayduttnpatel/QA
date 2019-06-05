@@ -1,0 +1,188 @@
+34
+00:04:59,640 --> 00:05:13,260
+In support vector machine, we want a classifier,
+so that it maximizes the separation of between
+
+35
+00:05:13,260 --> 00:05:20,720
+the points and the decision surface. So, for
+that we can define, what we mean by the margin
+
+36
+00:05:20,720 --> 00:05:26,850
+so or you know if you look at this point,
+we can find the distance of this point from
+
+37
+00:05:26,850 --> 00:05:31,811
+the decision surface. We can find the distance
+of this point from the decision surface, this
+
+38
+00:05:31,811 --> 00:05:36,820
+point, this point etcetera for each point;
+we can find the distance from the decision
+
+39
+00:05:36,820 --> 00:05:41,230
+surface.
+Now, if you look at the negative points, this
+
+40
+00:05:41,230 --> 00:05:45,660
+is the closest negative point to the decision
+surface. In fact, this is the closest point
+
+41
+00:05:45,660 --> 00:05:52,470
+over all to the decision surface and this
+is the distance of the closest point to the
+
+42
+00:05:52,470 --> 00:06:01,640
+decision surface can be defined as the margin.
+And these two points these two positive points
+
+43
+00:06:01,640 --> 00:06:11,080
+are closes from the decision surface.
+Now we could have shifted this line here so
+
+44
+00:06:11,080 --> 00:06:16,700
+that the distance from the closes positive
+points and the closes negative point is the
+
+45
+00:06:16,700 --> 00:06:23,490
+same. In that case the margin width will be
+slightly large, so the width of this band
+
+46
+00:06:23,490 --> 00:06:33,280
+will be twice this. But there are other decision
+surfaces for which there can be other margins,
+
+47
+00:06:33,280 --> 00:06:39,740
+and among all possible decision surfaces we
+want to choose that one for which the margin
+
+48
+00:06:39,740 --> 00:06:48,001
+width is highest. So my margin is denoted
+by the minimum distance of a training instance
+
+49
+00:06:48,001 --> 00:06:55,130
+from the decision surface, and we want to
+choose that decision surface for which the
+
+50
+00:06:55,130 --> 00:07:01,370
+margin width is highest. All this is under
+the assumption that the positive and the negative
+
+51
+00:07:01,370 --> 00:07:06,150
+points are linearly separable by a linear
+decision surface.
+
+52
+00:07:06,410 --> 00:07:18,970
+Now, you know if you consider a particular
+decision surface, and then you considered
+
+53
+00:07:18,970 --> 00:07:26,530
+the points, which are closes to the decision
+surface. Now these three points are closes
+
+54
+00:07:26,530 --> 00:07:31,960
+to the decision surface and then it create
+distance from the decision surface these points
+
+55
+00:07:31,960 --> 00:07:42,310
+are called the support vectors. So, in the
+case where you are maximizing the margin width,
+
+56
+00:07:42,310 --> 00:07:48,750
+the distance of the closest negative point
+to this line and the closest positive point
+
+57
+00:07:48,750 --> 00:07:55,150
+to this line will be same.
+And there are minimum of two support vectors,
+
+58
+00:07:55,220 --> 00:08:01,150
+but there can be more than two support vectors,
+but typically the number of support vectors
+
+59
+00:08:01,150 --> 00:08:09,419
+is extremely small. And if you notice this
+support vectors are the one which actually
+
+60
+00:08:09,419 --> 00:08:16,460
+determine by equation of the line, and typically
+the support vector number will be very small.
+
+61
+00:08:16,460 --> 00:08:23,650
+And this particular decision surface decides
+which point given a test point, you can do
+
+62
+00:08:23,650 --> 00:08:29,310
+the test which side of the decision surface,
+it is based on that you can classify the points
+
+63
+00:08:29,310 --> 00:08:39,380
+has positive or negative. Now, with this introduction
+let us define what we mean by formally by
+
+64
+00:08:39,380 --> 00:08:39,960
+margin.
+
+65
+00:08:40,380 --> 00:09:02,029
+So, first will talk about what we call functional
+margin. Now functional margin of a point you
+
+66
+00:09:02,029 --> 00:09:16,370
+take a point x i, y i is an arbitrary point;
+suppose this is a point x i, y i. So, this
+
+67
+00:09:16,370 --> 00:09:22,779
+point with respect to a decision surface,
+now suppose the equation of this decision
+
+68
+00:09:22,779 --> 00:09:30,939
+surface is given by w x plus b equal to 0.
+So W is a vector, x is a vector.
+
+69
+00:09:31,329 --> 00:09:39,410
+Suppose x 1 and x 2 are the two features,
+so this is W 1 x 1 plus W 2 x 2 plus b equal
+
+70
+00:09:39,410 --> 00:09:47,850
+to 0, this is the equation of the line, and
+it can be written as W x plus b equal to 0.
+
+71
+00:09:47,850 --> 00:09:58,720
+So, with respect to this line W x plus b equal
+to 0 which is parameterized by W b the functional

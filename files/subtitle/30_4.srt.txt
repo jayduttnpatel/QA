@@ -1,0 +1,184 @@
+103
+00:14:58,890 --> 00:15:14,850
+and we have already discussed about gradient
+descent. So, gradient descent algorithms can
+
+104
+00:15:14,850 --> 00:15:27,520
+be used in the more general case. If you have
+a situation where you know there may not be
+
+105
+00:15:27,520 --> 00:15:33,950
+a linear separability, but with respect to
+a particular value of the parameters, the
+
+106
+00:15:33,950 --> 00:15:41,550
+weight values you can define the error of
+the network right and you can perform gradient
+
+107
+00:15:41,550 --> 00:15:50,110
+descent on this error function to find that
+value of the parameters for which this error
+
+108
+00:15:50,110 --> 00:15:57,550
+function is minimized. So, this is done by
+gradient descent which we have already discussed earlier
+
+109
+00:16:03,620 --> 00:16:09,040
+In gradient descent what happens is that we
+first define an error function for example,
+
+110
+00:16:09,040 --> 00:16:17,579
+here the error function can be defined as
+sigma Y minus Y hat whole square over all
+
+111
+00:16:17,579 --> 00:16:26,399
+training examples. So, we can subscript it
+by Y d minus Y d hat. So, Y d is the actual
+
+112
+00:16:26,399 --> 00:16:32,230
+value of the output for that training example
+and Y d hat is what you get through your network.
+
+113
+00:16:32,230 --> 00:16:37,660
+So, this is the error with respect to network
+in some cases we put half in order to you
+
+114
+00:16:37,660 --> 00:16:43,230
+know just have a nice form of the final output.
+So, we have this error function and we want
+
+115
+00:16:43,230 --> 00:16:54,269
+to minimize this error and how we minimize
+it is that we try to find the find the weights
+
+116
+00:16:54,269 --> 00:17:01,910
+through a process called gradient descent.
+So, now, this error is a function which has
+
+117
+00:17:01,910 --> 00:17:09,079
+a surface and we want to find the minima of
+this surface. So, there are could be of function
+
+118
+00:17:09,079 --> 00:17:16,079
+like this and we want to find the minima.
+Suppose, at a particular point we are at this
+
+119
+00:17:16,079 --> 00:17:23,980
+point of the error surface. In gradient descent
+what you do is that you find the derivative
+
+120
+00:17:23,980 --> 00:17:30,960
+at the error surface you rather find the partial
+derivative with respect to each and every
+
+121
+00:17:30,960 --> 00:17:38,149
+weight, and based on that you find the weight
+of the you find the direction of the gradient
+
+122
+00:17:38,149 --> 00:17:45,460
+and you take a step in the negative direction
+of the gradient. So, as to go towards the
+
+123
+00:17:45,460 --> 00:17:53,289
+minima right in certain cases for single layer
+perceptron, this error surface will be convex
+
+124
+00:17:53,289 --> 00:18:01,980
+or quadratic and there is a single minima
+and if you do gradient descent you are guaranteed
+
+125
+00:18:01,980 --> 00:18:07,460
+to ultimately reach this minima.
+But there are other cases when we talk about
+
+126
+00:18:07,460 --> 00:18:12,490
+multilayer networks in the next class. We
+will see that the error surface is ill behaved,
+
+127
+00:18:12,490 --> 00:18:18,529
+it is not necessarily convex and there can
+be some local minima which you can get started,
+
+128
+00:18:18,529 --> 00:18:23,950
+but basic idea of gradient descent is you
+find the gradient and then you take a step
+
+129
+00:18:23,950 --> 00:18:30,470
+towards the gradient. We have already talked
+about gradient descent, but this is important.
+
+130
+00:18:30,470 --> 00:18:40,210
+Now, we have seen 2 examples, one is when
+we have a linear. Now, one of the problems
+
+131
+00:18:40,210 --> 00:18:49,990
+that will mention is that when we use this
+step function, this step function is not differentiable,
+
+132
+00:18:49,990 --> 00:18:56,940
+we cannot do gradient descent. So, we have
+to take some other function which is differentiable,
+
+133
+00:18:56,940 --> 00:19:07,409
+for example, the simple linear function phi
+1 Z equal to Z this is differentiable and
+
+134
+00:19:07,409 --> 00:19:13,649
+we can do a gradient descent on this which
+we already did earlier, and based on that
+
+135
+00:19:13,649 --> 00:19:19,369
+we talked about gradient descent we talked
+about a gradient descent where you take this
+
+136
+00:19:19,369 --> 00:19:25,679
+error function and by this we can get to the
+local minima we can find out the values of
+
+137
+00:19:25,679 --> 00:19:33,429
+the weight, so that this is minimized.
+We can also do stochastic gradient descent
+
+138
+00:19:33,429 --> 00:19:52,739
+where we take a single example from the training
+set at a time, define the error as
+
+139
+00:19:52,739 --> 00:19:59,649
+Y minus Y hat whole square. Based on that
+we can we can take one example at a time based

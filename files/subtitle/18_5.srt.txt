@@ -1,0 +1,143 @@
+121
+00:19:55,960 --> 00:20:24,659
+in order to find out the linear regression.
+Now, next we will study about what is bayes
+
+122
+00:20:24,659 --> 00:20:25,959
+optimal classifier.
+
+123
+00:20:35,390 --> 00:20:53,240
+Now, the question is suppose we are given
+some training data which each of the training
+
+124
+00:20:53,240 --> 00:20:59,460
+instances we are given the class that it belongs
+to, then we are given a test instance and
+
+125
+00:20:59,460 --> 00:21:07,750
+we are asked what is the optimum classification
+of x. The live answer would be that you find
+
+126
+00:21:07,750 --> 00:21:16,070
+out the most probable hypothesis using the
+map criteria and then, you apply that hypothesis
+
+127
+00:21:16,070 --> 00:21:26,070
+to the test example, but this is not necessarily
+the case. So, if you are given the training
+
+128
+00:21:26,070 --> 00:21:40,340
+data form, the training data we learn h map.
+So, h map is the most probable hypothesis,
+
+129
+00:21:40,340 --> 00:21:51,409
+but h map is not the most probable classification.
+For example, suppose h1, h2, h3 are three
+
+130
+00:21:51,409 --> 00:22:01,159
+candidate hypothesis belonging to the hypothesis
+space and suppose probability h1 given D is
+
+131
+00:22:01,159 --> 00:22:16,870
+0.4, probability h2 given D is 0.03 and probability
+h3 given D is 0.3. So, which is the map classifier?
+
+132
+00:22:16,870 --> 00:22:23,010
+H1 is the map classifier because it has the
+maximum posterior probability.
+
+133
+00:22:23,010 --> 00:22:41,340
+Suppose we are a new data x and suppose h1
+x is positive, h2 x is negative, h3 x is negative,
+
+134
+00:22:41,340 --> 00:22:48,460
+what is the most probable classification?
+The most probable hypothesis is h1. H1 is
+
+135
+00:22:48,460 --> 00:22:59,460
+saying that x is positive, but h2 and h3 both
+are saying that h is negative. So, the most
+
+136
+00:22:59,460 --> 00:23:06,009
+in this case, the most probable classification
+would be actually negative because the sum
+
+137
+00:23:06,009 --> 00:23:12,299
+of the probabilities of these two hypotheses
+is 0.6 which is larger than the probability
+
+138
+00:23:12,299 --> 00:23:17,929
+of this hypothesis is 0.4.
+So, what we have is, we have what we call
+
+139
+00:23:17,929 --> 00:23:26,019
+the Bayes optimal classification. In Bayes
+optimal classification for a particular example
+
+140
+00:23:26,019 --> 00:23:37,230
+we take the class to be. So, the capital V
+is the set of all possible classes, u hypothesis
+
+141
+00:23:37,230 --> 00:23:47,139
+your algorithm will output that class included
+in all the classes for which the summation
+
+142
+00:23:47,139 --> 00:24:00,860
+over all the hypothesis included in the hypothesis
+space probability v j given h i times probability
+
+143
+00:24:00,860 --> 00:24:08,920
+h i given D is accepted. So, this is called
+the Bayes optimal classifier.
+
+144
+00:24:10,409 --> 00:24:17,080
+Bayes optimal classifier will output that
+class for a classification problem for which
+
+145
+00:24:17,080 --> 00:24:28,899
+if you take summation over the entire hypothesis
+space of probability v j given h i times probability
+
+146
+00:24:28,899 --> 00:24:35,870
+h i given D that will be maximum. So, in order
+to find out the Bayes optimal classifier,
+
+147
+00:24:35,870 --> 00:24:44,629
+you have to for that test instance, you have
+to apply the possible hypothesis on that test
+
+148
+00:24:44,629 --> 00:24:50,809
+instance in order to find out the bayes optimal
+classification. This is the optimal classifier,
+
+149
+00:24:50,809 --> 00:24:58,589
+but this turns out to be interactive. So,
+we can quickly look at the slide here.

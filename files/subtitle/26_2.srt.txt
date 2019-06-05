@@ -1,0 +1,177 @@
+30
+00:05:04,630 --> 00:05:13,750
+w dot w, in fact we may say we want to reduce
+the number of miss classifications that is
+
+31
+00:05:13,750 --> 00:05:21,520
+we want to minimise the miss classify training
+point or minimise the training error.
+
+32
+00:05:21,520 --> 00:05:35,380
+So, we may be tempt at to write this objective
+function as w dot w plus number of training
+
+33
+00:05:35,380 --> 00:05:46,230
+errors and maybe we can use a parameter c
+to control how much importance we give to
+
+34
+00:05:46,230 --> 00:05:53,830
+this part and this part the problem with this
+formulation is that it is no longer are quadratic
+
+35
+00:05:53,900 --> 00:06:00,620
+objective functions, so that we cannot use
+a QP solver to solve this optimisation problem.
+
+36
+00:06:00,860 --> 00:06:08,130
+So, we have to look for an alternative formulation.
+In the alternative formulation that we look
+
+37
+00:06:08,130 --> 00:06:19,169
+at, we do the following. We assume that given
+some points we are able to define a margin
+
+38
+00:06:19,169 --> 00:06:33,401
+and then we try to; let me just redraw this.
+Suppose, this is my decision surface and this
+
+39
+00:06:33,401 --> 00:06:45,310
+is a margin that we are looking for and these
+blue points may be here may be here where
+
+40
+00:06:45,310 --> 00:06:58,520
+as the red point may be here. So, we can see
+that these point we have an error. So, this
+
+41
+00:06:58,520 --> 00:07:06,080
+point the blue points ideally should be on
+this side of the margin. So, we can see that
+
+42
+00:07:06,080 --> 00:07:12,610
+this blue point and this blue point are in
+error, where as this red point should be ideally
+
+43
+00:07:12,610 --> 00:07:18,570
+on this side of the margin.
+So, these red points are in error right corresponding
+
+44
+00:07:18,570 --> 00:07:25,729
+to each of the points which are not correctly
+classified assuming a particular decision
+
+45
+00:07:25,729 --> 00:07:33,080
+surface and the corresponding margin for each
+such point, we can give a penalty and the
+
+46
+00:07:33,080 --> 00:07:40,710
+penalty can be given proportional to the how
+far it is from its correct position that is
+
+47
+00:07:40,710 --> 00:07:46,300
+if we take this blue point what is the minimum
+amount by which I have to move this point,
+
+48
+00:07:46,300 --> 00:07:51,680
+so that it is correctly classified. So, this
+can be obtained by dropping up a perpendicular
+
+49
+00:07:51,680 --> 00:07:57,060
+from this point to this margin.
+Similarly, for this blue point for this red
+
+50
+00:07:57,060 --> 00:08:03,480
+point we have to move in this direction to
+get it correctly classified and for this we
+
+51
+00:08:03,480 --> 00:08:12,229
+have to move it like this. So, what we will
+do is that with every miss classified point
+
+52
+00:08:12,229 --> 00:08:18,970
+we will associate and error or penalty, which
+is the slack variable; suppose this is the
+
+53
+00:08:18,970 --> 00:08:28,410
+point 1. So, we can associate is i 1 corresponding
+to this point z 2, corresponding to this point
+
+54
+00:08:28,410 --> 00:08:32,650
+z 3, corresponding to this point z 4, corresponding
+to this point.
+
+55
+00:08:32,709 --> 00:08:38,709
+So, these are the penalty that we are associating
+with the points which are in the wrong position
+
+56
+00:08:38,709 --> 00:08:45,750
+the z values associated with the other points
+will be equal to 0. Now, we can rewrite our
+
+57
+00:08:45,750 --> 00:08:58,730
+objective function as w dot w plus c times
+or the some of this penalty functions. So,
+
+58
+00:08:58,730 --> 00:09:07,920
+we can write c times sigma z k. So, k equal
+to 1 to m, where m is the number of training
+
+59
+00:09:07,920 --> 00:09:14,040
+examples. So, if you look at the slides here.
+
+60
+00:09:14,800 --> 00:09:26,070
+We can rewrite our formulation as minimising
+w dot w, which corresponds to a making the
+
+61
+00:09:26,070 --> 00:09:34,350
+margin looking at the size of the margin plus
+c times distance of error points to their
+
+62
+00:09:34,350 --> 00:09:41,820
+correct zones and we achieve it by adding
+slack variables z i. So, for each point which
+
+63
+00:09:41,820 --> 00:09:48,960
+is miss classified we find its shorter distance
+to the correct zone and this corresponds to
+
+64
+00:09:48,960 --> 00:09:55,220
+the z for that variable for the other variables
+which are correctly classified by this particular
+
+65
+00:09:55,220 --> 00:09:58,200
+decision surface i values are equal to c.

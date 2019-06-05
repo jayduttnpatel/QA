@@ -1,0 +1,227 @@
+87
+00:10:00,880 --> 00:10:09,070
+So how do we do it in code? First, we segregate
+the two classes. So, first we separate the
+
+88
+00:10:09,070 --> 00:10:14,570
+class 0 and class 1; so class 0 represents
+that the email is not spam, class 1 represents
+
+89
+00:10:14,570 --> 00:10:24,150
+the email is spam. And then we calculate the
+mean along the columns. As we shown in the
+
+90
+00:10:24,150 --> 00:10:30,140
+last slide,we are calculating the means over
+each column. So that is why access equal to
+
+91
+00:10:30,140 --> 00:10:33,780
+0 and divided by 100 to convert the percentage
+into a probability.
+
+92
+00:10:34,710 --> 00:10:43,940
+Then, we would like to find the log likely
+hood ratio instead of using the likely hood,
+
+93
+00:10:43,940 --> 00:10:57,750
+because as you saw over here in this slide.
+You can see that we are doing a sum a product
+
+94
+00:10:57,750 --> 00:11:04,210
+over the likelihoods of the different feature
+dimensions. So, each of these number is a
+
+95
+00:11:04,210 --> 00:11:09,200
+number of which is much less than 1 in most
+cases and you multiplies a small numbers a
+
+96
+00:11:09,200 --> 00:11:13,570
+lot of them together and this may result in
+underflow, you might end up with a very very
+
+97
+00:11:13,570 --> 00:11:19,230
+small number of which is not possible to represent
+a in your computer properly. So, that leads
+
+98
+00:11:19,230 --> 00:11:24,890
+to errors and other problems down the line.
+So, that is why we avoid multiplications.
+
+99
+00:11:24,890 --> 00:11:29,630
+We convert all probabilities into log probabilities,
+that is all likely hood into log likelihoods
+
+100
+00:11:29,630 --> 00:11:39,570
+and sum the likelihoods instead of multiplying
+them. This is just a hack, popular hack in
+
+101
+00:11:39,570 --> 00:11:48,770
+machine learning. We just calculate the likelihoods,
+so log likelihoods and this function does
+
+102
+00:11:48,770 --> 00:11:57,310
+the same. If class 0 it will use the likelihoods
+of class 0. And what it does is, it takes
+
+103
+00:11:57,310 --> 00:12:05,760
+a feature vectors. This feature vector is
+in the form that we discussed before over
+
+104
+00:12:05,760 --> 00:12:11,800
+here. It is a binary vector representing which
+vector is present or not which word is present,
+
+105
+00:12:11,800 --> 00:12:21,660
+which of the key words is present.
+So that is the feature vector and you specify
+
+106
+00:12:21,660 --> 00:12:27,130
+that yeah we want to find the likelihood of
+these feature vector given a particular class.
+
+107
+00:12:27,130 --> 00:12:31,840
+This class is going to take values either
+in 0 or 1. And, what we do if the class is
+
+108
+00:12:31,840 --> 00:12:38,220
+equal to 0, then for each feature index what
+we do we calculate the likelihood of that
+
+109
+00:12:38,220 --> 00:12:44,150
+particular feature given that class. And if
+that feature is absent we calculate one minus
+
+110
+00:12:44,150 --> 00:12:51,540
+likelihood, so the feature is absent.
+So, you must takes some time and carefully
+
+111
+00:12:51,540 --> 00:12:56,120
+look at the code and tries to understand that
+why things are happening the wave it is written
+
+112
+00:12:56,120 --> 00:13:03,410
+there, so that is the good exercise. After
+we have found the likelihood ratios, the log
+
+113
+00:13:03,410 --> 00:13:06,310
+likelihood values what we do.
+
+114
+00:13:06,820 --> 00:13:11,690
+We find the prior probabilities of the two
+different classes. So, how do we calculate
+
+115
+00:13:11,690 --> 00:13:15,150
+the prior probabilities? We just calculate
+by the frequency definition of probability.
+
+116
+00:13:15,530 --> 00:13:22,470
+We calculate how many emails in the data set
+where spam, and how many have non spam, and
+
+117
+00:13:22,470 --> 00:13:31,410
+then we just simply find the ratios. For example
+the say C k is spam and probability of spam
+
+118
+00:13:31,410 --> 00:13:34,690
+mails will be number of spam mail in the data
+set divided by the total number of emails
+
+119
+00:13:34,690 --> 00:13:40,740
+in the data set.
+We also perform log priors; we take the log
+
+120
+00:13:40,740 --> 00:13:45,510
+of the prior probabilities just to make the
+job easy for us because we are just going
+
+121
+00:13:45,510 --> 00:13:47,370
+to add them to the likelihood ratios.
+
+122
+00:13:48,400 --> 00:13:55,150
+And then the log likelihood values rather,
+sorry Next, after doing this we will go ahead
+
+123
+00:13:55,150 --> 00:14:00,970
+and see how to do map inference. Map stands
+for Maximum Aposteriori Probability inference.
+
+124
+00:14:00,970 --> 00:14:07,240
+This just  means that we
+are going to choose the class that has the
+
+125
+00:14:07,240 --> 00:14:16,260
+maximum aposteriori probability given the
+input value. So, we are going to choose the
+
+126
+00:14:16,260 --> 00:14:21,850
+argmax over k's, we going to choose the class
+that has the maximum aposteriori probability
+
+127
+00:14:21,850 --> 00:14:28,670
+given the input vector and so we decompose
+that in using the base rule.
+
+128
+00:14:29,210 --> 00:14:34,610
+As you can see that, this k does not appear
+in the denominator, so this term is going
+
+129
+00:14:34,610 --> 00:14:41,800
+to be the same for all classes C k. This thing
+is actually can be removed, because this is
+
+130
+00:14:41,800 --> 00:14:48,210
+same for all classes C k. So as we are finding
+one which is the class which is looking for
+
+131
+00:14:48,210 --> 00:14:53,250
+class has the maximum value of this term we
+can as well look for that particular class
+
+132
+00:14:53,250 --> 00:14:59,890
+C k that has the maximum value for just for
+this product. And when we use like log likelihoods

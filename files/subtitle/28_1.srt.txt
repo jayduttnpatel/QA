@@ -1,0 +1,163 @@
+1
+00:00:17,820 --> 00:00:24,860
+Good morning, this is the last lecture corresponding
+to SVM. We will very briefly discuss how we
+
+2
+00:00:24,860 --> 00:00:32,960
+get a solution to the SVM problem. We have
+seen how we formulate the SVM as a quadratic
+
+3
+00:00:32,960 --> 00:00:40,050
+optimisation problem and we came up with the
+dual formulation which has certain features
+
+4
+00:00:40,050 --> 00:00:48,739
+which makes it easy to deal with kernel function,
+and we can solve this quadratic optimisation
+
+5
+00:00:48,739 --> 00:00:56,640
+problem with the standard QP solver. But in
+fact, these with particular dual formulation
+
+6
+00:00:56,640 --> 00:01:04,140
+it can be solved very efficiently and I will
+talk about the solution strategy in brief,
+
+7
+00:01:04,140 --> 00:01:09,640
+an efficient solution strategy for dual SVM
+in brief, just to introduce you, but we will
+
+8
+00:01:09,640 --> 00:01:14,960
+not get into very lot of details about this.
+
+9
+00:01:15,399 --> 00:01:22,720
+Now, the algorithm which can be used rather
+an algorithm which can be used for solving
+
+10
+00:01:22,720 --> 00:01:32,070
+the dual problem is the SMO algorithm which
+stands for sequential optimisation.
+
+11
+00:01:32,070 --> 00:01:45,530
+In sequential optimisation what we do is that,
+we have a number of variables and we keep
+
+12
+00:01:45,530 --> 00:01:54,560
+the rest of the variables fixed and we only
+optimise one or two of the variables with
+
+13
+00:01:54,560 --> 00:01:59,830
+respect to the objective function keeping
+the rest of the variables fixed. Before we
+
+14
+00:01:59,830 --> 00:02:16,760
+talk about the sequential SMO algorithm, we
+will look at coordinate ascent. In coordinate
+
+15
+00:02:16,760 --> 00:02:23,739
+ascent what we do is that this is the general
+form of solving an optimisation problem. Suppose,
+
+16
+00:02:23,739 --> 00:02:29,440
+the optimisation problem is given by general
+optimisation problem, you have to maximise
+
+17
+00:02:29,440 --> 00:02:38,940
+the parameters alpha of a function and suppose
+these are your variables; alpha 1, alpha 2,
+
+18
+00:02:38,940 --> 00:02:47,610
+alpha n and you have to find the maximum value
+of this function with respect to alpha.
+
+19
+00:02:47,610 --> 00:03:06,540
+Now, in coordinate ascent what we do is that
+we loop until convergence for i equal to 1
+
+20
+00:03:06,540 --> 00:03:18,470
+to n. What we do is that we take alpha, we
+keep alpha 1 to alpha 1 minus 1 alpha i plus
+
+21
+00:03:18,470 --> 00:03:26,250
+1 to alpha n that is we keep rest of the parameters
+fixed and find out that value of alpha i for
+
+22
+00:03:26,250 --> 00:03:37,510
+which this value is the highest. So, we can
+write alpha i equal to that value of estimate
+
+23
+00:03:37,510 --> 00:03:52,010
+of alpha i where this w you know. So, where
+we keep the rest of the alpha i is fixed and
+
+24
+00:03:52,010 --> 00:04:01,690
+we only change alpha i and then we end.
+So, we can see, we can decide sequence of
+
+25
+00:04:01,690 --> 00:04:07,620
+the alpha. Let us say, we will do first alpha
+1, first optimise alpha 1 keeping alpha 2
+
+26
+00:04:07,620 --> 00:04:13,780
+alpha n fixed, we have find an initial value
+of alpha 1, alpha 2, alpha n which satisfies
+
+27
+00:04:13,780 --> 00:04:21,250
+the constraint then we will keep the remaining
+alphas fixed and only change one alpha. So,
+
+28
+00:04:21,250 --> 00:04:28,350
+that the value of this expression is optimised
+while satisfying all the constraints right
+
+29
+00:04:28,350 --> 00:04:36,250
+we have some constraints also. So, these constraints
+must be satisfied and on satisfying this constraint,
+
+30
+00:04:36,250 --> 00:04:41,280
+we find that value of alpha i for which this
+is the highest then i will keep this alpha
+
+31
+00:04:41,280 --> 00:04:46,870
+i fixed and the rest of them fixed and take
+some alpha i plus 1 and we will change this.
+
+32
+00:04:46,870 --> 00:04:52,590
+So, sequentially we will do the optimisation
+with respect to this parameters alpha. So,
+
+33
+00:04:52,590 --> 00:05:01,930
+this is the coordinate ascent algorithm of
+course, the solution that we get may depend

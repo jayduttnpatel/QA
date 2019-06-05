@@ -1,0 +1,163 @@
+1
+00:00:17,270 --> 00:00:24,060
+Today in this module, we will study about
+Support Vector Machine and also before that
+
+2
+00:00:24,060 --> 00:00:31,180
+we will have a brief lecture on Logistic Regression.
+So, this is part A on Logistic Regression.
+
+3
+00:00:31,570 --> 00:00:40,010
+So, in previous class in the second week,
+we have talked about linear regression which
+
+4
+00:00:40,010 --> 00:00:43,010
+is used for our regression problem.
+
+5
+00:00:43,610 --> 00:00:49,730
+But, if you have a classification problem
+you cannot use linear regression. We want
+
+6
+00:00:49,730 --> 00:00:55,130
+to see what is a simplest way in which we
+can handle our classification problem? In
+
+7
+00:00:55,130 --> 00:01:06,100
+a linear regression, we had our hypothesis
+function h (x) as sigma beta i x i, i equal
+
+8
+00:01:06,100 --> 00:01:14,441
+to 0 to n when n is the number of a predictor,
+number of variables. So, we have h (x) i equal
+
+9
+00:01:14,441 --> 00:01:22,610
+to beta 0 plus beta 1 x 1 plus beta 2 x 2
+plus beta n x n and learning involves learning
+
+10
+00:01:22,610 --> 00:01:29,560
+the values of this beta i in order to optimize
+a certain function, for example, we try to
+
+11
+00:01:29,560 --> 00:01:36,910
+minimize the sum of square errors.
+Now, suppose we have a classification problem
+
+12
+00:01:36,910 --> 00:01:47,390
+that is we have different training points
+and they are positive and negative and we
+
+13
+00:01:47,390 --> 00:01:55,080
+want to have a classification of them, we
+want to say when they are a positive and when
+
+14
+00:01:55,080 --> 00:01:59,990
+they are negative.
+Now, this function will give a real value
+
+15
+00:01:59,990 --> 00:02:06,950
+and it is not appropriate for classification,
+but what we can do is that based on this linear
+
+16
+00:02:06,950 --> 00:02:14,330
+function, we can apply another function on
+this linear function so that we can use the
+
+17
+00:02:14,330 --> 00:02:25,330
+result for classification. So, one of the
+ways we can do it is, in logistic regression
+
+18
+00:02:25,330 --> 00:02:33,790
+we use the logistic function or the sigmoid
+function for this task. Now, first of all
+
+19
+00:02:33,790 --> 00:02:39,340
+let us look at what is the logistic function
+or the sigmoid function it is given by this
+
+20
+00:02:39,340 --> 00:02:50,370
+formula g (z) equal to 1 by 1 plus e to the
+power minus z and this formula this function
+
+21
+00:02:50,370 --> 00:03:01,350
+has the following profile.
+Suppose this is 0, this function has this
+
+22
+00:03:01,350 --> 00:03:13,240
+type of shape, roughly this as this type of
+shape. The value of this function varies between
+
+23
+00:03:13,240 --> 00:03:25,260
+0 and 1 at z equal to 0.5 the value is 0;
+as z tends to infinity, the values tends to
+
+24
+00:03:25,260 --> 00:03:35,960
+1; as z tends to minus infinity, the value
+tends to 0 right. So, this function gives
+
+25
+00:03:35,960 --> 00:03:42,400
+the value between 0 and 1 and how we can use
+it for classification, we can say that we
+
+26
+00:03:42,400 --> 00:03:49,540
+have a function if the output is greater than
+0.5 it is positive, if it is less than 0.5
+
+27
+00:03:49,540 --> 00:03:57,380
+it belongs to the negative class.
+So, just like in regression we use this function
+
+28
+00:03:57,380 --> 00:04:05,510
+for classification using logistic regression
+we will use this function h beta x is; we
+
+29
+00:04:05,510 --> 00:04:14,420
+will apply this function g this function is
+also called the sigmoid function, we can refer
+
+30
+00:04:14,420 --> 00:04:26,750
+to as sigma z. So, we will apply this function
+g or sigma to sigma beta i x i. So, sigma
+
+31
+00:04:26,750 --> 00:04:36,770
+beta i x i can also be written as beta transpose
+x more compactly using matrix notation, we
+
+32
+00:04:36,770 --> 00:04:50,400
+can write h beta x for classification as equal
+to g beta t x which is equal to 1 by 1 plus
+
+33
+00:04:50,400 --> 00:05:01,509
+e to the power minus beta t x. So, we can
+use a linear function of beta, pass it through

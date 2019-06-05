@@ -1,0 +1,237 @@
+46
+00:05:01,870 --> 00:05:08,290
+with time. So, the K-nearest neighbor algorithm
+becomes highly relevant in those scenarios.
+
+47
+00:05:08,290 --> 00:05:15,681
+The next part of the session is about principal
+component analysis. So, the principal component
+
+48
+00:05:15,681 --> 00:05:21,130
+analysis algorithm is a highly popular algorithm
+used for dimensionality reduction. Now, dimensionality
+
+49
+00:05:21,130 --> 00:05:27,750
+reduction means reducing the number of variables
+that we use for representing our data. Now,
+
+50
+00:05:27,750 --> 00:05:32,150
+why does it become relevant? In some cases,
+it becomes highly relevant we have to deal
+
+51
+00:05:32,150 --> 00:05:37,680
+with high dimensional inputs spaces. So, our
+phenomenon called curves of dimensionality
+
+52
+00:05:37,680 --> 00:05:40,910
+happens in such scenario.
+So, curves of dimensionality actually refers
+
+53
+00:05:40,910 --> 00:05:48,040
+to a set of problems that crop up when we
+have too many dimensions, and this problem
+
+54
+00:05:48,040 --> 00:05:54,590
+crop up just because the volume of the features
+space increases at such a high rate as the
+
+55
+00:05:54,590 --> 00:05:59,320
+number of feature dimension increases that
+the amount of data that is available to us
+
+56
+00:05:59,320 --> 00:06:06,800
+becomes spares in that. In such high dimensional
+space and the amount of training examples
+
+57
+00:06:06,800 --> 00:06:13,090
+that we would need for getting statistically
+sound results from a machine learning algorithm.
+
+58
+00:06:13,090 --> 00:06:19,460
+In such high dimensional vector spaces increases
+exponentially with the number of dimension
+
+59
+00:06:19,460 --> 00:06:25,260
+of the input space, so that is why we would
+like to reduce the dimensionality of the features
+
+60
+00:06:25,260 --> 00:06:30,710
+space without using much information, and
+then principal component analysis algorithm
+
+61
+00:06:30,710 --> 00:06:34,830
+is one of those algorithms which become highly
+relevant in this particular scenario.
+
+62
+00:06:34,830 --> 00:06:47,270
+So, the principal component analysis algorithm
+it looks for uncorrelated features dimensions
+
+63
+00:06:47,270 --> 00:06:52,921
+all right. Sometimes what happens is the observation
+we make the variables that we observe are
+
+64
+00:06:52,921 --> 00:06:57,250
+highly correlated among themselves, for example,
+in this diagram you can see that the x and
+
+65
+00:06:57,250 --> 00:07:05,070
+y axis, which the data observe data originally
+has or highly correlated right and the principal
+
+66
+00:07:05,070 --> 00:07:11,100
+component analysis instead chooses a pair
+of different directions which are mutually
+
+67
+00:07:11,100 --> 00:07:18,660
+orthogonal to each other. And if we represent
+the data along like just one of these principal
+
+68
+00:07:18,660 --> 00:07:24,001
+components were the most of the variance of
+the data is preserved and the principal component
+
+69
+00:07:24,001 --> 00:07:27,321
+analysis algorithm is looks for uncorrelated
+feature dimension.
+
+70
+00:07:27,720 --> 00:07:33,210
+So, the amount of redundancy that is present
+within the correlated variables, it is removed
+
+71
+00:07:33,210 --> 00:07:38,420
+when we transform the data into the space
+of the principal components and the principal
+
+72
+00:07:38,420 --> 00:07:45,350
+component happen to be the Eigen vectors of
+the covariance matrix of the data, and let
+
+73
+00:07:45,350 --> 00:07:52,760
+us study the principal component analysis
+algorithm and how it works and how we can
+
+74
+00:07:52,760 --> 00:07:59,890
+use it to reduce the dimensionality of images
+of faces and use the reduce dimensional face
+
+75
+00:07:59,890 --> 00:08:01,970
+vector for face recognition.
+
+76
+00:08:07,700 --> 00:08:13,430
+The general work flow of any face recognition
+algorithm goes as follows. First we have a
+
+77
+00:08:13,430 --> 00:08:23,250
+whole data base of known faces and once a
+new face is presented we go and make a query
+
+78
+00:08:23,250 --> 00:08:30,340
+to the database. The database returns a set
+of faces which look the closest to the face
+
+79
+00:08:30,340 --> 00:08:34,450
+in the query and all of these faces are know
+all right. So, the database has known faces.
+
+80
+00:08:34,450 --> 00:08:42,419
+So, it outputs the set of faces which are
+already known to us and are the closest to
+
+81
+00:08:42,419 --> 00:08:49,640
+the one that has been sent in the query and
+then we go ahead and chose the face that is
+
+82
+00:08:49,640 --> 00:08:54,260
+the most similar to the face in the query
+as our output. So, this is the work flow.
+
+83
+00:08:54,520 --> 00:09:02,410
+Now, how does principal component analysis
+work and in this particular you know scenario
+
+84
+00:09:02,410 --> 00:09:09,090
+we will study in this section of the tutorial.
+The data set that we will be concerned with
+
+85
+00:09:09,090 --> 00:09:17,570
+is the Olivetti face data set of Scikit learn.
+These are faces grayscale images of faces
+
+86
+00:09:17,570 --> 00:09:24,220
+of forty people and each of these forty people
+have ten faces altogether. We have 400 faces
+
+87
+00:09:24,220 --> 00:09:28,920
+and these faces have been cropped to a size
+of 64 cross 64 pixels.
+
+88
+00:09:28,920 --> 00:09:36,650
+And next we go ahead and make our train and
+test split 75 percent training data, 25 percent
+
+89
+00:09:36,650 --> 00:09:43,760
+test data and we use the train test split
+function of sklearn dot cross validation for
+
+90
+00:09:44,000 --> 00:09:46,140
+doing this exercise.
+
+91
+00:09:47,360 --> 00:09:53,130
+Then we go ahead and find the eigen-faces.
+So, what are eigen-faces? Eigen-faces are
+
+92
+00:09:53,130 --> 00:09:57,490
+the principal component that we were talking
+about the eigen-faces. They are the eigen
+
+93
+00:09:57,490 --> 00:10:05,300
+vectors of the covariance matrix of the data
+set of faces. So, these eigen-faces are a

@@ -1,0 +1,183 @@
+161
+00:20:02,080 --> 00:20:13,340
+you do is, you take this matrix and do eigen
+value decomposition and this covariance matrix
+
+162
+00:20:13,340 --> 00:20:21,790
+is usually called R. So, you make the, take
+the eigen value decomposition of R. So, what
+
+163
+00:20:21,790 --> 00:20:29,779
+you do is, you represent R as a product of
+3 matrices; and R is symmetric matrix. So,
+
+164
+00:20:29,779 --> 00:20:34,649
+the decomposition, eigen value decomposition
+will produce, should have been written as
+
+165
+00:20:34,649 --> 00:20:45,510
+PDP inverse, like and for a symmetric matrix
+this particular matrix that P will be.
+
+166
+00:20:45,510 --> 00:20:53,440
+So, I will come to it, what it is. So, it
+is going to be an orthogonal matrix, for which,
+
+167
+00:20:53,440 --> 00:21:00,139
+the inverse is equal to the transpose. And
+now, let me tell about what these matrices
+
+168
+00:21:00,139 --> 00:21:08,929
+will be. So, the matrix P will be another
+D cross D matrix, each column of which will
+
+169
+00:21:08,929 --> 00:21:17,940
+be an eigen vector of x. So, eigen vector
+1, eigen vector 2; this way, till eigen vector
+
+170
+00:21:17,940 --> 00:21:35,940
+d; and D this matrix will be, let me drop
+the es in front; so, v 1, v 2, till v D. So,
+
+171
+00:21:35,940 --> 00:21:41,519
+the eigen vectors and this matrix capital
+D will have the corresponding eigen values.
+
+172
+00:21:41,519 --> 00:21:48,529
+So, I will write them as lambdas along the
+diagonal, in the corresponding positions.
+
+173
+00:21:48,529 --> 00:21:54,409
+So this is a diagonal matrix, with the eigen
+values and in the hands-on tutorial class
+
+174
+00:21:54,409 --> 00:22:01,679
+of this course, I had given a nice presentation
+and demonstration of, animation showing this
+
+175
+00:22:01,679 --> 00:22:07,899
+procedure. So, you may refer to that lecture,
+if you want a better description of this procedure.
+
+176
+00:22:07,899 --> 00:22:14,950
+Now, if we can arrange these numbers, lambda
+1 through lambda D in the decreasing order
+
+177
+00:22:14,950 --> 00:22:20,340
+of their magnitudes and their corresponding
+locations of their eigen vectors are also
+
+178
+00:22:20,340 --> 00:22:29,440
+properly shuffled, so that, the first K eigen
+vectors correspond to the top K eigen values.
+
+179
+00:22:29,440 --> 00:22:35,610
+So, I should write this way; top K eigen values,
+according to the magnitude of the eigen values;
+
+180
+00:22:35,610 --> 00:22:45,769
+then, what we can do is, we can have an approximation
+of R, I will write it as R tilde, which will
+
+181
+00:22:45,769 --> 00:22:49,369
+be P tilde, I would write.
+
+182
+00:22:49,580 --> 00:23:03,230
+So this size will be now, D cross K; then
+again, D tilde, which is a K cross K matrix;
+
+183
+00:23:03,230 --> 00:23:11,940
+and then, P tilde transpose, which is a K
+cross D matrix. So, what we did, we just shows
+
+184
+00:23:11,940 --> 00:23:17,090
+the eigen vectors corresponding to the top
+K eigen values, according to their magnitudes
+
+185
+00:23:17,090 --> 00:23:25,389
+and then, we approximated R as a product of
+these truncated matrices.
+
+186
+00:23:25,389 --> 00:23:31,080
+Now, once this has been done. So, the number,
+the higher the number of, higher the value
+
+187
+00:23:31,080 --> 00:23:40,250
+of capital K chosen, the lesser is the error
+incurred in this approximation procedure.
+
+188
+00:23:40,250 --> 00:23:47,380
+And it has been shown; it can be proven that,
+if you follow this procedure in reducing the
+
+189
+00:23:47,380 --> 00:23:55,840
+dimensionality. So, say, you have a limitation
+of 10 features for describing your input.
+
+190
+00:23:55,840 --> 00:24:04,690
+So this number of features is fixed. Now,
+if you try to find out different ways of combining
+
+191
+00:24:04,690 --> 00:24:13,960
+the inputs, input features and squeezing the
+information of the input features, into 10
+
+192
+00:24:13,960 --> 00:24:23,220
+feature vectors. So then, the most, the method
+that preserves the maximum amount of information,
+
+193
+00:24:23,220 --> 00:24:30,059
+which causes the least amount of information
+loss, in other words, is this method of principle
+
+194
+00:24:30,059 --> 00:24:35,059
+components analysis. So this is the best method
+of doing the dimensionality reduction, into
+
+195
+00:24:35,059 --> 00:24:40,049
+a fixed number of features.
+Now, once this has been done, what we can
+
+196
+00:24:40,049 --> 00:24:48,230
+do is, we can translate the feature vectors
+of the inputs, say, I will write. So, now,
+
+197
+00:24:48,230 --> 00:25:03,289
+what you can do is, translate the, or transform,
+transform. After this, transform the input

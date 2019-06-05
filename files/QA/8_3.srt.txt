@@ -1,0 +1,41 @@
+Q. In decision tree if all examples of the node belong to the same class then it is known as which type of examples?
+A. Non Homogeneous
+B. Homogeneous
+C. Same
+D. None of the above
+(B)
+
+Q. In decision tree if all examples of the node belong to the same class then which quantity will be zero?
+A. Learning rate
+B. Distribution
+C. Entropy
+D. None of the above
+(C)
+
+Q. In decision tree if half examples of the node belong to one class and half example belong to another class then which quantity will be highest?
+A. Learning rate
+B. Distribution
+C. Entropy
+D. None of the above
+(C)
+
+Q. Which type of node in the decision tree has the lowest entropy?
+A. Leaf
+B. Root
+C. Parent
+D. None of the above
+(A)
+
+Q. Which criteria is used to select the most useful attribute in decision tree?
+A. Depth
+B. Data
+C. Accuracy
+D. Information gain
+(D)
+
+Q. What is the measure of purity?
+A. Information gain
+B. learning rate
+C. Entropy
+D. bais
+(C)

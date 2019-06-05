@@ -1,0 +1,213 @@
+1
+00:00:19,040 --> 00:00:24,980
+Hello friends, Anirban here. Welcome to the
+hands on python coding session of the 5th
+
+2
+00:00:24,980 --> 00:00:31,080
+week of this course. Today we are going to
+learn how to work with support vector machines
+
+3
+00:00:31,140 --> 00:00:38,530
+in Scikit Learn. So, we will take up support
+vector classification. First, see how different
+
+4
+00:00:38,530 --> 00:00:44,390
+kernels affect, affect the performance of
+the support machine classifier and then we
+
+5
+00:00:44,390 --> 00:00:50,449
+will have a demo, a quick demo, a quick glance
+at support vector regression, because support
+
+6
+00:00:50,449 --> 00:00:53,420
+vector regression is not a part of this course
+still like as we are doing classification.
+
+7
+00:00:53,420 --> 00:00:57,949
+We are also going to do regression.
+So, the datasets that we are going to use
+
+8
+00:00:57,949 --> 00:01:03,360
+today are the Iris dataset, which we have
+used almost in all of the coding sessions
+
+9
+00:01:03,360 --> 00:01:09,920
+and the Boston house price prediction dataset,
+which we will be using in the regression part
+
+10
+00:01:09,920 --> 00:01:16,240
+and will be predicting the price of houses
+from certain features. And this session is
+
+11
+00:01:16,240 --> 00:01:20,500
+going to be a bit different from the previous
+coding sessions because this time I am going
+
+12
+00:01:20,500 --> 00:01:26,030
+to execute the code directly from the IPython
+notebook cell by cell and you will be like
+
+13
+00:01:26,030 --> 00:01:31,880
+able to, like follow the flow of the code
+better. So, let us see how it goes.
+
+14
+00:01:31,880 --> 00:01:39,370
+So, the first thing that I want to tell you
+people is a quick recap of what support vector
+
+15
+00:01:39,370 --> 00:01:46,960
+machine really is. So, support vector machine
+is a linear classifier. So, the entire idea
+
+16
+00:01:46,960 --> 00:01:58,770
+is about having, about like finding the linear
+decision boundary, which is at the maximum
+
+17
+00:01:58,770 --> 00:02:06,130
+margin from the training point. So, what is
+the margin? The margin of a, the margin is
+
+18
+00:02:06,130 --> 00:02:11,510
+defined as the perpendicular distance of a
+point from the decision boundary.
+
+19
+00:02:12,000 --> 00:02:18,860
+So, the support vector machine classifier
+tries to maximize the minimum margin of the
+
+20
+00:02:18,860 --> 00:02:24,099
+training points. It tries to like fit our
+decision boundary, which tries to generalize
+
+21
+00:02:24,099 --> 00:02:34,340
+as much as possible and the amount of trade
+off that we want to make for the training
+
+22
+00:02:34,340 --> 00:02:42,230
+set accuracy and you know margin or the amount
+of test set generalization is controlled by
+
+23
+00:02:42,230 --> 00:02:51,269
+the regularization parameter. All of these
+things have already been taught in the theory
+
+24
+00:02:51,269 --> 00:02:57,480
+and the tutorial sessions and today we are
+going to see how they can be implemented in
+
+25
+00:02:57,480 --> 00:03:03,499
+Scikit Learn.
+So, first we do all the imports. The modules
+
+26
+00:03:03,499 --> 00:03:08,579
+which we will be using are like NumPy, and
+then we will be using the datasets of Scikit
+
+27
+00:03:08,579 --> 00:03:13,700
+Learn and the SVM module. And also, we are
+going to use the train test split function
+
+28
+00:03:13,700 --> 00:03:19,959
+from Scikit Learn dot cross validation and
+then, we import matplotlib and say, that like
+
+29
+00:03:19,959 --> 00:03:27,579
+we want to use inline plots. So,the first
+code, the first block of code. So, all the
+
+30
+00:03:27,579 --> 00:03:29,539
+imports are done now, cool.
+
+31
+00:03:29,749 --> 00:03:36,670
+So, now we first load the dataset. So, the
+dataset that we are going to use is the Iris
+
+32
+00:03:36,670 --> 00:03:41,659
+dataset and the dataset dot load Iris. This
+function directly loads the dataset into the
+
+33
+00:03:41,659 --> 00:03:51,459
+Iris variable and next, we load the features,
+the input features into the variable x and
+
+34
+00:03:51,459 --> 00:04:01,549
+the input labels into the variable y, and
+then we split the entire dataset into training
+
+35
+00:04:01,549 --> 00:04:06,930
+and test sets. And we use the trained test
+split function from Scikit Learn cross validation
+
+36
+00:04:06,930 --> 00:04:14,670
+and we say that the test size will be just
+25 percent of the total example size, cool.
+
+37
+00:04:14,940 --> 00:04:23,520
+So, we go ahead and execute this done.
+Now, we are going to, you know, check the
+
+38
+00:04:23,530 --> 00:04:30,050
+performance of different kinds of kernels
+on, at the problem of classification of Iris
+
+39
+00:04:30,050 --> 00:04:38,880
+So, we define a function,
+which we name, like evaluate on the test data.
+
+40
+00:04:39,080 --> 00:04:44,040
+So, it is going to take a module and it is
+going to evaluate it on the test data. So,
+
+41
+00:04:44,700 --> 00:04:51,510
+first we are going to find the predictions,
+alright, the predicted values from the model
+
+42
+00:04:51,510 --> 00:04:56,851
+as for the inputs given.
+So, all the test inputs, they are to be, they
+
+43
+00:04:56,851 --> 00:05:02,540
+are going to be supplied through the variable
+X test. So, X test you can see, that it has

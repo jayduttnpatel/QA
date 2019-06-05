@@ -1,0 +1,148 @@
+1
+00:00:17,830 --> 00:00:24,650
+Good morning. Today, we will talk about part
+c of the module on Bayesian learning. Today’s
+
+2
+00:00:24,650 --> 00:00:30,710
+topic is Naive Bayes. In the last class, we
+looked at the Bayes theorem.
+
+3
+00:00:31,520 --> 00:00:38,910
+To recapitulate, it says the posterior probability
+of a hypothesis given the data is given by
+
+4
+00:00:38,910 --> 00:00:46,800
+probability of D given h times prior probability
+of the hypothesis divided by the likelihood
+
+5
+00:00:46,800 --> 00:00:55,780
+of the data. So, if you are trying to find
+out, let us apply Bayes theorem to classification.
+
+6
+00:00:56,519 --> 00:01:04,350
+You want to find out the classification Y
+given the input X. So, if you apply Bayes
+
+7
+00:01:04,350 --> 00:01:11,390
+theorem, probability Y by X is proportional
+to – as we have seen that, for different
+
+8
+00:01:11,390 --> 00:01:17,000
+hypothesis, the likelihood of the data is
+identical. So, we need not consider it. So,
+
+9
+00:01:17,000 --> 00:01:23,420
+we can consider the probability Y by Y given
+X. So, it is proportional to probability of
+
+10
+00:01:23,420 --> 00:01:41,310
+X given Y times probability of Y; that is
+now X is the input instance and it can be
+
+11
+00:01:41,310 --> 00:01:47,270
+a vector of features.
+So, we can write it as probability X 1, X
+
+12
+00:01:47,270 --> 00:02:01,690
+2, X small n; if small n is the number of
+features by Y times P Y. Now, this probability
+
+13
+00:02:01,690 --> 00:02:11,800
+X 1, X 2, X n given Y is a joint probability.
+And, joint probability is difficult to learn
+
+14
+00:02:11,800 --> 00:02:18,069
+and represent, because if there are n features;
+even if the features are Boolean, there are
+
+15
+00:02:18,069 --> 00:02:27,810
+2 to the power n possible combinations of
+the features. And, you have to store the probability
+
+16
+00:02:27,810 --> 00:02:34,130
+values corresponding to all of them. And,
+this is an intractable problem.
+
+17
+00:02:34,450 --> 00:02:46,050
+Now, in Naive Bayes, which we will talk about
+today, we make a simplifying assumption. The
+
+18
+00:02:46,050 --> 00:02:56,790
+assumption that we make is that, individual
+X i's are independent given Y. In general,
+
+19
+00:02:56,790 --> 00:03:10,849
+we can write this part as probability X 1
+given Y times probability X 2 given X 1 Y
+
+20
+00:03:10,849 --> 00:03:23,150
+times probability X n given X 1, X 2, X n
+minus 1 Y times probability of Y.
+
+21
+00:03:23,150 --> 00:03:39,319
+Now, in the Naive Bayes assumption, we say
+that, probability of X I given X j Y is equal
+
+22
+00:03:39,319 --> 00:03:48,340
+to probability X i given Y; or X i and X j
+are independent given Y. And, based on that
+
+23
+00:03:48,340 --> 00:03:56,940
+assumption, we can rewrite this as probability
+of X 1 given Y times probability X 2 given
+
+24
+00:03:56,940 --> 00:04:13,140
+Y times probability of X n given Y times probability
+of Y. This is based on the Naive Bayes assumption.
+
+25
+00:04:13,140 --> 00:04:25,410
+So, we are assuming conditional independence
+among the individual attributes X 1, X 2,
+
+26
+00:04:25,410 --> 00:04:36,280
+X n. And based on this, we can do the classification.
+So, we are assuming all the input features
+
+27
+00:04:36,280 --> 00:04:43,040
+are conditionally independent; and this can
+be computed as probability X 1 given Y, X
+
+28
+00:04:43,040 --> 00:04:46,340
+2 given Y, X n given Y, etcetera.
+
+29
+00:04:47,629 --> 00:04:56,389
+So, if you look at the slide, from Bayes rule,
+if the probability of Y taking a particular
+
+30
+00:04:56,389 --> 00:05:04,460
+value y k given the value of the input features
+X 1, X 2, X n is given by probability Y equal

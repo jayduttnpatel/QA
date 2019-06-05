@@ -1,0 +1,193 @@
+170
+00:30:07,649 --> 00:30:13,799
+the joint probability distributions. And also
+sometimes reach to the use of much smaller
+
+171
+00:30:13,799 --> 00:30:21,640
+number of parameters and hence chances an
+over fitting are also reduced. So, Bayes nets
+
+172
+00:30:21,640 --> 00:30:28,740
+are extremely helpful in making full models
+of variables which are highly interlinked
+
+173
+00:30:28,740 --> 00:30:33,400
+among each other, and it also gives a very
+systematic and methodical way of modelling.
+
+174
+00:30:33,929 --> 00:30:38,919
+And there could be Bayes nets could be built
+automatically in a data driven fashion or
+
+175
+00:30:38,919 --> 00:30:45,320
+it could be hand crafted as well hence while
+it used in the industry in the machinery learning
+
+176
+00:30:45,320 --> 00:30:49,809
+community.
+So, from Bayesian networks, so what kind of
+
+177
+00:30:49,809 --> 00:30:55,830
+questions can come from Bayesian networks?
+The first question that can come is given
+
+178
+00:30:55,830 --> 00:31:00,880
+certain so this Bayes net will be given the
+prior distributions will be given, the conditionals
+
+179
+00:31:00,880 --> 00:31:08,909
+will be given. And you will be asked to calculate
+the joint distributions of these random variables.
+
+180
+00:31:08,909 --> 00:31:17,149
+So, say the probability of A, so let us write
+down some values. Say probability of A equal
+
+181
+00:31:17,149 --> 00:31:21,689
+to 0 is 0.2, probability of A equal to 1 is
+0.8.
+
+182
+00:31:22,019 --> 00:31:32,590
+Probability of B equal to 0 is 0.6; probability
+of B equal to 1 is 0.4. And this C B D is
+
+183
+00:31:32,590 --> 00:31:38,259
+also given, so these will be there will be
+this will be A pictables, so I will tell you.
+
+184
+00:31:38,259 --> 00:31:43,769
+So, say this is like A and B and these are
+the different values of C equal to 0, and
+
+185
+00:31:43,769 --> 00:31:48,570
+C equal to 1. And let us and this A and B
+values. So, I am writing here is probability
+
+186
+00:31:48,570 --> 00:31:58,779
+of C given A and B. So, this quantity is going
+to be for 0 A equal to 0 B equal to 0. Say
+
+187
+00:31:58,779 --> 00:32:07,820
+probability of C equal to 0 is 0.2, this is
+0.8. Say for 0 1 its 0.6, 0.4. Say for 1 0,
+
+188
+00:32:07,820 --> 00:32:19,640
+it is 0.3, 0.7. Say for 1 1, it is 0.5, 0.5.
+And also probability of D given C this will
+
+189
+00:32:19,640 --> 00:32:27,659
+be given in the exam in the question. So,
+D equal to 0, D equal to 1; and C equal to
+
+190
+00:32:27,659 --> 00:32:34,840
+0 C equal to 1. So probability of D equal
+to 0 given C equal to 0 say this is 0.1 0.9,
+
+191
+00:32:34,840 --> 00:32:42,020
+and this is 0.9, 0.1. Let us have this kind
+of distributions. So, you have been asked
+
+192
+00:32:42,020 --> 00:32:47,180
+to calculate or given this model of probability.
+
+193
+00:32:47,929 --> 00:32:59,159
+Suppose you have been ask to calculate probability
+of A equal to 0, B equal to 1, C equal to
+
+194
+00:32:59,159 --> 00:33:04,739
+0, D equal to 1, you will be give given this
+kind of question. So, what will this be, this
+
+195
+00:33:04,739 --> 00:33:13,880
+is going to be probability, so as I said before
+so I will tell you how to solve this problem
+
+196
+00:33:13,880 --> 00:33:22,289
+in a very elegant and in a nice way. So, you
+draw the decision tree the sorry the Bayes
+
+197
+00:33:22,289 --> 00:33:38,109
+net pack again draw the Bayes net again. You
+draw the nodes
+
+198
+00:33:38,109 --> 00:33:43,690
+now and it is always good to use different
+colours while solving this question. Now the
+
+199
+00:33:43,690 --> 00:33:49,130
+questions says that the values of the variables
+if like this so A is going to take A value
+
+200
+00:33:49,130 --> 00:33:54,950
+of 0, B is going to take 1, C is going to
+be 0, D is going to be 1, and so you write
+
+201
+00:33:54,950 --> 00:33:59,790
+these values and now you look up the tables
+and find out.
+
+202
+00:34:00,149 --> 00:34:08,950
+So, probability of A equal to 0 is 0.2, so
+you write 0.2 here, so this is P of A. P of
+
+203
+00:34:08,950 --> 00:34:27,780
+B, B is going to be 1, so it is 0.4. Probability
+of C given A equal to 0, B equal to 1, probability
+
+204
+00:34:27,780 --> 00:34:33,320
+of C equal to 0, given A equal to 0 B equal
+to 1, so this entry is what I what are we
+
+205
+00:34:33,320 --> 00:34:38,429
+are looking for. So, C equal to 0 given A
+equal to 0 given B equal to 1, so this is
+
+206
+00:34:38,429 --> 00:34:48,409
+going to be 0.6. Now D equal to 1, given C
+equal to 0; D equal to 1, given C equal to
+
+207
+00:34:48,409 --> 00:34:58,120
+0, this quantity, so this is going to be 0.9.
+Now you multiply all of them together. So,
+
+208
+00:34:58,120 --> 00:35:03,140
+all we are going to do is to do this product,
+this product and the values have been noted

@@ -1,0 +1,6 @@
+Q. Specifying the form of the function is known as which type of bias?
+A. restriction bias
+B. preference bias
+C. hypothesis bias
+D. feature bias
+(A)

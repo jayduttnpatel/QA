@@ -1,0 +1,166 @@
+140
+00:15:03,649 --> 00:15:05,769
+this part of the exercise in code.
+
+141
+00:15:06,460 --> 00:15:15,350
+So, the randomize PCA algorithm of Scikit
+learn it does efficient incrementation of
+
+142
+00:15:15,350 --> 00:15:21,490
+the components as algorithms. So, we said
+we first specify that number of components
+
+143
+00:15:21,490 --> 00:15:27,740
+will be 150 and then we initialize PCA model
+and we say that the number of component is
+
+144
+00:15:27,740 --> 00:15:35,170
+the equal to 150 and we fit on the remaining
+data, this all the operation that we saw.
+
+145
+00:15:35,170 --> 00:15:43,760
+Secondly, showed before the entire mean normalization
+the SVD and then we tangiest try and visualize
+
+146
+00:15:43,760 --> 00:15:47,200
+the eigen faces.
+So, eigen faces are calculated eigen vectors
+
+147
+00:15:47,200 --> 00:15:51,250
+are calculated they are store within the model.
+We can retrieve them as pca dot component
+
+148
+00:15:51,250 --> 00:15:55,170
+s underscore all right and then we reshape
+them to height width. So, that we can visualize
+
+149
+00:15:55,170 --> 00:16:01,720
+them well and we will show them in a minute.
+So, once we have identified the principal
+
+150
+00:16:01,720 --> 00:16:06,650
+components we go ahead and do our dimensionality
+reduction, we just preserve the parts that
+
+151
+00:16:06,650 --> 00:16:10,230
+are necessary to us just a first cake principal
+components.
+
+152
+00:16:10,770 --> 00:16:17,140
+And as you can see the dimensionality is now
+4096 cross k and we have changed the names
+
+153
+00:16:17,140 --> 00:16:24,920
+to the previous names followed by 1 just to
+avoid ambiguity. So, now, we do the dimensionality
+
+154
+00:16:24,920 --> 00:16:29,890
+reduction. So, what do we do given an input
+image we first mean normalize, it make the
+
+155
+00:16:29,890 --> 00:16:35,410
+find the vector we us the mean image as we
+calculated before and we subtract the mean
+
+156
+00:16:35,410 --> 00:16:40,440
+image and we calculate the mean normalized
+image. Now, the mean normalized image is transformed
+
+157
+00:16:40,440 --> 00:16:47,560
+with p 1 transpose, we multiply it p 1 transpose
+into a, the mean normalized image and what
+
+158
+00:16:47,560 --> 00:16:53,580
+we have is a k dimensional vector which represent
+the image in reduce dimensional space span
+
+159
+00:16:53,580 --> 00:17:01,700
+by the top k eigen vectors. So, this is how
+the dimensionality reduction works using PCA.
+
+160
+00:17:02,170 --> 00:17:08,760
+And now we will use the now we will implement
+that in the code first. So, pca dot transform
+
+161
+00:17:08,760 --> 00:17:17,039
+of a set of input vectors. We will do the
+transformation to the PCA dimensions, this
+
+162
+00:17:17,039 --> 00:17:21,449
+is what we do here, and we transform both
+the trainee set and the test set into 150
+
+163
+00:17:21,449 --> 00:17:22,289
+principal components.
+
+164
+00:17:22,720 --> 00:17:33,340
+And then we do k-nearest neighbor classification
+of faces in this principal component vector
+
+165
+00:17:33,340 --> 00:17:38,450
+space, in the space span by the principal
+components rather. So, what do we do we first
+
+166
+00:17:38,450 --> 00:17:45,299
+declare our classifier we fit it on the trainee
+set and then we do a classification on the
+
+167
+00:17:45,299 --> 00:17:46,199
+test set.
+
+168
+00:17:47,390 --> 00:17:54,809
+And the results are quite nice quite impressive
+and as you can see some examples of classification
+
+169
+00:17:54,809 --> 00:17:59,929
+and we have 55 percent test accuracy with
+numbers of neighbors equal to 5 and we can
+
+170
+00:17:59,929 --> 00:18:08,100
+further tune the number of neighbors and have
+better and better accuracy, so that was nice
+
+171
+00:18:08,100 --> 00:18:12,749
+demonstration of how principle components
+analysis and k-nearest neighbor algorithm
+
+172
+00:18:12,749 --> 00:18:17,799
+can come together and do a solve a very interesting
+and very cool problem like face recognition.
+
+173
+00:18:17,799 --> 00:18:22,590
+Thank you guys see you in the next video.
+Bye-Bye.

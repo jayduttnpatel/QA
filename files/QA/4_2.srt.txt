@@ -1,0 +1,51 @@
+Q. Confusion matrix is helpful in
+A. classification
+B. regression
+C. embedding
+D. audio analysis
+(A)
+
+Q. Those training examples for which
+ the true class is positive and you hypothesize
+
+ them as 
+positive they can be called
+A. FP
+B. FN
+C. TN
+D. TP
+(D)
+
+Q. Those training examples for which
+the true class is negative and you hypothesize them as 
+negative they can be called
+A. FP
+B. FN
+C. TN
+D. TP
+(C)
+
+Q. Those training examples for which
+the true class is negative and you hypothesize them as 
+positive they can be called
+A. FP
+B. FN
+C. TN
+D. TP
+(A)
+
+Q. Those training examples for which
+the true class is positive and you hypothesize them as 
+negative they can be called
+A. FP
+B. FN
+C. TN
+D. TP
+(B)
+
+Q. In the confussion matrix the diagonal entries are giving the
+A. Correct result
+B. false result
+C. mix result
+D. can't say
+(A)

@@ -1,0 +1,271 @@
+34
+00:05:01,930 --> 00:05:05,610
+on the sequence in which we choose the alphas.
+
+35
+00:05:05,940 --> 00:05:13,340
+Now, this coordinate ascent algorithm can
+be visualised by in this slide. Suppose, here
+
+36
+00:05:13,340 --> 00:05:20,520
+these different contours is ellipses are the
+different contours of the function right.
+
+37
+00:05:20,520 --> 00:05:29,060
+So, initially suppose, I choose the value
+of alphas, so that I start from here, then
+
+38
+00:05:29,060 --> 00:05:38,780
+I only change on one of the particular parameters
+right and we get here then we change in another
+
+39
+00:05:38,780 --> 00:05:43,150
+parameter, we come here change in another
+parameter, we come here change in another
+
+40
+00:05:43,150 --> 00:05:45,390
+parameter, we come here change in another
+parameter.
+
+41
+00:05:45,780 --> 00:05:50,500
+So, these contours correspond to the value
+of the function and the value of the function
+
+42
+00:05:50,500 --> 00:05:59,660
+is minimum here after starting from here by
+optimising on one of the attributes at a time.
+
+43
+00:05:59,950 --> 00:06:05,780
+We make this steps and these steps are we
+can see are on paths parallel to one of the
+
+44
+00:06:05,780 --> 00:06:11,580
+axis and until we get to one of the minimum
+or wherever we get in. So, this is the idea
+
+45
+00:06:11,580 --> 00:06:13,340
+of coordinate ascent.
+
+46
+00:06:14,190 --> 00:06:22,240
+Now, this sequential minimal optimisation
+or SMO can be applied, we can see whether
+
+47
+00:06:22,240 --> 00:06:29,250
+it can be applied to the dual formulation
+of SVM. So, if we look back at the dual formulation
+
+48
+00:06:29,250 --> 00:06:36,020
+we are trying to maximise, find the values
+of alpha. So, the j alpha is maximised and
+
+49
+00:06:36,020 --> 00:06:42,800
+j alpha is sigma alpha i minus half sigma
+alpha i alpha j y i j x i x j and these are
+
+50
+00:06:42,800 --> 00:06:51,420
+the constraints alpha i is between 0 and c
+sigma i y i equal to 0. Now, the question
+
+51
+00:06:51,420 --> 00:06:58,670
+is can we apply coordinate ascent directly
+here? Now, one of the things you notice is
+
+52
+00:06:58,670 --> 00:07:03,170
+this constraints sigma i sigma alpha i y i
+equal to 0.
+
+53
+00:07:03,170 --> 00:07:10,370
+Now, in order to solve this, what we have
+to do is first we have to come up with some
+
+54
+00:07:10,370 --> 00:07:17,080
+values of alpha 1, alpha 2, alpha m. So, that
+these constraints are satisfied alpha i is
+
+55
+00:07:17,080 --> 00:07:24,139
+between 0 and c and sigma alpha i y i equal
+to 0. Now, you notice from this is that if
+
+56
+00:07:24,139 --> 00:07:30,860
+you have m minus 1 of the alpha i is if you
+fixed and you want to change another alpha
+
+57
+00:07:30,860 --> 00:07:39,530
+i, you cannot because given m minus 1 values
+the other value is completely determined.
+
+58
+00:07:39,530 --> 00:07:44,970
+So, you cannot independently change only one
+of the alpha i's.
+
+59
+00:07:45,470 --> 00:07:54,710
+So, this algorithm where we sequentially optimised
+one attribute at a time cannot be applied
+
+60
+00:07:54,710 --> 00:08:02,040
+to the solution of this particular formulation,
+but what we can do is that we can optimise
+
+61
+00:08:02,040 --> 00:08:10,450
+with respect to two attributes at a time.
+So, we cannot update on only one attribute.
+
+62
+00:08:10,450 --> 00:08:21,360
+So, in the SMO algorithm, what we do is that
+we take two attributes at time to optimise
+
+63
+00:08:21,360 --> 00:08:28,770
+them. So, this is the formulation that we
+initially choose a set of alpha i's, which
+
+64
+00:08:28,770 --> 00:08:38,110
+satisfy all the constraint. Now, alpha 1 is
+exactly determined by the other alphas. So,
+
+65
+00:08:38,110 --> 00:08:43,770
+what we have to do is that we update two of
+the attributes at a time.
+
+66
+00:08:44,570 --> 00:08:51,520
+So, this brings us to the SMO algorithm which
+can be used to solve the dual formulation
+
+67
+00:08:51,520 --> 00:09:01,180
+of SVM. We repeat till convergence we select
+a pair alpha i and alpha j to update and
+
+68
+00:09:01,180 --> 00:09:09,520
+we can use a heuristic to decide which alpha
+i alpha j pair to take, we can pick the two
+
+69
+00:09:09,520 --> 00:09:15,570
+that allow us to make the biggest progress
+towards the global maximum to choose the alpha
+
+70
+00:09:15,570 --> 00:09:21,130
+i alpha j to address next can be done based
+on a heuristic function.
+
+71
+00:09:22,310 --> 00:09:29,400
+Now, after choosing this pair alpha i and
+alpha j i reoptimise w alpha with respect
+
+72
+00:09:29,400 --> 00:09:38,880
+alpha i and alpha j, while holding the other
+alpha case fixed. Now, it can be shown that
+
+73
+00:09:38,880 --> 00:09:44,760
+the updates to alpha i and alpha j can be
+computed very efficiently. We will not talk
+
+74
+00:09:44,760 --> 00:09:51,500
+about those details in this class, but I just
+want to tell you is that if the m minus to
+
+75
+00:09:51,500 --> 00:09:58,890
+alpha z fixed, we get some constraints on
+these two alphas and this particular optimisation
+
+76
+00:09:58,890 --> 00:10:04,390
+problem of optimising alpha i and alpha j
+keeping the rest of them fixed can be done
+
+77
+00:10:04,390 --> 00:10:10,990
+quite efficiently and based on that, we have
+an efficient sequential minimal of optimisation
+
+78
+00:10:10,990 --> 00:10:16,670
+problem to find a solution to the dual formulation
+of the SVM
+
+79
+00:10:16,670 --> 00:10:22,490
+With this we come to the end of our lecture
+on support vector machine. We have seen that
+
+80
+00:10:22,490 --> 00:10:30,399
+support vector machines come up with linear
+decision surfaces and you change their formulation,
+
+81
+00:10:30,399 --> 00:10:37,490
+so that you can accommodate noise and it is
+possible to convert a transform the original
+
+82
+00:10:37,490 --> 00:10:44,370
+feature space to a new features space where
+the decisions surface are linear with respect
+
+83
+00:10:44,370 --> 00:10:50,860
+to the new feature space. So, while having
+a linear decision surface you can also in
+
+84
+00:10:50,860 --> 00:10:59,810
+affect have a non-linear function. However,
+the function that we have is linear in terms
+
+85
+00:10:59,810 --> 00:11:04,250
+of either the original features space or the
+new features space.
+
+86
+00:11:04,940 --> 00:11:11,700
+In the next week, we will study neural networks
+and we will see in neural networks we can
+
+87
+00:11:11,700 --> 00:11:17,180
+have highly non-linear functions and for that
+we wait till next week.
+
+88
+00:11:17,490 --> 00:11:18,269
+Thank you very much.

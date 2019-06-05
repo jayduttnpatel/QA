@@ -1,0 +1,132 @@
+128
+00:20:10,990 --> 00:20:34,540
+which is equal to W t by W hat a 1 a 2 plus
+b by W norm. So, from this, we find gamma
+
+129
+00:20:34,540 --> 00:21:07,810
+equal to y times W by W hat a 1 a 2 plus b
+by W y is plus 1 or minus 1.
+
+130
+00:21:08,280 --> 00:21:19,540
+So, for geometric margin, what we will do
+is that we will scale W, you know w is the
+
+131
+00:21:19,550 --> 00:21:25,840
+weights of the line W b, we can scale w b
+arbitrarily by dividing all of them by some
+
+132
+00:21:25,840 --> 00:21:32,680
+same number or multiplying them by the same
+number, we will scale W so that w norm equal
+
+133
+00:21:32,680 --> 00:21:39,640
+to 1. We will scale w so that w norm equal
+to 1, and then we will find the geometric
+
+134
+00:21:39,640 --> 00:21:48,210
+margin. So, geometric margin, so will scale
+W, so that w hat equal to 1 and then the geometric
+
+135
+00:21:48,210 --> 00:22:04,270
+margin will be given by gamma equal to y by
+y times W t a 1 a 2 plus b. So, this is the
+
+136
+00:22:04,270 --> 00:22:07,870
+geometric margin, which we get after normalization.
+
+137
+00:22:09,160 --> 00:22:16,340
+And as in the previous case if you have a
+set of points x 1, y 1, x 2, y 2, x m, y m,
+
+138
+00:22:16,340 --> 00:22:26,960
+we can find out the geometric margin as the
+one which is smallest.
+
+139
+00:22:27,350 --> 00:22:37,660
+So, geometric margin will be as before the
+minimum of i of gamma i that will be the geometric
+
+140
+00:22:37,660 --> 00:22:40,740
+margin of set of points.
+
+141
+00:22:44,360 --> 00:22:52,620
+Now, we will look at how what we really want
+to do. If we look at this diagram, we assume
+
+142
+00:22:52,630 --> 00:23:01,850
+that the training examples are linearly separable,
+and let us say this line is our decision surface,
+
+143
+00:23:01,850 --> 00:23:09,760
+and this red band is the margin. And the green
+points here these two green points lie on
+
+144
+00:23:09,760 --> 00:23:17,740
+the margin this white point also lie on the
+margin, these are the support vectors. So,
+
+145
+00:23:17,740 --> 00:23:23,850
+classify with the maximum margin width is
+what we want it is robust to outliers and
+
+146
+00:23:23,850 --> 00:23:32,570
+it has strong generalization ability.
+Now once we have defined this we have seen
+
+147
+00:23:32,570 --> 00:23:40,640
+that gamma is our geometric margin, and we
+want to maximize this margin. You know if
+
+148
+00:23:40,640 --> 00:23:48,340
+we without normalization, we get if you have
+a gamma by norm of W is the geometric margin.
+
+149
+00:23:48,340 --> 00:23:59,380
+And we need to maximize gamma by W subject
+to constrain. So, we pose the our optimization
+
+150
+00:23:59,380 --> 00:24:07,040
+problem as follows given a set of training
+examples labeled as positive and negative.
+
+151
+00:24:14,010 --> 00:24:38,410
+If W b characterizes the decision surface
+then gamma by W is the geometric margin. And
+
+152
+00:24:38,410 --> 00:24:47,180
+we want to learn the values of W b, so that
+this geometric margin is largest subject to
+
+153
+00:24:47,180 --> 00:24:55,080
+constrain. What are the constrains, we have
+the positive points on this side, for each
+
+154
+00:24:55,080 --> 00:25:10,370
+positive point, W x plus b will be greater
+than equal to so all positive points will

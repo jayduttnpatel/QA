@@ -1,0 +1,41 @@
+Q. When the number of feature of the learnning algorithm is increased the bias
+A. increase
+B. decrease
+C. remains the same
+D. none of the above
+(B)
+
+Q. When the number of feature of the learnning algorithm is increased the variance
+A. increase
+B. decrease
+C. remains the same
+D. none of the above
+(A)
+
+Q. When the number of parameter of the learnning algorithm is increased the bias
+A. increase
+B. decrease
+C. remains the same
+D. none of the above
+(B)
+
+Q. When the number of parameter of the learnning algorithm is increased the variance
+A. increase
+B. decrease
+C. remains the same
+D. none of the above
+(A)
+
+Q. When the number of training examples of the learnning algorithm is increased the bias
+A. increase
+B. decrease
+C. remains the same
+D. none of the above
+(C)
+
+Q. When the number of training examples of the learnning algorithm is increased the variance
+A. increase
+B. decrease
+C. remains the same
+D. none of the above
+(B)

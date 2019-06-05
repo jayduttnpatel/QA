@@ -1,0 +1,153 @@
+97
+00:15:03,660 --> 00:15:10,410
+here accident has 1 parent rainy day. So,
+what is the probability of accident being
+
+98
+00:15:10,410 --> 00:15:17,410
+true given that it is a rainy day and accident
+being true given that it is a not a rainy
+
+99
+00:15:17,410 --> 00:15:26,440
+day. So, we have 1 parent, we need to keep
+2 values. Traffic jam has 2 parent accident
+
+100
+00:15:26,440 --> 00:15:31,703
+and rainy day. So, accident can be true, rainy
+day can be true; both can be false; 1 can
+
+101
+00:15:31,703 --> 00:15:37,810
+be true, 1 can be false and so on. So, there
+are 4 possible combinations of the parent.
+
+102
+00:15:37,810 --> 00:15:43,080
+For each of them we can find out what is the
+probability of traffic jam happening, the
+
+103
+00:15:43,080 --> 00:15:48,520
+probability of traffic jam not happening can
+be computed by 1 minus that value.
+
+104
+00:15:48,750 --> 00:15:55,310
+So, for this node we require 4 values. Similarly,
+late for work also require 4 values, meeting
+
+105
+00:15:55,310 --> 00:16:01,380
+postponed 1 value, 4 values for late for meeting.
+So, the total number of probability values
+
+106
+00:16:01,380 --> 00:16:12,210
+that we have keep is 1, 2, 3, 4, 8, 12, 13,
+17. So, we required to store 17 probability
+
+107
+00:16:12,210 --> 00:16:19,100
+values in contrast to the fully connected
+Bayesian network where we have to keep 2 to
+
+108
+00:16:19,100 --> 00:16:27,380
+the power 7, actually 2 to the power 7 minus
+1 value. So, a Bayesian network is a compact
+
+109
+00:16:27,380 --> 00:16:35,200
+representation of the joint probability distribution.
+
+110
+00:16:35,200 --> 00:16:44,710
+Now, what we like to do is look at an example
+of; this is the example of bayes network that
+
+111
+00:16:44,710 --> 00:16:51,610
+we have looked at and corresponding to this
+example, we have conditional probability table
+
+112
+00:16:51,610 --> 00:16:56,960
+associated with each node, the number of values
+of the conditional probability table given
+
+113
+00:16:56,960 --> 00:17:00,860
+that all the variables are Boolean I have
+already written here.
+
+114
+00:17:01,400 --> 00:17:10,050
+So, each node is asserted to be conditionally
+independent of its non-descendants given its
+
+115
+00:17:10,050 --> 00:17:30,269
+immediate parents. So, let us write this down.
+The bayes network says that each node is conditionally
+
+116
+00:17:30,269 --> 00:18:02,429
+independent of its non-descendants 
+given the value of its immediate parents.
+
+117
+00:18:02,429 --> 00:18:17,740
+So, late for meeting is independent of late
+wake up given whether you are late for work.
+
+118
+00:18:17,740 --> 00:18:25,019
+Meeting postponed is independent of late for
+work given the value of late wake up and traffic
+
+119
+00:18:25,019 --> 00:18:32,090
+jam. So, these are examples of conditionally
+independence that we can read off based on
+
+120
+00:18:32,090 --> 00:18:40,480
+this statement that I have made. Now, what
+we can we do when we have a Bayesian network?
+
+121
+00:18:40,480 --> 00:18:47,049
+So, once we represent the local probability
+tables we can use the bayes net for making
+
+122
+00:18:47,049 --> 00:19:03,450
+inference. So, inference means you want to
+compute certain probabilities of certain probability
+
+123
+00:19:03,450 --> 00:19:09,289
+distribution of certain variables given certain
+evidences, you know the values of some variables
+
+124
+00:19:09,289 --> 00:19:15,559
+and you want to find out probability distribution
+of some other variables which are of your
+
+125
+00:19:15,559 --> 00:19:38,981
+interest. So, inference you compute posterior
+probabilities given some evidence. Evidence
+
+126
+00:19:38,981 --> 00:19:50,240
+means some of the nodes you know the values
+of the nodes
+
+127
+00:19:50,240 --> 00:19:56,970
+and in order to do inference efficiently you
+can exploit probabilistic conditional independence

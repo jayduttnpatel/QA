@@ -1,0 +1,13 @@
+Q. Which of the following term signifies how much randomness has been reduced from the data after split in the decison tree node
+A. Information gain
+B. Entropy
+C. cross entropy
+D. none of the above
+(A)
+
+Q. In decison tree which feature is used to split the data
+A. One with the max information gain
+B. One with the max entropy
+C. One with the max cross entropy
+D. none of the above
+(A)

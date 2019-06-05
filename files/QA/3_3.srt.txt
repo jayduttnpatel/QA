@@ -1,0 +1,27 @@
+Q. set of all legal function is kown as
+A. Hypothesis Space
+B. feature space
+C. vector space
+D. output space
+(A)
+
+Q. A function is represented in terms of
+A. output
+B. data
+C. fetures
+D. labels
+(C) 
+
+Q. Hypothesis space is represented with the help of
+A. R
+B. H
+C. S
+D. L
+(B)
+
+Q. which type of learning explores the hypothesis space?
+A. Unsupervised Learning
+B. Semisupervised Learning
+C. Reinforcement Learning
+D. Supervised Learning
+(D)

@@ -44,7 +44,7 @@ def QAFileText(file):
 	
 def WordToNum():
 	mapping={}
-	os.chdir("/temp/train/subtitle")
+	os.chdir("/temp/files/subtitle")
 	freq={}
 	for file in glob.glob("*.txt"):
 		if re.match(".*srt.*",file): # subtitle

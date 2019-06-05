@@ -1,0 +1,6 @@
+Q. Categorical features means
+A. They appear in the finite number of categories or classes
+B. They are named randomly
+C. They are named after categorical cross entropy
+D. none of the above
+(A)

@@ -1,0 +1,6 @@
+Q. In unsupervised learning we are presented with
+A. input and target pair
+B. input
+C. target
+D. none of the above
+(B)

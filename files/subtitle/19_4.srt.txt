@@ -1,0 +1,204 @@
+106
+00:15:03,970 --> 00:15:10,650
+of these values. And we will see in a later
+slide that, we can add plus 1 to each of the
+
+107
+00:15:10,650 --> 00:15:15,830
+numerator and compensate it by some value
+added to the denominator.
+
+108
+00:15:16,810 --> 00:15:22,150
+But, before that, let us look at an example.
+This is an example taken from a Mitchell’s
+
+109
+00:15:22,150 --> 00:15:29,350
+book on Machine Learning; where, we have a
+description of different days. And the attributes
+
+110
+00:15:29,350 --> 00:15:34,910
+are outlook, temperature, humidity and wind.
+These are the climate attributes of different
+
+111
+00:15:34,910 --> 00:15:40,210
+days. And, the target attribute is whether
+it is a good day for playing tennis.
+
+112
+00:15:41,620 --> 00:15:46,589
+Given this training example, if you apply
+Naive Bayes to it, in the training phase,
+
+113
+00:15:46,589 --> 00:15:53,280
+you will output the probabilities. So, if
+outlook is sunny, play equal to yes – given
+
+114
+00:15:53,280 --> 00:16:00,660
+outlook is sunny is 2 by 9; play equal to
+- given outlook is sunny is 3 by 5; play equal
+
+115
+00:16:00,660 --> 00:16:05,620
+to yes – given outlook is overcast is 4
+by 9; play equal to no - given outlook over
+
+116
+00:16:05,620 --> 00:16:16,500
+cast is 0 by 5 and so on. These are the values
+that we get by doing the maximum likelihood
+
+117
+00:16:16,500 --> 00:16:24,660
+instance; estimation from the data.
+These are the prior probabilities for playing
+
+118
+00:16:24,660 --> 00:16:31,160
+tennis and for not playing tennis. And, these
+are the values of theta i j k. So, these can
+
+119
+00:16:31,160 --> 00:16:39,820
+be estimated using the previous maximum likelihood
+estimate formula that we have seen. And this
+
+120
+00:16:39,820 --> 00:16:47,040
+is how we get these values. Now, this is what
+happens in the training phase.
+
+121
+00:16:47,040 --> 00:16:52,550
+In the test phase, you have given a new instance
+and you have to predict its (Refer Time: 16:52)
+
+122
+00:16:52,550 --> 00:16:58,670
+For example, suppose the new instance is outlook
+is sunny, temperature equal to cool, humidity
+
+123
+00:16:58,670 --> 00:17:06,079
+is high and wind is strong. And based on this
+probability values that we have seen in the
+
+124
+00:17:06,079 --> 00:17:10,059
+previous page, we can do the decision with
+the MAP rule.
+
+125
+00:17:10,390 --> 00:17:19,360
+And we find out that, probability yes given
+x prime turns out to be 0.0053; probability
+
+126
+00:17:19,360 --> 00:17:27,429
+no given x prime is 0.0206. And, because probability
+of yes given x prime is less than probability
+
+127
+00:17:27,429 --> 00:17:34,360
+no given x prime, we label x prime to be no.
+So this is a simple application of Naive Bayes;
+
+128
+00:17:34,360 --> 00:17:40,710
+it is an extremely simple algorithm. We look
+at the training set. You estimate; do a MLE
+
+129
+00:17:40,710 --> 00:17:47,009
+estimate of the different parameters; then
+given the test set, we apply that formula.
+
+130
+00:17:47,009 --> 00:17:56,480
+Now, as I mentioned that, if you are unlucky,
+the estimate for probability X i given Y may
+
+131
+00:17:56,480 --> 00:18:04,710
+be zero, because there may be that, some particular
+attribute value is not represented for a particular
+
+132
+00:18:04,710 --> 00:18:12,409
+class, because we do not have sufficient training
+example. To alleviate the fact, we can use
+
+133
+00:18:12,409 --> 00:18:19,159
+smoothing. There are many approaches for smoothing
+including many sophisticated approaches, but
+
+134
+00:18:19,159 --> 00:18:23,059
+we will introduce only a simplest approach
+for smoothing.
+
+135
+00:18:23,610 --> 00:18:36,769
+What we do is that, for every probability
+estimates that we do, we add some number;
+
+136
+00:18:36,769 --> 00:18:43,390
+that number could be 1 or could be a fraction
+l, which corresponds to some imaginary instances,
+
+137
+00:18:43,390 --> 00:18:52,350
+because we are adding a small positive value
+to the numerator. We must compensate by adding
+
+138
+00:18:52,350 --> 00:18:58,179
+l into R to the denominator, where R is the
+number of possible values of y k, so that
+
+139
+00:18:58,179 --> 00:19:07,710
+the sum of the pi k’s become remain 1. Similarly,
+to estimate theta i j k, we can add l here.
+
+140
+00:19:07,710 --> 00:19:16,590
+And in the denominator we must compensate
+by adding l M, so that the sum of theta i
+
+141
+00:19:16,590 --> 00:19:22,600
+j k over a particular value of i j will be
+equal to 1. So this is smoothing, which we
+
+142
+00:19:22,600 --> 00:19:26,880
+can apply in order to alleviate the problem
+due to zero probability.
+
+143
+00:19:27,580 --> 00:19:35,330
+Now, one important assumption that we made
+in Naive Bayes is that, the X i's are conditionally
+
+144
+00:19:35,330 --> 00:19:44,490
+independent given Y, but this is not really
+a valid assumption. And, it often does not
+
+145
+00:19:44,490 --> 00:19:53,139
+hold. We can often use the right classification
+but, even if this assumption does not always
+
+146
+00:19:53,139 --> 00:20:00,340
+hold, Naive Bayes is surprisingly quite effective;
+given its simplicity, it surprisingly quite

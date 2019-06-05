@@ -1,0 +1,6 @@
+Q. In supervised learning training examples will always comes as
+A. Pair
+B. single element
+C. action and reward
+D. none of the above
+(A)

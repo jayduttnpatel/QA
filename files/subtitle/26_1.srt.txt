@@ -1,0 +1,144 @@
+1
+00:00:18,380 --> 00:00:24,590
+Good morning, today we will continue our lecture
+on Support Vector Machine. In the last class,
+
+2
+00:00:24,590 --> 00:00:32,460
+we saw how to do work on linearly separable
+data set. Now, in many cases there will be
+
+3
+00:00:32,460 --> 00:00:39,960
+noise in the data, so that a linear decision
+surface cannot separate the positive and negative
+
+4
+00:00:39,960 --> 00:00:44,620
+points. We will see how support vector machine
+can deal with it.
+
+5
+00:00:45,070 --> 00:00:58,820
+If we look at the linear SVM formulation that
+we did in the last class, we had this optimization
+
+6
+00:00:58,820 --> 00:01:13,590
+function which required us to find the weight
+vectors, w and b such that the margin width
+
+7
+00:01:13,590 --> 00:01:25,079
+is maximised. So, the margin can be written
+like this 2 by w. So, this is maximised subject
+
+8
+00:01:25,079 --> 00:01:44,439
+to m constraints corresponding to each training
+instance. So, for each training point i equal
+
+9
+00:01:44,439 --> 00:02:02,889
+to 1 to m, we had y i w x i plus b is y i
+times w x i plus b is greater than equal to
+
+10
+00:02:02,889 --> 00:02:14,750
+1. This can also be written as instead of
+maximising 2 by w, we can maximise its reciprocal
+
+11
+00:02:14,750 --> 00:02:28,050
+that is half w.
+So, w is actually root over w dot w. So, we
+
+12
+00:02:28,050 --> 00:02:49,120
+can minimise this, rather we can minimise
+w dot w. So, we can look upon it as a minimisation
+
+13
+00:02:49,120 --> 00:02:56,240
+problem subject to m constraints corresponding
+to the m training examples.
+
+14
+00:02:57,170 --> 00:03:05,080
+Now, this particular formulation enables us
+to deal with only those training instances
+
+15
+00:03:05,080 --> 00:03:12,770
+which are linearly separable, but it may be
+that the data is not linearly separable.
+
+16
+00:03:12,770 --> 00:03:21,340
+If you look at the slide, we see that we have
+two classes blue and red and this data cannot
+
+17
+00:03:21,340 --> 00:03:28,560
+be linearly separable. There could be a non-linear
+decision surface which separates the data
+
+18
+00:03:28,560 --> 00:03:35,570
+or in this case it may be that the data points
+are noisy. So, that there is no clear separation
+
+19
+00:03:35,570 --> 00:03:39,780
+of the points.
+So, what we will like to do is we will like
+
+20
+00:03:39,780 --> 00:03:47,240
+to extend the definition of maximum margin,
+so that we can allow these non-separable points.
+
+21
+00:03:47,790 --> 00:03:52,950
+Now, we have to now redefine our objective
+function earlier.
+
+22
+00:03:53,320 --> 00:04:02,080
+We were trying to minimise w dot w this is
+no longer sufficient. So, we have to be able
+
+23
+00:04:02,090 --> 00:04:10,930
+to have a decision surface which makes some
+errors. So, if we have the points these are
+
+24
+00:04:10,930 --> 00:04:26,190
+the red points and these are the blue points.
+We want to allow making decision surface which
+
+25
+00:04:26,190 --> 00:04:32,400
+does not clearly separate the positive and
+negative points. So, that there is some error
+
+26
+00:04:32,400 --> 00:04:42,030
+in this, but if we have this error we cannot
+we cannot deal with these constraints that
+
+27
+00:04:42,030 --> 00:04:48,580
+we have looked at, we have to make some changes.
+So, first of all we have to make changes to
+
+28
+00:04:48,580 --> 00:04:56,750
+our optimisation function. So, one way of
+looking at it is we want a decision surface
+
+29
+00:04:56,750 --> 00:05:04,630
+which looks at two things one is maximising
+the margin which corresponds to minimising

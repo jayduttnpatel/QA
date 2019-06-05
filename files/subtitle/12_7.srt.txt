@@ -1,0 +1,275 @@
+188
+00:30:00,770 --> 00:30:17,130
+take sigma m equal to 1 to n and then, we
+use w m into x i m minus x j m whole square.
+
+189
+00:30:17,270 --> 00:30:26,330
+So, this is weighted Euclidean distance. We
+are different weights for different attributes.
+
+190
+00:30:26,820 --> 00:30:33,220
+So, for those attributes which are more important
+for the particular classification, we can
+
+191
+00:30:33,230 --> 00:30:39,620
+use larger weights and for less important
+attributes, we can use smaller weights.
+
+192
+00:30:39,620 --> 00:30:46,010
+These weights can also be decided based on
+you know if an attribute has larger range,
+
+193
+00:30:46,010 --> 00:30:52,010
+we can use small weights. If it is small range,
+we can use larger weights or we can scale
+
+194
+00:30:52,010 --> 00:30:58,450
+the attributes, so that they similar ranger
+we can sort of normalize the attributes. So,
+
+195
+00:30:58,450 --> 00:31:05,590
+they have same mean and standard deviation.
+Based on that we can then fix the weights
+
+196
+00:31:05,590 --> 00:31:12,510
+depending on the importance of the attributes
+and if an attribute does not matter, it is
+
+197
+00:31:12,510 --> 00:31:20,310
+irrelevant the attribute has zero weight.
+So, this brings us to an important question
+
+198
+00:31:20,310 --> 00:31:27,020
+that if we have the instance phase defined
+in terms of a large number of attributes or
+
+199
+00:31:27,020 --> 00:31:33,990
+features it possess, a problem in defining
+an appropriate similarity metric and it may
+
+200
+00:31:33,990 --> 00:31:41,860
+also pose a problem for different other learning
+problems because some features may be more
+
+201
+00:31:41,860 --> 00:31:48,200
+important than others and some features may
+be irrelevant and this specially impacts k
+
+202
+00:31:48,200 --> 00:31:57,450
+nearest neighbor instance based learning algorithms
+greatly. So, it is important for us to remove
+
+203
+00:31:57,450 --> 00:32:07,020
+extra features because if you have a very
+high dimensional phase two items which are
+
+204
+00:32:07,020 --> 00:32:14,930
+similar may still differ in some unimportant
+attributes and the differences in distance
+
+205
+00:32:14,930 --> 00:32:20,400
+between different pair items will be almost
+similar. So, it will be difficult to find
+
+206
+00:32:20,400 --> 00:32:29,390
+good representative training examples for
+a given test example. So, feature reduction
+
+207
+00:32:29,390 --> 00:32:30,270
+is very important.
+
+208
+00:32:30,390 --> 00:32:36,650
+We will talk about feature reduction in later
+class, may be in the next class, but we have
+
+209
+00:32:36,650 --> 00:32:42,960
+to summarize in distance weighted k nearest
+variable, we have a trade-off between small
+
+210
+00:32:42,960 --> 00:32:49,570
+and large k which can be difficult because
+large k means more emphasis on nearer neighbors.
+
+211
+00:32:49,570 --> 00:32:58,390
+So, in the weighted k n n, the prediction
+is based on this weighted average, right.
+
+212
+00:32:58,670 --> 00:33:05,870
+This weight can be based on that distance;
+the weight can be proportional to the inverse
+
+213
+00:33:05,870 --> 00:33:13,070
+of the distance between the two examples.
+So, for a particular example, suppose this
+
+214
+00:33:13,070 --> 00:33:26,310
+is a test example, suppose this is a test
+example and these are three nearest. Now,
+
+215
+00:33:26,310 --> 00:33:37,670
+this closes. This is median distance; this
+is a little further, right. Now, we look at
+
+216
+00:33:37,670 --> 00:33:43,380
+the class of all these three instances and
+take a weighted average, we gave larger weight
+
+217
+00:33:43,380 --> 00:33:51,210
+to this smaller to this and smaller to this.
+Based on this, we get do the averaging. This
+
+218
+00:33:51,210 --> 00:33:55,490
+is called distance weighted k nearest neighbor.
+
+219
+00:33:56,240 --> 00:34:05,000
+We can also instead of using this distance
+in you know the weight based on inverse of
+
+220
+00:34:05,000 --> 00:34:12,040
+that distance, we can use other types of functions
+for this weighting. So, one of the ideas is
+
+221
+00:34:12,040 --> 00:34:18,560
+locally weighted averaging. What locally weighted
+averaging does is that suppose k is the number
+
+222
+00:34:18,560 --> 00:34:23,139
+of training points.
+So, instead of you know we could also take
+
+223
+00:34:23,139 --> 00:34:28,970
+instead of taking k as the 3 or 4 or 5, we
+could take very large value of k infect k
+
+224
+00:34:28,970 --> 00:34:35,810
+could be entire training examples and then,
+we could give different weights to different
+
+225
+00:34:35,810 --> 00:34:43,409
+training examples. So, if k is the total number
+of training points, we define weighting function,
+
+226
+00:34:43,409 --> 00:34:50,600
+so that weight of nearby functions will reasonably
+will have some reasonable values, but for
+
+227
+00:34:50,600 --> 00:34:57,550
+further training points also, some weight
+will be taken, but that weight function it
+
+228
+00:34:57,550 --> 00:35:03,630
+will follow up rapidly weight distance. For
+example, you could think of the weighting
+
+229
+00:35:03,630 --> 00:35:09,910
+function based on Gaussian function, right.
+
+230
+00:35:11,320 --> 00:35:21,460
+So, you know this is you know very rough.
+Secondly, Gaussian functions suppose this
+
+231
+00:35:21,460 --> 00:35:27,530
+is your test point. So, any example which
+is here you know it will get this much of
+
+232
+00:35:27,530 --> 00:35:32,070
+weight and example here will get this much
+of weight, example here will get this much
+
+233
+00:35:32,070 --> 00:35:37,710
+of weight and example further away will get
+almost zero weight, but it will get some value
+
+234
+00:35:37,710 --> 00:35:41,480
+of weight. So, we could use different weighting
+functions.
+
+235
+00:35:41,480 --> 00:35:50,540
+For example, here we are saying w k is 1 by
+e to the power kernel with into distance between
+
+236
+00:35:50,540 --> 00:35:59,130
+c k nct. So, you using an exponential function
+and the weight are falling of rapidly after
+
+237
+00:35:59,130 --> 00:36:05,640
+you know based on this kernel width. So, kernel
+width controls how much of the neighborhood
+
+238
+00:36:05,640 --> 00:36:12,010
+you want to gave reasonable weighting. So,
+if kernel width is large, you are considering
+
+239
+00:36:12,010 --> 00:36:18,110
+more in more area in the neighborhood. If
+it is small, you are using less area in the
+
+240
+00:36:18,110 --> 00:36:21,850
+neighborhood, based on that you can do locally
+weighted averaging.
+
+241
+00:36:22,570 --> 00:36:30,810
+With this, we come close for this todays lecture.
+In the next lecture, we will discuss issues
+
+242
+00:36:30,810 --> 00:36:35,210
+about feature dimensionality reduction and
+other issues.
+
+243
+00:36:35,940 --> 00:36:37,220
+Thank you very much.

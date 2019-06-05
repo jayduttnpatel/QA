@@ -1,0 +1,183 @@
+74
+00:09:59,830 --> 00:10:09,810
+of l w b alpha, we have written L p - p denotes
+primal. So, minimize L p w b alpha, half w
+
+75
+00:10:09,810 --> 00:10:18,139
+square minus sigma alpha i y i w i x i plus
+b minus 1, subject to the constraints alpha
+
+76
+00:10:18,139 --> 00:10:27,660
+i greater than equal to 0. This is by getting
+the lagrangian of the optimization problem.
+
+77
+00:10:27,660 --> 00:10:37,360
+Now, if we take the partial derivative of
+this L p with respect to w and b what we get
+
+78
+00:10:37,360 --> 00:10:46,440
+here is, w equal to sigma alpha i y i x i,
+and from the second one by taking partial
+
+79
+00:10:46,440 --> 00:10:55,510
+derivative of L p with respect to b and setting
+it to 0 we get sigma alpha i y i equal to
+
+80
+00:10:55,510 --> 00:11:01,420
+0.
+So, what it means is that if I substitute
+
+81
+00:11:01,420 --> 00:11:09,279
+this value of w in this expression here, if
+I substitute this value of w sigma alpha i
+
+82
+00:11:09,279 --> 00:11:20,630
+y i x i in this expression here what I get
+is L p w b alpha equal to sigma alpha i minus
+
+83
+00:11:20,630 --> 00:11:30,180
+sigma alpha i alpha j y i x T x j. I am sorry.
+So, we put w is here, so this w becomes half
+
+84
+00:11:30,180 --> 00:11:40,240
+of alpha i alpha j y i y j x T x j minus b
+sigma alpha i y i. So, this is my L p when
+
+85
+00:11:40,240 --> 00:11:46,839
+I substitute this value of w. But we know
+that sigma alpha i y i equal to 0 from this
+
+86
+00:11:46,839 --> 00:11:53,070
+constraint. So, this expression on the rights
+side can be ignored and finally, we get L
+
+87
+00:11:53,070 --> 00:12:01,639
+w b alpha as this expression.
+So, L w b alpha is sigma alpha i minus half
+
+88
+00:12:01,639 --> 00:12:12,920
+of i j equal to 1 to m, alpha i alpha j y
+i y j x i transpose x j. Now, this very important
+
+89
+00:12:12,920 --> 00:12:18,830
+formulation and we will look at the properties
+of this formulation to get certain properties
+
+90
+00:12:18,830 --> 00:12:21,110
+of the support vector machine algorithm.
+
+91
+00:12:21,900 --> 00:12:28,391
+So, the Dual problem, before we go to that
+let us look at the dual problem the dual problem
+
+92
+00:12:28,391 --> 00:12:34,550
+is maximizing of j alpha where j alpha is
+the expression we saw earlier and these are
+
+93
+00:12:34,550 --> 00:12:40,940
+the constraints alpha i greater than equal
+to 0 and sigma alpha i y i equal to 0. This
+
+94
+00:12:40,940 --> 00:12:48,690
+is the dual problem, which is a quadratic
+programming problem and from this quadratic
+
+95
+00:12:48,690 --> 00:12:55,380
+programming problem we can solve and find
+the global maximum value of alpha i. We can
+
+96
+00:12:55,380 --> 00:13:00,790
+find out the values of alpha i, by solving
+this quadratic programming problem.
+
+97
+00:13:00,790 --> 00:13:06,470
+And this quadratic programming problem is
+much easier to solve than the primal formulation.
+
+98
+00:13:08,050 --> 00:13:15,050
+This is much simpler, because the constraints
+are simpler and we will see it has certain
+
+99
+00:13:15,050 --> 00:13:20,350
+nice properties.
+So, once we solve and get the lagrange multipliers
+
+100
+00:13:20,350 --> 00:13:29,070
+alpha, we can reconstruct the parameter vectors.
+We can find w as sigma alpha i y i x i. In
+
+101
+00:13:29,070 --> 00:13:40,910
+fact, we noted that alpha i is non-zero only
+for few of the examples. Those examples are
+
+102
+00:13:40,910 --> 00:13:50,210
+the one, once which are the support vectors.
+So, w is obtained from sigma alpha i y i x
+
+103
+00:13:50,210 --> 00:13:56,750
+i where i ranges among the support vectors
+and usually the support vectors are few in
+
+104
+00:13:56,750 --> 00:14:03,250
+number and w can computed from the coordinates
+of those support vectors.
+
+105
+00:14:04,540 --> 00:14:14,440
+Also when we get a new data point z in order
+to find out the output corresponding to this
+
+106
+00:14:14,440 --> 00:14:25,319
+we can compute w T z plus b, which is alpha
+sigma alpha i y i x i T z plus b and we classify
+
+107
+00:14:25,319 --> 00:14:34,730
+z as class 1 if the sum is positive and class
+2 if otherwise. Now, you note that w need
+
+108
+00:14:34,730 --> 00:14:41,830
+not be found explicitly we can just use this
+expression and this expression has a very
+
+109
+00:14:41,830 --> 00:14:49,290
+nice property when you put z what you are
+doing is - this alpha i, this is y i, this
+
+110
+00:14:49,290 --> 00:14:59,160
+is x i T z. So, you are taking the dot product
+of the support vector with your test point.

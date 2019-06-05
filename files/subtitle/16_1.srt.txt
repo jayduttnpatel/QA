@@ -1,0 +1,221 @@
+1
+00:00:18,699 --> 00:00:22,730
+Hello everyone, welcome to the second hands
+on session of the Introduction to Machine
+
+2
+00:00:22,730 --> 00:00:29,039
+Learning course. I am Anirban Santara; I am
+doing my PhD in machine learning. Today we
+
+3
+00:00:29,039 --> 00:00:31,939
+will learn couple of cool machine learning
+algorithms.
+
+4
+00:00:32,850 --> 00:00:37,670
+In the first part of the session, we will
+study how to use K-Nearest Neighbor classification
+
+5
+00:00:37,670 --> 00:00:44,219
+algorithm for classification of flowers of
+the iris data set and in the second part we
+
+6
+00:00:44,219 --> 00:00:50,399
+will learn how to use K-Nearest Neighbor classifier
+along with principle component analysis for
+
+7
+00:00:50,399 --> 00:00:51,219
+face recognition.
+
+8
+00:00:54,500 --> 00:01:00,120
+We will use python language as our language
+of choice for programming in this course.
+
+9
+00:01:00,120 --> 00:01:06,610
+Scikits learn is a very popular machine learning
+library and it has a lot of machine learning
+
+10
+00:01:06,610 --> 00:01:14,070
+utilities. We will study how to use K-Nearest
+Neighbor classifier and randomized PCA from
+
+11
+00:01:14,070 --> 00:01:19,410
+Scikits learn in this session. Without further
+adieu let us jump into the exercises.
+
+12
+00:01:19,990 --> 00:01:23,990
+The first topic for today is K-Nearest Neighbor
+classifier.
+
+13
+00:01:24,620 --> 00:01:32,149
+The k nearest neighbor algorithm is a non-parametric
+machine learning algorithm and it maintains
+
+14
+00:01:32,149 --> 00:01:38,420
+a database of the training samples and it
+every time a query is made to the algorithm
+
+15
+00:01:38,420 --> 00:01:47,810
+it looks up the database and it finds the
+K, which is specified by the user nearest
+
+16
+00:01:47,810 --> 00:01:50,710
+neighbors of the query point from the data
+base.
+
+17
+00:01:51,210 --> 00:01:58,319
+Now, once it has retrieve this K-Nearest Neighbor
+it goes and finds out which class is the most
+
+18
+00:01:58,319 --> 00:02:04,569
+predominant among the retrieved neighbors
+all right and the most predominant class is
+
+19
+00:02:04,569 --> 00:02:13,849
+assigned as a target class for the query point
+and we will use a modified version of the
+
+20
+00:02:13,849 --> 00:02:24,130
+iris data set in this exercise. The iris data
+set has flowers and these iris flowers fall
+
+21
+00:02:24,130 --> 00:02:33,041
+in three species all right and task is to
+classify the iris flower from the sepal and
+
+22
+00:02:33,041 --> 00:02:39,629
+petal dimension for the ease of visualization,
+we will chose just a first two feature dimensions
+
+23
+00:02:39,629 --> 00:02:45,459
+that is the sepal dimension, sepal length
+and the sepal width for describing the iris
+
+24
+00:02:45,459 --> 00:02:46,179
+flowers.
+
+25
+00:02:47,069 --> 00:02:54,920
+The first task is to split the available data
+into training and test seconds. So, we randomly
+
+26
+00:02:54,920 --> 00:03:03,719
+chose 75 percent of the data that is available
+to us for our training set and save the remaining
+
+27
+00:03:03,719 --> 00:03:09,349
+25 percent for the test set. So, this part
+of the code which you see on the screen describes
+
+28
+00:03:09,349 --> 00:03:11,029
+how to do it in code.
+
+29
+00:03:12,269 --> 00:03:17,620
+The next step is to go ahead and make the
+k-nearest neighbor classifier. So, for that
+
+30
+00:03:17,620 --> 00:03:23,181
+you have to make an object of the class k-neighbors
+classifier and you have to set the numbers
+
+31
+00:03:23,181 --> 00:03:28,909
+of neighbors to our required value. So, for
+example, I have set it equal to 5 and then
+
+32
+00:03:28,909 --> 00:03:34,260
+we do a module dot fit x train and y train.
+So, this thing loads the data set into the
+
+33
+00:03:34,260 --> 00:03:40,930
+module and saves it for reference when query
+is made. The next step is to check out how
+
+34
+00:03:40,930 --> 00:03:47,060
+the algorithm is performing. So, we find the
+query point and the query point is first example
+
+35
+00:03:47,060 --> 00:03:53,450
+from the test set.
+So, you get a prediction from the module by
+
+36
+00:03:53,450 --> 00:04:02,840
+using module dot predict of the query point
+and in this way. So, the nearest neighbors
+
+37
+00:04:02,840 --> 00:04:12,730
+module of the scikit learn dot neighbors library
+users helps us to visualize how the algorithm
+
+38
+00:04:12,730 --> 00:04:20,810
+actually works out all right.
+So, here you can see the query point is the
+
+39
+00:04:20,810 --> 00:04:25,780
+dark blue triangle and the neighbors have
+been highlighted in yellow and we can see
+
+40
+00:04:25,780 --> 00:04:30,710
+that class two is the most predominant among
+the classes of the neighbors and hence it
+
+41
+00:04:30,710 --> 00:04:36,810
+predicts the class two as a class of the query
+point all right and so this is how the nearest
+
+42
+00:04:36,810 --> 00:04:42,720
+neighbor algorithm works and it is highly
+popular algorithm and it works well when say
+
+43
+00:04:42,720 --> 00:04:51,440
+the data set is varying in its number of classes,
+for example, you cannot afford to train a
+
+44
+00:04:51,440 --> 00:04:56,200
+parametric machine learning module time and
+again. Every time the data changes of the
+
+45
+00:04:56,200 --> 00:05:01,870
+number of classes that you want you know you
+want your classifier to predict that changes

@@ -1,0 +1,184 @@
+44
+00:05:01,469 --> 00:05:06,489
+like legitimate modeling, legitimate estimation
+of the statistical parameters.
+
+45
+00:05:06,999 --> 00:05:14,819
+Now, if you have too much dimensionality of
+you feature space, alright, the number of
+
+46
+00:05:14,819 --> 00:05:20,729
+examples which would be required to have a
+legitimate estimation of a statistical parameter
+
+47
+00:05:20,729 --> 00:05:25,379
+becomes exponentially large, which is not
+always possible, because, the availability
+
+48
+00:05:25,379 --> 00:05:32,230
+of clean and good and really valuable training
+data is costly. So that is why, we have to
+
+49
+00:05:32,230 --> 00:05:38,939
+perform feature reduction, or dimensionality
+reduction, in some cases. And this is an important
+
+50
+00:05:38,939 --> 00:05:46,339
+step in almost all machine learning applications.
+We may select some 1000 features to start
+
+51
+00:05:46,339 --> 00:05:52,410
+with, but all of these 1000 features may not
+be equally relevant, or equally effective,
+
+52
+00:05:52,410 --> 00:05:57,439
+in making the prediction that we are looking
+forward to. So, we should be able to, like
+
+53
+00:05:57,439 --> 00:06:02,210
+reject some of them; like, maybe, we have,
+if we start with 1000 features, maybe we would
+
+54
+00:06:02,210 --> 00:06:08,819
+like to cut the number of relevant features
+down to, say 100. So, 900 features, which
+
+55
+00:06:08,819 --> 00:06:15,039
+are less relevant, or less effective, for
+making the particular prediction, should be
+
+56
+00:06:15,039 --> 00:06:20,659
+rejected. So this is all about feature reduction,
+or feature selection and which is our dimensional
+
+57
+00:06:20,659 --> 00:06:27,409
+reduction in other terms, which is all about
+making sure that the amount of training data
+
+58
+00:06:27,409 --> 00:06:32,749
+that you have, the amount of samples that
+you have collected, is adequate for having
+
+59
+00:06:32,749 --> 00:06:38,240
+an, a reliable estimate of the statistical
+properties that you are trying to model. So
+
+60
+00:06:38,240 --> 00:06:42,200
+this is the entire idea behind dimensionality
+reduction.
+
+61
+00:06:42,729 --> 00:06:55,539
+As a result of curse of dimensionality this
+set of problems, then arises the need of feature
+
+62
+00:06:55,539 --> 00:07:02,060
+selection and feature reduction, which are
+interchangeably used as the same term, or
+
+63
+00:07:02,060 --> 00:07:07,870
+you could. There are some little differences,
+subtle differences between feature reduction,
+
+64
+00:07:07,870 --> 00:07:19,900
+these two things; these two terms. And feature
+selection, or reduction, as I said before,
+
+65
+00:07:19,900 --> 00:07:29,000
+it helps in removing irrelevant or redundant
+features and if you have insufficient training
+
+66
+00:07:29,000 --> 00:07:38,569
+data then, then you need to perform feature
+selection and if you have insufficient computational
+
+67
+00:07:38,569 --> 00:07:46,069
+resources, you should use feature selection.
+Why, because, the complexity of your model
+
+68
+00:07:46,069 --> 00:07:52,120
+becomes more and increases, as the number,
+feature dimensionality of your input increases.
+
+69
+00:07:52,120 --> 00:08:00,069
+So, if you have say, 1000 dimensional input
+vector then, you should have, the model’s
+
+70
+00:08:00,069 --> 00:08:04,469
+complexity, the number of parameters of the
+model will automatically increase.
+
+71
+00:08:04,770 --> 00:08:10,589
+So, as the dimensionality of the input increases,
+the number of parameters of the model increases;
+
+72
+00:08:10,589 --> 00:08:16,099
+and so, chances of over-fitting also increase.
+So that is why, you should look forward to,
+
+73
+00:08:16,099 --> 00:08:19,800
+you should, like, plan some kind of feature
+reduction and feature selection if possible,
+
+74
+00:08:19,800 --> 00:08:30,479
+in any machine learning application. So, some,
+some feature selection methods are using.
+
+75
+00:08:30,479 --> 00:09:00,010
+So, let us go to feature selection. So, you
+can do feature selection by finding reliability,
+
+76
+00:09:00,010 --> 00:09:16,350
+or relevance, of each feature. So, how do
+you do it? So, there are some metrics, like
+
+77
+00:09:16,350 --> 00:09:42,960
+cosine similarity; then, Pearson correlation.
+So, cosine similarity is metric which can
+
+78
+00:09:42,960 --> 00:09:54,320
+be used for finding the similarity of orientations
+of 2 vectors in a inner product space. So,
+
+79
+00:09:54,320 --> 00:09:58,100
+an inner product space is a kind of, is a
+special kind of vector space, in which an
+
+80
+00:09:58,100 --> 00:10:02,670
+inner product is defined. So you should look
+up the web and figure and find out the exact

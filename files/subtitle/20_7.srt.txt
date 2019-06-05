@@ -1,0 +1,158 @@
+200
+00:30:00,759 --> 00:30:07,850
+have certain attributes these attributes are
+denoted here as Y 1, Y 2, Y 3, Y n and C is
+
+201
+00:30:07,850 --> 00:30:17,309
+the class. So, in naive bayes we assume that
+Y 1, Y 2, Y 3 all of them pair-wise, they
+
+202
+00:30:17,309 --> 00:30:23,149
+are independent of each other given the class
+and the class determines the probability of
+
+203
+00:30:23,149 --> 00:30:29,179
+Y 1 if class is 1, the probability of you
+say that probability of Y 1 given class 1
+
+204
+00:30:29,179 --> 00:30:35,529
+probability of Y 1 given class equal to 0.
+So, these are the particular relationships
+
+205
+00:30:35,529 --> 00:30:38,129
+that you have to study in a naïve bayes model.
+
+206
+00:30:38,559 --> 00:30:44,759
+And lastly this is a model for Hidden Markov
+model. So, Hidden Markov model is another
+
+207
+00:30:44,759 --> 00:30:51,590
+graphical model, we will not unfortunately
+study it in detail in this class, but in a
+
+208
+00:30:51,590 --> 00:30:59,320
+hidden markov model, there is the underline
+state of the system which follows a Markov
+
+209
+00:30:59,320 --> 00:31:06,450
+model. So, S 1, S 2, S 3, S n are the states
+of the system at different time instances
+
+210
+00:31:06,450 --> 00:31:13,320
+and the Markov assumptions means that S 3
+is independent of S 1 given S 2, S n is independent
+
+211
+00:31:13,320 --> 00:31:21,419
+of the previous states given S n minus 1 and
+these states are hidden, but you have an observation
+
+212
+00:31:21,419 --> 00:31:25,259
+and the observation what you can observe depends
+on the current state.
+
+213
+00:31:25,899 --> 00:31:33,299
+So, hidden Markov model is depicted by this
+type of graphical model and efficient algorithms
+
+214
+00:31:33,299 --> 00:31:39,409
+for inference and learning of hidden Markov
+model. They have wide spread application in
+
+215
+00:31:39,409 --> 00:31:48,289
+speech recognition, part of speech tagging,
+genes sequence modeling and other such areas.
+
+216
+00:31:48,289 --> 00:31:59,679
+Now, how is learning helped by belief networks?
+So, we will just mention that there 3 cases,
+
+217
+00:31:59,679 --> 00:32:08,159
+3 ways in which you can use belief networks
+for learning. In case 1, the network structure
+
+218
+00:32:08,159 --> 00:32:15,009
+is known to you network structure given in
+advance and from your training examples you
+
+219
+00:32:15,009 --> 00:32:20,190
+can learn the conditional probability table.
+So, you can estimate the conditional probability
+
+220
+00:32:20,190 --> 00:32:26,530
+tables, the network structure the variables
+the edges are given to you and in the training
+
+221
+00:32:26,530 --> 00:32:31,690
+example values of all the variables are known
+to you and you have to estimate the conditional
+
+222
+00:32:31,690 --> 00:32:36,090
+probability, and after that you can use the
+bayes network for making inferences.
+
+223
+00:32:36,090 --> 00:32:44,600
+In the second case, the network structure
+is given, but only the values of some of the
+
+224
+00:32:44,600 --> 00:32:49,740
+variables are to you in the training data.
+So, the entire network structure is given,
+
+225
+00:32:49,740 --> 00:33:01,159
+but you know the values of some of the variables.
+Here, you have to also estimate the probabilities
+
+226
+00:33:01,159 --> 00:33:05,990
+corresponding to the hidden variables for
+that some framework like gradient ascent,
+
+227
+00:33:05,990 --> 00:33:11,390
+etcetera can be used. Again, we will not talk
+about the details in this class.
+
+228
+00:33:11,390 --> 00:33:15,659
+The third case is whether network structure
+is not known. Here, you have to learn the
+
+229
+00:33:15,659 --> 00:33:20,639
+network structure using some heuristic search
+or constraint-based technique. This is slightly
+
+230
+00:33:20,639 --> 00:33:26,279
+advanced and we will not talk about this.
+With this we come to the end of this lecture
+
+231
+00:33:26,279 --> 00:33:28,509
+and this module.
+Thank you very much.

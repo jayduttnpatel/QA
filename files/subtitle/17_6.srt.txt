@@ -1,0 +1,163 @@
+198
+00:25:03,289 --> 00:25:19,570
+feature vectors. So, how do you do it? You
+transform vectors as P tilde transpose x i.
+
+199
+00:25:19,570 --> 00:25:30,289
+So, P tilde transpose is going to be K cross
+D matrix alright. So this is D cross 1. And
+
+200
+00:25:30,289 --> 00:25:39,600
+so, what you end up is K cross 1 dimensionality.
+So, once this has been done, so, what you
+
+201
+00:25:39,600 --> 00:25:44,639
+have is, you have the transformations of the
+input vectors in a reduced dimensional space.
+
+202
+00:25:44,639 --> 00:25:52,679
+So, these are K dimensional vectors and you
+have a lesser set of features to describe
+
+203
+00:25:52,679 --> 00:25:59,370
+the input with. So this is how feature reduction
+goes, using principle components analysis.
+
+204
+00:25:59,370 --> 00:26:05,859
+And in the exam, you will be asked to solve
+problems regarding this. So, you will be given
+
+205
+00:26:05,859 --> 00:26:12,100
+all the data; you have to find out the principle
+components and do the feature reduction. And
+
+206
+00:26:12,100 --> 00:26:19,210
+you may also be asked to calculate the eigen
+values of a given matrix. So, how do you calculate
+
+207
+00:26:19,210 --> 00:26:32,379
+the eigen values of a given matrix?
+
+208
+00:26:32,379 --> 00:26:39,370
+The eigen values of a matrix, say, you have
+been given a matrix A, which is 0, 1, minus
+
+209
+00:26:39,370 --> 00:26:46,350
+2, minus 3. So, calculate the eigen values
+of this matrix. So, how am I going to, going
+
+210
+00:26:46,350 --> 00:27:01,419
+to solve this problem? First, step one is,
+construct the characteristic equation of the
+
+211
+00:27:01,419 --> 00:27:09,359
+matrix A. So, what is it going to look like?
+It is A minus lambda I, determinant of that
+
+212
+00:27:09,359 --> 00:27:16,129
+is equal to 0. So this is called the characteristic
+equation of a matrix, alright, of a square
+
+213
+00:27:16,129 --> 00:27:21,210
+matrix.
+Now, what it is going. So this works down
+
+214
+00:27:21,210 --> 00:27:32,019
+to, like, 0, 1, minus 2, minus 3, minus lambda
+times. So, lambda is an eigen value; or yes,
+
+215
+00:27:32,019 --> 00:27:43,850
+0, 1; we are going to solve this; I will just
+shift here. So this is going to result in
+
+216
+00:27:43,850 --> 00:27:52,639
+this matrix; minus lambda, 1, minus 2, minus
+2; and then, minus 3, minus lambda, determinant
+
+217
+00:27:52,639 --> 00:28:09,239
+is equal to 0; which gives, yes. So, it will
+be lambda times 3 plus lambda, minus, no,
+
+218
+00:28:09,239 --> 00:28:16,960
+plus 2 equal to 0, which will produce, lambda
+square, plus 3 lambda, plus 2 equal to 0;
+
+219
+00:28:16,960 --> 00:28:25,330
+which is equal to lambda plus 1, into lambda
+plus 2, equal to 0; or therefore, the solutions
+
+220
+00:28:25,330 --> 00:28:36,720
+for lambda minus 1 and minus 2. So, these
+are going to be your eigen values. Now, how
+
+221
+00:28:36,720 --> 00:28:45,350
+do you calculate the eigen vectors of A? There
+will be 1 eigen vector, per eigen value.
+
+222
+00:28:45,350 --> 00:28:57,029
+So, calculating eigen vectors; now, for calculating
+the eigen vector, write down the equation
+
+223
+00:28:57,029 --> 00:29:10,390
+A x. So, say, let x be an eigen vector; x
+is equal to x 1, x 2, as this is a 2 plus
+
+224
+00:29:10,390 --> 00:29:18,799
+2 matrix, the eigen vectors will be 2 cross
+1. Next, you do A x equal to lambda x. So
+
+225
+00:29:18,799 --> 00:29:25,799
+this is how this is the condition for an eigen
+vector that the translinear, the transmission
+
+226
+00:29:25,799 --> 00:29:33,020
+of the eigen vector with this matrix, is equal
+to a scaling, with the eigen value, corresponding
+
+227
+00:29:33,020 --> 00:29:39,100
+eigen value.
+Now this boils down to A minus lambda I, x
+
+228
+00:29:39,100 --> 00:29:50,979
+equal to 0; and now, you put the value of
+lambda. So, here, lambda equal to minus 1;
+
+229
+00:29:50,979 --> 00:29:56,889
+say, we are trying to find out the eigen vector
+of minus 1, the eigen value minus 1. So, what
+
+230
+00:29:56,889 --> 00:30:12,440
+will it become? It is going to be 0, 1, minus
+2, minus 3, minus, minus 1 times. So this

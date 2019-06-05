@@ -1,0 +1,132 @@
+65
+00:10:03,880 --> 00:10:21,210
+Now, suppose our estimate p y (x) beta are
+the parameters p y (x) is our estimate of
+
+66
+00:10:21,210 --> 00:10:33,520
+probability of y given x and beta is the vector
+whose value the beta are the set of parameters
+
+67
+00:10:33,520 --> 00:10:42,910
+whose values we have got to learn . Now, what
+we will do is that we will do stochastic gradient
+
+68
+00:10:42,910 --> 00:10:49,500
+descent for that we assume a single training
+example and with respect to the training example
+
+69
+00:10:49,500 --> 00:11:00,440
+we will do the radiant descent. So, in order
+to do that we first define the likelihood of
+
+70
+00:11:11,000 --> 00:11:13,120
+the data, what we have to do is.
+
+71
+00:11:13,420 --> 00:11:26,560
+We have to learn the optimal values of beta
+and we use the maximum likelihood approach
+
+72
+00:11:26,560 --> 00:11:36,130
+we find out what is the likelihood of beta.
+So, the likelihood of beta is the probability
+
+73
+00:11:36,130 --> 00:11:43,850
+of observing the data given beta were the
+actual parameters. So, the likelihood of beta
+
+74
+00:11:43,850 --> 00:11:55,090
+can be written as probability of the y given
+x parameterized by beta and because we have
+
+75
+00:11:55,090 --> 00:12:02,200
+m training example this is product of for
+each training example, we find the probability
+
+76
+00:12:02,200 --> 00:12:18,660
+of y i given x i beta.
+And this as we have seen is product of i equal
+
+77
+00:12:18,660 --> 00:12:34,740
+to 1 to m h (x) i to the power y i times 1
+minus h (x) i to the power 1 minus y i. So,
+
+78
+00:12:34,740 --> 00:12:44,260
+we have got to find beta. So, that this expression
+is maximized now whatever maxi. So, all the
+
+79
+00:12:44,260 --> 00:12:51,550
+probabilities are positive. So, whatever maximizes
+this expression will also maximize the log
+
+80
+00:12:51,550 --> 00:12:59,590
+of this expression and in order to make our
+computation simpler, we take the log likelihood
+
+81
+00:12:59,590 --> 00:13:05,870
+of respect to beta.
+So, small l of beta is the log likelihood
+
+82
+00:13:05,870 --> 00:13:19,310
+given beta and it is given by log of likelihood
+of beta, which is summation i equal to 1 to
+
+83
+00:13:19,310 --> 00:13:44,850
+m y i log of h (x) i plus 1 minus y i log
+of 1 minus h (x) i. So, this is by taking
+
+84
+00:13:44,850 --> 00:13:53,160
+logarithm of this expression we get the likelihood
+of beta. Now, we have to maximize this likelihood
+
+85
+00:13:53,160 --> 00:13:59,570
+and in order to maximize this likelihood we
+do gradient asset. As we know that when we
+
+86
+00:13:59,570 --> 00:14:23,100
+try to maximize this function we can take
+the derivative, let me rub this. So, we have
+
+87
+00:14:23,100 --> 00:14:28,300
+this function here, which we want to maximize.
+
+88
+00:14:29,330 --> 00:14:37,940
+So, what we will do is that, we will take
+the derivative of this function and so, we
+
+89
+00:14:37,940 --> 00:14:47,590
+will start with some initial value of beta.
+We will start with initial value of beta and
+
+90
+00:14:47,590 --> 00:14:55,300
+we will update beta as follows beta equal
+to initial beta plus some alpha, alpha is
+
+91
+00:14:55,300 --> 00:15:03,160
+the learning rate times the derivative partial
+derivative with respect to beta of the log

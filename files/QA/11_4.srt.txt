@@ -1,0 +1,34 @@
+Q. In decision tree we use entropy to measure
+A. homogenity of data
+B. accurecy of data
+C. noice of data
+D. none of the above
+(A)
+
+Q. Entropy if represented by
+A. D
+B. R
+C. E
+D. W
+(C)
+
+Q. In decision tree base of the logarithm desides the
+A. value of the entropy
+B. unit of the entropy
+C. error of the entropy
+D. none of the above
+(B)
+
+Q. When we have same number of member from each class then entropy is
+A. Maximized
+B. Minimized
+C. Same
+D. None of the above
+(A)
+
+Q. When there is points from only one single class then entropy will be
+A. Maximized
+B. Minimized
+C. Same
+D. None of the above
+(B)

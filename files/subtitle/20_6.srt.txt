@@ -1,0 +1,194 @@
+161
+00:25:03,230 --> 00:25:11,619
+data? This is how it is used for basic supervised
+machine learning you find a probability of
+
+162
+00:25:11,619 --> 00:25:17,190
+class given the data. It can also be used
+for decision making if you are given different
+
+163
+00:25:17,190 --> 00:25:24,470
+cause functions you want take different decisions,
+so that your utility is maximized and for
+
+164
+00:25:24,470 --> 00:25:28,410
+such applications also bayes network can be
+used.
+
+165
+00:25:29,429 --> 00:25:36,429
+Let us look at how to define a bayes network
+formally. As we have already said the structure
+
+166
+00:25:36,429 --> 00:25:45,220
+of the graph denotes the conditional independence
+relationships. In general, the joint distribution
+
+167
+00:25:45,220 --> 00:25:54,840
+of X 1, X 2, X n can be written as the product
+of probability of each node given its parent.
+
+168
+00:25:54,840 --> 00:26:04,780
+In general, in most cases if you have to find
+out probability X 1, X 2, X n we can apply
+
+169
+00:26:04,780 --> 00:26:11,970
+the chain rule by which we get; this is equal
+to probability of X 1 times probability X
+
+170
+00:26:11,970 --> 00:26:25,440
+2 given X 1 times probability of X 3 given
+X 1 X 2 dot, dot, dot probability of X n given
+
+171
+00:26:25,440 --> 00:26:33,299
+X 1, X 2, X n minus 1. This is the normal
+chain rule applied to a joint probability
+
+172
+00:26:33,299 --> 00:26:43,379
+distribution, but in a bayes distribution
+you can say that this is equal to the product
+
+173
+00:26:43,379 --> 00:26:52,759
+of probability of each node given just the
+values of its parents.
+
+174
+00:26:53,520 --> 00:27:01,049
+So, in this way it is a compact representation
+of the joint distribution. So, the graph is
+
+175
+00:27:01,049 --> 00:27:07,820
+required to be acyclic. So, there are 2 components
+to a Bayesian network, the graph structure
+
+176
+00:27:07,820 --> 00:27:22,649
+and the numerical probabilities or the conditional
+probability table associated with each node.
+
+177
+00:27:22,649 --> 00:27:31,269
+Now, we will look at some examples of Bayesian
+network. So, here is a situation the first
+
+178
+00:27:31,269 --> 00:27:40,760
+example, we have 3 variables A, B and C then
+there are no edges. So, they are completely
+
+179
+00:27:40,760 --> 00:27:46,490
+independent. Therefore, probability the joint
+distribution of probability of A, B, C is
+
+180
+00:27:46,490 --> 00:27:51,889
+simply probability of A times probability
+of B times probability of C. This is the simplest
+
+181
+00:27:51,889 --> 00:27:57,940
+case, where there is no relation among the
+variables that completely independent.
+
+182
+00:27:57,940 --> 00:28:05,840
+Look at the second example, we have suppose
+A is a disease, B is one symptom of the disease,
+
+183
+00:28:05,840 --> 00:28:15,749
+C is another symptom of the disease. The conditional
+independence of the bayes network means the
+
+184
+00:28:15,749 --> 00:28:23,299
+joint distribution probability of A, B, C
+is given by probability B given A times probability
+
+185
+00:28:23,299 --> 00:28:31,830
+C given A times probability of A. So, B and
+C are conditionally independent given.
+
+186
+00:28:31,830 --> 00:28:41,100
+Third example we have A, and B are 2 causes
+for C, suppose C is late for work, A is traffic
+
+187
+00:28:41,100 --> 00:28:48,409
+jam, B is late wake up. So, late wake up and
+traffic jam are independent causes of being
+
+188
+00:28:48,409 --> 00:28:55,129
+late. So, traffic jam and late wake up are
+independent if you do not know whether it
+
+189
+00:28:55,129 --> 00:29:00,090
+is late, but they are not independent if you
+know whether it is late because one can if
+
+190
+00:29:00,090 --> 00:29:05,899
+you are late, one of them can explain the
+reason for other. So, if you are late and
+
+191
+00:29:05,899 --> 00:29:11,039
+there is traffic jam the probability that
+you have woken up late is less, but if you
+
+192
+00:29:11,039 --> 00:29:17,480
+are late and there was no traffic jam it is
+more highly probable that you have woken up
+
+193
+00:29:17,480 --> 00:29:21,350
+late.
+The fourth example, we have these variables
+
+194
+00:29:21,350 --> 00:29:28,710
+A, B, C and we have no relation from A to
+B, B to C and this represents Markov dependency.
+
+195
+00:29:29,000 --> 00:29:35,570
+So, C is independent of A given B. So, if
+A, B and C occur at consecutive time step,
+
+196
+00:29:35,570 --> 00:29:43,639
+A at time t minus 1, B at time t, C at time
+t we can say that probability of C depends
+
+197
+00:29:43,639 --> 00:29:49,769
+only on the current state B it is independent
+of the previous stage. So, this is the Markov
+
+198
+00:29:49,769 --> 00:29:55,779
+assumption which is often used. So, these
+are 4 examples of Bayesian network.
+
+199
+00:29:55,779 --> 00:30:00,759
+And we have already talked about the naive
+bayes model in the earlier class where we

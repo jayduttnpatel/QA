@@ -1,0 +1,132 @@
+174
+00:25:11,710 --> 00:25:24,470
+E by del Y d, we do a transfer of variables
+and chaining and del Y d by del W i.
+
+175
+00:25:30,139 --> 00:25:43,749
+Now, del E by del Y d, so what we get from
+here is simply summation over d. So, E equal
+
+176
+00:25:43,749 --> 00:25:51,929
+to Y minus Y hat whole square. So, this will
+become 2 into Y minus Y d. So, we just get
+
+177
+00:25:51,929 --> 00:26:16,229
+from this Y d minus Y d hat times del del
+W i of Y d minus this psi or this sigma apply
+
+178
+00:26:16,229 --> 00:26:33,279
+to W dot X t. So, Y d has nothing to do with
+W i, this is del del W i apply to minus of
+
+179
+00:26:33,279 --> 00:26:43,839
+sigma W dot X t. So, this gives us, this part
+gives us
+
+180
+00:26:49,960 --> 00:27:10,929
+this sigma dash of W X d times X. So, this
+is W 1, W 1 X 1, W 2 X 2, W 3 X 3 of d and
+
+181
+00:27:10,929 --> 00:27:16,929
+only one of those terms will contain W i.
+So, the rest of the terms are independent
+
+182
+00:27:16,929 --> 00:27:20,280
+of W i.
+So, corresponding to that term we get X i d
+
+183
+00:27:20,280 --> 00:27:32,639
+So, this is X i d terms times sigma dash
+of W dot X d which will give us summation
+
+184
+00:27:32,639 --> 00:27:46,100
+over d Y d minus Y d hat corresponding to
+the dth training example then we have X i
+
+185
+00:27:46,100 --> 00:28:01,559
+d. We have before that we have Y d, this is
+Y d times. So, wait let me write X i d before.
+
+186
+00:28:01,559 --> 00:28:15,609
+So, this is times X i t times sigma dash W
+dot X d which by using this formula, this
+
+187
+00:28:15,609 --> 00:28:29,469
+can be written as Y d hat into 1 minus Y d
+hat. So, this is partial derivative of E with
+
+188
+00:28:29,469 --> 00:28:30,109
+respect to W i.
+
+189
+00:28:31,349 --> 00:28:38,950
+Now, based on this we can write the weight
+training rule as let me rub this out, so that
+
+190
+00:28:38,950 --> 00:29:00,320
+I have space. We can write delta W i equal
+to eta times sigma d Y d minus Y d hat Y d
+
+191
+00:29:00,320 --> 00:29:13,019
+hat 1 minus Y d hat times X i d right. So,
+this is the training rule for sigmoid units
+
+192
+00:29:13,019 --> 00:29:22,289
+and as we have already seen that we can use
+this, we can do a single layer logistic unit
+
+193
+00:29:22,289 --> 00:29:29,719
+and find its weights, but as I have already
+told that the limitation of single layer neural
+
+194
+00:29:29,719 --> 00:29:35,919
+network is that they can only represent linearly
+separable functions.
+
+195
+00:29:36,520 --> 00:29:40,980
+We have already looked at SBM they can only
+represent linearly separable function.
+
+196
+00:29:40,989 --> 00:29:48,869
+ofcourse, in SBM what we can do is that we can
+try to represent non-linear function by transforming
+
+197
+00:29:48,869 --> 00:29:55,229
+the features space and having a linear function
+in the transformed features space. What we
+
+198
+00:29:55,229 --> 00:30:02,249
+will do instead in multilayer neural network
+is that we will try to represent non-linear
+
+199
+00:30:02,249 --> 00:30:08,569
+function by stacking many of these units together
+which we will see in the next lecture.
+
+200
+00:30:08,639 --> 00:30:09,289
+Thank you.

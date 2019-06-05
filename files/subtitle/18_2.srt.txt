@@ -1,0 +1,158 @@
+28
+00:05:07,580 --> 00:05:16,260
+Suppose you want to know whether a patient
+has cancer or not. So, this particular example
+
+29
+00:05:16,270 --> 00:05:22,080
+is taken from Tom Meshes. Secondly, machine
+learning a patient takes a lab test and the
+
+30
+00:05:22,080 --> 00:05:29,889
+result is positive. Now, the test returns
+a correct positive result in only 98 percent
+
+31
+00:05:29,889 --> 00:05:37,410
+of the cases in which the disease is actually
+present and a correct negative result in only
+
+32
+00:05:37,410 --> 00:05:42,290
+97 percent of the cases in which the disease
+is not present.
+
+33
+00:05:42,900 --> 00:05:52,550
+Furthermore you know that 0.008 of the entire
+population have this cancer. So, we can write
+
+34
+00:05:52,550 --> 00:05:59,100
+down this as probability of cancer that is
+the prior probability of cancer among the
+
+35
+00:05:59,100 --> 00:06:12,699
+population is equal to 0.008 and therefore,
+probability of not cancer equal to 1 minus
+
+36
+00:06:12,699 --> 00:06:23,360
+0.008 that is 0.992. Now, what is the probability
+of the test being positive given that cancer
+
+37
+00:06:23,360 --> 00:06:34,280
+is present? If this is given us 0.98 by this
+statement of the problem also probability
+
+38
+00:06:34,280 --> 00:06:43,710
+of therefore, the probability of the test
+being negative given cancer is equal to 1
+
+39
+00:06:43,710 --> 00:06:54,111
+minus 0.98 that is 0.02. What is the probability
+of test being positive given not cancer? This
+
+40
+00:06:54,111 --> 00:07:05,300
+is given by 1 minus 0.97 that is 0.03. Similarly
+probability of not given cancer is given to
+
+41
+00:07:05,300 --> 00:07:13,680
+be 0.97.
+So, these are the values that are supplied
+
+42
+00:07:13,680 --> 00:07:21,169
+to you in the problem. Now, based on this
+we can use Bayes theorem. We want to find
+
+43
+00:07:21,169 --> 00:07:32,940
+out the probability of cancer. The hypothesis
+is that the patient has cancer given that
+
+44
+00:07:33,180 --> 00:07:37,920
+the probability that the patient has a cancer.
+
+45
+00:07:41,240 --> 00:07:55,500
+Given that the test is positive, this is given
+by probability of positive given cancer times
+
+46
+00:07:55,500 --> 00:08:12,940
+prior probability of cancer divided by probability
+of the data. Similarly you can write probability
+
+47
+00:08:12,940 --> 00:08:23,280
+of not cancer given that the test is positive
+equal to probability of test being negative
+
+48
+00:08:23,280 --> 00:08:34,289
+given cancer times probability of not cancer
+times probability of the data and now, you
+
+49
+00:08:34,289 --> 00:08:39,430
+can put the values here.
+What is probability of plus given cancer?
+
+50
+00:08:39,430 --> 00:08:52,259
+It is 0.98. So, this is 0.98, this is 0.02
+whereas, probability negative given cancer
+
+51
+00:08:52,259 --> 00:09:07,350
+is 0.97, not sorry 0.03. So, this is 0.03
+times 0.992. So, probability cancer given
+
+52
+00:09:07,350 --> 00:09:15,800
+the test is positive is 0.98 into 0.002 divided
+by P D probability not cancer given the test
+
+53
+00:09:15,800 --> 00:09:23,970
+is positive is 0.03 times 0.992 given P D
+divided by P D. Now, divide by P D this denominator
+
+54
+00:09:23,970 --> 00:09:31,029
+is common to both the expressions. Secondly,
+probability of having cancer is proportional
+
+55
+00:09:31,029 --> 00:09:40,100
+to 0.98, 0.02 and not cancer is proportional
+to 0.003 into 0.992. Based on this, you can
+
+56
+00:09:40,100 --> 00:09:45,139
+figure out the probabilities.
+So, this plus, this will sum to 1 and you
+
+57
+00:09:45,139 --> 00:09:50,889
+can find out that this is more likely. So,
+it is more likely that the patient does not
+
+58
+00:09:50,889 --> 00:09:55,429
+have cancer given this. So, this is an application
+of Bayes theorem.
+
+59
+00:09:55,720 --> 00:10:05,629
+Now, the goal of Bayes learning; now, can
+Bayes theorem we apply it to find a hypothesis

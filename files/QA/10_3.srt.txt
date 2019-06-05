@@ -1,0 +1,20 @@
+Q. Logistic Regression is about 
+A. Classification
+B. Regression
+C. Clusturing
+D. none of the above
+(A)
+
+Q. Logistic regression is
+A. binary classifier
+B. unary classifier
+C. ternary classifier
+D. none of the abover
+(A)
+
+Q. In logistic regression example which dataset was used?
+A. Medical
+B. Bank
+C. Hospital
+D. Iris
+(D)

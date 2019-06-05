@@ -1,0 +1,27 @@
+Q. If we have not enough examples which of the following probles can happen?
+A. Overfitting
+B. High Accuracy
+C. noisy data
+D. None of the above
+(A)
+
+Q. Prepruning is used to avoid
+A. Overfitting
+B. High Accuracy
+C. noisy data
+D. None of the above
+(A)
+
+Q. Postpruning is used to avoid
+A. Overfitting
+B. High Accuracy
+C. noisy data
+D. None of the above
+(A)
+
+Q. In prepruning what we do?
+A. Stop early
+B. Stop Late
+C. Stop At the exact time
+D. None of the above
+(A)

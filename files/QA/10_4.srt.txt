@@ -1,0 +1,6 @@
+Q. Decision tree regression model
+A. piecewise linear model
+B. nonlinear model
+C. binary model
+D. none of the above
+(A)

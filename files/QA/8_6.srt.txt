@@ -1,0 +1,13 @@
+Q. GINI index is measure of
+A. Node impurity
+B. error
+C. bias
+D. entropy
+(A)
+
+Q. For contineous attibute which split can be done?
+A. binary
+B. ternary
+C. unary
+D. none of the above
+(A)

@@ -1,0 +1,239 @@
+136
+00:15:00,470 --> 00:15:05,420
+of training points.
+As SVM is a linear classifier, it always makes
+
+137
+00:15:05,420 --> 00:15:10,970
+a linear decision boundary. When you have
+a dataset in which the points are not linearly
+
+138
+00:15:10,970 --> 00:15:17,670
+separable, then it does not perform well,
+right. So, you need to have some non-linear
+
+139
+00:15:17,670 --> 00:15:23,249
+decision boundary and that is why, that is
+why, kernels come in. So, the idea is that
+
+140
+00:15:23,249 --> 00:15:28,749
+when the points are not linearly separable,
+you are going to transform them using some
+
+141
+00:15:28,749 --> 00:15:34,939
+feature transformation function into another
+higher dimensional space preferably in which
+
+142
+00:15:34,939 --> 00:15:41,670
+the points would presumably be linearly separable.
+So, you are assuming that the points are not
+
+143
+00:15:41,670 --> 00:15:45,480
+linearly separable in the current feature
+space, but when they are mapped to a much
+
+144
+00:15:45,480 --> 00:15:49,799
+higher dimensional feature space, then they
+will be linearly separable. So, you first
+
+145
+00:15:49,799 --> 00:15:53,939
+do that feature mapping using some non-linear
+function and then, in that higher dimensional
+
+146
+00:15:53,939 --> 00:16:00,149
+space you are, you will go ahead and make
+an SVM, right. This is the linear decision
+
+147
+00:16:00,149 --> 00:16:07,230
+boundary, but this entire process can be bypassed.
+So, first feature transformation, then SVM.
+
+148
+00:16:07,230 --> 00:16:12,079
+So, this can be bypassed for using a kernel.
+So, kernel function is a function which returns
+
+149
+00:16:12,079 --> 00:16:19,250
+directly the dot product of the transformed
+points from the points, in the initial, of
+
+150
+00:16:19,250 --> 00:16:24,689
+the original feature space. So, a kernel function
+takes points from the original feature space
+
+151
+00:16:24,689 --> 00:16:30,029
+and returns the dot product of those points
+in the transformed space and I have explained
+
+152
+00:16:30,029 --> 00:16:36,689
+this more explicitly in the, with hands, with
+proper figures and everything in the tutorial
+
+153
+00:16:36,689 --> 00:16:42,689
+session of this week.
+So, entire idea of kernel is to extrapolate
+
+154
+00:16:42,689 --> 00:16:50,079
+SVMs to the non-linear decision boundaries,
+to have a SVM with non-linear decision boundaries.
+
+155
+00:16:50,079 --> 00:16:57,551
+So, you do not, you continue to have a linear
+decision boundary, but the decision boundary
+
+156
+00:16:57,551 --> 00:17:06,400
+is in a different space, so to which you first
+transform your data points to, right. So,
+
+157
+00:17:06,400 --> 00:17:14,010
+this linear kernel SVM is doing the, you know,
+linear decision boundary classification in
+
+158
+00:17:14,010 --> 00:17:18,210
+the original feature space.
+And you can see that as the points of the
+
+159
+00:17:18,210 --> 00:17:24,611
+first class, this green point, they are linearly
+separable from the other classes, so they
+
+160
+00:17:24,611 --> 00:17:29,450
+have been neatly separated into a different
+region. However, the other two classes, they
+
+161
+00:17:29,450 --> 00:17:36,640
+are not linearly separable and hence, you
+need, like this linear decision boundary,
+
+162
+00:17:36,640 --> 00:17:42,210
+it tries to like, you know, maximally separate
+the points of the two classes, but it has
+
+163
+00:17:42,210 --> 00:17:48,380
+a lot of misclassifications, right. However,
+see what happens with the RBF kernel.
+
+164
+00:17:48,380 --> 00:17:53,630
+So, all of these decision boundaries, they
+are non-linear. As you can see, the linear
+
+165
+00:17:53,630 --> 00:17:59,790
+decision, the linearly separable first class,
+continues to be separated neatly, but in this
+
+166
+00:17:59,790 --> 00:18:09,680
+case, the points of the, white points and
+these blue points have been separated better
+
+167
+00:18:09,680 --> 00:18:19,060
+because as you can see before, that the accuracy,
+oops, this was for the polynomial kernel,
+
+168
+00:18:19,060 --> 00:18:27,070
+yeah. So, it does not, it does not, so the
+RBF kernel gives the same accuracy as the
+
+169
+00:18:27,070 --> 00:18:30,800
+linear kernel for this particular example.
+However, you can see that the decision boundaries
+
+170
+00:18:30,800 --> 00:18:39,110
+are non-linear now. So, you could have, as
+these decision boundaries are non-linear,
+
+171
+00:18:39,110 --> 00:18:41,890
+so you could have a better performance in
+this case.
+
+172
+00:18:44,490 --> 00:18:49,710
+And the only thing that I want you people
+to notice here is that the decision boundaries
+
+173
+00:18:49,710 --> 00:18:55,460
+become non-linear. So, the points are first
+transformed using the, using a particular
+
+174
+00:18:55,460 --> 00:19:02,690
+feature transformation function and then,
+in that transformed domain they are separated
+
+175
+00:19:02,690 --> 00:19:06,790
+by linear decision boundaries and when those
+decision boundaries are visualized in the
+
+176
+00:19:06,790 --> 00:19:14,580
+original space, they look non-linear.
+And similar is the case with polynomial kernel
+
+177
+00:19:14,580 --> 00:19:22,180
+and you can see, that it is like, it has tried
+to divide the space using like, you know,
+
+178
+00:19:22,180 --> 00:19:27,500
+cubic polynomials. So, as it is a degree three
+kernel, so it will be fitting polynomials
+
+179
+00:19:27,500 --> 00:19:35,100
+of degree three and splitting the space, whereas
+these would look like, you know, contours
+
+180
+00:19:35,100 --> 00:19:41,850
+in Gaussian curves, like Gaussian curves.
+So, if you like, it is like, it has like fitted
+
+181
+00:19:41,850 --> 00:19:50,610
+Gaussian on the data, one on this part one,
+on this and one on that, or maybe I am not
+
+182
+00:19:50,610 --> 00:19:57,440
+sure about how many components have been chosen,
+but you will find out that there is a function
+
+183
+00:19:57,440 --> 00:20:04,710
+and these things, it is like, you know, like
+these decision boundaries, they are contours

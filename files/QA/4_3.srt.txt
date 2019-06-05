@@ -1,0 +1,31 @@
+Q. sample error is average number of
+A. classification
+B. misclassification
+C. Traversal
+D. running
+(B)
+
+Q. which error is define over the distribution of instances?
+A. sample error
+B. true error
+C. rms error
+D. adam error
+(B)
+
+Q. When search algorithm is not exhaustively
+
+ searching the hypotheses space, but making 
+certain simplification that is called which type of bias?
+A. seach bias
+B. train bais
+C. test bias
+D. validation bias
+(A)
+
+Q. If the error is due to the limited size of
+ the sample that you use for testing then what it is called?
+A. seach bias
+B. train bais
+C. test bias
+D. variance error
+(D)

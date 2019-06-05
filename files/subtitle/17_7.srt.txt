@@ -1,0 +1,193 @@
+231
+00:30:12,440 --> 00:30:23,549
+becomes plus I, is equal to 0, which is equal
+to, I am sorry, times x, is equal to 0, which
+
+232
+00:30:23,549 --> 00:30:36,769
+is equal to. Now, we can see, yes. So, which
+is equal to 1, 1, minus 2; this is minus 2,
+
+233
+00:30:36,769 --> 00:30:46,619
+times x equal to 0; and this is same as writing
+1, 1, minus 2, minus 2, x 1, x 2, equal to
+
+234
+00:30:46,619 --> 00:30:54,359
+0. So this is going to produce 2 equations,
+right. Therefore, x 1 plus x 2 equal to 0.
+
+235
+00:30:54,359 --> 00:30:58,850
+So this is what you get from the first row;
+and these 0es are 0 vectors. So, basically,
+
+236
+00:30:58,850 --> 00:31:05,580
+they are 0, 0, in a column.
+So, I should write it as this 0, 0. This is
+
+237
+00:31:05,580 --> 00:31:09,879
+one equation and the second equation is going
+to be minus 2 x 1, minus 2 x 2 equal to 0,
+
+238
+00:31:09,879 --> 00:31:15,740
+which actually boils down to the same thing,
+x 1, x 2 equal to 0. Now this relation x 1
+
+239
+00:31:15,740 --> 00:31:21,399
+equal to minus x 2 is what will make our eigen
+vectors. Therefore, the eigen vector x can
+
+240
+00:31:21,399 --> 00:31:29,539
+be written as x 1 and minus x 1, which is
+equal to a constant x 1 times 1 minus 1. So,
+
+241
+00:31:29,539 --> 00:31:35,730
+as you know, eigen vectors remain invariant
+upon scaling. We just, we can drop this number
+
+242
+00:31:35,730 --> 00:31:46,389
+x 1 and we can say that, an eigen value, the
+eigen value, eigen vector of A, for eigen
+
+243
+00:31:46,389 --> 00:31:55,400
+value minus 1 is 1, minus 1.
+And this way, we can find the eigen vector
+
+244
+00:31:55,400 --> 00:32:00,820
+for the eigen value minus 2 as well. So, you
+will be asked this kind of questions, to calculate
+
+245
+00:32:00,820 --> 00:32:10,800
+the eigen values of a matrix. Now, we go to
+the next topic, which is K nearest neighbor
+
+246
+00:32:10,800 --> 00:32:12,840
+classification.
+
+247
+00:32:13,140 --> 00:32:19,980
+So, how we will cover it very quickly, how
+does it go? Say, you have this kind of a scenario,
+
+248
+00:32:19,989 --> 00:32:31,240
+in which, you have been given 2 categories
+of examples. So, another cross, cross, dot;
+
+249
+00:32:31,240 --> 00:32:38,580
+say this is your x 1; this is your x 2, 2
+feature dimensions. Now, if you are asked.
+
+250
+00:32:38,580 --> 00:32:50,099
+Now, a new sample arises, which lies, say
+here, denoted by a star. So, now, the question
+
+251
+00:32:50,099 --> 00:32:55,609
+is which class this star this sample belongs
+to. So, what the K nearest neighbor algorithm
+
+252
+00:32:55,609 --> 00:33:01,470
+will do is, it will find out what are the
+K training examples, which are nearest to
+
+253
+00:33:01,470 --> 00:33:10,679
+the point in question; say, in our case, K
+is equal to 4; it is going to find out what
+
+254
+00:33:10,679 --> 00:33:18,190
+4 training examples are closest to the point
+in question. So, the ones that are selected
+
+255
+00:33:18,190 --> 00:33:22,669
+are this cross.
+So, I will highlight them in green, cross,
+
+256
+00:33:22,669 --> 00:33:33,330
+cross, cross and dot. So, now, it is going
+to do a voting that, which class is majority
+
+257
+00:33:33,330 --> 00:33:40,599
+among the neighbors of the, of the point in
+question. So, over here, the majority class
+
+258
+00:33:40,599 --> 00:33:58,470
+is cross. So that is why, the output class
+for the point in question is cross. So this
+
+259
+00:33:58,470 --> 00:34:05,559
+is how K nearest neighbor classification algorithm
+works. Now, there are some questions; for
+
+260
+00:34:05,559 --> 00:34:09,999
+example, what happens when the K, value of
+K increases.
+
+261
+00:34:10,580 --> 00:34:20,340
+So, what happens when you choose a larger
+area for your context? So, when you choose
+
+262
+00:34:20,340 --> 00:34:25,270
+a larger value of K, what happens? So, several
+things can happen. So, the sensitivity to
+
+263
+00:34:25,270 --> 00:34:31,820
+noise may be reduced. For example, if you
+just look at the first 5, the nearest 5 samples
+
+264
+00:34:31,820 --> 00:34:37,070
+then, it may not be sound enough. So, maybe
+there is, there are some noisy points which
+
+265
+00:34:37,070 --> 00:34:42,860
+do not give any real information, but if you
+look at a wider perspective, or wider neighborhood,
+
+266
+00:34:42,860 --> 00:34:47,270
+alright, with a bigger value of K then, the
+amount, effect of noise may reduce. So, the
+
+267
+00:34:47,270 --> 00:34:52,770
+number of valid points within that larger
+neighborhood is, could be larger. So, there
+
+268
+00:34:52,770 --> 00:34:55,270
+is a possibility of better performance, better
+generalization.
+
+269
+00:34:55,970 --> 00:35:04,490
+Another thing is, there is better probability
+estimation for discrete random variables.

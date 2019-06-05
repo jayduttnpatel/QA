@@ -1,0 +1,55 @@
+Q. Which platform is used in the video?
+A. Keras
+B. Pytorch
+C. Scikits learn
+D. none of the above
+(C)
+
+Q. Scikits learn is based on which programming language?
+A. C
+B. C plus plus
+C. java
+D. python
+(D)
+
+Q. Which learning is about approximating linear function? 
+A. Linear regression
+B. Logistic regression
+C. Classification
+D. none of the above
+(A)
+
+Q. Wich is the first step of the machine learning application?
+A. Visualization of the dataset
+B. Split the data
+C. Fit a linear model
+D. none of the above
+(A)
+
+Q. Wich is the second step of the machine learning application?
+A. Visualization of the dataset
+B. Split the data
+C. Fit a linear model
+D. none of the above
+(B)
+
+Q. On which data model is trained?
+A. Train set
+B. Validation set
+C. Test Set
+D. holdout set
+(A)
+
+Q. After one episode of training model is evaluated on which data set?
+A. Train set
+B. Validation set
+C. Test Set
+D. holdout set
+(B)
+
+Q. After the training performance of the model is measured on which data set?
+A. Train set
+B. Validation set
+C. Test Set
+D. holdout set
+(C)
