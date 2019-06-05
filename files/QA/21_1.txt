@@ -1,0 +1,76 @@
+Q. In the lacture naive bayes is used to
+A. classify the email as spam or non spam
+B. classify the images
+C. classift the input
+D. none of the above
+(A)
+
+Q. Which algorithm is used in the lacture?
+A. naive bayes
+B. regression
+C. decision tree
+D. none of the above
+(A)
+
+Q. In the naive bayes we try to find which class has the highest
+A. accurecy
+B. posterior probability
+C. prior probability
+D. none of the above
+(B)
+
+Q. In the naive bayes the class which has the highest posterior probability is output as the
+A. majority class
+B. minority class
+C. prediction class
+D. none of the above
+(C)
+
+Q. Target class is represented by the symbol of
+A. A
+B. B
+C. C
+D. D
+(C)
+
+Q. Which function check for the maximum probability in the naive bayes algorithm?
+A. max
+B. min
+C. avg
+D. argmax
+(D)
+
+Q. Naive bayes classification algorithm assumes that the input feature are
+A. conditionally independant
+B. non conditionally independant
+C. conditionally dependant
+D. none of the above
+(A)
+
+Q. Which opensource dataset we are using?
+A. Github
+B. Gmail
+C. UC Irvine
+D. none of the above
+(C)
+
+Q. In UC Irvine dataset email are represented as the
+A. embedding of the email
+B. combination of the keywords
+C. relative frequency of the keywords
+D. none of the above
+(C)
+
+Q. How many percentage cases of the dataset are spam?
+A. 12.35
+B. 35.43
+C. 39.4
+D. 65.9
+(C)
+
+Q. How many key words are there in the dataset?
+A. 10
+B. 32
+C. 40
+D. 48
+(D)

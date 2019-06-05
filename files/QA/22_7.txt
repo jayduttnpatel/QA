@@ -1,0 +1,6 @@
+Q. Bayesian network also reduce the probability of
+A. underfitting
+B. overfitting
+C. low accurecy
+D. none of the above
+(B)

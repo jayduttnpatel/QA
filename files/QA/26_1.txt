@@ -1,0 +1,34 @@
+Q. W is the
+A. weight vector
+B. accurecy vector
+C. input vector
+D. none of the above
+(A)
+
+Q. margin in linearly separable svm is maximizing
+A. 2 by w
+B. 1 by w
+C. 2 into w
+D. 1 into w
+(A)
+
+Q. In svm we have
+A. m constraints
+B. m margin
+C. m error
+D. none of the above
+(A)
+
+Q. margin in linearly separable svm is minimizing
+A. w by 2
+B. w by 1
+C. 2 into w
+D. 1 into w
+(A)
+
+Q. Normal svm will not work in the case of
+A. high accurecy
+B. noise
+C. high data
+D. none of the above
+(B)

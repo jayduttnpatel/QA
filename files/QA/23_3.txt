@@ -1,0 +1,20 @@
+Q. In stocastic gradient descent we take how many training examples?
+A. 1
+B. 2
+C. 3
+D. 4
+(A)
+
+Q. Likelihood of beta is
+A. probability of X given Y perameterized by beta
+B. probability of Y given X perameterized by alpha
+C. probability of Y given X perameterized by theta
+D. probability of Y given X perameterized by beta
+(D)
+
+Q. To maximize the likelihood we do
+A. classification
+B. gradient descent
+C. normalization
+D. regression
+(B)

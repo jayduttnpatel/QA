@@ -1,0 +1,27 @@
+Q. Classification function defined in terms of
+A. features
+B. target
+C. error
+D. none of the above
+(A)
+
+Q. More features does not mean we have more discrimination power or more information because
+A. small no of feature are enough
+B. some feature may be irrelevant
+C. more feature doen't produce any effect
+D. none of the above
+(B)
+
+Q. If the number of training example is fixed and training set is not large then with increase in no of feature
+A. classifier performance will do down then it will increase
+B. classifier performance will go up then it will decrease
+C. nothing will happen
+D. none of the above
+(B)
+
+Q. More features does not mean we have more discrimination power or more information because
+A. small no of feature are enough
+B. some feature may be redundant
+C. more feature doen't produce any effect
+D. none of the above
+(B)

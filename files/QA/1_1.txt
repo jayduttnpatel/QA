@@ -1,0 +1,34 @@
+Q. What is the name of the Professor?
+A. Sudeshna Sarkar
+B. Harish Guruprashad
+C. Jaydutt Patel
+D. Arun Rajkuman
+(A)
+
+Q. When was first machine learning system was developed?
+A. 1950
+B. 1960
+C. 1970
+D. 1980
+(A)
+
+Q. In 1952 where was Arthur Samuel?
+A. Apple
+B. Google
+C. IBM
+D. Intel
+(C)
+
+Q. Who proposed perceptron?
+A. Arthur Samuel
+B. Sundar Pichai
+C. Narendra Modi
+D. Rosenblatt
+(D)
+
+Q.When did Rosenblatt proposed the perceptron?
+A. 1950
+B. 1952
+C. 1954
+D. 1957
+(D)

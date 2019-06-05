@@ -1,0 +1,13 @@
+Q. To get less sensitive classifier to class noise we must have
+A. small value of k
+B. large value of k
+C. average value of k
+D. none of the above
+(B)
+
+Q. If we have larger training set then which of the following k value must be used
+A. large
+B. small
+C. average
+D. none of the above
+(A)

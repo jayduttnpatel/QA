@@ -1,0 +1,6 @@
+Q. For arbitrary bayes network exact inference is
+A. require more data
+B. tractable
+C. intractable
+D. none of the above
+(C)

@@ -1,0 +1,20 @@
+Q. In feature exraction we
+A. map our higher dimensional features to lower dimensions
+B. map our higher dimensional features to even higher dimensional
+C. dimension dose not change
+D. none of the above
+(A)
+
+Q. Projection matrix is represented as
+A. A
+B. D
+C. R
+D. W
+(D)
+
+Q. New features in the feature extraction must be
+A. uncorrelated and can not be reduced further
+B. can be reduced if needed
+C. can not be said
+D. none of the above
+(A)

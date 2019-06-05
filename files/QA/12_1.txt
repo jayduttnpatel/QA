@@ -1,0 +1,20 @@
+Q. Instance based learning is also called
+A. quick learning
+B. lazy learning
+C. fast learning
+D. none of the above
+(B)
+
+Q. When algorithm save the data in the memory and at the time of testing come up with the model is known as the
+A. quick algorithm
+B. fast algorithm
+C. lazy algorithm
+D. none of the above
+(C)
+
+Q. Nearest neighbour is
+A. lazy algorithm
+B. fast algorithm
+C. slow algorithm
+D. none of the above
+(A)

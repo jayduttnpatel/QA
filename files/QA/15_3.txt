@@ -1,0 +1,27 @@
+Q. How many types of collaborative filtering methods are present
+A. 1
+B. 2
+C. 3
+D. 4
+(B)
+
+Q. User based nearest neighbour is the type of
+A. decision tree method
+B. classification method
+C. regression method
+D. collaborative filtering method
+(D)
+
+Q. Item based nearest neighbour is the type of
+A. decision tree method
+B. classification method
+C. regression method
+D. collaborative filtering method
+(D)
+
+Q. In collaborative nearest neighbour method first phase is
+A. data analysis
+B. data preprocessing
+C. neighbourhood formation
+D. none of the above
+(C)

@@ -1,0 +1,41 @@
+Q. Principle component analysis algorithm is used for
+A. increase accuracy
+B. dimensionality reduction
+C. decrease error
+D. none of the above
+(B)
+
+Q. Dimesionality reduction help to reduce which problem?
+A. curse of dimensionality
+B. slow learning
+C. vanishing gradient
+D. none of the above
+(A)
+
+Q. curse of dimensionality happens when we have too many
+A. accurecy
+B. data
+C. input dimension
+D. none of the above
+(C)
+
+Q. Principle component analysis method looks for
+A. uncorelated feature dimension
+B. corelated feature dimeansion
+C. random feature selection
+D. none of the above
+(A)
+
+Q. Principle component are the
+A. eigen vector of the coveriance metrix
+B. coveriance metrix
+C. diagonal of the coveriance metrix
+D. none of the above
+(A)
+
+Q. Principle component analysis can be used for the
+A. face recognition
+B. regression
+C. classification
+D. none of the above
+(A)

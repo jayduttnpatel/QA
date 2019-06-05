@@ -1,0 +1,41 @@
+Q. In dual problem solution is represented as
+A. d dot
+B. d start
+C. p star
+D. p dot
+(B)
+
+Q. If we have p star and d star smae then it is known as
+A. solution point
+B. optimal point
+C. saddle point
+D. none of the above
+(C)
+
+Q. Saddle point is the
+A. optimum value
+B. minimum value
+C. average value
+D. none of the above
+(A)
+
+Q. If the saddle point exist then it will setisfy which of the following condition?
+A. duality
+B. KKT
+C. learning 
+D. none of the above
+(B)
+
+Q. Partial derivative of the lagrangian will be zero is the statement of which condition?
+A. duality
+B. KKT
+C. learning 
+D. none of the above
+(B)
+
+Q. Training data points whose alpha is none zero are called
+A. learning points
+B. support vectors
+C. solution points
+D. none of the above
+(B)

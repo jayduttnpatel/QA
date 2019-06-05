@@ -1,0 +1,55 @@
+Q. What is the topic of this lacture?
+A. Bayes network approack
+B. bayes learning
+C. naive bayes learning
+D. none of the above
+(A)
+
+Q. Bayes network is also known as the
+A. learn network
+B. model network
+C. belief network
+D. none of the above
+(C)
+
+Q. Bayes network is type of
+A. learning model
+B. graphical model
+C. network model
+D. none of the above
+(B)
+
+Q. Bayes network is which type of graphical model
+A. directed
+B. non directed
+C. cyclic
+D. none of the above
+(A)
+
+Q. In the bayes network variables are represented by
+A. edges
+B. nodes
+C. roots
+D. none of the above
+(B)
+
+Q. In the bayes networks arcs representes
+A. parents
+B. nodes
+C. relations between variables
+D. none of the above
+(C)
+
+Q. Bayes network represents
+A. conditional independance relationship
+B. non conditional independance relationship
+C. conditional dependance relationship
+D. none of the above
+(A)
+
+Q. In bayes network whch of the following entity can be represented?
+A. probability
+B. causality
+C. dependance
+D. none of the above
+(B)

@@ -1,0 +1,6 @@
+Q. In the nearest neighbour classification problem after finding the k nearest neighbour what we do
+A. we average their values
+B. we find standard deviation
+C. we predict the answer as the majority class from the neighbours
+D. none of the above
+(A)

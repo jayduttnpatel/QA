@@ -1,0 +1,6 @@
+Q. Which plot is used to visualize the decision boundary 
+A. non linear plot
+B. linear plot
+C. mesh plot
+D. none of the above
+(C)

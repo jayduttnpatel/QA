@@ -1,0 +1,41 @@
+Q. What is the topic of the lacture?
+A. solving the dual problem
+B. regression
+C. classification
+D. decision tree
+(A)
+
+Q. algorithm for solving the dual problem is known as
+A. ID3
+B. gini index
+C. SMO
+D. none of the above
+(C)
+
+Q. SMO stands for
+A. supervised optimization
+B. svm optimization
+C. sequential optimization
+D. none of the above
+(C)
+
+Q. What is coordinate ascent
+A. it is the general form of solving optimization problem
+B. way of representing data
+C. way of testing model
+D. none of above
+(A)
+
+Q. In coordinate ascent what we do?
+A. loop until data is processed
+B. loop until convergence
+C. loop until done
+D. none of the above
+(B)
+
+Q. In coordinate ascent we find that value of alpha which make
+A. w is highest
+B. w is lowest
+C. w is constant
+D. none of the above
+(A)

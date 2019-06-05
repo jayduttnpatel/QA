@@ -1,0 +1,6 @@
+Q. Bayes network is
+A. directed acyclic graph
+B. non directed acyclic graph
+C. directed cyclic graph
+D. non of the above
+(A)

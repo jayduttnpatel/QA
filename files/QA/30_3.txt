@@ -1,0 +1,6 @@
+Q. Perceptron learning coverges to a consistant model if D is
+A. linearly separable
+B. non linearly separable
+C. similar
+D. none of the above
+(A)

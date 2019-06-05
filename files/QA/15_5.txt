@@ -1,0 +1,13 @@
+Q. Item based colloborative filtering we find similarity between
+A. items
+B. users
+C. data
+D. none of the above
+(A)
+
+Q. For normalization in the item based collaboration we used
+A. average
+B. standard deviation
+C. rms value
+D. none of the above
+(A)

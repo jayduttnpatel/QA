@@ -1,0 +1,6 @@
+Q. The probability of the even is
+A. fraction of time that event has happened
+B. square of number of time that event has happened
+C. number of time that event has happened
+D. none of the above
+(A)

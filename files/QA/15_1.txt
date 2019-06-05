@@ -1,0 +1,20 @@
+Q. How many types of recommender system are there?
+A. 1
+B. 2
+C. 3
+D. 4
+(B)
+
+Q. Item Recommendation and Rating prediction system are type of
+A. classification system
+B. regression system
+C. recommender system
+D. none of the above
+(C)
+
+Q. Movie rating is example of
+A. Item recommendation
+B. Rating recommendation
+C. classification
+D. none of the above
+(B)

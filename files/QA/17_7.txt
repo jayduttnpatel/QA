@@ -1,0 +1,27 @@
+Q. In k nearest neighbour which class is selected as the prediction?
+A. majority class among the neighbours 
+B. majority class among the data
+C. most similat data point class
+D. none of the above
+(A)
+
+Q. When value of k is incresed in k nearest neighbour which of the following parameter will reduce?
+A. error
+B. sensitivity to noise
+C. accurecy 
+D. none of the above
+(B)
+
+Q. When value of k is incresed in k nearest neighbour what benifit will occure?
+A. decrese in accurecy
+B. increase in error
+C. better probability estimation for descrete random variable
+D. none of the above
+(C)
+
+Q. Larger value of k should only be taken in k nearest neighbour when
+A. no of training example is large enough
+B. no of training example is similar enough
+C. no of features are large enough
+D. none of the above
+(A)

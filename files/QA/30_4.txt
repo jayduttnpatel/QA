@@ -1,0 +1,20 @@
+Q. In gradient descenet we find the
+A. intergration
+B. partial differentiation
+C. decomposition
+D. none of the above
+(B)
+
+Q. For convex function there is
+A. single minima
+B. two minima
+C. three minima
+D. none of the above
+(A)
+
+Q. step function is
+A. differentiable
+B. not differentiable
+C. integrable
+D. none of the above
+(A)

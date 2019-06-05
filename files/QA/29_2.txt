@@ -1,0 +1,20 @@
+Q. How many kernel are used in the lacture?
+A. 1
+B. 2
+C. 3
+D. 4
+(C)
+
+Q. rbf kernel are also called
+A. soft kernal
+B. gaussian kernel
+C. linear kernel
+D. none of the above
+(B)
+
+Q. svc is
+A. support vector classifier
+B. support vector converter
+C. supervised vector classifier
+D. none of the above
+(A)

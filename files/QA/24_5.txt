@@ -1,0 +1,13 @@
+Q. In support vector machine training examples must be
+A. linearly separable
+B. linearly inseparable
+C. non learly separable
+D. none of the above
+(A)
+
+Q. gamma by w is the
+A. arithmetic margin
+B. geometric margin
+C. average margin
+D. none of the above
+(B)

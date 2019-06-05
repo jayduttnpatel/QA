@@ -1,0 +1,6 @@
+Q. In the classification in the naive bayes classifier which of the below term must be maximized?
+A. product over all the attribute probability xi over y
+B. product over all the attribute probability xi over y into probability of x
+C. product over all the attribute probability xi over y into probability of y
+D. none of the above
+(C)

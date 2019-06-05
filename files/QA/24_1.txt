@@ -1,0 +1,20 @@
+Q. What is the topic of the lacture?
+A. logistic regression
+B. linear regression
+C. support vector machine
+D. none of the above
+(C)
+
+Q. In logistic regression we find the probability of
+A. y equal to 1 given x
+B. y equal to 0 given x
+C. x equal to 0 given y
+D. x equal to 0 given y
+(A)
+
+Q. In logistic regression we predict 1 when h x is 
+A. less than 1
+B. less than 0.5
+C. greater than 1
+D. greater than 0.5
+(D)

@@ -1,0 +1,13 @@
+Q. How we represent the email?
+A. document vector
+B. compressed form
+C. non compressed form
+D. none of the above
+(A)
+
+Q. In document vector each element of the vector is the idicator of
+A. frequency of the word
+B. presence of the word
+C. coveriance of the word
+D. none of the above
+(B)

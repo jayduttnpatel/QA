@@ -1,0 +1,55 @@
+Q. What is the topic of the lacture?
+A. Linear regression
+B. Logistic regression
+C. classification
+D. none of the above
+(B)
+
+Q. Logistic regression is used for
+A. classification
+B. regression
+C. leaning rate decay
+D. none of the above
+(A)
+
+Q. In logistic regression we use
+A. sigmoid function
+B. relu function
+C. tanh function
+D. none of the above
+(A)
+
+Q. Sigmoid function value varies between
+A. 0.5 and 1
+B. 2 and 3
+C. 0 and 1
+D. none of the above
+(C)
+
+Q. In sigmoid function at 0.5 value is
+A. 0
+B. 1
+C. 2
+D. 3
+(A)
+
+Q. In sigmoid function when z tends to infinity value become
+A. 0
+B. 1
+C. 2
+D. 3
+(B)
+
+Q. In sigmoid function when z tends to minus infinity value become
+A. -1
+B. 0
+C. 1
+D. 2
+(A)
+
+Q. Sigmoid function is represented as
+A. theta
+B. sigma
+C. delta
+D. none of the above
+(B)

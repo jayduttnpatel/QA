@@ -1,0 +1,13 @@
+Q. Which attribute gives support vectors?
+A. vector underscore
+B. support vector underscore
+C. svm underscore
+D. none of the above
+(B)
+
+Q. Number of support vector can be found using the
+A. length function
+B. size function
+C. height function
+D. none of the above
+(A)

@@ -1,0 +1,20 @@
+Q. In MAP inference we choose that value of y which have the maximum
+A. postirior probability
+B. prior probability
+C. avidance probability
+D. none of the above
+(A)
+
+Q. In MAP inference which of the following function we use?
+A. argmax
+B. max
+C. min
+D. avg
+(A)
+
+Q. The naive bayes assumption is the
+A. conditional independant assumption
+B. non conditional independant assumption
+C. conditional dependant assumption
+D. none of the above
+(A)

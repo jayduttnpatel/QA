@@ -1,0 +1,6 @@
+Q. In the probability question if the variable is missing then we add probability for all it's value this process is known as
+A. Learning
+B. Extraction
+C. Marginalization
+D. None of the above
+(C)

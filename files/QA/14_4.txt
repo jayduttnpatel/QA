@@ -1,0 +1,27 @@
+Q. What is a good criteria for feature in classification problem in feature extraction?
+A. low coplexity
+B. good accurecy
+C. separating different classes
+D. none of the above
+(C)
+
+Q. In the classification problem which of the following criteria shoud be increased? 
+A. between class distance
+B. within class distance
+C. error
+D. none of the above
+(A)
+
+Q. In the classification problem which of the following criteria shoud be decreased? 
+A. between class distance
+B. within class distance
+C. error
+D. none of the above
+(B)
+
+Q. Which method should be used to maximize between class distance and minimize within class distance?
+A. Linear discriminant analysis
+B. gradient descent
+C. back propogation
+D. none of the above
+(A)

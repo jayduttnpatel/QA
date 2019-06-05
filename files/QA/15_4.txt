@@ -1,0 +1,20 @@
+Q. In collaborative nearest neighbour method second phase is
+A. recommendation phase
+B. data preprocessing
+C. neighbourhood formation
+D. none of the above
+(A)
+
+Q. We need to normalize using average because
+A. different user give different rating
+B. rating is high value
+C. rating has high variance
+D. none of the above
+(A)
+
+Q. The problem with user based formulation of colloborative filtering
+A. low data
+B. high error
+C. lack of scalability
+D. none of the above
+(C)

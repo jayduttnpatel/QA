@@ -1,0 +1,27 @@
+Q. More features leads to the problem of
+A. local optima
+B. low learning
+C. curse of dimensionality
+D. none of the above
+(C)
+
+Q. In feature selection we
+A. select feature from the power set of features
+B. select new features
+C. find the subset of feature
+D. none of the above
+(C)
+
+Q. In feature extraction we
+A. select the subset of feature
+B. extract new feature to increase no of features
+C. transforms original set of features into smaller subspace which has smaller dimension
+D. none of the above
+(C)
+
+Q. In feature selection and extraction we want to
+A. improve of maintain accurecy or simplify complexity
+B. reduce features
+C. create new model from the previous model
+D. none of the above
+(A)

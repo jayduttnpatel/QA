@@ -1,0 +1,13 @@
+Q. In the noice based svm we have
+A. m constraints
+B. 2m constraints
+C. 3m constraints
+D. none of the above
+(B)
+
+Q. alpha is between 0 and
+A. R
+B. P
+C. D
+D. C
+(D)

@@ -1,0 +1,13 @@
+Q. Cosine similarity is
+A. angle between two vectors
+B. cosine of angle between two vectors
+C. inner product of two vectors
+D. none of the above
+(B)
+
+Q. Pearson correlation is also called
+A. angle between two unit vectors
+B. cosine similarity
+C. correlation coefficient
+D. none of the above
+(C)

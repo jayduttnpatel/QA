@@ -1,0 +1,20 @@
+Q. If the number of support vector is large then
+A. solution time will decrease
+B. solution time will increase
+C. solution time will stay same
+D. none of the above
+(B)
+
+Q. Kernel trick can also be used to do
+A. decomposition
+B. factorization
+C. principle component analysis
+D. none of the above
+(C)
+
+Q. Combination of svm be used to deal with
+A. single class
+B. two class
+C. multiple class
+D. none of the above
+(C)

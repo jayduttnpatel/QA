@@ -1,0 +1,20 @@
+Q. Instead of applying all possible hypotheis we sample from the hypothesis space in 
+A. gibbs sampling
+B. gradient descent
+C. learning rate decay
+D. none of the above
+(A)
+
+Q. In gibbs sampling we choose hypotheis
+A. giving similar output hypothesis
+B. most similar hypotheis
+C. randomly
+D. none of the above
+(C)
+
+Q. expected error of the gibbs classifier is
+A. twice less than or equal to bayes optimal classifier
+B. three times less than or equal to bayes optimal classifier
+C. four times less than or equal to bayes optimal classifier
+D. none of the above
+(A)

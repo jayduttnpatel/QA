@@ -1,0 +1,13 @@
+Q. In univariate feature selection method
+A. we look at one feature at a time
+B. we look at multiple featuers at a time
+C. we look at random no of features at a time
+D. none of the above
+(A)
+
+Q. In multivariate feature selection method
+A. we look at one feature at a time
+B. we look at all featuers simultaneously
+C. we look at random no of features at a time
+D. none of the above
+(B)

@@ -1,0 +1,6 @@
+Q. Basic unit in the neural network is called
+A. Perceptron
+B. Axon
+C. dendron
+D. none of the above
+(A)

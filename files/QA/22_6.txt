@@ -1,0 +1,20 @@
+Q. In the problem of classifying email as spam or non spam target will be
+A. real variable
+B. descrete variable
+C. no ouput is there
+D. none of the above
+(B)
+
+Q. Bayesian network is
+A. probabilistic graphical model
+B. network of model
+C. network of data
+D. none of the above
+(A)
+
+Q. Bayesian network models
+A. non conditional probability distribution among random variable
+B. conditional probability distribution among random variable
+C. model network connection
+D. none of the above
+(B)

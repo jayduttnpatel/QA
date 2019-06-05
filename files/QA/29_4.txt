@@ -1,0 +1,20 @@
+Q. Linear kernal is having
+A. linear decision boundary
+B. non linear decision boundary
+C. polynomial decision boundary
+D. none of the above
+(A)
+
+Q. rbf kernal is having
+A. linear decision boundary
+B. non linear decision boundary
+C. polynomial decision boundary
+D. none of the above
+(B)
+
+Q. Polynomial kernal is having
+A. linear decision boundary
+B. non linear decision boundary
+C. polynomial decision boundary
+D. none of the above
+(C)

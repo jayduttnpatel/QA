@@ -1,0 +1,20 @@
+Q. Feature subset selection has how many types
+A. 2
+B. 3
+C. 4
+D. 5
+(A)
+
+Q. In forward selection algorithm
+A. we start with empty set
+B. we start with full set
+C. we start with power set
+D. none of the above
+(A)
+
+Q. In backward selection algorithm
+A. we start with empty set
+B. we start with full set
+C. we start with power set
+D. none of the above
+(B)

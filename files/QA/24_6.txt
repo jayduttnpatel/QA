@@ -1,0 +1,27 @@
+Q. Which of the following term is normalized to make it 1
+A. gamma
+B. W
+C. X
+D. none of the above
+(A)
+
+Q. In support vector machine we scale w so that geometric margin become
+A. 1 by W
+B. W
+C. 2 into W
+D. none of the above
+(A)
+
+Q. In support vector machine as the optimization we want to minimize
+A. w dot w
+B. w devide by w
+C. w dot x
+D. none of the above
+(A)
+
+Q. Objective function in the support vector machine is
+A. hyperbola
+B. quadratic
+C. linear
+D. none of the above
+(B)

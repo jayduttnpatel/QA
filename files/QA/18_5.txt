@@ -1,0 +1,6 @@
+Q. In bayes optimal classification we take class to be
+A. that for which sum of probability is maximum
+B. that for which sum of probability is minimum
+C. that for which sum of probability is near to average
+D. none of the above
+(A)

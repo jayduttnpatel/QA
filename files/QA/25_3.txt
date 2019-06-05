@@ -1,0 +1,20 @@
+Q. Dual problem is the
+A. linear programming problem
+B. quadratic programming problem
+C. square programming problem
+D. none of the above
+(B)
+
+Q. W is computed from the
+A. support vectors
+B. data points
+C. axis
+D. none of the above
+(A)
+
+Q. dot product is the
+A. vector value
+B. linear equation
+C. scalar value
+D. none of the above
+(C)

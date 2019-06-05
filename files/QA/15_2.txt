@@ -1,0 +1,20 @@
+Q. In content based recommendation system recommendation is based on
+A. Based on the content of the current item and the content of the previous items recommended
+B. Based on the content of the current
+C. Based on the content of the previous item recommended
+D. none of the above
+(A)
+
+Q. In content based recommendation system recommendation is based on
+A. content disimilarity
+B. content similarity
+C. randomly done
+D. none of the above
+(B)
+
+Q. In the collaborative filtering based system
+A. find similar user to the current user
+B. find similar content
+C. find similar user and content 
+D. none of the above
+(A)

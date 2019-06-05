@@ -1,0 +1,6 @@
+Q. Each node maintain which table in bayes network?
+A. conditional probability
+B. non conditional probability
+C. conditional independance
+D. none of the above
+(A)

@@ -1,0 +1,13 @@
+Q. Curse of dimensionality is the set of problems which arise from
+A. increasing number of accurecy
+B. increasing number of data
+C. increasing number of input features
+D. none of the above
+(C)
+
+Q. Because of the curse of dimensionality data requirement
+A. decreses
+B. increases
+C. stays the same
+D. none of the above
+(B)

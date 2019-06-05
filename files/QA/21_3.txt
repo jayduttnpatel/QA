@@ -1,0 +1,6 @@
+Q. Maximum apostiriori probability inference
+A. means choose the class which has maximum postirior probability given input value
+B. means choose the class which has maximum interior probability given input value
+C. choose the class with minimum postirior probability
+D. none of the above
+(A)

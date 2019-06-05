@@ -1,0 +1,20 @@
+Q. Unsupervised subset evaluation method are also called
+A. filter methods
+B. non filter methods
+C. randomized methods
+D. none of the above
+(A)
+
+Q. Supervised subset evaluation method are also called
+A. wrapper methods
+B. non filter methods
+C. randomized methods
+D. none of the above
+(A)
+
+Q. Feature selection is
+A. greedy problem
+B. randomization problem
+C. optimization problem
+D. none of the above
+(C)

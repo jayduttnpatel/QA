@@ -1,0 +1,34 @@
+Q. In nearest neighbour which of the matrics is used to measure distance between points?
+A. average
+B. euclidean distance
+C. standard deviation
+D. none of the above
+(B)
+
+Q. When there is noise in attributes which of the following method is used to reduce the noice?
+A. mean square distance
+B. standard deviation
+C. average
+D. none of the above
+(C)
+
+Q. When there is noise in class label which of the following method is used to reduce the noice?
+A. mean square distance
+B. standard deviation
+C. average
+D. none of the above
+(C)
+
+Q. When classes are partially overlaped which of the following method is used to reduce the noice?
+A. mean square distance
+B. standard deviation
+C. average
+D. none of the above
+(C)
+
+Q. If scale of the attributes are similar then in that situations we can give
+A. unequal weights weight to all attributes
+B. equal weights to all the attributes
+C. random weights to all the attributes
+D. none of the above
+(B)

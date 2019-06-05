@@ -1,0 +1,20 @@
+Q. We want to select the decision surface such that the
+A. margin width is maximum
+B. margin width is minimum
+C. error is maximum
+D. accuracy is minimum
+(A)
+
+Q. Minimum distance of the training instance from the decision surface is known as
+A. error
+B. margin
+C. accurecy
+D. none of the above
+(B)
+
+Q. closest point to the decision surface are known as the
+A. suport vectors
+B. class vector
+C. linear vector
+D. eigen vector
+(A)

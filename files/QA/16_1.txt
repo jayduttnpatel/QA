@@ -1,0 +1,27 @@
+Q. Which language is used for programming?
+A. python
+B. c
+C. cpp
+D. java
+(A)
+
+Q. which machine learning library is used in video?
+A. scikits learn
+B. tensorflow
+C. keras
+D. none of the above
+(A)
+
+Q. which class is assigned as the prediction class in k nearest neighbour algorithm?
+A. predominant class in the data
+B. predominant class in the neighbours
+C. wighted predominant class in the data
+D. none of the above
+(B)
+
+Q. Which dataset modified version is used in the lacture?
+A. Bank
+B. Hospital
+C. Iris
+D. None of the above
+(C)

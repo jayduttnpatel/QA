@@ -1,0 +1,36 @@
+Q. What is given in supervised learning?
+A. input and the corresponding output
+B. input
+C. output
+D. none
+(A)
+
+Q. What is given in unsupervised learning?
+A. x and y
+B. x
+C. y
+D. None
+(B)
+
+Q. Reward is assosiated with which type of learning?
+A. reinforcement learning
+B. supervised learning
+C. unsupervised learning
+D. semisupervised learning
+(A)
+
+Q. Which is combination of supervised and unsupervised learning?
+A. semi-supervised learning
+B. supervised learning
+C. reinforcement learning
+D. unsupervised learning
+(A)
+
+Q. In which learning we based on the similarity of the
+ data items to each other find out certain 
+groups among the data?
+A. supervised learning
+B. unsupervised learning
+C. semi-supervised learning
+D. reinfocement learning
+(B)

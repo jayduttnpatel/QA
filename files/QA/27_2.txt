@@ -1,0 +1,13 @@
+Q. phi x a dot phi x b is equal to
+A. lagrangian function
+B. kernal function
+C. eigen function
+D. none of the above
+(B)
+
+Q. Finding the kernel function is known as
+A. decomposition
+B. factorization
+C. kernel trick
+D. none of the above
+(C)

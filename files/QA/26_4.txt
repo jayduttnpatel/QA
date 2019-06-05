@@ -1,0 +1,20 @@
+Q. svm with the noice accounted is known as
+A. soft svm
+B. hard svm
+C. famous svm
+D. none of the above
+(A)
+
+Q. Soft svm name is given because 
+A. we do not have hard decision surface
+B. we do not have hard accuracy requirement
+C. we do not have hard error requirements
+D. none of the above
+(A)
+
+Q. In the soft svm decision surface is
+A. non linear
+B. linear
+C. curve
+D. none of the above
+(B)

@@ -1,0 +1,6 @@
+Q. Tom mitchell wrote book on 
+A. algorithms
+B. computer networks
+C. data structures
+D. machine learning
+(D)

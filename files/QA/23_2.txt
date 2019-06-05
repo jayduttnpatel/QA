@@ -1,0 +1,13 @@
+Q. In logistic regression if y is zero probability is equal to
+A. 1 minus h x
+B. hx
+C. 1 plus h x
+D. none of the above
+(A)
+
+Q. In logistic regression if y is one probability is equal to
+A. 1 minus hx
+B. hx
+C. 1 plus hx
+D. none of the above
+(B)

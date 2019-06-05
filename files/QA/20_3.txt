@@ -1,0 +1,20 @@
+Q. Bayes network represents efficiently the
+A. independant probability
+B. joint probability
+C. interdependance
+D. none of the above
+(B)
+
+Q. What represent probabilistic dependance among the variable?
+A. Arcs
+B. Nodes
+C. Netwok
+D. None of the above
+(A)
+
+Q. Absence of the arc denotes
+A. idependance
+B. dependace
+C. similarity
+D. none of the above
+(A)

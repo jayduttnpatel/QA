@@ -1,0 +1,34 @@
+Q. Which data set is used?
+A. Iris
+B. Bank
+C. Hospital
+D. None of the above
+(A)
+
+Q. Which data set is used?
+A. Boston house dataset
+B. Bank
+C. Hospital
+D. None of the above
+(A)
+
+Q. support vector machine is
+A. non linear classifier
+B. linear classifier
+C. regression model
+D. none of the above
+(B)
+
+Q. What is margin?
+A. error of the model
+B. accuracy of the model
+C. perpendicular distance of the point from the decision boundary
+D. none of the above
+(C)
+
+Q. svm tries to maximize the
+A. minimum margin
+B. error
+C. similarity
+D. none of the above
+(A)

@@ -1,0 +1,34 @@
+Q. What is the topic of the lacture?
+A. soft svm
+B. non linear svm and kernel function
+C. regression
+D. decision tree
+(B)
+
+Q. In non linear svm we will be mapping data to
+A. same dimensional feature space
+B. lower dimensional feature space
+C. higher dimensional feature space
+D. none of the above
+(C)
+
+Q. When we increase the number of dimension in the feature space
+A. points become linearly separable
+B. do not change
+C. accuracy increases
+D. none of the above
+(A)
+
+Q. Mapping in svm will lead to
+A. higher computational cost
+B. lower coputational cost
+C. same computational cost
+D. none of the above
+(A)
+
+Q. In svm how we can achieve tranformation without any increase in the computation cost?
+A. using kernel function
+B. using small tranformation
+C. using small data
+D. none of the above
+(A)

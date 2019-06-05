@@ -1,0 +1,20 @@
+Q. Kernel function can be thought of as a
+A. error measure
+B. accurecy measure
+C. similarity measure
+D. none of the above
+(C)
+
+Q. If we can write similarities between the points as a metrix and this metrix is symetric positive semi-definite then kernel function exis this is the statement of which condition?
+A. Mercer's
+B. naive's
+C. bayes
+D. none of the above
+(A)
+
+Q. If good kernel function exist then support vector machine perform
+A. bad in practice
+B. medium in practice
+C. well in practice
+D. none of the above
+(C)

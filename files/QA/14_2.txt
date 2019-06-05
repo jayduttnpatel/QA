@@ -1,0 +1,20 @@
+Q. For feature extraction which play very important role?
+A. secondary component
+B. principle component
+C. primary component
+D. none of the above
+(B)
+
+Q. principle component is that projection for which
+A. variance is maximum
+B. average is maximum
+C. standarad deviation is maximum
+D. none of the above
+(A)
+
+Q. When we reduce the dimension of the feature in the in the feature extraction principle component help to reduce
+A. prediction error
+B. reconstruction error
+C. learning error
+D. none of the above
+(B)

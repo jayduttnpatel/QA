@@ -1,0 +1,6 @@
+Q. maximum likelihood hypothesis is the hypotheis for which probability
+A. of D given h is maximum
+B. of h given D is maximum
+C. of D given h is minimum
+D. of h given D is minimum
+(A)

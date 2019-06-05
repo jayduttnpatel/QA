@@ -1,0 +1,41 @@
+Q. Topic of this lacture is
+A. normalize learning
+B. bayesian learning
+C. parameterized learning
+D. none of the above
+(B)
+
+Q. Bayesian probability is the probability which talks about
+A. partial believes
+B. complete believes
+C. full believes
+D. none of the above
+(A)
+
+Q. What is bayesian estimation?
+A. it calculates the ratio of the proposition
+B. it calculates the noise of the proposition
+C. it calculates validity of the proposition
+D. none of the above
+(C)
+
+Q. Validity of the proposition is calculated based on how may things?
+A. 1
+B. 2
+C. 3
+D. 4
+(B)
+
+Q. Priorestimate and new relevant evidence are the two methods of
+A. validity of proposition
+B. validity of model
+C. validity of method
+D. none of the above
+(A)
+
+Q. Bayes theorem deals with
+A. probability of hypothesis given data
+B. probability of data given hypothesis
+C. probability of hypothesis
+D. probability of data
+(A)

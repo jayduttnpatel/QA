@@ -1,0 +1,6 @@
+Q. Which diagonal metrix has the eigen valus?
+A. X
+B. P
+C. D
+D. V
+(C)

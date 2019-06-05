@@ -1,0 +1,41 @@
+Q. What is the topic of this lacture?
+A. regression
+B. dual formulation
+C. classification
+D. none of the above
+(B)
+
+Q. Dual formulation is the topic of
+A. logistic regression
+B. linear regression
+C. support vector machine
+D. none of the above
+(C)
+
+Q. How many types of linear constraints are there?
+A. 1
+B. 2
+C. 3
+D. 4
+(B)
+
+Q. If the constraints are not satisfied the value of the lagrangian will be
+A. zero
+B. one
+C. infinity
+D. none of the above
+(C)
+
+Q. If the constraints are satisfied the value of the lagrangian will be
+A. zero
+B. one
+C. infinity
+D. f w
+(D)
+
+Q. Solution of the primal problem is represented by
+A. p star
+B. p dot
+C. r star
+D. r dot
+(A)

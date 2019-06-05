@@ -1,0 +1,20 @@
+Q. Using bayes theorem we find the most likely hypothesis then it is known as
+A. most accurecy hypothesis
+B. most suitable hypothesis
+C. maximum a posteriori hypotheis
+D. none of the above
+(C)
+
+Q. Most likely hypothesis is known as
+A. most accuret hypothesis
+B. most likely hypothesis
+C. maximum a posteriori hypothesis
+D. none of the above
+(C)
+
+Q. maximum a posteriori hypothesis is given by that hypotheis for which probability of
+A. hypothesis given data is maximized
+B. data given hypothesis is maximized
+C. correct answer is maximized
+D. none of the above
+(A)

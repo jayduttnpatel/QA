@@ -1,0 +1,20 @@
+Q. Higher pearson correlation means
+A. higher linear dependance
+B. lower linear dependance
+C. moderate linear dependance
+D. none of the above
+(A)
+
+Q. Principle component analysis is which type of technique?
+A. feature reduction
+B. feature selection
+C. feature extraction
+D. none of the above
+(A)
+
+Q. x multiplied with x transpose is
+A. null metrix
+B. identity metrix
+C. coveriance matrix
+D. none of the above
+(C)

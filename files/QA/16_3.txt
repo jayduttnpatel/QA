@@ -1,0 +1,41 @@
+Q. What is eigen faces?
+A. eigen vector of the coveriance metrix of faces
+B. diagonal of coveriance metrix of faces
+C. decomposition of the coveriance metrix of faces
+D. none of the above
+(A)
+
+Q. Face can be represented as the linear combination of 
+A. diagonal component
+B. coveriance metrix
+C. eigen faces
+D. none of the above
+(C)
+
+Q. Mean face is calculated by
+A. finding average of the perticular person face
+B. finding average of all the face in the dataset
+C. finding mean of the eigen faces
+D. none of the above
+(B)
+
+Q. We find coveriance metrix by multiplying X with the
+A. X
+B. transpose of X
+C. inverse of X
+D. none of the above
+(B)
+
+Q. We calculate the eigen vector by the process known as the
+A. diagonalization
+B. factorization
+C. reduction
+D. none of the above
+(A)
+
+Q. Diagonalization is also known as the
+A. singular factrorization
+B. non singular value decomposition
+C. singular value decomposition
+D. none of the above
+(C)

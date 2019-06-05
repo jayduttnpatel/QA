@@ -1,0 +1,6 @@
+Q. Which error method is used?
+A. mean error
+B. mean percentange error
+C. root mean square error
+D. none of the above
+(C)

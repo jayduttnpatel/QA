@@ -1,0 +1,13 @@
+Q. Functional margin of a point is
+A. distance of the point from the decison boundary
+B. distance of the point from the axis
+C. distance of the point from the origin
+D. none of the above
+(A)
+
+Q. Fuctional margin of a set of points is
+A. smallest functional margin among all the points
+B. largest functional margin among all the points
+C. average functional margin among all the points
+D. none of the above
+(A)

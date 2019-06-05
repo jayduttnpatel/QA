@@ -1,0 +1,6 @@
+Q. In SMO algorithm we
+A. take one attribute at a time to optimize
+B. take two attribute at a time to optimize
+C. take three attribute at a time to optimize
+D. none of the above
+(C)

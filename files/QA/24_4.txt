@@ -1,0 +1,6 @@
+Q. Geometrical margin is inveriant to the
+A. deomposition of the equation
+B. scaling of the equation
+C. reduction of the equation
+D. none of the above
+(B)

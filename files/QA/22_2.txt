@@ -1,0 +1,27 @@
+Q. Bayes rule is used in
+A. probability
+B. networking
+C. data structure
+D. none of the above
+(A)
+
+Q. probability of x given y in the bayes rule is known as
+A. prior
+B. likelihood
+C. avidance
+D. none of the above
+(B)
+
+Q. probability of y in the bayes rule is known as
+A. prior
+B. likelihood
+C. avidance
+D. none of the above
+(A)
+
+Q. probability of x in the bayes rule is known as
+A. prior
+B. likelihood
+C. avidance
+D. none of the above
+(C)

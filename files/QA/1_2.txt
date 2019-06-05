@@ -1,0 +1,41 @@
+Q. In 1986 who came up with decision tree learning?
+A. J.R. Quinlan
+B. Rosenblatt
+C. Obama
+D. Sundar Pichai
+(A)
+
+Q. What is the key ingredient of the today's neural network architectures?
+A. learning rate
+B. hypothesis
+C. Back propagation
+D. decision tree
+(C)
+
+Q. Support vector machine was proposed by whom?
+A. Vapnik and Cortes
+B. Quinlan and Rosnblatt
+C. Modi and Obama
+D. Freund and Schapire
+(A)
+
+Q. When the first self driving car made a road test?
+A. 1990
+B. 1994
+C. 1996
+D. 1998
+(B)
+
+Q. In 1997, Deep Blue beat the world champion Gary Kasparov in which game?
+A. Chess
+B. Cricket
+C. Basketball
+D. Swimming
+(A)
+
+Q. When did human vision surpassed ML system?
+A. 2010
+B. 2012
+C. 2019
+D. 2014
+(D)

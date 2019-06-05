@@ -1,0 +1,20 @@
+Q. The input feature are conditionally independant given a target value is the statement of
+A. regression learning
+B. naive bayes
+C. decision tree
+D. none of the above
+(B)
+
+Q. Classification of email as spam or non spam can be sloved using
+A. decision tree 
+B. regression
+C. Naive bayes
+D. none of the above
+(C)
+
+Q. In the problem of classifying email as spam or non spam input will be
+A. words which are significant in decision making
+B. encoded email
+C. entire email
+D. none of the above
+(A)

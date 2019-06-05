@@ -1,0 +1,36 @@
+Q. Finding out the price of 
+a used car and you use certain attributes
+ of the car to predict its price is wich type of problem?
+A. Regression
+B. Classification
+C. Identification
+D. Embedding
+(A)
+
+Q. In order to describe the instance what play very important role?
+A. action
+B. task
+C. feature
+D. environment
+(C)
+
+Q. In testing phase we predict the value of
+A. y
+B. x
+C. e
+D. t
+(A)
+
+Q. For image recognition data what is data?
+A. text
+B. labeled images
+C. numbers
+D. audio
+(B)
+
+Q. Hypothesis space is the space
+A. candidate action
+B. candidate task
+C. candidate experiment
+D. candidate function
+(D)

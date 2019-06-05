@@ -1,0 +1,27 @@
+Q. In the training phase model is
+A. learned
+B. tested
+C. verified
+D. none of the above
+(A)
+
+Q. In the lazy algorithm in the training phase what is done?
+A. save training examples
+B. learn from examples
+C. test from examples
+D. none of the above
+(A)
+
+Q. In the lazy algorithm one nearest neighbour in the testing phase what is done?
+A. test the model
+B. predict the output based on the most nearest neighbour
+C. verify the model
+D. none of the above
+(B)
+
+Q. In the nearest neighbour classification problem after finding the k nearest neighbour what we do
+A. we average their values
+B. we find standard deviation
+C. we predict the answer as the majority class from the neighbours
+D. none of the above
+(C)

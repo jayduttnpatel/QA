@@ -1,0 +1,35 @@
+Q. In which learning we have combination of labeled data and unlabeled data?
+A. supervised learning
+B. unsupervised learning
+C. semi-supervised learning
+D. reinfocement learning
+(C)
+
+Q. In reinforcement learning where does agent act?
+A. network
+B. model
+C. environment
+D. example
+(C)
+
+Q. Whether it will rain or not tomorrow is
+A. Discrete Valued
+B. Continuous
+C. none
+D. both
+(A)
+
+Q. If we need to find continuous valued feature then 
+you call such problems
+A. Regression
+B. Classification
+C. Identification
+D. Embedding
+(A)
+
+Q. Predicting price of the house is which type of problem?
+A. Regression
+B. Classification
+C. Identification
+D. Embedding
+(A)

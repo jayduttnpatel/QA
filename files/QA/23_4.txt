@@ -1,0 +1,13 @@
+Q. In gradient descent we find the
+A. derivative
+B. intergration
+C. average
+D. standard deviation
+(A)
+
+Q. In the gradient descent we
+A. take the derivative
+B. update randomly
+C. we take the derivative and take the step towards the derivative
+D. none of the above
+(C)

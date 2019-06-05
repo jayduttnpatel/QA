@@ -1,0 +1,27 @@
+Q. Who gave definition of machine learning?
+A. Mitchell
+B. Rosvelt
+C. Mike
+D. David
+(A)
+
+Q. What is E?
+A. experience
+B. action
+C. task
+D. example
+(A)
+
+Q. What is T?
+A. experience
+B. action
+C. task
+D. example
+(C)
+
+Q. What is also called the data?
+A. experience
+B. task
+C. example
+D. action
+(A)

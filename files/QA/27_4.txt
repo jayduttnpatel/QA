@@ -1,0 +1,13 @@
+Q. Kernel function measure
+A. some disimilarity between instances
+B. some similarity between instances
+C. distance of instances
+D. none of the above
+(B)
+
+Q. Kernel function stisfy
+A. Mercer's condition
+B. naive's condition
+C. bayes condition
+D. none of the above
+(A)

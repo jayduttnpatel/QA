@@ -1,0 +1,6 @@
+Q. What was the accurecy of the classifier?
+A. 90.00
+B. 89.23
+C. 50.00
+D. 69.99
+(B)

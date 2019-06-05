@@ -1,0 +1,34 @@
+Q. Topic of this lacture is
+A. probability
+B. bayesiane theorem
+C. naive bayes
+D. none of the above
+(C)
+
+Q. Likelyhood of data is
+A. identical
+B. non similar
+C. small
+D. none of the above
+(A)
+
+Q. In naive bayes we make the assumption that the individual xi are
+A. independant
+B. dependant
+C. similar
+D. none of the above
+(A)
+
+Q. joint probability is
+A. can be calculated with proper amount of data
+B. easy to calculate
+C. hard to calculate
+D. none of the above
+(C)
+
+Q. In naive bayes auumption we are assuming
+A. conditional independance
+B. non conditional independance
+C. conditional dependance
+D. none of the above
+(A)

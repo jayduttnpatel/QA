@@ -1,0 +1,20 @@
+Q. Feature selection and feature reduction are done to avoid
+A. curse of dimensionality
+B. slow learning
+C. local optima
+D. none of the above
+(A)
+
+Q. If we have insufficient training data or computational resources what should be done?
+A. feature selection
+B. learning rate decay
+C. parameter tuning
+D. none of the above
+(A)
+
+Q. Which similarity is a metric which can be used to find the similarity of orientation of two vectors in a inner product space?
+A. euclidean distance
+B. pearson correlation
+C. cosine
+D. none of the above
+(C)
