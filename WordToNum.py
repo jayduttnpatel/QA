@@ -48,10 +48,10 @@ def WordToNum():
 	freq={}
 	for file in glob.glob("*.txt"):
 		if re.match(".*srt.*",file): # subtitle
-			print(file+' is subtile')
+			#print(file+' is subtile')
 			text=SubtitleText(file)
 		else: # QA file
-			print(file+' is normal')
+			#print(file+' is normal')
 			text=QAFileText(file)
 		for word in text.split():
 			freq[word]=freq.get(word,0)+1

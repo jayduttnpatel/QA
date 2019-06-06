@@ -1,0 +1,27 @@
+Q. If the output attributes type is discrete then it is example of
+A. classification
+B. regression
+C. probability
+D. embedding
+(A)
+
+Q. If the output attributes type is discrete then it is example of
+A. classification
+B. regression
+C. probability
+D. embedding
+(B)
+
+Q. If the output attributes type is probability then it is example of
+A. classification
+B. regression
+C. probability
+D. embedding
+(C)
+
+Q. Instances are described in terms of
+A. output
+B. action
+C. features
+D. task
+(C)
