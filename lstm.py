@@ -1,3 +1,9 @@
+'''
+This file is temp file. Created just to understand the working of the keras in python in LSTM. Here I am doing the sentiment analysis of the
+subtitle where the positive or the negative rating was generated randomly in the data file subtitle function.
+
+It is not required in the working of the final project. It is for the understanding purpose only.
+'''
 import WordToNum
 import data
 from sklearn.model_selection import train_test_split

@@ -1,3 +1,6 @@
+'''
+This file rename the extention of the file.
+'''
 import os ,glob 
 import re
 for file in glob.glob("*.txt"):

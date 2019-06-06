@@ -1,23 +1,11 @@
 import glob, os
 import operator
 import re
+import subtitle
 
 #convert words to the numbers for that find the frequency of the word sort it in the increasing order
 #WordToNum function will do this task
 #subtitle file name have file.str.txt and QA have file.txt
-def SubtitleText(file):
-	f=open(file,'r',encoding='UTF8')
-	text=""
-	for line in f:
-		a=re.match("\d",line)  # check for the line with the number only
-		b=re.match(".*-->.*",line) # check with the line with timeline
-		c=re.match(".+",line) #atleast one character
-		if a or b or not c:
-			continue
-		text=text+" "+line.strip()
-	f.close()
-	text=text.strip()
-	return text
 	
 def QAFileText(file):
 	f=open(file,'r',encoding='UTF8')
@@ -43,17 +31,19 @@ def QAFileText(file):
 	return text
 	
 def WordToNum():
+	print('preprocessing data')
 	mapping={}
 	os.chdir("/temp/files/subtitle")
 	freq={}
 	for file in glob.glob("*.txt"):
 		if re.match(".*srt.*",file): # subtitle
 			#print(file+' is subtile')
-			text=SubtitleText(file)
+			text=subtitle.Fetch(file)
 		else: # QA file
 			#print(file+' is normal')
 			text=QAFileText(file)
 		for word in text.split():
+			word=word.lower() #converting all the words to lower case
 			freq[word]=freq.get(word,0)+1
 	i=1
 	for key,value in sorted(freq.items(), key=lambda item: item[1],reverse=True):

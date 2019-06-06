@@ -53,7 +53,7 @@ a_max_sequence_length = 2
 b_max_sequence_length = 2
 c_max_sequence_length = 2
 d_max_sequence_length = 3
-max_words=20000
+max_words=10000
 
 import numpy as np
 import keras
@@ -79,9 +79,6 @@ a_test = sequence.pad_sequences(a_test, maxlen=a_max_sequence_length, padding='p
 b_test = sequence.pad_sequences(b_test, maxlen=b_max_sequence_length, padding='post', truncating='post')
 c_test = sequence.pad_sequences(c_test, maxlen=c_max_sequence_length, padding='post', truncating='post')
 d_test = sequence.pad_sequences(d_test, maxlen=d_max_sequence_length, padding='post', truncating='post')
-
-########################preprocessing is good
-
 
 sub_input = Input(shape=(500,),dtype='int32',name='sub_input')
 sub = Embedding(output_dim=512 , input_dim=10000, input_length=500)(sub_input)
@@ -114,8 +111,6 @@ x = Dense(64, activation='relu')(x)
 x = Dense(64, activation='relu')(x)
 
 main_output = Dense(4, activation='softmax', name='main_output')(x)
-
-#main_output = np.argmax(x)
 
 model = Model(inputs=[sub_input, q_input, a_input, b_input, c_input, d_input], outputs=[main_output])
 

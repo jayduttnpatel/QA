@@ -1,7 +1,12 @@
-import WordToNum
+'''
+This file collect the data and encode it in the numbers and return it.
+'''
+
+import subtitle
 import os,glob
 import random
 import QA
+import WordToNum
 
 '''def subtitle(mapping):
 	Sub=[]
@@ -32,7 +37,7 @@ def data(mapping):
 		qafile=file[:-8]+".txt"
 		#print(file[:-8],subfile,qafile)
 		
-		text=WordToNum.SubtitleText(subfile)
+		text=subtitle.Fetch(subfile)
 		temp=WordToNum.Convert(text,mapping)
 		
 		q,a,t=QA.Fetch("D:\\temp\\files\\QA\\"+qafile)
