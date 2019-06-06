@@ -44,6 +44,8 @@ def WordToNum():
 			text=QAFileText(file)
 		for word in text.split():
 			word=word.lower() #converting all the words to lower case
+			if word.isalnum()==False:
+				word=''.join(e for e in word if e.isalnum()) #remove all the special character from the word
 			freq[word]=freq.get(word,0)+1
 	i=1
 	for key,value in sorted(freq.items(), key=lambda item: item[1],reverse=True):
