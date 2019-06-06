@@ -62,13 +62,23 @@ from keras.models import Sequential
 
 from keras.layers import Input, Embedding, LSTM, Dense
 from keras.models import Model
+from sklearn.model_selection import train_test_split
 
-sub_train = sequence.pad_sequences(sub, maxlen=sub_max_sequence_length, padding='post', truncating='post')
-q_train = sequence.pad_sequences(q, maxlen=q_max_sequence_length, padding='post', truncating='post')
-a_train = sequence.pad_sequences(a, maxlen=a_max_sequence_length, padding='post', truncating='post')
-b_train = sequence.pad_sequences(b, maxlen=b_max_sequence_length, padding='post', truncating='post')
-c_train = sequence.pad_sequences(c, maxlen=c_max_sequence_length, padding='post', truncating='post')
-d_train = sequence.pad_sequences(d, maxlen=d_max_sequence_length, padding='post', truncating='post')
+sub_train,sub_test,q_train,q_test,a_train,a_test,b_train,b_test,c_train,c_test,d_train,d_test,t_train,t_test= train_test_split(sub,q,a,b,c,d,t,test_size=0.15)
+
+sub_train = sequence.pad_sequences(sub_train, maxlen=sub_max_sequence_length, padding='post', truncating='post')
+q_train = sequence.pad_sequences(q_train, maxlen=q_max_sequence_length, padding='post', truncating='post')
+a_train = sequence.pad_sequences(a_train, maxlen=a_max_sequence_length, padding='post', truncating='post')
+b_train = sequence.pad_sequences(b_train, maxlen=b_max_sequence_length, padding='post', truncating='post')
+c_train = sequence.pad_sequences(c_train, maxlen=c_max_sequence_length, padding='post', truncating='post')
+d_train = sequence.pad_sequences(d_train, maxlen=d_max_sequence_length, padding='post', truncating='post')
+
+sub_test = sequence.pad_sequences(sub_test, maxlen=sub_max_sequence_length, padding='post', truncating='post')
+q_test = sequence.pad_sequences(q_test, maxlen=q_max_sequence_length, padding='post', truncating='post')
+a_test = sequence.pad_sequences(a_test, maxlen=a_max_sequence_length, padding='post', truncating='post')
+b_test = sequence.pad_sequences(b_test, maxlen=b_max_sequence_length, padding='post', truncating='post')
+c_test = sequence.pad_sequences(c_test, maxlen=c_max_sequence_length, padding='post', truncating='post')
+d_test = sequence.pad_sequences(d_test, maxlen=d_max_sequence_length, padding='post', truncating='post')
 
 ########################preprocessing is good
 
@@ -111,48 +121,8 @@ model = Model(inputs=[sub_input, q_input, a_input, b_input, c_input, d_input], o
 
 model.compile(optimizer='rmsprop', loss='binary_crossentropy')
 
-model.fit([sub_train, q_train, a_train, b_train, c_train, d_train], [t],
-          epochs=10, batch_size=32)
-
-'''
-from keras.layers import LSTM
-from keras.layers import Embedding
-from keras.layers import Dense
-from keras.layers import Concatenate
-
-sub_lstm=Sequential()
-sub_lstm.add(Embedding(max_words, hidden_size))
-sub_lstm.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
-
-q_lstm=Sequential()
-q_lstm.add(Embedding(max_words, hidden_size))
-q_lstm.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
-
-a_lstm=Sequential()
-a_lstm.add(Embedding(max_words, hidden_size))
-a_lstm.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
-
-b_lstm=Sequential()
-b_lstm.add(Embedding(max_words, hidden_size))
-b_lstm.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
-
-c_lstm=Sequential()
-c_lstm.add(Embedding(max_words, hidden_size))
-c_lstm.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
-
-d_lstm=Sequential()
-d_lstm.add(Embedding(max_words, hidden_size))
-d_lstm.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
-
-model=Sequential()#[sub_lstm, q_lstm,a_lstm,b_lstm,c_lstm,d_lstm])
-model.add(Concatenate(axis=-1)([sub_lstm, q_lstm,a_lstm,b_lstm,c_lstm,d_lstm], mode='concat'))
-model.add(Dense(515, kernel_initializer='uniform'))
-model.add(Dense(128, kernel_initializer='uniform'))
-model.add(Dense(24, kernel_initializer='uniform',activation='relu'))
-model.add(Dense(1, activation='sigmoid'))
-
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-
-epochs = 50
-
-model.fit([sub_train,q_train,a_train,b_train,c_train,d_train], y=t, epochs=epochs, shuffle=True)'''
+model.fit([sub_train, q_train, a_train, b_train, c_train, d_train], [t_train],
+          epochs=5, batch_size=32, shuffle=True)
+		  
+test_scores = model.evaluate([sub_test,q_test,a_test,b_test,c_test,d_test], [t_test],verbose=2)
+print('Test:', test_scores)
