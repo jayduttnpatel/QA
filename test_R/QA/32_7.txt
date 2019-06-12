@@ -1,0 +1,13 @@
+Q. stochastic gradient descent is
+A. more likely to get stuck in local minima
+B. less likely to get stuck in global minima
+C. none of the above
+D. less likely to get stuck in local minima
+(D)
+
+Q. Batch gradient descent is
+A. less likely to get stuck in local minima
+B. more likely to get stuck in local minima
+C. more likely to get stuck in global minima
+D. none of the above
+(B)

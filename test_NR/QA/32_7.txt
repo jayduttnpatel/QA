@@ -1,0 +1,13 @@
+Q. stochastic gradient descent is
+A. learning from batch
+B. gathering more and more data
+C. clustering similar data
+D. less likely to get stuck in local minima
+(D)
+
+Q. Batch gradient descent is
+A. easy to implement
+B. more likely to get stuck in local minima
+C. hard to understand
+D. none of the above
+(B)

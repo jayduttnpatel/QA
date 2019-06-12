@@ -1,0 +1,20 @@
+Q. In deep learning we are having
+A. cluster
+B. high error
+C. hierarchical representation
+D. none of the above
+(C)
+
+Q. Which activation function avoid the problem of gradient deffusion?
+A. adam
+B. relu
+C. gradient descent
+D. none of the above
+(B)
+
+Q. Which of the following is one of the solution of the deep network problem?
+A. high epochs
+B. high data
+C. learning rate decay
+D. Unsupervised pretraining
+(D)

@@ -1,0 +1,64 @@
+291
+00:35:03,310 --> 00:35:08,440
+advance concept like convolutional neural
+networks and others, which you can explore
+
+292
+00:35:08,440 --> 00:35:15,510
+yourself. So, both the motivation behind me
+introducing you to TF learn and the larger
+
+293
+00:35:15,510 --> 00:35:20,780
+and the like the parent of t f learn which
+is tensor flow is that just to give you a
+
+294
+00:35:20,780 --> 00:35:26,700
+heads off in that directions.
+So, if you people are enthusiastic about deep
+
+295
+00:35:26,700 --> 00:35:33,330
+learning if you really want to check out what
+the magic is all about, how are machine becoming
+
+296
+00:35:33,330 --> 00:35:37,610
+really intelligent like as intelligent as
+human beings, and beating human beings in
+
+297
+00:35:37,610 --> 00:35:42,970
+they are own tasks. So, if you want to check
+out how deep learning actually works, so this
+
+298
+00:35:42,970 --> 00:35:48,260
+is a very good tool which you can use for
+implementing your own algorithms and like
+
+299
+00:35:48,260 --> 00:35:53,640
+there are a lot of like turn of implementer
+algorithms already implementer algorithms.
+
+300
+00:35:53,640 --> 00:35:57,570
+A lot of resources available for this particular
+library, and people are actively and Google
+
+301
+00:35:57,570 --> 00:36:04,450
+is actually actively developing this particular
+library. So, you can use this and you know
+
+302
+00:36:04,450 --> 00:36:12,650
+explore the possibilities of deep learning
+in your own field. So, I hope you enjoy this
+
+303
+00:36:12,650 --> 00:36:22,230
+video, and I recommend you to take this ahead.
+Bye, bye, see you in the next video.

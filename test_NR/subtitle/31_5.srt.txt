@@ -1,0 +1,109 @@
+142
+00:20:02,970 --> 00:20:13,340
+this is the unit i. And j has you know initially
+the output is net j and then the output is
+
+143
+00:20:13,340 --> 00:20:24,980
+o j. So this is o j and this is o i.
+Now, we have decomposed this partial derivative
+
+144
+00:20:24,980 --> 00:20:31,809
+in these three components. Now what we will
+do is that let us remember this and we will
+
+145
+00:20:31,809 --> 00:20:42,760
+do these three computations separately then
+we will write them together. So first let
+
+146
+00:20:42,760 --> 00:21:02,100
+us look at del net j by del w i j, del net
+j by del w i j. So what is net j, net j is
+
+147
+00:21:02,100 --> 00:21:28,880
+sigma o i w i j. And so we have del del w
+i j sigma of w k j o k equal to 1 to n, so
+
+148
+00:21:28,880 --> 00:21:44,779
+this is equal to o i. Because only here we
+have w i j and these other link 1 to n they
+
+149
+00:21:44,779 --> 00:21:55,809
+have nothing to do with i. So, del net j by
+del w i j is simply o i. In corresponding
+
+150
+00:21:55,809 --> 00:22:09,309
+to o i only we have w i j, and we have o 1
+w 1 j, o 2 w 2 j, o 3 w 3 j they have nothing
+
+151
+00:22:09,309 --> 00:22:15,789
+to do with w i j. So only here we will have
+and so this is equal to o i.
+
+152
+00:22:16,789 --> 00:22:28,360
+So, del net j by del w i j this we have this
+part we have computed and this a is equal
+
+153
+00:22:28,360 --> 00:22:41,830
+to o i. Let me clean this so that we can work
+out the other two components of this expression.
+
+154
+00:22:41,830 --> 00:22:54,409
+Next let us take this second term del o j
+by del net j. What is o j? O j equal to phi
+
+155
+00:22:54,409 --> 00:23:12,269
+of net j, so del del net j we have phi of
+net j. We have already seen that this particular
+
+156
+00:23:12,269 --> 00:23:18,620
+derivative will depend on the form of the
+activation function if you assume sigmoid
+
+157
+00:23:18,620 --> 00:23:24,700
+activation function, for sigmoid activation
+function we will have this is equal to phi
+
+158
+00:23:24,700 --> 00:23:42,789
+of net j 1 minus phi of net j. So, this is
+the second term here which we have computed
+
+159
+00:23:42,789 --> 00:23:50,980
+given like this.
+Now, let us look at the third term del e by
+
+160
+00:23:50,980 --> 00:24:14,860
+del o j. Now we can take the derivative with
+respect to o j and we can get recursive expression
+
+161
+00:24:14,860 --> 00:24:24,309
+of the derivative as follows; this is equal
+to summation over i. Now first of all let
+
+162
+00:24:24,309 --> 00:24:38,070
+us say that the inputs to this network are
+1, 2, 3, 4 up to n, so, let us say z equal
+
+163
+00:24:47,640 --> 00:25:00,120
+to 1, 2, n these are the inputs to the unit
+o j. We can write this as follows; summation i

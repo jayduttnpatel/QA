@@ -1,0 +1,13 @@
+Q. one hot encoding means
+A. one for the item and zero at the remaining places
+B. zero for the item and one at the remaining places
+C. variable size set
+D. none of the above
+(A)
+
+Q. underscore images attribute gives
+A. output
+B. input
+C. parameters
+D. none of the above
+(B)

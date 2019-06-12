@@ -1,0 +1,6 @@
+Q. Which optimizer is used?
+A. adam
+B. gradient descent
+C. decision tree
+D. stocastic gradient descent
+(D)

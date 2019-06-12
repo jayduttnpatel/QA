@@ -1,0 +1,193 @@
+166
+00:20:04,860 --> 00:20:11,980
+to this neuron and following the method which
+we followed in the last class now given this
+
+167
+00:20:11,980 --> 00:20:19,690
+we can find out given that is formula E equal
+to half y minus o whole square and o is as
+
+168
+00:20:19,690 --> 00:20:26,490
+it is defined here we can now try to find
+out the derivative of this error function
+
+169
+00:20:26,490 --> 00:20:33,419
+with respect to the different weights.
+So, as we have n different weight correspond
+
+170
+00:20:33,419 --> 00:20:40,809
+n plus 1 different weights corresponding to
+the previous inputs and the bias we can take
+
+171
+00:20:40,809 --> 00:20:49,830
+the partial derivative of this error function
+with respect to each weight. And this where
+
+172
+00:20:49,830 --> 00:20:56,019
+quantity partial derivative of the error function
+with respect to w i j which is 1 specific
+
+173
+00:20:56,019 --> 00:21:04,990
+weight can be re written as by the chain rule
+del e by del o j times del o j by del net
+
+174
+00:21:04,990 --> 00:21:14,110
+j times del net j by del w i j right. So,
+net j equal to sigma w k j o k and o j equal
+
+175
+00:21:14,110 --> 00:21:20,270
+to phi of net j and we can write this del
+e by del w i j in this spot.
+
+176
+00:21:24,340 --> 00:21:31,630
+Now,. So, this is what we have re-written
+here this is the error function this is o
+
+177
+00:21:31,630 --> 00:21:39,159
+j and del e by del w i j this is what we did
+in the previous slide now this can be written
+
+178
+00:21:39,159 --> 00:21:48,010
+as del e by del o j can be written as summation
+over l del e by del o l del o l by del net
+
+179
+00:21:48,010 --> 00:22:01,809
+z l times w j z l which corresponds to this
+output is coming from the other a other outputs
+
+180
+00:22:01,809 --> 00:22:10,399
+other nodes which are index by l and this
+is phi of net j into 1 minus phi of net j,
+
+181
+00:22:10,399 --> 00:22:16,289
+which is the corresponding to the sigmoid
+function and this is o i this follows from
+
+182
+00:22:16,289 --> 00:22:19,509
+the derivation that we worked out in the last
+class.
+
+183
+00:22:19,889 --> 00:22:28,900
+So, simplifying we can find out at del e by
+del w i j is delta j o i where this quantity
+
+184
+00:22:28,900 --> 00:22:35,929
+is called delta j right the detail derivation
+we have done in the last class. So, del e
+
+185
+00:22:35,929 --> 00:22:43,750
+by delta w i j is delta j o i where delta
+j comes from the nodes of the next layer from
+
+186
+00:22:43,750 --> 00:22:50,649
+the errors in the layer is back propagated
+to the previous layer where delta j is given
+
+187
+00:22:50,649 --> 00:23:00,200
+by del e by del o j del o j by del net j which
+is equal to o j minus y j into o j times 1
+
+188
+00:23:00,200 --> 00:23:08,990
+minus o j if j is an output neuron if i am
+at the last layer otherwise it is recursively
+
+189
+00:23:08,990 --> 00:23:18,920
+computed as sigma over z delta z l w j l times
+o j times 1 minus o j if j is a neuron in
+
+190
+00:23:18,920 --> 00:23:25,420
+the hidden layer.
+So, delta j can be computed directly at the
+
+191
+00:23:25,420 --> 00:23:32,790
+output layer and once you have computed delta
+for each of the output units, you can compute
+
+192
+00:23:32,790 --> 00:23:39,200
+of the previous unit after you have computed
+all the deltas of the previous unit you can
+
+193
+00:23:39,200 --> 00:23:45,190
+compute the delta of two previous unit. So,
+that is called the back propagation and based
+
+194
+00:23:45,190 --> 00:23:50,870
+on that this is the recursive computation
+of delta starting from the last or the output
+
+195
+00:23:50,870 --> 00:23:58,779
+layer and going 1 level backward up to the
+beginning. Now, once you are figured this
+
+196
+00:23:58,779 --> 00:24:05,539
+out you know what is del e by del w i j and
+then you change the weights using gradient
+
+197
+00:24:05,539 --> 00:24:15,549
+descent delta w i j equal to minus eta del
+e by del w i j right. So, this is the gradient
+
+198
+00:24:15,549 --> 00:24:22,809
+this eta is the learning factor small eta
+means slow convergence large eta means faster
+
+199
+00:24:22,809 --> 00:24:26,969
+rate and minus because we are doing gradient descent.
+
+200
+00:24:29,290 --> 00:24:36,240
+So, based on this we can write the back propagation
+algorithm which is actually very simple as
+
+201
+00:24:36,240 --> 00:24:42,669
+is given in this slide, we take a neural network,
+we have a structure, we have 1 hidden layer
+
+202
+00:24:42,669 --> 00:24:47,370
+or 2 hidden layer whatever you want you decide
+the number of layers in the neural network
+
+203
+00:24:47,370 --> 00:24:53,289
+number of units in each layer and you do connection
+from this input to the first lead in layer
+
+204
+00:24:53,289 --> 00:24:58,879
+first to the second, second to the output
+and then you have a number of weights initially

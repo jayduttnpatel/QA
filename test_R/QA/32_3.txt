@@ -1,0 +1,13 @@
+Q. Every bounded continuous function can be approximated with how many hidden layer neural network?
+A. 0
+B. 2
+C. 3
+D. 1
+(D)
+
+Q. Any function can be approximated by how many hidden layer neural network?
+A. 2
+B. 1
+C. 3
+D. 4
+(A)

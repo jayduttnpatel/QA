@@ -1,0 +1,13 @@
+Q. one hot encoding means
+A. one for the item and zero at the remaining places
+B. beautiful vector
+C. high temperature vector
+D. none of the above
+(A)
+
+Q. underscore images attribute gives
+A. bias
+B. input
+C. output
+D. none of the above
+(B)

@@ -1,0 +1,179 @@
+209
+00:25:03,230 --> 00:25:10,550
+epoch per you know per instance of learning
+or like after how seeing how many examples
+
+210
+00:25:10,550 --> 00:25:16,750
+you want to do one update. So let us keep
+batch size is equal to 10, and another option
+
+211
+00:25:16,750 --> 00:25:28,310
+is show metric. So in the progress of training
+as training proceeds it is going to show us
+
+212
+00:25:28,310 --> 00:25:34,070
+the value of accuracy. Let us just go ahead
+and see what happens.
+
+213
+00:25:34,980 --> 00:25:42,980
+Notice here, so 
+as you can see that that the accuracy is increasing;
+
+214
+00:25:44,280 --> 00:25:50,620
+the training accuracy is increasing the loss
+is decreasing. And you know it is going to
+
+215
+00:25:50,620 --> 00:25:59,750
+make you divided the entire training set into
+batches of size 10 and it is like pushing
+
+216
+00:25:59,750 --> 00:26:05,460
+every single batch and then updating. So,
+one update is happening after every batch
+
+217
+00:26:05,460 --> 00:26:10,930
+has been processed and you can see that the
+number of examples that have been shown to
+
+218
+00:26:10,930 --> 00:26:17,660
+the neural network is been counted over here.
+So, when all the 55,000 examples have been
+
+219
+00:26:17,660 --> 00:26:22,570
+shown, the training is complete, so one epoch
+is complete. And it reports the final accuracy
+
+220
+00:26:22,570 --> 00:26:28,960
+over here. So, let us go ahead and see how
+things change when we increase the number
+
+221
+00:26:28,960 --> 00:26:34,840
+of or increase or decrease the number of nodes
+of the hidden layer. So, let us go ahead and
+
+222
+00:26:34,840 --> 00:26:40,550
+make the nodes, so let us make a node that
+previously therefore, hundred nodes in for
+
+223
+00:26:40,550 --> 00:26:48,620
+neural network with one hidden layer and 100
+nodes accuracy was just 69.5 percent. So,
+
+224
+00:26:48,620 --> 00:26:53,760
+we are now decreasing the number of nodes
+and we will see how things change. So, I will
+
+225
+00:26:53,760 --> 00:27:05,410
+restart and run all, just see here what happens,
+it will restart, so the performance yeah.
+
+226
+00:27:05,410 --> 00:27:14,150
+So, now, you can see that the accuracy is
+increasing slowly because the models learning
+
+227
+00:27:14,150 --> 00:27:20,260
+capacity has been reduced. The number of parameters
+is reduced, so the capacity to learn has also
+
+228
+00:27:20,260 --> 00:27:26,030
+reduced. And however, the training is progressing
+much faster, so you can just see that yeah
+
+229
+00:27:26,030 --> 00:27:31,840
+like you know in flash 30,000 examples are
+processed, because as the amount of compute
+
+230
+00:27:31,840 --> 00:27:39,310
+whenever a parameters has reduced, now computation
+has been faster. What happened my operation
+
+231
+00:27:39,310 --> 00:28:08,970
+and close the files oops restart yeah just
+a second run all, do not take much time. So,
+
+232
+00:28:08,970 --> 00:28:11,210
+we can expect that the accuracy will be lesser
+this time.
+
+233
+00:28:11,680 --> 00:28:24,500
+Let us see, so you see the accuracy would
+not increase beyond some 26 percent, and this
+
+234
+00:28:24,500 --> 00:28:31,940
+is just a training accuracy. As the models
+learning capacity has reduced, so this has
+
+235
+00:28:31,940 --> 00:28:40,529
+gone to like 35 percent or something; see
+44 percent previously it was 69 percent. So,
+
+236
+00:28:40,529 --> 00:28:44,710
+as the learning capacity was reduced the neural
+network could not learn well, and hence the
+
+237
+00:28:44,710 --> 00:28:52,100
+accuracy is lesser. So, let us go ahead and
+rest over the number of hidden unit is to
+
+238
+00:28:52,100 --> 00:29:00,880
+100 previous values and let us add another
+hidden layer. See, what happens oops so let
+
+239
+00:29:00,880 --> 00:29:12,240
+me shrink it a little bit and go ahead and
+add another hidden layer. And see how things
+
+240
+00:29:12,240 --> 00:29:21,930
+change. So, previously it was 69 percent.
+Let us go ahead and restart and clear output
+
+241
+00:29:21,930 --> 00:29:29,090
+yes.
+now run all set, let us see how the accuracy
+
+242
+00:29:29,090 --> 00:29:39,970
+changes this time. So, now, the training is
+a bit slower, because the size of the network
+
+243
+00:29:39,970 --> 00:29:54,100
+has increased. And but we can like hope that
+this times the accuracy will a bit higher,
+
+244
+00:29:54,100 --> 00:30:15,100
+but it is not certain at all it is should
+not necessarily be higher, and that is where

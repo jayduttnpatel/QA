@@ -1,0 +1,6 @@
+Q. In init function what we specify?
+A. input needed
+B. space needed
+C. resources needed
+D. none of the above
+(C)

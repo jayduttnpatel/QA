@@ -33,20 +33,23 @@ def QAFileText(file):
 def WordToNum():
 	print('preprocessing data')
 	mapping={}
-	os.chdir("/temp/files/subtitle")
 	freq={}
-	for file in glob.glob("*.txt"):
-		if re.match(".*srt.*",file): # subtitle
-			#print(file+' is subtile')
-			text=subtitle.Fetch(file)
-		else: # QA file
-			#print(file+' is normal')
-			text=QAFileText(file)
-		for word in text.split():
-			word=word.lower() #converting all the words to lower case
-			if word.isalnum()==False:
-				word=''.join(e for e in word if e.isalnum()) #remove all the special character from the word
-			freq[word]=freq.get(word,0)+1
+	hold=["/temp/train/subtitle","/temp/train/QA","/temp/test_NR/subtitle","/temp/test_NR/QA","/temp/test_R/subtitle","/temp/test_R/QA"]
+	for location in hold:
+		os.chdir(location)
+		for file in glob.glob("*.txt"):
+			if re.match(".*srt.*",file): # subtitle
+				#print(file+' is subtile')
+				text=subtitle.Fetch(file)
+			else: # QA file
+				#print(file+' is normal')
+				text=QAFileText(file)
+			for word in text.split():
+				word=word.lower() #converting all the words to lower case
+				if word.isalnum()==False:
+					word=''.join(e for e in word if e.isalnum()) #remove all the special character from the word
+				freq[word]=freq.get(word,0)+1
+				
 	i=1
 	for key,value in sorted(freq.items(), key=lambda item: item[1],reverse=True):
 		mapping[key]=i

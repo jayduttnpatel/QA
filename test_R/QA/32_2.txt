@@ -1,0 +1,20 @@
+Q. boolean xor can be learned by
+A. single layer perceptron
+B. multilayer perceptron
+C. two layer perceptron
+D. none of the above
+(B)
+
+Q. xor can be learned by how many layer preceptron
+A. 1
+B. 3
+C. 0
+D. 2
+(D)
+
+Q. All boolean function can be represented by neural network with how many hidden layer?
+A. 1
+B. 2
+C. 3
+D. 4
+(A)

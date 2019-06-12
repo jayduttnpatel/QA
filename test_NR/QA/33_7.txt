@@ -1,0 +1,6 @@
+Q. Which optimizer user different learning rate for each parameter
+A. relu
+B. adam
+C. linear
+D. none of the above
+(B)

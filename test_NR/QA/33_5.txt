@@ -1,0 +1,6 @@
+Q. Which optimizer is used?
+A. gradient descent
+B. decision tree
+C. learning rate decay
+D. stocastic gradient descent
+(D)

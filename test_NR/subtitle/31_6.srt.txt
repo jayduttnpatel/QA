@@ -1,0 +1,113 @@
+164
+00:25:01,800 --> 00:25:07,600
+So, del e o j, before that let me write
+this.
+
+165
+00:25:07,940 --> 00:25:20,580
+So, this is e of the output o j is equal to
+this error is dependent on or rather write
+
+166
+00:25:20,590 --> 00:25:33,820
+let me just write it in a proper way. It is
+other way round. So, this error at the unit
+
+167
+00:25:33,820 --> 00:25:44,120
+o j has come from the units which are upstream
+of o j. If you allow let me rub this part,
+
+168
+00:25:44,120 --> 00:25:54,760
+so that we can make the drawing here.
+So, this is my the unit j and j has certain
+
+169
+00:25:54,760 --> 00:26:07,600
+input which we have already seen, but j outputs
+to the next layer, and
+
+170
+00:26:07,600 --> 00:26:18,340
+let the output of j go to the input of these
+units and let us call this set of nodes z.
+
+171
+00:26:18,340 --> 00:26:28,960
+And let set say that z comprises of z 1, z
+2, etcetera, or just for simplicity let me
+
+172
+00:26:28,960 --> 00:26:45,289
+denote it for this step as 1 2 l. These are
+the nodes to which the output of j is feeding.
+
+173
+00:26:45,289 --> 00:26:55,600
+During back propagation the error of these
+nodes is due to the error here. So, the error
+
+174
+00:26:55,600 --> 00:27:11,760
+of o j is based on error of net z 1 net z
+2 net z 3, or for simplicity let me write
+
+175
+00:27:11,760 --> 00:27:31,120
+net 1, net 2, etcetera net l by del o j.
+
+176
+00:27:31,120 --> 00:27:43,039
+So, these components due to net 1, net 2,
+net l we can do a summation. We can write
+
+177
+00:27:43,039 --> 00:28:04,100
+this as let me again compact it error of 1,
+2, l, and this we can write as summation over
+
+178
+00:28:04,100 --> 00:28:21,870
+l, this index letters call it i d or let us
+use l as the index and l we have del e by
+
+179
+00:28:21,870 --> 00:28:45,059
+del net l del net l by del o j. So, this error
+is coming from these units and i am taking
+
+180
+00:28:45,059 --> 00:28:53,519
+the summation over that so summation of del
+e by del o j del e where it is coming from
+
+181
+00:28:53,519 --> 00:29:00,820
+this unit. So, we were writing it in chain
+form as del e by del net l del net l by del
+
+182
+00:29:00,820 --> 00:29:09,259
+o j. So, for this node we have net 1 and then
+o 1, net 2 then o 2, net 3 then o 3, and the
+
+183
+00:29:09,259 --> 00:29:27,890
+output of this contributes to the net 1 contributes
+to net 2 contributes to net 3.
+
+184
+00:29:27,890 --> 00:29:40,030
+Now what we can write is that, if we look
+at this so we can write this as summation
+
+185
+00:29:40,899 --> 00:29:54,370
+of over l del e by. So, let us look at the
+output here, output here is o l. We can write
+
+186
+00:29:54,370 --> 00:30:09,350
+it as del e by del o l, del o l by del net
+l. This part i have expanded to del e by del

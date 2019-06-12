@@ -1,0 +1,20 @@
+Q. In deep learning we are having
+A. high error
+B. low accurecy
+C. hierarchical representation
+D. none of the above
+(C)
+
+Q. Which activation function avoid the problem of gradient deffusion?
+A. Sigmoid
+B. relu
+C. adam
+D. none of the above
+(B)
+
+Q. Which of the following is one of the solution of the deep network problem?
+A. sigmoid activation function
+B. reducing size of the netwoek
+C. learning rate decay
+D. Unsupervised pretraining
+(D)

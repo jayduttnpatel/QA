@@ -1,0 +1,191 @@
+1
+00:00:19,100 --> 00:00:25,100
+Good morning, today we will talk about Multi
+layer Neural Network and the Backpropagation
+
+2
+00:00:25,100 --> 00:00:25,620
+algorithm.
+
+3
+00:00:26,100 --> 00:00:32,680
+To refresh your memory, let us see, what we
+can do by a single layer neural network.
+
+4
+00:00:33,340 --> 00:00:38,840
+If we use a single layer perceptron, which
+we have already seen in a single layer perceptron,
+
+5
+00:00:39,360 --> 00:00:49,830
+we have linear summation of the input units
+followed by non-linear function and the non-linear
+
+6
+00:00:49,830 --> 00:00:56,850
+function, in the case of perceptron is a thresh-holding
+function, but we could also use other function
+
+7
+00:00:56,850 --> 00:01:07,710
+such as the Sigmoid function, the Tanh function
+or the Relu function. So, we do sigma of sigma
+
+8
+00:01:07,710 --> 00:01:14,870
+w i x i if you are using the sigmoid function
+or in general we can use function phi.
+
+9
+00:01:15,220 --> 00:01:23,700
+Now, if you have a single layer neural network
+or single layer perceptron it can the decision
+
+10
+00:01:23,710 --> 00:01:31,619
+boundary is represented by a straight line.
+Suppose, x 1 and x 2 are the 2 features that
+
+11
+00:01:31,619 --> 00:01:39,240
+you have the decision boundary is a straight
+line and such units will work to represent
+
+12
+00:01:39,240 --> 00:01:46,950
+functions where the 2 classes examples belonging
+to 2 classes can be separated by a straight
+
+13
+00:01:46,950 --> 00:01:49,310
+line, for example, if you look at the slide.
+
+14
+00:01:49,630 --> 00:01:58,689
+Here, we have 2 classes; 1 class 1 denoted
+by red class, class 2 denoted by blue circle
+
+15
+00:01:58,689 --> 00:02:05,229
+and there is a straight line function that
+separates them. On the right, we see 2 other
+
+16
+00:02:05,229 --> 00:02:11,810
+examples, where we have class 1, which is
+red; class two, which is blue and there is
+
+17
+00:02:11,810 --> 00:02:18,930
+a line separating class 1 from class 2 and
+there exist linear decision boundary which
+
+18
+00:02:18,930 --> 00:02:25,320
+separates class 1 from class 2.
+Now, let us look at this fourth example. In
+
+19
+00:02:25,320 --> 00:02:34,800
+the bottom left here, we have 2 red points,
+2 red plus points 2, blue 0 points. Now, these
+
+20
+00:02:34,800 --> 00:02:41,700
+examples we cannot have a linear boundary
+which separates the blue points from the red
+
+21
+00:02:41,700 --> 00:02:50,130
+points. So, such machine learning problem
+cannot be represented by single layer perceptron.
+
+22
+00:02:50,130 --> 00:02:57,530
+Now, this is an example of a function which
+can be represented by a single layer perceptron
+
+23
+00:02:57,530 --> 00:03:02,500
+and this particular function is the Boolean
+OR function which most of you are familiar
+
+24
+00:03:02,500 --> 00:03:10,270
+with the Boolean OR function outputs one,
+if any of the inputs is 1 and output 0, only
+
+25
+00:03:10,270 --> 00:03:17,390
+if all the inputs are not 1 now this function
+can be represented by a single layer perceptron
+
+26
+00:03:18,650 --> 00:03:23,960
+and learning the function means learning the
+weights on the corresponding edges.
+
+27
+00:03:24,140 --> 00:03:31,320
+So, there are 3 weights associated with this
+perceptron, w 1 from x 1 to the unit w 2 from
+
+28
+00:03:31,330 --> 00:03:39,840
+x 2 that the unit and w 0, which is the bias
+now this particular diagram shows you that
+
+29
+00:03:39,840 --> 00:03:48,120
+some specific values of w 0, w 1 and w 2 for
+which we can implement this function this
+
+30
+00:03:48,120 --> 00:03:54,500
+function can be implemented by some sets of
+values this is an example of a set of values
+
+31
+00:03:54,500 --> 00:04:02,870
+which can implement this function. So, this
+is the representation of the OR function and
+
+32
+00:04:02,870 --> 00:04:10,540
+given this particular values of w 0, w 1 and
+w 2, we get a linear decision boundary which
+
+33
+00:04:10,540 --> 00:04:17,090
+separates the space into 2 regions. So, that
+the plus points are in 1 region the minus
+
+34
+00:04:17,090 --> 00:04:19,570
+points are in another region.
+
+35
+00:04:20,419 --> 00:04:26,250
+Similarly, this is another example of a function
+which can be represented by a single layer
+
+36
+00:04:26,250 --> 00:04:33,590
+perceptron. This is the Boolean AND function,
+where the output is 1 only if both the inputs
+
+37
+00:04:33,590 --> 00:04:42,360
+are 1 otherwise the output is 0, it is represented
+by this diagram and thus decision layer corresponding
+
+38
+00:04:42,360 --> 00:04:50,021
+to some specific weights right. So, for example,
+if I said w 1 equal to 1 w 2 equal to 1 and
+
+39
+00:04:50,021 --> 00:04:59,410
+w 0 equal to minus 1.5, it is it will denote
+decision surface which works for this and

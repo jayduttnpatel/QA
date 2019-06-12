@@ -1,0 +1,198 @@
+128
+00:15:03,860 --> 00:15:10,320
+H 1 the input can be reconstructed.
+Now you may be tempted to think that we can
+
+129
+00:15:10,320 --> 00:15:17,740
+have a very simple trivial function, we just
+takes each unit and transfers in there, but
+
+130
+00:15:17,740 --> 00:15:24,170
+we want to prevent it using some constraints.
+We want to put some constraints, so that H
+
+131
+00:15:24,170 --> 00:15:31,990
+1 learns some interesting function at the
+nodes; and not a trivial function. This function
+
+132
+00:15:31,990 --> 00:15:40,250
+will be a representation of the input, but
+they will be nontrivial by using some constraints.
+
+133
+00:15:40,250 --> 00:15:47,310
+We will discuss about this. Thus, once we
+learn this autoencoder, we have basically
+
+134
+00:15:47,310 --> 00:15:53,920
+a neural network with one hidden layer; this
+is easy to train and then we fix the weights,
+
+135
+00:15:53,920 --> 00:15:55,820
+so we fix these weights W 1.
+
+136
+00:15:56,810 --> 00:16:06,470
+Now we remove this. And now we think of given
+the input we have this value of H 1 and we
+
+137
+00:16:06,470 --> 00:16:16,610
+setup another learning problem where we have
+the hidden layer H 2. So this H 1, we have
+
+138
+00:16:16,610 --> 00:16:28,350
+fixed; this W 1 we have fixed, so this we
+have fixed. And we setup H 2, and we put H
+
+139
+00:16:28,350 --> 00:16:34,960
+1 at the output. So, for every training example
+we find the value of H 1 and the same value
+
+140
+00:16:34,960 --> 00:16:42,620
+we put here; we generate this training example
+and then we learn this weights. So, these
+
+141
+00:16:42,620 --> 00:16:51,810
+weights let us call them W 2. And after that
+we will fix this layer and this weight and
+
+142
+00:16:51,810 --> 00:16:56,110
+we will remove this. So, we will learn layer
+by layer.
+
+143
+00:16:57,600 --> 00:17:06,810
+Similarly, we will learn H 3 and W 3. Finally,
+after we have finished learning this unsupervised
+
+144
+00:17:06,810 --> 00:17:14,530
+layers in a layer wise approach now with respect
+to each training example will find the value
+
+145
+00:17:14,530 --> 00:17:23,909
+H 3 and we will bring in the output. And for
+the output, we will train a two layer neural
+
+146
+00:17:23,909 --> 00:17:30,230
+network or some other function like SVM or
+a linear regression, we will train some function.
+
+147
+00:17:30,230 --> 00:17:39,509
+And then we will get these weights W 4.
+So up to this, we are using only an unlabeled
+
+148
+00:17:39,509 --> 00:17:46,869
+data, here we bring in the labeled data, and
+then we will get a deep neural network. And
+
+149
+00:17:46,869 --> 00:17:52,970
+if you wish, we can tune this network by feeding
+in the input output term here. So, this is
+
+150
+00:17:52,970 --> 00:18:01,299
+the idea of autoencoder. So, we have unlabeled
+training examples we set the target values
+
+151
+00:18:01,299 --> 00:18:08,149
+to be equal to the inputs. So, we have x 1
+here we have x 1, x here, x here, x here.
+
+152
+00:18:08,149 --> 00:18:16,980
+And then we train the first hidden layers,
+so that the hidden layer represents x.
+
+153
+00:18:16,980 --> 00:18:23,190
+Now as I said the solution to this autoencoder
+may be trivial. And we want to put some constraints
+
+154
+00:18:23,190 --> 00:18:31,549
+in order to prevent it. One of the constraints
+could be that in order to prevent a trivial
+
+155
+00:18:31,549 --> 00:18:38,220
+mapping, we can set the number of nodes in
+the hidden layer to be much smaller than the
+
+156
+00:18:38,220 --> 00:18:46,330
+number of inputs. And we can constraint that
+suppose the input has 100 dimensions, we can
+
+157
+00:18:46,330 --> 00:18:53,100
+put 20 dimensions in the hidden layer.
+And if a function can be represented by 20
+
+158
+00:18:53,100 --> 00:19:00,110
+dimensions that is a nontrivial function,
+so that could be one constraint we put. Another
+
+159
+00:19:00,110 --> 00:19:06,440
+very popular constraint that we use is the
+sparsity constraint. In sparsity constraint,
+
+160
+00:19:06,440 --> 00:19:15,600
+first sparsity constraint first of all with
+respect to one neuron, we say that the neuron
+
+161
+00:19:15,600 --> 00:19:19,640
+is active if its output value is close to
+1, if its output is close to 1.
+
+162
+00:19:22,789 --> 00:19:28,880
+Now among all the training examples, for some
+of the training examples, the neuron will
+
+163
+00:19:28,880 --> 00:19:35,029
+active. We can put a constraint on the fraction
+of training examples on which the neuron can
+
+164
+00:19:35,029 --> 00:19:41,740
+be active, so that is we constraint the neuron
+to be inactive most of the time, and to be
+
+165
+00:19:41,740 --> 00:19:46,380
+active only for some training examples, which
+have certain commonalities.
+
+166
+00:19:47,390 --> 00:19:55,009
+So, we can impose this sparsity constraint
+on the these network, and we can learn the
+
+167
+00:19:55,009 --> 00:20:01,100
+weights which satisfy this sparsity constraint
+that is preventing the trivial mapping to

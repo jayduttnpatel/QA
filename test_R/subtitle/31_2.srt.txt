@@ -1,0 +1,199 @@
+35
+00:05:05,009 --> 00:05:12,310
+is a linear function you know does a linear
+separation between x 1 and x 2, but y does
+
+36
+00:05:12,310 --> 00:05:21,950
+a y is a function of z 1 and z 2 and if we
+use suitable non-linear activation functions
+
+37
+00:05:22,509 --> 00:05:29,969
+then this sort of connection can represent
+XOR or other non-linear function.
+
+38
+00:05:30,250 --> 00:05:40,909
+So, we can look at this expression of what
+multilayer networks can express. We have seen
+
+39
+00:05:40,909 --> 00:05:50,080
+that single layer networks can represent linearly
+separable function. Multilayer networks can
+
+40
+00:05:50,080 --> 00:05:57,689
+express interactions among the input. In particular
+a 2 layer network means this is a 2 layer
+
+41
+00:05:57,689 --> 00:06:03,180
+network where you have 1 hidden layer and
+1 output layer, this is the input this is
+
+42
+00:06:03,180 --> 00:06:10,009
+the hidden computing layer this is the output
+computing layer. And these 2 layer neural
+
+43
+00:06:10,009 --> 00:06:19,039
+network can represent any Boolean function.
+And continuous functions within a tolerance
+
+44
+00:06:19,039 --> 00:06:26,909
+provided of course you have the requisite
+number of hidden units and you would use appropriate
+
+45
+00:06:26,909 --> 00:06:33,969
+activation functions then all Boolean functions
+and all continuous functions within a certain
+
+46
+00:06:33,969 --> 00:06:42,509
+tolerance can be represented using 2 layer
+neural networks. If you have 3 layer neural
+
+47
+00:06:42,509 --> 00:06:49,509
+networks, then you can represent all computable
+functions. These functions can be represented
+
+48
+00:06:49,509 --> 00:06:56,849
+using 2 layer and 3 layer neural networks.
+So, they have very good representation capacity.
+
+49
+00:06:57,089 --> 00:07:05,169
+But the next question is, is it learnable?
+Just because a presentation exists to represent
+
+50
+00:07:05,169 --> 00:07:12,259
+a function does not immediately mean that
+you can learn the function well. But, for
+
+51
+00:07:12,259 --> 00:07:19,349
+neural networks like this learning algorithms
+do exist, but they have weaker guarantees.
+
+52
+00:07:19,349 --> 00:07:28,219
+In perceptron learning rule we said that,
+if a function exists then this procedure will
+
+53
+00:07:28,219 --> 00:07:34,579
+converge. So, for multilayer neural networks
+we cannot give such strong guarantees, but
+
+54
+00:07:34,869 --> 00:07:40,989
+algorithms exist and people are working on
+different very exciting types of algorithms.
+
+55
+00:07:41,979 --> 00:07:49,330
+So, let us look at a general structure of
+a multilayer network. This is a 3 layer network
+
+56
+00:07:49,330 --> 00:07:55,509
+where there is the input, and then we have
+the first hidden layer, the second hidden
+
+57
+00:07:55,509 --> 00:08:02,369
+layer, and the output. This is an example
+of a layered feed forward neural network.
+
+58
+00:08:02,930 --> 00:08:08,770
+This is a feed forward neural network because
+the inputs, these connections that we have
+
+59
+00:08:08,770 --> 00:08:14,300
+drawn are single connectional. Input to first
+hidden layer, first hidden layer to second
+
+60
+00:08:14,300 --> 00:08:19,779
+hidden layer, second hidden layer to output,
+all the edges are single directional and it
+
+61
+00:08:19,779 --> 00:08:24,119
+is going forward from the input to output
+there is no back link.
+
+62
+00:08:24,389 --> 00:08:30,120
+So, this is why is called feed forward neural
+network. This is called a layered network
+
+63
+00:08:30,120 --> 00:08:39,390
+because we have organized the neurons into
+layers and layer i is connected to layer i
+
+64
+00:08:39,390 --> 00:08:47,240
+plus 1. Also this particular diagram shows
+a fully connected layered feed forward network,
+
+65
+00:08:47,240 --> 00:08:54,280
+where there are 2 hidden layers, 1 output
+layer and of course the input layer is there.
+
+66
+00:08:55,960 --> 00:09:06,430
+So, in this particular type of feed forward
+neural network the input will be going from
+
+67
+00:09:06,430 --> 00:09:16,180
+feed forward from input to the output through
+the hidden layer. Now in the while talking
+
+68
+00:09:16,180 --> 00:09:24,250
+about perceptron training we said that based
+on the error in the output we change, if we
+
+69
+00:09:24,250 --> 00:09:30,870
+observe there is an error in the output between
+what should be the ideal value and what is
+
+70
+00:09:30,870 --> 00:09:37,889
+computed then we change the weights of this
+connections so that that error is made smaller.
+
+71
+00:09:37,889 --> 00:09:41,129
+So that is what we looked at in perceptron
+training.
+
+72
+00:09:41,480 --> 00:09:49,149
+Here also we need to do the same thing. However,
+here there is one difficulty. We know what
+
+73
+00:09:49,149 --> 00:09:55,590
+should be the ideal output here and the ideal
+output here, so based on that we can change
+
+74
+00:09:55,590 --> 00:10:04,610
+these weights. But, at the hidden node the
+ideal output is not told to us, it is not

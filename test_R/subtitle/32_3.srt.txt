@@ -1,0 +1,220 @@
+80
+00:10:02,430 --> 00:10:08,009
+an exercise to see that it can represent the
+Nand function which is the inverse of the
+
+81
+00:10:08,009 --> 00:10:14,980
+and function and by cascading 2 layers of
+Nand you can represent any Boolean function
+
+82
+00:10:14,980 --> 00:10:21,059
+and any Boolean function can therefore, be
+represented by a neural network with a single
+
+83
+00:10:21,059 --> 00:10:24,519
+hidden layer. So, this is quite obvious.
+
+84
+00:10:25,050 --> 00:10:35,199
+Secondly we can say every bounded continuous
+function can be approximated with arbitrarily
+
+85
+00:10:35,199 --> 00:10:42,320
+small error by neural network with 1 hidden
+layer. So, not just Boolean function if you
+
+86
+00:10:42,320 --> 00:10:49,449
+take a continuous function if that continuous
+function is bounded right that is it does
+
+87
+00:10:49,449 --> 00:10:56,329
+not go to infinity, it is within a bound then
+any continuous function can be approximated
+
+88
+00:10:56,329 --> 00:11:06,550
+by arbitrarily small error using single hidden
+layer neural network, but if you have a neural
+
+89
+00:11:06,550 --> 00:11:10,510
+network with 2 hidden layers like this.
+
+90
+00:11:10,589 --> 00:11:16,509
+So, this is the first layer this is the second
+layer h 2 and there is a connection from the
+
+91
+00:11:16,509 --> 00:11:25,350
+nodes in h 1 to the nodes in h 2 and then
+the there is the output. So, this is called
+
+92
+00:11:25,350 --> 00:11:33,550
+a 2 hidden layer neural network it can be
+shown that any function at all can be approximated
+
+93
+00:11:33,550 --> 00:11:39,550
+to arbitrary accuracy by a network with 2
+hidden layers if you are using a network with
+
+94
+00:11:39,550 --> 00:11:45,869
+2 hidden layers such a network can represent
+any arbitrary function which is a very powerful
+
+95
+00:11:45,869 --> 00:11:54,459
+statement; however, where is the cache just
+because given network can represent a function
+
+96
+00:11:54,459 --> 00:12:03,350
+does not mean that the function will be learnable
+in the sense that as we will see in a neural
+
+97
+00:12:03,350 --> 00:12:08,579
+network we do not know. So, we say that there
+exist neural networks which can represent
+
+98
+00:12:08,579 --> 00:12:14,790
+this function, but that neural network comprises
+of a number of nodes in the different layers
+
+99
+00:12:14,790 --> 00:12:19,769
+and that number of bits right.
+So, we know that a function can be represented
+
+100
+00:12:19,769 --> 00:12:23,929
+by a 2 hidden layer neural network, but we
+do not know how many nodes we should put what
+
+101
+00:12:23,929 --> 00:12:29,569
+should the weights p and we do not know how
+may nodes we will put. So, that to figuring
+
+102
+00:12:29,569 --> 00:12:34,269
+how to how many nodes we will put and what
+would be the weight may turn out to be hard
+
+103
+00:12:34,269 --> 00:12:41,660
+for different problems and there when by said
+that any Boolean function can be represented
+
+104
+00:12:41,660 --> 00:12:47,510
+by a network with 1 hidden layer I did not
+mention any thing about the number of nodes
+
+105
+00:12:47,510 --> 00:12:52,220
+that you require they can be some Boolean
+function for which the number of nodes that
+
+106
+00:12:52,220 --> 00:12:58,470
+you require can be very large. So, just because
+a function is representable may not mean that
+
+107
+00:12:58,470 --> 00:13:03,999
+it is learnable.
+Now, we will see how we can learn in multi
+
+108
+00:13:03,999 --> 00:13:13,389
+layer neural network using the back propagation
+algorithm now if you look at the slide this
+
+109
+00:13:13,389 --> 00:13:23,339
+is the schematics of a multi layer neural
+network. So, we have the inputs we have the
+
+110
+00:13:23,339 --> 00:13:23,979
+first hidden layer.
+
+111
+00:13:24,339 --> 00:13:30,889
+So, this shows at 2 hidden layer neural network
+the input the elder nodes are the first hidden
+
+112
+00:13:30,889 --> 00:13:37,509
+layer the blue nodes are the second hidden
+layer and the green nodes are the output layer.
+
+113
+00:13:37,509 --> 00:13:44,149
+Now, as we have earlier discussed that when
+you give the input and you have observe the
+
+114
+00:13:44,149 --> 00:13:50,739
+output and if you have a training set the
+training set will tell you for a given input
+
+115
+00:13:50,739 --> 00:13:57,110
+what should be the ideal output and from the
+training set you can find out what is the
+
+116
+00:13:57,110 --> 00:14:04,639
+error for a neural network unit for a particular
+input and we can update the weights. So, that
+
+117
+00:14:04,639 --> 00:14:11,639
+this error is reduced. Now, the error is only
+observed at the output layer. So, if you have
+
+118
+00:14:11,639 --> 00:14:12,719
+a neural network.
+
+119
+00:14:13,209 --> 00:14:23,459
+Where this is the input layer and this is
+the output layer and these are some hidden
+
+120
+00:14:23,459 --> 00:14:29,040
+layers and there is connectivity between this
+and this, this and this, this and this for
+
+121
+00:14:29,040 --> 00:14:37,681
+the nodes at the output layer we can find
+out the error for a given input. So, if I
+
+122
+00:14:37,681 --> 00:14:46,019
+take the first input x 1 we can find out what
+is the output y 1 and we can find out what
+
+123
+00:14:46,019 --> 00:14:51,920
+is the output that we are getting using the
+neural network. So, we can find out at every
+
+124
+00:14:51,920 --> 00:14:58,880
+node for that given input what is the actual
+error and we can try to change the weights.

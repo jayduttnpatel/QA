@@ -1,0 +1,197 @@
+1
+00:00:19,330 --> 00:00:25,120
+Good morning, so now we have in the last two
+classes in neural network. We have looked
+
+2
+00:00:25,120 --> 00:00:30,460
+at single layer and multilayer neural network,
+and the back propagation algorithm.
+
+3
+00:00:30,910 --> 00:00:39,140
+today we will talk briefly about deep neural networks.
+So, this is a very new topic, and with the
+
+4
+00:00:39,140 --> 00:00:46,800
+lot of interest, and I will just give you
+a brief exposure to certain very basic deep
+
+5
+00:00:46,800 --> 00:00:51,540
+neural architectures and tell you what it
+is all about.
+
+6
+00:00:55,129 --> 00:01:05,080
+In recent years there have been a lot of excitement
+with deep learning, deep neural networks,
+
+7
+00:01:05,080 --> 00:01:11,110
+and there have been breakthrough results in
+various domains including starting with image
+
+8
+00:01:11,110 --> 00:01:18,689
+classification, then in speech recognition;
+and finally, in natural language processing
+
+9
+00:01:18,689 --> 00:01:26,530
+like machine translation multi-model learning
+developing text from speech, text from images
+
+10
+00:01:26,530 --> 00:01:33,550
+automatically and many such. And the excitement
+continues, so I will talk briefly about what
+
+11
+00:01:33,550 --> 00:01:35,870
+is a deep neural network.
+
+12
+00:01:36,950 --> 00:01:43,500
+So, a deep neural network you know very simply
+speaking is a network which is deep that is
+
+13
+00:01:43,500 --> 00:01:49,530
+which has many hidden layers. We have seen
+that in we have feed forward networks with
+
+14
+00:01:49,530 --> 00:01:57,080
+hidden layers, normally in a normal network
+what use to happen is that we also talked
+
+15
+00:01:57,080 --> 00:02:02,800
+about in the last class that a network with
+two hidden layers is enough to represent any
+
+16
+00:02:02,800 --> 00:02:11,390
+function. But it may not be easy to learn
+all complex functions using a network in two
+
+17
+00:02:11,390 --> 00:02:14,580
+layers.
+As you increase the layers in the network,
+
+18
+00:02:14,580 --> 00:02:23,739
+it is easier to be able to represent complex
+function in terms of simple functions, relatively
+
+19
+00:02:23,739 --> 00:02:31,569
+simple function. So, you can have a network
+with many hidden layers and you can call this
+
+20
+00:02:31,569 --> 00:02:38,340
+a deep network. Why was it not an attractive
+proposition to start with? People found that
+
+21
+00:02:38,340 --> 00:02:45,150
+when you have a deep network, the number of
+the errors surface becomes very rough and
+
+22
+00:02:45,150 --> 00:02:51,280
+there is lot of local minima, so you cannot
+always converge, the convergence is extremely
+
+23
+00:02:51,280 --> 00:02:53,860
+slow, the slow training.
+
+24
+00:02:54,930 --> 00:03:03,290
+And very important there was one condition,
+suppose you have this input and you have the
+
+25
+00:03:03,290 --> 00:03:16,090
+different hidden layers H 1, H 2, H 3, H 4
+and then you have output. Now, we have connection
+
+26
+00:03:16,090 --> 00:03:21,819
+from this layer to this layer, this layer
+to this layer, this layer and so on. Now in
+
+27
+00:03:21,819 --> 00:03:28,819
+back propagation the error at the output was
+propagated here and this error the back propagation
+
+28
+00:03:28,819 --> 00:03:34,180
+error was propagated here, here, here, here.
+Now there are few things most of the error
+
+29
+00:03:34,180 --> 00:03:41,610
+based on this error, these weights where been
+changed. As we go further here, there would
+
+30
+00:03:41,610 --> 00:03:48,150
+be less you know less updates of the weights
+in the initial layers, and one of the reasons
+
+31
+00:03:48,150 --> 00:03:53,650
+was diffusion of gradient.
+When you do gradient decent, you find the
+
+32
+00:03:53,650 --> 00:04:04,730
+error gradient and do a and do a gradient
+decent, but the gradient can get very diffused,
+
+33
+00:04:04,730 --> 00:04:13,140
+get attenuated as you go deeper from the output
+towards the input. When you use a function
+
+34
+00:04:13,140 --> 00:04:17,989
+like the sigmoid function, you look at the
+sigmoid function, in the sigmoid function,
+
+35
+00:04:17,989 --> 00:04:25,340
+in most of the regions gradient is almost
+close to 0; only in this region the gradient
+
+36
+00:04:25,340 --> 00:04:29,760
+has some decent value.
+Most of the region the gradient is close to
+
+37
+00:04:29,819 --> 00:04:37,529
+0. If a small value and as you are taking
+propagating them backwards a gradient becomes
+
+38
+00:04:37,529 --> 00:04:45,660
+attenuated and very close to 0. And very little
+change was happening here. They can also be
+
+39
+00:04:45,660 --> 00:04:52,909
+in certain cases gradient can increase very
+much, and there also there is a problem, which
+
+40
+00:04:52,909 --> 00:04:58,439
+can of course, we handle by simpler methods
+the gradient clipping, but diffusion of gradient

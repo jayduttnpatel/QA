@@ -1,0 +1,13 @@
+Q. Method for weight updation in multi layer neural network is call
+A. internet
+B. Back propogation
+C. 2
+D. none of the above
+(B)
+
+Q. Error signal is flowing
+A. forward
+B. straight
+C. Backward
+D. simple
+(C)

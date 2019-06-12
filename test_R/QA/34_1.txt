@@ -1,0 +1,13 @@
+Q.What is the topic of this lacture?
+A. Decision tree learning
+B. Introduction to neural network
+C. deep neural network
+D. none of the above
+(C)
+
+Q. In deep network which of the following problem occure?
+A. high error
+B. deffusion of the gradient
+C. slow learning
+D. none of the above
+(B)

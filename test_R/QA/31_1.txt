@@ -1,0 +1,6 @@
+Q. What is the topic of this lacture?
+A. Decision tree
+B. Feed forward network
+C. Introduction to neural network
+D. none of the above
+(B)

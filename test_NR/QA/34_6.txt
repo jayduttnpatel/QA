@@ -1,0 +1,6 @@
+Q. What does pooling layer do?
+A. It take output of the function and combines it in smaller value
+B. observe
+C. take video as the input and give frames as the output
+D. none of the above
+(A)

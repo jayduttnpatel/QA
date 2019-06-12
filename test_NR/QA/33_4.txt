@@ -1,0 +1,13 @@
+Q. What is the dimensionality of the image?
+A. 784
+B. cross entropy
+C. adam
+D. 500
+(A)
+
+Q. Which activation function is used?
+A. relu
+B. adam
+C. decision
+D. none of the above
+(A)

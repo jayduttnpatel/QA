@@ -1,0 +1,238 @@
+248
+00:30:00,679 --> 00:30:07,169
+there is a local minima, it is unlikely that
+for all examples it will be that minima. So,
+
+249
+00:30:07,169 --> 00:30:13,510
+first if you are stochastic gradient descent
+the neural network is more likely to get towards
+
+250
+00:30:13,510 --> 00:30:19,460
+the global minima and there is something in
+between which is called mini batch gradient
+
+251
+00:30:19,460 --> 00:30:25,021
+descent. So, instead of taking all the examples
+at a time or a single example at a time you
+
+252
+00:30:25,021 --> 00:30:31,400
+take a batch of examples at a time and with
+respect to that you do gradient descent.
+
+253
+00:30:31,400 --> 00:30:39,090
+So, batch gradient descent calculates outputs
+for the entire data set accumulates the errors
+
+254
+00:30:39,090 --> 00:30:44,990
+then back propagates and makes a single update.
+It is too slow to converge and it make gets
+
+255
+00:30:44,990 --> 00:30:53,090
+stuck in local minima stochastic or online
+gradient descent on the other hand will take
+
+256
+00:30:53,090 --> 00:30:56,933
+1 training example at a time with respect
+to that it will find the error gradient it
+
+257
+00:30:56,933 --> 00:31:04,580
+converges to solution faster and often helps
+get the system out of local minima and in
+
+258
+00:31:04,580 --> 00:31:07,800
+between we have mini batch gradient decide.
+
+259
+00:31:10,450 --> 00:31:17,690
+Now, the entire training process can be divided
+in to epochs. If you have a number of training
+
+260
+00:31:17,690 --> 00:31:23,399
+example 1, it epoch will look at all the training
+examples. Once then we will have the second
+
+261
+00:31:23,399 --> 00:31:28,789
+epoch then the third epoch etcetera. When
+we are learning an epochs when do you stop?
+
+262
+00:31:28,789 --> 00:31:34,399
+So, we keep training the neural network on
+the entire training set over and over again
+
+263
+00:31:34,399 --> 00:31:42,190
+and each episode is called an epoch and we
+can stop where the training error is not is
+
+264
+00:31:42,190 --> 00:31:49,360
+getting saturation or we can use cross validation
+while we are training the neural network,
+
+265
+00:31:49,360 --> 00:31:55,990
+we can also keep validating it on a held outside
+and when we see that the training and validation
+
+266
+00:31:55,990 --> 00:32:03,110
+errors are closed then we can stop or we can
+stop when we reach a maximum number of epochs.
+
+267
+00:32:03,110 --> 00:32:10,990
+Now, in neural networks like other machine
+learning algorithms over fitting can occur
+
+268
+00:32:10,990 --> 00:32:19,519
+and this over fitting is illustrated by this
+diagram. So, on the x-axis, we have the number
+
+269
+00:32:19,519 --> 00:32:26,789
+of iterations and the y-axis, we have root
+mean square error as is typical of many machine
+
+270
+00:32:26,789 --> 00:32:33,450
+learning algorithm as we increase the number
+of iteration the error on the training set
+
+271
+00:32:33,450 --> 00:32:41,750
+keeps on reducing and it may even become 0
+may or may not become 0, but the error on
+
+272
+00:32:41,750 --> 00:32:49,149
+a held out set typically will initially decrease
+and then it will increase were over fitting
+
+273
+00:32:49,149 --> 00:32:52,789
+has occurred right.
+So, this is the zone where over fitting has
+
+274
+00:32:52,789 --> 00:32:58,440
+occurred. Ideally you should stop before the
+validation error starts to increase. So, if
+
+275
+00:32:58,440 --> 00:33:03,980
+you can keep track of the validation error
+you will know that this is the place where
+
+276
+00:33:03,980 --> 00:33:10,299
+you must stop and not continue any more iteration
+because beyond that the network is likely
+
+277
+00:33:10,299 --> 00:33:14,619
+to over fit and the accuracy of the network
+will go down.
+
+278
+00:33:16,360 --> 00:33:22,749
+So, this picture illustrates local minima
+as we said neural networks gets can gets stuck
+
+279
+00:33:22,749 --> 00:33:28,240
+in local minima for small networks and we
+also said that if we use stochastic gradient
+
+280
+00:33:28,240 --> 00:33:33,980
+descent it is less likely do get stuck in
+local minima, but in practice when you have
+
+281
+00:33:33,980 --> 00:33:41,580
+a large network with many weights local minima
+is not. So, common because we have many weights
+
+282
+00:33:41,580 --> 00:33:45,940
+it is unlikely that and you are doing every
+weight separately it is unlikely that the
+
+283
+00:33:45,940 --> 00:33:49,420
+same local minima will be the minima of all
+the weights.
+
+284
+00:33:51,919 --> 00:34:00,379
+So, in conclusion we can say the artificial
+neural network, let us you use highly expressive
+
+285
+00:34:00,379 --> 00:34:07,240
+non-linear function that can represent all
+most all functions. It comprises of a parallel
+
+286
+00:34:07,240 --> 00:34:15,020
+network of logistic function units or other
+types of units are also possible the principle
+
+287
+00:34:15,020 --> 00:34:21,080
+works by minimizing the sum of squared training
+errors there are also neural networks with
+
+288
+00:34:21,080 --> 00:34:26,740
+different other laws functions, but we will
+not talk about it in this class here we have
+
+289
+00:34:26,740 --> 00:34:34,340
+looked at neural networks to minimize the
+root mean square error we can add a regularization
+
+290
+00:34:34,340 --> 00:34:37,840
+term to a neural network which I did not talk
+about.
+
+291
+00:34:38,010 --> 00:34:43,490
+So, what you can do is that you can write
+to prevent the weights from getting large
+
+292
+00:34:43,490 --> 00:34:50,200
+by penalizing networks where the weights have
+large values by adding regularization term
+
+293
+00:34:50,200 --> 00:34:56,760
+neural networks can get stuck in a local minima
+and it may exhibit over fitting.
+
+294
+00:34:56,760 --> 00:35:03,400
+With this, we come to a conclusion in the
+next class. We will give a very brief introduction
+
+295
+00:35:03,400 --> 00:35:05,080
+on deep learning.
+Thank you very much.

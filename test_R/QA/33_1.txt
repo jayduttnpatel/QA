@@ -1,0 +1,48 @@
+Q. What is topic of this lacture?
+A. Artificial neaural network
+B. clustering
+C. decision tree learning
+D. none of the above
+(A)
+
+Q. Artificial neural network form the foundation of
+A. decision tree
+B. regression
+C. deep learning
+D. classification
+(C)
+
+Q. Which library is used?
+A. scikit learn
+B. tensorflow
+C. numpy
+D. jupyter
+(B)
+
+Q. Tensorflow is library which is open sourced by
+A. Apple
+B. Facebook
+C. Google
+D. none of the above
+(C)
+
+Q. Which task is solved?
+A. recognition of handwritten letter
+B. recognition of handwritten digits
+C. recognition of cat or dog
+D. none of the above
+(B)
+
+Q. Which dataset is used?
+A. MNIST
+B. Iris
+C. Boston
+D. none of the above
+(A)
+
+Q. MNIST dataset is taken from the
+A. Google
+B. letters
+C. Wikipidea
+D. none of the above
+(B)

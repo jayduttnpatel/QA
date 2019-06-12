@@ -1,0 +1,188 @@
+85
+00:10:05,410 --> 00:10:14,240
+so that is why you can see that the length
+of each training input vector is 784, and
+
+86
+00:10:14,240 --> 00:10:20,769
+there are 55,000 of them. So, they have been
+organized in the form of this metrics.
+
+87
+00:10:20,769 --> 00:10:28,610
+Let us see how y looks like, y there are also
+like for every single of the 55,000 training
+
+88
+00:10:28,610 --> 00:10:32,990
+images, we have their corresponding label
+encoded as a one hot vector and let us have
+
+89
+00:10:32,990 --> 00:10:41,579
+a look at what this one hot vector looks like
+let us see what y zero looks like see. So,
+
+90
+00:10:41,579 --> 00:10:49,009
+it is a ten long vector there are 10 entries
+and the corresponding like this, this happen
+
+91
+00:10:49,009 --> 00:11:00,369
+to be the image of a eight right sorry seven,
+so it is like 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+92
+00:11:01,860 --> 00:11:07,620
+So, this was the image of a seven that example
+of and hence that is the position for seven
+
+93
+00:11:07,620 --> 00:11:14,380
+is one the rest are zero. So, this was just
+to show you how things look like.
+
+94
+00:11:15,140 --> 00:11:21,970
+So, after this has been done, let us go ahead
+let me delete this cell, it is useless. So,
+
+95
+00:11:21,970 --> 00:11:33,991
+just go ahead and delete the cell. So, once
+we have the training data ready, let us go
+
+96
+00:11:33,991 --> 00:11:48,810
+ahead and make the model. So, the tensor flow
+it organizes the entire architecture of the
+
+97
+00:11:48,810 --> 00:11:54,800
+neural network in the form of a graph, so
+it is called the tensor flow graph. So, the
+
+98
+00:11:54,800 --> 00:12:00,629
+first thing that we have to do while making
+your neural network is to first define the
+
+99
+00:12:00,629 --> 00:12:04,469
+graph structure so initialize a graph by invoking
+this function.
+
+100
+00:12:05,029 --> 00:12:18,970
+So you just call TF learn, and just a second,
+now, yes. So, TF learn dot in it underscore
+
+101
+00:12:18,970 --> 00:12:27,790
+graph and you specify what all system resources
+that will be necessary for this particular
+
+102
+00:12:27,790 --> 00:12:38,230
+exercise. And just as a matter of fact that
+deep learning requires a special kind of you
+
+103
+00:12:38,230 --> 00:12:43,509
+know computing infrastructure which is known
+as graphics processing unit. So, the same
+
+104
+00:12:43,509 --> 00:12:48,559
+graphic cards that again we that are used
+for playing games that you can find that is
+
+105
+00:12:48,559 --> 00:12:56,259
+used for like heavy duty, visual renderings,
+the same graphics cards, so they are high
+
+106
+00:12:56,259 --> 00:13:02,929
+the capable of doing metrics multiplications
+very efficiently and that is what a comes
+
+107
+00:13:02,929 --> 00:13:07,309
+to a great help in doing this like deep learning
+applications.
+
+108
+00:13:07,950 --> 00:13:17,139
+So, tensor flow is it is compatible to it
+is completely optimized for GPU for this graphics
+
+109
+00:13:17,139 --> 00:13:22,939
+processing unit is so how much memory from
+a GPU, you would like to use in a particular
+
+110
+00:13:22,939 --> 00:13:29,220
+experiment you can specify over here. But
+my PC does not have a GPU now, so we will
+
+111
+00:13:29,220 --> 00:13:40,000
+just say specify that we are going to use
+just all of the four cores of my PC. So, I
+
+112
+00:13:40,000 --> 00:13:47,800
+just say that this is the compute requirement
+of the algorithm number of cores equal to 4
+
+113
+00:13:48,140 --> 00:13:51,460
+Next, we go ahead and start making our network.
+
+114
+00:13:52,149 --> 00:13:59,420
+We just we store our network within the variable
+called net, so first we add an input data
+
+115
+00:13:59,420 --> 00:14:10,619
+layer. So, it is just called TF learn dot
+input underscore data and you say what the
+
+116
+00:14:10,619 --> 00:14:15,839
+shape of the input data should be. So, you
+just so the shape is in this case is equal
+
+117
+00:14:15,839 --> 00:14:26,959
+to a list first element is none I will tell
+you what it means followed by 784. So, have
+
+118
+00:14:26,959 --> 00:14:38,449
+a look at this, so the first element in the
+shape this corresponds to the number of yeah
+
+119
+00:14:38,449 --> 00:14:44,369
+this element none, the first entry in this
+shaped vector it corresponds to the number
+
+120
+00:14:44,369 --> 00:14:50,300
+of samples that needs to be presented in a
+particular batch. So, in the tutorial session
+
+121
+00:14:50,300 --> 00:14:56,809
+I have already talked about what is batch
+learning, what is mini batch learning, what
+
+122
+00:14:56,809 --> 00:15:00,589
+is stochastic learning three different kinds
+of gradient design that you can use.

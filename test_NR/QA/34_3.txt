@@ -1,0 +1,20 @@
+Q. Stacked auto encoder is the method used in
+A. error correcting
+B. data split
+C. unsupervised pretraining
+D. none of the above
+(C)
+
+Q. In autoencoder we learn initial hidden layer based on
+A. bias
+B. unlabeled inputs
+C. covergence
+D. none of the above
+(B)
+
+Q. In autoencoder we setup the network first to learn
+A. complex function
+B. identity function
+C. hyperbola
+D. none of the above
+(B)

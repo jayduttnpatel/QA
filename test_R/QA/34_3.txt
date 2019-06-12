@@ -1,0 +1,20 @@
+Q. Stacked auto encoder is the method used in
+A. learning rate decay
+B. optimization
+C. unsupervised pretraining
+D. none of the above
+(C)
+
+Q. In autoencoder we learn initial hidden layer based on
+A. labeled input
+B. unlabeled inputs
+C. test data
+D. none of the above
+(B)
+
+Q. In autoencoder we setup the network first to learn
+A. linear function
+B. identity function
+C. complex function
+D. none of the above
+(B)

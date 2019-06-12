@@ -1,0 +1,240 @@
+250
+00:30:00,330 --> 00:30:04,659
+connected layer. Of course, the convolutional
+layer will be there and there these layers
+
+251
+00:30:04,659 --> 00:30:11,289
+will be stacked together pooling may or may
+not be there and the fully connected layer
+
+252
+00:30:11,289 --> 00:30:12,629
+may or may not be there.
+
+253
+00:30:13,399 --> 00:30:19,409
+So, let us look at some properties of convolutional
+neural network. The convolutional neural networks
+
+254
+00:30:19,409 --> 00:30:27,109
+are takes advantage of the sub-structure of
+the input, which is achieve with local connections
+
+255
+00:30:27,109 --> 00:30:33,779
+and weights. So, locally, the convolution
+is over a local rectangle. So, it looks at
+
+256
+00:30:33,779 --> 00:30:40,650
+some feature in a local region; and the same
+feature it tries to find in different regions
+
+257
+00:30:40,650 --> 00:30:47,080
+and this is achieved by tying the weights
+by using the same weights for this rectangle
+
+258
+00:30:47,080 --> 00:30:50,320
+as well as this rectangle, we use the same
+weights.
+
+259
+00:30:50,989 --> 00:30:58,759
+So, this results in translation in variant
+features. Convolutional neural networks are
+
+260
+00:30:58,759 --> 00:31:07,529
+easier to train and they have many fewer parameters
+than the corresponding fully connected network,
+
+261
+00:31:07,529 --> 00:31:17,029
+because the weights are shared. So, this makes
+convolutional neural network easier to learn.
+
+262
+00:31:17,029 --> 00:31:22,419
+Then there are many other neural deep neural
+network architectures, of course, we will
+
+263
+00:31:22,419 --> 00:31:30,340
+not be able to cover everything. I will just
+mention recurrent neural networks, which are
+
+264
+00:31:30,340 --> 00:31:44,509
+very useful for representing temporal sequences
+as in speech or sequences of words in a sentence,
+
+265
+00:31:44,509 --> 00:31:45,529
+videos etcetera.
+
+266
+00:31:46,059 --> 00:31:54,080
+In recurrent neural network, what we have
+is that we have input and we have a output
+
+267
+00:31:54,080 --> 00:32:03,369
+and there is a hidden layer. Now we want to
+capture the input from the previous time steps.
+
+268
+00:32:03,369 --> 00:32:12,509
+Now one of the ways in which we could do is
+that we could have the input at x t x t minus
+
+269
+00:32:12,509 --> 00:32:22,409
+1, x t minus 2 dot dot dot x t minus k. So,
+we could pick a fixed size window and treat
+
+270
+00:32:22,409 --> 00:32:30,559
+it as the input and then we have a hidden
+layer, and we could have the output. These
+
+271
+00:32:30,559 --> 00:32:38,139
+constraints as from taking input from a sliding
+window. Alternately, we could take the input
+
+272
+00:32:38,139 --> 00:32:46,289
+theoretically from anytime in the past infinitely
+back in the past by having a connection from
+
+273
+00:32:46,289 --> 00:32:47,329
+H to H.
+
+274
+00:32:51,240 --> 00:32:58,210
+So this is x t, this is h t, and we can have
+a connection from h to itself, which corresponds
+
+275
+00:32:58,210 --> 00:33:05,159
+to if we look at this picture which corresponds
+to you can unfold it and have this is x t
+
+276
+00:33:05,159 --> 00:33:13,960
+minus 1, x t x t plus 1 and this is the hidden
+state at t minus 1, t, t plus 1. And this
+
+277
+00:33:13,960 --> 00:33:22,139
+weights are shared this is the common weight.
+This is the common weight and this is the
+
+278
+00:33:22,139 --> 00:33:29,990
+weight u, this is the weight v, this is the
+weight w, and this is the recurrent neural
+
+279
+00:33:29,990 --> 00:33:36,559
+network. And you can unfold it infinitely
+to get a very deep neural network. And you
+
+280
+00:33:36,559 --> 00:33:42,729
+can use back propagation the particular term
+we use is back propagation overtime to find
+
+281
+00:33:42,729 --> 00:33:47,259
+the value of the weights.
+Now recurrent neural network have similar
+
+282
+00:33:47,259 --> 00:33:54,330
+problem as deep neural networks have with
+respect to back propagation. And one of the
+
+283
+00:33:54,330 --> 00:34:06,139
+very nice ideas people have come up with is
+use some units instead of using simple perceptron,
+
+284
+00:34:06,139 --> 00:34:16,220
+we use certain gates units by which one can
+store which can act as a memory, where one
+
+285
+00:34:16,220 --> 00:34:24,260
+can store some information, so that that information
+stays till when you want to use it. So, information
+
+286
+00:34:24,260 --> 00:34:31,409
+which is long back in the past can be stored
+using this gated units, and there are various
+
+287
+00:34:31,409 --> 00:34:33,789
+such units which have been used.
+
+288
+00:34:34,190 --> 00:34:41,679
+LSTM, which stands for long short term memory;
+and GRU, which stands for gated recurrent
+
+289
+00:34:41,679 --> 00:34:47,240
+unit these are some of the units which are
+used in recurrent neural network to enable
+
+290
+00:34:47,240 --> 00:34:53,310
+them to work effectively.
+Unfortunately, today we do not have much scope
+
+291
+00:34:53,310 --> 00:35:00,140
+in this class to talk about this and this
+is a little more complex topic which we will
+
+292
+00:35:00,140 --> 00:35:06,110
+not have time to go into detail, but I just
+wanted to give you a glimpse into this, so
+
+293
+00:35:06,110 --> 00:35:10,760
+that in future you can read it. This entire
+topic of today’s is a little bit advanced,
+
+294
+00:35:10,760 --> 00:35:18,050
+but we wanted to tell you a little bit about
+this there are many are very nice architectures
+
+295
+00:35:18,050 --> 00:35:26,610
+of deep neural networks like encoder, decoder
+architectures, and there are a different models
+
+296
+00:35:26,610 --> 00:35:32,680
+using models which use external memory. And
+these are very exciting and they have been
+
+297
+00:35:32,680 --> 00:35:40,360
+used for solving extremely interesting tasks.
+I hope that you will have some interest and
+
+298
+00:35:40,360 --> 00:35:43,780
+be able to study them later.
+Thank you.

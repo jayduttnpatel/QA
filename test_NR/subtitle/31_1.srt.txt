@@ -1,0 +1,166 @@
+1
+00:00:22,780 --> 00:00:28,680
+Good morning. Today we talk about the second
+part of lecture in Neural Network, where we
+
+2
+00:00:28,689 --> 00:00:35,079
+will talk about Multilayer Neural Network.
+We have already looked at individual neural
+
+3
+00:00:35,079 --> 00:00:43,710
+units and discussed that they can represent
+linear functions, but the main excitement
+
+4
+00:00:43,710 --> 00:00:50,680
+about neural network is because they can represent
+non-linear functions. And we can represent
+
+5
+00:00:50,680 --> 00:00:58,660
+non-linear functions by stacking layers of
+perceptrons into different architectures.
+
+6
+00:00:58,920 --> 00:01:06,880
+So, today we will look at Feed Forward Multilayer
+Neural Networks which is a particular type
+
+7
+00:01:07,150 --> 00:01:09,110
+of connections in neural network
+
+8
+00:01:09,780 --> 00:01:19,170
+Now, first of all we will look at what are
+the limitations of perceptrons. We have seen
+
+9
+00:01:19,170 --> 00:01:23,690
+that the really not discussed, but perceptrons
+have this monotinicity property.
+
+10
+00:01:24,640 --> 00:01:31,920
+So in a perceptron what we are doing is that,
+we have an input and we have multiple outputs
+
+11
+00:01:31,920 --> 00:01:39,650
+and we have weights associated with them.
+And because of this type of connection perceptrons
+
+12
+00:01:39,650 --> 00:01:46,140
+have a monotonicity property. If a link has
+positive weight activation can only increase
+
+13
+00:01:46,140 --> 00:01:54,490
+as the input value increases. It cannot represent
+functions where input interactions can cancel
+
+14
+00:01:54,490 --> 00:02:01,439
+each other. So each input is individually
+interacting with the neural, so it cannot
+
+15
+00:02:01,439 --> 00:02:07,979
+handle interactions between the For example, perceptrons can be used
+
+16
+00:02:07,979 --> 00:02:25,420
+to represent gates like and suppose there
+are two inputs x 1 and x 2 you want to pass
+
+17
+00:02:25,420 --> 00:02:35,510
+one if both x 1 and x 2 are true. Then you
+can set the weights and the thresh hold such
+
+18
+00:02:35,510 --> 00:02:46,070
+that the result will be 1 only when x 1 and
+x 2 is 1.
+
+19
+00:02:46,180 --> 00:02:53,590
+However, perceptron cannot represent the XOR
+function. In XOR function, suppose we have
+
+20
+00:02:53,590 --> 00:03:06,270
+two variables x 1 and x 2 which can take 0
+and 1. In XOR is true for in this case it
+
+21
+00:03:06,430 --> 00:03:15,150
+is negative here and here. So, XOR function
+is not linearly separable and it is not monotonic
+
+22
+00:03:15,150 --> 00:03:20,550
+in the individual inputs and it cannot be
+represented by a perceptron.
+
+23
+00:03:21,310 --> 00:03:31,570
+So, a solution to this is to have a multilayer
+neural network. Where we have this units stacked
+
+24
+00:03:32,070 --> 00:03:36,110
+on each other. So, we have these inputs.
+
+25
+00:03:36,980 --> 00:03:47,480
+So, we have x 1, x 2, x 3, x n as the input
+and we have let us say 1, this is the first
+
+26
+00:03:47,480 --> 00:03:58,110
+layer we call it Hidden layer 1 and it has
+units let us say z 1, z 2, z 3, z l and then
+
+27
+00:03:58,110 --> 00:04:11,450
+there is the output layer where we have units
+y 1, y 2. Now, we have inputs feeding through
+
+28
+00:04:11,450 --> 00:04:23,530
+from input to this layer and etcetera, and
+then from here to this layer. We can have
+
+29
+00:04:23,530 --> 00:04:31,690
+a multilayer network where we have the input
+layer and the output layer and between the
+
+30
+00:04:31,690 --> 00:04:39,960
+input and the output we can have other units
+which are called the Hidden Units. Why Hidden?
+
+31
+00:04:39,960 --> 00:04:44,589
+Because, in the training examples they are
+not observed, we have the input and the output
+
+32
+00:04:44,589 --> 00:04:51,650
+these are called the hidden units. And through
+these hidden units we can represent many non-linear
+
+33
+00:04:51,650 --> 00:04:54,630
+functions.
+For example, if you look at this picture
+
+34
+00:04:55,849 --> 00:05:05,009
+we have x 1 and x 2 and each of z 1 and z 2 is
+a linear function of x 1, x 2. And then y

@@ -1,0 +1,13 @@
+Q. Which of the following is the constraint in autoencoder
+A. high data
+B. low error
+C. high accurecy
+D. sparsity constraint
+(D)
+
+Q. In sparsity constraint neuron is active if it's output value is close to
+A. 0
+B. 10
+C. 1
+D. none of the above
+(C)

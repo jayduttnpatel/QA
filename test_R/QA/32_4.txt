@@ -1,0 +1,6 @@
+Q. Method which is used to train the multi layer neural network is know as
+A. forward propagation
+B. clustering
+C. back propagation
+D. none of the above
+(C)

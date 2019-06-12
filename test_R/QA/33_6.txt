@@ -1,0 +1,6 @@
+Q. What is batch size in the code?
+A. 15
+B. 10
+C. 20
+D. none of the above
+(B)

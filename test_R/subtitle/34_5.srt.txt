@@ -1,0 +1,224 @@
+164
+00:20:03,840 --> 00:20:11,950
+statistical distance term, statistical distance
+metric and it directly tries to match the
+
+165
+00:20:11,950 --> 00:20:17,940
+actual the data distribution and the model
+distributions in course of the training. So,
+
+166
+00:20:17,940 --> 00:20:23,440
+you can look up and read more about this,
+but this is outside the preview of this course.
+
+167
+00:20:23,830 --> 00:20:34,740
+So, we will put an optimizer, and let it be
+stochastic gradient descent. Now we have defined
+
+168
+00:20:34,740 --> 00:20:38,520
+what kind of learning algorithm, and what
+kind of loss function will be used to train
+
+169
+00:20:38,520 --> 00:20:49,350
+the neural network. Now, we define, we write
+this so we define our model. So, again now
+
+170
+00:20:49,350 --> 00:20:55,460
+the scikit learn API comes in, so see how
+beautiful it is, so we are just going to put
+
+171
+00:20:55,460 --> 00:21:04,420
+TF learn dot DNN. So, yes, so we are now that
+you have already defined what kind of a neural
+
+172
+00:21:04,420 --> 00:21:07,960
+network you want, and how it should be trained
+and everything.
+
+173
+00:21:08,260 --> 00:21:15,700
+Now you initialize this TF learn dot DNN this
+is like sk learn dot linear regression or
+
+174
+00:21:15,700 --> 00:21:20,460
+something like that, so a model learning model
+learning algorithm or a machine learning model,
+
+175
+00:21:20,460 --> 00:21:29,410
+just define this as a machine learning model.
+And then you train this model. So, I will
+
+176
+00:21:29,410 --> 00:21:35,930
+just leave this spot in this particular cell,
+and we can make new cell for define for training
+
+177
+00:21:35,930 --> 00:21:40,040
+the model, so it is all compiled.
+So, what did we do here we first declare what
+
+178
+00:21:40,040 --> 00:21:45,620
+kind of see compute resources we are going
+to use, then we initialized the structure
+
+179
+00:21:45,620 --> 00:21:50,870
+of the neural network. And said what the different
+layer sizes should be, what different kinds
+
+180
+00:21:50,870 --> 00:21:55,600
+of activation should be, and then we said
+what kind of loss function and what kind of
+
+181
+00:21:55,600 --> 00:22:02,250
+update rule should be used to optimize the
+learning algorithm. To learn the weights rather
+
+182
+00:22:02,250 --> 00:22:14,490
+and then we declare the model. And then it
+is time to train, oops so I already made another
+
+183
+00:22:14,490 --> 00:22:22,580
+slide another for this. So we are now going
+to do model dot fit yeah as we always do.
+
+184
+00:22:22,580 --> 00:22:31,080
+So model dot fit, now the model is already
+declared we train it on x and y. So, these
+
+185
+00:22:31,080 --> 00:22:35,740
+are your input and targets of the training
+data. And now you specify a couple of more
+
+186
+00:22:35,740 --> 00:22:43,870
+options. You specify that the number of epochs
+of training in epoch is going to be one. So,
+
+187
+00:22:43,870 --> 00:22:50,590
+what is epoch so it is a very common concept
+in machine learning, so when you are actually
+
+188
+00:22:50,590 --> 00:22:57,680
+trying to find out the like you want to do
+gradient decent, you have a bunch of parameters
+
+189
+00:22:57,680 --> 00:23:03,550
+which you want to find optimum values of.
+And what you do is you show the learning algorithm
+
+190
+00:23:03,550 --> 00:23:10,210
+the same training examples time and over and
+over again. So, say you have one million training
+
+191
+00:23:10,210 --> 00:23:17,640
+examples; and in the first epoch, you are
+going to show the neural network say it is
+
+192
+00:23:17,640 --> 00:23:22,171
+a neural network the learning model. So, you
+show all the in the first epoch you show all
+
+193
+00:23:22,171 --> 00:23:27,071
+the training examples to the neural network.
+So, it does some updates everything.
+
+194
+00:23:27,480 --> 00:23:31,340
+Now in the second epoch you randomize you
+randomly permute all the, you shuffle all
+
+195
+00:23:31,340 --> 00:23:36,640
+the training examples you have, and you push
+it again. And it has been shown that this
+
+196
+00:23:36,640 --> 00:23:43,620
+helps to break the sequence the like when
+you are presenting the training examples in
+
+197
+00:23:43,620 --> 00:23:49,310
+a particular sequence to your machine learning
+model to a neural network, then the neural
+
+198
+00:23:49,310 --> 00:23:54,370
+network might actually memorize a sequence.
+And so the sequence in which different training
+
+199
+00:23:54,370 --> 00:24:03,050
+examples appear to the neural network, may
+actually you know actually we reflected in
+
+200
+00:24:03,050 --> 00:24:09,920
+the optimization in the values of which the
+weights can take up. Just to break that sequence
+
+201
+00:24:09,920 --> 00:24:15,220
+what we do is we randomize the samples and
+pass the same training said over and over
+
+202
+00:24:15,220 --> 00:24:21,560
+again. And this like carries on the training,
+and we need to like the more you train, the
+
+203
+00:24:21,560 --> 00:24:27,260
+better the models fit is on to the training
+data. So, it is a concept and I just keep
+
+204
+00:24:27,260 --> 00:24:33,530
+I am going to keep n epoch equal to 1, number
+of epochs equal to 1 to like show you the
+
+205
+00:24:33,530 --> 00:24:39,800
+other thing is ok. And it is just going to
+speed up the learning process a little bit
+
+206
+00:24:39,800 --> 00:24:47,250
+take a little bit lesser time.
+Now you show now it is batch size right, so
+
+207
+00:24:47,250 --> 00:24:56,790
+sorry oops batch size. So, when you as you
+are doing stochastic gradient decent, the
+
+208
+00:24:56,790 --> 00:25:03,230
+batch size is going to matter. So, it is the
+number of examples that you want to show per

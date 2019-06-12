@@ -1,0 +1,199 @@
+40
+00:04:59,410 --> 00:05:04,690
+function there could be other combinations
+of weights also which work for the and function,
+
+41
+00:05:04,690 --> 00:05:09,170
+but this is 1 combination of weights which
+implements the and function.
+
+42
+00:05:10,040 --> 00:05:16,980
+But, when we have the XOR function, which
+is 1, if exactly one of the inputs is 1 and
+
+43
+00:05:16,980 --> 00:05:22,760
+0; if both both of them as 0 or both of them
+and 1 that is XOR function and as we can see
+
+44
+00:05:22,760 --> 00:05:29,120
+there is no linear decision boundary that
+separates the 0 points from the 1 point. So,
+
+45
+00:05:29,120 --> 00:05:34,780
+in order to represent this function we can
+go for multi layer perceptrons.
+
+46
+00:05:36,760 --> 00:05:44,700
+This is an example of implementation of the
+Boolean XOR function. So, we have initially
+
+47
+00:05:44,700 --> 00:05:52,960
+we have the first layer we have 2 perceptrons;
+the first perceptron h 1 and h 2 and then
+
+48
+00:05:52,960 --> 00:06:00,120
+the second layer we have 1 perceptron and
+together these three units. In 2 layers, they
+
+49
+00:06:00,120 --> 00:06:06,460
+can represent the Boolean XOR function for
+certain combination of weights, for example,
+
+50
+00:06:07,000 --> 00:06:14,160
+we can have the first the left unit left h
+1 at the first layers to represent the OR
+
+51
+00:06:14,160 --> 00:06:18,550
+function by putting the weights as 1 1 and
+minus 0.5.
+
+52
+00:06:18,550 --> 00:06:26,440
+We can have the second node at the first layer
+represent the and function by putting the
+
+53
+00:06:26,440 --> 00:06:37,680
+weights has 1 1 minus 1.5 and we can have
+the node at the second layer implement, the
+
+54
+00:06:37,680 --> 00:06:44,000
+final XOR function by setting the weights
+has 1 minus 1 minus 0.5, this is one example
+
+55
+00:06:44,000 --> 00:06:52,080
+implementation of the XOR function by using,
+2 layer perceptron XOR cannot be implemented
+
+56
+00:06:52,080 --> 00:06:59,430
+by a 1 layer perceptron, but it can be represented
+by a 2 layer perceptron function.
+
+57
+00:06:59,430 --> 00:07:09,530
+Now, in general if you look at multi layer
+neural networks, we can say this thing about
+
+58
+00:07:09,530 --> 00:07:16,850
+the representation capability of neural networks
+if you have single layer neural networks they
+
+59
+00:07:16,850 --> 00:07:24,520
+have limited representation power and we have
+already discussed they can represent linear
+
+60
+00:07:24,520 --> 00:07:32,990
+decisions surfaces and therefore, if the examples
+of 2 classes are linearly separable then only
+
+61
+00:07:32,990 --> 00:07:40,250
+they can represented by a single layer perceptron.
+If you have non-linear functions you have
+
+62
+00:07:40,250 --> 00:07:49,690
+to go for multiple layers and as you can see
+if we had only linear units combination of
+
+63
+00:07:49,690 --> 00:07:57,380
+linear units could be at another linear unit.
+So, in order for multi layer neural networks
+
+64
+00:07:57,380 --> 00:08:04,800
+to represent non-linear of function it is
+important that the functions implemented at
+
+65
+00:08:04,800 --> 00:08:11,050
+the individual units are non-linear that is
+why we go for non-linear units either threshold
+
+66
+00:08:11,050 --> 00:08:18,630
+unit or sigmoid unit or tanage unit or so
+on. Now, when we go for multi layer network,
+
+67
+00:08:18,630 --> 00:08:26,170
+if we go for a 2 layer network, suppose this
+is the input unit and we have 1 hidden layer.
+
+68
+00:08:26,170 --> 00:08:39,500
+So, in a neural network, this is the input
+x 1 x 2 x n are the inputs and this is the
+
+69
+00:08:39,500 --> 00:08:48,790
+output and we can have 1 or more hidden layers.
+Suppose this is the first hidden layer comprising
+
+70
+00:08:48,790 --> 00:08:58,140
+three nodes right and we can have connection
+from the input to the first layer and we can
+
+71
+00:08:58,140 --> 00:09:01,240
+have connection from the first layer to the
+second layer.
+
+72
+00:09:05,780 --> 00:09:13,360
+So, such a network this is the network with
+1 hidden layer if we take a network with 1
+
+73
+00:09:13,370 --> 00:09:19,459
+hidden layer it is normally called a 2 layer
+neural network, such neural networks can represent
+
+74
+00:09:19,459 --> 00:09:26,240
+all Boolean functions all Boolean functions
+can be represented by neural network with
+
+75
+00:09:26,240 --> 00:09:35,209
+a single hidden layer. It is easy to see that
+it is possible because you may know that any
+
+76
+00:09:35,209 --> 00:09:43,880
+Boolean function can be represented using
+Nand gates, using 2 layer of Nand gates and
+
+77
+00:09:43,880 --> 00:09:50,309
+I leave it for you to figure out the we can
+have a single layer perceptron represent the
+
+78
+00:09:50,309 --> 00:09:55,890
+Nand function.
+We have earlier seen that neural network can
+
+79
+00:09:55,890 --> 00:10:02,430
+represent a single layer perceptron can represent
+the and function you can I leave it you as

@@ -1,0 +1,217 @@
+206
+00:25:03,450 --> 00:25:08,989
+find the function. And this function the weights
+of this function will be the same weights
+
+207
+00:25:08,989 --> 00:25:16,070
+as we are using for all these sub rectangles.
+So, this is the convolution. So, we are taking
+
+208
+00:25:16,070 --> 00:25:25,190
+a mass and convolve it to every position of
+the image and we get the convolution output.
+
+209
+00:25:25,190 --> 00:25:32,879
+Now, because the weights are shared the number
+of parameters is less. So, you can think of
+
+210
+00:25:32,879 --> 00:25:39,090
+you are trying to find particular pattern
+in the pattern could be in this place of the
+
+211
+00:25:39,090 --> 00:25:44,769
+image or this place, or this place, or this
+place. So, this is the convolution layer.
+
+212
+00:25:44,769 --> 00:25:54,739
+And the output of the convolution layer is
+n by n by q, so n can be equal to m or less
+
+213
+00:25:54,739 --> 00:26:00,159
+than m. And q is the number of channels; here
+r is the number of channels.
+
+214
+00:26:01,610 --> 00:26:06,989
+And we can have instead of looking at a sub
+rectangle, we can think of a volume, we can
+
+215
+00:26:06,989 --> 00:26:13,539
+look at a volume to the convolution and get
+the output, which is n by n by q. And we can
+
+216
+00:26:13,539 --> 00:26:17,419
+have several such filters which we call kernels.
+
+217
+00:26:18,070 --> 00:26:23,369
+This is one function K 1; we can have another
+function k two which will have a different
+
+218
+00:26:23,369 --> 00:26:25,229
+set of weights.
+
+219
+00:26:26,529 --> 00:26:34,549
+So, we can look at this picture here. So,
+we have this sub rectangles or sub volumes.
+
+220
+00:26:34,549 --> 00:26:40,559
+And for one convolution layer, we are computing
+this function; and this function will share
+
+221
+00:26:40,559 --> 00:26:48,970
+the weight between the different local fields.
+Next, what we can do is that we can do a pooling;
+
+222
+00:26:48,970 --> 00:26:56,530
+we want to know if this particular pattern
+occurs anywhere in the image.
+
+223
+00:26:57,049 --> 00:27:05,759
+So, we can take for K 1, we will have output
+from different parts of the image then some
+
+224
+00:27:05,759 --> 00:27:14,480
+these outputs can be combined using max or
+average. If you do max, it means max pooling.
+
+225
+00:27:14,480 --> 00:27:22,779
+Suppose, we take this region suppose this
+filter corresponds to if an edge is there
+
+226
+00:27:22,779 --> 00:27:26,249
+now that edge can be here in the image, here
+in the image, here in the image. So, if you
+
+227
+00:27:26,249 --> 00:27:30,169
+take max, it means does the edge occur anywhere
+in the image.
+
+228
+00:27:31,350 --> 00:27:40,779
+So, we can do some pooling and so that we
+can take this n by n by q, and reduce it further.
+
+229
+00:27:40,779 --> 00:27:47,480
+So, pooling or subsampling, what it does,
+it takes the output of a function and combines
+
+230
+00:27:47,480 --> 00:27:53,860
+them into smaller value. So convolutional
+layer consist of rectangular grid of neurons;
+
+231
+00:27:54,489 --> 00:27:59,559
+each neuron takes input from a rectangular
+section of the previous layer, the weights
+
+232
+00:27:59,559 --> 00:28:04,059
+of this rectangular section and the same for
+each neuron in the convolutional layer.
+
+233
+00:28:04,059 --> 00:28:12,739
+Now, in pooling, we use features obtained
+after convolution. The pooling layer takes
+
+234
+00:28:12,739 --> 00:28:19,409
+small rectangular blocks from the convolutional
+layer, and subsamples it to produce a single
+
+235
+00:28:19,409 --> 00:28:25,279
+input from that block. For example, after
+convolution, these are the values that you
+
+236
+00:28:25,279 --> 00:28:32,519
+get. Now we can divide it into small sub rectangles,
+and for each rectangle we can do a pooling.
+
+237
+00:28:32,519 --> 00:28:38,979
+For example, from this sub rectangle we by
+max pooling they get six; from this max pooling
+
+238
+00:28:38,979 --> 00:28:45,929
+gives us 8; from this max pooling gives us
+3, from this max pooling gives us 4. So, after
+
+239
+00:28:45,929 --> 00:28:49,369
+pooling we reduce the image size from this
+to this.
+
+240
+00:28:50,399 --> 00:28:57,179
+So, here you know this is a digit learn you
+know recognition of hand written digits task.
+
+241
+00:28:57,490 --> 00:29:05,609
+We have an image, we do a convolution and
+we use five features. So initially input images
+
+242
+00:29:05,619 --> 00:29:15,929
+32 by 2, we get 5 28 by 28 images after convolution.
+Then we do 2 into 2 subsampling, so we take
+
+243
+00:29:15,929 --> 00:29:22,740
+a 2 into 2 neighboring rectangle doing max
+pooling and then reduce it to 14 by 14 then
+
+244
+00:29:22,740 --> 00:29:29,380
+we again do a convolution 5 by 5 convolutions,
+and we get 10 by 10 feature maps and again
+
+245
+00:29:29,380 --> 00:29:33,669
+do subsampling.
+So, we can have a convolution and subsampling
+
+246
+00:29:33,669 --> 00:29:41,340
+layers and then they can be stacked together.
+We can also have optionally some layers, which
+
+247
+00:29:41,340 --> 00:29:45,850
+do fully connected feed forward neural network
+like we have seen earlier and finally, we
+
+248
+00:29:45,850 --> 00:29:52,859
+have the classification. So, this is a one
+of the architectures one configuration of
+
+249
+00:29:52,859 --> 00:30:00,330
+a convolutional neural network which consist
+of convolution layer, pooling layer, fully

@@ -1,0 +1,218 @@
+1
+00:00:18,539 --> 00:00:23,939
+Hello friends, welcome to the tutorial session
+of the 6th week of this course. I am Anirban.
+
+2
+00:00:24,130 --> 00:00:29,500
+Today’s topic is artificial neural network.
+As you people may already know that artificial
+
+3
+00:00:29,500 --> 00:00:33,149
+neural networks from the foundation of a class
+of machine learning algorithms which are called
+
+4
+00:00:33,149 --> 00:00:37,809
+deep learning, and currently these are doing
+wonders in the field of artificial intelligence.
+
+5
+00:00:37,809 --> 00:00:47,180
+So, today I am going to teach you how to make
+simple neural network on a simple task, and
+
+6
+00:00:47,180 --> 00:00:52,229
+show you how the performance changes when
+different changes are made to the architecture
+
+7
+00:00:52,229 --> 00:00:53,429
+and the learning algorithm.
+
+8
+00:00:54,119 --> 00:01:00,439
+And the library that we are going to use for
+machine learning for deep learning is called
+
+9
+00:01:00,439 --> 00:01:06,540
+tensor flow. So, tensor flow is a deep learning
+library which is open source and it was open
+
+10
+00:01:06,540 --> 00:01:14,390
+source by Google and it is pretty state of
+the art and it is pretty popular as well both
+
+11
+00:01:14,390 --> 00:01:17,350
+in the academy and the industry. And it has
+a large number of resources.
+
+12
+00:01:17,920 --> 00:01:23,781
+And a certain you know set of rappers have
+been developed around tensor flow, which come
+
+13
+00:01:23,781 --> 00:01:30,979
+by the name of TF learn, so it gives the same
+s k learner scikit learn interface the API
+
+14
+00:01:30,979 --> 00:01:38,220
+interface that you have been like that I have
+been using in my previous lectures. And that
+
+15
+00:01:38,220 --> 00:01:43,670
+nice interface that model dot just you declare
+the model, you do a model dot fit it trains
+
+16
+00:01:43,670 --> 00:01:48,729
+the architecture and then you do model dot
+predicted means a predictions and the same
+
+17
+00:01:48,729 --> 00:01:57,210
+beautiful TF learn in this s k learn API is
+present in this TF learn library. So, TF learn
+
+18
+00:01:57,210 --> 00:02:03,460
+is a set of rappers, so python rappers on
+top of the generic tensor flow library and
+
+19
+00:02:03,460 --> 00:02:09,680
+we will be using that in this lecture in this
+session. It will be pretty interesting.
+
+20
+00:02:10,280 --> 00:02:16,629
+And the kind of work that the tasks that we
+people are going to we are going to solve
+
+21
+00:02:16,629 --> 00:02:19,749
+in this session is the recognition of handwritten
+digits.
+
+22
+00:02:19,790 --> 00:02:29,829
+So, the MNIST database is it is stands for
+so it is the mixed MNIST database. It is a
+
+23
+00:02:29,829 --> 00:02:34,859
+database of handwritten digits, and these
+digits where actually they were extracted
+
+24
+00:02:34,859 --> 00:02:42,390
+from post postal codes, the pin codes, the
+zip codes that people write on letters, so
+
+25
+00:02:42,390 --> 00:02:50,879
+they were scanned and the individual handwritten
+these letters these digits were extracted.
+
+26
+00:02:50,879 --> 00:02:56,989
+And the task is to automatically identify
+which handwritten digit was written in that
+
+27
+00:02:56,989 --> 00:03:03,430
+particular you know that particular instance.
+So, here are some examples from the data set,
+
+28
+00:03:03,430 --> 00:03:09,909
+and so there are some pretty nasty looking
+characters right like this 8, which looks
+
+29
+00:03:09,909 --> 00:03:15,069
+really bad; this may be a 7 or something,
+so it is not a trivial task of identifying
+
+30
+00:03:15,069 --> 00:03:22,159
+the handwritten digits. And this MNIST database
+is one of the first choices of data set which
+
+31
+00:03:22,159 --> 00:03:27,559
+people would like to use just to check out
+the performance of a new learning algorithm
+
+32
+00:03:27,559 --> 00:03:31,699
+that they have come to their mind. So, this
+is pretty basic stuff and I think that this
+
+33
+00:03:31,699 --> 00:03:36,230
+particular exercise will give you a good head
+start in these deep learning algorithms.
+
+34
+00:03:36,230 --> 00:03:42,099
+So, without further I do let us go ahead and
+start writing our code. So, the first step
+
+35
+00:03:42,099 --> 00:03:48,859
+is to load the dependencies. And yes, I am
+here we writing the code from scratch and
+
+36
+00:03:48,859 --> 00:03:54,719
+in ipython notebook or jupyter notebook, and
+I will share this notebook on githoc and link
+
+37
+00:03:54,719 --> 00:03:58,620
+in the description, so the link in the description
+so that you can also use and referred to it
+
+38
+00:03:58,620 --> 00:04:07,860
+later on right. So, let me first load the
+dependencies so I have to import
+
+39
+00:04:07,860 --> 00:04:23,870
+as np import TF learn. And from TF
+learn dot datasets import MNIST. So, we just
+
+40
+00:04:23,870 --> 00:04:31,040
+go ahead and execute this. So, once this has
+been done, this may be I can zoom in a little
+
+41
+00:04:31,040 --> 00:04:35,840
+bit, so that you can see. So, these three
+things are the necessary dependencies the
+
+42
+00:04:35,840 --> 00:04:42,310
+execution is complete.
+Let us go ahead and load the data. So, let
+
+43
+00:04:42,310 --> 00:04:56,920
+us declare this as MNIST data equal to MNIST
+dot read datasets. So, the read datasets is
+
+44
+00:04:56,920 --> 00:05:06,550
+of function, so I just make sure yes. So,
+the read datasets is a function which is there

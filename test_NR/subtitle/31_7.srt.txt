@@ -1,0 +1,128 @@
+187
+00:30:09,350 --> 00:30:17,630
+o l times del o l by del net l and we have
+del net l by del net j. So, del net l by del
+
+188
+00:30:17,630 --> 00:30:34,800
+o j, so net l will depend on sigma w j l o
+j, so from this we get w j l. This component
+
+189
+00:30:34,800 --> 00:30:57,980
+is equal to w j l. So, we have this expression.
+We can compute this derivative of error with
+
+190
+00:30:57,980 --> 00:31:06,200
+respect to o j if all the derivatives with
+respect to the output of the next layer are
+
+191
+00:31:06,200 --> 00:31:31,419
+already computed. Now, we can write this as.
+Suppose we have del e by del w i j equal to
+
+192
+00:31:31,419 --> 00:31:48,080
+delta j o i. We have the output of the current
+unit and the delta or the errors which are
+
+193
+00:31:48,080 --> 00:31:57,240
+available here these errors are the errors
+which are available here, which is being proper
+
+194
+00:31:57,240 --> 00:32:07,730
+contributing to the error here. So, this delta
+j corresponds to the error which was computed
+
+195
+00:32:07,730 --> 00:32:21,950
+at this layer which is brought here. And the
+component of this delta j are, so delta j
+
+196
+00:32:21,950 --> 00:32:34,760
+is one of this units and it is component is
+del e by del o j times del o j by del net j
+
+197
+00:32:39,540 --> 00:32:48,340
+And this will be treated in different ways
+
+198
+00:32:48,350 --> 00:32:55,370
+depending on whether the unit is the output
+unit or it is an intermediate unit. If it
+
+199
+00:32:56,399 --> 00:33:03,150
+If it is an output unit we can use the formula which
+we have already seen so it will be equal to
+
+200
+00:33:03,150 --> 00:33:24,389
+o j minus t j, t j is the target output at
+that node which we wrote us here, so o j minus
+
+201
+00:33:24,389 --> 00:33:36,409
+t j times o j times 1 minus o j. This will
+be if j is an output neuron. And if it is
+
+202
+00:33:36,409 --> 00:33:45,580
+an intermediate neuron this will be equal
+to it will get the outputs from the next layer,
+
+203
+00:33:45,580 --> 00:33:51,700
+get the errors or the delta values from the
+next layer as we have written here so it will
+
+204
+00:33:51,700 --> 00:34:14,610
+be sigma over the set z delta l w j l times
+o j times 1 minus o j, if j is an in a neuron.
+
+205
+00:34:14,610 --> 00:34:24,990
+So, this delta j is if we are looking at for
+the output neuron we have already seen this
+
+206
+00:34:24,990 --> 00:34:34,580
+delta j equal to this, but for an intermediate
+neuron it comes from this formula where we
+
+207
+00:34:34,580 --> 00:34:45,940
+will get delta j as sigma over z. Where, z
+is the set of those units to which this unit
+
+208
+00:34:45,940 --> 00:34:53,120
+feeds input, so sigma over z the delta of
+those nodes the errors computed at those nodes
+
+209
+00:34:53,120 --> 00:35:06,510
+times w j l times o j into 1 minus o j. This
+particular part, this comes due to the sigmoid
+
+210
+00:35:06,510 --> 00:35:15,070
+activation function, if you change the activation
+function this will be a little different.
+
+211
+00:35:15,070 --> 00:35:24,240
+So, we stop the class today and in the next
+class we will look at how this is incorporated
+
+212
+00:35:24,240 --> 00:35:28,670
+into the back propagation algorithm.
+Thank you very much.

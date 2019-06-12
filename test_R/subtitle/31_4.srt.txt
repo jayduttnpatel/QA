@@ -1,0 +1,138 @@
+114
+00:15:01,509 --> 00:15:09,649
+3, so what we do is that we back propagate
+the error here to the error here. So, we propagate
+
+115
+00:15:09,649 --> 00:15:19,889
+errors which are visible at the output units
+to this hidden units and then based on that
+
+116
+00:15:19,889 --> 00:15:29,300
+error we do the similar training rule. And
+if there were more layers between this and
+
+117
+00:15:29,300 --> 00:15:35,939
+the input so these errors can be further propagated
+in this direction, further propagated downwards.
+
+118
+00:15:35,939 --> 00:15:42,480
+So, error back propagation can be continued
+if the net has more than hidden layers.
+
+119
+00:15:42,480 --> 00:15:50,399
+Now, we will have to see how to compute the
+errors. And for that let us try to do the
+
+120
+00:15:50,399 --> 00:15:52,899
+derivation of this computation.
+
+121
+00:15:57,860 --> 00:16:15,809
+Now, for the output neuron so the error function
+is E equal to half sigma y minus y hat whole
+
+122
+00:16:15,809 --> 00:16:24,800
+square, and we can take summation over all
+the training examples if you wish. Now let
+
+123
+00:16:24,800 --> 00:16:30,420
+us think of in the network we have different
+units, these units are either at the output
+
+124
+00:16:30,420 --> 00:16:40,629
+or at the hidden layer, so let us take any
+unit chain. For each unit j, so j is a unit
+
+125
+00:16:40,629 --> 00:16:51,670
+and for j the output is o j. First of all
+we have seen that in the unit there are two
+
+126
+00:16:51,670 --> 00:17:00,199
+components; one is the summation component,
+the second is the activation function component.
+
+127
+00:17:00,199 --> 00:17:09,850
+So first, the summation is applied and then
+the activation function is applied. Let us
+
+128
+00:17:09,850 --> 00:17:18,690
+say that output here we call net j and output
+after this we call o j, this is a unit j.
+
+129
+00:17:19,280 --> 00:17:27,199
+So, the output of the summation is net j and
+output of the final output is o j. So for
+
+130
+00:17:27,199 --> 00:17:46,399
+unit j, o j equal to phi of net j and net
+j equal to summation w i x i, where i ranges
+
+131
+00:17:46,399 --> 00:18:02,919
+over all the inputs to the unit j. This is
+equal to phi of sigma k equal to 1 to n, k
+
+132
+00:18:02,919 --> 00:18:20,520
+ranges of all the input w k j. So, w k j is
+the weight from the unit k to this unit j
+
+133
+00:18:20,520 --> 00:18:29,480
+and o k is the output of unit k. So, output
+of unit k is an input to unit j. Suppose,
+
+134
+00:18:29,480 --> 00:18:41,060
+this is a node which is j and this has these
+three inputs; 1, 2, 3,, so this is w 1 j,
+
+135
+00:18:41,290 --> 00:18:50,669
+this is w 2 j, this is w 3 j and the output
+is here o 1, o 2, o 3. So, this is the output
+
+136
+00:18:50,669 --> 00:19:02,209
+computed as unit j.
+Now, if we want to find the partial derivative
+
+137
+00:19:03,149 --> 00:19:19,210
+of the error with respect to w i j we get
+this is equal to del e by del o j, del o j
+
+138
+00:19:19,210 --> 00:19:33,120
+by del net j, del net j by del w i j. So to
+simplify the computation we have used the
+
+139
+00:19:33,120 --> 00:19:40,391
+chain rule to write del e the partial derivative
+of the error with respect to w i j as the
+
+140
+00:19:40,391 --> 00:19:48,391
+product of these three partial derivatives,
+so to make the computation simple for us.
+
+141
+00:19:52,520 --> 00:20:02,970
+This is m j this is my unit j and these are
+the units which are feeding to this unit,

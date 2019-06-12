@@ -1,0 +1,27 @@
+Q. Single layer network can represent which type of function?
+A. Easy function
+B. complex function
+C. hyperbola function
+D. linearly separable
+(D)
+
+Q. Single layer network can represent
+A. machine learning
+B. complex mathematics
+C. interaction among the input
+D. literature
+(C)
+
+Q. All boolean function can be represented with how many layer neaural network?
+A. 2
+B. complex
+C. simple
+D. -1
+(A)
+
+Q. All computable function can be represented with hom many layer neaural network?
+A. hidden
+B. input
+C. data
+D. 3
+(D)

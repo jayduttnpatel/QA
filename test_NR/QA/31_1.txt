@@ -1,0 +1,6 @@
+Q. What is the topic of this lacture?
+A. IIT Madras
+B. Feed forward network
+C. Chennai
+D. World Politics
+(B)

@@ -1,0 +1,27 @@
+Q. Single layer network can represent which type of function?
+A. non linearly separable
+B. complex
+C. clustered
+D. linearly separable
+(D)
+
+Q. Single layer network can represent
+A. interaction among the output
+B. interaction among the attribute
+C. interaction among the input
+D. none of the above
+(C)
+
+Q. All boolean function can be represented with how many layer neaural network?
+A. 2
+B. 1
+C. 0
+D. 3
+(A)
+
+Q. All computable function can be represented with hom many layer neaural network?
+A. 1
+B. 2
+C. 4
+D. 3
+(D)

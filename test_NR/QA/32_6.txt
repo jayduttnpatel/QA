@@ -1,0 +1,27 @@
+Q. In back propagation we do
+A. split
+B. gradient descent
+C. error correction
+D. none of the above
+(B)
+
+Q. Back propogation can be done on any
+A. Directed acyclic graph
+B. error detection
+C. early stoping
+D. none of the above
+(A)
+
+Q. momentum factor is represented by
+A. greek
+B. 0
+C. beta
+D. alpha
+(D)
+
+Q. In stochastic gradient descent we take
+A. learning
+B. one input at a time
+C. batch
+D. none of the above
+(B)

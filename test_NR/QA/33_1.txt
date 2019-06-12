@@ -1,0 +1,48 @@
+Q. What is topic of this lacture?
+A. Artificial neaural network
+B. big data
+C. math
+D. literature
+(A)
+
+Q. Artificial neural network form the foundation of
+A. mathematics
+B. security
+C. deep learning
+D. internet
+(C)
+
+Q. Which library is used?
+A. matlab
+B. tensorflow
+C. numpy
+D. none of the above
+(B)
+
+Q. Tensorflow is library which is open sourced by
+A. TCS
+B. isro
+C. Google
+D. none of the above
+(C)
+
+Q. Which task is solved?
+A. regression
+B. recognition of handwritten digits
+C. learning rate decay
+D. none of the above
+(B)
+
+Q. Which dataset is used?
+A. MNIST
+B. hospital bill
+C. wikipidea
+D. none of the above
+(A)
+
+Q. MNIST dataset is taken from the
+A. homework
+B. letters
+C. bills
+D. none of the above
+(B)

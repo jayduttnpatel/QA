@@ -1,0 +1,204 @@
+125
+00:14:58,880 --> 00:15:04,790
+So, that the error becomes small, but the
+error can only be observed that the output,
+
+126
+00:15:04,790 --> 00:15:10,550
+we do not know for a training example what
+should be the value of a node here or a node
+
+127
+00:15:10,550 --> 00:15:15,769
+here right.
+So, what we are going to do is that the error
+
+128
+00:15:15,769 --> 00:15:23,829
+that we find at this layer we are going to
+back propagate the error and estimate the
+
+129
+00:15:23,829 --> 00:15:31,069
+error at the inside hidden layers we are going
+to take the error which we observed at the
+
+130
+00:15:31,069 --> 00:15:40,220
+output layer back propagate the error to the
+previous layer. So, we say that the error
+
+131
+00:15:40,220 --> 00:15:48,470
+here is because of the error which was computed
+here. So, the blame of the error here specially
+
+132
+00:15:48,470 --> 00:15:54,019
+depends on at this node, which in turn depends
+on the error at these nodes. So, we will take
+
+133
+00:15:54,019 --> 00:16:02,149
+this error and back propagate it to the other
+nodes from which it takes input and if you
+
+134
+00:16:02,149 --> 00:16:10,069
+look at the weight of this edge and the weight
+of this edge if this has a higher magnitude
+
+135
+00:16:10,069 --> 00:16:16,999
+of weight this node has higher contribution
+here if it as a smaller magnitude of weight
+
+136
+00:16:16,999 --> 00:16:23,040
+it has a smaller contribution here.
+So, when we portion error backwards we apportion
+
+137
+00:16:23,040 --> 00:16:31,809
+the error proportional to the weight if the
+edge has larger weight we put larger error
+
+138
+00:16:31,809 --> 00:16:41,600
+we apportion to that node. So, back propagation
+works in this way when we apply the neural
+
+139
+00:16:41,600 --> 00:16:48,489
+network on a particular input the input signal
+propagates in this way, right input signal
+
+140
+00:16:48,489 --> 00:16:53,440
+gets computed in this way. So, that we can
+get the output, but when we find the error
+
+141
+00:16:53,440 --> 00:17:01,470
+we find the error at this layer and the error
+is back propagated to the previous layers
+
+142
+00:17:01,470 --> 00:17:06,150
+and based on the notional error out after
+back propagation based on that notional error
+
+143
+00:17:06,150 --> 00:17:14,339
+we do the weight updating at this layers.
+So, here we update the weights based on the
+
+144
+00:17:14,339 --> 00:17:20,460
+directly observed errors after we have back
+propagated the error we find the notional
+
+145
+00:17:20,460 --> 00:17:27,990
+error at this level and based on that we change
+these weights again we back propagate this
+
+146
+00:17:27,990 --> 00:17:34,840
+error further here and based on that we change
+these weights. So, that is why we call this
+
+147
+00:17:34,840 --> 00:17:42,240
+method back propagation back propagation is
+a method to train multi layer neural network
+
+148
+00:17:42,240 --> 00:17:50,559
+the updating of the weights of the neural
+network is done in such a way. So, that the
+
+149
+00:17:50,559 --> 00:17:56,850
+error observed can be reduced the error is
+only directly observed at the output layer
+
+150
+00:17:56,850 --> 00:18:02,389
+that error is back propagated to the previous
+layers and with that notional error which
+
+151
+00:18:02,389 --> 00:18:10,450
+has been back propagated we do the weight
+update in the previous layers.
+
+152
+00:18:10,450 --> 00:18:18,330
+Now, in the last class we have looked at the
+derivation of the error derivation of the
+
+153
+00:18:18,330 --> 00:18:28,990
+update rule of a neural unit based on are
+the error right. We saw how we could use gradient
+
+154
+00:18:28,990 --> 00:18:36,420
+descent to find out the error gradient at
+a unit and we could change the error based
+
+155
+00:18:36,420 --> 00:18:41,280
+on going to the negative of the error gradient
+just to recapitulate.
+
+156
+00:18:41,800 --> 00:18:51,350
+If you have 1 output neuron the error function
+is given by E equal to half y minus o whole
+
+157
+00:18:51,350 --> 00:19:02,610
+square for a particular input y is the expected
+out y is the goal standard output o is the
+
+158
+00:19:02,610 --> 00:19:09,820
+actual output. So, y minus o gives you the
+error. So, half y minus o whole square is
+
+159
+00:19:09,820 --> 00:19:13,280
+the particular measure of error that you are
+using.
+
+160
+00:19:13,720 --> 00:19:24,830
+Now, for each unit j the output o j is defined
+as o j equal to the function phi applied on
+
+161
+00:19:24,830 --> 00:19:32,510
+net j when net j is the sum of the weighted
+sum of the units at the previous layer. So,
+
+162
+00:19:32,510 --> 00:19:40,269
+net j is sigma w k j and phi is the non-linear
+function that we are using as we have mentioned
+
+163
+00:19:40,269 --> 00:19:48,570
+we could use phi as a Sigmoid function or
+Tanh or Relu or some such function. And w
+
+164
+00:19:48,570 --> 00:19:56,510
+k j corresponds to those edges which are coming
+from the previous unit to this unit. The input
+
+165
+00:19:56,510 --> 00:20:04,860
+net j to a neural is the weighted sum of outputs
+o k of the previous n neurons which connect

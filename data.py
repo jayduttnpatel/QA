@@ -22,7 +22,7 @@ import WordToNum
 		Y.append(random.randint(0,1))
 	return Sub,Y   '''
 	
-def data(mapping):
+def data(mapping,location):
 	Sub=[]
 	Q=[]
 	A=[]
@@ -31,7 +31,7 @@ def data(mapping):
 	D=[]
 	T=[]
 	
-	os.chdir("/temp/files/subtitle")
+	os.chdir(location+'/subtitle')
 	for file in glob.glob("*.srt.txt"):
 		subfile=file
 		qafile=file[:-8]+".txt"
@@ -40,7 +40,7 @@ def data(mapping):
 		text=subtitle.Fetch(subfile)
 		temp=WordToNum.Convert(text,mapping)
 		
-		q,a,t=QA.Fetch("D:\\temp\\files\\QA\\"+qafile)
+		q,a,t=QA.Fetch(location+"/QA/"+qafile)
 		
 		for i in range(len(q)):
 			Q.append( WordToNum.Convert(q[i],mapping) )

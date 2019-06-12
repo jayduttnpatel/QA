@@ -1,0 +1,214 @@
+205
+00:24:58,879 --> 00:25:06,139
+you initialize all the weights to small random
+numbers after that you carry out an iterative
+
+206
+00:25:06,139 --> 00:25:14,750
+process which is given as here until satisfied
+what you do is you input you have a set of
+
+207
+00:25:14,750 --> 00:25:21,380
+training examples you input the first training
+example to the network and compute the network
+
+208
+00:25:21,380 --> 00:25:26,379
+output.
+So, you give x you find 1 now for each you
+
+209
+00:25:26,379 --> 00:25:33,009
+find o you get x 1 you find o 1 give x 2 you
+find o 2 now for each input unit k you may
+
+210
+00:25:33,009 --> 00:25:39,009
+have only 1 output or multiple outputs. So,
+where each output unit k you compute delta
+
+211
+00:25:39,009 --> 00:25:48,679
+k at the output layer as o k into 1 minus
+o k into y k minus o k then you go to the
+
+212
+00:25:48,679 --> 00:25:56,280
+previous hidden layer for each hidden unit
+h you compute delta h as equal to o h into
+
+213
+00:25:56,280 --> 00:26:06,179
+1 minus o h into sigma over w h k delta k
+for all k which are in the outputs now after
+
+214
+00:26:06,179 --> 00:26:14,210
+that you update each network weight w i j
+as w i j is w i j plus delta w i j and delta
+
+215
+00:26:14,210 --> 00:26:18,850
+w i j is minus eta delta j x i j as we have
+already seen.
+
+216
+00:26:19,450 --> 00:26:25,480
+So, this is the back propagation algorithm
+we have an input we have the output that we
+
+217
+00:26:25,480 --> 00:26:30,090
+get from the network and we have the target
+output we find the error from the target output
+
+218
+00:26:30,090 --> 00:26:34,940
+based on that we update the weights we back
+propagate the weights. So, the previous layer
+
+219
+00:26:34,940 --> 00:26:41,240
+by propagating the delta value and continue
+we continue for all the hidden layers. So,
+
+220
+00:26:41,240 --> 00:26:46,279
+this is the back propagation algorithm, but
+it is very simple to implement.
+
+221
+00:26:46,279 --> 00:26:55,110
+So, in back propagation, we do gradient descent
+over the network weight vector and even though,
+
+222
+00:26:55,110 --> 00:27:02,049
+the example, we have shown is for a layered
+graph we can do back propagation over any
+
+223
+00:27:02,049 --> 00:27:08,879
+directed a cyclic graph the second thing to
+observe is that by doing back propagation
+
+224
+00:27:08,879 --> 00:27:16,770
+we are not guarantee to find the global best
+we only get a local minima. So, we have a
+
+225
+00:27:16,770 --> 00:27:23,629
+very complex error surface comprising of the
+weights at all the layers by doing back propagation
+
+226
+00:27:23,629 --> 00:27:30,200
+we are updating the weights to do better and
+better and we continue doing it until the
+
+227
+00:27:30,200 --> 00:27:36,100
+network converges, but when the network converges
+it will converge to a local minima which need
+
+228
+00:27:36,100 --> 00:27:45,750
+not be a global minima and there are certain
+tricks that 1 can use to prevent getting trapped
+
+229
+00:27:45,750 --> 00:27:51,929
+in a local minima.
+For example, 1 such trick is to include momentum
+
+230
+00:27:51,929 --> 00:28:00,499
+factor called alpha. So, the idea is that
+if you are going and trying to hit local minima.
+
+231
+00:28:00,499 --> 00:28:06,749
+You try to prevent that by maintaining the
+previous direction of movement by the general
+
+232
+00:28:06,749 --> 00:28:12,700
+direction of movement you do not want to deviate
+and get start. So, momentum what it does is
+
+233
+00:28:12,700 --> 00:28:21,540
+that when you change delta w i j you not only
+look at eta delta x j x i j which we have
+
+234
+00:28:21,540 --> 00:28:28,340
+derived earlier, but we also keep another
+factor which keeps track of the direction
+
+235
+00:28:28,340 --> 00:28:35,370
+of weight change at the previous iteration
+delta w i j n is the weight change at the
+
+236
+00:28:35,370 --> 00:28:42,409
+nth iteration which is equal to eta delta
+j x i j plus alpha times direction of weight
+
+237
+00:28:42,409 --> 00:28:47,190
+change in the previous iteration.
+If you apply the momentum training may be
+
+238
+00:28:47,190 --> 00:28:55,120
+slow, but you are less likely to hit a local
+minima or bad local minima, but 1 thing to
+
+239
+00:28:55,120 --> 00:29:01,529
+note is that in neural network when you use
+multiple layers even if training is slow after
+
+240
+00:29:01,529 --> 00:29:04,769
+you have learn the weights applying the neural
+network is very fast.
+
+241
+00:29:05,039 --> 00:29:14,529
+Now, there are few other observations, I will
+make when we do the weight update we can do
+
+242
+00:29:14,529 --> 00:29:21,730
+a batch update that is given a particular
+configuration and given a set of training
+
+243
+00:29:21,730 --> 00:29:26,789
+examples with respect to the all the training
+examples we can compute the partial derivative
+
+244
+00:29:26,789 --> 00:29:35,690
+of the error and find the best way of updating
+it or we can do it for 1 input at a time.
+
+245
+00:29:35,690 --> 00:29:43,559
+So, the first method is called batch gradient
+descent. The second method is call the stochastic
+
+246
+00:29:43,559 --> 00:29:49,999
+gradient descent there you take 1 input at
+a time based on that you change the weights
+
+247
+00:29:49,999 --> 00:30:00,679
+now stochastic gradient descent is less likely
+to gets stuck in a local minima because if

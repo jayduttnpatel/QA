@@ -1,0 +1,226 @@
+82
+00:10:00,650 --> 00:10:06,900
+of the output layer and then can tune the
+whole network with back propagation. Initially,
+
+83
+00:10:06,900 --> 00:10:12,330
+you do greedy layer wise training; finally,
+you put the classification problem using the
+
+84
+00:10:12,330 --> 00:10:18,120
+training examples and then tune the entire
+network. So, this is one scheme which is followed
+
+85
+00:10:18,120 --> 00:10:24,060
+by stacked restricted Boltzmann machine and
+stacked auto encoder.
+
+86
+00:10:25,310 --> 00:10:32,411
+So, in deep neural network, so what we will
+look at is feed forward neural network. Stacked
+
+87
+00:10:32,411 --> 00:10:38,690
+Autoencoder which I will talk about briefly;
+stacked restricted Boltzmann machine will
+
+88
+00:10:38,690 --> 00:10:42,940
+not talk about in this class, but that is
+another approach and very briefly we will
+
+89
+00:10:42,940 --> 00:10:45,180
+talk about Convolutional Neural Network.
+
+90
+00:10:46,700 --> 00:10:54,030
+So, this is an example of a deep architecture
+a multilayer perceptron. We have the output
+
+91
+00:10:54,030 --> 00:10:59,770
+layer. This is the input layer comprising
+of raw sensory input. These are three hidden
+
+92
+00:10:59,770 --> 00:11:03,710
+layers which learn more abstractive representations
+as you go upwards.
+
+93
+00:11:04,310 --> 00:11:09,490
+And finally, this is the output. Now we have
+seen in a neural network, there is a back
+
+94
+00:11:09,490 --> 00:11:12,490
+propagation of error. We have already talked
+about it.
+
+95
+00:11:13,470 --> 00:11:19,250
+And when you train deep networks, then there
+are some problems. The early layers of the
+
+96
+00:11:19,250 --> 00:11:25,810
+network do not get trained well, because there
+is a diffusion of gradient error attenuates
+
+97
+00:11:25,810 --> 00:11:32,420
+as it propagates to earlier layers. It has
+very slow training and the error to earlier
+
+98
+00:11:32,420 --> 00:11:38,190
+layers drops quickly as the top layers mostly
+solve the task so not much update happens
+
+99
+00:11:38,190 --> 00:11:45,930
+in the beginning layers.
+And there is often not enough labeled data.
+
+100
+00:11:45,930 --> 00:11:51,870
+If you have a deep network, it will have many
+parameters. When you have we have seen that
+
+101
+00:11:51,870 --> 00:11:58,430
+if you have too many parameters too few training
+example then it may lead to over fitting.
+
+102
+00:11:58,430 --> 00:12:06,010
+However you can take advantage of unlabeled
+data, instead of using only labeled data which
+
+103
+00:12:06,010 --> 00:12:13,470
+may be restricted in number, you can take
+advantage of unlabeled data, and this is what
+
+104
+00:12:13,470 --> 00:12:19,690
+some of this approaches to. Deep networks
+tend to have more local minima problems than
+
+105
+00:12:19,690 --> 00:12:23,810
+shallow networks. So, these are some problems
+with deep networks.
+
+106
+00:12:24,730 --> 00:12:30,470
+Now as I said that we have talked about the
+sigmoid function, there is also the tanh function,
+
+107
+00:12:30,470 --> 00:12:36,340
+Relu function, softplus function, these are
+some other activation function. So, this blue
+
+108
+00:12:36,340 --> 00:12:42,890
+line is the sigmoid function which have discussed;
+it is between 0 and 1. The tanh function is
+
+109
+00:12:42,890 --> 00:12:49,330
+also an h shaped function similar to the sigmoid
+function; it is ranges from minus 1 to 1.
+
+110
+00:12:49,330 --> 00:12:58,380
+The Relu function the red function Relu function
+is 0, when the input is less than 0; and after
+
+111
+00:12:58,380 --> 00:13:04,090
+that it is a linear function. So, this is
+a Relu function.
+
+112
+00:13:04,090 --> 00:13:11,990
+And this light blue function is the soft max
+function, which is a smooth function similar
+
+113
+00:13:11,990 --> 00:13:17,960
+to the Relu function. And these functions
+are unbounded when the input is high they
+
+114
+00:13:17,960 --> 00:13:25,580
+becomes very large and these functions have
+recently been used to overcome the diffusion
+
+115
+00:13:25,580 --> 00:13:29,210
+of gradient problem in deep neural networks.
+
+116
+00:13:29,210 --> 00:13:35,980
+So, the tanh sigmoid function we have already
+seen. Tanh function is given by this equation.
+
+117
+00:13:35,980 --> 00:13:41,330
+So this is the tanh function, this is the
+sigmoid function, and this is the relu function
+
+118
+00:13:41,330 --> 00:13:49,720
+which is given by max of 0 x. It simplifies
+back propagation makes learning faster. And
+
+119
+00:13:49,720 --> 00:13:57,290
+this is often a preferred option when you
+have many hidden layers in neural network.
+
+120
+00:13:57,290 --> 00:14:04,960
+Now, let us very briefly talk about the Autoencoder.
+Suppose, you have unlabeled training examples
+
+121
+00:14:04,960 --> 00:14:13,350
+x 1, x 2, x 3 etcetera, which are all real
+value of vectors. Now in autoencoder what
+
+122
+00:14:13,350 --> 00:14:24,050
+we will do is that we will learn the initial
+hidden layers based on the unlabeled units
+
+123
+00:14:24,050 --> 00:14:25,970
+only unlabeled inputs only.
+
+124
+00:14:26,210 --> 00:14:37,500
+How do we set it up? Suppose, this is an input
+X i, this is my hidden layer H 1, we will
+
+125
+00:14:37,500 --> 00:14:45,800
+set up a problem where X i is the input and
+X i is the output. So, we will setup a network
+
+126
+00:14:45,800 --> 00:14:56,520
+to learn the identity function. And we will
+have connections from here to here, here to
+
+127
+00:14:56,520 --> 00:15:03,860
+here. So, you can see that this H 1 will act
+as a representation of the input because from

@@ -1,0 +1,27 @@
+Q. In back propagation we do
+A. ID3
+B. gradient descent
+C. cart
+D. none of the above
+(B)
+
+Q. Back propogation can be done on any
+A. Directed acyclic graph
+B. tree
+C. cyclic graph
+D. none of the above
+(A)
+
+Q. momentum factor is represented by
+A. betha
+B. theta
+C. gamma
+D. alpha
+(D)
+
+Q. In stochastic gradient descent we take
+A. two input at a time
+B. one input at a time
+C. batch at a time
+D. none of the above
+(B)

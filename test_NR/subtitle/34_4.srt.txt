@@ -1,0 +1,204 @@
+123
+00:15:00,959 --> 00:15:07,759
+So, the first term gives the number of elements
+that you want to take in each batch and that
+
+124
+00:15:07,759 --> 00:15:11,519
+is variable in this case, so that is why you
+do not specify any entry over here, you keep
+
+125
+00:15:11,519 --> 00:15:21,119
+it none, so that the graph can be modified
+accordingly. So and 784 is the dimensionality
+
+126
+00:15:21,119 --> 00:15:26,620
+of the image that you are going to feed. So,
+in this case we have like factorize the 28
+
+127
+00:15:26,620 --> 00:15:33,610
+28 image into a single vector of length 784,
+so that is why you have this entry, so this
+
+128
+00:15:33,610 --> 00:15:38,850
+is your input size.
+Next, we are going to add the next layer.
+
+129
+00:15:39,809 --> 00:15:53,779
+And so this is the first hidden layer TF learn
+dot fully connected and check this index,
+
+130
+00:15:53,779 --> 00:16:01,730
+perfect. So, in the input will be the net,
+so which layers so when you start you know
+
+131
+00:16:01,730 --> 00:16:07,139
+without the manner in which you build a network
+in TF learn is by like if you add the layers
+
+132
+00:16:07,139 --> 00:16:13,399
+one by one. So, there is one network object,
+it is called net, you first put a input layer
+
+133
+00:16:13,399 --> 00:16:19,119
+in then you add the next hidden layer, then
+you add the next hidden layer then another
+
+134
+00:16:19,119 --> 00:16:23,869
+as deep as you want to go. And then finally,
+you have an output layer, and then you go
+
+135
+00:16:23,869 --> 00:16:27,989
+ahead and declare your loss functions and
+the optimization algorithm and set it to train.
+
+136
+00:16:28,339 --> 00:16:36,759
+So, we pass this net object as an input to
+the function, so it is going to add a particular
+
+137
+00:16:36,759 --> 00:16:42,170
+layer and the shape of the layer. The number
+of unit is in the layer is going to be say
+
+138
+00:16:42,170 --> 00:16:51,610
+one hundred we keep it 100 and the activation
+function of the nodes of the layer is going
+
+139
+00:16:51,610 --> 00:16:58,139
+to be sigmoid, very sorry let us give it relu
+first rectified linear unit. So, it has already
+
+140
+00:16:58,139 --> 00:17:04,520
+been covered in class that what rectified
+linear unit are so it is one of the best suited
+
+141
+00:17:04,520 --> 00:17:10,549
+for deep learning for deep neural networks.
+And it works pretty well and there is a lot
+
+142
+00:17:10,549 --> 00:17:13,209
+of theory about why rectified linear unit
+is so awesome.
+
+143
+00:17:14,610 --> 00:17:24,400
+So, let us go ahead and add the output layer.
+So, a single hidden layer neural network and
+
+144
+00:17:24,400 --> 00:17:36,090
+we will do will play using it, play with it,
+let us see. So, as the number of units in
+
+145
+00:17:36,090 --> 00:17:44,160
+the output layer is 10, and it is just because
+you have 10 outputs unit is right represented
+
+146
+00:17:44,160 --> 00:17:49,220
+as a like 10 output classes and the output
+labels are coming in the form of one hot vector.
+
+147
+00:17:49,360 --> 00:18:02,730
+So, the activation here is going to be softmax,
+so perfect. So, the softmax layer, it is going
+
+148
+00:18:02,730 --> 00:18:09,670
+to it is a kind of logistic regression so
+multi multiclass logistic regression is called
+
+149
+00:18:09,670 --> 00:18:16,490
+softmax. So, you can actually look up the
+web and figure out what it looks like perfect.
+
+150
+00:18:16,490 --> 00:18:21,570
+Next, this or this makes our network the networks
+build is complete.
+
+151
+00:18:21,930 --> 00:18:29,250
+Now we have to define what kind of loss function
+we want to use to optimize the neural network
+
+152
+00:18:29,250 --> 00:18:34,630
+and parameters of the neural network, and
+what kind of algorithm update algorithm that
+
+153
+00:18:34,630 --> 00:18:41,710
+we should use, let we want to use. So, we
+add another layer this is not a an actual
+
+154
+00:18:41,710 --> 00:18:47,990
+like you know hardware layer to the neural
+network rather it is a specification of the
+
+155
+00:18:47,990 --> 00:18:57,700
+a learning algorithm options. So, it is called
+regression. So, the regression layer actually
+
+156
+00:18:57,700 --> 00:19:01,660
+does either a linear regression or a logistic
+regression.
+
+157
+00:19:03,160 --> 00:19:12,950
+So, the first input as always is net, and
+then you have to specify the loss function.
+
+158
+00:19:12,950 --> 00:19:28,260
+So, the loss is equal to categorical cross
+entropy, so you can look up the web what categorical
+
+159
+00:19:28,260 --> 00:19:34,050
+cross entropy looks like what it actually
+is. But I will just few words that categorical
+
+160
+00:19:34,050 --> 00:19:41,420
+cross entropy is a loss function which tries
+to match the probability distribution of the
+
+161
+00:19:41,420 --> 00:19:49,530
+actual observed data samples to the probability
+distribution that is getting modeled by the
+
+162
+00:19:49,530 --> 00:19:56,930
+neural network. So, when the cross entropy
+is actually cross entropy loss the categorical
+
+163
+00:19:56,930 --> 00:20:03,840
+cross entropy loss is actually an adaptation
+of the k l divergence distance between the

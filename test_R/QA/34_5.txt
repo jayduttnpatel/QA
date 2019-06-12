@@ -1,0 +1,20 @@
+Q. Convolution neural network is mainly used to work with
+A. numbers
+B. letters
+C. words
+D. images
+(D)
+
+Q. input to covolution layer is
+A. numbers
+B. image
+C. letters
+D. words
+(B)
+
+Q. number of channel in RGB image is
+A. 1
+B. 3
+C. 2
+D. 4
+(B)

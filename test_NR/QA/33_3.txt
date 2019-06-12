@@ -1,0 +1,6 @@
+Q. In init function what we specify?
+A. model
+B. method to solve the problem
+C. resources needed
+D. none of the above
+(C)

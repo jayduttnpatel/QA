@@ -1,0 +1,13 @@
+Q. Error from the output layer is propogated to
+A. hidden layer
+B. input layer
+C. output layer
+D. previous layer
+(A)
+
+Q. In the neural network unit there are how many component?
+A. 1
+B. 2
+C. 3
+D. 4
+(B)

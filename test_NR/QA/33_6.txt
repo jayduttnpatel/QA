@@ -1,0 +1,6 @@
+Q. What is batch size in the code?
+A. -1
+B. 10
+C. 0
+D. bias
+(B)

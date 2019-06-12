@@ -1,0 +1,198 @@
+45
+00:05:06,550 --> 00:05:11,970
+in within the MNIST this that we are invoking,
+so you can actually look up the structure
+
+46
+00:05:11,970 --> 00:05:18,150
+of TF learn dot datasets. And it has a number
+of really good utilities, and this read datasets
+
+47
+00:05:18,150 --> 00:05:22,540
+function will read the data set; so if the
+data set is not there in your computer, you
+
+48
+00:05:22,540 --> 00:05:27,410
+just going to download it first. And then
+it is going to I do some preprocessing on
+
+49
+00:05:27,410 --> 00:05:32,660
+top of that bring everything into the format
+that is easy for machine learning and then
+
+50
+00:05:32,660 --> 00:05:39,610
+written the data set in a nice format. So,
+we will see the format of the data in a minute.
+
+51
+00:05:39,610 --> 00:05:47,610
+So, I will just write one hot equal to true.
+So what does these do, let us execute and
+
+52
+00:05:47,610 --> 00:05:51,350
+then speak. So, it is already done. So, as
+you can see that the down datasets were already
+
+53
+00:05:51,350 --> 00:05:56,520
+downloaded in my system. So, they just you
+know read the files and you have the data
+
+54
+00:05:56,520 --> 00:06:08,060
+here right. So, I will just add a new cell
+and start speaking, add cell block. So one
+
+55
+00:06:08,060 --> 00:06:16,190
+hot target are targets represented as a vector
+in which just one of the terms is a 1 and
+
+56
+00:06:16,190 --> 00:06:22,360
+rest all of them are 0. So, it is like if
+you have 10 different digits to identify then
+
+57
+00:06:22,360 --> 00:06:29,961
+the each digit each handwritten digit may
+be represented by a 10 long vector, vector
+
+58
+00:06:29,961 --> 00:06:37,450
+of 10 elements.
+And say it is an image of a 4, 4, so the one
+
+59
+00:06:37,450 --> 00:06:46,000
+hot vector corresponding to this 4 will be
+0 0 0 1, and the rest zeros. So, all zeros
+
+60
+00:06:46,000 --> 00:06:52,710
+except the fourth position which is a one
+so this one hot representation of vectors
+
+61
+00:06:52,710 --> 00:07:02,000
+like of targets is useful for using along
+with different kinds of loss functions like
+
+62
+00:07:02,000 --> 00:07:08,980
+cross and loss or even like it is like describing
+it is a good way of describing it is a very
+
+63
+00:07:08,980 --> 00:07:16,650
+usual popular way of describing categorical
+targets so in the form of a binary vector.
+
+64
+00:07:16,650 --> 00:07:22,200
+It is called one hot vector because of just
+one of those elements in that vector is one,
+
+65
+00:07:22,200 --> 00:07:26,120
+the element corresponding to the entry of
+that particular class.
+
+66
+00:07:26,780 --> 00:07:34,260
+So, I just said one hot equal to true over
+here, now let us have a look at the data.
+
+67
+00:07:34,950 --> 00:07:39,310
+So it is going to make the targets in a give
+written the targets in a one hot format. So,
+
+68
+00:07:39,320 --> 00:07:47,620
+let us first divide the data set into training
+validation and test bit. So, maybe I can say
+
+69
+00:07:47,620 --> 00:08:01,530
+data underscore train equal to MNIST data
+dot train so it is organize this way data
+
+70
+00:08:01,530 --> 00:08:14,590
+underscore validation equal to MNIST data
+dot validation and data underscore test equal
+
+71
+00:08:14,590 --> 00:08:24,950
+to MNIST underscore data dot test. So, we
+just did the training validation and test
+
+72
+00:08:24,950 --> 00:08:31,730
+split is and added on the cell and let us
+have a look at the training data. So, let
+
+73
+00:08:31,730 --> 00:08:37,789
+us say that we load them into the variables
+x and y, so this is going to be equal to data
+
+74
+00:08:37,789 --> 00:08:50,589
+train, so the training data and underscore
+images gives is the field within the class
+
+75
+00:08:50,589 --> 00:08:52,309
+this like there is a class call data set.
+
+76
+00:08:52,499 --> 00:08:56,720
+And you can look up the structure; I will
+give the links in the description of the video.
+
+77
+00:08:56,720 --> 00:09:05,999
+So, this underscore images this particular
+attribute gives the inputs and data underscore
+
+78
+00:09:05,999 --> 00:09:24,329
+train dot underscore, so it is target labels.
+So this will, so now you have the inputs and
+
+79
+00:09:24,329 --> 00:09:30,089
+the target values in x and y respectively.
+Let us go ahead and see what the shapes of
+
+80
+00:09:30,089 --> 00:09:37,579
+these entries are like this we can do x dot
+shape and see, so there are that entire data
+
+81
+00:09:37,579 --> 00:09:44,230
+set has 60000 thousand images, out of them
+55,000 are going to used for training, and
+
+82
+00:09:44,230 --> 00:09:48,451
+the rest will be so have been distributed
+among the validation and test sets.
+
+83
+00:09:49,140 --> 00:09:55,540
+So, x dot shape and each of these numbers
+that is you saw over here, so each of these
+
+84
+00:09:55,540 --> 00:10:05,410
+images is a 28 cross 28 image black and white
+image. So, 28 times 28 make the number 784,

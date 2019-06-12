@@ -1,0 +1,6 @@
+Q. Method which is used to train the multi layer neural network is know as
+A. learning rate decay
+B. propagation
+C. back propagation
+D. none of the above
+(C)

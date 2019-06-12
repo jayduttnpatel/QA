@@ -1,0 +1,192 @@
+75
+00:10:04,610 --> 00:10:12,440
+known to us directly, so on what basis do
+we compute these weights. We know the ideal
+
+76
+00:10:12,440 --> 00:10:19,730
+output here, we can compute the error directly
+and on that basis we can update these weights.
+
+77
+00:10:19,730 --> 00:10:27,420
+But we need to know what is the error here.
+So, what is done is that the error that is
+
+78
+00:10:27,420 --> 00:10:35,689
+observed here is propagated backwards. The
+assumption is the error here is a result of
+
+79
+00:10:35,689 --> 00:10:41,329
+error here, here, and here, because these
+are the three nodes that are feeding inputs.
+
+80
+00:10:42,520 --> 00:10:50,180
+This error here is due to errors here, and
+therefore what we do is that this error we
+
+81
+00:10:50,180 --> 00:10:57,449
+now back propagate to these nodes. The error
+here also we back propagate to this nodes
+
+82
+00:10:57,449 --> 00:11:03,490
+based on these each of the nodes we know what
+is the notional error, based on that error
+
+83
+00:11:03,490 --> 00:11:09,920
+we update this weights. If there were more
+layers here, the error here will again be
+
+84
+00:11:09,920 --> 00:11:16,300
+back propagated to those other nodes.
+So, the error signal flows backward. The computation
+
+85
+00:11:16,300 --> 00:11:24,900
+in the network is forward, but the error signals
+flow backward based on this computation of
+
+86
+00:11:24,900 --> 00:11:32,230
+the error signals we figure out how the weights
+have to be changed. That is why the method
+
+87
+00:11:32,230 --> 00:11:41,600
+for updating weights in such multilayered
+neural network is called back propagation.
+
+88
+00:11:41,600 --> 00:11:50,080
+So the input is going forward and the error
+signal is going backward.
+
+89
+00:11:50,580 --> 00:11:58,260
+So, these are the steps in the back propagation
+training algorithm. First step is initialization,
+
+90
+00:11:58,269 --> 00:12:06,649
+we give the structure of the network and we
+initialize the values of these weights and
+
+91
+00:12:06,649 --> 00:12:13,990
+usually we give these weights small random
+values. We give them small random values to
+
+92
+00:12:13,990 --> 00:12:17,190
+the weights at different biases in the network.
+
+93
+00:12:19,410 --> 00:12:25,550
+Now after initialization we do the forward
+computing.
+
+94
+00:12:25,670 --> 00:12:37,230
+Now what we do is that we take our training
+example which comprises x 1, y 1, x 2, y 2,
+
+95
+00:12:37,230 --> 00:12:46,749
+x m, y m. These are our training examples
+we take the examples one by one and apply
+
+96
+00:12:46,749 --> 00:12:55,290
+them to the network. We apply x 1 to the network
+we get some output y 1 hat. So, given x 1
+
+97
+00:12:55,290 --> 00:13:03,879
+we get y 1 hat, so this is the output that
+we get. And the ideal output is y 1 hat, and
+
+98
+00:13:03,879 --> 00:13:13,290
+the outlet let me draw it here. So, the output
+that we get is y 1 hat, here we get y 2 hat,
+
+99
+00:13:13,290 --> 00:13:22,640
+here we get y m hat for a particular configuration
+of the network. And if this y 1 hat and y
+
+100
+00:13:22,640 --> 00:13:29,420
+1 are different this is different then we
+look at the error and based on this we change
+
+101
+00:13:29,420 --> 00:13:35,560
+the weights.
+So, in the format computing we apply the input
+
+102
+00:13:35,560 --> 00:13:40,860
+first to this layer here we first take the
+summation followed by the activation function
+
+103
+00:13:40,880 --> 00:13:46,759
+we get the output at this layer; we get the
+output z 1, z 2, z 3, and then based on that
+
+104
+00:13:46,759 --> 00:13:55,110
+we compute y 1. y 2 etcetera as this is computed
+as the activation function applied to sigma
+
+105
+00:13:55,110 --> 00:14:03,259
+w i z i right here, it is activation function
+applied to sigma x i w i. So, we get the do
+
+106
+00:14:03,259 --> 00:14:04,179
+the forward computing.
+
+107
+00:14:04,749 --> 00:14:13,970
+After doing the forward computing, now we
+have to update the weights. As i said that
+
+108
+00:14:13,970 --> 00:14:21,589
+we can update the weight at the output layer
+in a similar fashion as we did for single
+
+109
+00:14:21,589 --> 00:14:27,519
+layer units. If you think of you have single
+layer sigmoid units we have already worked
+
+110
+00:14:27,519 --> 00:14:37,120
+out how to update the weights. These weights,
+suppose let us say this set of weights we
+
+111
+00:14:37,120 --> 00:14:48,009
+call them w and this set of weights we call
+them v. So, w is updated using the sigmoid
+
+112
+00:14:48,009 --> 00:14:53,129
+layer training rule which we discussed in
+the last class.
+
+113
+00:14:53,870 --> 00:15:01,509
+But, how to update v; As we said that we do
+not know the target values of z 1, z 2, z

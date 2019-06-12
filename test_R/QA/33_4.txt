@@ -1,0 +1,13 @@
+Q. What is the dimensionality of the image?
+A. 784
+B. 500
+C. 674
+D. none of the above
+(A)
+
+Q. Which activation function is used?
+A. relu
+B. sigmoid
+C. adam
+D. none of the above
+(A)

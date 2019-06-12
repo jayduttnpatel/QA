@@ -1,0 +1,229 @@
+245
+00:30:15,100 --> 00:30:23,160
+the entire trick comes in. So, it was like
+really you know unfortunate that on increasing
+
+246
+00:30:23,160 --> 00:30:28,860
+the number of hidden layers, the accuracy
+actually fail, so this is the actually the
+
+247
+00:30:28,860 --> 00:30:35,820
+trick of deep learning and it was it was seen
+that deep neural network with any hidden layers
+
+248
+00:30:35,820 --> 00:30:41,490
+actually fail to arrive at a good solution.
+And you can see that the accuracy is a 12
+
+249
+00:30:41,490 --> 00:30:48,590
+percent, so it just stuck in a bad local minimum
+and it had to come out. And so let us go ahead
+
+250
+00:30:48,590 --> 00:30:54,140
+and make a small change to the optimizer over
+here. So, there is an optimizer which is called
+
+251
+00:30:54,140 --> 00:31:01,860
+Adam and it is I will put the link in the
+description of the video that what it actually
+
+252
+00:31:01,860 --> 00:31:14,390
+does, but it is an you know a sophisticated
+optimization algorithm and we can hope that
+
+253
+00:31:14,390 --> 00:31:17,750
+this does a better job and gives us a better
+accuracy.
+
+254
+00:31:18,500 --> 00:31:28,370
+Let us say so see this, see this, it is started
+with an accuracy of 89 percent look at this.
+
+255
+00:31:28,370 --> 00:31:34,850
+So, what the Adam optimizer does is it uses
+a different learning rate for every single
+
+256
+00:31:34,850 --> 00:31:41,270
+parameter. So, it is like every single parameter
+are should be may be needed to be treated
+
+257
+00:31:41,270 --> 00:31:47,200
+differently in course of the algorithm the
+optimization algorithm. And see you can you
+
+258
+00:31:47,200 --> 00:31:53,490
+can see just the accuracy see it has it has
+touch 95 percent 97 percent, so it has a different
+
+259
+00:31:53,490 --> 00:31:59,720
+learning rate for a different optimizer, different
+parameter and also the learning rate changes
+
+260
+00:31:59,720 --> 00:32:04,520
+with time. And it is called annealing and
+it has a separate annealing scheme for every
+
+261
+00:32:04,520 --> 00:32:07,570
+single parameters.
+So, I will put a link in the description to
+
+262
+00:32:07,570 --> 00:32:14,740
+this paper and it is actually you see there,
+accuracy is 96.44 percent. So, these are the
+
+263
+00:32:14,740 --> 00:32:20,980
+different things that so what is you are take
+away from this exercise, the take away is
+
+264
+00:32:20,980 --> 00:32:27,980
+that when we have a single hidden layer neural
+network, the more is a number of unit is in
+
+265
+00:32:27,980 --> 00:32:33,780
+the hidden layers the more complicated is
+the models function - the hypothesis function
+
+266
+00:32:33,780 --> 00:32:38,130
+and hence the more is it capacity to learn.
+So, given enough data, it can learn better
+
+267
+00:32:38,130 --> 00:32:43,120
+so that is why 100 unit hidden layers gave
+an accuracy of around 69 percent. Whereas,
+
+268
+00:32:43,120 --> 00:32:50,110
+if the when the number of unit was reduced
+to say 10 the accuracy drop to 29 or something
+
+269
+00:32:50,110 --> 00:32:56,790
+it was in the twenties.
+But and the accuracy now the models complication,
+
+270
+00:32:56,790 --> 00:33:01,809
+the complexity of the model could be increasing
+in two ways. Either you increase the number
+
+271
+00:33:01,809 --> 00:33:06,680
+of nodes in the hidden layer in one hidden
+layer so you have a just one hidden layer
+
+272
+00:33:06,680 --> 00:33:12,870
+and you put many nodes in that or you could
+stack many hidden layers one after the other.
+
+273
+00:33:12,870 --> 00:33:20,290
+And it has been shown so what we saw here
+that when we increase the number of hidden
+
+274
+00:33:20,290 --> 00:33:27,110
+layers, then simple stochastic gradient decent
+fail to convert show a good local minimum.
+
+275
+00:33:27,110 --> 00:33:32,310
+So, but the accuracy was just the training
+accuracy was just twelfth percent, so it is
+
+276
+00:33:32,310 --> 00:33:38,510
+close to the it is good to call that it did
+not learn at all it just got lost somewhere.
+
+277
+00:33:38,510 --> 00:33:44,630
+Whereas, so when you like have so many hidden
+layers right two hidden layers of 100 unit
+
+278
+00:33:44,630 --> 00:33:51,660
+is each you have a lot of parameters and that
+is why you need to choose a very good optimization
+
+279
+00:33:51,660 --> 00:33:56,570
+algorithm. An optimization algorithm which
+gives special care to every single parameter
+
+280
+00:33:56,570 --> 00:34:02,380
+and make sure that these parameters are tuned
+properly in course of training, and finally,
+
+281
+00:34:02,380 --> 00:34:12,220
+we can like arrive at a good optimum which
+may not be the global optimum, which it may
+
+282
+00:34:12,220 --> 00:34:16,441
+never be reached at all.
+So, it may not be a global optimum, but it
+
+283
+00:34:16,441 --> 00:34:24,059
+should be a good local optimum, so that is
+why when we used Adam optimizer, and this
+
+284
+00:34:24,059 --> 00:34:27,820
+just I told you in few words what it does
+so I will link into the paper, so that you
+
+285
+00:34:27,820 --> 00:34:33,940
+can read it and understand get the full detail
+about it. So when we used Adam the performance
+
+286
+00:34:33,940 --> 00:34:38,740
+improved a lot and we got you know 96 percent
+accuracy. And the current state of the accuracy
+
+287
+00:34:38,740 --> 00:34:46,250
+on MNIST data set is something like 0.227
+percent error, and it is beyond human abilities.
+
+288
+00:34:46,250 --> 00:34:53,889
+So, the machines today can recognize handling
+characters be better than human beings. And
+
+289
+00:34:53,889 --> 00:34:59,530
+so you can like go to the MNIST, Wikipedia
+page and there it gives list of algorithms
+
+290
+00:34:59,530 --> 00:35:03,310
+which are doing very good which are the state
+of the art in this task, but they use much

@@ -5,9 +5,9 @@ from sklearn.model_selection import train_test_split
 
 mapping=WordToNum.WordToNum()
 
-sub,q,t,a,b,c,d=data.data(mapping)
-
-print(len(sub),len(q),len(t),len(a),len(b),len(c),len(d))
+sub_train,q_train,t_train,a_train,b_train,c_train,d_train=data.data(mapping,"/temp/train")
+sub_test1,q_test1,t_test1,a_test1,b_test1,c_test1,d_test1= data.data(mapping,"/temp/test_NR")
+sub_test2,q_test2,t_test2,a_test2,b_test2,c_test2,d_test2= data.data(mapping,"/temp/test_R")
 
 '''import numpy as np
 
@@ -70,8 +70,6 @@ keras.callbacks.EarlyStopping(monitor='val_loss',
                               patience=0,
                               verbose=0, mode='auto')
 
-sub_train,sub_test,q_train,q_test,a_train,a_test,b_train,b_test,c_train,c_test,d_train,d_test,t_train,t_test= train_test_split(sub,q,a,b,c,d,t,test_size=0.15)
-
 sub_train = sequence.pad_sequences(sub_train, maxlen=sub_max_sequence_length, padding='post', truncating='post')
 q_train = sequence.pad_sequences(q_train, maxlen=q_max_sequence_length, padding='post', truncating='post')
 a_train = sequence.pad_sequences(a_train, maxlen=a_max_sequence_length, padding='post', truncating='post')
@@ -79,12 +77,19 @@ b_train = sequence.pad_sequences(b_train, maxlen=b_max_sequence_length, padding=
 c_train = sequence.pad_sequences(c_train, maxlen=c_max_sequence_length, padding='post', truncating='post')
 d_train = sequence.pad_sequences(d_train, maxlen=d_max_sequence_length, padding='post', truncating='post')
 
-sub_test = sequence.pad_sequences(sub_test, maxlen=sub_max_sequence_length, padding='post', truncating='post')
-q_test = sequence.pad_sequences(q_test, maxlen=q_max_sequence_length, padding='post', truncating='post')
-a_test = sequence.pad_sequences(a_test, maxlen=a_max_sequence_length, padding='post', truncating='post')
-b_test = sequence.pad_sequences(b_test, maxlen=b_max_sequence_length, padding='post', truncating='post')
-c_test = sequence.pad_sequences(c_test, maxlen=c_max_sequence_length, padding='post', truncating='post')
-d_test = sequence.pad_sequences(d_test, maxlen=d_max_sequence_length, padding='post', truncating='post')
+sub_test1 = sequence.pad_sequences(sub_test1, maxlen=sub_max_sequence_length, padding='post', truncating='post')
+q_test1 = sequence.pad_sequences(q_test1, maxlen=q_max_sequence_length, padding='post', truncating='post')
+a_test1 = sequence.pad_sequences(a_test1, maxlen=a_max_sequence_length, padding='post', truncating='post')
+b_test1 = sequence.pad_sequences(b_test1, maxlen=b_max_sequence_length, padding='post', truncating='post')
+c_test1 = sequence.pad_sequences(c_test1, maxlen=c_max_sequence_length, padding='post', truncating='post')
+d_test1 = sequence.pad_sequences(d_test1, maxlen=d_max_sequence_length, padding='post', truncating='post')
+
+sub_test2 = sequence.pad_sequences(sub_test2, maxlen=sub_max_sequence_length, padding='post', truncating='post')
+q_test2 = sequence.pad_sequences(q_test2, maxlen=q_max_sequence_length, padding='post', truncating='post')
+a_test2 = sequence.pad_sequences(a_test2, maxlen=a_max_sequence_length, padding='post', truncating='post')
+b_test2 = sequence.pad_sequences(b_test2, maxlen=b_max_sequence_length, padding='post', truncating='post')
+c_test2 = sequence.pad_sequences(c_test2, maxlen=c_max_sequence_length, padding='post', truncating='post')
+d_test2 = sequence.pad_sequences(d_test2, maxlen=d_max_sequence_length, padding='post', truncating='post')
 
 sub_input = Input(shape=(500,),dtype='int32',name='sub_input')
 sub = Embedding(output_dim=512 , input_dim=10000, input_length=500)(sub_input)
@@ -134,5 +139,10 @@ model.compile(optimizer='rmsprop', loss='binary_crossentropy')
 model.fit([sub_train, q_train, a_train, b_train, c_train, d_train], [t_train],
           epochs=10, batch_size=32, shuffle=True)
 		  
-test_scores = model.evaluate([sub_test,q_test,a_test,b_test,c_test,d_test], [t_test])
-print('Test loss:', test_scores)
+test_scores1 = model.evaluate([sub_test1, q_test1, a_test1, b_test1, c_test1, d_test1], [t_test1] )
+print('Test loss1:', test_scores1*100)
+print('Test acc1:', 100-test_scores1*100)
+
+test_scores2 = model.evaluate([sub_test2, q_test2, a_test2, b_test2, c_test2, d_test2], [t_test2] )
+print('Test loss2:', test_scores2*100)
+print('Test acc2:', 100-test_scores2*100)

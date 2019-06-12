@@ -1,0 +1,13 @@
+Q. Error from the output layer is propogated to
+A. hidden layer
+B. data
+C. system
+D. model
+(A)
+
+Q. In the neural network unit there are how many component?
+A. bias
+B. 2
+C. 10
+D. none of the above
+(B)

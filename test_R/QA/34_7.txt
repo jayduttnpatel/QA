@@ -1,0 +1,6 @@
+Q. Convolution neural network has fewer parameter because
+A. parameters are shared 
+B. weights are shared
+C. data are shared
+D. bias are shared
+(B)
