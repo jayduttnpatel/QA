@@ -1,0 +1,4008 @@
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+0
+_
+I
+M
+-
+0
+0
+0
+2
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+contour
+no acute bone abnormality
+stable calcified granuloma within right upper lung
+without focal airspace disease
+cardiomediastinal silhouette within normal limits size
+lungs normally inflated
+without pleural effusion
+no acute cardiopulmonary process
+without pneumothorax
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+0
+_
+I
+M
+-
+0
+0
+0
+2
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+contour
+no acute bone abnormality
+stable calcified granuloma within right upper lung
+without focal airspace disease
+cardiomediastinal silhouette within normal limits size
+lungs normally inflated
+without pleural effusion
+no acute cardiopulmonary process
+without pneumothorax
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+1
+_
+I
+M
+-
+0
+0
+6
+7
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no acute osseous findings
+no pleural effusion
+pulmonary vasculature within normal limits
+no pneumothorax
+lungs clear
+cardiomediastinal silhouette within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+1
+_
+I
+M
+-
+0
+0
+6
+7
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no acute osseous findings
+no pleural effusion
+pulmonary vasculature within normal limits
+no pneumothorax
+lungs clear
+cardiomediastinal silhouette within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+2
+_
+I
+M
+-
+0
+1
+3
+3
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+pulmonary vasculature normal
+mediastinal silhouettes normal
+no pleural effusion
+no acute bony abnormality
+lungs clear bilaterally
+no pneumothorax
+no acute cardiopulmonary abnormality
+cardiac normal
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+2
+_
+I
+M
+-
+0
+1
+3
+3
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+pulmonary vasculature normal
+mediastinal silhouettes normal
+no pleural effusion
+no acute bony abnormality
+lungs clear bilaterally
+no pneumothorax
+no acute cardiopulmonary abnormality
+cardiac normal
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+3
+_
+I
+M
+-
+0
+1
+9
+8
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+borderline enlargement cardiac silhouette
+no focal opacity
+cardiac silhouette borderline enlarged
+no large pleural effusion
+no pneumothorax
+without acute pulmonary disease
+mediastinal contours within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+3
+_
+I
+M
+-
+0
+1
+9
+8
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+borderline enlargement cardiac silhouette
+no focal opacity
+cardiac silhouette borderline enlarged
+no large pleural effusion
+no pneumothorax
+without acute pulmonary disease
+mediastinal contours within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+4
+_
+I
+M
+-
+0
+2
+5
+6
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no findings pulmonary edema
+stable mediastinal and hilar contours
+mild hyperinflation
+no focal alveolar consolidation
+no definite pleural effusion
+heart size within normal limits
+no acute findings
+scattered chronic irregular interstitial markings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+4
+_
+I
+M
+-
+0
+2
+5
+6
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no findings pulmonary edema
+stable mediastinal and hilar contours
+mild hyperinflation
+no focal alveolar consolidation
+no definite pleural effusion
+heart size within normal limits
+no acute findings
+scattered chronic irregular interstitial markings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+5
+_
+I
+M
+-
+0
+3
+2
+4
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no acute osseous findings
+no pleural effusion
+pulmonary vasculature within normal limits
+no pneumothorax
+granulomatous disease
+lungs clear
+cardiomediastinal silhouette within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+5
+_
+I
+M
+-
+0
+3
+2
+4
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no acute osseous findings
+no pleural effusion
+pulmonary vasculature within normal limits
+no pneumothorax
+granulomatous disease
+lungs clear
+cardiomediastinal silhouette within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+7
+_
+I
+M
+-
+0
+4
+6
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusions
+no pneumothorax
+osseous structures intact
+no acute cardiopulmonary abnormality
+heart size within normal limits
+no suspicious pulmonary opacities
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+7
+_
+I
+M
+-
+0
+4
+6
+0
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusions
+no pneumothorax
+osseous structures intact
+no acute cardiopulmonary abnormality
+heart size within normal limits
+no suspicious pulmonary opacities
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+8
+_
+I
+M
+-
+0
+5
+2
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no findings pulmonary edema
+no focal alveolar consolidation
+no definite pleural effusion
+no pneumothorax
+heart size within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+8
+_
+I
+M
+-
+0
+5
+2
+0
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no findings pulmonary edema
+no focal alveolar consolidation
+no definite pleural effusion
+no pneumothorax
+heart size within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+9
+_
+I
+M
+-
+0
+5
+8
+3
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusions
+no effusion
+tortuosity thoracic aorta , stable with
+heart size normal
+degenerative changes in thoracic spine
+no pneumothoraces
+no acute cardiopulmonary process
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+9
+_
+I
+M
+-
+0
+5
+8
+3
+-
+3
+0
+0
+3
+.
+t
+x
+t
+
+no pleural effusions
+no effusion
+tortuosity thoracic aorta , stable with
+heart size normal
+degenerative changes in thoracic spine
+no pneumothoraces
+no acute cardiopulmonary process
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+_
+1
+_
+I
+M
+-
+0
+0
+0
+1
+-
+3
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+mediastinum size within normal limits
+no pneumothorax
+normal chest
+no pulmonary edema
+cardiac silhouette within normal limits
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+1
+_
+1
+_
+I
+M
+-
+0
+0
+0
+1
+-
+4
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+mediastinum size within normal limits
+no pneumothorax
+normal chest
+no pulmonary edema
+cardiac silhouette within normal limits
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+0
+_
+I
+M
+-
+0
+6
+5
+3
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+mild degenerative changes thoracic spine
+no effusion
+cardiac unremarkable
+lungs expanded and clear
+no pneumothorax
+stable chest
+mediastinal silhouettes unremarkable
+no acute cardiopulmonary process
+no focal air space opacities
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+0
+_
+I
+M
+-
+0
+6
+5
+3
+-
+1
+0
+0
+2
+.
+t
+x
+t
+
+mild degenerative changes thoracic spine
+no effusion
+cardiac unremarkable
+lungs expanded and clear
+no pneumothorax
+stable chest
+mediastinal silhouettes unremarkable
+no acute cardiopulmonary process
+no focal air space opacities
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+1
+_
+I
+M
+-
+0
+7
+2
+9
+-
+1
+0
+0
+1
+-
+0
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusions
+mediastinal silhouettes within normal limits
+no pneumothorax
+heart size normal
+no focal consolidations
+calcified lingular granuloma
+pulmonary vascularity within normal limits
+breast moderate wedge deformity midthoracic vertebrae
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+1
+_
+I
+M
+-
+0
+7
+2
+9
+-
+1
+0
+0
+1
+-
+0
+0
+0
+2
+.
+t
+x
+t
+
+no pleural effusions
+mediastinal silhouettes within normal limits
+no pneumothorax
+heart size normal
+no focal consolidations
+calcified lingular granuloma
+pulmonary vascularity within normal limits
+breast moderate wedge deformity midthoracic vertebrae
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+2
+_
+I
+M
+-
+0
+8
+1
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+without focal air space opacity
+cardiomediastinal silhouette normal in size
+contour and stable
+no acute cardiopulmonary abnormality
+no pneumothorax large pleural effusion
+lungs clear
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+2
+_
+I
+M
+-
+0
+8
+1
+0
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+without focal air space opacity
+cardiomediastinal silhouette normal in size
+contour and stable
+no acute cardiopulmonary abnormality
+no pneumothorax large pleural effusion
+lungs clear
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+3
+_
+I
+M
+-
+0
+8
+7
+9
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+no active disease
+no pneumothorax
+lungs
+heart size within normal limits
+pulmonary vascularity within normal limits
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+3
+_
+I
+M
+-
+0
+8
+7
+9
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+no active disease
+no pneumothorax
+lungs
+heart size within normal limits
+pulmonary vascularity within normal limits
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+4
+_
+I
+M
+-
+0
+9
+4
+9
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+lungs expanded
+no acute cardiopulmonary abnormality
+cardiomediastinal silhouette within normal limits size
+lumbar levoscoliosis
+pulmonary vascularity unremarkable
+no acute abnormality
+no airspace disease
+bone
+negative pneumothorax
+negative pleural effusion
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+4
+_
+I
+M
+-
+0
+9
+4
+9
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+lungs expanded
+no acute cardiopulmonary abnormality
+cardiomediastinal silhouette within normal limits size
+lumbar levoscoliosis
+pulmonary vascularity unremarkable
+no acute abnormality
+no airspace disease
+bone
+negative pneumothorax
+negative pleural effusion
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+5
+_
+I
+M
+-
+1
+0
+2
+4
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+moderate left pleural effusion
+left lower lobe airspace disease
+surgical right lung apex
+heart within normal limits in size
+no pneumothorax
+with emphysema
+small right pleural effusion
+bilateral pleural effusions , left greater than right
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+5
+_
+I
+M
+-
+1
+0
+2
+4
+-
+3
+0
+0
+1
+.
+t
+x
+t
+
+moderate left pleural effusion
+left lower lobe airspace disease
+surgical right lung apex
+heart within normal limits in size
+no pneumothorax
+with emphysema
+small right pleural effusion
+bilateral pleural effusions , left greater than right
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+6
+_
+I
+M
+-
+1
+0
+9
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no acute process
+thoracic
+cardiac contours normal
+lungs clear
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+6
+_
+I
+M
+-
+1
+0
+9
+0
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no acute process
+thoracic
+cardiac contours normal
+lungs clear
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+7
+_
+I
+M
+-
+1
+1
+6
+8
+-
+2
+0
+0
+2
+.
+t
+x
+t
+
+mediastinum normal size and contour
+no pleural effusions
+lungs hyperexpanded
+heart normal
+hyperexpanded clear lungs
+degenerative changes in thoracic spine
+no pneumothoraces
+with flattening diaphragms
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+7
+_
+I
+M
+-
+1
+1
+6
+8
+-
+3
+0
+0
+3
+.
+t
+x
+t
+
+mediastinum normal size and contour
+no pleural effusions
+lungs hyperexpanded
+heart normal
+hyperexpanded clear lungs
+degenerative changes in thoracic spine
+no pneumothoraces
+with flattening diaphragms
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+8
+_
+I
+M
+-
+1
+2
+3
+1
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+stable enlarged cardiomediastinal silhouette
+multifocal scattered bibasilar patchy and pulmonary opacities
+left base opacity
+no pneumothorax
+no large pleural effusions
+pulmonary vascular congestion
+with atelectasis/infiltrate
+stable pulmonary vascular congestion
+bilateral patchy pulmonary opacities
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+8
+_
+I
+M
+-
+1
+2
+3
+1
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+stable enlarged cardiomediastinal silhouette
+multifocal scattered bibasilar patchy and pulmonary opacities
+left base opacity
+no pneumothorax
+no large pleural effusions
+pulmonary vascular congestion
+with atelectasis/infiltrate
+stable pulmonary vascular congestion
+bilateral patchy pulmonary opacities
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+9
+_
+I
+M
+-
+1
+3
+0
+2
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+clear right lung
+extensive airspace disease in left base
+elevated left diaphragm
+no pneumothorax
+borderline heart size
+no large effusion
+tube tip
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+9
+_
+I
+M
+-
+1
+3
+0
+2
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+clear right lung
+extensive airspace disease in left base
+elevated left diaphragm
+no pneumothorax
+borderline heart size
+no large effusion
+tube tip
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+_
+I
+M
+-
+0
+6
+5
+2
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+borderline cardiomegaly
+enlarged pulmonary arteries
+clear lungs
+no acute pulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+2
+_
+I
+M
+-
+0
+6
+5
+2
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+borderline cardiomegaly
+enlarged pulmonary arteries
+clear lungs
+no acute pulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+0
+_
+I
+M
+-
+1
+3
+8
+5
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+normal heart size
+bony thorax
+soft tissue unremarkable
+without focal consolidation
+lungs clear
+negative acute cardiopulmonary abnormality
+without effusion
+without pneumothorax
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+0
+_
+I
+M
+-
+1
+3
+8
+5
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+normal heart size
+bony thorax
+soft tissue unremarkable
+without focal consolidation
+lungs clear
+negative acute cardiopulmonary abnormality
+without effusion
+without pneumothorax
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+1
+_
+I
+M
+-
+1
+4
+5
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no effusions
+no pneumonia
+stable mediastinal contour
+may represent some changes
+slightly prominent interstitial markings
+no suspicious nodules
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+1
+_
+I
+M
+-
+1
+4
+5
+0
+-
+3
+0
+0
+3
+.
+t
+x
+t
+
+no effusions
+no pneumonia
+stable mediastinal contour
+may represent some changes
+slightly prominent interstitial markings
+no suspicious nodules
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+2
+_
+I
+M
+-
+1
+5
+1
+1
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+mild blunting right costophrenic
+no acute disease
+heart normal in size
+lungs clear
+mediastinum unremarkable
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+2
+_
+I
+M
+-
+1
+5
+1
+1
+-
+4
+0
+0
+1
+.
+t
+x
+t
+
+mild blunting right costophrenic
+no acute disease
+heart normal in size
+lungs clear
+mediastinum unremarkable
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+3
+_
+I
+M
+-
+1
+5
+7
+6
+-
+1
+2
+0
+1
+2
+.
+t
+x
+t
+
+left surgical clips
+bony structures intact
+no active pulmonary disease
+lungs clear
+mediastinal contours within normal limits
+cardiac within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+3
+_
+I
+M
+-
+1
+5
+7
+6
+-
+1
+3
+0
+1
+3
+.
+t
+x
+t
+
+left surgical clips
+bony structures intact
+no active pulmonary disease
+lungs clear
+mediastinal contours within normal limits
+cardiac within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+4
+_
+I
+M
+-
+1
+6
+4
+4
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+contour
+no effusion
+heart normal in size
+no acute cardiopulmonary disease
+no pneumothorax
+without infiltrate
+lungs clear
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+4
+_
+I
+M
+-
+1
+6
+4
+4
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+contour
+no effusion
+heart normal in size
+no acute cardiopulmonary disease
+no pneumothorax
+without infiltrate
+lungs clear
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+5
+_
+I
+M
+-
+1
+7
+0
+4
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+hyperexpansion lungs
+emphysema
+no pneumothorax
+no acute cardiopulmonary finding
+no focal airspace opacity
+heart size normal
+degenerative changes thoracic spine
+with flattening hemidiaphragms
+cardiomediastinal silhouette normal
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+5
+_
+I
+M
+-
+1
+7
+0
+4
+-
+1
+0
+0
+2
+.
+t
+x
+t
+
+no pleural effusion
+hyperexpansion lungs
+emphysema
+no pneumothorax
+no acute cardiopulmonary finding
+no focal airspace opacity
+heart size normal
+degenerative changes thoracic spine
+with flattening hemidiaphragms
+cardiomediastinal silhouette normal
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+6
+_
+I
+M
+-
+1
+7
+7
+6
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+without acute abnormality
+lungs clear bilaterally
+no pneumothorax
+osseous structures thorax
+no acute cardiopulmonary abnormality
+no focal consolidation
+cardio mediastinal silhouette unremarkable
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+6
+_
+I
+M
+-
+1
+7
+7
+6
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+without acute abnormality
+lungs clear bilaterally
+no pneumothorax
+osseous structures thorax
+no acute cardiopulmonary abnormality
+no focal consolidation
+cardio mediastinal silhouette unremarkable
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+7
+_
+I
+M
+-
+1
+8
+4
+7
+-
+0
+0
+0
+1
+-
+0
+0
+0
+1
+.
+t
+x
+t
+
+opacities in right mid lung
+no acute disease
+heart normal in size
+lungs clear
+mediastinum unremarkable
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+7
+_
+I
+M
+-
+1
+8
+4
+7
+-
+0
+0
+0
+1
+-
+0
+0
+0
+2
+.
+t
+x
+t
+
+opacities in right mid lung
+no acute disease
+heart normal in size
+lungs clear
+mediastinum unremarkable
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+8
+_
+I
+M
+-
+1
+9
+1
+1
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+heart within normal limits
+no pneumothorax
+bony structures intact
+lungs clear
+no acute cardiopulmonary process
+mediastinum within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+8
+_
+I
+M
+-
+1
+9
+1
+1
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+heart within normal limits
+no pneumothorax
+bony structures intact
+lungs clear
+no acute cardiopulmonary process
+mediastinum within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+9
+_
+I
+M
+-
+1
+9
+7
+8
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+both lungs clear and expanded
+mediastinum normal
+no active disease
+heart normal
+lungs
+heart
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+9
+_
+I
+M
+-
+1
+9
+7
+8
+-
+1
+0
+0
+2
+.
+t
+x
+t
+
+both lungs clear and expanded
+mediastinum normal
+no active disease
+heart normal
+lungs
+heart
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+_
+I
+M
+-
+1
+3
+8
+4
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+no displaced rib fractures
+well-expanded and clear lungs
+no pneumothorax
+no acute cardiopulmonary abnormality
+mediastinal contour within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+3
+_
+I
+M
+-
+1
+3
+8
+4
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusion
+no displaced rib fractures
+well-expanded and clear lungs
+no pneumothorax
+no acute cardiopulmonary abnormality
+mediastinal contour within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+0
+_
+I
+M
+-
+2
+0
+5
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+numerous bilateral rib deformities
+large , anterior thoracic spine
+with no acute cardiopulmonary findings
+no effusion
+emphysema
+no pneumothorax
+mild hyperexpansion lungs
+heart size normal
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+0
+_
+I
+M
+-
+2
+0
+5
+0
+-
+1
+0
+0
+2
+.
+t
+x
+t
+
+numerous bilateral rib deformities
+large , anterior thoracic spine
+with no acute cardiopulmonary findings
+no effusion
+emphysema
+no pneumothorax
+mild hyperexpansion lungs
+heart size normal
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+1
+_
+I
+M
+-
+2
+0
+5
+5
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+diffuse increased bilateral pulmonary interstitial markings in peripheral left lung
+no pleural effusion
+slight worsening increased bilateral pulmonary interstitial markings in peripheral left lung
+findings
+with slight worsening interstitial lung disease
+no pneumothorax
+opacities slightly increased
+mild left-sided volume loss
+left lung base
+cardiomediastinal silhouette stable
+stable mild left-sided volume loss
+thoracic spine intact
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+1
+_
+I
+M
+-
+2
+0
+5
+5
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+diffuse increased bilateral pulmonary interstitial markings in peripheral left lung
+no pleural effusion
+slight worsening increased bilateral pulmonary interstitial markings in peripheral left lung
+findings
+with slight worsening interstitial lung disease
+no pneumothorax
+opacities slightly increased
+mild left-sided volume loss
+left lung base
+cardiomediastinal silhouette stable
+stable mild left-sided volume loss
+thoracic spine intact
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+2
+_
+I
+M
+-
+2
+0
+6
+3
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+without focal infiltrate
+no acute cardiopulmonary abnormalities
+no pneumothorax
+cardiomediastinal silhouette normal
+no acute abnormalities
+lungs clear
+trachea midline
+without effusion
+bony structures
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+2
+_
+I
+M
+-
+2
+0
+6
+3
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+without focal infiltrate
+no acute cardiopulmonary abnormalities
+no pneumothorax
+cardiomediastinal silhouette normal
+no acute abnormalities
+lungs clear
+trachea midline
+without effusion
+bony structures
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+2
+_
+I
+M
+-
+2
+0
+6
+3
+-
+3
+0
+0
+1
+.
+t
+x
+t
+
+without focal infiltrate
+no acute cardiopulmonary abnormalities
+no pneumothorax
+cardiomediastinal silhouette normal
+no acute abnormalities
+lungs clear
+trachea midline
+without effusion
+bony structures
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+3
+_
+I
+M
+-
+2
+0
+7
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+both lungs clear and expanded
+mediastinum normal
+no active disease
+heart normal
+lungs
+heart
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+3
+_
+I
+M
+-
+2
+0
+7
+0
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+both lungs clear and expanded
+mediastinum normal
+no active disease
+heart normal
+lungs
+heart
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+4
+_
+I
+M
+-
+2
+0
+7
+8
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no focal air space opacity
+no pleural effusion
+no acute cardiopulmonary disease
+no pneumonia
+heart within normal limits
+no pneumothorax
+pulmonary within normal limits
+mediastinum within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+5
+_
+I
+M
+-
+2
+0
+8
+1
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no large pleural effusion
+no pneumothorax
+with vascular prominence
+without edema
+without pulmonary edema
+stable cardiomegaly
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+6
+_
+I
+M
+-
+2
+0
+9
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+well-expanded and clear lungs
+no chest
+mediastinal contour within normal limits
+no acute cardiopulmonary abnormality
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+6
+_
+I
+M
+-
+2
+0
+9
+0
+-
+3
+0
+0
+3
+.
+t
+x
+t
+
+well-expanded and clear lungs
+no chest
+mediastinal contour within normal limits
+no acute cardiopulmonary abnormality
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+7
+_
+I
+M
+-
+2
+0
+9
+8
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+artery
+no edema
+no pleural effusion
+no pneumothorax
+clips
+heart size within normal limits
+mild biapical pleural thickening
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+7
+_
+I
+M
+-
+2
+0
+9
+8
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+artery
+no edema
+no pleural effusion
+no pneumothorax
+clips
+heart size within normal limits
+mild biapical pleural thickening
+no focal consolidation
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+8
+_
+I
+M
+-
+2
+1
+0
+3
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+calcified granuloma
+nodule in left lung base
+no effusion
+nodule in left lower lobe
+with minimal early degenerative change
+no pneumothorax
+lungs clear
+mediastinal contours within normal limits
+cardiac within normal limits
+bony structures thorax intact
+no acute cardiopulmonary process
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+8
+_
+I
+M
+-
+2
+1
+0
+3
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+calcified granuloma
+nodule in left lung base
+no effusion
+nodule in left lower lobe
+with minimal early degenerative change
+no pneumothorax
+lungs clear
+mediastinal contours within normal limits
+cardiac within normal limits
+bony structures thorax intact
+no acute cardiopulmonary process
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+9
+_
+I
+M
+-
+2
+1
+1
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no focal air space opacity
+no pleural effusion
+right apical pleural thickening
+no acute cardiopulmonary disease
+calcified granuloma in right suprahilar
+no pneumonia
+heart within normal limits
+no pneumothorax
+degenerative changes thoracic spine
+severe degenerative changes
+pulmonary within normal limits
+aorta mildly tortuous and ectatic
+mediastinum within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+9
+_
+I
+M
+-
+2
+1
+1
+0
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no focal air space opacity
+no pleural effusion
+right apical pleural thickening
+no acute cardiopulmonary disease
+calcified granuloma in right suprahilar
+no pneumonia
+heart within normal limits
+no pneumothorax
+degenerative changes thoracic spine
+severe degenerative changes
+pulmonary within normal limits
+aorta mildly tortuous and ectatic
+mediastinum within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+_
+I
+M
+-
+2
+0
+5
+0
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+difficult exclude cavitary lesion
+contour
+with chronic obstructive lung disease
+could represent scarring
+alveolar opacities
+could represent cavitary lesion in left lung apex
+scarring
+diffuse bilateral interstitial
+cardiomediastinal silhouette normal in size
+no pneumothorax
+with bullous emphysema
+streaky opacities in right upper lobe
+no large pleural effusion
+bullous emphysema
+irregular opacities in left lung apex
+probably scarring in left apex
+opacities in bilateral upper lobes
+thorax
+interstitial fibrosis
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+4
+_
+I
+M
+-
+2
+0
+5
+0
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+difficult exclude cavitary lesion
+contour
+with chronic obstructive lung disease
+could represent scarring
+alveolar opacities
+could represent cavitary lesion in left lung apex
+scarring
+diffuse bilateral interstitial
+cardiomediastinal silhouette normal in size
+no pneumothorax
+with bullous emphysema
+streaky opacities in right upper lobe
+no large pleural effusion
+bullous emphysema
+irregular opacities in left lung apex
+probably scarring in left apex
+opacities in bilateral upper lobes
+thorax
+interstitial fibrosis
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+5
+0
+_
+I
+M
+-
+2
+1
+1
+8
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusions
+without focal airspace disease
+with low lung volumes clear
+lungs clear
+no pneumothoraces
+cardiomegaly
+lung volumes
+degenerative changes in spine
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+5
+0
+_
+I
+M
+-
+2
+1
+1
+8
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no pleural effusions
+without focal airspace disease
+with low lung volumes clear
+lungs clear
+no pneumothoraces
+cardiomegaly
+lung volumes
+degenerative changes in spine
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+5
+1
+_
+I
+M
+-
+2
+1
+2
+5
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+lungs clear bilaterally
+no acute cardiopulmonary abnormality
+heart size normal
+scattered calcified granulomas both lung
+no soft tissue abnormalities
+cardiomediastinal silhouette normal
+no bony
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+5
+1
+_
+I
+M
+-
+2
+1
+2
+5
+-
+1
+0
+0
+2
+.
+t
+x
+t
+
+lungs clear bilaterally
+no acute cardiopulmonary abnormality
+heart size normal
+scattered calcified granulomas both lung
+no soft tissue abnormalities
+cardiomediastinal silhouette normal
+no bony
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+5
+2
+_
+I
+M
+-
+2
+1
+3
+1
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+heart normal size
+no pleural effusion
+no pneumothorax
+no acute cardiopulmonary abnormality
+mediastinum unremarkable
+no focal airspace disease
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+5
+_
+I
+M
+-
+2
+1
+1
+7
+-
+1
+0
+0
+3
+0
+0
+2
+.
+t
+x
+t
+
+no pleural effusion
+pulmonary vasculature within normal limits
+biapical pleural thickening
+no pneumothorax
+clips
+no acute cardiopulmonary abnormality
+cardiomediastinal silhouette within normal limits
+no focal consolidation
+mildly hyperexpanded lungs
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+5
+_
+I
+M
+-
+2
+1
+1
+7
+-
+1
+0
+0
+4
+0
+0
+3
+.
+t
+x
+t
+
+no pleural effusion
+pulmonary vasculature within normal limits
+biapical pleural thickening
+no pneumothorax
+clips
+no acute cardiopulmonary abnormality
+cardiomediastinal silhouette within normal limits
+no focal consolidation
+mildly hyperexpanded lungs
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+6
+_
+I
+M
+-
+2
+1
+9
+2
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no suspicious pulmonary opacity
+no large pleural effusion
+no pneumothorax
+mild degenerative change thoracic spine
+no focal airspace consolidation
+heart size within normal limits
+mediastinal contour within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+6
+_
+I
+M
+-
+2
+1
+9
+2
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no suspicious pulmonary opacity
+no large pleural effusion
+no pneumothorax
+mild degenerative change thoracic spine
+no focal airspace consolidation
+heart size within normal limits
+mediastinal contour within normal limits
+no acute cardiopulmonary findings
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+7
+_
+I
+M
+-
+2
+2
+6
+3
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+thoracic
+no pleural effusion
+no consolidation
+cardiac contours normal
+lungs clear
+basilar atelectasis
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+7
+_
+I
+M
+-
+2
+2
+6
+3
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+thoracic
+no pleural effusion
+no consolidation
+cardiac contours normal
+lungs clear
+basilar atelectasis
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+8
+_
+I
+M
+-
+2
+3
+3
+3
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+no focal air space opacity
+no pleural effusion
+no acute cardiopulmonary disease
+no pneumonia
+heart within normal limits
+no pneumothorax
+pulmonary within normal limits
+spinal fusion
+mediastinum within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+8
+_
+I
+M
+-
+2
+3
+3
+3
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+no focal air space opacity
+no pleural effusion
+no acute cardiopulmonary disease
+no pneumonia
+heart within normal limits
+no pneumothorax
+pulmonary within normal limits
+spinal fusion
+mediastinum within normal limits
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+9
+_
+I
+M
+-
+2
+4
+0
+7
+-
+1
+0
+0
+1
+.
+t
+x
+t
+
+increase in low density convexity left cardiophrenic
+cardiac silhouette not enlarged
+no pleural effusion
+differential considerations increased size prominent epicardial fat
+differential considerations pleural mass
+findings
+increased size density in left cardiophrenic
+no pneumothorax
+no consolidation
+chest
+differential considerations cardiac aneurysm
+chest with
+calcified granuloma in right upper lobe
+differential considerations pericardial mass
+
+r
+e
+p
+o
+r
+t
+s
+\
+C
+X
+R
+9
+_
+I
+M
+-
+2
+4
+0
+7
+-
+2
+0
+0
+1
+.
+t
+x
+t
+
+increase in low density convexity left cardiophrenic
+cardiac silhouette not enlarged
+no pleural effusion
+differential considerations increased size prominent epicardial fat
+differential considerations pleural mass
+findings
+increased size density in left cardiophrenic
+no pneumothorax
+no consolidation
+chest
+differential considerations cardiac aneurysm
+chest with
+calcified granuloma in right upper lobe
+differential considerations pericardial mass
+

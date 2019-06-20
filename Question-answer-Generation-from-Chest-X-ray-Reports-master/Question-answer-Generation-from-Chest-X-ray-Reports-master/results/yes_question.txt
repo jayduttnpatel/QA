@@ -1,0 +1,390 @@
+Is there acute bone abnormality?
+Is there focal airspace disease?
+Is there pleural effusion?
+Is there acute cardiopulmonary process?
+Is there pneumothorax?
+Is there acute bone abnormality?
+Is there focal airspace disease?
+Is there pleural effusion?
+Is there acute cardiopulmonary process?
+Is there pneumothorax?
+Is there acute osseous findings?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary findings?
+Is there acute osseous findings?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary findings?
+Is there pleural effusion?
+Is there acute bony abnormality?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there pleural effusion?
+Is there acute bony abnormality?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there focal opacity?
+Is there large pleural effusion?
+Is there pneumothorax?
+Is there acute pulmonary disease?
+Is there focal opacity?
+Is there large pleural effusion?
+Is there pneumothorax?
+Is there acute pulmonary disease?
+Is there findings pulmonary edema?
+Is there focal alveolar consolidation?
+Is there definite pleural effusion?
+Is there acute findings?
+Is there findings pulmonary edema?
+Is there focal alveolar consolidation?
+Is there definite pleural effusion?
+Is there acute findings?
+Is there acute osseous findings?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary findings?
+Is there acute osseous findings?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary findings?
+Is there pleural effusions?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there pulmonary opacities?
+Is there focal consolidation?
+Is there pleural effusions?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there pulmonary opacities?
+Is there focal consolidation?
+Is there findings pulmonary edema?
+Is there focal alveolar consolidation?
+Is there definite pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary findings?
+Is there findings pulmonary edema?
+Is there focal alveolar consolidation?
+Is there definite pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary findings?
+Is there pleural effusions?
+Is there effusion?
+Is there tortuosity thoracic aorta , stable?
+Is there pneumothoraces?
+Is there acute cardiopulmonary process?
+Is there focal airspace disease?
+Is there pleural effusions?
+Is there effusion?
+Is there tortuosity thoracic aorta , stable?
+Is there pneumothoraces?
+Is there acute cardiopulmonary process?
+Is there focal airspace disease?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there pulmonary edema?
+Is there focal consolidation?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there pulmonary edema?
+Is there focal consolidation?
+Is there effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary process?
+Is there focal air space opacities?
+Is there effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary process?
+Is there focal air space opacities?
+Is there pleural effusions?
+Is there pneumothorax?
+Is there focal consolidations?
+Is there pleural effusions?
+Is there pneumothorax?
+Is there focal consolidations?
+Is there focal air space opacity?
+Is there acute cardiopulmonary abnormality?
+Is there pneumothorax large pleural effusion?
+Is there focal air space opacity?
+Is there acute cardiopulmonary abnormality?
+Is there pneumothorax large pleural effusion?
+Is there pleural effusion?
+Is there active disease?
+Is there pneumothorax?
+Is there focal airspace disease?
+Is there pleural effusion?
+Is there active disease?
+Is there pneumothorax?
+Is there focal airspace disease?
+Is there acute cardiopulmonary abnormality?
+Is there acute abnormality?
+Is there airspace disease?
+Is there pneumothorax?
+Is there pleural effusion?
+Is there acute cardiopulmonary abnormality?
+Is there acute abnormality?
+Is there airspace disease?
+Is there pneumothorax?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there emphysema?
+Is there pneumothorax?
+Is there emphysema?
+Is there acute process?
+Is there acute process?
+Is there pleural effusions?
+Is there pneumothoraces?
+Is there flattening diaphragms?
+Is there focal consolidation?
+Is there pleural effusions?
+Is there pneumothoraces?
+Is there flattening diaphragms?
+Is there focal consolidation?
+Is there pneumothorax?
+Is there large pleural effusions?
+Is there pulmonary vascular congestion?
+Is there atelectasis/infiltrate?
+Is there pneumothorax?
+Is there large pleural effusions?
+Is there pulmonary vascular congestion?
+Is there atelectasis/infiltrate?
+Is there pneumothorax?
+Is there large effusion?
+Is there pneumothorax?
+Is there large effusion?
+Is there acute pulmonary findings?
+Is there acute pulmonary findings?
+Is there focal consolidation?
+Is there acute cardiopulmonary abnormality?
+Is there effusion?
+Is there pneumothorax?
+Is there focal consolidation?
+Is there acute cardiopulmonary abnormality?
+Is there effusion?
+Is there pneumothorax?
+Is there effusions?
+Is there pneumonia?
+Is there some changes?
+Is there nodules?
+Is there effusions?
+Is there pneumonia?
+Is there some changes?
+Is there nodules?
+Is there acute disease?
+Is there acute disease?
+Is there active pulmonary disease?
+Is there active pulmonary disease?
+Is there effusion?
+Is there acute cardiopulmonary disease?
+Is there pneumothorax?
+Is there infiltrate?
+Is there effusion?
+Is there acute cardiopulmonary disease?
+Is there pneumothorax?
+Is there infiltrate?
+Is there pleural effusion?
+Is there emphysema?
+Is there pneumothorax?
+Is there acute cardiopulmonary finding?
+Is there focal airspace opacity?
+Is there flattening hemidiaphragms?
+Is there pleural effusion?
+Is there emphysema?
+Is there pneumothorax?
+Is there acute cardiopulmonary finding?
+Is there focal airspace opacity?
+Is there flattening hemidiaphragms?
+Is there pleural effusion?
+Is there acute abnormality?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there focal consolidation?
+Is there pleural effusion?
+Is there acute abnormality?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there focal consolidation?
+Is there acute disease?
+Is there acute disease?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary process?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary process?
+Is there active disease?
+Is there active disease?
+Is there pleural effusion?
+Is there displaced rib fractures?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there pleural effusion?
+Is there displaced rib fractures?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there acute cardiopulmonary findings?
+Is there effusion?
+Is there emphysema?
+Is there pneumothorax?
+Is there focal airspace disease?
+Is there acute cardiopulmonary findings?
+Is there effusion?
+Is there emphysema?
+Is there pneumothorax?
+Is there focal airspace disease?
+Is there pleural effusion?
+Where is disease?
+Is there slight worsening interstitial lung disease?
+Is there pneumothorax?
+Is there pleural effusion?
+Where is disease?
+Is there slight worsening interstitial lung disease?
+Is there pneumothorax?
+Is there focal infiltrate?
+Is there acute cardiopulmonary abnormalities?
+Is there pneumothorax?
+Is there acute abnormalities?
+Is there effusion?
+Is there focal infiltrate?
+Is there acute cardiopulmonary abnormalities?
+Is there pneumothorax?
+Is there acute abnormalities?
+Is there effusion?
+Is there focal infiltrate?
+Is there acute cardiopulmonary abnormalities?
+Is there pneumothorax?
+Is there acute abnormalities?
+Is there effusion?
+Is there active disease?
+Is there active disease?
+Is there focal air space opacity?
+Is there pleural effusion?
+Is there acute cardiopulmonary disease?
+Is there pneumonia?
+Is there pneumothorax?
+Is there large pleural effusion?
+Is there pneumothorax?
+Is there vascular prominence?
+Is there edema?
+Is there pulmonary edema?
+Is there focal airspace disease?
+Is there chest?
+Is there acute cardiopulmonary abnormality?
+Is there chest?
+Is there acute cardiopulmonary abnormality?
+Is there edema?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there focal consolidation?
+Is there edema?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there focal consolidation?
+Is there effusion?
+Is there minimal early degenerative change?
+Is there pneumothorax?
+Is there acute cardiopulmonary process?
+Is there effusion?
+Is there minimal early degenerative change?
+Is there pneumothorax?
+Is there acute cardiopulmonary process?
+Is there focal air space opacity?
+Is there pleural effusion?
+Is there acute cardiopulmonary disease?
+Is there pneumonia?
+Is there pneumothorax?
+Is there focal air space opacity?
+Is there pleural effusion?
+Is there acute cardiopulmonary disease?
+Is there pneumonia?
+Is there pneumothorax?
+Is there cavitary lesion?
+Where is disease?
+Is there chronic obstructive lung disease?
+Is there scarring?
+Is there cavitary lesion in left lung apex?
+Is there scarring?
+Is there pneumothorax?
+Is there bullous emphysema?
+Is there large pleural effusion?
+Is there scarring in left apex?
+Is there interstitial fibrosis?
+Is there cavitary lesion?
+Where is disease?
+Is there chronic obstructive lung disease?
+Is there scarring?
+Is there cavitary lesion in left lung apex?
+Is there scarring?
+Is there pneumothorax?
+Is there bullous emphysema?
+Is there large pleural effusion?
+Is there scarring in left apex?
+Is there interstitial fibrosis?
+Is there pleural effusions?
+Is there focal airspace disease?
+Is there low lung volumes clear?
+Is there pneumothoraces?
+Is there cardiomegaly?
+Is there pleural effusions?
+Is there focal airspace disease?
+Is there low lung volumes clear?
+Is there pneumothoraces?
+Is there cardiomegaly?
+Is there acute cardiopulmonary abnormality?
+Is there soft tissue abnormalities?
+Is there bony?
+Is there acute cardiopulmonary abnormality?
+Is there soft tissue abnormalities?
+Is there bony?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there focal airspace disease?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there focal consolidation?
+Is there pleural effusion?
+Is there pneumothorax?
+Is there acute cardiopulmonary abnormality?
+Is there focal consolidation?
+Is there pulmonary opacity?
+Is there large pleural effusion?
+Is there pneumothorax?
+Is there focal airspace consolidation?
+Is there acute cardiopulmonary findings?
+Is there pulmonary opacity?
+Is there large pleural effusion?
+Is there pneumothorax?
+Is there focal airspace consolidation?
+Is there acute cardiopulmonary findings?
+Is there pleural effusion?
+Is there consolidation?
+Is there pleural effusion?
+Is there consolidation?
+Is there focal air space opacity?
+Is there pleural effusion?
+Is there acute cardiopulmonary disease?
+Is there pneumonia?
+Is there pneumothorax?
+Is there focal air space opacity?
+Is there pleural effusion?
+Is there acute cardiopulmonary disease?
+Is there pneumonia?
+Is there pneumothorax?
+Is there pleural effusion?
+Is there increased size prominent epicardial fat?
+Is there pleural mass?
+Is there pneumothorax?
+Is there consolidation?
+Is there cardiac aneurysm?
+Is there chest?
+Is there pericardial mass?
+Is there pleural effusion?
+Is there increased size prominent epicardial fat?
+Is there pleural mass?
+Is there pneumothorax?
+Is there consolidation?
+Is there cardiac aneurysm?
+Is there chest?
+Is there pericardial mass?

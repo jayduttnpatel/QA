@@ -1,0 +1,14 @@
+{
+    "telemetry.machineId": "b8a4ae1e6c91cd345d3b84f70e4dbb6f5a1677364ac424d36ed1e083a6e4113d",
+    "openedPathsList": {
+        "workspaces3": [
+            {
+                "id": "dec2d5b831ae06bfd523b949266bdadb",
+                "configURIPath": "file:///d%3A/download/question-generation-master/.metadata/codemix.code-workspace"
+            }
+        ],
+        "files2": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#221a0f"
+}

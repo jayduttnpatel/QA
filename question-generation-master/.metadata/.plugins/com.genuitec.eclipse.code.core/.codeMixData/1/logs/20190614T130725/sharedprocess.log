@@ -1,0 +1,89 @@
+[2019-06-14 13:07:32.441] [sharedprocess] [info] main {"machineId":"b8a4ae1e6c91cd345d3b84f70e4dbb6f5a1677364ac424d36ed1e083a6e4113d"}
+[2019-06-14 13:07:32.469] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:32.527] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:32.659] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:32.719] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:32.726] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:32.757] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:32.785] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:33.081] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:33.098] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:33.105] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:33.112] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:33.117] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:33.777] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:34.642] [sharedprocess] [info] Scanned user extensions: 0
+[2019-06-14 13:07:34.642] [sharedprocess] [info] Installing the extension: codemix.python
+[2019-06-14 13:07:34.666] [sharedprocess] [info] Extracted extension to C:\Users\jaydutt\.codemix\extensions\.codemix.python-0.9.2: codemix.python
+[2019-06-14 13:07:34.668] [sharedprocess] [info] Renamed to C:\Users\jaydutt\.codemix\extensions\codemix.python-0.9.2
+[2019-06-14 13:07:34.669] [sharedprocess] [info] Installation completed. codemix.python
+[2019-06-14 13:07:34.671] [sharedprocess] [info] Successfully installed the extension: codemix.python
+[2019-06-14 13:07:34.692] [sharedprocess] [info] Scanned user extensions: 1
+[2019-06-14 13:07:34.752] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:34.831] [sharedprocess] [info] Scanned user extensions: 1
+[2019-06-14 13:07:35.933] [sharedprocess] [info] Scanned user extensions: 1
+[2019-06-14 13:07:35.934] [sharedprocess] [info] Installing the extension: christian-kohler.path-intellisense
+[2019-06-14 13:07:36.215] [sharedprocess] [info] Extracted extension to C:\Users\jaydutt\.codemix\extensions\.christian-kohler.path-intellisense-1.4.2: christian-kohler.path-intellisense
+[2019-06-14 13:07:36.222] [sharedprocess] [info] Renamed to C:\Users\jaydutt\.codemix\extensions\christian-kohler.path-intellisense-1.4.2
+[2019-06-14 13:07:36.224] [sharedprocess] [info] Installation completed. christian-kohler.path-intellisense
+[2019-06-14 13:07:36.224] [sharedprocess] [info] Successfully installed the extension: christian-kohler.path-intellisense
+[2019-06-14 13:07:36.234] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-14 13:07:36.258] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:07:36.281] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-14 13:07:44.300] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-14 13:07:44.300] [sharedprocess] [info] Installing the extension: ms-python.python
+[2019-06-14 13:08:01.632] [sharedprocess] [info] Extracted extension to C:\Users\jaydutt\.codemix\extensions\.ms-python.python-2019.5.17517: ms-python.python
+[2019-06-14 13:08:01.636] [sharedprocess] [info] Renamed to C:\Users\jaydutt\.codemix\extensions\ms-python.python-2019.5.17517
+[2019-06-14 13:08:01.641] [sharedprocess] [info] Installation completed. ms-python.python
+[2019-06-14 13:08:01.642] [sharedprocess] [info] Successfully installed the extension: ms-python.python
+[2019-06-14 13:08:01.666] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-14 13:08:01.680] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:08:01.706] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-14 13:08:01.718] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-14 13:08:01.718] [sharedprocess] [info] Installing the extension: formulahendry.code-runner
+[2019-06-14 13:08:02.946] [sharedprocess] [info] Extracted extension to C:\Users\jaydutt\.codemix\extensions\.formulahendry.code-runner-0.9.10: formulahendry.code-runner
+[2019-06-14 13:08:02.949] [sharedprocess] [info] Renamed to C:\Users\jaydutt\.codemix\extensions\formulahendry.code-runner-0.9.10
+[2019-06-14 13:08:02.950] [sharedprocess] [info] Installation completed. formulahendry.code-runner
+[2019-06-14 13:08:02.951] [sharedprocess] [info] Successfully installed the extension: formulahendry.code-runner
+[2019-06-14 13:08:02.971] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:08:02.985] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:08:03.009] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:08:09.490] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:08:09.506] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:08:10.189] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:08:10.204] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:08:12.004] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:08:12.459] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-06-14 13:08:22.626] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:08:22.670] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:10:43.780] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:10:43.794] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:11:15.726] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:11:15.740] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:11:38.461] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:11:38.476] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:11:38.531] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:11:38.544] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:13:12.021] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:13:34.858] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:13:34.872] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:13:37.550] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:13:37.564] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:13:43.444] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:13:43.457] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:14:06.723] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:14:06.737] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:14:06.777] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:14:06.790] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:14:30.984] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:14:30.999] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:15:42.943] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:15:42.956] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:18:12.034] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:18:47.110] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:18:47.123] [sharedprocess] [info] Scanned system extensions: 71
+[2019-06-14 13:23:12.048] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:28:12.059] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:33:12.072] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:38:12.087] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-14 13:43:12.101] [sharedprocess] [info] Scanned user extensions: 4

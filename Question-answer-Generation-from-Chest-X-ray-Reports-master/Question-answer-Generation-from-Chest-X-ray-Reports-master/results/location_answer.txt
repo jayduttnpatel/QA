@@ -1,0 +1,32 @@
+lumbar
+lumbar
+left lower lobe
+yes
+bilateral pleural
+yes
+left lower lobe
+yes
+bilateral pleural
+yes
+left
+yes
+left
+yes
+left
+left
+right apical pleural
+yes
+right apical pleural
+yes
+alveolar
+yes
+alveolar
+yes
+biapical pleural
+yes
+biapical pleural
+yes
+basilar
+yes
+basilar
+yes

@@ -1,0 +1,9 @@
+Starting Jedi Python language engine.
+##########Linting Output - pylint##########
+
+------------------------------------
+Your code has been rated at 10.00/10
+
+
+Linter 'pylint' is not installed. Please install it or select another linter".
+Error: Module 'pylint' not installed.

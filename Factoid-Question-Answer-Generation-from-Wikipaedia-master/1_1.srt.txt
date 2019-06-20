@@ -1,0 +1,36 @@
+Good morning, I am Sudeshna Sarkar.
+
+Today, we start the first lecture on machine
+learning.
+
+This is module one, part A. Today, we will
+introduce machine learning, basic, go through
+
+the basics of the course, discuss the brief
+history of machine learning and discuss what
+
+learning is about and some simple applications
+of machine learning.
+
+First, this is the overview of the course.
+
+The course is over 8 weeks and will have 8
+modules.
+
+The 1st module is Introduction; in the 2nd
+module we will discuss about Linear Regression
+
+and Decision trees; 3rd module, Instance Based
+Learning and Feature selection; 4th module,
+
+Probability and Bayes learning; 5th module,
+Support Vector Machines; 6th module, Neural
+
+Networks; 7th module, we will do an Introduction
+to Computational learning theory and possibly
+
+a little bit on sample learning and then,
+the last module we will talk about Clustering.
+
+In the 1st module, that is introduction, we
+will have four parts.Today, we will give a brief introduction,in the next more lectures we will have discuss

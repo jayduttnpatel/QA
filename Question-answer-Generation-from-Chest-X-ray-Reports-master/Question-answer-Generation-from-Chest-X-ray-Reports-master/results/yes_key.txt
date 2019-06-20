@@ -1,0 +1,390 @@
+acute bone abnormality
+focal airspace disease
+pleural effusion
+acute cardiopulmonary process
+pneumothorax
+acute bone abnormality
+focal airspace disease
+pleural effusion
+acute cardiopulmonary process
+pneumothorax
+acute osseous findings
+pleural effusion
+pneumothorax
+acute cardiopulmonary findings
+acute osseous findings
+pleural effusion
+pneumothorax
+acute cardiopulmonary findings
+pleural effusion
+acute bony abnormality
+pneumothorax
+acute cardiopulmonary abnormality
+pleural effusion
+acute bony abnormality
+pneumothorax
+acute cardiopulmonary abnormality
+focal opacity
+large pleural effusion
+pneumothorax
+acute pulmonary disease
+focal opacity
+large pleural effusion
+pneumothorax
+acute pulmonary disease
+findings pulmonary edema
+focal alveolar consolidation
+definite pleural effusion
+acute findings
+findings pulmonary edema
+focal alveolar consolidation
+definite pleural effusion
+acute findings
+acute osseous findings
+pleural effusion
+pneumothorax
+acute cardiopulmonary findings
+acute osseous findings
+pleural effusion
+pneumothorax
+acute cardiopulmonary findings
+pleural effusions
+pneumothorax
+acute cardiopulmonary abnormality
+pulmonary opacities
+focal consolidation
+pleural effusions
+pneumothorax
+acute cardiopulmonary abnormality
+pulmonary opacities
+focal consolidation
+findings pulmonary edema
+focal alveolar consolidation
+definite pleural effusion
+pneumothorax
+acute cardiopulmonary findings
+findings pulmonary edema
+focal alveolar consolidation
+definite pleural effusion
+pneumothorax
+acute cardiopulmonary findings
+pleural effusions
+effusion
+tortuosity thoracic aorta , stable
+pneumothoraces
+acute cardiopulmonary process
+focal airspace disease
+pleural effusions
+effusion
+tortuosity thoracic aorta , stable
+pneumothoraces
+acute cardiopulmonary process
+focal airspace disease
+pleural effusion
+pneumothorax
+pulmonary edema
+focal consolidation
+pleural effusion
+pneumothorax
+pulmonary edema
+focal consolidation
+effusion
+pneumothorax
+acute cardiopulmonary process
+focal air space opacities
+effusion
+pneumothorax
+acute cardiopulmonary process
+focal air space opacities
+pleural effusions
+pneumothorax
+focal consolidations
+pleural effusions
+pneumothorax
+focal consolidations
+focal air space opacity
+acute cardiopulmonary abnormality
+pneumothorax large pleural effusion
+focal air space opacity
+acute cardiopulmonary abnormality
+pneumothorax large pleural effusion
+pleural effusion
+active disease
+pneumothorax
+focal airspace disease
+pleural effusion
+active disease
+pneumothorax
+focal airspace disease
+acute cardiopulmonary abnormality
+acute abnormality
+airspace disease
+pneumothorax
+pleural effusion
+acute cardiopulmonary abnormality
+acute abnormality
+airspace disease
+pneumothorax
+pleural effusion
+pneumothorax
+emphysema
+pneumothorax
+emphysema
+acute process
+acute process
+pleural effusions
+pneumothoraces
+flattening diaphragms
+focal consolidation
+pleural effusions
+pneumothoraces
+flattening diaphragms
+focal consolidation
+pneumothorax
+large pleural effusions
+pulmonary vascular congestion
+atelectasis/infiltrate
+pneumothorax
+large pleural effusions
+pulmonary vascular congestion
+atelectasis/infiltrate
+pneumothorax
+large effusion
+pneumothorax
+large effusion
+acute pulmonary findings
+acute pulmonary findings
+focal consolidation
+acute cardiopulmonary abnormality
+effusion
+pneumothorax
+focal consolidation
+acute cardiopulmonary abnormality
+effusion
+pneumothorax
+effusions
+pneumonia
+some changes
+nodules
+effusions
+pneumonia
+some changes
+nodules
+acute disease
+acute disease
+active pulmonary disease
+active pulmonary disease
+effusion
+acute cardiopulmonary disease
+pneumothorax
+infiltrate
+effusion
+acute cardiopulmonary disease
+pneumothorax
+infiltrate
+pleural effusion
+emphysema
+pneumothorax
+acute cardiopulmonary finding
+focal airspace opacity
+flattening hemidiaphragms
+pleural effusion
+emphysema
+pneumothorax
+acute cardiopulmonary finding
+focal airspace opacity
+flattening hemidiaphragms
+pleural effusion
+acute abnormality
+pneumothorax
+acute cardiopulmonary abnormality
+focal consolidation
+pleural effusion
+acute abnormality
+pneumothorax
+acute cardiopulmonary abnormality
+focal consolidation
+acute disease
+acute disease
+pleural effusion
+pneumothorax
+acute cardiopulmonary process
+pleural effusion
+pneumothorax
+acute cardiopulmonary process
+active disease
+active disease
+pleural effusion
+displaced rib fractures
+pneumothorax
+acute cardiopulmonary abnormality
+pleural effusion
+displaced rib fractures
+pneumothorax
+acute cardiopulmonary abnormality
+acute cardiopulmonary findings
+effusion
+emphysema
+pneumothorax
+focal airspace disease
+acute cardiopulmonary findings
+effusion
+emphysema
+pneumothorax
+focal airspace disease
+pleural effusion
+disease
+slight worsening interstitial lung disease
+pneumothorax
+pleural effusion
+disease
+slight worsening interstitial lung disease
+pneumothorax
+focal infiltrate
+acute cardiopulmonary abnormalities
+pneumothorax
+acute abnormalities
+effusion
+focal infiltrate
+acute cardiopulmonary abnormalities
+pneumothorax
+acute abnormalities
+effusion
+focal infiltrate
+acute cardiopulmonary abnormalities
+pneumothorax
+acute abnormalities
+effusion
+active disease
+active disease
+focal air space opacity
+pleural effusion
+acute cardiopulmonary disease
+pneumonia
+pneumothorax
+large pleural effusion
+pneumothorax
+vascular prominence
+edema
+pulmonary edema
+focal airspace disease
+chest
+acute cardiopulmonary abnormality
+chest
+acute cardiopulmonary abnormality
+edema
+pleural effusion
+pneumothorax
+focal consolidation
+edema
+pleural effusion
+pneumothorax
+focal consolidation
+effusion
+minimal early degenerative change
+pneumothorax
+acute cardiopulmonary process
+effusion
+minimal early degenerative change
+pneumothorax
+acute cardiopulmonary process
+focal air space opacity
+pleural effusion
+acute cardiopulmonary disease
+pneumonia
+pneumothorax
+focal air space opacity
+pleural effusion
+acute cardiopulmonary disease
+pneumonia
+pneumothorax
+cavitary lesion
+disease
+chronic obstructive lung disease
+scarring
+cavitary lesion in left lung apex
+scarring
+pneumothorax
+bullous emphysema
+large pleural effusion
+scarring in left apex
+interstitial fibrosis
+cavitary lesion
+disease
+chronic obstructive lung disease
+scarring
+cavitary lesion in left lung apex
+scarring
+pneumothorax
+bullous emphysema
+large pleural effusion
+scarring in left apex
+interstitial fibrosis
+pleural effusions
+focal airspace disease
+low lung volumes clear
+pneumothoraces
+cardiomegaly
+pleural effusions
+focal airspace disease
+low lung volumes clear
+pneumothoraces
+cardiomegaly
+acute cardiopulmonary abnormality
+soft tissue abnormalities
+bony
+acute cardiopulmonary abnormality
+soft tissue abnormalities
+bony
+pleural effusion
+pneumothorax
+acute cardiopulmonary abnormality
+focal airspace disease
+pleural effusion
+pneumothorax
+acute cardiopulmonary abnormality
+focal consolidation
+pleural effusion
+pneumothorax
+acute cardiopulmonary abnormality
+focal consolidation
+pulmonary opacity
+large pleural effusion
+pneumothorax
+focal airspace consolidation
+acute cardiopulmonary findings
+pulmonary opacity
+large pleural effusion
+pneumothorax
+focal airspace consolidation
+acute cardiopulmonary findings
+pleural effusion
+consolidation
+pleural effusion
+consolidation
+focal air space opacity
+pleural effusion
+acute cardiopulmonary disease
+pneumonia
+pneumothorax
+focal air space opacity
+pleural effusion
+acute cardiopulmonary disease
+pneumonia
+pneumothorax
+pleural effusion
+increased size prominent epicardial fat
+pleural mass
+pneumothorax
+consolidation
+cardiac aneurysm
+chest
+pericardial mass
+pleural effusion
+increased size prominent epicardial fat
+pleural mass
+pneumothorax
+consolidation
+cardiac aneurysm
+chest
+pericardial mass
