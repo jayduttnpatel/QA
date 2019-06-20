@@ -61,7 +61,7 @@ import keras
 from keras.preprocessing import sequence
 from keras.models import Sequential
 
-from keras.layers import Input, Embedding, LSTM, Dense, Dropout
+from keras.layers import Input, Embedding, LSTM, Dense, Dropout, Bidirectional
 from keras.models import Model
 from sklearn.model_selection import train_test_split
 
@@ -93,32 +93,38 @@ d_test2 = sequence.pad_sequences(d_test2, maxlen=d_max_sequence_length, padding=
 
 sub_input = Input(shape=(500,),dtype='int32',name='sub_input')
 sub = Embedding(output_dim=512 , input_dim=10000, input_length=500)(sub_input)
-sub_out = LSTM(32)(sub)
+#sub_out = LSTM(32)(sub)
+sub_out = Bidirectional(LSTM(32))(sub)
 sub_out = Dropout(drop_out)(sub_out)
 
 q_input = Input(shape=(6,),dtype='int32',name='q_input')
 q = Embedding(output_dim=512 , input_dim=10000, input_length=6)(q_input)
-q_out = LSTM(32)(q)
+#q_out = LSTM(32)(q)
+q_out = Bidirectional(LSTM(32))(q)
 q_out = Dropout(drop_out)(q_out)
 
 a_input = Input(shape=(2,),dtype='int32',name='a_input')
 a = Embedding(output_dim=512 , input_dim=10000, input_length=2)(a_input)
-a_out = LSTM(32)(a)
+#a_out = LSTM(32)(a)
+a_out = Bidirectional(LSTM(32))(a)
 a_out = Dropout(drop_out)(a_out)
 
 b_input = Input(shape=(2,),dtype='int32',name='b_input')
 b = Embedding(output_dim=512 , input_dim=10000, input_length=2)(b_input)
-b_out = LSTM(32)(b)
+#b_out = LSTM(32)(b)
+b_out = Bidirectional(LSTM(32))(b)
 b_out = Dropout(drop_out)(b_out)
 
 c_input = Input(shape=(2,),dtype='int32',name='c_input')
 c = Embedding(output_dim=512 , input_dim=10000, input_length=2)(c_input)
-c_out = LSTM(32)(c)
+#c_out = LSTM(32)(c)
+c_out = Bidirectional(LSTM(32))(c)
 c_out = Dropout(drop_out)(c_out)
 
 d_input = Input(shape=(3,),dtype='int32',name='d_input')
 d = Embedding(output_dim=512 , input_dim=10000, input_length=3)(d_input)
-d_out = LSTM(32)(d)
+#d_out = LSTM(32)(d)
+d_out = Bidirectional(LSTM(32))(d)
 d_out = Dropout(drop_out)(d_out)
 
 x = keras.layers.concatenate([sub_out, q_out, a_out, b_out, c_out, d_out])

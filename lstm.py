@@ -36,6 +36,7 @@ from keras.models import Sequential
 from keras.layers import LSTM
 from keras.layers import Embedding
 from keras.layers import Dense
+from keras.layers import Bidirectional
 
 # Single layer LSTM example
 
@@ -43,7 +44,7 @@ hidden_size = 32
 
 sl_model = Sequential()
 sl_model.add(Embedding(max_words, hidden_size))
-sl_model.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
+sl_model.add(Bidirectional(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2)))
 sl_model.add(Dense(1, activation='sigmoid'))
 sl_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
@@ -54,8 +55,8 @@ loss, acc = sl_model.evaluate(x_test, y_test)
 
 d_model = Sequential()
 d_model.add(Embedding(max_words, hidden_size))
-d_model.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2, return_sequences=True))
-d_model.add(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2))
+d_model.add(Bidirectional(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2, return_sequences=True)))
+d_model.add(Bidirectional(LSTM(hidden_size, activation='tanh', dropout=0.2, recurrent_dropout=0.2)))
 d_model.add(Dense(1, activation='sigmoid'))
 d_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
